@@ -54,11 +54,46 @@ def compare_product_in_stores(query: str) -> Dict[str, Any]:
         """, (f"%{search_term}%",))
         market_match = cursor.fetchone()
 
+    # Se não houver correspondência completa no banco, busca no Catálogo Básico Oficial
+    from services.basic_basket import find_staple_in_catalog
+    staple = find_staple_in_catalog(search_term)
+    
+    sav_dict = dict(savegnago_match) if savegnago_match else None
+    cop_dict = dict(copercana_match) if copercana_match else None
+    pau_dict = dict(paulistao_match) if paulistao_match else None
+
+    if staple:
+        if not sav_dict:
+            sav_dict = {
+                "name": staple["name"],
+                "store": "Savegnago Supermercados",
+                "price": staple["savegnago"]["price"],
+                "original_price": staple["savegnago"].get("original_price"),
+                "link": f"https://www.savegnago.com.br/busca?ft={search_term}"
+            }
+        if not cop_dict:
+            cop_dict = {
+                "name": staple["name"],
+                "store": "Supermercados Copercana",
+                "price": staple["copercana"]["price"],
+                "original_price": staple["copercana"].get("original_price"),
+                "link": "https://www.supermercadoscopercana.com.br"
+            }
+        if not pau_dict:
+            pau_dict = {
+                "name": staple["name"],
+                "store": "Paulistão Atacadista",
+                "price": staple["paulistao"]["price"],
+                "original_price": staple["paulistao"].get("original_price"),
+                "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho"
+            }
+
     res = {
         "query": search_term,
-        "savegnago": dict(savegnago_match) if savegnago_match else None,
-        "copercana": dict(copercana_match) if copercana_match else None,
-        "paulistao": dict(paulistao_match) if paulistao_match else None,
+        "product_name": staple["name"] if staple else search_term,
+        "savegnago": sav_dict,
+        "copercana": cop_dict,
+        "paulistao": pau_dict,
         "marketplace": dict(market_match) if market_match else None,
         "winner": None,
         "best_price": None,
@@ -101,8 +136,10 @@ def compare_shopping_basket(items: List[Dict[str, Any]]) -> Dict[str, Any]:
     with get_connection() as conn:
         cursor = conn.cursor()
         
+        from services.basic_basket import find_staple_in_catalog
         for it in items:
             name = it["item_name"]
+            staple = find_staple_in_catalog(name)
             
             # Savegnago
             cursor.execute("""
@@ -132,9 +169,9 @@ def compare_shopping_basket(items: List[Dict[str, Any]]) -> Dict[str, Any]:
             pau = cursor.fetchone()
             
             default_p = it.get("target_max_price") or 25.0
-            p_sav = sav["price"] if sav else default_p
-            p_cop = cop["price"] if cop else default_p
-            p_pau = pau["price"] if pau else default_p
+            p_sav = sav["price"] if sav else (staple["savegnago"]["price"] if staple else default_p)
+            p_cop = cop["price"] if cop else (staple["copercana"]["price"] if staple else default_p)
+            p_pau = pau["price"] if pau else (staple["paulistao"]["price"] if staple else default_p)
             
             prices_tuple = [("Savegnago", p_sav), ("Copercana", p_cop), ("Paulistão Atacadista", p_pau)]
             prices_tuple.sort(key=lambda x: x[1])

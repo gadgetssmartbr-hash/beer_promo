@@ -60,7 +60,7 @@ def search_realtime_all_stores(query: str) -> Dict[str, Any]:
             link=item.get("link", "")
         )
 
-    # 2. Compara no banco (Savegnago vs Copercana vs Marketplaces)
+    # 2. Compara no banco (Savegnago vs Copercana vs Paulistão Atacadista)
     from services.supermarket_comparator import compare_product_in_stores
     battle = compare_product_in_stores(clean_query)
 
@@ -68,31 +68,39 @@ def search_realtime_all_stores(query: str) -> Dict[str, Any]:
     if savegnago_items:
         best_sav = savegnago_items[0]
         battle["savegnago"] = best_sav
+        
+        # Recalcula vencedor local
+        local_candidates = []
+        if battle.get("savegnago"):
+            local_candidates.append(("Savegnago", battle["savegnago"]["price"]))
         if battle.get("copercana"):
-            price_sav = best_sav["price"]
-            price_cop = battle["copercana"]["price"]
-            if price_sav < price_cop:
-                battle["winner"] = "Savegnago"
-                battle["diff_amount"] = round(price_cop - price_sav, 2)
-                battle["diff_pct"] = round(((price_cop - price_sav) / price_cop) * 100, 1)
-            elif price_cop < price_sav:
-                battle["winner"] = "Copercana"
-                battle["diff_amount"] = round(price_sav - price_cop, 2)
-                battle["diff_pct"] = round(((price_sav - price_cop) / price_sav) * 100, 1)
-            else:
-                battle["winner"] = "Empate"
+            local_candidates.append(("Copercana", battle["copercana"]["price"]))
+        if battle.get("paulistao"):
+            local_candidates.append(("Paulistão Atacadista", battle["paulistao"]["price"]))
+            
+        if local_candidates:
+            local_candidates.sort(key=lambda x: x[1])
+            winner_name, best_p = local_candidates[0]
+            max_p = max(c[1] for c in local_candidates)
+            battle["winner"] = winner_name
+            battle["best_price"] = best_p
+            battle["diff_amount"] = round(max_p - best_p, 2)
+            battle["diff_pct"] = round(((max_p - best_p) / max_p) * 100, 1) if max_p > 0 else 0.0
 
-    # 3. Links diretos para Mercado Livre e Amazon
-    from services.mercadolivre_service import get_direct_marketplace_links
-    mp_links = get_direct_marketplace_links(clean_query)
+    # 3. Classificação de Intenção e Links Contextuais (Local vs Bebida vs Limpeza)
+    from services.product_classifier import classify_product_query, get_store_links_for_product
+    classification = classify_product_query(clean_query)
+    contextual_links = get_store_links_for_product(clean_query)
 
     # 4. Histórico e inteligência
     history_records = get_product_history(clean_query, limit=2)
 
     return {
         "query": clean_query,
+        "classification": classification,
         "battle": battle,
         "savegnago_live_items": savegnago_items,
         "history_records": history_records,
-        "marketplace_links": mp_links
+        "store_links": contextual_links
     }
+
