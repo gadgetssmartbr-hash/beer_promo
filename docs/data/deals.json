@@ -1,0 +1,306 @@
+{
+  "metadata": {
+    "city": "Sertãozinho - SP",
+    "updated_at": "02/10/2026 às 11:24",
+    "telegram_bot": "https://t.me/beerstz_bot",
+    "total_items": 19
+  },
+  "deals": [
+    {
+      "name": "Kit 6 Vinhos Chilenos Gran Reserva Cabernet Sauvignon (Evino)",
+      "category": "vinho",
+      "store": "Evino",
+      "price": 219.0,
+      "original_price": 389.0,
+      "discount_pct": 43.7,
+      "link": "https://www.evino.com.br/promocoes",
+      "recorded_at": "2026-10-02 11:17:54",
+      "badge": "⚡ Oferta"
+    },
+    {
+      "name": "Kit 3 Vinhos Tintos Portugueses Bons Ventos (Wine.com.br)",
+      "category": "vinho",
+      "store": "Wine.com.br",
+      "price": 109.9,
+      "original_price": 179.7,
+      "discount_pct": 38.8,
+      "link": "https://www.wine.com.br/vinhos/ofertas",
+      "recorded_at": "2026-10-02 11:17:54",
+      "badge": "⚡ Oferta"
+    },
+    {
+      "name": "Salton Espumante Brut 750 Ml (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "price": 31.88,
+      "original_price": 42.51,
+      "discount_pct": 25.0,
+      "link": "https://www.amazon.com.br",
+      "recorded_at": "2026-10-02 11:17:54",
+      "badge": "⚡ Oferta"
+    },
+    {
+      "name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon 750ml (Savegnago)",
+      "category": "vinho",
+      "store": "Savegnago Supermercados",
+      "price": 49.9,
+      "original_price": 64.9,
+      "discount_pct": 23.1,
+      "link": "https://www.savegnago.com.br/busca?ft=casillero",
+      "recorded_at": "2026-10-02 11:17:53",
+      "badge": "⚡ Oferta"
+    },
+    {
+      "name": "Kit 4 Vinhos Tintos Chilenos Reservado Concha y Toro 750ml",
+      "category": "vinho",
+      "store": "Mercado Livre Full",
+      "price": 124.9,
+      "original_price": 159.6,
+      "discount_pct": 21.7,
+      "link": "https://lista.mercadolivre.com.br/kit-vinho-tinto-reservado_OrderId_PRICE*ASC_Shipping_fulfillment",
+      "recorded_at": "2026-10-02 11:17:54",
+      "badge": "⚡ Oferta"
+    },
+    {
+      "name": "Kit 6 Garrafas Vinho Argentino Malbec Finca Las Moras",
+      "category": "vinho",
+      "store": "Mercado Livre Full",
+      "price": 189.9,
+      "original_price": 239.4,
+      "discount_pct": 20.7,
+      "link": "https://lista.mercadolivre.com.br/kit-vinho-argentino-malbec_OrderId_PRICE*ASC_Shipping_fulfillment",
+      "recorded_at": "2026-10-02 11:17:54",
+      "badge": "⚡ Oferta"
+    },
+    {
+      "name": "Espumante Brasileiro Salton Brut 750ml (Wine)",
+      "category": "vinho",
+      "store": "Wine.com.br",
+      "price": 36.9,
+      "original_price": 45.9,
+      "discount_pct": 19.6,
+      "link": "https://www.wine.com.br/vinhos/espumantes",
+      "recorded_at": "2026-10-02 11:17:54",
+      "badge": "⚡ Oferta"
+    },
+    {
+      "name": "Kit 6 Vinhos Tinto Olaria Suave - Alentejo (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "price": 237.4,
+      "original_price": 279.0,
+      "discount_pct": 14.9,
+      "link": "https://www.amazon.com.br",
+      "recorded_at": "2026-10-02 11:17:54",
+      "badge": "⚡ Oferta"
+    },
+    {
+      "name": "Pack Cerveja Corona Extra 6 Long Necks 330ml",
+      "category": "cerveja",
+      "store": "Mercado Livre Full",
+      "price": 38.9,
+      "original_price": 44.9,
+      "discount_pct": 13.4,
+      "link": "https://lista.mercadolivre.com.br/cerveja-corona-pack_OrderId_PRICE*ASC_Shipping_fulfillment",
+      "recorded_at": "2026-10-02 11:17:54",
+      "badge": "⚡ Oferta"
+    },
+    {
+      "name": "Pack Cerveja Heineken 12 Latas 350ml (Mercado Envios Full)",
+      "category": "cerveja",
+      "store": "Mercado Livre Full",
+      "price": 62.28,
+      "original_price": 71.88,
+      "discount_pct": 13.4,
+      "link": "https://lista.mercadolivre.com.br/cerveja-heineken-pack_OrderId_PRICE*ASC_Shipping_fulfillment",
+      "recorded_at": "2026-10-02 11:17:54",
+      "badge": "⚡ Oferta"
+    },
+    {
+      "name": "Pack Cerveja Spaten Puro Malte 12 Latas 350ml (Mercado Envios Full)",
+      "category": "cerveja",
+      "store": "Mercado Livre Full",
+      "price": 52.68,
+      "original_price": 59.9,
+      "discount_pct": 12.1,
+      "link": "https://lista.mercadolivre.com.br/cerveja-spaten-pack_OrderId_PRICE*ASC_Shipping_fulfillment",
+      "recorded_at": "2026-10-02 11:17:54",
+      "badge": "⚡ Oferta"
+    },
+    {
+      "name": "Espumante Garibaldi Moscatel Sem Alcool 750ml Kit 6 Unidades (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "price": 213.7,
+      "original_price": 237.44,
+      "discount_pct": 10.0,
+      "link": "https://www.amazon.com.br",
+      "recorded_at": "2026-10-02 11:17:54",
+      "badge": "🛒 Preço Regular"
+    },
+    {
+      "name": "Cerveja Spaten Munich Helles Lata 350ml (Savegnago)",
+      "category": "cerveja",
+      "store": "Savegnago Supermercados",
+      "price": 4.69,
+      "original_price": 5.19,
+      "discount_pct": 9.6,
+      "link": "https://www.savegnago.com.br/busca?ft=spaten",
+      "recorded_at": "2026-10-02 11:17:53",
+      "badge": "🛒 Preço Regular"
+    },
+    {
+      "name": "Cerveja Heineken Puro Malte Lata 350ml (Savegnago)",
+      "category": "cerveja",
+      "store": "Savegnago Supermercados",
+      "price": 5.49,
+      "original_price": 5.99,
+      "discount_pct": 8.3,
+      "link": "https://www.savegnago.com.br/busca?ft=heineken",
+      "recorded_at": "2026-10-02 11:17:53",
+      "badge": "🛒 Preço Regular"
+    },
+    {
+      "name": "ESPUMANTE MOSCATEL BRANCO ARAUCÁRIA SERRA GAÚCHA 750ML (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "price": 47.4,
+      "original_price": 49.9,
+      "discount_pct": 5.0,
+      "link": "https://www.amazon.com.br",
+      "recorded_at": "2026-10-02 11:17:54",
+      "badge": "🛒 Preço Regular"
+    },
+    {
+      "name": "Espumante Branco Ophicus Brut Lozano 750ml (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "price": 56.9,
+      "original_price": 59.9,
+      "discount_pct": 5.0,
+      "link": "https://www.amazon.com.br",
+      "recorded_at": "2026-10-02 11:17:54",
+      "badge": "🛒 Preço Regular"
+    },
+    {
+      "name": "Vinho Do Porto Ceremony Tawny Tinto Douro 750ml (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "price": 69.35,
+      "original_price": 73.0,
+      "discount_pct": 5.0,
+      "link": "https://www.amazon.com.br",
+      "recorded_at": "2026-10-02 11:17:54",
+      "badge": "🛒 Preço Regular"
+    },
+    {
+      "name": "Vinho Tinto Primitivo Di Manduria Dal 1947 Italiano 750ml 6u + CX mad (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "price": 1614.05,
+      "original_price": 1699.0,
+      "discount_pct": 5.0,
+      "link": "https://www.amazon.com.br",
+      "recorded_at": "2026-10-02 11:17:54",
+      "badge": "🛒 Preço Regular"
+    },
+    {
+      "name": "Concha y Toro Reservado Cabernet Sauvignon 750ml (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "price": 22.9,
+      "original_price": 0.03,
+      "discount_pct": 0.0,
+      "link": "https://www.amazon.com.br",
+      "recorded_at": "2026-10-02 11:17:54",
+      "badge": "🛒 Preço Regular"
+    }
+  ],
+  "supermarkets": [
+    {
+      "name": "Supermercados Savegnago (Sertãozinho)",
+      "website": "https://www.savegnago.com.br",
+      "tabloide_url": "https://www.savegnago.com.br/encartes",
+      "delivery": "Delivery próprio via App/Site ou iFood",
+      "benefits": "Descontos no Cartão Savegnago & Clube Nosso Valor",
+      "highlight_categories": [
+        "🍺 Cervejas: Heineken, Spaten, Stella Artois, Corona, Eisenbahn",
+        "🍷 Vinhos: Tintos Nacionais, Importados (Chile, Argentina, Portugal), Espumantes Salton/Chandon"
+      ]
+    },
+    {
+      "name": "Supermercados Copercana (Sertãozinho)",
+      "website": "https://www.supermercadoscopercana.com.br",
+      "app_name": "Clube Copermais",
+      "benefits": "Preços diferenciados para cadastrados no Copermais",
+      "highlight_categories": [
+        "🍺 Cervejas artesanais e especiais da região",
+        "🍷 Adega selecionada de vinhos nacionais e importados"
+      ]
+    },
+    {
+      "name": "Tonin Superatacado & Gricki (Sertãozinho/Região)",
+      "website": "https://tonin.com.br",
+      "delivery": "Retirada em loja / Compra em volume",
+      "benefits": "Desconto progressivo em fardos e caixas fechadas"
+    }
+  ],
+  "wine_clubs": [
+    {
+      "store": "🍷 Wine.com.br",
+      "title": "Kits Promocionais de Vinhos Importados (Chile/Argentina/Portugal)",
+      "deal_type": "Compre 3 com até 40% OFF / Frete Grátis Clube Wine",
+      "url": "https://www.wine.com.br/vinhos/ofertas",
+      "tips": "Utilize cupons de primeira compra (geralmente R$ 50 OFF em R$ 150+)."
+    },
+    {
+      "store": "🍇 Evino",
+      "title": "Combos 'Leve Mais por Menos' & Vinhos Selecionados",
+      "deal_type": "Descontos de até 50% em garrafas individuais e kits",
+      "url": "https://www.evino.com.br/promocoes",
+      "tips": "Frete para Sertãozinho/SP com entrega rastreada e opções expressas."
+    },
+    {
+      "store": "🍾 Divvino & Sonoma",
+      "title": "Seleção de Rótulos Premium e Espumantes",
+      "deal_type": "Cashback e descontos no PIX",
+      "url": "https://www.divvino.com.br",
+      "tips": "Excelente para vinhos finos de guarda e presentes."
+    }
+  ],
+  "coupons": [
+    {
+      "service": "⚡ Zé Delivery (Sertãozinho)",
+      "coupons": [
+        "CUPOM NOVO: 'BEMVINDO' / 'ZENOVO' (R$ 10 a R$ 15 OFF na 1ª compra)",
+        "PONTOS ZÉ: Troque tampinhas/pontos no app por descontos de R$ 5, R$ 10 e R$ 20",
+        "HORÁRIO DE PICO DE OFERTAS: Quinta a Sábado a partir das 17h"
+      ],
+      "app_url": "https://www.ze.delivery"
+    },
+    {
+      "service": "🍔 iFood Bebidas & Supermercados (Sertãozinho)",
+      "coupons": [
+        "CLUBE IFOOD: Pacotes de cupons de 25% OFF e R$ 10 OFF em mercados locais",
+        "PROMOÇÃO DA SEMANA: Frete grátis em lojas parceiras de Sertãozinho"
+      ],
+      "app_url": "https://www.ifood.com.br"
+    },
+    {
+      "service": "📦 Mercado Livre (Mercado Envios Full)",
+      "coupons": [
+        "FRETE GRÁTIS: Em produtos elegíveis e carrinhos acima de R$ 79",
+        "CUPOM SUPERMERCADO: Fique atento aos banners de 10% a 20% OFF no Supermercado Livre"
+      ],
+      "app_url": "https://www.mercadolivre.com.br"
+    },
+    {
+      "service": "🍷 Wine & Evino",
+      "coupons": [
+        "WINE: 'BEMVINDO50' ou cupom de indicação (desconto imediato no primeiro kit)",
+        "EVINO: 'PRIMEIRACOMPRA' / Cupom via App com 15% extra no carrinho"
+      ],
+      "app_url": "https://www.wine.com.br"
+    }
+  ]
+}
