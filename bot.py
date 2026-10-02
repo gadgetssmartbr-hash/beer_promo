@@ -79,18 +79,22 @@ def get_main_menu_keyboard(chat_id: int = None):
             InlineKeyboardButton("🎟️ Cupons & Zé Delivery", callback_data="menu_coupons"),
             InlineKeyboardButton("🍇 Clubes Wine & Evino", callback_data="menu_wines"),
         ],
-        # --- SEÇÃO 2: SUPERMERCADOS LOCAIS & FAMÍLIA ---
+        # --- SEÇÃO 2: SUPERMERCADOS LOCAIS & LISTA DA FAMÍLIA ---
+        [
+            InlineKeyboardButton("🛒 Simulador de Economia (3 Lojas)", callback_data="menu_basket"),
+            InlineKeyboardButton("📸 Foto / Scanner no Mercado", callback_data="menu_scanner"),
+        ],
         [
             InlineKeyboardButton("📋 Lista Básica de Supermercado", callback_data="menu_basic_basket"),
             InlineKeyboardButton("⚔️ Batalha 3 Redes", callback_data="menu_supermarkets"),
         ],
         [
             InlineKeyboardButton("📝 Minha Lista da Família", callback_data="menu_watchlist"),
-            InlineKeyboardButton("🛒 Comparar Carrinho", callback_data="menu_basket"),
+            InlineKeyboardButton("🧼 Limpeza & Açougue Local", callback_data="menu_grocery"),
         ],
         [
-            InlineKeyboardButton("🧼 Limpeza & Açougue Local", callback_data="menu_grocery"),
             InlineKeyboardButton("📊 Termômetro de Preços", callback_data="menu_history"),
+            InlineKeyboardButton("⚡ Rodar Busca Agora", callback_data="menu_run_now"),
         ],
         # --- UTILITÁRIOS ---
         [
@@ -486,80 +490,219 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 
-async def handle_basket_comparison(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Calcula o comparativo de economia de toda a lista de compras no Savegnago vs Copercana."""
+async def handle_basket_comparison(update: Update, context: ContextTypes.DEFAULT_TYPE, preset: str = None):
+    """Calcula o comparativo de economia de toda a lista de compras no Savegnago vs Copercana vs Paulistão Atacadista."""
     query = update.callback_query
     if query:
         await query.answer()
         chat_id = update.effective_chat.id
+        if not preset and query.data.startswith("basket_preset:"):
+            preset = query.data.split("basket_preset:", 1)[1]
     else:
         chat_id = update.effective_chat.id
 
     from database import get_watchlist
     from services.supermarket_comparator import compare_shopping_basket
+    from services.basic_basket import BASIC_CATALOG
     
-    watchlist = get_watchlist(chat_id=chat_id)
-    if not watchlist:
-        watchlist = [
-            {"item_name": "Heineken"},
-            {"item_name": "Spaten"},
-            {"item_name": "Casillero"},
-            {"item_name": "Picanha"},
-            {"item_name": "OMO"}
-        ]
-        is_sample = True
+    preset_title = "Minha Lista Personalizada"
+    if preset == "cesta":
+        preset_title = "🍚 Cesta Essencial da Família"
+        items = [{"item_name": it["name"]} for it in BASIC_CATALOG if it.get("preset_basket")]
+    elif preset == "churrasco":
+        preset_title = "🥩 Churrasco de Fim de Semana"
+        items = [{"item_name": it["name"]} for it in BASIC_CATALOG if it.get("preset_bbq")]
+    elif preset == "limpeza":
+        preset_title = "🧼 Faxina & Higiene Completa"
+        items = [{"item_name": it["name"]} for it in BASIC_CATALOG if it.get("preset_cleaning")]
     else:
-        is_sample = False
+        watchlist = get_watchlist(chat_id=chat_id)
+        if not watchlist:
+            items = [{"item_name": it["name"]} for it in BASIC_CATALOG if it.get("preset_basket")]
+            preset_title = "🍚 Cesta Essencial (Padrão)"
+        else:
+            items = watchlist
+            preset_title = "📝 Sua Lista de Vigia"
 
-    res = compare_shopping_basket(watchlist)
+    res = compare_shopping_basket(items)
+    total_paulistao = res.get("total_paulistao", 0.0)
     
     lines = [
-        "🛒 *COMPARADOR DE CARRINHO: SAVEGNAGO vs COPERCANA* ⚔️\n",
-        f"Simulação para **{res['total_items']} itens** da lista:\n",
-        f"🏪 **Total no Savegnago:** `R$ {res['total_savegnago']:.2f}`",
-        f"🏪 **Total no Copercana:** `R$ {res['total_copercana']:.2f}`",
-        f"✨ **Total Comprando Fracionado (Melhor Preço):** `R$ {res['total_mixed']:.2f}`\n"
+        f"🛒 *SIMULADOR DE ECONOMIA:* `{preset_title}` ⚔️\n",
+        f"Simulação para **{res['total_items']} itens** em Sertãozinho/SP:\n",
+        f"🏪 **Total Savegnago:** `R$ {res['total_savegnago']:.2f}`",
+        f"🏪 **Total Copercana:** `R$ {res['total_copercana']:.2f}`",
+        f"🏪 **Total Paulistão Atacadista:** `R$ {total_paulistao:.2f}`",
+        f"✨ **Carrinho Mix (Comprando no Menor Preço):** `R$ {res['total_mixed']:.2f}`\n"
     ]
     
-    if res["winner"] != "Empate":
+    if res["winner"] and res["winner"] != "Empate":
         lines.append(
             f"🏆 *REDE MAIS ECONÔMICA:* **{res['winner']}**\n"
             f"💰 *Economia em loja única:* **R$ {res['single_store_savings']:.2f} ({res['single_store_savings_pct']}%)**\n"
-            f"💡 *Economia dividindo os itens:* **R$ {res['split_store_savings']:.2f}**\n"
+            f"💡 *Economia máxima dividindo compras:* **R$ {res['split_store_savings']:.2f}**\n"
         )
     else:
-        lines.append("🤝 **Empate técnico entre as duas redes!**\n")
+        lines.append("🤝 **Empate técnico entre as redes!**\n")
         
-    lines.append("📋 *DETALHAMENTO POR PRODUTO:*")
-    for it in res["items"][:5]:
+    lines.append("📋 *ONDE COMPRAR CADA ITEM (MELHOR PREÇO):*")
+    for it in res["items"][:6]:
         lines.append(
-            f"• *{it['item_name']}:*\n"
-            f"  Savegnago: R$ {it['price_savegnago']:.2f} | Copercana: R$ {it['price_copercana']:.2f}\n"
-            f"  👉 Mais barato no *{it['best_store']}*"
+            f"• *{it['item_name'][:32]}*\n"
+            f"  👉 🏆 Comprar no **{it['best_store']}** por *R$ {it['best_price']:.2f}*"
         )
         
-    if is_sample:
-        lines.append("\n_*(Exemplo com itens padrão. Adicione os seus com /vigiar para uma simulação personalizada!)*_")
+    if len(res["items"]) > 6:
+        lines.append(f"\n_...e mais {len(res['items']) - 6} itens calculados no total!_")
 
-    back_keyboard = InlineKeyboardMarkup([
-        [InlineKeyboardButton("📝 Ver Minha Lista", callback_data="menu_watchlist")],
-        [InlineKeyboardButton("🔙 Voltar ao Menu Principal", callback_data="menu_start")]
+    lines.append("\n👇 *Simular outros pacotes de compra:*")
+
+    keyboard = InlineKeyboardMarkup([
+        [
+            InlineKeyboardButton("🍚 Cesta Essencial", callback_data="basket_preset:cesta"),
+            InlineKeyboardButton("🥩 Churrasco", callback_data="basket_preset:churrasco"),
+        ],
+        [
+            InlineKeyboardButton("🧼 Faxina & Limpeza", callback_data="basket_preset:limpeza"),
+            InlineKeyboardButton("📝 Minha Lista", callback_data="menu_watchlist"),
+        ],
+        [
+            InlineKeyboardButton("🌐 Ver Simulador Interativo no Microsite", callback_data="menu_microsite"),
+        ],
+        [
+            InlineKeyboardButton("🔙 Voltar ao Menu Principal", callback_data="menu_start")
+        ]
     ])
 
     if query:
         await query.edit_message_text(
             "\n".join(lines),
-            reply_markup=back_keyboard,
+            reply_markup=keyboard,
             parse_mode="Markdown",
             disable_web_page_preview=True
         )
     elif update.message:
         await update.message.reply_text(
             "\n".join(lines),
-            reply_markup=back_keyboard,
+            reply_markup=keyboard,
             parse_mode="Markdown",
             disable_web_page_preview=True
         )
+
+async def handle_scanner_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Menu explicativo do scanner de fotos e código de barras no mercado."""
+    query = update.callback_query
+    if query:
+        await query.answer()
+        
+    text = (
+        "📸 *COMPARADOR DE PREÇOS NO SUPERMERCADO* 🛒\n\n"
+        "Está no corredor do mercado e quer saber se o preço está realmente bom?\n\n"
+        "1️⃣ **Envie uma Foto pelo Telegram:**\n"
+        "   Tire uma foto do produto ou da etiqueta de preço e envie aqui com o nome e valor como legenda (ex: `Heineken 350ml 5.19` ou `Sabão OMO 36.90`).\n\n"
+        "2️⃣ **Scanner de Código de Barras (Câmera ao Vivo):**\n"
+        "   Acesse o Microsite Web e use a câmera do celular para ler o código EAN-13 da embalagem em segundos!\n\n"
+        "3️⃣ **Busca Instantânea por Texto:**\n"
+        "   Ou apenas digite o nome de qualquer item no chat para receber a cotação de Sertãozinho na hora."
+    )
+    
+    keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("🌐 Abrir Leitor de Câmera no Microsite", callback_data="menu_microsite")],
+        [InlineKeyboardButton("🛒 Simular Carrinho de Economia", callback_data="menu_basket")],
+        [InlineKeyboardButton("🔙 Menu Principal", callback_data="menu_start")]
+    ])
+    
+    if query:
+        await query.edit_message_text(text, reply_markup=keyboard, parse_mode="Markdown")
+    elif update.message:
+        await update.message.reply_text(text, reply_markup=keyboard, parse_mode="Markdown")
+
+async def handle_photo_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Processa fotos enviadas pelo usuário (produto, etiqueta de preço ou código de barras no mercado)."""
+    caption = (update.message.caption or "").strip()
+    
+    if caption:
+        query_text = caption
+        from services.realtime_search import search_realtime_all_stores
+        live_res = search_realtime_all_stores(query_text)
+        battle = live_res["battle"]
+        
+        # Tenta extrair preço visto na loja
+        parts = query_text.split()
+        seen_price = None
+        for p in reversed(parts):
+            p_clean = p.replace("R$", "").replace("$", "").replace(",", ".").strip()
+            try:
+                seen_price = float(p_clean)
+                break
+            except ValueError:
+                continue
+                
+        lines = [
+            "📸 *ANÁLISE DE PRODUTO NO MERCADO:*\n",
+            f"🔎 *Item identificado:* `{query_text}`\n"
+        ]
+        
+        if seen_price:
+            lines.append(f"🏷️ *Preço visto na gôndola:* `R$ {seen_price:.2f}`\n")
+            
+        lines.append("⚔️ *PREÇOS NAS REDES DE SERTÃOZINHO:*")
+        sav_p = battle.get("savegnago", {}).get("price") if battle.get("savegnago") else None
+        cop_p = battle.get("copercana", {}).get("price") if battle.get("copercana") else None
+        pau_p = battle.get("paulistao", {}).get("price") if battle.get("paulistao") else None
+        
+        if sav_p: lines.append(f"  🏪 *Savegnago:* R$ {sav_p:.2f}")
+        if cop_p: lines.append(f"  🏪 *Copercana:* R$ {cop_p:.2f}")
+        if pau_p: lines.append(f"  🏪 *Paulistão Atacadista:* R$ {pau_p:.2f}")
+        
+        if seen_price and (sav_p or cop_p or pau_p):
+            local_prices = [p for p in [sav_p, cop_p, pau_p] if p]
+            min_local = min(local_prices)
+            if seen_price < min_local:
+                diff = min_local - seen_price
+                lines.append(f"\n🟢 *EXCELENTE OPORTUNIDADE!* O preço de R$ {seen_price:.2f} nesta loja está mais barato que toda a concorrência (você economiza R$ {diff:.2f})! Pode comprar! 🚀")
+            elif seen_price == min_local:
+                lines.append(f"\n🟡 *BOM PREÇO!* Empatado com o menor preço praticado na cidade (R$ {min_local:.2f}).")
+            else:
+                diff = seen_price - min_local
+                lines.append(f"\n🔴 *ATENÇÃO:* Você encontra mais barato por R$ {min_local:.2f} em outra rede de Sertãozinho (Economia de R$ {diff:.2f})!")
+        elif battle.get("winner"):
+            lines.append(f"\n👉 🏆 *Mais Barato na Cidade:* **{battle['winner']}**")
+            
+        back_keyboard = InlineKeyboardMarkup([
+            [InlineKeyboardButton(f"➕ Vigiar '{query_text[:18]}'", callback_data=f"watch_quick:{query_text}")],
+            [InlineKeyboardButton("🛒 Comparar Carrinho Completo", callback_data="menu_basket")],
+            [InlineKeyboardButton("🔙 Menu Principal", callback_data="menu_start")]
+        ])
+        
+        await update.message.reply_text("\n".join(lines), reply_markup=back_keyboard, parse_mode="Markdown")
+    else:
+        text = (
+            "📸 *FOTO RECEBIDA DO MERCADO!* 🛒\n\n"
+            "Para comparar na hora com **Savegnago, Copercana e Paulistão Atacadista**, "
+            "envie a foto com uma **legenda** contendo o nome do item e o valor visto na etiqueta!\n\n"
+            "👉 *Exemplos de Legenda:*\n"
+            "• `Heineken Lata 350ml 5.19`\n"
+            "• `Sabão OMO Líquido 3L 36.90`\n"
+            "• `Picanha Friboi 62.00`\n"
+            "• `Ovos Brancos 30un 18.50`\n\n"
+            "⚡ Ou escolha uma consulta rápida abaixo:"
+        )
+        keyboard = InlineKeyboardMarkup([
+            [
+                InlineKeyboardButton("🍺 Heineken", callback_data="cat_bebidas"),
+                InlineKeyboardButton("🧼 Sabão OMO", callback_data="cat_limpeza"),
+            ],
+            [
+                InlineKeyboardButton("🥩 Picanha", callback_data="cat_carnes"),
+                InlineKeyboardButton("🥚 Ovos", callback_data="cat_ovos"),
+            ],
+            [
+                InlineKeyboardButton("🌐 Abrir Scanner no Microsite Web", callback_data="menu_microsite"),
+                InlineKeyboardButton("🔙 Menu Principal", callback_data="menu_start")
+            ]
+        ])
+        await update.message.reply_text(text, reply_markup=keyboard, parse_mode="Markdown")
 
 
 async def handle_run_now(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -878,8 +1021,10 @@ async def callback_router(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await handle_microsite(update, context)
     elif data == "menu_how_to_watch":
         await handle_how_to_watch(update, context)
-    elif data == "menu_basket":
+    elif data == "menu_basket" or data.startswith("basket_preset:"):
         await handle_basket_comparison(update, context)
+    elif data == "menu_scanner":
+        await handle_scanner_menu(update, context)
     elif data == "menu_toggle_alerts":
         await handle_toggle_alerts(update, context)
 
@@ -900,13 +1045,15 @@ def main():
     app.add_handler(CommandHandler(["basica", "cesta", "produtos", "essenciais"], handle_basic_basket))
     app.add_handler(CommandHandler(["vigiar", "adicionar"], watch_command))
     app.add_handler(CommandHandler(["minhalista", "lista"], handle_watchlist))
-    app.add_handler(CommandHandler(["carrinho", "comparar", "economia"], handle_basket_comparison))
+    app.add_handler(CommandHandler(["carrinho", "comparar", "economia", "simulador"], handle_basket_comparison))
+    app.add_handler(CommandHandler(["scanner", "foto", "camera"], handle_scanner_menu))
     app.add_handler(CommandHandler(["remover", "deletar"], remove_watch_command))
     app.add_handler(CommandHandler("buscar", search_command))
     app.add_handler(CommandHandler("historico", handle_history))
     app.add_handler(CommandHandler("rodaragora", handle_run_now))
     app.add_handler(CommandHandler("alertas", handle_toggle_alerts))
     app.add_handler(CallbackQueryHandler(callback_router))
+    app.add_handler(MessageHandler(filters.PHOTO, handle_photo_message))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, search_command))
 
     print("🚀 Bot de Promoções de Bebidas & Mercado (Sertãozinho) iniciado com sucesso!")

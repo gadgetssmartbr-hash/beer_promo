@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Promoções & Termômetro de Preços | Cervejas e Vinhos Sertãozinho</title>
+  <title>Promoções & Inteligência de Preços | Bebidas & Supermercados Sertãozinho</title>
   
-  <meta name="description" content="Acompanhamento e inteligência de preços de cervejas e vinhos em Sertãozinho/SP. Saiba se o preço está realmente bom, na média ou caro." />
+  <meta name="description" content="Acompanhamento e inteligência de preços de cervejas, vinhos e compras da família em Sertãozinho/SP (Savegnago, Copercana, Paulistão Atacadista)." />
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -35,7 +35,13 @@
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
     .glass-nav { backdrop-filter: blur(14px); background: rgba(11, 15, 25, 0.88); }
     .gradient-hero { background: radial-gradient(circle at 50% -20%, #701a35 0%, #0b0f19 75%); }
-    .thermometer-bar { transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
+    .scanner-laser {
+      animation: scanLaser 2s infinite ease-in-out;
+    }
+    @keyframes scanLaser {
+      0%, 100% { top: 10%; opacity: 0.8; }
+      50% { top: 85%; opacity: 1; }
+    }
   </style>
 </head>
 
@@ -50,7 +56,7 @@
         </div>
         <div>
           <span class="font-extrabold text-lg tracking-tight bg-gradient-to-r from-amber-400 via-rose-400 to-pink-400 bg-clip-text text-transparent">
-            Beer & Wine Promo
+            Beer & Market Promo
           </span>
           <span class="text-[11px] block text-slate-400 font-medium flex items-center gap-1">
             <span>📍 Sertãozinho / SP</span>
@@ -70,26 +76,26 @@
   </header>
 
   <!-- Hero Section with Price Health Index -->
-  <section class="gradient-hero pt-12 pb-10 border-b border-slate-800 px-4">
-    <div class="max-w-4xl mx-auto text-center">
+  <section class="gradient-hero pt-10 pb-8 border-b border-slate-800 px-4">
+    <div class="max-w-5xl mx-auto text-center">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-950/80 border border-rose-800/80 text-rose-300 text-xs font-semibold mb-4 shadow-sm">
         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
         <span id="updateTimeTag">Monitorando 3x ao dia (08h, 13h, 19h) + Buscas em tempo real</span>
       </div>
 
-      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 text-white">
-        Acompanhamento & <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-amber-300 bg-clip-text text-transparent">Termômetro de Preços</span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-3 text-white">
+        Bebidas & <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-amber-300 bg-clip-text text-transparent">Cesta da Família</span>
       </h1>
-      <p class="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto mb-8">
-        Não compre no escuro! Analisamos o <strong>histórico diário</strong>, <strong>menor preço registrado</strong> e <strong>preço médio</strong> para indicar quando uma oferta realmente vale a pena.
+      <p class="text-slate-400 text-xs sm:text-sm max-w-2xl mx-auto mb-6">
+        Simulador de economia familiar entre <strong>Savegnago, Copercana e Paulistão Atacadista</strong> com scanner de código de barras e comparador de foto na gôndola.
       </p>
 
       <!-- Search & Filters Container -->
-      <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 shadow-2xl max-w-3xl mx-auto backdrop-blur-md">
+      <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 shadow-2xl max-w-4xl mx-auto backdrop-blur-md">
         <div class="flex flex-col sm:flex-row gap-3">
           <div class="relative flex-1">
             <i data-lucide="search" class="w-5 h-5 text-slate-400 absolute left-3.5 top-3.5"></i>
-            <input type="text" id="searchInput" placeholder="Pesquisar Heineken, Spaten, Picanha, Ovos, Savegnago..."
+            <input type="text" id="searchInput" placeholder="Pesquisar Heineken, Spaten, Picanha, Ovos, Sabão OMO, Arroz..."
                    class="w-full bg-slate-950 border border-slate-700 text-slate-200 placeholder-slate-500 rounded-xl pl-11 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500 transition-all" />
           </div>
           <select id="sortSelect" class="bg-slate-950 border border-slate-700 text-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500 font-medium">
@@ -101,32 +107,25 @@
           </select>
         </div>
 
-        <!-- Quick Sort Toolbar -->
-        <div class="flex flex-wrap items-center gap-2 mt-3 pt-3 border-t border-slate-800/80 text-xs">
-          <span class="text-slate-400 font-bold flex items-center gap-1 mr-1">
-            <i data-lucide="arrow-down-up" class="w-3.5 h-3.5 text-rose-400"></i> Ordenar:
-          </span>
-          <button class="sort-btn active px-3 py-1.5 rounded-lg font-bold bg-rose-600 text-white shadow-sm transition-all" data-sort="discount">
-            🏷️ Maior Desconto %
-          </button>
-          <button class="sort-btn px-3 py-1.5 rounded-lg font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-sort="price_asc">
-            💰 Menor Preço (R$)
-          </button>
-          <button class="sort-btn px-3 py-1.5 rounded-lg font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-sort="deals_first">
-            🔥 Super Oportunidades
-          </button>
-          <button class="sort-btn px-3 py-1.5 rounded-lg font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-sort="price_desc">
-            💎 Maior Preço
-          </button>
-        </div>
-
-        <!-- Filter Tags -->
+        <!-- Filter & Feature Tabs -->
         <div class="flex flex-wrap items-center gap-2 mt-3 pt-3 border-t border-slate-800/80">
           <span class="text-slate-400 font-bold text-xs flex items-center gap-1 mr-1">
-            <i data-lucide="filter" class="w-3.5 h-3.5 text-sky-400"></i> Setores:
+            <i data-lucide="layout-grid" class="w-3.5 h-3.5 text-sky-400"></i> Ferramentas:
           </span>
-          <button class="filter-btn active px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-sky-600 text-white transition-all" data-category="all">
-            ✨ Todos
+          <button class="filter-btn active px-3.5 py-1.5 rounded-lg text-xs font-bold bg-sky-600 text-white transition-all shadow-sm" data-category="all">
+            ✨ Todas Ofertas
+          </button>
+          <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-emerald-700 hover:bg-emerald-600 text-white transition-all shadow-md shadow-emerald-950/40 flex items-center gap-1.5" data-tab="family_list">
+            <span>📋</span> Lista & Simulador de Economia
+          </button>
+          <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-rose-700 hover:bg-rose-600 text-white transition-all shadow-md shadow-rose-950/40 flex items-center gap-1.5" data-tab="scanner">
+            <span>📸</span> Scanner & Foto no Mercado
+          </button>
+          <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-tab="timeline">
+            📈 Linha do Tempo
+          </button>
+          <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-tab="supermarkets">
+            ⚔️ Batalha 3 Redes
           </button>
           <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-category="cerveja">
             🍺 Cervejas
@@ -135,19 +134,10 @@
             🍷 Vinhos
           </button>
           <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-category="acougue">
-            🥩 Açougue & Carnes
+            🥩 Carnes
           </button>
           <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-category="limpeza">
-            🧼 Limpeza & Casa
-          </button>
-          <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-category="mercearia">
-            🍚 Mercearia & Ovos
-          </button>
-          <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-tab="timeline">
-            📈 Linha do Tempo
-          </button>
-          <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-tab="supermarkets">
-            🛒 Supermercados Locais
+            🧼 Limpeza
           </button>
           <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-tab="coupons">
             🎟️ Cupons
@@ -158,11 +148,11 @@
     </div>
   </section>
 
-  <!-- Main Content Grid -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-1 w-full">
+  <!-- Main Content Area -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full">
     
-    <!-- Price Scale Legend -->
-    <div id="scaleLegendBox" class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-4 mb-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
+    <!-- Price Scale Legend (shown on deals tab) -->
+    <div id="scaleLegendBox" class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-4 mb-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
       <div class="flex items-center gap-2 font-semibold text-slate-300">
         <i data-lucide="gauge" class="w-4 h-4 text-rose-400"></i>
         <span>Legenda do Termômetro:</span>
@@ -170,7 +160,7 @@
       <div class="flex flex-wrap items-center gap-4">
         <span class="flex items-center gap-1.5 text-emerald-400 font-medium">
           <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shadow-sm shadow-emerald-500/50"></span>
-          Excelente Preço (Menor Nível Histórico)
+          Excelente Preço (Menor Histórico)
         </span>
         <span class="flex items-center gap-1.5 text-teal-400 font-medium">
           <span class="w-2.5 h-2.5 rounded-full bg-teal-500"></span>
@@ -187,7 +177,7 @@
       </div>
     </div>
 
-    <!-- Stats Bar -->
+    <!-- Stats Bar (shown on deals tab) -->
     <div id="statsBar" class="flex items-center justify-between mb-6 text-xs text-slate-400">
       <div>Exibindo <span id="itemCount" class="font-bold text-slate-200">0</span> produtos analisados</div>
       <div class="flex items-center gap-2">
@@ -196,19 +186,233 @@
       </div>
     </div>
 
-    <!-- Deals Grid -->
+    <!-- Deals Grid (Standard View) -->
     <div id="dealsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
       <!-- Cards inseridos dinamicamente -->
     </div>
 
-    <!-- Dedicated Price Timeline Section (Conditional Tab) -->
+    <!-- ========================================================================= -->
+    <!-- 1. ABA: LISTA DA FAMÍLIA & SIMULADOR DE ECONOMIA (NOVA FERRAMENTA)        -->
+    <!-- ========================================================================= -->
+    <div id="familyListSection" class="hidden space-y-8">
+      <div class="border-b border-slate-800 pb-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-bold text-white flex items-center gap-2">
+            <span>📋</span> Lista da Família & Simulador de Economia
+          </h2>
+          <p class="text-slate-400 text-xs sm:text-sm mt-0.5">
+            Marque os itens da compra da sua família e descubra qual supermercado em Sertãozinho sai mais barato no total!
+          </p>
+        </div>
+
+        <!-- Presets Toolbar -->
+        <div class="flex flex-wrap items-center gap-2 text-xs">
+          <span class="text-slate-400 font-semibold mr-1">Pacotes Rápidos:</span>
+          <button onclick="applyPreset('basket')" class="px-3 py-1.5 rounded-lg font-bold bg-emerald-800 hover:bg-emerald-700 text-white transition-all shadow-sm">
+            🍚 Cesta do Mês
+          </button>
+          <button onclick="applyPreset('bbq')" class="px-3 py-1.5 rounded-lg font-bold bg-amber-800 hover:bg-amber-700 text-white transition-all shadow-sm">
+            🥩 Churrasco
+          </button>
+          <button onclick="applyPreset('cleaning')" class="px-3 py-1.5 rounded-lg font-bold bg-cyan-800 hover:bg-cyan-700 text-white transition-all shadow-sm">
+            🧼 Faxina
+          </button>
+          <button onclick="applyPreset('all')" class="px-2.5 py-1.5 rounded-lg font-medium bg-slate-800 hover:bg-slate-700 text-slate-300">
+            ✨ Todos
+          </button>
+          <button onclick="applyPreset('none')" class="px-2.5 py-1.5 rounded-lg font-medium bg-slate-800 hover:bg-slate-700 text-slate-400">
+            🧹 Limpar
+          </button>
+        </div>
+      </div>
+
+      <!-- Live Economy Comparison Summary (Interactive Live Dashboard) -->
+      <div class="bg-gradient-to-br from-slate-900 via-slate-900 to-emerald-950/40 border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+          <div>
+            <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Cálculo em Tempo Real</span>
+            <h3 class="text-xl font-extrabold text-white mt-0.5 flex items-center gap-2">
+              <span>🛒</span> Total da Sua Compra Selecionada (<span id="simSelectedCount">0</span> itens)
+            </h3>
+          </div>
+          <button onclick="copyListToWhatsApp()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-lg shadow-emerald-950/40 transition-all hover:scale-105">
+            <i data-lucide="share-2" class="w-4 h-4"></i>
+            <span>Copiar Lista p/ WhatsApp</span>
+          </button>
+        </div>
+
+        <!-- 4 Total Cards (Savegnago vs Copercana vs Paulistão vs Mix Ideal) -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
+            <span class="text-xs text-slate-400 font-medium">🏪 Total Savegnago</span>
+            <div id="simTotalSavegnago" class="text-xl sm:text-2xl font-black text-white mt-1">R$ 0,00</div>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
+            <span class="text-xs text-slate-400 font-medium">🏪 Total Copercana</span>
+            <div id="simTotalCopercana" class="text-xl sm:text-2xl font-black text-white mt-1">R$ 0,00</div>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
+            <span class="text-xs text-slate-400 font-medium">🏪 Total Paulistão</span>
+            <div id="simTotalPaulistao" class="text-xl sm:text-2xl font-black text-white mt-1">R$ 0,00</div>
+          </div>
+          <div class="bg-emerald-950/80 border border-emerald-600/80 rounded-2xl p-4 text-center shadow-lg shadow-emerald-950/50">
+            <span class="text-xs text-emerald-300 font-bold">🌟 Carrinho Mix Ideal</span>
+            <div id="simTotalMixed" class="text-xl sm:text-2xl font-black text-emerald-400 mt-1">R$ 0,00</div>
+          </div>
+        </div>
+
+        <!-- Savings Alert Box -->
+        <div id="simSavingsBanner" class="p-4 rounded-2xl bg-emerald-950/50 border border-emerald-700/60 text-xs text-emerald-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div class="flex items-center gap-2">
+            <span class="text-xl">🏆</span>
+            <div>
+              <strong>Supermercado Mais Barato:</strong> <span id="simWinnerStore" class="font-bold text-white">Paulistão Atacadista</span>.
+              <span id="simSingleSavingsText" class="text-emerald-300 block sm:inline sm:ml-2">Economia de R$ 0,00 frente à rede mais cara.</span>
+            </div>
+          </div>
+          <span id="simSplitSavingsBadge" class="font-extrabold bg-emerald-600 px-3.5 py-1.5 rounded-full text-white shadow-sm shrink-0">
+            Economia Dividindo: R$ 0,00
+          </span>
+        </div>
+      </div>
+
+      <!-- Checklist Items Grid by Category -->
+      <div id="familyChecklistContainer" class="space-y-6">
+        <!-- Renderizado dinamicamente via JS -->
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- 2. ABA: SCANNER DE CÓDIGO DE BARRAS & FOTO NO MERCADO                     -->
+    <!-- ========================================================================= -->
+    <div id="scannerSection" class="hidden space-y-8">
+      <div class="border-b border-slate-800 pb-4">
+        <h2 class="text-2xl font-bold text-white flex items-center gap-2">
+          <span>📸</span> Scanner & Comparador no Supermercado
+        </h2>
+        <p class="text-slate-400 text-xs sm:text-sm mt-0.5">
+          Está no corredor do mercado? Aponte a câmera para o código de barras ou tire uma foto da etiqueta de preço para saber se está barato!
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        
+        <!-- CARD 1: Câmera & Leitor de Código de Barras -->
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-xl bg-sky-600/20 text-sky-400 flex items-center justify-center text-xl font-bold">📷</div>
+              <div>
+                <h3 class="text-lg font-bold text-white">Leitor de Código de Barras (EAN-13)</h3>
+                <p class="text-xs text-slate-400">Escaneie a embalagem do produto com a câmera do celular.</p>
+              </div>
+            </div>
+
+            <!-- Video Stream Box -->
+            <div id="cameraScannerBox" class="relative bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden aspect-video flex items-center justify-center mb-4">
+              <video id="scannerVideo" class="w-full h-full object-cover hidden" playsinline></video>
+              
+              <!-- Scanning Overlay -->
+              <div id="scannerOverlay" class="absolute inset-0 hidden items-center justify-center pointer-events-none">
+                <div class="w-56 h-36 border-2 border-emerald-400 rounded-2xl relative shadow-[0_0_15px_rgba(52,211,153,0.5)]">
+                  <div class="absolute left-0 right-0 h-0.5 bg-emerald-400 scanner-laser shadow-[0_0_8px_#34d399]"></div>
+                </div>
+              </div>
+
+              <!-- Idle Prompt -->
+              <div id="scannerIdlePrompt" class="text-center p-6 text-slate-500">
+                <i data-lucide="barcode" class="w-16 h-16 mx-auto mb-2 text-slate-600"></i>
+                <p class="text-xs font-semibold text-slate-300">Câmera desativada</p>
+                <p class="text-[11px] text-slate-500 mt-0.5">Clique no botão abaixo para iniciar o leitor.</p>
+              </div>
+            </div>
+
+            <!-- Scanner Controls -->
+            <div class="flex items-center gap-3 mb-4">
+              <button id="startScanBtn" onclick="toggleBarcodeScanner()" class="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-sky-950/40 transition-all">
+                <i data-lucide="camera" class="w-4 h-4"></i>
+                <span id="startScanBtnText">Iniciar Leitor de Câmera</span>
+              </button>
+            </div>
+
+            <!-- Manual Barcode Input Fallback -->
+            <div class="flex items-center gap-2 pt-2 border-t border-slate-800/80">
+              <input type="text" id="manualBarcodeInput" placeholder="Ou digite o código de barras EAN..." class="flex-1 bg-slate-950 border border-slate-800 text-slate-200 placeholder-slate-600 rounded-xl px-3 py-2 text-xs focus:ring-1 focus:ring-sky-500 focus:outline-none" />
+              <button onclick="lookupManualBarcode()" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs">
+                Buscar
+              </button>
+            </div>
+          </div>
+
+          <!-- Scan Result Popup / Box -->
+          <div id="scanResultBox" class="mt-4 p-4 rounded-2xl bg-slate-950 border border-slate-800 hidden">
+            <!-- Renderizado dinamicamente via JS -->
+          </div>
+        </div>
+
+        <!-- CARD 2: Tirar Foto da Etiqueta de Preço / Gôndola -->
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-xl bg-rose-600/20 text-rose-400 flex items-center justify-center text-xl font-bold">📸</div>
+              <div>
+                <h3 class="text-lg font-bold text-white">Comparador de Foto / Etiqueta</h3>
+                <p class="text-xs text-slate-400">Tire foto da etiqueta no mercado e verifique o preço.</p>
+              </div>
+            </div>
+
+            <!-- Photo Upload / Capture Input -->
+            <label class="cursor-pointer block bg-slate-950 border-2 border-dashed border-slate-800 hover:border-rose-500/80 rounded-2xl p-6 text-center transition-colors mb-4">
+              <input type="file" id="shelfPhotoInput" accept="image/*" capture="environment" class="hidden" onchange="handleShelfPhotoUpload(event)" />
+              <div id="photoPlaceholder">
+                <i data-lucide="image-plus" class="w-10 h-10 mx-auto mb-2 text-rose-400"></i>
+                <span class="text-xs font-bold text-white block">Tirar Foto / Carregar Etiqueta</span>
+                <span class="text-[11px] text-slate-500 block mt-0.5">Abre a câmera do smartphone diretamente</span>
+              </div>
+              <img id="photoPreviewImg" class="max-h-44 mx-auto rounded-xl hidden object-contain" />
+            </label>
+
+            <!-- In-Store Price Comparator Form -->
+            <div class="space-y-3 bg-slate-950 border border-slate-800/80 rounded-2xl p-4">
+              <div>
+                <label class="block text-slate-400 text-xs font-semibold mb-1">Qual é o produto que você fotografou?</label>
+                <select id="shelfProductSelect" class="w-full bg-slate-900 border border-slate-700 text-slate-200 text-xs rounded-xl p-2.5 focus:ring-1 focus:ring-rose-500 focus:outline-none">
+                  <!-- Options dinâmicas -->
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-slate-400 text-xs font-semibold mb-1">Preço que você está vendo na etiqueta (R$):</label>
+                <div class="flex items-center gap-2">
+                  <span class="text-slate-500 text-xs font-bold">R$</span>
+                  <input type="number" id="shelfObservedPrice" step="0.01" placeholder="Ex: 5.19" class="flex-1 bg-slate-900 border border-slate-700 text-white font-bold text-sm rounded-xl px-3 py-2 focus:ring-1 focus:ring-rose-500 focus:outline-none" />
+                  <button onclick="compareObservedShelfPrice()" class="px-4 py-2 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs shadow-md shadow-rose-950/30">
+                    Avaliar Preço
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shelf Evaluation Result -->
+          <div id="shelfEvalResult" class="mt-4 p-4 rounded-2xl bg-slate-950 border border-slate-800 hidden">
+            <!-- Renderizado dinamicamente via JS -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- 3. ABA: LINHA DO TEMPO & EVOLUÇÃO DE PREÇOS (CHART.JS)                     -->
+    <!-- ========================================================================= -->
     <div id="timelineSection" class="hidden space-y-8">
-      <div class="border-b border-slate-800 pb-4 mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div class="border-b border-slate-800 pb-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <h2 class="text-2xl font-bold text-white flex items-center gap-2">
             <span>📈</span> Linha do Tempo & Evolução de Preços
           </h2>
-          <p class="text-slate-400 text-sm">Histórico cronológico das varreduras diárias (08h, 13h, 19h) nos supermercados de Sertãozinho.</p>
+          <p class="text-slate-400 text-xs sm:text-sm">Histórico cronológico das varreduras diárias (08h, 13h, 19h) nos supermercados de Sertãozinho.</p>
         </div>
         <div class="w-full md:w-80">
           <label class="block text-xs font-semibold text-slate-400 mb-1.5">Selecione o produto para ver a curva:</label>
@@ -269,29 +473,18 @@
       </div>
     </div>
 
-    <!-- Supermarkets Section (Conditional Tab) -->
+    <!-- ========================================================================= -->
+    <!-- 4. ABA: SUPERMERCADOS LOCAIS (BATALHA 3 REDES)                            -->
+    <!-- ========================================================================= -->
     <div id="supermarketsSection" class="hidden space-y-8">
-      <div class="border-b border-slate-800 pb-4 mb-6">
+      <div class="border-b border-slate-800 pb-4">
         <h2 class="text-2xl font-bold text-white flex items-center gap-2">
           <span>⚔️</span> Batalha de Preços: Savegnago vs Copercana vs Paulistão
         </h2>
-        <p class="text-slate-400 text-sm">Comparação de preços entre as principais redes e atacados de Sertãozinho.</p>
+        <p class="text-slate-400 text-xs sm:text-sm">Comparação direta de itens mais procurados entre as redes de Sertãozinho.</p>
       </div>
 
-      <!-- Store Battle Table / Cards -->
       <div id="battleGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
-
-      <!-- Basket Simulator Card -->
-      <div class="bg-gradient-to-br from-slate-900 via-slate-900 to-rose-950/40 border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 rounded-xl bg-rose-600/20 text-rose-400 flex items-center justify-center text-xl font-bold">🛒</div>
-          <div>
-            <h3 class="text-xl font-bold text-white">Simulador de Economia do Carrinho</h3>
-            <p class="text-xs text-slate-400">Comparativo de uma compra familiar nas redes locais de Sertãozinho.</p>
-          </div>
-        </div>
-        <div id="basketSummaryBox" class="mt-6"></div>
-      </div>
 
       <div class="border-t border-slate-800 pt-8">
         <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
@@ -301,25 +494,93 @@
       </div>
     </div>
 
-    <!-- Coupons & Tips Section (Conditional Tab) -->
+    <!-- ========================================================================= -->
+    <!-- 5. ABA: CUPONS & DICAS                                                    -->
+    <!-- ========================================================================= -->
     <div id="couponsSection" class="hidden space-y-6">
-      <div class="border-b border-slate-800 pb-4 mb-6">
+      <div class="border-b border-slate-800 pb-4">
         <h2 class="text-2xl font-bold text-white flex items-center gap-2">
           <span>🎟️</span> Cupons Ativos & Dicas de Frete Grátis
         </h2>
-        <p class="text-slate-400 text-sm">Códigos promocionais para economizar no Zé Delivery, iFood, Mercado Livre e Wine.</p>
+        <p class="text-slate-400 text-xs sm:text-sm">Códigos promocionais para economizar no Zé Delivery, iFood, Mercado Livre e Wine.</p>
       </div>
       <div id="couponsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
     </div>
 
   </main>
 
+  <!-- ========================================================================= -->
+  <!-- MODAL: LINHA DO TEMPO INDIVIDUAL DE PRODUTO                               -->
+  <!-- ========================================================================= -->
+  <div id="timelineModal" class="fixed inset-0 z-50 hidden bg-slate-950/85 backdrop-blur-md flex items-center justify-center p-4 transition-all duration-300">
+    <div class="bg-slate-900 border border-slate-700/80 rounded-3xl max-w-2xl w-full p-6 md:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      
+      <button onclick="closeTimelineModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="mb-6 pr-8">
+        <div class="flex items-center gap-2 mb-1.5">
+          <span id="modalProductStore" class="px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-slate-800 text-slate-300 border border-slate-700">Savegnago</span>
+          <span id="modalVerdictBadge" class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-700">🟢 Excelente Preço</span>
+        </div>
+        <h3 id="modalProductName" class="text-xl font-extrabold text-white leading-tight">Nome do Produto</h3>
+      </div>
+
+      <div class="grid grid-cols-3 gap-3 mb-6">
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3.5 text-center">
+          <span class="text-[11px] text-slate-400 font-medium block">Preço Atual</span>
+          <span id="modalCurrentPrice" class="text-lg font-black text-white">R$ 0,00</span>
+        </div>
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3.5 text-center">
+          <span class="text-[11px] text-emerald-400 font-medium block">Menor Histórico</span>
+          <span id="modalMinPrice" class="text-lg font-black text-emerald-400">R$ 0,00</span>
+        </div>
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3.5 text-center">
+          <span class="text-[11px] text-slate-400 font-medium block">Preço Médio</span>
+          <span id="modalAvgPrice" class="text-lg font-black text-slate-300">R$ 0,00</span>
+        </div>
+      </div>
+
+      <div class="bg-slate-950/80 border border-slate-800 rounded-2xl p-4 mb-6">
+        <span class="text-xs font-bold text-slate-300 mb-3 block flex items-center gap-1.5">
+          <i data-lucide="trending-down" class="w-4 h-4 text-emerald-400"></i> Curva de Evolução do Preço:
+        </span>
+        <div class="h-60 w-full relative">
+          <canvas id="modalTimelineChart"></canvas>
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Histórico de Varreduras:</h4>
+        <div id="modalTimelineLogList" class="space-y-2 max-h-48 overflow-y-auto pr-1"></div>
+      </div>
+
+      <div class="flex items-center gap-3 pt-2">
+        <a id="modalStoreLink" href="#" target="_blank" rel="noopener noreferrer"
+           class="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-500 hover:to-rose-600 text-white font-bold text-xs text-center transition-all shadow-lg shadow-rose-950/30">
+          Acessar Oferta na Loja
+        </a>
+        <button onclick="closeTimelineModal()" class="py-3 px-5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs transition-colors">
+          Fechar
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toastNotification" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-slate-900 border border-emerald-500 text-white text-xs font-bold px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-2">
+    <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+    <span id="toastMsg">Lista copiada com sucesso!</span>
+  </div>
+
   <!-- Footer -->
   <footer class="border-t border-slate-800 bg-slate-950 py-8 px-4 text-center text-xs text-slate-500">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
       <div>
-        <p class="font-medium text-slate-400">Beer & Wine Promo — Sertãozinho/SP</p>
-        <p class="text-slate-600 mt-1">Bebidas para maiores de 18 anos. Beba com moderação.</p>
+        <p class="font-medium text-slate-400">Beer & Market Promo — Sertãozinho/SP</p>
+        <p class="text-slate-600 mt-1">Comparador de preços locais. Economize no Savegnago, Copercana e Paulistão Atacadista.</p>
       </div>
       <div class="flex items-center gap-4">
         <a href="https://t.me/beerstz_bot" target="_blank" class="text-slate-400 hover:text-sky-400 flex items-center gap-1 transition-colors">
@@ -330,17 +591,39 @@
     </div>
   </footer>
 
-  <!-- Application Logic -->
+  <!-- ========================================================================= -->
+  <!-- JAVASCRIPT APPLICATION LOGIC                                              -->
+  <!-- ========================================================================= -->
   <script>
     let appData = {
       metadata: {},
       deals: [],
+      basic_catalog: [],
       supermarkets: [],
       wine_clubs: [],
       coupons: []
     };
     let currentCategory = 'all';
     let currentScoreFilter = null;
+    let mainChartInstance = null;
+    let modalChartInstance = null;
+
+    // Estado da Lista de Compras Familiar (Simulador)
+    let familyBasket = {}; // { item_id: { selected: true/false, qty: 1 } }
+    let isScannerRunning = false;
+    let scannerStream = null;
+
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotification');
+      const toastMsg = document.getElementById('toastMsg');
+      toastMsg.innerText = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3000);
+    }
 
     async function loadDeals() {
       try {
@@ -351,14 +634,22 @@
           document.getElementById('updateTimeTag').innerText = `Atualizado em: ${appData.metadata.updated_at}`;
         }
 
+        // Inicializa a cesta familiar padrão
+        initFamilyBasket();
+
         renderDeals();
         renderSupermarkets();
         renderCoupons();
+        renderTimelineDropdown();
+        renderShelfProductSelect();
+        renderFamilyChecklist();
+        calculateFamilyBasketEconomy();
       } catch (e) {
         console.error("Erro ao carregar dados:", e);
       }
     }
 
+    // --- 1. RENDER DEALS ---
     function renderDeals() {
       const grid = document.getElementById('dealsGrid');
       const search = (document.getElementById('searchInput').value || '').toLowerCase().trim();
@@ -411,7 +702,9 @@
           vinho: '🍷',
           limpeza: '🧼',
           acougue: '🥩',
-          mercearia: '☕',
+          mercearia: '🍚',
+          hortifruti: '🥬',
+          higiene: '🧴',
           watchlist: '⭐'
         };
         const icon = iconMap[item.category] || '🛒';
@@ -422,7 +715,6 @@
         const avgVal = item.avg_price !== undefined ? Number(item.avg_price) : (priceVal * 1.1);
         const discountPct = item.discount_pct !== undefined ? Number(item.discount_pct) : 0;
 
-        // Inteligência de Preço
         const intel = item.intelligence || {
           tag: discountPct > 10 ? 'Bom Preço' : 'Preço Normal',
           color: discountPct > 10 ? 'emerald' : 'amber',
@@ -446,7 +738,6 @@
         return `
           <div class="bg-slate-900/90 border border-slate-800 hover:border-slate-700 rounded-2xl p-5 flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-xl hover:shadow-rose-950/10">
             <div>
-              <!-- Store & Intelligence Tag -->
               <div class="flex items-center justify-between gap-2 mb-3">
                 <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700">
                   <span>${icon}</span>
@@ -459,12 +750,10 @@
                 </span>
               </div>
 
-              <!-- Product Name -->
               <h3 class="font-bold text-slate-100 text-sm leading-snug line-clamp-2 mb-3 hover:text-rose-400 transition-colors">
                 ${item.name}
               </h3>
 
-              <!-- Price Box -->
               <div class="flex items-baseline justify-between mb-4">
                 <div>
                   ${originalPrice}
@@ -475,7 +764,6 @@
                 ${discountPct > 0 ? `<span class="bg-rose-600 text-white text-xs font-extrabold px-2 py-0.5 rounded-md">-${Math.round(discountPct)}%</span>` : ''}
               </div>
 
-              <!-- Price Thermometer / History Intelligence Widget -->
               <div class="bg-slate-950/80 border border-slate-800/80 rounded-xl p-3 mb-4 space-y-2">
                 <div class="flex items-center justify-between text-[11px] text-slate-400">
                   <span>📉 Menor Histórico:</span>
@@ -511,8 +799,465 @@
       if (window.lucide) lucide.createIcons();
     }
 
+    // --- 2. LISTA DA FAMÍLIA & SIMULADOR DE ECONOMIA ---
+    function initFamilyBasket() {
+      const catalog = appData.basic_catalog || [];
+      familyBasket = {};
+      catalog.forEach(item => {
+        familyBasket[item.id] = {
+          selected: !!item.preset_basket,
+          qty: item.default_qty || 1
+        };
+      });
+    }
+
+    function renderFamilyChecklist() {
+      const container = document.getElementById('familyChecklistContainer');
+      const catalog = appData.basic_catalog || [];
+      if (!container || catalog.length === 0) return;
+
+      // Agrupa itens por category_label
+      const groups = {};
+      catalog.forEach(item => {
+        const cat = item.category_label || 'Outros Itens';
+        if (!groups[cat]) groups[cat] = [];
+        groups[cat].push(item);
+      });
+
+      let html = '';
+      for (const [catName, items] of Object.entries(groups)) {
+        html += `
+          <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 shadow-xl">
+            <h4 class="text-base font-extrabold text-white mb-4 pb-2 border-b border-slate-800 flex items-center justify-between">
+              <span>${catName}</span>
+              <span class="text-xs text-slate-400 font-normal">${items.length} itens cadastrados</span>
+            </h4>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+              ${items.map(it => {
+                const state = familyBasket[it.id] || { selected: false, qty: 1 };
+                const savP = it.savegnago.price;
+                const copP = it.copercana.price;
+                const pauP = it.paulistao.price;
+                
+                const prices = [
+                  { store: 'Savegnago', price: savP },
+                  { store: 'Copercana', price: copP },
+                  { store: 'Paulistão', price: pauP }
+                ];
+                prices.sort((a, b) => a.price - b.price);
+                const best = prices[0];
+
+                return `
+                  <div class="p-3.5 rounded-2xl border transition-all ${state.selected ? 'bg-slate-950 border-emerald-600/70 shadow-md shadow-emerald-950/20' : 'bg-slate-950/50 border-slate-800/80 opacity-75 hover:opacity-100'} flex items-center justify-between gap-3">
+                    <div class="flex items-center gap-3 flex-1 min-w-0">
+                      <input type="checkbox" id="chk_${it.id}" ${state.selected ? 'checked' : ''} onchange="toggleItemSelection('${it.id}')"
+                             class="w-5 h-5 rounded-lg text-emerald-500 bg-slate-900 border-slate-700 focus:ring-emerald-500 cursor-pointer shrink-0" />
+                      
+                      <div class="min-w-0">
+                        <label for="chk_${it.id}" class="text-xs font-bold text-white block cursor-pointer truncate hover:text-emerald-400 transition-colors">
+                          ${it.short_name || it.name}
+                        </label>
+                        <div class="flex items-center gap-2 text-[11px] mt-0.5 text-slate-400">
+                          <span class="text-emerald-400 font-bold">🏆 ${best.store}: R$ ${best.price.toFixed(2).replace('.', ',')}</span>
+                          <span>•</span>
+                          <span>${it.unit}</span>
+                          ${it.barcode ? `<span class="hidden sm:inline bg-slate-800 text-[10px] px-1.5 py-0.2 rounded text-slate-400 font-mono">EAN: ${it.barcode.slice(-4)}</span>` : ''}
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Quantity Counter Controls -->
+                    <div class="flex items-center gap-1.5 shrink-0 bg-slate-900 border border-slate-800 rounded-xl px-2 py-1">
+                      <button onclick="changeItemQty('${it.id}', -1)" class="w-5 h-5 rounded text-slate-400 hover:text-white hover:bg-slate-800 font-bold text-xs flex items-center justify-center">-</button>
+                      <span class="text-xs font-black text-white px-1 w-6 text-center">${state.qty}</span>
+                      <button onclick="changeItemQty('${it.id}', 1)" class="w-5 h-5 rounded text-slate-400 hover:text-white hover:bg-slate-800 font-bold text-xs flex items-center justify-center">+</button>
+                    </div>
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          </div>
+        `;
+      }
+
+      container.innerHTML = html;
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function toggleItemSelection(itemId) {
+      if (!familyBasket[itemId]) familyBasket[itemId] = { selected: false, qty: 1 };
+      familyBasket[itemId].selected = !familyBasket[itemId].selected;
+      renderFamilyChecklist();
+      calculateFamilyBasketEconomy();
+    }
+
+    function changeItemQty(itemId, delta) {
+      if (!familyBasket[itemId]) familyBasket[itemId] = { selected: true, qty: 1 };
+      let newQty = (familyBasket[itemId].qty || 1) + delta;
+      if (newQty < 1) newQty = 1;
+      familyBasket[itemId].qty = newQty;
+      familyBasket[itemId].selected = true; // Auto-seleciona ao aumentar quantidade
+      renderFamilyChecklist();
+      calculateFamilyBasketEconomy();
+    }
+
+    function applyPreset(presetType) {
+      const catalog = appData.basic_catalog || [];
+      catalog.forEach(item => {
+        if (!familyBasket[item.id]) familyBasket[item.id] = { selected: false, qty: item.default_qty || 1 };
+        
+        if (presetType === 'basket') {
+          familyBasket[item.id].selected = !!item.preset_basket;
+        } else if (presetType === 'bbq') {
+          familyBasket[item.id].selected = !!item.preset_bbq;
+        } else if (presetType === 'cleaning') {
+          familyBasket[item.id].selected = !!item.preset_cleaning;
+        } else if (presetType === 'all') {
+          familyBasket[item.id].selected = true;
+        } else if (presetType === 'none') {
+          familyBasket[item.id].selected = false;
+        }
+      });
+      renderFamilyChecklist();
+      calculateFamilyBasketEconomy();
+      showToast("Pacote selecionado aplicado!");
+    }
+
+    function calculateFamilyBasketEconomy() {
+      const catalog = appData.basic_catalog || [];
+      let totalSav = 0.0;
+      let totalCop = 0.0;
+      let totalPau = 0.0;
+      let totalMix = 0.0;
+      let selectedCount = 0;
+
+      catalog.forEach(it => {
+        const state = familyBasket[it.id];
+        if (state && state.selected) {
+          selectedCount += 1;
+          const qty = state.qty || 1;
+          const savCost = it.savegnago.price * qty;
+          const copCost = it.copercana.price * qty;
+          const pauCost = it.paulistao.price * qty;
+          const minCost = Math.min(savCost, copCost, pauCost);
+
+          totalSav += savCost;
+          totalCop += copCost;
+          totalPau += pauCost;
+          totalMix += minCost;
+        }
+      });
+
+      document.getElementById('simSelectedCount').innerText = selectedCount;
+      document.getElementById('simTotalSavegnago').innerText = `R$ ${totalSav.toFixed(2).replace('.', ',')}`;
+      document.getElementById('simTotalCopercana').innerText = `R$ ${totalCop.toFixed(2).replace('.', ',')}`;
+      document.getElementById('simTotalPaulistao').innerText = `R$ ${totalPau.toFixed(2).replace('.', ',')}`;
+      document.getElementById('simTotalMixed').innerText = `R$ ${totalMix.toFixed(2).replace('.', ',')}`;
+
+      // Determina o supermercado mais barato em loja única
+      const stores = [
+        { name: 'Savegnago Supermercados', total: totalSav },
+        { name: 'Supermercados Copercana', total: totalCop },
+        { name: 'Paulistão Atacadista', total: totalPau }
+      ];
+      stores.sort((a, b) => a.total - b.total);
+      
+      const winner = stores[0];
+      const maxStore = stores[stores.length - 1];
+      const singleSavings = Math.max(0, maxStore.total - winner.total);
+      const splitSavings = Math.max(0, maxStore.total - totalMix);
+
+      document.getElementById('simWinnerStore').innerText = selectedCount > 0 ? winner.name : 'Nenhum item selecionado';
+      document.getElementById('simSingleSavingsText').innerText = selectedCount > 0 
+        ? `Economia de R$ ${singleSavings.toFixed(2).replace('.', ',')} comparado ao ${maxStore.name}.`
+        : '';
+      document.getElementById('simSplitSavingsBadge').innerText = `Economia Dividindo: R$ ${splitSavings.toFixed(2).replace('.', ',')}`;
+    }
+
+    function copyListToWhatsApp() {
+      const catalog = appData.basic_catalog || [];
+      const selectedItems = catalog.filter(it => familyBasket[it.id] && familyBasket[it.id].selected);
+
+      if (selectedItems.length === 0) {
+        showToast("Selecione pelo menos um item para copiar a lista!");
+        return;
+      }
+
+      let text = `🛒 *LISTA DE COMPRAS DA FAMÍLIA (SERTÃOZINHO/SP)* 👨‍👩‍👧\n\n`;
+      let totalMix = 0;
+
+      selectedItems.forEach((it, idx) => {
+        const qty = familyBasket[it.id].qty || 1;
+        const prices = [
+          { store: 'Savegnago', price: it.savegnago.price },
+          { store: 'Copercana', price: it.copercana.price },
+          { store: 'Paulistão', price: it.paulistao.price }
+        ];
+        prices.sort((a, b) => a.price - b.price);
+        const best = prices[0];
+        const subtotal = best.price * qty;
+        totalMix += subtotal;
+
+        text += `${idx + 1}. *${it.short_name || it.name}* (x${qty} ${it.unit})\n`;
+        text += `   👉 Comprar no *${best.store}* por R$ ${best.price.toFixed(2).replace('.', ',')} (Subtotal: R$ ${subtotal.toFixed(2).replace('.', ',')})\n`;
+      });
+
+      text += `\n💰 *Total Estimado no Melhor Mix:* R$ ${totalMix.toFixed(2).replace('.', ',')}\n`;
+      text += `🌐 _Gerado pelo Beer & Market Promo Sertãozinho_`;
+
+      navigator.clipboard.writeText(text).then(() => {
+        showToast("📋 Lista formatada copiada para o WhatsApp!");
+      }).catch(err => {
+        console.error("Erro ao copiar:", err);
+        showToast("Erro ao copiar. Tente selecionar o texto.");
+      });
+    }
+
+    // --- 3. SCANNER DE CÓDIGO DE BARRAS & FOTO ---
+    async function toggleBarcodeScanner() {
+      const video = document.getElementById('scannerVideo');
+      const overlay = document.getElementById('scannerOverlay');
+      const idlePrompt = document.getElementById('scannerIdlePrompt');
+      const btnText = document.getElementById('startScanBtnText');
+
+      if (isScannerRunning) {
+        // Stop Scanner
+        if (scannerStream) {
+          scannerStream.getTracks().forEach(track => track.stop());
+        }
+        video.classList.add('hidden');
+        overlay.classList.add('hidden');
+        idlePrompt.classList.remove('hidden');
+        btnText.innerText = "Iniciar Leitor de Câmera";
+        isScannerRunning = false;
+      } else {
+        // Start Scanner
+        try {
+          scannerStream = await navigator.mediaDevices.getUserMedia({
+            video: { facingMode: "environment" }
+          });
+          video.srcObject = scannerStream;
+          video.setAttribute("playsinline", true);
+          await video.play();
+
+          video.classList.remove('hidden');
+          overlay.classList.remove('hidden');
+          idlePrompt.classList.add('hidden');
+          btnText.innerText = "Parar Câmera";
+          isScannerRunning = true;
+
+          // Inicia loop de detecção com BarcodeDetector se suportado
+          if ('BarcodeDetector' in window) {
+            const barcodeDetector = new BarcodeDetector({ formats: ['ean_13', 'ean_8', 'qr_code', 'code_128', 'upc_a'] });
+            detectBarcodeLoop(barcodeDetector);
+          } else {
+            console.log("BarcodeDetector nativo não disponível neste browser. Use a busca manual ou foto.");
+          }
+        } catch (err) {
+          console.error("Erro ao acessar câmera:", err);
+          alert("Não foi possível acessar a câmera. Verifique as permissões do seu navegador.");
+        }
+      }
+    }
+
+    async function detectBarcodeLoop(detector) {
+      const video = document.getElementById('scannerVideo');
+      if (!isScannerRunning || !video) return;
+
+      try {
+        const barcodes = await detector.detect(video);
+        if (barcodes.length > 0) {
+          const rawValue = barcodes[0].rawValue;
+          onBarcodeDetected(rawValue);
+          return;
+        }
+      } catch (e) {
+        // Ignora erros de frame
+      }
+      if (isScannerRunning) {
+        requestAnimationFrame(() => detectBarcodeLoop(detector));
+      }
+    }
+
+    function onBarcodeDetected(barcode) {
+      if (navigator.vibrate) navigator.vibrate(100);
+      showToast(`Código de barras lido: ${barcode}`);
+      lookupManualBarcode(barcode);
+    }
+
+    function lookupManualBarcode(barcodeVal) {
+      const code = (barcodeVal || document.getElementById('manualBarcodeInput').value || '').trim();
+      if (!code) {
+        alert("Digite ou escaneie um código de barras.");
+        return;
+      }
+
+      const catalog = appData.basic_catalog || [];
+      const match = catalog.find(it => it.barcode === code || (it.keywords && it.keywords.some(k => code.includes(k))));
+      const resultBox = document.getElementById('scanResultBox');
+
+      if (match) {
+        const savP = match.savegnago.price;
+        const copP = match.copercana.price;
+        const pauP = match.paulistao.price;
+        
+        const prices = [
+          { store: 'Savegnago', price: savP },
+          { store: 'Copercana', price: copP },
+          { store: 'Paulistão Atacadista', price: pauP }
+        ];
+        prices.sort((a, b) => a.price - b.price);
+        const best = prices[0];
+
+        resultBox.classList.remove('hidden');
+        resultBox.innerHTML = `
+          <div class="border-b border-slate-800 pb-2 mb-3 flex items-center justify-between">
+            <span class="text-[11px] font-bold text-emerald-400">✅ PRODUTO IDENTIFICADO NO MERCADO</span>
+            <span class="text-[10px] bg-slate-800 text-slate-300 font-mono px-2 py-0.5 rounded">EAN: ${match.barcode || code}</span>
+          </div>
+          <h4 class="font-extrabold text-white text-sm mb-3">${match.name}</h4>
+          
+          <div class="space-y-1.5 text-xs mb-3">
+            <div class="flex items-center justify-between p-2 rounded-xl bg-slate-900 border border-slate-800">
+              <span class="text-slate-300">🏪 Savegnago:</span>
+              <span class="font-bold text-white">R$ ${savP.toFixed(2).replace('.', ',')}</span>
+            </div>
+            <div class="flex items-center justify-between p-2 rounded-xl bg-slate-900 border border-slate-800">
+              <span class="text-slate-300">🏪 Copercana:</span>
+              <span class="font-bold text-white">R$ ${copP.toFixed(2).replace('.', ',')}</span>
+            </div>
+            <div class="flex items-center justify-between p-2 rounded-xl bg-slate-900 border border-slate-800">
+              <span class="text-slate-300">🏪 Paulistão Atacadista:</span>
+              <span class="font-bold text-white">R$ ${pauP.toFixed(2).replace('.', ',')}</span>
+            </div>
+          </div>
+
+          <div class="p-2.5 rounded-xl bg-emerald-950/80 border border-emerald-700/80 text-xs text-emerald-300 font-bold mb-3 flex items-center justify-between">
+            <span>🏆 Menor Preço Local:</span>
+            <span>${best.store} (R$ ${best.price.toFixed(2).replace('.', ',')})</span>
+          </div>
+
+          <button onclick="addToFamilyBasketFromScan('${match.id}')" class="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition-all shadow-md">
+            ➕ Adicionar à Minha Lista de Compras
+          </button>
+        `;
+      } else {
+        resultBox.classList.remove('hidden');
+        resultBox.innerHTML = `
+          <div class="text-center py-3 text-slate-400 text-xs">
+            <p class="font-bold text-slate-200">Código ${code} não encontrado no catálogo rápido.</p>
+            <p class="text-[11px] text-slate-500 mt-1">Envie a foto com legenda no Bot do Telegram para busca ao vivo na cidade!</p>
+          </div>
+        `;
+      }
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function addToFamilyBasketFromScan(itemId) {
+      if (!familyBasket[itemId]) familyBasket[itemId] = { selected: true, qty: 1 };
+      else familyBasket[itemId].selected = true;
+      renderFamilyChecklist();
+      calculateFamilyBasketEconomy();
+      showToast("Item adicionado à sua lista de compras!");
+    }
+
+    // Comparador de Foto na Gôndola
+    function renderShelfProductSelect() {
+      const select = document.getElementById('shelfProductSelect');
+      const catalog = appData.basic_catalog || [];
+      if (!select || catalog.length === 0) return;
+
+      select.innerHTML = catalog.map(it => `
+        <option value="${it.id}">${it.name}</option>
+      `).join('');
+    }
+
+    function handleShelfPhotoUpload(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const preview = document.getElementById('photoPreviewImg');
+        const placeholder = document.getElementById('photoPlaceholder');
+        preview.src = e.target.result;
+        preview.classList.remove('hidden');
+        placeholder.classList.add('hidden');
+        showToast("Foto carregada! Digite o preço da etiqueta para avaliar.");
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function compareObservedShelfPrice() {
+      const select = document.getElementById('shelfProductSelect');
+      const priceInput = document.getElementById('shelfObservedPrice');
+      const resultBox = document.getElementById('shelfEvalResult');
+      
+      const observedPrice = parseFloat(priceInput.value);
+      if (!observedPrice || observedPrice <= 0) {
+        alert("Por favor, digite o valor que você está vendo na etiqueta (ex: 5.19).");
+        return;
+      }
+
+      const catalog = appData.basic_catalog || [];
+      const product = catalog.find(it => it.id === select.value);
+      if (!product) return;
+
+      const savP = product.savegnago.price;
+      const copP = product.copercana.price;
+      const pauP = product.paulistao.price;
+      const minLocal = Math.min(savP, copP, pauP);
+
+      let verdictHtml = '';
+      if (observedPrice < minLocal) {
+        const diff = minLocal - observedPrice;
+        verdictHtml = `
+          <div class="p-3 rounded-xl bg-emerald-950/80 border border-emerald-600 text-emerald-300 text-xs">
+            <span class="font-extrabold text-sm block mb-1">🟢 EXCELENTE PREÇO! PODE COMPRAR! 🚀</span>
+            O valor de <strong>R$ ${observedPrice.toFixed(2).replace('.', ',')}</strong> está mais barato que toda a concorrência local em Sertãozinho! (Menor rede concorrente: R$ ${minLocal.toFixed(2).replace('.', ',')} • Economia de R$ ${diff.toFixed(2).replace('.', ',')}).
+          </div>
+        `;
+      } else if (observedPrice === minLocal) {
+        verdictHtml = `
+          <div class="p-3 rounded-xl bg-teal-950/80 border border-teal-600 text-teal-300 text-xs">
+            <span class="font-extrabold text-sm block mb-1">🟡 BOM PREÇO! EMPATADO COM O MENOR</span>
+            O valor de <strong>R$ ${observedPrice.toFixed(2).replace('.', ',')}</strong> está empatado com o menor preço praticado na cidade.
+          </div>
+        `;
+      } else {
+        const diff = observedPrice - minLocal;
+        verdictHtml = `
+          <div class="p-3 rounded-xl bg-rose-950/80 border border-rose-600 text-rose-300 text-xs">
+            <span class="font-extrabold text-sm block mb-1">🔴 ATENÇÃO: ESTÁ MAIS CARO!</span>
+            Você encontra este mesmo item por <strong>R$ ${minLocal.toFixed(2).replace('.', ',')}</strong> em outra rede de Sertãozinho (Economia de <strong>R$ ${diff.toFixed(2).replace('.', ',')}</strong> se comprar no concorrente).
+          </div>
+        `;
+      }
+
+      resultBox.classList.remove('hidden');
+      resultBox.innerHTML = `
+        <h4 class="font-bold text-white text-xs mb-2">Avaliação do Preço na Gôndola: ${product.name}</h4>
+        ${verdictHtml}
+        <div class="mt-3 grid grid-cols-3 gap-2 text-[11px] text-center">
+          <div class="p-2 rounded-lg bg-slate-900 border border-slate-800">
+            <span class="text-slate-400 block">Savegnago</span>
+            <span class="font-bold text-white">R$ ${savP.toFixed(2).replace('.', ',')}</span>
+          </div>
+          <div class="p-2 rounded-lg bg-slate-900 border border-slate-800">
+            <span class="text-slate-400 block">Copercana</span>
+            <span class="font-bold text-white">R$ ${copP.toFixed(2).replace('.', ',')}</span>
+          </div>
+          <div class="p-2 rounded-lg bg-slate-900 border border-slate-800">
+            <span class="text-slate-400 block">Paulistão</span>
+            <span class="font-bold text-white">R$ ${pauP.toFixed(2).replace('.', ',')}</span>
+          </div>
+        </div>
+      `;
+    }
+
+    // --- 4. SUPERMERCADOS BATALHA & ENCARTES ---
     function renderSupermarkets() {
-      // 1. Renderiza Batalha Savegnago vs Copercana vs Paulistão
       const battleGrid = document.getElementById('battleGrid');
       if (battleGrid && appData.store_battles) {
         battleGrid.innerHTML = appData.store_battles.map(b => {
@@ -563,40 +1308,8 @@
         }).join('');
       }
 
-      // 2. Renderiza Simulador de Carrinho
-      const basketBox = document.getElementById('basketSummaryBox');
-      if (basketBox && appData.basket_comparison) {
-        const bc = appData.basket_comparison;
-        const totalPaulistao = bc.total_paulistao !== undefined ? bc.total_paulistao : 0;
-        basketBox.innerHTML = `
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-            <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
-              <span class="text-xs text-slate-400 font-medium">Total Savegnago</span>
-              <div class="text-xl font-black text-white mt-1">R$ ${bc.total_savegnago.toFixed(2).replace('.', ',')}</div>
-            </div>
-            <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
-              <span class="text-xs text-slate-400 font-medium">Total Copercana</span>
-              <div class="text-xl font-black text-white mt-1">R$ ${bc.total_copercana.toFixed(2).replace('.', ',')}</div>
-            </div>
-            <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
-              <span class="text-xs text-slate-400 font-medium">Total Paulistão</span>
-              <div class="text-xl font-black text-white mt-1">R$ ${totalPaulistao.toFixed(2).replace('.', ',')}</div>
-            </div>
-            <div class="bg-emerald-950/80 border border-emerald-700/80 rounded-2xl p-4 text-center shadow-lg">
-              <span class="text-xs text-emerald-300 font-bold">Comprando no Melhor Mix</span>
-              <div class="text-xl font-black text-emerald-400 mt-1">R$ ${bc.total_mixed.toFixed(2).replace('.', ',')}</div>
-            </div>
-          </div>
-          <div class="p-4 rounded-xl bg-rose-950/40 border border-rose-800/60 text-xs text-rose-200 flex flex-col sm:flex-row items-center justify-between gap-2">
-            <span>🏆 <strong>Rede Mais Barata no Total:</strong> <strong>${bc.winner}</strong>.</span>
-            <span class="font-bold bg-rose-600 px-3 py-1 rounded-full text-white">Economia dividindo compras: R$ ${bc.split_store_savings.toFixed(2).replace('.', ',')}</span>
-          </div>
-        `;
-      }
-
-      // 3. Renderiza Encartes Oficiais
       const grid = document.getElementById('supermarketsGrid');
-      grid.innerHTML = appData.supermarkets.map(sm => `
+      grid.innerHTML = (appData.supermarkets || []).map(sm => `
         <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
           <div>
             <div class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-2xl mb-4">🏪</div>
@@ -614,7 +1327,6 @@
         </div>
       `).join('');
     }
-
 
     function renderCoupons() {
       const grid = document.getElementById('couponsGrid');
@@ -639,37 +1351,171 @@
       `).join('');
     }
 
-    // Event Listeners
-    document.getElementById('searchInput').addEventListener('input', renderDeals);
-    
-    document.getElementById('sortSelect').addEventListener('change', (e) => {
-      const val = e.target.value;
-      document.querySelectorAll('.sort-btn').forEach(btn => {
-        if (btn.dataset.sort === val) {
-          btn.classList.remove('bg-slate-800', 'text-slate-300');
-          btn.classList.add('bg-rose-600', 'text-white', 'font-bold');
-        } else {
-          btn.classList.remove('bg-rose-600', 'text-white', 'font-bold');
-          btn.classList.add('bg-slate-800', 'text-slate-300', 'font-semibold');
+    // --- 5. TIMELINE DROPDOWN & CHARTS (CHART.JS) ---
+    function renderTimelineDropdown() {
+      const select = document.getElementById('timelineProductSelect');
+      if (!select) return;
+      select.innerHTML = (appData.deals || []).map(p => `
+        <option value="${p.id}">${p.name} (${p.store})</option>
+      `).join('');
+
+      select.addEventListener('change', (e) => {
+        updateMainTimeline(Number(e.target.value));
+      });
+
+      if (appData.deals && appData.deals.length > 0) {
+        updateMainTimeline(appData.deals[0].id);
+      }
+    }
+
+    function updateMainTimeline(productId) {
+      const product = (appData.deals || []).find(p => p.id === productId);
+      if (!product) return;
+
+      document.getElementById('timelineProductName').innerText = product.name;
+      document.getElementById('timelineProductStore').innerText = product.store;
+      
+      const priceVal = Number(product.current_price !== undefined ? product.current_price : (product.price || 0));
+      const minVal = product.min_price !== undefined ? Number(product.min_price) : priceVal;
+      const avgVal = product.avg_price !== undefined ? Number(product.avg_price) : (priceVal * 1.1);
+      const maxVal = product.max_price !== undefined ? Number(product.max_price) : (priceVal * 1.25);
+      
+      document.getElementById('timelineCurrentPrice').innerText = `R$ ${priceVal.toFixed(2).replace('.', ',')}`;
+      document.getElementById('timelineMinPrice').innerText = `R$ ${minVal.toFixed(2).replace('.', ',')}`;
+      document.getElementById('timelineAvgPrice').innerText = `R$ ${avgVal.toFixed(2).replace('.', ',')}`;
+      document.getElementById('timelineMaxPrice').innerText = `R$ ${maxVal.toFixed(2).replace('.', ',')}`;
+      
+      const historyPoints = product.history_points || [];
+      document.getElementById('timelineTotalChecks').innerText = historyPoints.length || 1;
+
+      // Renderiza logs cronológicos
+      const logList = document.getElementById('timelineLogList');
+      if (historyPoints.length > 0) {
+        logList.innerHTML = historyPoints.map((pt, idx) => `
+          <div class="flex items-center justify-between p-3 rounded-xl bg-slate-950 border border-slate-800 text-xs">
+            <div class="flex items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+              <span class="text-slate-300 font-medium">${pt.recorded_at}</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="font-bold text-white">R$ ${Number(pt.price).toFixed(2).replace('.', ',')}</span>
+              ${pt.discount_pct > 0 ? `<span class="bg-rose-950 text-rose-300 border border-rose-800 text-[10px] font-bold px-1.5 py-0.5 rounded">-${Math.round(pt.discount_pct)}%</span>` : ''}
+            </div>
+          </div>
+        `).join('');
+      } else {
+        logList.innerHTML = `<div class="text-xs text-slate-500 py-4 text-center">Registrado recentemente.</div>`;
+      }
+
+      // Chart.js render
+      const ctx = document.getElementById('mainTimelineChart').getContext('2d');
+      if (mainChartInstance) mainChartInstance.destroy();
+
+      const labels = historyPoints.length > 0 ? historyPoints.map(p => p.recorded_at.split(' ')[0]) : ['Atual'];
+      const dataPoints = historyPoints.length > 0 ? historyPoints.map(p => p.price) : [priceVal];
+
+      mainChartInstance = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Preço (R$)',
+            data: dataPoints,
+            borderColor: '#38bdf8',
+            backgroundColor: 'rgba(56, 189, 248, 0.1)',
+            borderWidth: 3,
+            fill: true,
+            tension: 0.35,
+            pointBackgroundColor: '#e11d48',
+            pointRadius: 5
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { color: '#94a3b8', font: { size: 10 } } },
+            y: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { color: '#94a3b8', font: { size: 10 }, callback: v => 'R$ ' + v.toFixed(2) } }
+          }
         }
       });
-      renderDeals();
-    });
+    }
 
-    document.querySelectorAll('.sort-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.sort-btn').forEach(b => {
-          b.classList.remove('bg-rose-600', 'text-white', 'font-bold');
-          b.classList.add('bg-slate-800', 'text-slate-300', 'font-semibold');
-        });
-        btn.classList.remove('bg-slate-800', 'text-slate-300', 'font-semibold');
-        btn.classList.add('bg-rose-600', 'text-white', 'font-bold');
+    // Modal Timeline
+    function openTimelineModal(productId) {
+      const product = (appData.deals || []).find(p => p.id === productId);
+      if (!product) return;
 
-        const sortVal = btn.dataset.sort;
-        document.getElementById('sortSelect').value = sortVal;
-        renderDeals();
+      document.getElementById('modalProductName').innerText = product.name;
+      document.getElementById('modalProductStore').innerText = product.store;
+      document.getElementById('modalStoreLink').href = product.link || '#';
+
+      const priceVal = Number(product.current_price !== undefined ? product.current_price : (product.price || 0));
+      const minVal = product.min_price !== undefined ? Number(product.min_price) : priceVal;
+      const avgVal = product.avg_price !== undefined ? Number(product.avg_price) : (priceVal * 1.1);
+
+      document.getElementById('modalCurrentPrice').innerText = `R$ ${priceVal.toFixed(2).replace('.', ',')}`;
+      document.getElementById('modalMinPrice').innerText = `R$ ${minVal.toFixed(2).replace('.', ',')}`;
+      document.getElementById('modalAvgPrice').innerText = `R$ ${avgVal.toFixed(2).replace('.', ',')}`;
+
+      const historyPoints = product.history_points || [];
+      const logList = document.getElementById('modalTimelineLogList');
+      if (historyPoints.length > 0) {
+        logList.innerHTML = historyPoints.map(pt => `
+          <div class="flex items-center justify-between p-2 rounded-lg bg-slate-900 text-xs">
+            <span class="text-slate-400">${pt.recorded_at}</span>
+            <span class="font-bold text-white">R$ ${Number(pt.price).toFixed(2).replace('.', ',')}</span>
+          </div>
+        `).join('');
+      } else {
+        logList.innerHTML = `<div class="text-xs text-slate-500 py-2 text-center">Registro inicial efetuado.</div>`;
+      }
+
+      document.getElementById('timelineModal').classList.remove('hidden');
+
+      const ctx = document.getElementById('modalTimelineChart').getContext('2d');
+      if (modalChartInstance) modalChartInstance.destroy();
+
+      const labels = historyPoints.length > 0 ? historyPoints.map(p => p.recorded_at.split(' ')[0]) : ['Atual'];
+      const dataPoints = historyPoints.length > 0 ? historyPoints.map(p => p.price) : [priceVal];
+
+      modalChartInstance = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Preço (R$)',
+            data: dataPoints,
+            borderColor: '#34d399',
+            backgroundColor: 'rgba(52, 211, 153, 0.15)',
+            borderWidth: 3,
+            fill: true,
+            tension: 0.35,
+            pointBackgroundColor: '#e11d48',
+            pointRadius: 4
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { color: '#94a3b8', font: { size: 10 } } },
+            y: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { color: '#94a3b8', font: { size: 10 }, callback: v => 'R$ ' + v.toFixed(2) } }
+          }
+        }
       });
-    });
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function closeTimelineModal() {
+      document.getElementById('timelineModal').classList.add('hidden');
+    }
+
+    // Event Listeners
+    document.getElementById('searchInput').addEventListener('input', renderDeals);
+    document.getElementById('sortSelect').addEventListener('change', renderDeals);
 
     document.querySelectorAll('.filter-btn').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -682,55 +1528,50 @@
 
         const cat = btn.dataset.category;
         const tab = btn.dataset.tab;
-        const filter = btn.dataset.filter;
 
         const dealsGrid = document.getElementById('dealsGrid');
+        const familyListSection = document.getElementById('familyListSection');
+        const scannerSection = document.getElementById('scannerSection');
         const timelineSection = document.getElementById('timelineSection');
         const supermarketsSection = document.getElementById('supermarketsSection');
         const couponsSection = document.getElementById('couponsSection');
         const scaleLegendBox = document.getElementById('scaleLegendBox');
         const statsBar = document.getElementById('statsBar');
 
-        if (tab === 'timeline') {
-          dealsGrid.classList.add('hidden');
-          supermarketsSection.classList.add('hidden');
-          couponsSection.classList.add('hidden');
-          scaleLegendBox.classList.add('hidden');
-          statsBar.classList.add('hidden');
+        // Hide all
+        dealsGrid.classList.add('hidden');
+        familyListSection.classList.add('hidden');
+        scannerSection.classList.add('hidden');
+        timelineSection.classList.add('hidden');
+        supermarketsSection.classList.add('hidden');
+        couponsSection.classList.add('hidden');
+        scaleLegendBox.classList.add('hidden');
+        statsBar.classList.add('hidden');
+
+        if (tab === 'family_list') {
+          familyListSection.classList.remove('hidden');
+          renderFamilyChecklist();
+          calculateFamilyBasketEconomy();
+        } else if (tab === 'scanner') {
+          scannerSection.classList.remove('hidden');
+        } else if (tab === 'timeline') {
           timelineSection.classList.remove('hidden');
           const sel = document.getElementById('timelineProductSelect');
-          if (sel && sel.value) {
-            updateMainTimeline(Number(sel.value));
-          }
+          if (sel && sel.value) updateMainTimeline(Number(sel.value));
         } else if (tab === 'supermarkets') {
-          dealsGrid.classList.add('hidden');
-          timelineSection.classList.add('hidden');
-          couponsSection.classList.add('hidden');
-          scaleLegendBox.classList.add('hidden');
-          statsBar.classList.add('hidden');
           supermarketsSection.classList.remove('hidden');
         } else if (tab === 'coupons') {
-          dealsGrid.classList.add('hidden');
-          timelineSection.classList.add('hidden');
-          supermarketsSection.classList.add('hidden');
-          scaleLegendBox.classList.add('hidden');
-          statsBar.classList.add('hidden');
           couponsSection.classList.remove('hidden');
         } else {
-          timelineSection.classList.add('hidden');
-          supermarketsSection.classList.add('hidden');
-          couponsSection.classList.add('hidden');
+          dealsGrid.classList.remove('hidden');
           scaleLegendBox.classList.remove('hidden');
           statsBar.classList.remove('hidden');
-          dealsGrid.classList.remove('hidden');
           currentCategory = cat || 'all';
-          currentScoreFilter = filter || null;
           renderDeals();
         }
       });
     });
 
-    // Close modal on escape key
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeTimelineModal();
     });
@@ -738,87 +1579,5 @@
     // Initialize
     loadDeals();
   </script>
-
-  <!-- Interactive Price Timeline Modal -->
-  <div id="timelineModal" class="fixed inset-0 z-50 hidden bg-slate-950/85 backdrop-blur-md flex items-center justify-center p-4 transition-all duration-300">
-    <div class="bg-slate-900 border border-slate-700/80 rounded-3xl max-w-2xl w-full p-6 md:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
-      
-      <!-- Modal Close Button -->
-      <button onclick="closeTimelineModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
-        <i data-lucide="x" class="w-5 h-5"></i>
-      </button>
-
-      <!-- Modal Header -->
-      <div class="mb-6 pr-8">
-        <div class="flex items-center gap-2 mb-1.5">
-          <span id="modalProductStore" class="px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-slate-800 text-slate-300 border border-slate-700">Savegnago</span>
-          <span id="modalVerdictBadge" class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-700">🟢 Excelente Preço</span>
-        </div>
-        <h3 id="modalProductName" class="text-xl font-extrabold text-white leading-tight">Nome do Produto</h3>
-      </div>
-
-      <!-- Price Highlights -->
-      <div class="grid grid-cols-3 gap-3 mb-6">
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3.5 text-center">
-          <span class="text-[11px] text-slate-400 font-medium block">Preço Atual</span>
-          <span id="modalCurrentPrice" class="text-lg font-black text-white">R$ 0,00</span>
-        </div>
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3.5 text-center">
-          <span class="text-[11px] text-emerald-400 font-medium block">Menor Histórico</span>
-          <span id="modalMinPrice" class="text-lg font-black text-emerald-400">R$ 0,00</span>
-        </div>
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3.5 text-center">
-          <span class="text-[11px] text-slate-400 font-medium block">Preço Médio</span>
-          <span id="modalAvgPrice" class="text-lg font-black text-slate-300">R$ 0,00</span>
-        </div>
-      </div>
-
-      <!-- Chart Container -->
-      <div class="bg-slate-950/80 border border-slate-800 rounded-2xl p-4 mb-6">
-        <span class="text-xs font-bold text-slate-300 mb-3 block flex items-center gap-1.5">
-          <i data-lucide="trending-down" class="w-4 h-4 text-emerald-400"></i> Curva de Evolução do Preço:
-        </span>
-        <div class="h-60 w-full relative">
-          <canvas id="modalTimelineChart"></canvas>
-        </div>
-      </div>
-
-      <!-- Chronological History Points -->
-      <div class="mb-6">
-        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Histórico de Varreduras:</h4>
-        <div id="modalTimelineLogList" class="space-y-2 max-h-48 overflow-y-auto pr-1"></div>
-      </div>
-
-      <!-- Action Buttons -->
-      <div class="flex items-center gap-3 pt-2">
-        <a id="modalStoreLink" href="#" target="_blank" rel="noopener noreferrer"
-           class="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-500 hover:to-rose-600 text-white font-bold text-xs text-center transition-all shadow-lg shadow-rose-950/30">
-          Acessar Oferta na Loja
-        </a>
-        <button onclick="closeTimelineModal()" class="py-3 px-5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs transition-colors">
-          Fechar
-        </button>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="border-t border-slate-800 bg-slate-950 py-8 px-4 text-center text-xs text-slate-500">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>
-        <p class="font-medium text-slate-400">Beer & Wine Promo — Sertãozinho/SP</p>
-        <p class="text-slate-600 mt-1">Bebidas para maiores de 18 anos. Beba com moderação.</p>
-      </div>
-      <div class="flex items-center gap-4">
-        <a href="https://t.me/beerstz_bot" target="_blank" class="text-slate-400 hover:text-sky-400 flex items-center gap-1 transition-colors">
-          <i data-lucide="send" class="w-4 h-4"></i>
-          <span>Telegram Bot (@beerstz_bot)</span>
-        </a>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>
-
-

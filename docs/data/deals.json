@@ -1,7 +1,7 @@
 {
   "metadata": {
     "city": "Sertãozinho - SP",
-    "updated_at": "02/10/2026 às 15:45",
+    "updated_at": "02/10/2026 às 15:51",
     "telegram_bot": "https://t.me/beerstz_bot",
     "total_items": 64
   },
@@ -2789,6 +2789,1314 @@
       "price": 64.9
     }
   ],
+  "basic_catalog": [
+    {
+      "id": "arroz_5kg",
+      "name": "Arroz Tipo 1 Pacote 5kg (Tio João / Camil)",
+      "short_name": "Arroz Tipo 1 5kg",
+      "category": "mercearia",
+      "category_label": "🍚 Cesta Básica & Mercearia",
+      "keywords": [
+        "arroz",
+        "arroz 5kg",
+        "tio joao",
+        "camil",
+        "prato fino",
+        "arroz tipo 1"
+      ],
+      "barcode": "7896006711124",
+      "unit": "pct 5kg",
+      "default_qty": 1,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 28.9,
+        "original_price": 32.9
+      },
+      "copercana": {
+        "price": 27.9,
+        "original_price": 31.9
+      },
+      "paulistao": {
+        "price": 26.5,
+        "original_price": 29.9
+      }
+    },
+    {
+      "id": "feijao_1kg",
+      "name": "Feijão Carioca Tipo 1 1kg (Camil / Kicaldo)",
+      "short_name": "Feijão Carioca 1kg",
+      "category": "mercearia",
+      "category_label": "🍚 Cesta Básica & Mercearia",
+      "keywords": [
+        "feijao",
+        "feijão",
+        "feijao carioca",
+        "kicaldo",
+        "camil",
+        "feijao 1kg"
+      ],
+      "barcode": "7896006721017",
+      "unit": "pct 1kg",
+      "default_qty": 2,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 7.89,
+        "original_price": 8.99
+      },
+      "copercana": {
+        "price": 7.49,
+        "original_price": 8.49
+      },
+      "paulistao": {
+        "price": 6.99,
+        "original_price": 7.99
+      }
+    },
+    {
+      "id": "oleo_soja",
+      "name": "Óleo de Soja Refinado 900ml (Liza / Soya)",
+      "short_name": "Óleo de Soja 900ml",
+      "category": "mercearia",
+      "category_label": "🍚 Cesta Básica & Mercearia",
+      "keywords": [
+        "oleo",
+        "óleo",
+        "oleo de soja",
+        "soya",
+        "liza"
+      ],
+      "barcode": "7891107000101",
+      "unit": "un 900ml",
+      "default_qty": 2,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 6.89,
+        "original_price": 7.59
+      },
+      "copercana": {
+        "price": 6.79,
+        "original_price": 7.49
+      },
+      "paulistao": {
+        "price": 6.39,
+        "original_price": 6.99
+      }
+    },
+    {
+      "id": "cafe_500g",
+      "name": "Café Torrado e Moído Tradicional 500g (Pilão / 3 Corações)",
+      "short_name": "Café Tradicional 500g",
+      "category": "mercearia",
+      "category_label": "🍚 Cesta Básica & Mercearia",
+      "keywords": [
+        "cafe",
+        "café",
+        "pilao",
+        "pilão",
+        "3 coracoes",
+        "tres coracoes",
+        "cafe 500g"
+      ],
+      "barcode": "7896005800119",
+      "unit": "pct 500g",
+      "default_qty": 1,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 18.9,
+        "original_price": 22.9
+      },
+      "copercana": {
+        "price": 17.9,
+        "original_price": 21.9
+      },
+      "paulistao": {
+        "price": 16.8,
+        "original_price": 19.9
+      }
+    },
+    {
+      "id": "acucar_1kg",
+      "name": "Açúcar Refinado 1kg (União / Caravelas)",
+      "short_name": "Açúcar Refinado 1kg",
+      "category": "mercearia",
+      "category_label": "🍚 Cesta Básica & Mercearia",
+      "keywords": [
+        "acucar",
+        "açúcar",
+        "uniao",
+        "união",
+        "caravelas",
+        "acucar refinado"
+      ],
+      "barcode": "7891910000197",
+      "unit": "pct 1kg",
+      "default_qty": 2,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 4.49,
+        "original_price": 4.99
+      },
+      "copercana": {
+        "price": 4.39,
+        "original_price": 4.89
+      },
+      "paulistao": {
+        "price": 4.15,
+        "original_price": 4.69
+      }
+    },
+    {
+      "id": "sal_1kg",
+      "name": "Sal Refinado Iodado 1kg (Cisne / Lebre)",
+      "short_name": "Sal Refinado 1kg",
+      "category": "mercearia",
+      "category_label": "🍚 Cesta Básica & Mercearia",
+      "keywords": [
+        "sal",
+        "sal refinado",
+        "cisne",
+        "lebre"
+      ],
+      "barcode": "7896023700019",
+      "unit": "pct 1kg",
+      "default_qty": 1,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 2.69,
+        "original_price": 3.19
+      },
+      "copercana": {
+        "price": 2.59,
+        "original_price": 2.99
+      },
+      "paulistao": {
+        "price": 2.29,
+        "original_price": 2.79
+      }
+    },
+    {
+      "id": "farinha_trigo_1kg",
+      "name": "Farinha de Trigo Tradicional Tipo 1 1kg (Dona Benta / Renata)",
+      "short_name": "Farinha de Trigo 1kg",
+      "category": "mercearia",
+      "category_label": "🍚 Cesta Básica & Mercearia",
+      "keywords": [
+        "farinha",
+        "farinha de trigo",
+        "dona benta",
+        "renata"
+      ],
+      "barcode": "7896001251021",
+      "unit": "pct 1kg",
+      "default_qty": 1,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 4.79,
+        "original_price": 5.49
+      },
+      "copercana": {
+        "price": 4.69,
+        "original_price": 5.29
+      },
+      "paulistao": {
+        "price": 4.29,
+        "original_price": 4.99
+      }
+    },
+    {
+      "id": "macarrao_500g",
+      "name": "Macarrão com Ovos Espaguete 500g (Dona Benta / Adria / Renata)",
+      "short_name": "Macarrão Espaguete 500g",
+      "category": "mercearia",
+      "category_label": "🍚 Cesta Básica & Mercearia",
+      "keywords": [
+        "macarrao",
+        "macarrão",
+        "espaguete",
+        "adria",
+        "dona benta",
+        "renata"
+      ],
+      "barcode": "7896005202029",
+      "unit": "pct 500g",
+      "default_qty": 2,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 3.99,
+        "original_price": 4.59
+      },
+      "copercana": {
+        "price": 3.89,
+        "original_price": 4.49
+      },
+      "paulistao": {
+        "price": 3.49,
+        "original_price": 4.19
+      }
+    },
+    {
+      "id": "molho_tomate",
+      "name": "Molho de Tomate Tradicional Sachê 300g (Elefante / Fugini / Pomarola)",
+      "short_name": "Molho de Tomate 300g",
+      "category": "mercearia",
+      "category_label": "🍚 Cesta Básica & Mercearia",
+      "keywords": [
+        "molho",
+        "molho de tomate",
+        "extrato",
+        "elefante",
+        "fugini",
+        "pomarola"
+      ],
+      "barcode": "7896016400032",
+      "unit": "un 300g",
+      "default_qty": 3,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 2.29,
+        "original_price": 2.79
+      },
+      "copercana": {
+        "price": 2.19,
+        "original_price": 2.69
+      },
+      "paulistao": {
+        "price": 1.95,
+        "original_price": 2.49
+      }
+    },
+    {
+      "id": "maionese_500g",
+      "name": "Maionese Tradicional Pote 500g (Hellmann's / Heinz)",
+      "short_name": "Maionese Hellmann's 500g",
+      "category": "mercearia",
+      "category_label": "🍚 Cesta Básica & Mercearia",
+      "keywords": [
+        "maionese",
+        "hellmanns",
+        "hellmann's",
+        "heinz"
+      ],
+      "barcode": "7891038012013",
+      "unit": "un 500g",
+      "default_qty": 1,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 9.49,
+        "original_price": 11.9
+      },
+      "copercana": {
+        "price": 9.29,
+        "original_price": 11.49
+      },
+      "paulistao": {
+        "price": 8.69,
+        "original_price": 10.9
+      }
+    },
+    {
+      "id": "ovos_30un",
+      "name": "Ovos Brancos Grandes (Bandeja c/ 30 unidades)",
+      "short_name": "Ovos Brancos (Cartela c/ 30)",
+      "category": "laticinios",
+      "category_label": "🥚 Ovos & Laticínios",
+      "keywords": [
+        "ovo",
+        "ovos",
+        "cartela de ovos",
+        "bandeja de ovos",
+        "ovos brancos",
+        "ovo branco"
+      ],
+      "barcode": "7898912345012",
+      "unit": "cartela 30un",
+      "default_qty": 1,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 19.9,
+        "original_price": 23.9
+      },
+      "copercana": {
+        "price": 18.9,
+        "original_price": 22.9
+      },
+      "paulistao": {
+        "price": 17.5,
+        "original_price": 20.9
+      }
+    },
+    {
+      "id": "ovos_vermelhos_20un",
+      "name": "Ovos Vermelhos Selecionados (Bandeja c/ 20 unidades)",
+      "short_name": "Ovos Vermelhos (Cartela c/ 20)",
+      "category": "laticinios",
+      "category_label": "🥚 Ovos & Laticínios",
+      "keywords": [
+        "ovos vermelhos",
+        "ovo vermelho",
+        "ovos caipiras",
+        "ovo caipira"
+      ],
+      "barcode": "7898912345029",
+      "unit": "cartela 20un",
+      "default_qty": 1,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 16.9,
+        "original_price": 19.9
+      },
+      "copercana": {
+        "price": 16.49,
+        "original_price": 18.9
+      },
+      "paulistao": {
+        "price": 15.5,
+        "original_price": 17.9
+      }
+    },
+    {
+      "id": "leite_1l",
+      "name": "Leite Longa Vida UHT Integral 1L (Piracanjuba / Italac / Jussara)",
+      "short_name": "Leite UHT Integral 1L",
+      "category": "laticinios",
+      "category_label": "🥚 Ovos & Laticínios",
+      "keywords": [
+        "leite",
+        "leite integral",
+        "leite uht",
+        "piracanjuba",
+        "italac",
+        "jussara",
+        "leite caixa"
+      ],
+      "barcode": "7898215150011",
+      "unit": "un 1L",
+      "default_qty": 6,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 4.89,
+        "original_price": 5.49
+      },
+      "copercana": {
+        "price": 4.79,
+        "original_price": 5.29
+      },
+      "paulistao": {
+        "price": 4.49,
+        "original_price": 4.99
+      }
+    },
+    {
+      "id": "manteiga_200g",
+      "name": "Manteiga de Primeira Qualidade com Sal 200g (Aviação / Scala)",
+      "short_name": "Manteiga c/ Sal 200g",
+      "category": "laticinios",
+      "category_label": "🥚 Ovos & Laticínios",
+      "keywords": [
+        "manteiga",
+        "aviacao",
+        "aviação",
+        "scala",
+        "margarina"
+      ],
+      "barcode": "7896051110019",
+      "unit": "un 200g",
+      "default_qty": 1,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 12.9,
+        "original_price": 14.9
+      },
+      "copercana": {
+        "price": 12.49,
+        "original_price": 13.9
+      },
+      "paulistao": {
+        "price": 11.8,
+        "original_price": 13.2
+      }
+    },
+    {
+      "id": "queijo_mussarela",
+      "name": "Queijo Mussarela Fatiado Resfriado (Preço por Kg)",
+      "short_name": "Mussarela Fatiada (Kg)",
+      "category": "laticinios",
+      "category_label": "🥚 Ovos & Laticínios",
+      "keywords": [
+        "mussarela",
+        "mucarela",
+        "muçarela",
+        "queijo",
+        "queijo mussarela"
+      ],
+      "barcode": "7898123400010",
+      "unit": "kg",
+      "default_qty": 0.5,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 41.9,
+        "original_price": 48.9
+      },
+      "copercana": {
+        "price": 42.9,
+        "original_price": 49.9
+      },
+      "paulistao": {
+        "price": 38.9,
+        "original_price": 44.9
+      }
+    },
+    {
+      "id": "requeijao_200g",
+      "name": "Requeijão Cremoso Tradicional 200g (Catupiry / Vigor / Poços de Caldas)",
+      "short_name": "Requeijão Cremoso 200g",
+      "category": "laticinios",
+      "category_label": "🥚 Ovos & Laticínios",
+      "keywords": [
+        "requeijao",
+        "requeijão",
+        "catupiry",
+        "vigor",
+        "pocos de caldas"
+      ],
+      "barcode": "7891025114515",
+      "unit": "un 200g",
+      "default_qty": 1,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 8.9,
+        "original_price": 10.9
+      },
+      "copercana": {
+        "price": 8.6,
+        "original_price": 10.5
+      },
+      "paulistao": {
+        "price": 7.99,
+        "original_price": 9.9
+      }
+    },
+    {
+      "id": "picanha_kg",
+      "name": "Picanha Bovina Resfriada Peça / Kg (Friboi / Minerva)",
+      "short_name": "Picanha Bovina (Kg)",
+      "category": "acougue",
+      "category_label": "🥩 Açougue & Carnes",
+      "keywords": [
+        "picanha",
+        "picanha bovina",
+        "picanha churrasco",
+        "friboi",
+        "minerva"
+      ],
+      "barcode": "7896541230018",
+      "unit": "kg",
+      "default_qty": 1.5,
+      "preset_bbq": true,
+      "savegnago": {
+        "price": 68.9,
+        "original_price": 89.9
+      },
+      "copercana": {
+        "price": 62.9,
+        "original_price": 82.9
+      },
+      "paulistao": {
+        "price": 57.9,
+        "original_price": 74.9
+      }
+    },
+    {
+      "id": "contrafile_kg",
+      "name": "Contrafilé Bovino Resfriado (Bife / Peça) Kg",
+      "short_name": "Contrafilé Bovino (Kg)",
+      "category": "acougue",
+      "category_label": "🥩 Açougue & Carnes",
+      "keywords": [
+        "contrafile",
+        "contrafilé",
+        "contra file"
+      ],
+      "barcode": "7896541230025",
+      "unit": "kg",
+      "default_qty": 1.0,
+      "preset_bbq": true,
+      "savegnago": {
+        "price": 39.9,
+        "original_price": 49.9
+      },
+      "copercana": {
+        "price": 38.9,
+        "original_price": 47.9
+      },
+      "paulistao": {
+        "price": 36.9,
+        "original_price": 45.9
+      }
+    },
+    {
+      "id": "alcatra_kg",
+      "name": "Alcatra com Maminha Bovina Kg",
+      "short_name": "Alcatra Bovina (Kg)",
+      "category": "acougue",
+      "category_label": "🥩 Açougue & Carnes",
+      "keywords": [
+        "alcatra",
+        "alcatra bovina",
+        "maminha"
+      ],
+      "barcode": "7896541230032",
+      "unit": "kg",
+      "default_qty": 1.0,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 42.9,
+        "original_price": 52.9
+      },
+      "copercana": {
+        "price": 41.9,
+        "original_price": 49.9
+      },
+      "paulistao": {
+        "price": 38.9,
+        "original_price": 46.9
+      }
+    },
+    {
+      "id": "carne_moida_kg",
+      "name": "Carne Moída Patinho Bovino Resfriado Kg",
+      "short_name": "Carne Moída Patinho (Kg)",
+      "category": "acougue",
+      "category_label": "🥩 Açougue & Carnes",
+      "keywords": [
+        "carne moida",
+        "carne moída",
+        "patinho",
+        "moida",
+        "moída"
+      ],
+      "barcode": "7896541230049",
+      "unit": "kg",
+      "default_qty": 1.0,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 34.9,
+        "original_price": 41.9
+      },
+      "copercana": {
+        "price": 33.9,
+        "original_price": 39.9
+      },
+      "paulistao": {
+        "price": 31.9,
+        "original_price": 37.9
+      }
+    },
+    {
+      "id": "frango_file_kg",
+      "name": "Filé de Peito de Frango Resfriado Kg (Sadia / Seara)",
+      "short_name": "Filé de Peito de Frango (Kg)",
+      "category": "acougue",
+      "category_label": "🥩 Açougue & Carnes",
+      "keywords": [
+        "frango",
+        "file de peito",
+        "peito de frango",
+        "file de frango",
+        "sadia",
+        "seara"
+      ],
+      "barcode": "7891515432011",
+      "unit": "kg",
+      "default_qty": 2.0,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 17.9,
+        "original_price": 21.9
+      },
+      "copercana": {
+        "price": 16.9,
+        "original_price": 20.9
+      },
+      "paulistao": {
+        "price": 15.8,
+        "original_price": 18.9
+      }
+    },
+    {
+      "id": "linguica_toscana_kg",
+      "name": "Linguiça Toscana para Churrasco Kg (Seara / Aurora / Perdigão)",
+      "short_name": "Linguiça Toscana (Kg)",
+      "category": "acougue",
+      "category_label": "🥩 Açougue & Carnes",
+      "keywords": [
+        "linguica",
+        "linguiça",
+        "toscana",
+        "linguica toscana",
+        "seara",
+        "aurora",
+        "perdigao"
+      ],
+      "barcode": "7891515001019",
+      "unit": "kg",
+      "default_qty": 1.0,
+      "preset_bbq": true,
+      "savegnago": {
+        "price": 19.9,
+        "original_price": 24.9
+      },
+      "copercana": {
+        "price": 18.9,
+        "original_price": 23.9
+      },
+      "paulistao": {
+        "price": 16.9,
+        "original_price": 21.9
+      }
+    },
+    {
+      "id": "banana_prata_kg",
+      "name": "Banana Prata Selecionada Kg",
+      "short_name": "Banana Prata (Kg)",
+      "category": "hortifruti",
+      "category_label": "🥬 Hortifruti & Feira",
+      "keywords": [
+        "banana",
+        "banana prata",
+        "fruta"
+      ],
+      "barcode": "7890001100011",
+      "unit": "kg",
+      "default_qty": 1.5,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 7.49,
+        "original_price": 8.99
+      },
+      "copercana": {
+        "price": 6.99,
+        "original_price": 8.49
+      },
+      "paulistao": {
+        "price": 6.29,
+        "original_price": 7.99
+      }
+    },
+    {
+      "id": "tomate_italiano_kg",
+      "name": "Tomate Italiano Especial Kg",
+      "short_name": "Tomate Italiano (Kg)",
+      "category": "hortifruti",
+      "category_label": "🥬 Hortifruti & Feira",
+      "keywords": [
+        "tomate",
+        "tomate italiano",
+        "legumes"
+      ],
+      "barcode": "7890001100028",
+      "unit": "kg",
+      "default_qty": 1.0,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 7.99,
+        "original_price": 9.99
+      },
+      "copercana": {
+        "price": 7.49,
+        "original_price": 9.49
+      },
+      "paulistao": {
+        "price": 6.89,
+        "original_price": 8.99
+      }
+    },
+    {
+      "id": "cebola_nacional_kg",
+      "name": "Cebola Nacional Selecionada Kg",
+      "short_name": "Cebola Nacional (Kg)",
+      "category": "hortifruti",
+      "category_label": "🥬 Hortifruti & Feira",
+      "keywords": [
+        "cebola",
+        "cebola nacional"
+      ],
+      "barcode": "7890001100035",
+      "unit": "kg",
+      "default_qty": 1.0,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 5.99,
+        "original_price": 7.49
+      },
+      "copercana": {
+        "price": 5.79,
+        "original_price": 6.99
+      },
+      "paulistao": {
+        "price": 4.99,
+        "original_price": 6.49
+      }
+    },
+    {
+      "id": "batata_inglesa_kg",
+      "name": "Batata Inglesa Lavada Kg",
+      "short_name": "Batata Inglesa (Kg)",
+      "category": "hortifruti",
+      "category_label": "🥬 Hortifruti & Feira",
+      "keywords": [
+        "batata",
+        "batata inglesa",
+        "batata lavada"
+      ],
+      "barcode": "7890001100042",
+      "unit": "kg",
+      "default_qty": 1.5,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 6.49,
+        "original_price": 7.99
+      },
+      "copercana": {
+        "price": 6.19,
+        "original_price": 7.49
+      },
+      "paulistao": {
+        "price": 5.49,
+        "original_price": 6.99
+      }
+    },
+    {
+      "id": "sabao_omo_liquido_3l",
+      "name": "Sabão Líquido OMO Lavagem Perfeita 3 Litros",
+      "short_name": "OMO Líquido 3L",
+      "category": "limpeza",
+      "category_label": "🧼 Limpeza & Lavanderia",
+      "keywords": [
+        "sabao liquido",
+        "sabão líquido",
+        "omo",
+        "omo liquido",
+        "omo líquido",
+        "sabao omo"
+      ],
+      "barcode": "7891038531507",
+      "unit": "galão 3L",
+      "default_qty": 1,
+      "preset_cleaning": true,
+      "savegnago": {
+        "price": 38.9,
+        "original_price": 52.9
+      },
+      "copercana": {
+        "price": 39.9,
+        "original_price": 54.9
+      },
+      "paulistao": {
+        "price": 36.9,
+        "original_price": 49.9
+      }
+    },
+    {
+      "id": "sabao_omo_po_1_6kg",
+      "name": "Sabão em Pó OMO Lavagem Perfeita Caixa 1,6kg",
+      "short_name": "OMO em Pó 1.6kg",
+      "category": "limpeza",
+      "category_label": "🧼 Limpeza & Lavanderia",
+      "keywords": [
+        "sabao em po",
+        "sabão em pó",
+        "omo po",
+        "omo em pó"
+      ],
+      "barcode": "7891038530012",
+      "unit": "cx 1.6kg",
+      "default_qty": 1,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 24.9,
+        "original_price": 29.9
+      },
+      "copercana": {
+        "price": 23.9,
+        "original_price": 28.9
+      },
+      "paulistao": {
+        "price": 21.9,
+        "original_price": 26.5
+      }
+    },
+    {
+      "id": "amaciante_downy_comfort",
+      "name": "Amaciante Concentrado Downy / Comfort 1,5L",
+      "short_name": "Amaciante Concentrado 1.5L",
+      "category": "limpeza",
+      "category_label": "🧼 Limpeza & Lavanderia",
+      "keywords": [
+        "amaciante",
+        "downy",
+        "comfort",
+        "amaciante concentrado"
+      ],
+      "barcode": "7500435133609",
+      "unit": "frasco 1.5L",
+      "default_qty": 1,
+      "preset_cleaning": true,
+      "savegnago": {
+        "price": 23.9,
+        "original_price": 29.9
+      },
+      "copercana": {
+        "price": 22.9,
+        "original_price": 28.9
+      },
+      "paulistao": {
+        "price": 21.5,
+        "original_price": 26.9
+      }
+    },
+    {
+      "id": "detergente_ype",
+      "name": "Detergente Líquido Ypê 500ml (Neutro / Coco / Maçã)",
+      "short_name": "Detergente Ypê 500ml",
+      "category": "limpeza",
+      "category_label": "🧼 Limpeza & Lavanderia",
+      "keywords": [
+        "detergente",
+        "ype",
+        "ypê",
+        "detergente ype",
+        "detergente ypê"
+      ],
+      "barcode": "7896098900215",
+      "unit": "frasco 500ml",
+      "default_qty": 4,
+      "preset_cleaning": true,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 2.49,
+        "original_price": 2.99
+      },
+      "copercana": {
+        "price": 2.39,
+        "original_price": 2.89
+      },
+      "paulistao": {
+        "price": 2.15,
+        "original_price": 2.65
+      }
+    },
+    {
+      "id": "papel_higienico_neve",
+      "name": "Papel Higiênico Neve Folha Dupla Pacote c/ 12 Rolos",
+      "short_name": "Papel Neve 12 Rolos",
+      "category": "limpeza",
+      "category_label": "🧼 Limpeza & Lavanderia",
+      "keywords": [
+        "papel",
+        "papel higienico",
+        "papel higiênico",
+        "neve",
+        "papel neve"
+      ],
+      "barcode": "7896006200215",
+      "unit": "pct 12 rolos",
+      "default_qty": 2,
+      "preset_cleaning": true,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 22.9,
+        "original_price": 28.9
+      },
+      "copercana": {
+        "price": 21.9,
+        "original_price": 26.9
+      },
+      "paulistao": {
+        "price": 19.9,
+        "original_price": 24.9
+      }
+    },
+    {
+      "id": "desinfetante_pinho_sol",
+      "name": "Desinfetante Pinho Sol / Veja Perfumado 1L",
+      "short_name": "Desinfetante Pinho Sol 1L",
+      "category": "limpeza",
+      "category_label": "🧼 Limpeza & Lavanderia",
+      "keywords": [
+        "desinfetante",
+        "pinho sol",
+        "pinho",
+        "veja",
+        "multiuso"
+      ],
+      "barcode": "7891024131018",
+      "unit": "frasco 1L",
+      "default_qty": 1,
+      "preset_cleaning": true,
+      "savegnago": {
+        "price": 9.9,
+        "original_price": 12.9
+      },
+      "copercana": {
+        "price": 9.49,
+        "original_price": 11.9
+      },
+      "paulistao": {
+        "price": 8.8,
+        "original_price": 10.9
+      }
+    },
+    {
+      "id": "agua_sanitaria_2l",
+      "name": "Água Sanitária Q-Boa / Candida 2 Litros",
+      "short_name": "Água Sanitária 2L",
+      "category": "limpeza",
+      "category_label": "🧼 Limpeza & Lavanderia",
+      "keywords": [
+        "agua sanitaria",
+        "água sanitária",
+        "q-boa",
+        "candida",
+        "qboa"
+      ],
+      "barcode": "7896001000216",
+      "unit": "frasco 2L",
+      "default_qty": 1,
+      "preset_cleaning": true,
+      "savegnago": {
+        "price": 5.49,
+        "original_price": 6.99
+      },
+      "copercana": {
+        "price": 5.29,
+        "original_price": 6.49
+      },
+      "paulistao": {
+        "price": 4.69,
+        "original_price": 5.99
+      }
+    },
+    {
+      "id": "creme_dental_colgate",
+      "name": "Creme Dental Colgate Total 12 / Tripla Ação 90g",
+      "short_name": "Creme Dental Colgate 90g",
+      "category": "higiene",
+      "category_label": "🧴 Higiene Pessoal",
+      "keywords": [
+        "creme dental",
+        "pasta de dente",
+        "colgate",
+        "total 12",
+        "sorriso"
+      ],
+      "barcode": "7891024111010",
+      "unit": "tubo 90g",
+      "default_qty": 2,
+      "preset_cleaning": true,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 5.49,
+        "original_price": 6.99
+      },
+      "copercana": {
+        "price": 5.29,
+        "original_price": 6.79
+      },
+      "paulistao": {
+        "price": 4.79,
+        "original_price": 5.99
+      }
+    },
+    {
+      "id": "sabonete_dove_90g",
+      "name": "Sabonete em Barra Dove Original / Rexona 90g",
+      "short_name": "Sabonete Dove 90g",
+      "category": "higiene",
+      "category_label": "🧴 Higiene Pessoal",
+      "keywords": [
+        "sabonete",
+        "dove",
+        "rexona",
+        "palmolive",
+        "lux"
+      ],
+      "barcode": "7891150005511",
+      "unit": "un 90g",
+      "default_qty": 4,
+      "preset_cleaning": true,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 3.99,
+        "original_price": 4.99
+      },
+      "copercana": {
+        "price": 3.89,
+        "original_price": 4.79
+      },
+      "paulistao": {
+        "price": 3.49,
+        "original_price": 4.49
+      }
+    },
+    {
+      "id": "shampoo_pantene_400ml",
+      "name": "Shampoo Pantene Restauração / Seda 400ml",
+      "short_name": "Shampoo Pantene 400ml",
+      "category": "higiene",
+      "category_label": "🧴 Higiene Pessoal",
+      "keywords": [
+        "shampoo",
+        "pantene",
+        "seda",
+        "tresemme",
+        "elseve"
+      ],
+      "barcode": "7500435123013",
+      "unit": "frasco 400ml",
+      "default_qty": 1,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 22.9,
+        "original_price": 27.9
+      },
+      "copercana": {
+        "price": 21.9,
+        "original_price": 26.9
+      },
+      "paulistao": {
+        "price": 19.9,
+        "original_price": 24.9
+      }
+    },
+    {
+      "id": "heineken_lata_350ml",
+      "name": "Cerveja Heineken Puro Malte Lata 350ml",
+      "short_name": "Heineken Lata 350ml",
+      "category": "cerveja",
+      "category_label": "🍺 Bebidas & Cervejas",
+      "keywords": [
+        "heineken",
+        "heineken lata",
+        "cerveja heineken"
+      ],
+      "barcode": "7896045505012",
+      "unit": "lata 350ml",
+      "default_qty": 12,
+      "preset_bbq": true,
+      "savegnago": {
+        "price": 5.39,
+        "original_price": 5.89
+      },
+      "copercana": {
+        "price": 5.59,
+        "original_price": 5.99
+      },
+      "paulistao": {
+        "price": 5.29,
+        "original_price": 5.79
+      }
+    },
+    {
+      "id": "spaten_lata_350ml",
+      "name": "Cerveja Spaten Munich Helles Puro Malte Lata 350ml",
+      "short_name": "Spaten Lata 350ml",
+      "category": "cerveja",
+      "category_label": "🍺 Bebidas & Cervejas",
+      "keywords": [
+        "spaten",
+        "spaten lata",
+        "cerveja spaten"
+      ],
+      "barcode": "7891991015219",
+      "unit": "lata 350ml",
+      "default_qty": 12,
+      "preset_bbq": true,
+      "savegnago": {
+        "price": 4.69,
+        "original_price": 5.19
+      },
+      "copercana": {
+        "price": 4.59,
+        "original_price": 5.09
+      },
+      "paulistao": {
+        "price": 4.49,
+        "original_price": 4.99
+      }
+    },
+    {
+      "id": "corona_330ml",
+      "name": "Cerveja Corona Extra Long Neck 330ml",
+      "short_name": "Corona Long Neck 330ml",
+      "category": "cerveja",
+      "category_label": "🍺 Bebidas & Cervejas",
+      "keywords": [
+        "corona",
+        "corona extra",
+        "cerveja corona"
+      ],
+      "barcode": "7501064191310",
+      "unit": "long neck 330ml",
+      "default_qty": 6,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 6.49,
+        "original_price": 7.19
+      },
+      "copercana": {
+        "price": 6.19,
+        "original_price": 6.89
+      },
+      "paulistao": {
+        "price": 5.99,
+        "original_price": 6.59
+      }
+    },
+    {
+      "id": "amstel_lata_350ml",
+      "name": "Cerveja Amstel Puro Malte Lata 350ml",
+      "short_name": "Amstel Lata 350ml",
+      "category": "cerveja",
+      "category_label": "🍺 Bebidas & Cervejas",
+      "keywords": [
+        "amstel",
+        "amstel lata",
+        "cerveja amstel"
+      ],
+      "barcode": "7896045506019",
+      "unit": "lata 350ml",
+      "default_qty": 12,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 3.99,
+        "original_price": 4.39
+      },
+      "copercana": {
+        "price": 3.99,
+        "original_price": 4.39
+      },
+      "paulistao": {
+        "price": 3.79,
+        "original_price": 4.19
+      }
+    },
+    {
+      "id": "coca_cola_2l",
+      "name": "Refrigerante Coca-Cola Pet 2 Litros (Original / Sem Açúcar)",
+      "short_name": "Coca-Cola 2L",
+      "category": "cerveja",
+      "category_label": "🍺 Bebidas & Cervejas",
+      "keywords": [
+        "coca",
+        "coca cola",
+        "coca-cola",
+        "refrigerante"
+      ],
+      "barcode": "7894900010015",
+      "unit": "pet 2L",
+      "default_qty": 2,
+      "preset_bbq": true,
+      "preset_basket": true,
+      "savegnago": {
+        "price": 9.49,
+        "original_price": 10.49
+      },
+      "copercana": {
+        "price": 9.29,
+        "original_price": 10.19
+      },
+      "paulistao": {
+        "price": 8.79,
+        "original_price": 9.69
+      }
+    },
+    {
+      "id": "guarana_antarctica_2l",
+      "name": "Refrigerante Guaraná Antarctica Pet 2 Litros",
+      "short_name": "Guaraná Antarctica 2L",
+      "category": "cerveja",
+      "category_label": "🍺 Bebidas & Cervejas",
+      "keywords": [
+        "guarana",
+        "guaraná",
+        "antarctica",
+        "guarana antarctica"
+      ],
+      "barcode": "7891991000840",
+      "unit": "pet 2L",
+      "default_qty": 2,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 7.99,
+        "original_price": 8.99
+      },
+      "copercana": {
+        "price": 7.89,
+        "original_price": 8.79
+      },
+      "paulistao": {
+        "price": 7.39,
+        "original_price": 8.29
+      }
+    },
+    {
+      "id": "casillero_cabernet",
+      "name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon 750ml",
+      "short_name": "Casillero del Diablo 750ml",
+      "category": "vinho",
+      "category_label": "🍷 Vinhos & Espumantes",
+      "keywords": [
+        "casillero",
+        "casillero del diablo",
+        "vinho casillero"
+      ],
+      "barcode": "7804320087114",
+      "unit": "garrafa 750ml",
+      "default_qty": 1,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 49.9,
+        "original_price": 64.9
+      },
+      "copercana": {
+        "price": 51.9,
+        "original_price": 66.9
+      },
+      "paulistao": {
+        "price": 47.9,
+        "original_price": 59.9
+      }
+    },
+    {
+      "id": "concha_toro_reservado",
+      "name": "Vinho Chileno Concha y Toro Reservado Tinto 750ml",
+      "short_name": "Concha y Toro Reservado 750ml",
+      "category": "vinho",
+      "category_label": "🍷 Vinhos & Espumantes",
+      "keywords": [
+        "concha y toro",
+        "reservado",
+        "vinho reservado"
+      ],
+      "barcode": "7804320743119",
+      "unit": "garrafa 750ml",
+      "default_qty": 1,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 33.9,
+        "original_price": 39.9
+      },
+      "copercana": {
+        "price": 34.9,
+        "original_price": 41.9
+      },
+      "paulistao": {
+        "price": 31.9,
+        "original_price": 37.9
+      }
+    }
+  ],
   "store_battles": [
     {
       "query": "Heineken",
@@ -2936,7 +4244,7 @@
     },
     {
       "query": "Picanha",
-      "product_name": "Picanha Bovina Resfriada Peça / Kg",
+      "product_name": "Picanha Bovina Resfriada Peça / Kg (Friboi / Minerva)",
       "savegnago": {
         "name": "Picanha Bovina Peça / Kg (Açougue Savegnago)",
         "store": "Savegnago Supermercados",
