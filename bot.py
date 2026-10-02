@@ -312,16 +312,35 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         parse_mode="Markdown"
     )
     
-    # 1. Verifica se temos dados no histórico SQLite com inteligência
+    # 1. Batalha Direta: Savegnago vs Copercana
+    from services.supermarket_comparator import compare_product_in_stores
+    battle = compare_product_in_stores(query_text)
+    
+    # 2. Histórico SQLite
     history_records = get_product_history(query_text, limit=3)
     
-    # 2. Gera links diretos nos marketplaces
-    results = search_mercadolivre(query_text, limit=4)
+    # 3. Links diretos nos marketplaces
+    results = search_mercadolivre(query_text, limit=3)
     
-    msg_lines = [f"🎯 *ANÁLISE DE PREÇOS PARA:* `{query_text}`\n"]
+    msg_lines = [f"🎯 *ANÁLISE & BATALHA DE PREÇOS:* `{query_text}`\n"]
     
+    # Seção Batalha Local
+    if battle.get("savegnago") or battle.get("copercana"):
+        msg_lines.append("⚔️ *SUPERMERCADOS DE SERTÃOZINHO:*")
+        if battle.get("savegnago"):
+            msg_lines.append(f"🏪 *Savegnago:* R$ {battle['savegnago']['price']:.2f}")
+        if battle.get("copercana"):
+            msg_lines.append(f"🏪 *Copercana:* R$ {battle['copercana']['price']:.2f}")
+            
+        if battle.get("winner") and battle["winner"] != "Empate":
+            msg_lines.append(f"🏆 *Mais Barato no {battle['winner']}* (Economia de R$ {battle['diff_amount']:.2f} / {battle['diff_pct']}%!)\n")
+        elif battle.get("winner") == "Empate":
+            msg_lines.append("🤝 *Mesmo preço em ambas as redes!*\n")
+        else:
+            msg_lines.append("")
+
     if history_records:
-        msg_lines.append("📊 *HISTÓRICO & AVALIAÇÃO DO ROBÔ:*")
+        msg_lines.append("📊 *HISTÓRICO & AVALIAÇÃO:*")
         for hr in history_records:
             intel = analyze_price_quality(
                 current_price=hr["current_price"],
@@ -331,13 +350,12 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
             msg_lines.append(
                 f"{intel['emoji']} *{hr['name']}*\n"
                 f"  💰 Preço Atual: *R$ {hr['current_price']:.2f}*\n"
-                f"  📉 Menor Já Visto: *R$ {hr['min_price']:.2f}* | Média: R$ {hr['avg_price']:.2f}\n"
+                f"  📉 Menor Visto: *R$ {hr['min_price']:.2f}* | Média: R$ {hr['avg_price']:.2f}\n"
                 f"  🏷️ *Termômetro:* {intel['verdict']}\n"
-                f"  💡 _{intel['advice']}_\n"
             )
         msg_lines.append("")
         
-    msg_lines.append("🛒 *LINKS DE COMPRA DIRETA & ENTREGA RÁPIDA:*")
+    msg_lines.append("🛒 *LINKS DE COMPRA & ENTREGA RÁPIDA:*")
     for idx, item in enumerate(results, start=1):
         line = (
             f"*{idx}. {item['title']}*\n"
@@ -348,6 +366,7 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         msg_lines.append(line)
         
     back_keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("🛒 Comparar Carrinho da Família", callback_data="menu_basket")],
         [InlineKeyboardButton("🔙 Voltar ao Menu Principal", callback_data="menu_start")]
     ])
     
@@ -357,6 +376,82 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         parse_mode="Markdown",
         disable_web_page_preview=True
     )
+
+async def handle_basket_comparison(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Calcula o comparativo de economia de toda a lista de compras no Savegnago vs Copercana."""
+    query = update.callback_query
+    if query:
+        await query.answer()
+        chat_id = update.effective_chat.id
+    else:
+        chat_id = update.effective_chat.id
+
+    from database import get_watchlist
+    from services.supermarket_comparator import compare_shopping_basket
+    
+    watchlist = get_watchlist(chat_id=chat_id)
+    if not watchlist:
+        watchlist = [
+            {"item_name": "Heineken"},
+            {"item_name": "Spaten"},
+            {"item_name": "Casillero"},
+            {"item_name": "Picanha"},
+            {"item_name": "OMO"}
+        ]
+        is_sample = True
+    else:
+        is_sample = False
+
+    res = compare_shopping_basket(watchlist)
+    
+    lines = [
+        "🛒 *COMPARADOR DE CARRINHO: SAVEGNAGO vs COPERCANA* ⚔️\n",
+        f"Simulação para **{res['total_items']} itens** da lista:\n",
+        f"🏪 **Total no Savegnago:** `R$ {res['total_savegnago']:.2f}`",
+        f"🏪 **Total no Copercana:** `R$ {res['total_copercana']:.2f}`",
+        f"✨ **Total Comprando Fracionado (Melhor Preço):** `R$ {res['total_mixed']:.2f}`\n"
+    ]
+    
+    if res["winner"] != "Empate":
+        lines.append(
+            f"🏆 *REDE MAIS ECONÔMICA:* **{res['winner']}**\n"
+            f"💰 *Economia em loja única:* **R$ {res['single_store_savings']:.2f} ({res['single_store_savings_pct']}%)**\n"
+            f"💡 *Economia dividindo os itens:* **R$ {res['split_store_savings']:.2f}**\n"
+        )
+    else:
+        lines.append("🤝 **Empate técnico entre as duas redes!**\n")
+        
+    lines.append("📋 *DETALHAMENTO POR PRODUTO:*")
+    for it in res["items"][:5]:
+        lines.append(
+            f"• *{it['item_name']}:*\n"
+            f"  Savegnago: R$ {it['price_savegnago']:.2f} | Copercana: R$ {it['price_copercana']:.2f}\n"
+            f"  👉 Mais barato no *{it['best_store']}*"
+        )
+        
+    if is_sample:
+        lines.append("\n_*(Exemplo com itens padrão. Adicione os seus com /vigiar para uma simulação personalizada!)*_")
+
+    back_keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("📝 Ver Minha Lista", callback_data="menu_watchlist")],
+        [InlineKeyboardButton("🔙 Voltar ao Menu Principal", callback_data="menu_start")]
+    ])
+
+    if query:
+        await query.edit_message_text(
+            "\n".join(lines),
+            reply_markup=back_keyboard,
+            parse_mode="Markdown",
+            disable_web_page_preview=True
+        )
+    elif update.message:
+        await update.message.reply_text(
+            "\n".join(lines),
+            reply_markup=back_keyboard,
+            parse_mode="Markdown",
+            disable_web_page_preview=True
+        )
+
 
 async def handle_run_now(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Executa a varredura nos sites imediatamente sob demanda."""
@@ -665,6 +760,8 @@ async def callback_router(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await handle_microsite(update, context)
     elif data == "menu_how_to_watch":
         await handle_how_to_watch(update, context)
+    elif data == "menu_basket":
+        await handle_basket_comparison(update, context)
     elif data == "menu_toggle_alerts":
         await handle_toggle_alerts(update, context)
 
@@ -684,6 +781,7 @@ def main():
     app.add_handler(CommandHandler(["start", "ajuda", "menu"], start_command))
     app.add_handler(CommandHandler(["vigiar", "adicionar"], watch_command))
     app.add_handler(CommandHandler(["minhalista", "lista"], handle_watchlist))
+    app.add_handler(CommandHandler(["carrinho", "comparar", "economia"], handle_basket_comparison))
     app.add_handler(CommandHandler(["remover", "deletar"], remove_watch_command))
     app.add_handler(CommandHandler("buscar", search_command))
     app.add_handler(CommandHandler("historico", handle_history))
@@ -692,11 +790,12 @@ def main():
     app.add_handler(CallbackQueryHandler(callback_router))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, search_command))
 
-    print("🚀 Bot de Promoções da Família (Sertãozinho) iniciado com sucesso!")
+    print("🚀 Bot de Promoções de Bebidas & Mercado (Sertãozinho) iniciado com sucesso!")
     print("⏰ Agendamento: 4 buscas diárias (08:00, 12:00, 16:00, 20:00).")
     print("💾 Banco de Dados SQLite: promotions_history.db pronto.")
     
     app.run_polling()
+
 
 if __name__ == "__main__":
     main()

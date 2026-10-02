@@ -1,7 +1,7 @@
 {
   "metadata": {
     "city": "Sertãozinho - SP",
-    "updated_at": "02/10/2026 às 15:11",
+    "updated_at": "02/10/2026 às 12:17",
     "telegram_bot": "https://t.me/beerstz_bot",
     "total_items": 43
   },
@@ -1082,6 +1082,163 @@
       }
     }
   ],
+  "store_battles": [
+    {
+      "query": "Heineken",
+      "savegnago": {
+        "name": "Cerveja Heineken Puro Malte Lata 350ml (Savegnago)",
+        "store": "Savegnago Supermercados",
+        "link": "https://www.savegnago.com.br/busca?ft=heineken",
+        "price": 5.49,
+        "original_price": 5.99
+      },
+      "copercana": null,
+      "marketplace": {
+        "name": "Pack Cerveja Heineken 12 Latas 350ml (Mercado Envios Full)",
+        "store": "Mercado Livre Full",
+        "link": "https://lista.mercadolivre.com.br/cerveja-heineken-pack_OrderId_PRICE*ASC_Shipping_fulfillment",
+        "price": 62.28,
+        "original_price": 71.88
+      },
+      "winner": null,
+      "diff_amount": 0.0,
+      "diff_pct": 0.0
+    },
+    {
+      "query": "Spaten",
+      "savegnago": {
+        "name": "Cerveja Spaten Munich Helles Lata 350ml (Savegnago)",
+        "store": "Savegnago Supermercados",
+        "link": "https://www.savegnago.com.br/busca?ft=spaten",
+        "price": 4.69,
+        "original_price": 5.19
+      },
+      "copercana": null,
+      "marketplace": {
+        "name": "Pack Cerveja Spaten Puro Malte 12 Latas 350ml (Mercado Envios Full)",
+        "store": "Mercado Livre Full",
+        "link": "https://lista.mercadolivre.com.br/cerveja-spaten-pack_OrderId_PRICE*ASC_Shipping_fulfillment",
+        "price": 52.68,
+        "original_price": 59.9
+      },
+      "winner": null,
+      "diff_amount": 0.0,
+      "diff_pct": 0.0
+    },
+    {
+      "query": "Corona",
+      "savegnago": null,
+      "copercana": null,
+      "marketplace": {
+        "name": "Cerveja Corona Extra 330ml Pack com 6 unidades (Amazon Prime)",
+        "store": "Amazon Brasil",
+        "link": "https://www.amazon.com.br/s?k=cerveja+corona+pack&i=grocery",
+        "price": 37.9,
+        "original_price": 44.9
+      },
+      "winner": null,
+      "diff_amount": 0.0,
+      "diff_pct": 0.0
+    },
+    {
+      "query": "Casillero",
+      "savegnago": {
+        "name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon 750ml (Savegnago)",
+        "store": "Savegnago Supermercados",
+        "link": "https://www.savegnago.com.br/busca?ft=casillero",
+        "price": 49.9,
+        "original_price": 64.9
+      },
+      "copercana": null,
+      "marketplace": {
+        "name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon (Amazon Prime)",
+        "store": "Amazon Brasil",
+        "link": "https://www.amazon.com.br/s?k=vinho+casillero+del+diablo&i=grocery",
+        "price": 48.9,
+        "original_price": 62.0
+      },
+      "winner": null,
+      "diff_amount": 0.0,
+      "diff_pct": 0.0
+    },
+    {
+      "query": "Picanha",
+      "savegnago": {
+        "name": "Picanha Bovina Peça / Kg (Açougue Savegnago)",
+        "store": "Savegnago Supermercados",
+        "link": "https://www.savegnago.com.br/busca?ft=picanha",
+        "price": 59.9,
+        "original_price": 79.9
+      },
+      "copercana": null,
+      "marketplace": null,
+      "winner": null,
+      "diff_amount": 0.0,
+      "diff_pct": 0.0
+    },
+    {
+      "query": "Sabão Líquido OMO",
+      "savegnago": {
+        "name": "Sabão Líquido OMO Lavagem Perfeita 3 Litros (Savegnago)",
+        "store": "Savegnago Supermercados",
+        "link": "https://www.savegnago.com.br/busca?ft=omo+liquido",
+        "price": 38.9,
+        "original_price": 52.9
+      },
+      "copercana": null,
+      "marketplace": null,
+      "winner": null,
+      "diff_amount": 0.0,
+      "diff_pct": 0.0
+    }
+  ],
+  "basket_comparison": {
+    "total_items": 5,
+    "total_savegnago": 158.88,
+    "total_copercana": 125.0,
+    "total_mixed": 85.18,
+    "winner": "Copercana",
+    "single_store_savings": 33.88,
+    "single_store_savings_pct": 21.3,
+    "split_store_savings": 73.7,
+    "items": [
+      {
+        "item_name": "Heineken",
+        "price_savegnago": 5.49,
+        "price_copercana": 25.0,
+        "best_store": "Savegnago",
+        "savings": 19.509999999999998
+      },
+      {
+        "item_name": "Spaten",
+        "price_savegnago": 4.69,
+        "price_copercana": 25.0,
+        "best_store": "Savegnago",
+        "savings": 20.31
+      },
+      {
+        "item_name": "Casillero",
+        "price_savegnago": 49.9,
+        "price_copercana": 25.0,
+        "best_store": "Copercana",
+        "savings": 24.9
+      },
+      {
+        "item_name": "Picanha",
+        "price_savegnago": 59.9,
+        "price_copercana": 25.0,
+        "best_store": "Copercana",
+        "savings": 34.9
+      },
+      {
+        "item_name": "OMO",
+        "price_savegnago": 38.9,
+        "price_copercana": 25.0,
+        "best_store": "Copercana",
+        "savings": 13.899999999999999
+      }
+    ]
+  },
   "supermarkets": [
     {
       "name": "Supermercados Savegnago (Sertãozinho)",

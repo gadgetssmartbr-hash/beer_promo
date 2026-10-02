@@ -177,14 +177,35 @@
     </div>
 
     <!-- Supermarkets Section (Conditional Tab) -->
-    <div id="supermarketsSection" class="hidden space-y-6">
+    <div id="supermarketsSection" class="hidden space-y-8">
       <div class="border-b border-slate-800 pb-4 mb-6">
         <h2 class="text-2xl font-bold text-white flex items-center gap-2">
-          <span>🏪</span> Supermercados com Atendimento em Sertãozinho
+          <span>⚔️</span> Batalha Direta: Savegnago vs Copercana
         </h2>
-        <p class="text-slate-400 text-sm">Acesse diretamente os encartes digitais e canais de compras da cidade.</p>
+        <p class="text-slate-400 text-sm">Comparação em tempo real de preços entre as duas maiores redes de Sertãozinho.</p>
       </div>
-      <div id="supermarketsGrid" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+
+      <!-- Store Battle Table / Cards -->
+      <div id="battleGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+
+      <!-- Basket Simulator Card -->
+      <div class="bg-gradient-to-br from-slate-900 via-slate-900 to-rose-950/40 border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-rose-600/20 text-rose-400 flex items-center justify-center text-xl font-bold">🛒</div>
+          <div>
+            <h3 class="text-xl font-bold text-white">Simulador de Economia do Carrinho</h3>
+            <p class="text-xs text-slate-400">Comparativo de uma compra com cervejas, vinhos, carnes e limpeza nas duas redes.</p>
+          </div>
+        </div>
+        <div id="basketSummaryBox" class="mt-6"></div>
+      </div>
+
+      <div class="border-t border-slate-800 pt-8">
+        <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+          <span>🏪</span> Canais de Atendimento & Encartes
+        </h3>
+        <div id="supermarketsGrid" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+      </div>
     </div>
 
     <!-- Coupons & Tips Section (Conditional Tab) -->
@@ -197,6 +218,7 @@
       </div>
       <div id="couponsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
     </div>
+
   </main>
 
   <!-- Footer -->
@@ -385,6 +407,70 @@
     }
 
     function renderSupermarkets() {
+      // 1. Renderiza Batalha Savegnago vs Copercana
+      const battleGrid = document.getElementById('battleGrid');
+      if (battleGrid && appData.store_battles) {
+        battleGrid.innerHTML = appData.store_battles.map(b => {
+          const savPrice = b.savegnago ? `R$ ${b.savegnago.price.toFixed(2).replace('.', ',')}` : 'Não disponível';
+          const copPrice = b.copercana ? `R$ ${b.copercana.price.toFixed(2).replace('.', ',')}` : 'Não disponível';
+          const winnerText = b.winner === 'Savegnago' 
+            ? '🏆 Mais barato no Savegnago' 
+            : (b.winner === 'Copercana' ? '🏆 Mais barato no Copercana' : '🤝 Mesmo Preço');
+          const winnerColor = b.winner === 'Savegnago' ? 'text-emerald-400' : (b.winner === 'Copercana' ? 'text-teal-400' : 'text-slate-400');
+          const diffBadge = b.diff_amount > 0 ? `<span class="text-xs text-rose-400 font-bold ml-1.5">(Economia: R$ ${b.diff_amount.toFixed(2).replace('.', ',')})</span>` : '';
+
+          return `
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between">
+              <div>
+                <span class="text-xs text-slate-500 uppercase font-bold tracking-wider">Batalha Direta</span>
+                <h4 class="font-bold text-white text-base mt-1 mb-4">${b.query}</h4>
+                <div class="space-y-2 text-xs">
+                  <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-950 border border-slate-800">
+                    <span class="text-slate-300 font-medium">🏪 Savegnago:</span>
+                    <span class="font-bold text-white">${savPrice}</span>
+                  </div>
+                  <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-950 border border-slate-800">
+                    <span class="text-slate-300 font-medium">🏪 Copercana:</span>
+                    <span class="font-bold text-white">${copPrice}</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-4 mt-3 border-t border-slate-800/80 text-xs font-semibold ${winnerColor} flex items-center justify-between">
+                <span>${winnerText}</span>
+                ${diffBadge}
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      // 2. Renderiza Simulador de Carrinho
+      const basketBox = document.getElementById('basketSummaryBox');
+      if (basketBox && appData.basket_comparison) {
+        const bc = appData.basket_comparison;
+        basketBox.innerHTML = `
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
+              <span class="text-xs text-slate-400 font-medium">Compra Total Savegnago</span>
+              <div class="text-2xl font-black text-white mt-1">R$ ${bc.total_savegnago.toFixed(2).replace('.', ',')}</div>
+            </div>
+            <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
+              <span class="text-xs text-slate-400 font-medium">Compra Total Copercana</span>
+              <div class="text-2xl font-black text-white mt-1">R$ ${bc.total_copercana.toFixed(2).replace('.', ',')}</div>
+            </div>
+            <div class="bg-emerald-950/80 border border-emerald-700/80 rounded-2xl p-4 text-center shadow-lg">
+              <span class="text-xs text-emerald-300 font-bold">Comprando Fracionado (Melhor Mix)</span>
+              <div class="text-2xl font-black text-emerald-400 mt-1">R$ ${bc.total_mixed.toFixed(2).replace('.', ',')}</div>
+            </div>
+          </div>
+          <div class="p-4 rounded-xl bg-rose-950/40 border border-rose-800/60 text-xs text-rose-200 flex flex-col sm:flex-row items-center justify-between gap-2">
+            <span>🏆 <strong>Vencedor do Carrinho:</strong> Supermercado mais barato é o <strong>${bc.winner}</strong>.</span>
+            <span class="font-bold bg-rose-600 px-3 py-1 rounded-full text-white">Economia de até R$ ${bc.split_store_savings.toFixed(2).replace('.', ',')}</span>
+          </div>
+        `;
+      }
+
+      // 3. Renderiza Encartes Oficiais
       const grid = document.getElementById('supermarketsGrid');
       grid.innerHTML = appData.supermarkets.map(sm => `
         <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
@@ -404,6 +490,7 @@
         </div>
       `).join('');
     }
+
 
     function renderCoupons() {
       const grid = document.getElementById('couponsGrid');

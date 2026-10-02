@@ -32,7 +32,22 @@ def export_deals_to_json() -> str:
     products_db = get_all_products_with_intelligence()
 
 
-    # 2. Monta o payload final
+    # 2. Gera comparativos diretos Savegnago vs Copercana
+    from services.supermarket_comparator import compare_product_in_stores, compare_shopping_basket
+    sample_queries = ["Heineken", "Spaten", "Corona", "Casillero", "Picanha", "Sabão Líquido OMO"]
+    store_battles = [compare_product_in_stores(q) for q in sample_queries]
+
+    # 3. Simulação de Carrinho
+    sample_basket = [
+        {"item_name": "Heineken"},
+        {"item_name": "Spaten"},
+        {"item_name": "Casillero"},
+        {"item_name": "Picanha"},
+        {"item_name": "OMO"}
+    ]
+    basket_analysis = compare_shopping_basket(sample_basket)
+
+    # 4. Monta o payload final
     payload: Dict[str, Any] = {
         "metadata": {
             "city": "Sertãozinho - SP",
@@ -41,10 +56,13 @@ def export_deals_to_json() -> str:
             "total_items": len(products_db)
         },
         "deals": products_db,
+        "store_battles": store_battles,
+        "basket_comparison": basket_analysis,
         "supermarkets": get_local_supermarkets(),
         "wine_clubs": get_wine_clubs_promos(),
         "coupons": get_active_coupons_and_tips()
     }
+
 
     with open(OUTPUT_JSON_PATH, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)

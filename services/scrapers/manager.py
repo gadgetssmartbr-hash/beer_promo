@@ -4,6 +4,7 @@ Gerenciador central de busca e persistência de histórico de promoções.
 from typing import List, Dict, Any
 from database import save_price_record, get_recent_price_drops, get_watchlist
 from .savegnago_scraper import scrape_savegnago_deals
+from .copercana_scraper import scrape_copercana_deals
 from .mercadolivre_scraper import scrape_mercadolivre_deals
 from .wine_scraper import scrape_wine_evino_deals
 from .amazon_scraper import scrape_amazon_deals
@@ -26,6 +27,12 @@ def run_all_scrapers() -> Dict[str, Any]:
         all_deals.extend(scrape_savegnago_deals(watchlist_items))
     except Exception as e:
         print(f"Erro no scraper Savegnago: {e}")
+
+    try:
+        all_deals.extend(scrape_copercana_deals(watchlist_items))
+    except Exception as e:
+        print(f"Erro no scraper Copercana: {e}")
+
 
         
     try:
