@@ -179,5 +179,54 @@ def get_subscribers() -> List[int]:
         cursor.execute("SELECT chat_id FROM subscribers")
         return [row["chat_id"] for row in cursor.fetchall()]
 
+
+def get_all_products_with_intelligence() -> List[Dict[str, Any]]:
+    """
+    Retorna todos os produtos com inteligência de preço, menor histórico,
+    preço médio, classificação (Excelente, Bom, Médio, Alto) e conselho de compra.
+    """
+    from services.price_intelligence import analyze_price_quality
+
+    with get_connection() as conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            SELECT p.id, p.name, p.category, p.store, p.link,
+                   MIN(ph.price) as min_price,
+                   AVG(ph.price) as avg_price,
+                   MAX(ph.price) as max_price,
+                   COUNT(ph.id) as total_checks,
+                   (SELECT ph2.price FROM price_history ph2 WHERE ph2.product_id = p.id ORDER BY ph2.recorded_at DESC LIMIT 1) as current_price,
+                   (SELECT ph2.original_price FROM price_history ph2 WHERE ph2.product_id = p.id ORDER BY ph2.recorded_at DESC LIMIT 1) as original_price,
+                   (SELECT ph2.discount_pct FROM price_history ph2 WHERE ph2.product_id = p.id ORDER BY ph2.recorded_at DESC LIMIT 1) as discount_pct,
+                   (SELECT ph2.recorded_at FROM price_history ph2 WHERE ph2.product_id = p.id ORDER BY ph2.recorded_at DESC LIMIT 1) as last_recorded_at
+            FROM products p
+            JOIN price_history ph ON ph.product_id = p.id
+            GROUP BY p.id
+            ORDER BY discount_pct DESC, current_price ASC
+        """)
+        
+        rows = cursor.fetchall()
+        results = []
+        for r in rows:
+            data = dict(r)
+            cur_price = data["current_price"] or 0.0
+            orig_price = data["original_price"]
+            min_price = data["min_price"] or cur_price
+            avg_price = data["avg_price"] or cur_price
+            
+            # Análise inteligente
+            intelligence = analyze_price_quality(
+                current_price=cur_price,
+                original_price=orig_price,
+                historical_min=min_price,
+                historical_avg=avg_price
+            )
+            
+            data["intelligence"] = intelligence
+            results.append(data)
+            
+        return results
+
 # Inicializa o banco ao importar
 init_db()
+

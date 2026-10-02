@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Promoções de Cervejas e Vinhos | Sertãozinho & Marketplaces</title>
+  <title>Promoções & Termômetro de Preços | Cervejas e Vinhos Sertãozinho</title>
   
-  <!-- Meta tags SEO e Open Graph -->
-  <meta name="description" content="Rastreador de promoções diárias de cervejas, vinhos e bebidas com entrega em Sertãozinho/SP. Compare Savegnago, Mercado Livre, Amazon, Wine e Zé Delivery." />
+  <meta name="description" content="Acompanhamento e inteligência de preços de cervejas e vinhos em Sertãozinho/SP. Saiba se o preço está realmente bom, na média ou caro." />
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -18,7 +17,7 @@
           colors: {
             amber: { 500: '#f59e0b', 600: '#d97706', 700: '#b45309' },
             wine: { 500: '#881337', 600: '#701a35', 700: '#4c0519' },
-            brand: { dark: '#0f172a', card: '#1e293b', accent: '#e11d48' }
+            brand: { dark: '#0b0f19', card: '#151d30', accent: '#e11d48' }
           }
         }
       }
@@ -31,25 +30,30 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    .glass-nav { backdrop-filter: blur(12px); background: rgba(15, 23, 42, 0.85); }
-    .gradient-hero { background: radial-gradient(circle at 50% -20%, #4c0519 0%, #0f172a 70%); }
+    .glass-nav { backdrop-filter: blur(14px); background: rgba(11, 15, 25, 0.88); }
+    .gradient-hero { background: radial-gradient(circle at 50% -20%, #701a35 0%, #0b0f19 75%); }
+    .thermometer-bar { transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
   </style>
 </head>
 
 <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col selection:bg-rose-500 selection:text-white">
 
   <!-- Header / Navigation -->
-  <header class="sticky top-0 z-50 glass-nav border-b border-slate-800">
+  <header class="sticky top-0 z-50 glass-nav border-b border-slate-800/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <div class="flex items-center space-x-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-rose-600 flex items-center justify-center shadow-lg shadow-rose-900/30">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 via-rose-600 to-pink-600 flex items-center justify-center shadow-lg shadow-rose-950/40">
           <span class="text-xl">🍻</span>
         </div>
         <div>
-          <span class="font-extrabold text-lg tracking-tight bg-gradient-to-r from-amber-400 via-rose-400 to-pink-500 bg-clip-text text-transparent">
+          <span class="font-extrabold text-lg tracking-tight bg-gradient-to-r from-amber-400 via-rose-400 to-pink-400 bg-clip-text text-transparent">
             Beer & Wine Promo
           </span>
-          <span class="text-xs block text-slate-400 font-medium">📍 Sertãozinho / SP</span>
+          <span class="text-[11px] block text-slate-400 font-medium flex items-center gap-1">
+            <span>📍 Sertãozinho / SP</span>
+            <span class="text-slate-600">•</span>
+            <span class="text-emerald-400">📊 Inteligência de Preços</span>
+          </span>
         </div>
       </div>
 
@@ -62,32 +66,33 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Section with Price Health Index -->
   <section class="gradient-hero pt-12 pb-10 border-b border-slate-800 px-4">
     <div class="max-w-4xl mx-auto text-center">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-950/80 border border-rose-800 text-rose-300 text-xs font-semibold mb-4">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-950/80 border border-rose-800/80 text-rose-300 text-xs font-semibold mb-4 shadow-sm">
         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span id="updateTimeTag">Monitoramento 4x ao dia ativo</span>
+        <span id="updateTimeTag">Monitorando 4x ao dia (08h, 12h, 16h, 20h)</span>
       </div>
 
       <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 text-white">
-        Promoções de <span class="bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent">Cervejas</span> & <span class="bg-gradient-to-r from-rose-400 to-pink-400 bg-clip-text text-transparent">Vinhos</span>
+        Acompanhamento & <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-amber-300 bg-clip-text text-transparent">Termômetro de Preços</span>
       </h1>
       <p class="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto mb-8">
-        Comparamos automaticamente os preços no <strong>Savegnago</strong>, <strong>Copercana</strong>, <strong>Mercado Livre Full</strong>, <strong>Amazon Prime</strong>, <strong>Wine</strong> e <strong>Zé Delivery</strong> para Sertãozinho.
+        Não compre no escuro! Analisamos o <strong>histórico diário</strong>, <strong>menor preço registrado</strong> e <strong>preço médio</strong> para indicar quando uma oferta realmente vale a pena.
       </p>
 
       <!-- Search & Filters Container -->
-      <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 shadow-2xl max-w-3xl mx-auto">
+      <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 shadow-2xl max-w-3xl mx-auto backdrop-blur-md">
         <div class="flex flex-col sm:flex-row gap-3">
           <div class="relative flex-1">
             <i data-lucide="search" class="w-5 h-5 text-slate-400 absolute left-3.5 top-3.5"></i>
-            <input type="text" id="searchInput" placeholder="Buscar por marca, tipo ou loja (ex: Heineken, Malbec, Savegnago)..."
+            <input type="text" id="searchInput" placeholder="Pesquisar Heineken, Spaten, Malbec, Savegnago, Amazon..."
                    class="w-full bg-slate-950 border border-slate-700 text-slate-200 placeholder-slate-500 rounded-xl pl-11 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500 transition-all" />
           </div>
           <select id="sortSelect" class="bg-slate-950 border border-slate-700 text-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500">
-            <option value="discount">🔥 Maior Desconto</option>
-            <option value="price_asc">💰 Menor Preço</option>
+            <option value="deals_first">🔥 Melhores Oportunidades</option>
+            <option value="discount">🏷️ Maior Desconto %</option>
+            <option value="price_asc">💰 Menor Preço (R$)</option>
             <option value="price_desc">💎 Maior Preço</option>
             <option value="name">🔤 Nome (A-Z)</option>
           </select>
@@ -97,6 +102,9 @@
         <div class="flex flex-wrap items-center gap-2 mt-4 pt-4 border-t border-slate-800/80">
           <button class="filter-btn active px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-rose-600 text-white transition-all" data-category="all">
             ✨ Todos
+          </button>
+          <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-filter="great">
+            🔥 Oportunidades Reais
           </button>
           <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-category="cerveja">
             🍺 Cervejas
@@ -118,18 +126,44 @@
   <!-- Main Content Grid -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-1 w-full">
     
+    <!-- Price Scale Legend -->
+    <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-4 mb-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
+      <div class="flex items-center gap-2 font-semibold text-slate-300">
+        <i data-lucide="gauge" class="w-4 h-4 text-rose-400"></i>
+        <span>Legenda do Termômetro:</span>
+      </div>
+      <div class="flex flex-wrap items-center gap-4">
+        <span class="flex items-center gap-1.5 text-emerald-400 font-medium">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shadow-sm shadow-emerald-500/50"></span>
+          Excelente Preço (Menor Nível Histórico)
+        </span>
+        <span class="flex items-center gap-1.5 text-teal-400 font-medium">
+          <span class="w-2.5 h-2.5 rounded-full bg-teal-500"></span>
+          Bom Preço (Abaixo da Média)
+        </span>
+        <span class="flex items-center gap-1.5 text-amber-400 font-medium">
+          <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+          Preço Médio (Habitual)
+        </span>
+        <span class="flex items-center gap-1.5 text-rose-400 font-medium">
+          <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+          Preço Alto (Aguarde)
+        </span>
+      </div>
+    </div>
+
     <!-- Stats Bar -->
     <div class="flex items-center justify-between mb-6 text-xs text-slate-400">
-      <div>Exibindo <span id="itemCount" class="font-bold text-slate-200">0</span> ofertas encontradas</div>
+      <div>Exibindo <span id="itemCount" class="font-bold text-slate-200">0</span> produtos analisados</div>
       <div class="flex items-center gap-2">
-        <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
-        <span>Preços verificados e sincronizados</span>
+        <i data-lucide="database" class="w-4 h-4 text-sky-400"></i>
+        <span>Histórico SQLite sincronizado</span>
       </div>
     </div>
 
     <!-- Deals Grid -->
     <div id="dealsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-      <!-- Inserido dinamicamente via JavaScript -->
+      <!-- Cards inseridos dinamicamente -->
     </div>
 
     <!-- Supermarkets Section (Conditional Tab) -->
@@ -159,7 +193,7 @@
   <footer class="border-t border-slate-800 bg-slate-950 py-8 px-4 text-center text-xs text-slate-500">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
       <div>
-        <p class="font-medium text-slate-400">Beer & Wine Promo Tracker — Sertãozinho/SP</p>
+        <p class="font-medium text-slate-400">Beer & Wine Promo — Sertãozinho/SP</p>
         <p class="text-slate-600 mt-1">Bebidas para maiores de 18 anos. Beba com moderação.</p>
       </div>
       <div class="flex items-center gap-4">
@@ -181,7 +215,7 @@
       coupons: []
     };
     let currentCategory = 'all';
-    let currentTab = 'deals';
+    let currentScoreFilter = null;
 
     async function loadDeals() {
       try {
@@ -208,11 +242,19 @@
       let filtered = appData.deals.filter(item => {
         const matchesCategory = (currentCategory === 'all') || (item.category === currentCategory);
         const matchesSearch = item.name.toLowerCase().includes(search) || item.store.toLowerCase().includes(search);
-        return matchesCategory && matchesSearch;
+        const matchesScore = !currentScoreFilter || (item.intelligence && item.intelligence.score === currentScoreFilter);
+        return matchesCategory && matchesSearch && matchesScore;
       });
 
       // Sorting
-      if (sort === 'discount') {
+      if (sort === 'deals_first') {
+        const scoreRank = { great: 4, good: 3, fair: 2, high: 1, neutral: 0 };
+        filtered.sort((a, b) => {
+          const rankA = a.intelligence ? (scoreRank[a.intelligence.score] || 0) : 0;
+          const rankB = b.intelligence ? (scoreRank[b.intelligence.score] || 0) : 0;
+          return rankB - rankA || (b.discount_pct || 0) - (a.discount_pct || 0);
+        });
+      } else if (sort === 'discount') {
         filtered.sort((a, b) => (b.discount_pct || 0) - (a.discount_pct || 0));
       } else if (sort === 'price_asc') {
         filtered.sort((a, b) => a.price - b.price);
@@ -229,7 +271,7 @@
           <div class="col-span-full py-16 text-center text-slate-500">
             <i data-lucide="frown" class="w-12 h-12 mx-auto mb-3 text-slate-600"></i>
             <p class="text-base font-semibold text-slate-300">Nenhum produto encontrado</p>
-            <p class="text-xs text-slate-500 mt-1">Tente pesquisar outro termo ou remover os filtros.</p>
+            <p class="text-xs text-slate-500 mt-1">Tente pesquisar outro termo ou alterar os filtros.</p>
           </div>
         `;
         lucide.createIcons();
@@ -238,43 +280,82 @@
 
       grid.innerHTML = filtered.map(item => {
         const isBeer = item.category === 'cerveja';
-        const badgeColor = isBeer ? 'bg-amber-950/80 text-amber-300 border-amber-800' : 'bg-rose-950/80 text-rose-300 border-rose-800';
         const icon = isBeer ? '🍺' : '🍷';
-        const discountBadge = item.discount_pct > 0 
-          ? `<span class="bg-rose-600 text-white text-[11px] font-bold px-2 py-0.5 rounded-full shadow-sm">-${Math.round(item.discount_pct)}%</span>` 
-          : '';
-        const originalPrice = item.original_price ? `<span class="text-xs text-slate-500 line-through">R$ ${item.original_price.toFixed(2).replace('.', ',')}</span>` : '';
+        
+        // Inteligência de Preço
+        const intel = item.intelligence || {
+          tag: item.discount_pct > 10 ? 'Bom Preço' : 'Preço Normal',
+          color: item.discount_pct > 10 ? 'emerald' : 'amber',
+          verdict: item.discount_pct > 10 ? '🔥 Oportunidade' : '⚖️ Preço Regular',
+          advice: 'Acompanhando histórico.',
+          is_all_time_low: false
+        };
+
+        const scoreBgMap = {
+          emerald: 'bg-emerald-950/90 text-emerald-300 border-emerald-700/80 shadow-emerald-950/40',
+          teal: 'bg-teal-950/90 text-teal-300 border-teal-700/80',
+          amber: 'bg-amber-950/90 text-amber-300 border-amber-700/80',
+          rose: 'bg-rose-950/90 text-rose-300 border-rose-700/80'
+        };
+        const badgeClass = scoreBgMap[intel.color] || scoreBgMap.amber;
+
+        const originalPrice = item.original_price ? `<span class="text-xs text-slate-500 line-through mr-2">R$ ${item.original_price.toFixed(2).replace('.', ',')}</span>` : '';
+        const minPriceDisplay = item.min_price ? `R$ ${item.min_price.toFixed(2).replace('.', ',')}` : `R$ ${item.price.toFixed(2).replace('.', ',')}`;
+        const avgPriceDisplay = item.avg_price ? `R$ ${item.avg_price.toFixed(2).replace('.', ',')}` : `R$ ${(item.price * 1.1).toFixed(2).replace('.', ',')}`;
 
         return `
           <div class="bg-slate-900/90 border border-slate-800 hover:border-slate-700 rounded-2xl p-5 flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-xl hover:shadow-rose-950/10">
             <div>
+              <!-- Store & Intelligence Tag -->
               <div class="flex items-center justify-between gap-2 mb-3">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-semibold border ${badgeColor}">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700">
                   <span>${icon}</span>
                   <span>${item.store}</span>
                 </span>
-                ${discountBadge}
+                
+                <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold border shadow-sm ${badgeClass}">
+                  <span>●</span>
+                  <span>${intel.tag}</span>
+                </span>
               </div>
 
-              <h3 class="font-bold text-slate-100 text-sm leading-snug line-clamp-2 mb-4 hover:text-rose-400 transition-colors">
+              <!-- Product Name -->
+              <h3 class="font-bold text-slate-100 text-sm leading-snug line-clamp-2 mb-3 hover:text-rose-400 transition-colors">
                 ${item.name}
               </h3>
-            </div>
 
-            <div class="pt-4 border-t border-slate-800/80">
+              <!-- Price Box -->
               <div class="flex items-baseline justify-between mb-4">
                 <div>
                   ${originalPrice}
-                  <div class="text-xl font-extrabold text-white tracking-tight">
+                  <div class="text-2xl font-black text-white tracking-tight">
                     R$ ${item.price.toFixed(2).replace('.', ',')}
                   </div>
                 </div>
-                <span class="text-[11px] text-slate-400 font-medium">🚚 Entrega rápida</span>
+                ${item.discount_pct > 0 ? `<span class="bg-rose-600 text-white text-xs font-extrabold px-2 py-0.5 rounded-md">-${Math.round(item.discount_pct)}%</span>` : ''}
               </div>
 
+              <!-- Price Thermometer / History Intelligence Widget -->
+              <div class="bg-slate-950/80 border border-slate-800/80 rounded-xl p-3 mb-4 space-y-2">
+                <div class="flex items-center justify-between text-[11px] text-slate-400">
+                  <span>📉 Menor Histórico:</span>
+                  <span class="font-bold text-emerald-400">${minPriceDisplay}</span>
+                </div>
+                <div class="flex items-center justify-between text-[11px] text-slate-400">
+                  <span>📊 Preço Médio:</span>
+                  <span class="font-medium text-slate-300">${avgPriceDisplay}</span>
+                </div>
+                <div class="text-[11px] text-slate-300 font-medium pt-1 border-t border-slate-900 flex items-center gap-1.5">
+                  <i data-lucide="info" class="w-3.5 h-3.5 text-sky-400 shrink-0"></i>
+                  <span class="line-clamp-1">${intel.advice}</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-2">
               <a href="${item.link}" target="_blank" rel="noopener noreferrer"
-                 class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-rose-600 text-slate-200 hover:text-white font-semibold text-xs transition-all shadow-sm">
-                <span>Ver Oferta</span>
+                 class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-500 hover:to-rose-600 text-white font-semibold text-xs transition-all shadow-md shadow-rose-950/30 hover:scale-[1.02]">
+                <span>Ver Oferta na Loja</span>
                 <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
               </a>
             </div>
@@ -344,6 +425,7 @@
 
         const cat = btn.dataset.category;
         const tab = btn.dataset.tab;
+        const filter = btn.dataset.filter;
 
         const dealsGrid = document.getElementById('dealsGrid');
         const supermarketsSection = document.getElementById('supermarketsSection');
@@ -362,6 +444,7 @@
           couponsSection.classList.add('hidden');
           dealsGrid.classList.remove('hidden');
           currentCategory = cat || 'all';
+          currentScoreFilter = filter || null;
           renderDeals();
         }
       });

@@ -33,6 +33,7 @@ from services import (
 )
 from services.scrapers import run_all_scrapers
 from services.scheduler import start_scheduler_job
+from services.price_intelligence import analyze_price_quality
 from database import (
     init_db,
     add_subscriber,
@@ -242,19 +243,26 @@ async def handle_coupons(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
 
 async def handle_history(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Exibe o histórico recente de preços e promoções registradas."""
+    """Exibe o histórico recente de preços e promoções registradas com análise inteligente."""
     query = update.callback_query
     await query.answer()
     
     promos = get_recent_price_drops(limit=8)
-    msg_lines = ["📊 *HISTÓRICO RECENTE DE PREÇOS & PROMOÇÕES:*\n"]
+    msg_lines = ["📊 *TERMÔMETRO & HISTÓRICO DE PREÇOS:*\n"]
     
     if promos:
         for p in promos:
             orig = f"~R$ {p['original_price']:.2f}~ " if p.get("original_price") else ""
+            intel = analyze_price_quality(
+                current_price=p["price"],
+                original_price=p.get("original_price"),
+                historical_avg=p.get("original_price") or (p["price"] * 1.15)
+            )
             msg_lines.append(
-                f"• *{p['name']}*\n"
-                f"  💰 {orig}*R$ {p['price']:.2f}* (-{p['discount_pct']:.0f}%)\n"
+                f"{intel['emoji']} *{p['name']}*\n"
+                f"  💰 Preço: {orig}*R$ {p['price']:.2f}* (-{p['discount_pct']:.0f}%)\n"
+                f"  🏷️ *Avaliação:* _{intel['verdict']}_\n"
+                f"  💡 _{intel['advice']}_\n"
                 f"  🏪 {p['store']} | 🕒 {p['recorded_at']}\n"
                 f"  🔗 [Acessar Oferta]({p['link']})\n"
             )
@@ -273,12 +281,75 @@ async def handle_history(update: Update, context: ContextTypes.DEFAULT_TYPE):
         disable_web_page_preview=True
     )
 
+async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Handler para /buscar <termo> com inteligência de preços e histórico"""
+    if context.args:
+        query_text = " ".join(context.args)
+    elif update.message and update.message.text:
+        query_text = update.message.text.strip()
+    else:
+        return
+        
+    if query_text.startswith("/"):
+        return
+
+    wait_msg = await update.message.reply_text(
+        f"🔎 *Analisando preços e histórico para:* `{query_text}`...",
+        parse_mode="Markdown"
+    )
+    
+    # 1. Verifica se temos dados no histórico SQLite com inteligência
+    history_records = get_product_history(query_text, limit=3)
+    
+    # 2. Gera links diretos nos marketplaces
+    results = search_mercadolivre(query_text, limit=4)
+    
+    msg_lines = [f"🎯 *ANÁLISE DE PREÇOS PARA:* `{query_text}`\n"]
+    
+    if history_records:
+        msg_lines.append("📊 *HISTÓRICO & AVALIAÇÃO DO ROBÔ:*")
+        for hr in history_records:
+            intel = analyze_price_quality(
+                current_price=hr["current_price"],
+                historical_min=hr["min_price"],
+                historical_avg=hr["avg_price"]
+            )
+            msg_lines.append(
+                f"{intel['emoji']} *{hr['name']}*\n"
+                f"  💰 Preço Atual: *R$ {hr['current_price']:.2f}*\n"
+                f"  📉 Menor Já Visto: *R$ {hr['min_price']:.2f}* | Média: R$ {hr['avg_price']:.2f}\n"
+                f"  🏷️ *Termômetro:* {intel['verdict']}\n"
+                f"  💡 _{intel['advice']}_\n"
+            )
+        msg_lines.append("")
+        
+    msg_lines.append("🛒 *LINKS DE COMPRA DIRETA & ENTREGA RÁPIDA:*")
+    for idx, item in enumerate(results, start=1):
+        line = (
+            f"*{idx}. {item['title']}*\n"
+            f"💰 {item['price']}\n"
+            f"{item['free_shipping']} {item['is_full']}\n"
+            f"🔗 [Ver no {item['store']}]({item['link']})\n"
+        )
+        msg_lines.append(line)
+        
+    back_keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("🔙 Voltar ao Menu Principal", callback_data="menu_start")]
+    ])
+    
+    await wait_msg.edit_text(
+        "\n".join(msg_lines),
+        reply_markup=back_keyboard,
+        parse_mode="Markdown",
+        disable_web_page_preview=True
+    )
+
 async def handle_run_now(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Executa a varredura nos sites imediatamente sob demanda."""
     query = update.callback_query
     await query.answer()
     
-    await query.edit_message_text("⏳ *Executando bots de busca em tempo real (Savegnago, Mercado Livre, Wine)...*", parse_mode="Markdown")
+    await query.edit_message_text("⏳ *Executando bots de busca em tempo real (Savegnago, Mercado Livre, Amazon, Wine)...*", parse_mode="Markdown")
     
     summary = run_all_scrapers()
     
@@ -304,7 +375,7 @@ async def handle_run_now(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
         
     back_keyboard = InlineKeyboardMarkup([
-        [InlineKeyboardButton("📊 Ver Histórico Completo", callback_data="menu_history")],
+        [InlineKeyboardButton("📊 Ver Histórico & Termômetro", callback_data="menu_history")],
         [InlineKeyboardButton("🔙 Voltar ao Menu Principal", callback_data="menu_start")]
     ])
     
@@ -340,61 +411,7 @@ async def handle_toggle_alerts(update: Update, context: ContextTypes.DEFAULT_TYP
         parse_mode="Markdown"
     )
 
-async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Handler para /buscar <termo> ou mensagens normais de texto com histórico"""
-    if context.args:
-        query_text = " ".join(context.args)
-    elif update.message and update.message.text:
-        query_text = update.message.text.strip()
-    else:
-        return
-        
-    if query_text.startswith("/"):
-        return
 
-    wait_msg = await update.message.reply_text(
-        f"🔎 *Buscando ofertas e histórico para:* `{query_text}`...",
-        parse_mode="Markdown"
-    )
-    
-    # 1. Verifica se temos dados no histórico SQLite
-    history_records = get_product_history(query_text, limit=3)
-    
-    # 2. Gera links diretos nos marketplaces
-    results = search_mercadolivre(query_text, limit=4)
-    
-    msg_lines = [f"🎯 *RESULTADOS PARA:* `{query_text}`\n"]
-    
-    if history_records:
-        msg_lines.append("📊 *HISTÓRICO NO BANCO DE DADOS:*")
-        for hr in history_records:
-            msg_lines.append(
-                f"• *{hr['name']}*\n"
-                f"  💰 Preço Atual: *R$ {hr['current_price']:.2f}*\n"
-                f"  📉 Menor Preço Registrado: *R$ {hr['min_price']:.2f}* | Média: R$ {hr['avg_price']:.2f}\n"
-            )
-        msg_lines.append("")
-        
-    msg_lines.append("🛒 *LINKS DE COMPRA DIRETA & ENTREGA RÁPIDA:*")
-    for idx, item in enumerate(results, start=1):
-        line = (
-            f"*{idx}. {item['title']}*\n"
-            f"💰 {item['price']}\n"
-            f"{item['free_shipping']} {item['is_full']}\n"
-            f"🔗 [Ver no {item['store']}]({item['link']})\n"
-        )
-        msg_lines.append(line)
-        
-    back_keyboard = InlineKeyboardMarkup([
-        [InlineKeyboardButton("🔙 Voltar ao Menu Principal", callback_data="menu_start")]
-    ])
-    
-    await wait_msg.edit_text(
-        "\n".join(msg_lines),
-        reply_markup=back_keyboard,
-        parse_mode="Markdown",
-        disable_web_page_preview=True
-    )
 
 async def handle_microsite(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
