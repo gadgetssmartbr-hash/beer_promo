@@ -1,7 +1,7 @@
 {
   "metadata": {
     "city": "Sertãozinho - SP",
-    "updated_at": "02/10/2026 às 12:20",
+    "updated_at": "02/10/2026 às 12:28",
     "telegram_bot": "https://t.me/beerstz_bot",
     "total_items": 43
   },
@@ -1093,6 +1093,7 @@
         "original_price": 5.99
       },
       "copercana": null,
+      "paulistao": null,
       "marketplace": {
         "name": "Pack Cerveja Heineken 12 Latas 350ml (Mercado Envios Full)",
         "store": "Mercado Livre Full",
@@ -1100,7 +1101,8 @@
         "price": 62.28,
         "original_price": 71.88
       },
-      "winner": null,
+      "winner": "Savegnago",
+      "best_price": 5.49,
       "diff_amount": 0.0,
       "diff_pct": 0.0
     },
@@ -1114,6 +1116,7 @@
         "original_price": 5.19
       },
       "copercana": null,
+      "paulistao": null,
       "marketplace": {
         "name": "Pack Cerveja Spaten Puro Malte 12 Latas 350ml (Mercado Envios Full)",
         "store": "Mercado Livre Full",
@@ -1121,7 +1124,8 @@
         "price": 52.68,
         "original_price": 59.9
       },
-      "winner": null,
+      "winner": "Savegnago",
+      "best_price": 4.69,
       "diff_amount": 0.0,
       "diff_pct": 0.0
     },
@@ -1129,6 +1133,7 @@
       "query": "Corona",
       "savegnago": null,
       "copercana": null,
+      "paulistao": null,
       "marketplace": {
         "name": "Cerveja Corona Extra 330ml Pack com 6 unidades (Amazon Prime)",
         "store": "Amazon Brasil",
@@ -1137,6 +1142,7 @@
         "original_price": 44.9
       },
       "winner": null,
+      "best_price": null,
       "diff_amount": 0.0,
       "diff_pct": 0.0
     },
@@ -1150,6 +1156,7 @@
         "original_price": 64.9
       },
       "copercana": null,
+      "paulistao": null,
       "marketplace": {
         "name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon (Amazon Prime)",
         "store": "Amazon Brasil",
@@ -1157,7 +1164,8 @@
         "price": 48.9,
         "original_price": 62.0
       },
-      "winner": null,
+      "winner": "Savegnago",
+      "best_price": 49.9,
       "diff_amount": 0.0,
       "diff_pct": 0.0
     },
@@ -1171,8 +1179,10 @@
         "original_price": 79.9
       },
       "copercana": null,
+      "paulistao": null,
       "marketplace": null,
-      "winner": null,
+      "winner": "Savegnago",
+      "best_price": 59.9,
       "diff_amount": 0.0,
       "diff_pct": 0.0
     },
@@ -1186,8 +1196,10 @@
         "original_price": 52.9
       },
       "copercana": null,
+      "paulistao": null,
       "marketplace": null,
-      "winner": null,
+      "winner": "Savegnago",
+      "best_price": 38.9,
       "diff_amount": 0.0,
       "diff_pct": 0.0
     }
@@ -1196,6 +1208,7 @@
     "total_items": 5,
     "total_savegnago": 158.88,
     "total_copercana": 125.0,
+    "total_paulistao": 125.0,
     "total_mixed": 85.18,
     "winner": "Copercana",
     "single_store_savings": 33.88,
@@ -1206,36 +1219,41 @@
         "item_name": "Heineken",
         "price_savegnago": 5.49,
         "price_copercana": 25.0,
+        "price_paulistao": 25.0,
         "best_store": "Savegnago",
-        "savings": 19.509999999999998
+        "best_price": 5.49
       },
       {
         "item_name": "Spaten",
         "price_savegnago": 4.69,
         "price_copercana": 25.0,
+        "price_paulistao": 25.0,
         "best_store": "Savegnago",
-        "savings": 20.31
+        "best_price": 4.69
       },
       {
         "item_name": "Casillero",
         "price_savegnago": 49.9,
         "price_copercana": 25.0,
+        "price_paulistao": 25.0,
         "best_store": "Copercana",
-        "savings": 24.9
+        "best_price": 25.0
       },
       {
         "item_name": "Picanha",
         "price_savegnago": 59.9,
         "price_copercana": 25.0,
+        "price_paulistao": 25.0,
         "best_store": "Copercana",
-        "savings": 34.9
+        "best_price": 25.0
       },
       {
         "item_name": "OMO",
         "price_savegnago": 38.9,
         "price_copercana": 25.0,
+        "price_paulistao": 25.0,
         "best_store": "Copercana",
-        "savings": 13.899999999999999
+        "best_price": 25.0
       }
     ]
   },
@@ -1259,6 +1277,16 @@
       "highlight_categories": [
         "🍺 Cervejas artesanais e especiais da região",
         "🍷 Adega selecionada de vinhos nacionais e importados"
+      ]
+    },
+    {
+      "name": "Paulistão Atacadista (Sertãozinho)",
+      "website": "https://www.paulistao.com.br",
+      "benefits": "Preços de atacado em fardos, caixas e Clube de Vantagens",
+      "highlight_categories": [
+        "🍺 Cervejas em packs e fardos promocionais",
+        "🥩 Carnes em peças e cortes para churrasco",
+        "🧼 Produtos de limpeza em embalagens econômicas"
       ]
     },
     {

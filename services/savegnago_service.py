@@ -28,10 +28,23 @@ def get_copercana_info() -> Dict[str, Any]:
         ]
     }
 
+def get_paulistao_info() -> Dict[str, Any]:
+    return {
+        "name": "Paulistão Atacadista (Sertãozinho)",
+        "website": "https://www.paulistao.com.br",
+        "benefits": "Preços de atacado em fardos, caixas e Clube de Vantagens",
+        "highlight_categories": [
+            "🍺 Cervejas em packs e fardos promocionais",
+            "🥩 Carnes em peças e cortes para churrasco",
+            "🧼 Produtos de limpeza em embalagens econômicas"
+        ]
+    }
+
 def get_local_supermarkets() -> List[Dict[str, Any]]:
     return [
         get_savegnago_info(),
         get_copercana_info(),
+        get_paulistao_info(),
         {
             "name": "Tonin Superatacado & Gricki (Sertãozinho/Região)",
             "website": "https://tonin.com.br",

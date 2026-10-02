@@ -71,7 +71,7 @@
     <div class="max-w-4xl mx-auto text-center">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-950/80 border border-rose-800/80 text-rose-300 text-xs font-semibold mb-4 shadow-sm">
         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span id="updateTimeTag">Monitorando 4x ao dia (08h, 12h, 16h, 20h)</span>
+        <span id="updateTimeTag">Monitorando 3x ao dia (08h, 13h, 19h) + Buscas em tempo real</span>
       </div>
 
       <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 text-white">
@@ -180,9 +180,9 @@
     <div id="supermarketsSection" class="hidden space-y-8">
       <div class="border-b border-slate-800 pb-4 mb-6">
         <h2 class="text-2xl font-bold text-white flex items-center gap-2">
-          <span>⚔️</span> Batalha Direta: Savegnago vs Copercana
+          <span>⚔️</span> Batalha de Preços: Savegnago vs Copercana vs Paulistão
         </h2>
-        <p class="text-slate-400 text-sm">Comparação em tempo real de preços entre as duas maiores redes de Sertãozinho.</p>
+        <p class="text-slate-400 text-sm">Comparação de preços entre as principais redes e atacados de Sertãozinho.</p>
       </div>
 
       <!-- Store Battle Table / Cards -->
@@ -194,7 +194,7 @@
           <div class="w-10 h-10 rounded-xl bg-rose-600/20 text-rose-400 flex items-center justify-center text-xl font-bold">🛒</div>
           <div>
             <h3 class="text-xl font-bold text-white">Simulador de Economia do Carrinho</h3>
-            <p class="text-xs text-slate-400">Comparativo de uma compra com cervejas, vinhos, carnes e limpeza nas duas redes.</p>
+            <p class="text-xs text-slate-400">Comparativo de uma compra familiar nas redes locais de Sertãozinho.</p>
           </div>
         </div>
         <div id="basketSummaryBox" class="mt-6"></div>
@@ -407,31 +407,45 @@
     }
 
     function renderSupermarkets() {
-      // 1. Renderiza Batalha Savegnago vs Copercana
+      // 1. Renderiza Batalha Savegnago vs Copercana vs Paulistão
       const battleGrid = document.getElementById('battleGrid');
       if (battleGrid && appData.store_battles) {
         battleGrid.innerHTML = appData.store_battles.map(b => {
-          const savPrice = b.savegnago ? `R$ ${b.savegnago.price.toFixed(2).replace('.', ',')}` : 'Não disponível';
-          const copPrice = b.copercana ? `R$ ${b.copercana.price.toFixed(2).replace('.', ',')}` : 'Não disponível';
-          const winnerText = b.winner === 'Savegnago' 
-            ? '🏆 Mais barato no Savegnago' 
-            : (b.winner === 'Copercana' ? '🏆 Mais barato no Copercana' : '🤝 Mesmo Preço');
-          const winnerColor = b.winner === 'Savegnago' ? 'text-emerald-400' : (b.winner === 'Copercana' ? 'text-teal-400' : 'text-slate-400');
+          const savPrice = b.savegnago ? `R$ ${b.savegnago.price.toFixed(2).replace('.', ',')}` : 'Não encontrado';
+          const copPrice = b.copercana ? `R$ ${b.copercana.price.toFixed(2).replace('.', ',')}` : 'Não encontrado';
+          const pauPrice = b.paulistao ? `R$ ${b.paulistao.price.toFixed(2).replace('.', ',')}` : 'Não encontrado';
+          
+          let winnerText = '🤝 Preços Equivalentes';
+          let winnerColor = 'text-slate-400';
+          if (b.winner === 'Savegnago') {
+            winnerText = '🏆 Mais barato no Savegnago';
+            winnerColor = 'text-emerald-400';
+          } else if (b.winner === 'Copercana') {
+            winnerText = '🏆 Mais barato no Copercana';
+            winnerColor = 'text-teal-400';
+          } else if (b.winner === 'Paulistão Atacadista') {
+            winnerText = '🏆 Mais barato no Paulistão';
+            winnerColor = 'text-amber-400';
+          }
           const diffBadge = b.diff_amount > 0 ? `<span class="text-xs text-rose-400 font-bold ml-1.5">(Economia: R$ ${b.diff_amount.toFixed(2).replace('.', ',')})</span>` : '';
 
           return `
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between">
               <div>
-                <span class="text-xs text-slate-500 uppercase font-bold tracking-wider">Batalha Direta</span>
+                <span class="text-xs text-slate-500 uppercase font-bold tracking-wider">Comparativo Local</span>
                 <h4 class="font-bold text-white text-base mt-1 mb-4">${b.query}</h4>
                 <div class="space-y-2 text-xs">
-                  <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-950 border border-slate-800">
+                  <div class="flex items-center justify-between p-2 rounded-xl bg-slate-950 border border-slate-800">
                     <span class="text-slate-300 font-medium">🏪 Savegnago:</span>
                     <span class="font-bold text-white">${savPrice}</span>
                   </div>
-                  <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-950 border border-slate-800">
+                  <div class="flex items-center justify-between p-2 rounded-xl bg-slate-950 border border-slate-800">
                     <span class="text-slate-300 font-medium">🏪 Copercana:</span>
                     <span class="font-bold text-white">${copPrice}</span>
+                  </div>
+                  <div class="flex items-center justify-between p-2 rounded-xl bg-slate-950 border border-slate-800">
+                    <span class="text-slate-300 font-medium">🏪 Paulistão:</span>
+                    <span class="font-bold text-white">${pauPrice}</span>
                   </div>
                 </div>
               </div>
@@ -448,24 +462,29 @@
       const basketBox = document.getElementById('basketSummaryBox');
       if (basketBox && appData.basket_comparison) {
         const bc = appData.basket_comparison;
+        const totalPaulistao = bc.total_paulistao !== undefined ? bc.total_paulistao : 0;
         basketBox.innerHTML = `
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
             <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
-              <span class="text-xs text-slate-400 font-medium">Compra Total Savegnago</span>
-              <div class="text-2xl font-black text-white mt-1">R$ ${bc.total_savegnago.toFixed(2).replace('.', ',')}</div>
+              <span class="text-xs text-slate-400 font-medium">Total Savegnago</span>
+              <div class="text-xl font-black text-white mt-1">R$ ${bc.total_savegnago.toFixed(2).replace('.', ',')}</div>
             </div>
             <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
-              <span class="text-xs text-slate-400 font-medium">Compra Total Copercana</span>
-              <div class="text-2xl font-black text-white mt-1">R$ ${bc.total_copercana.toFixed(2).replace('.', ',')}</div>
+              <span class="text-xs text-slate-400 font-medium">Total Copercana</span>
+              <div class="text-xl font-black text-white mt-1">R$ ${bc.total_copercana.toFixed(2).replace('.', ',')}</div>
+            </div>
+            <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
+              <span class="text-xs text-slate-400 font-medium">Total Paulistão</span>
+              <div class="text-xl font-black text-white mt-1">R$ ${totalPaulistao.toFixed(2).replace('.', ',')}</div>
             </div>
             <div class="bg-emerald-950/80 border border-emerald-700/80 rounded-2xl p-4 text-center shadow-lg">
-              <span class="text-xs text-emerald-300 font-bold">Comprando Fracionado (Melhor Mix)</span>
-              <div class="text-2xl font-black text-emerald-400 mt-1">R$ ${bc.total_mixed.toFixed(2).replace('.', ',')}</div>
+              <span class="text-xs text-emerald-300 font-bold">Comprando no Melhor Mix</span>
+              <div class="text-xl font-black text-emerald-400 mt-1">R$ ${bc.total_mixed.toFixed(2).replace('.', ',')}</div>
             </div>
           </div>
           <div class="p-4 rounded-xl bg-rose-950/40 border border-rose-800/60 text-xs text-rose-200 flex flex-col sm:flex-row items-center justify-between gap-2">
-            <span>🏆 <strong>Vencedor do Carrinho:</strong> Supermercado mais barato é o <strong>${bc.winner}</strong>.</span>
-            <span class="font-bold bg-rose-600 px-3 py-1 rounded-full text-white">Economia de até R$ ${bc.split_store_savings.toFixed(2).replace('.', ',')}</span>
+            <span>🏆 <strong>Rede Mais Barata no Total:</strong> <strong>${bc.winner}</strong>.</span>
+            <span class="font-bold bg-rose-600 px-3 py-1 rounded-full text-white">Economia dividindo compras: R$ ${bc.split_store_savings.toFixed(2).replace('.', ',')}</span>
           </div>
         `;
       }
