@@ -1,7 +1,7 @@
 {
   "metadata": {
     "city": "Sertãozinho - SP",
-    "updated_at": "02/10/2026 às 16:03",
+    "updated_at": "02/10/2026 às 14:40",
     "telegram_bot": "https://t.me/beerstz_bot",
     "total_items": 64
   },
@@ -29,7 +29,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 219.0
     },
     {
       "id": 17,
@@ -54,7 +55,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 109.9
     },
     {
       "id": 102,
@@ -79,7 +81,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 39.9
     },
     {
       "id": 60,
@@ -104,7 +107,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 38.9
     },
     {
       "id": 112,
@@ -129,7 +133,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 36.9
     },
     {
       "id": 50,
@@ -154,7 +159,8 @@
         "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 31.9
     },
     {
       "id": 16,
@@ -179,7 +185,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 31.88
     },
     {
       "id": 30,
@@ -204,7 +211,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 44.9
     },
     {
       "id": 63,
@@ -229,7 +237,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 59.9
     },
     {
       "id": 51,
@@ -254,7 +263,8 @@
         "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 24.9
     },
     {
       "id": 65,
@@ -279,7 +289,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 18.9
     },
     {
       "id": 104,
@@ -304,7 +315,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 62.9
     },
     {
       "id": 67,
@@ -329,7 +341,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 19.9
     },
     {
       "id": 3,
@@ -354,7 +367,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 49.9
     },
     {
       "id": 114,
@@ -379,7 +393,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 57.9
     },
     {
       "id": 99,
@@ -404,7 +419,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 51.9
     },
     {
       "id": 66,
@@ -429,7 +445,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 34.9
     },
     {
       "id": 7,
@@ -454,7 +471,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 124.9
     },
     {
       "id": 113,
@@ -479,7 +497,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 21.9
     },
     {
       "id": 115,
@@ -504,7 +523,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 36.9
     },
     {
       "id": 31,
@@ -529,7 +549,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 48.9
     },
     {
       "id": 62,
@@ -554,7 +575,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 22.9
     },
     {
       "id": 103,
@@ -579,7 +601,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 22.9
     },
     {
       "id": 8,
@@ -604,7 +627,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 189.9
     },
     {
       "id": 105,
@@ -629,7 +653,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 38.9
     },
     {
       "id": 61,
@@ -654,7 +679,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 23.9
     },
     {
       "id": 110,
@@ -679,7 +705,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 31.9
     },
     {
       "id": 64,
@@ -704,7 +731,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 39.9
     },
     {
       "id": 111,
@@ -729,7 +757,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 47.9
     },
     {
       "id": 19,
@@ -754,7 +783,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 36.9
     },
     {
       "id": 100,
@@ -779,7 +809,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 46.9
     },
     {
       "id": 101,
@@ -804,7 +835,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 36.9
     },
     {
       "id": 29,
@@ -829,7 +861,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 39.92
     },
     {
       "id": 28,
@@ -854,7 +887,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 37.9
     },
     {
       "id": 9,
@@ -879,7 +913,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 237.4
     },
     {
       "id": 6,
@@ -904,7 +939,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 38.9
     },
     {
       "id": 4,
@@ -929,7 +965,8 @@
         "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 62.28
     },
     {
       "id": 109,
@@ -954,7 +991,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 3.29
     },
     {
       "id": 98,
@@ -979,7 +1017,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 4.79
     },
     {
       "id": 5,
@@ -1004,7 +1043,8 @@
         "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 52.68
     },
     {
       "id": 40,
@@ -1029,7 +1069,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 43.9
     },
     {
       "id": 108,
@@ -1054,7 +1095,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 3.79
     },
     {
       "id": 106,
@@ -1079,7 +1121,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 5.29
     },
     {
       "id": 97,
@@ -1104,7 +1147,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 6.19
     },
     {
       "id": 107,
@@ -1129,7 +1173,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 4.49
     },
     {
       "id": 15,
@@ -1154,7 +1199,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 213.7
     },
     {
       "id": 96,
@@ -1179,7 +1225,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 4.59
     },
     {
       "id": 2,
@@ -1204,7 +1251,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 4.69
     },
     {
       "id": 1,
@@ -1229,7 +1277,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 5.49
     },
     {
       "id": 35,
@@ -1254,7 +1303,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 58.9
     },
     {
       "id": 95,
@@ -1279,7 +1329,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 5.59
     },
     {
       "id": 48,
@@ -1304,7 +1355,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 42.18
     },
     {
       "id": 13,
@@ -1329,7 +1381,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 47.4
     },
     {
       "id": 14,
@@ -1354,7 +1407,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 56.9
     },
     {
       "id": 10,
@@ -1379,7 +1433,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 69.35
     },
     {
       "id": 47,
@@ -1404,7 +1459,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 74.56
     },
     {
       "id": 49,
@@ -1429,7 +1485,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 111.14
     },
     {
       "id": 11,
@@ -1454,7 +1511,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 1614.05
     },
     {
       "id": 38,
@@ -1479,7 +1537,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 6.9
     },
     {
       "id": 39,
@@ -1504,7 +1563,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 8.99
     },
     {
       "id": 12,
@@ -1529,7 +1589,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 22.9
     },
     {
       "id": 41,
@@ -1554,7 +1615,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 54.5
     },
     {
       "id": 37,
@@ -1579,7 +1641,8 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 59.9
     },
     {
       "id": 36,
@@ -1604,12 +1667,14 @@
         "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      }
+      },
+      "price": 64.9
     }
   ],
   "store_battles": [
     {
       "query": "Heineken",
+      "product_name": "Cerveja Heineken Puro Malte Lata 350ml",
       "savegnago": {
         "name": "Cerveja Heineken Puro Malte Lata 350ml (Savegnago)",
         "store": "Savegnago Supermercados",
@@ -1645,6 +1710,7 @@
     },
     {
       "query": "Spaten",
+      "product_name": "Cerveja Spaten Munich Helles Puro Malte Lata 350ml",
       "savegnago": {
         "name": "Cerveja Spaten Munich Helles Lata 350ml (Savegnago)",
         "store": "Savegnago Supermercados",
@@ -1680,7 +1746,14 @@
     },
     {
       "query": "Corona",
-      "savegnago": null,
+      "product_name": "Cerveja Corona Extra Long Neck 330ml",
+      "savegnago": {
+        "name": "Cerveja Corona Extra Long Neck 330ml",
+        "store": "Savegnago Supermercados",
+        "price": 6.49,
+        "original_price": 7.19,
+        "link": "https://www.savegnago.com.br/busca?ft=Corona"
+      },
       "copercana": {
         "name": "Cerveja Corona Extra 330ml Long Neck (Copercana)",
         "store": "Supermercados Copercana",
@@ -1688,7 +1761,13 @@
         "price": 6.19,
         "original_price": 6.89
       },
-      "paulistao": null,
+      "paulistao": {
+        "name": "Cerveja Corona Extra Long Neck 330ml",
+        "store": "Paulistão Atacadista",
+        "price": 5.99,
+        "original_price": 6.59,
+        "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho"
+      },
       "marketplace": {
         "name": "Cerveja Corona Extra 330ml Pack com 6 unidades (Amazon Prime)",
         "store": "Amazon Brasil",
@@ -1696,13 +1775,14 @@
         "price": 37.9,
         "original_price": 44.9
       },
-      "winner": "Copercana",
-      "best_price": 6.19,
-      "diff_amount": 0.0,
-      "diff_pct": 0.0
+      "winner": "Paulistão Atacadista",
+      "best_price": 5.99,
+      "diff_amount": 0.5,
+      "diff_pct": 7.7
     },
     {
       "query": "Casillero",
+      "product_name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon 750ml",
       "savegnago": {
         "name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon 750ml (Savegnago)",
         "store": "Savegnago Supermercados",
@@ -1738,6 +1818,7 @@
     },
     {
       "query": "Picanha",
+      "product_name": "Picanha Bovina Resfriada Peça / Kg",
       "savegnago": {
         "name": "Picanha Bovina Peça / Kg (Açougue Savegnago)",
         "store": "Savegnago Supermercados",
@@ -1767,6 +1848,7 @@
     },
     {
       "query": "Sabão Líquido OMO",
+      "product_name": "Sabão Líquido OMO Lavagem Perfeita 3 Litros",
       "savegnago": {
         "name": "Sabão Líquido OMO Lavagem Perfeita 3 Litros (Savegnago)",
         "store": "Savegnago Supermercados",

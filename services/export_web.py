@@ -30,6 +30,9 @@ def export_deals_to_json() -> str:
     
     # 1. Carrega produtos com inteligência de preço do banco de dados SQLite
     products_db = get_all_products_with_intelligence()
+    for p in products_db:
+        if "current_price" in p:
+            p["price"] = p["current_price"]
 
 
     # 2. Gera comparativos diretos Savegnago vs Copercana

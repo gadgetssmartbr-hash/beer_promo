@@ -268,12 +268,14 @@
 
     function renderDeals() {
       const grid = document.getElementById('dealsGrid');
-      const search = document.getElementById('searchInput').value.toLowerCase();
+      const search = (document.getElementById('searchInput').value || '').toLowerCase().trim();
       const sort = document.getElementById('sortSelect').value;
 
-      let filtered = appData.deals.filter(item => {
+      let filtered = (appData.deals || []).filter(item => {
         const matchesCategory = (currentCategory === 'all') || (item.category === currentCategory);
-        const matchesSearch = item.name.toLowerCase().includes(search) || item.store.toLowerCase().includes(search);
+        const itemName = (item.name || '').toLowerCase();
+        const itemStore = (item.store || '').toLowerCase();
+        const matchesSearch = !search || itemName.includes(search) || itemStore.includes(search);
         const matchesScore = !currentScoreFilter || (item.intelligence && item.intelligence.score === currentScoreFilter);
         return matchesCategory && matchesSearch && matchesScore;
       });
@@ -289,11 +291,11 @@
       } else if (sort === 'discount') {
         filtered.sort((a, b) => (b.discount_pct || 0) - (a.discount_pct || 0));
       } else if (sort === 'price_asc') {
-        filtered.sort((a, b) => a.price - b.price);
+        filtered.sort((a, b) => ((a.current_price !== undefined ? a.current_price : a.price) || 0) - ((b.current_price !== undefined ? b.current_price : b.price) || 0));
       } else if (sort === 'price_desc') {
-        filtered.sort((a, b) => b.price - a.price);
+        filtered.sort((a, b) => ((b.current_price !== undefined ? b.current_price : b.price) || 0) - ((a.current_price !== undefined ? a.current_price : a.price) || 0));
       } else if (sort === 'name') {
-        filtered.sort((a, b) => a.name.localeCompare(b.name));
+        filtered.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
       }
 
       document.getElementById('itemCount').innerText = filtered.length;
@@ -306,7 +308,7 @@
             <p class="text-xs text-slate-500 mt-1">Tente pesquisar outro termo ou alterar os filtros.</p>
           </div>
         `;
-        lucide.createIcons();
+        if (window.lucide) lucide.createIcons();
         return;
       }
 
@@ -321,12 +323,17 @@
         };
         const icon = iconMap[item.category] || '🛒';
         
-        // Inteligência de Preço
+        const priceVal = Number(item.current_price !== undefined ? item.current_price : (item.price || 0));
+        const origVal = (item.original_price !== null && item.original_price !== undefined && Number(item.original_price) > priceVal) ? Number(item.original_price) : null;
+        const minVal = item.min_price !== undefined ? Number(item.min_price) : priceVal;
+        const avgVal = item.avg_price !== undefined ? Number(item.avg_price) : (priceVal * 1.1);
+        const discountPct = item.discount_pct !== undefined ? Number(item.discount_pct) : 0;
 
+        // Inteligência de Preço
         const intel = item.intelligence || {
-          tag: item.discount_pct > 10 ? 'Bom Preço' : 'Preço Normal',
-          color: item.discount_pct > 10 ? 'emerald' : 'amber',
-          verdict: item.discount_pct > 10 ? '🔥 Oportunidade' : '⚖️ Preço Regular',
+          tag: discountPct > 10 ? 'Bom Preço' : 'Preço Normal',
+          color: discountPct > 10 ? 'emerald' : 'amber',
+          verdict: discountPct > 10 ? '🔥 Oportunidade' : '⚖️ Preço Regular',
           advice: 'Acompanhando histórico.',
           is_all_time_low: false
         };
@@ -339,9 +346,9 @@
         };
         const badgeClass = scoreBgMap[intel.color] || scoreBgMap.amber;
 
-        const originalPrice = item.original_price ? `<span class="text-xs text-slate-500 line-through mr-2">R$ ${item.original_price.toFixed(2).replace('.', ',')}</span>` : '';
-        const minPriceDisplay = item.min_price ? `R$ ${item.min_price.toFixed(2).replace('.', ',')}` : `R$ ${item.price.toFixed(2).replace('.', ',')}`;
-        const avgPriceDisplay = item.avg_price ? `R$ ${item.avg_price.toFixed(2).replace('.', ',')}` : `R$ ${(item.price * 1.1).toFixed(2).replace('.', ',')}`;
+        const originalPrice = origVal ? `<span class="text-xs text-slate-500 line-through mr-2">R$ ${origVal.toFixed(2).replace('.', ',')}</span>` : '';
+        const minPriceDisplay = `R$ ${minVal.toFixed(2).replace('.', ',')}`;
+        const avgPriceDisplay = `R$ ${avgVal.toFixed(2).replace('.', ',')}`;
 
         return `
           <div class="bg-slate-900/90 border border-slate-800 hover:border-slate-700 rounded-2xl p-5 flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-xl hover:shadow-rose-950/10">
@@ -369,10 +376,10 @@
                 <div>
                   ${originalPrice}
                   <div class="text-2xl font-black text-white tracking-tight">
-                    R$ ${item.price.toFixed(2).replace('.', ',')}
+                    R$ ${priceVal.toFixed(2).replace('.', ',')}
                   </div>
                 </div>
-                ${item.discount_pct > 0 ? `<span class="bg-rose-600 text-white text-xs font-extrabold px-2 py-0.5 rounded-md">-${Math.round(item.discount_pct)}%</span>` : ''}
+                ${discountPct > 0 ? `<span class="bg-rose-600 text-white text-xs font-extrabold px-2 py-0.5 rounded-md">-${Math.round(discountPct)}%</span>` : ''}
               </div>
 
               <!-- Price Thermometer / History Intelligence Widget -->
@@ -403,7 +410,7 @@
         `;
       }).join('');
 
-      lucide.createIcons();
+      if (window.lucide) lucide.createIcons();
     }
 
     function renderSupermarkets() {
