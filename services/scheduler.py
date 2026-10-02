@@ -1,5 +1,5 @@
 """
-Agendador de Tarefas: Executa a busca nos sites 4 vezes ao dia (08:00, 12:00, 16:00, 20:00)
+Agendador de Tarefas: Executa a busca nos sites 3 vezes ao dia (08:00, 13:00, 19:00)
 e envia notificações de promoções aos inscritos no Telegram.
 """
 import os
@@ -57,7 +57,7 @@ async def run_scheduled_scraping(bot: Bot = None):
                 f"  🏪 {item['store']} | 🔗 [Ver]({item['link']})"
             )
             
-    lines.append("\n💡 *Dica:* Envie o nome de qualquer bebida para pesquisar preços atuais.")
+    lines.append("\n💡 *Dica:* Digite o nome de qualquer produto para fazer uma busca em tempo real agora mesmo.")
     
     text = "\n".join(lines)
     
@@ -73,9 +73,9 @@ async def run_scheduled_scraping(bot: Bot = None):
             logger.error(f"Erro ao enviar notificação para chat {chat_id}: {e}")
 
 async def start_scheduler_job(app):
-    """Inicia o agendador após o loop de eventos estar ativo (post_init)."""
+    """Inicia o agendador após o loop de eventos estar ativo (post_init) 3x ao dia."""
     scheduler = AsyncIOScheduler()
-    scheduled_hours = [8, 12, 16, 20]
+    scheduled_hours = [8, 13, 19]
     
     for hour in scheduled_hours:
         trigger = CronTrigger(hour=hour, minute=0)
@@ -88,4 +88,4 @@ async def start_scheduler_job(app):
         logger.info(f"📅 Agendada busca diária para as {hour:02d}:00.")
 
     scheduler.start()
-    logger.info("⏰ Scheduler 4x/dia ativado com sucesso.")
+    logger.info("⏰ Scheduler 3x/dia ativado com sucesso (08h, 13h, 19h).")

@@ -2,11 +2,10 @@ name: Atualizar Ofertas e Publicar no GitHub Pages
 
 on:
   schedule:
-    # Roda 4x ao dia (UTC)
+    # Roda 3x ao dia (UTC: 11h, 16h, 22h -> BRT: 08h, 13h, 19h)
     - cron: '0 11 * * *'  # 08:00 BRT
-    - cron: '0 15 * * *'  # 12:00 BRT
-    - cron: '0 19 * * *'  # 16:00 BRT
-    - cron: '0 23 * * *'  # 20:00 BRT
+    - cron: '0 16 * * *'  # 13:00 BRT
+    - cron: '0 22 * * *'  # 19:00 BRT
   workflow_dispatch: # Permite rodar manualmente pelo painel do GitHub
 
 permissions:
@@ -40,5 +39,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main || true
           git add docs/data/deals.json promotions_history.db
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): atualizar ofertas e histórico [skip ci]" && git push)
