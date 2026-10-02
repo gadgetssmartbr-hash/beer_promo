@@ -41,7 +41,11 @@ from database import (
     get_subscribers,
     get_recent_price_drops,
     get_product_history,
+    add_to_watchlist,
+    get_watchlist,
+    remove_from_watchlist,
 )
+
 
 # Carrega variáveis de ambiente
 load_dotenv()
@@ -60,22 +64,26 @@ def get_main_menu_keyboard(chat_id: int = None):
     is_subscribed = chat_id in subscribers if chat_id else False
     
     alert_btn = (
-        InlineKeyboardButton("🔕 Desativar Alertas (4x/dia)", callback_data="menu_toggle_alerts")
+        InlineKeyboardButton("🔕 Desativar Alertas", callback_data="menu_toggle_alerts")
         if is_subscribed else
         InlineKeyboardButton("🔔 Ativar Alertas (4x/dia)", callback_data="menu_toggle_alerts")
     )
     
     keyboard = [
         [
+            InlineKeyboardButton("📝 Lista da Família", callback_data="menu_watchlist"),
+            InlineKeyboardButton("🧼 Limpeza & Açougue", callback_data="menu_grocery"),
+        ],
+        [
             InlineKeyboardButton("🍺 Ofertas de Cervejas", callback_data="menu_beers"),
             InlineKeyboardButton("🍷 Ofertas de Vinhos", callback_data="menu_wines"),
         ],
         [
-            InlineKeyboardButton("🛒 Mercados em Sertãozinho", callback_data="menu_supermarkets"),
+            InlineKeyboardButton("🛒 Mercados Sertãozinho", callback_data="menu_supermarkets"),
             InlineKeyboardButton("🎟️ Cupons & Zé Delivery", callback_data="menu_coupons"),
         ],
         [
-            InlineKeyboardButton("📊 Histórico de Preços", callback_data="menu_history"),
+            InlineKeyboardButton("📊 Histórico & Termômetro", callback_data="menu_history"),
             InlineKeyboardButton("⚡ Rodar Busca Agora", callback_data="menu_run_now"),
         ],
         [
@@ -96,12 +104,18 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     add_subscriber(chat_id, update.effective_user.username if update.effective_user else "")
 
     welcome_text = (
-        "🍻 *Olá! Bem-vindo ao Rastreador de Ofertas de Bebidas!* 🍷\n\n"
-        "Estou configurado para encontrar as melhores promoções de **Cervejas e Vinhos** "
-        "com entrega em **Sertãozinho/SP**, cobrindo Savegnago, Copercana, Zé Delivery, Mercado Livre, Wine, Evino e Amazon.\n\n"
-        "⏰ *Agendamento Ativo:* Buscas automáticas rodando **4x ao dia** (08:00, 12:00, 16:00, 20:00) com histórico salvo!\n\n"
-        "👇 *Escolha uma das opções abaixo ou envie o nome de uma bebida para buscar:*"
+        "🛒 *Olá! Bem-vindo ao Monitor de Ofertas da Família!* 👨‍👩‍👧\n\n"
+        "Estou configurado para vigiar **Supermercados (Savegnago, Copercana)**, "
+        "**Amazon Prime**, **Mercado Livre** e **Zé Delivery** em **Sertãozinho/SP**.\n\n"
+        "✨ *O que monitoramos:*\n"
+        "• 🧼 **Limpeza & Casa:** Sabão líquido OMO/Ariel, Amaciante, Papel Neve, Fraldas\n"
+        "• 🥩 **Açougue & Carnes:** Picanha, Contrafilé, Fraldinha, Frango\n"
+        "• 🍺🍷 **Bebidas & Adega:** Cervejas, Vinhos, Espumantes\n"
+        "• 📝 **Lista da Família:** Adicione qualquer item com `/vigiar <produto>`!\n\n"
+        "⏰ *Varreduras automáticas:* 4x ao dia (08h, 12h, 16h, 20h) com histórico salvo!\n\n"
+        "👇 *Escolha uma opção ou envie o nome de um produto para pesquisar:*"
     )
+
     if update.message:
         await update.message.reply_text(
             welcome_text,
@@ -443,6 +457,187 @@ async def handle_microsite(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
 
 
+async def handle_watchlist(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Exibe a lista de produtos vigiados pela família."""
+    query = update.callback_query
+    if query:
+        await query.answer()
+        chat_id = update.effective_chat.id
+    else:
+        chat_id = update.effective_chat.id
+
+    watchlist = get_watchlist(chat_id=chat_id)
+    
+    msg_lines = ["📝 *LISTA DE MONITORAMENTO DA FAMÍLIA* 👨‍👩‍👧\n"]
+    
+    if watchlist:
+        for idx, item in enumerate(watchlist, start=1):
+            target_str = f" (Alvo: R$ {item['target_max_price']:.2f})" if item.get('target_max_price') else ""
+            line = f"*{idx}. {item['item_name']}*{target_str}"
+            
+            if item.get("best_match"):
+                bm = item["best_match"]
+                disc = f" (-{bm['discount_pct']:.0f}%)" if bm.get('discount_pct') else ""
+                line += f"\n  💰 Melhor Preço Atual: *R$ {bm['price']:.2f}*{disc}\n  🏪 {bm['store']} | 🔗 [Ver Oferta]({bm['link']})"
+            else:
+                line += "\n  🔍 _Aguardando primeira varredura nos supermercados._"
+                
+            msg_lines.append(line + "\n")
+    else:
+        msg_lines.append(
+            "Sua lista ainda está vazia!\n\n"
+            "💡 *Como adicionar itens:*\n"
+            "Envie no chat: `/vigiar <nome do produto> [preço alvo opcional]`\n\n"
+            "Exemplos:\n"
+            "👉 `/vigiar Sabão Líquido Omo 3L`\n"
+            "👉 `/vigiar Picanha 59.90`\n"
+            "👉 `/vigiar Amaciante Downy 1.5L`\n"
+            "👉 `/vigiar Azeite Extra Virgem`"
+        )
+        
+    msg_lines.append("\n🗑️ Para remover um item, use: `/remover <nome do produto>`")
+
+    back_keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("➕ Como Adicionar Itens", callback_data="menu_how_to_watch")],
+        [InlineKeyboardButton("🔙 Voltar ao Menu Principal", callback_data="menu_start")]
+    ])
+    
+    if query:
+        await query.edit_message_text(
+            "\n".join(msg_lines),
+            reply_markup=back_keyboard,
+            parse_mode="Markdown",
+            disable_web_page_preview=True
+        )
+    elif update.message:
+        await update.message.reply_text(
+            "\n".join(msg_lines),
+            reply_markup=back_keyboard,
+            parse_mode="Markdown",
+            disable_web_page_preview=True
+        )
+
+async def handle_grocery(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Exibe ofertas de Limpeza, Açougue e Mercearia dos mercados."""
+    query = update.callback_query
+    await query.answer()
+    
+    await query.edit_message_text("🔍 *Buscando ofertas de Limpeza e Açougue em Sertãozinho...*", parse_mode="Markdown")
+    
+    from database import get_all_products_with_intelligence
+    all_prods = get_all_products_with_intelligence()
+    
+    grocery_items = [p for p in all_prods if p.get("category") in ["limpeza", "acougue", "mercearia"]]
+    
+    msg_lines = ["🧼 *DESTAQUES DE LIMPEZA, AÇOUGUE & MERCADO:* 🥩\n"]
+    
+    if grocery_items:
+        for p in grocery_items[:7]:
+            icon = "🧼" if p["category"] == "limpeza" else ("🥩" if p["category"] == "acougue" else "☕")
+            orig = f"~R$ {p['original_price']:.2f}~ " if p.get("original_price") else ""
+            disc = f" (-{p['discount_pct']:.0f}%)" if p.get("discount_pct") else ""
+            msg_lines.append(
+                f"{icon} *{p['name']}*\n"
+                f"  💰 Preço: {orig}*R$ {p['current_price']:.2f}*{disc}\n"
+                f"  🏪 {p['store']} | 🔗 [Ver Oferta]({p['link']})\n"
+            )
+    else:
+        msg_lines.append("Nenhum item carregado no momento. Clique em '⚡ Rodar Busca Agora'!")
+        
+    back_keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("📝 Adicionar à Lista da Família", callback_data="menu_watchlist")],
+        [InlineKeyboardButton("🔙 Voltar ao Menu Principal", callback_data="menu_start")]
+    ])
+    
+    await query.edit_message_text(
+        "\n".join(msg_lines),
+        reply_markup=back_keyboard,
+        parse_mode="Markdown",
+        disable_web_page_preview=True
+    )
+
+async def watch_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Comando /vigiar <produto> [preco_alvo]"""
+    if not context.args:
+        await update.message.reply_text(
+            "⚠️ *Como usar o comando /vigiar:*\n\n"
+            "Envie: `/vigiar <nome do produto> [preço alvo opcional]`\n\n"
+            "Exemplos:\n"
+            "👉 `/vigiar Sabão Líquido Omo 3L 39.90`\n"
+            "👉 `/vigiar Picanha Savegnago 60.00`\n"
+            "👉 `/vigiar Papel Neve`",
+            parse_mode="Markdown"
+        )
+        return
+        
+    chat_id = update.effective_chat.id
+    raw_text = " ".join(context.args)
+    
+    # Tenta extrair preço alvo se a última palavra for um número
+    parts = raw_text.split()
+    target_price = None
+    if len(parts) > 1:
+        last_part = parts[-1].replace(",", ".")
+        try:
+            target_price = float(last_part)
+            item_name = " ".join(parts[:-1])
+        except ValueError:
+            item_name = raw_text
+    else:
+        item_name = raw_text
+
+    add_to_watchlist(item_name=item_name, target_max_price=target_price, chat_id=chat_id)
+    
+    price_info = f" com preço alvo de *R$ {target_price:.2f}*" if target_price else ""
+    text = (
+        f"✅ *Item adicionado à Lista da Família!* 👨‍👩‍👧\n\n"
+        f"📌 *Produto:* `{item_name}`{price_info}\n\n"
+        f"O robô vigiará o **Savegnago, Copercana, Amazon e Mercado Livre** 4x ao dia e avisará sempre que encontrar uma boa oferta!"
+    )
+    
+    keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("📝 Ver Minha Lista", callback_data="menu_watchlist")],
+        [InlineKeyboardButton("⚡ Rodar Busca Agora", callback_data="menu_run_now")]
+    ])
+    
+    await update.message.reply_text(text, reply_markup=keyboard, parse_mode="Markdown")
+
+async def remove_watch_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Comando /remover <produto>"""
+    if not context.args:
+        await update.message.reply_text("Envie: `/remover <nome do produto>` para tirar da lista.", parse_mode="Markdown")
+        return
+        
+    chat_id = update.effective_chat.id
+    item_name = " ".join(context.args)
+    removed = remove_from_watchlist(item_name, chat_id=chat_id)
+    
+    if removed:
+        await update.message.reply_text(f"🗑️ *'{item_name}'* foi removido da sua lista com sucesso.", parse_mode="Markdown")
+    else:
+        await update.message.reply_text(f"❓ Não encontrei *'{item_name}'* na sua lista.", parse_mode="Markdown")
+
+async def handle_how_to_watch(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+    
+    text = (
+        "💡 *COMO USAR A LISTA DA FAMÍLIA* 👨‍👩‍👧\n\n"
+        "Qualquer pessoa da família pode adicionar itens essenciais para o robô vigiar nos supermercados de Sertãozinho e na Amazon:\n\n"
+        "👉 `/vigiar Sabão Líquido Omo 3L 39.90`\n"
+        "👉 `/vigiar Picanha 59.90`\n"
+        "👉 `/vigiar Amaciante Downy`\n"
+        "👉 `/vigiar Café Pilão 500g 18.00`\n\n"
+        "O robô pesquisará nas 4 rodadas diárias (08h, 12h, 16h, 20h) e notificará no chat quando houver oferta!"
+    )
+    
+    back_keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("📝 Ver Minha Lista", callback_data="menu_watchlist")],
+        [InlineKeyboardButton("🔙 Voltar ao Menu Principal", callback_data="menu_start")]
+    ])
+    
+    await query.edit_message_text(text, reply_markup=back_keyboard, parse_mode="Markdown")
+
 async def callback_router(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Roteador para os botões inline"""
     query = update.callback_query
@@ -450,6 +645,10 @@ async def callback_router(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     if data == "menu_start":
         await start_command(update, context)
+    elif data == "menu_watchlist":
+        await handle_watchlist(update, context)
+    elif data == "menu_grocery":
+        await handle_grocery(update, context)
     elif data == "menu_beers":
         await handle_beers(update, context)
     elif data == "menu_wines":
@@ -464,9 +663,10 @@ async def callback_router(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await handle_run_now(update, context)
     elif data == "menu_microsite":
         await handle_microsite(update, context)
+    elif data == "menu_how_to_watch":
+        await handle_how_to_watch(update, context)
     elif data == "menu_toggle_alerts":
         await handle_toggle_alerts(update, context)
-
 
 def main():
     if not TELEGRAM_BOT_TOKEN or TELEGRAM_BOT_TOKEN == "SEU_TOKEN_AQUI":
@@ -482,6 +682,9 @@ def main():
 
     # Handlers de comandos
     app.add_handler(CommandHandler(["start", "ajuda", "menu"], start_command))
+    app.add_handler(CommandHandler(["vigiar", "adicionar"], watch_command))
+    app.add_handler(CommandHandler(["minhalista", "lista"], handle_watchlist))
+    app.add_handler(CommandHandler(["remover", "deletar"], remove_watch_command))
     app.add_handler(CommandHandler("buscar", search_command))
     app.add_handler(CommandHandler("historico", handle_history))
     app.add_handler(CommandHandler("rodaragora", handle_run_now))
@@ -489,7 +692,7 @@ def main():
     app.add_handler(CallbackQueryHandler(callback_router))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, search_command))
 
-    print("🚀 Bot de Promoções de Cervejas e Vinhos (Sertãozinho) iniciado com sucesso!")
+    print("🚀 Bot de Promoções da Família (Sertãozinho) iniciado com sucesso!")
     print("⏰ Agendamento: 4 buscas diárias (08:00, 12:00, 16:00, 20:00).")
     print("💾 Banco de Dados SQLite: promotions_history.db pronto.")
     
@@ -497,3 +700,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

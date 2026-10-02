@@ -106,19 +106,29 @@
           <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-filter="great">
             🔥 Oportunidades Reais
           </button>
+          <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-category="limpeza">
+            🧼 Limpeza & Casa
+          </button>
+          <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-category="acougue">
+            🥩 Açougue & Carnes
+          </button>
+          <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-category="mercearia">
+            ☕ Mercearia
+          </button>
           <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-category="cerveja">
             🍺 Cervejas
           </button>
           <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-category="vinho">
-            🍷 Vinhos & Espumantes
+            🍷 Vinhos
           </button>
           <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-tab="supermarkets">
             🛒 Supermercados Locais
           </button>
           <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-tab="coupons">
-            🎟️ Cupons & Zé Delivery
+            🎟️ Cupons
           </button>
         </div>
+
       </div>
     </div>
   </section>
@@ -279,10 +289,18 @@
       }
 
       grid.innerHTML = filtered.map(item => {
-        const isBeer = item.category === 'cerveja';
-        const icon = isBeer ? '🍺' : '🍷';
+        const iconMap = {
+          cerveja: '🍺',
+          vinho: '🍷',
+          limpeza: '🧼',
+          acougue: '🥩',
+          mercearia: '☕',
+          watchlist: '⭐'
+        };
+        const icon = iconMap[item.category] || '🛒';
         
         // Inteligência de Preço
+
         const intel = item.intelligence || {
           tag: item.discount_pct > 10 ? 'Bom Preço' : 'Preço Normal',
           color: item.discount_pct > 10 ? 'emerald' : 'amber',

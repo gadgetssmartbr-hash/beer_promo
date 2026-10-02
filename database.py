@@ -54,7 +54,22 @@ def init_db():
             )
         """)
         
+        # Tabela de Lista de Desejos / Monitoramento da Família
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS watchlist (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                item_name TEXT NOT NULL,
+                category TEXT DEFAULT 'geral',
+                store TEXT DEFAULT 'Todos',
+                target_max_price REAL,
+                chat_id INTEGER,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                UNIQUE(item_name, chat_id)
+            )
+        """)
+        
         conn.commit()
+
 
 def save_price_record(
     name: str,
@@ -227,6 +242,62 @@ def get_all_products_with_intelligence() -> List[Dict[str, Any]]:
             
         return results
 
+def add_to_watchlist(item_name: str, target_max_price: Optional[float] = None, category: str = "geral", store: str = "Todos", chat_id: Optional[int] = None) -> bool:
+    """Adiciona um produto à lista de monitoramento da família."""
+    with get_connection() as conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            INSERT INTO watchlist (item_name, target_max_price, category, store, chat_id)
+            VALUES (?, ?, ?, ?, ?)
+            ON CONFLICT(item_name, chat_id) DO UPDATE SET
+                target_max_price = excluded.target_max_price,
+                store = excluded.store,
+                category = excluded.category
+        """, (item_name.strip(), target_max_price, category, store, chat_id))
+        conn.commit()
+        return True
+
+def get_watchlist(chat_id: Optional[int] = None) -> List[Dict[str, Any]]:
+    """Retorna todos os itens da lista de compras da família com preços atuais encontrados."""
+    with get_connection() as conn:
+        cursor = conn.cursor()
+        if chat_id:
+            cursor.execute("SELECT * FROM watchlist WHERE chat_id = ? ORDER BY created_at DESC", (chat_id,))
+        else:
+            cursor.execute("SELECT * FROM watchlist ORDER BY created_at DESC")
+        
+        rows = [dict(r) for r in cursor.fetchall()]
+        
+        # Enriquece cada item com o menor preço atual encontrado no banco
+        for item in rows:
+            cursor.execute("""
+                SELECT p.name, p.store, p.link, ph.price, ph.original_price, ph.discount_pct
+                FROM products p
+                JOIN price_history ph ON ph.product_id = p.id
+                WHERE p.name LIKE ?
+                ORDER BY ph.price ASC
+                LIMIT 1
+            """, (f"%{item['item_name']}%",))
+            match = cursor.fetchone()
+            if match:
+                item["best_match"] = dict(match)
+            else:
+                item["best_match"] = None
+                
+        return rows
+
+def remove_from_watchlist(item_name: str, chat_id: Optional[int] = None) -> bool:
+    """Remove um item da lista de compras da família."""
+    with get_connection() as conn:
+        cursor = conn.cursor()
+        if chat_id:
+            cursor.execute("DELETE FROM watchlist WHERE item_name LIKE ? AND chat_id = ?", (f"%{item_name}%", chat_id))
+        else:
+            cursor.execute("DELETE FROM watchlist WHERE item_name LIKE ?", (f"%{item_name}%",))
+        conn.commit()
+        return cursor.rowcount > 0
+
 # Inicializa o banco ao importar
 init_db()
+
 
