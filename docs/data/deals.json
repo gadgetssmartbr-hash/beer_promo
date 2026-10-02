@@ -1,9 +1,9 @@
 {
   "metadata": {
     "city": "Sertãozinho - SP",
-    "updated_at": "02/10/2026 às 15:51",
+    "updated_at": "02/10/2026 às 22:02",
     "telegram_bot": "https://t.me/beerstz_bot",
-    "total_items": 64
+    "total_items": 189
   },
   "deals": [
     {
@@ -15,11 +15,11 @@
       "min_price": 219.0,
       "avg_price": 219.0,
       "max_price": 219.0,
-      "total_checks": 5,
+      "total_checks": 6,
       "current_price": 219.0,
       "original_price": 389.0,
       "discount_pct": 43.7,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "last_recorded_at": "2026-10-02 22:02:16",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -60,6 +60,12 @@
           "original_price": 389.0,
           "discount_pct": 43.7,
           "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 219.0,
+          "original_price": 389.0,
+          "discount_pct": 43.7,
+          "recorded_at": "2026-10-02 22:02:16"
         }
       ],
       "price": 219.0
@@ -71,13 +77,13 @@
       "store": "Wine.com.br",
       "link": "https://www.wine.com.br/vinhos/ofertas",
       "min_price": 109.9,
-      "avg_price": 109.9,
+      "avg_price": 109.90000000000002,
       "max_price": 109.9,
-      "total_checks": 5,
+      "total_checks": 6,
       "current_price": 109.9,
       "original_price": 179.7,
       "discount_pct": 38.8,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "last_recorded_at": "2026-10-02 22:02:16",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -118,6 +124,12 @@
           "original_price": 179.7,
           "discount_pct": 38.8,
           "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 109.9,
+          "original_price": 179.7,
+          "discount_pct": 38.8,
+          "recorded_at": "2026-10-02 22:02:16"
         }
       ],
       "price": 109.9
@@ -127,15 +139,15 @@
       "name": "Sabão Líquido OMO Lavagem Perfeita 3 Litros (Copercana)",
       "category": "limpeza",
       "store": "Supermercados Copercana",
-      "link": "https://www.supermercadoscopercana.com.br/limpeza",
+      "link": "https://www.supermercadoscopercana.com.br",
       "min_price": 39.9,
       "avg_price": 39.9,
       "max_price": 39.9,
-      "total_checks": 1,
+      "total_checks": 2,
       "current_price": 39.9,
       "original_price": 54.9,
       "discount_pct": 27.3,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "last_recorded_at": "2026-10-02 22:02:15",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -148,16 +160,16 @@
       },
       "history_points": [
         {
-          "price": 54.9,
+          "price": 39.9,
           "original_price": 54.9,
-          "discount_pct": 0,
-          "recorded_at": "Início do Monitoramento"
+          "discount_pct": 27.3,
+          "recorded_at": "2026-10-02 16:03:28"
         },
         {
           "price": 39.9,
           "original_price": 54.9,
           "discount_pct": 27.3,
-          "recorded_at": "2026-10-02 16:03:28"
+          "recorded_at": "2026-10-02 22:02:15"
         }
       ],
       "price": 39.9
@@ -167,15 +179,15 @@
       "name": "Sabão Líquido OMO Lavagem Perfeita 3 Litros (Savegnago)",
       "category": "limpeza",
       "store": "Savegnago Supermercados",
-      "link": "https://www.savegnago.com.br/busca?ft=omo+liquido",
+      "link": "https://www.savegnago.com.br/busca?ft=OMO+Líquido+3L",
       "min_price": 38.9,
       "avg_price": 38.9,
       "max_price": 38.9,
-      "total_checks": 2,
+      "total_checks": 3,
       "current_price": 38.9,
       "original_price": 52.9,
       "discount_pct": 26.5,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "last_recorded_at": "2026-10-02 22:02:14",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -198,6 +210,12 @@
           "original_price": 52.9,
           "discount_pct": 26.5,
           "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 38.9,
+          "original_price": 52.9,
+          "discount_pct": 26.5,
+          "recorded_at": "2026-10-02 22:02:14"
         }
       ],
       "price": 38.9
@@ -243,26 +261,66 @@
       "price": 36.9
     },
     {
-      "id": 50,
-      "name": "Sabão Líquido Ariel Expert Concentrado 2L (Amazon Prime)",
+      "id": 245,
+      "name": "Sabão Líquido OMO Lavagem Perfeita 3 Litros (Paulistão Atacadista)",
       "category": "limpeza",
-      "store": "Amazon Brasil",
-      "link": "https://www.amazon.com.br/s?k=sabao+liquido+ariel&i=grocery",
-      "min_price": 31.9,
-      "avg_price": 31.899999999999995,
-      "max_price": 31.9,
-      "total_checks": 3,
-      "current_price": 31.9,
-      "original_price": 42.9,
-      "discount_pct": 25.6,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 36.9,
+      "avg_price": 36.9,
+      "max_price": 36.9,
+      "total_checks": 1,
+      "current_price": 36.9,
+      "original_price": 49.9,
+      "discount_pct": 26.1,
+      "last_recorded_at": "2026-10-02 22:02:15",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 49.9,
+          "original_price": 49.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 36.9,
+          "original_price": 49.9,
+          "discount_pct": 26.1,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 36.9
+    },
+    {
+      "id": 50,
+      "name": "Sabão Líquido Ariel Expert Concentrado 2L (Amazon Prime)",
+      "category": "limpeza",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/s?k=sabao+liquido+ariel&i=grocery",
+      "min_price": 31.9,
+      "avg_price": 31.9,
+      "max_price": 31.9,
+      "total_checks": 4,
+      "current_price": 31.9,
+      "original_price": 42.9,
+      "discount_pct": 25.6,
+      "last_recorded_at": "2026-10-02 22:02:16",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -284,6 +342,12 @@
           "original_price": 42.9,
           "discount_pct": 25.6,
           "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 31.9,
+          "original_price": 42.9,
+          "discount_pct": 25.6,
+          "recorded_at": "2026-10-02 22:02:16"
         }
       ],
       "price": 31.9
@@ -337,11 +401,11 @@
       "min_price": 44.9,
       "avg_price": 44.9,
       "max_price": 44.9,
-      "total_checks": 4,
+      "total_checks": 5,
       "current_price": 44.9,
       "original_price": 59.9,
       "discount_pct": 25.0,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "last_recorded_at": "2026-10-02 22:02:16",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -376,6 +440,12 @@
           "original_price": 59.9,
           "discount_pct": 25.0,
           "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 44.9,
+          "original_price": 59.9,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-10-02 22:02:16"
         }
       ],
       "price": 44.9
@@ -427,20 +497,20 @@
       "store": "Amazon Brasil",
       "link": "https://www.amazon.com.br/s?k=amaciante+downy&i=grocery",
       "min_price": 24.9,
-      "avg_price": 24.899999999999995,
+      "avg_price": 24.9,
       "max_price": 24.9,
-      "total_checks": 3,
+      "total_checks": 4,
       "current_price": 24.9,
       "original_price": 32.9,
       "discount_pct": 24.3,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "last_recorded_at": "2026-10-02 22:02:16",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -462,6 +532,12 @@
           "original_price": 32.9,
           "discount_pct": 24.3,
           "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 24.9,
+          "original_price": 32.9,
+          "discount_pct": 24.3,
+          "recorded_at": "2026-10-02 22:02:16"
         }
       ],
       "price": 24.9
@@ -547,6 +623,166 @@
       "price": 62.9
     },
     {
+      "id": 191,
+      "name": "Picanha Bovina Resfriada Peça / Kg (Friboi / Minerva) (Copercana)",
+      "category": "acougue",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 62.9,
+      "avg_price": 62.9,
+      "max_price": 62.9,
+      "total_checks": 1,
+      "current_price": 62.9,
+      "original_price": 82.9,
+      "discount_pct": 24.1,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 82.9,
+          "original_price": 82.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 62.9,
+          "original_price": 82.9,
+          "discount_pct": 24.1,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 62.9
+    },
+    {
+      "id": 242,
+      "name": "Tomate Italiano Especial Kg (Paulistão Atacadista)",
+      "category": "hortifruti",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 6.89,
+      "avg_price": 6.89,
+      "max_price": 6.89,
+      "total_checks": 1,
+      "current_price": 6.89,
+      "original_price": 8.99,
+      "discount_pct": 23.4,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 8.99,
+          "original_price": 8.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 6.89,
+          "original_price": 8.99,
+          "discount_pct": 23.4,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 6.89
+    },
+    {
+      "id": 147,
+      "name": "Picanha Bovina Resfriada Peça / Kg (Friboi / Minerva) (Savegnago)",
+      "category": "acougue",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Picanha+Bovina+(Kg)",
+      "min_price": 68.9,
+      "avg_price": 68.9,
+      "max_price": 68.9,
+      "total_checks": 1,
+      "current_price": 68.9,
+      "original_price": 89.9,
+      "discount_pct": 23.4,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 89.9,
+          "original_price": 89.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 68.9,
+          "original_price": 89.9,
+          "discount_pct": 23.4,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 68.9
+    },
+    {
+      "id": 162,
+      "name": "Desinfetante Pinho Sol / Veja Perfumado 1L (Savegnago)",
+      "category": "limpeza",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Desinfetante+Pinho+Sol+1L",
+      "min_price": 9.9,
+      "avg_price": 9.9,
+      "max_price": 9.9,
+      "total_checks": 1,
+      "current_price": 9.9,
+      "original_price": 12.9,
+      "discount_pct": 23.3,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 12.9,
+          "original_price": 12.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 9.9,
+          "original_price": 12.9,
+          "discount_pct": 23.3,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 9.9
+    },
+    {
       "id": 67,
       "name": "Café Pilão / Melitta Tradicional 500g (Savegnago)",
       "category": "mercearia",
@@ -587,19 +823,59 @@
       "price": 19.9
     },
     {
+      "id": 243,
+      "name": "Cebola Nacional Selecionada Kg (Paulistão Atacadista)",
+      "category": "hortifruti",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 4.99,
+      "avg_price": 4.99,
+      "max_price": 4.99,
+      "total_checks": 1,
+      "current_price": 4.99,
+      "original_price": 6.49,
+      "discount_pct": 23.1,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 6.49,
+          "original_price": 6.49,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 4.99,
+          "original_price": 6.49,
+          "discount_pct": 23.1,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 4.99
+    },
+    {
       "id": 3,
       "name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon 750ml (Savegnago)",
       "category": "vinho",
       "store": "Savegnago Supermercados",
-      "link": "https://www.savegnago.com.br/busca?ft=casillero",
+      "link": "https://www.savegnago.com.br/busca?ft=Casillero+del+Diablo+750ml",
       "min_price": 49.9,
       "avg_price": 49.9,
       "max_price": 49.9,
-      "total_checks": 4,
+      "total_checks": 5,
       "current_price": 49.9,
       "original_price": 64.9,
       "discount_pct": 23.1,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "last_recorded_at": "2026-10-02 22:02:14",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -634,9 +910,55 @@
           "original_price": 64.9,
           "discount_pct": 23.1,
           "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 49.9,
+          "original_price": 64.9,
+          "discount_pct": 23.1,
+          "recorded_at": "2026-10-02 22:02:14"
         }
       ],
       "price": 49.9
+    },
+    {
+      "id": 240,
+      "name": "Linguiça Toscana para Churrasco Kg (Seara / Aurora / Perdigão) (Paulistão Atacadista)",
+      "category": "acougue",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 16.9,
+      "avg_price": 16.9,
+      "max_price": 16.9,
+      "total_checks": 1,
+      "current_price": 16.9,
+      "original_price": 21.9,
+      "discount_pct": 22.8,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 21.9,
+          "original_price": 21.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 16.9,
+          "original_price": 21.9,
+          "discount_pct": 22.8,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 16.9
     },
     {
       "id": 114,
@@ -679,19 +1001,19 @@
       "price": 57.9
     },
     {
-      "id": 99,
-      "name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon 750ml (Copercana)",
-      "category": "vinho",
-      "store": "Supermercados Copercana",
-      "link": "https://www.supermercadoscopercana.com.br/vinhos",
-      "min_price": 51.9,
-      "avg_price": 51.9,
-      "max_price": 51.9,
+      "id": 235,
+      "name": "Picanha Bovina Resfriada Peça / Kg (Friboi / Minerva) (Paulistão Atacadista)",
+      "category": "acougue",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 57.9,
+      "avg_price": 57.9,
+      "max_price": 57.9,
       "total_checks": 1,
-      "current_price": 51.9,
-      "original_price": 66.9,
-      "discount_pct": 22.4,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "current_price": 57.9,
+      "original_price": 74.9,
+      "discount_pct": 22.7,
+      "last_recorded_at": "2026-10-02 22:02:15",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -704,19 +1026,99 @@
       },
       "history_points": [
         {
-          "price": 66.9,
-          "original_price": 66.9,
+          "price": 74.9,
+          "original_price": 74.9,
           "discount_pct": 0,
           "recorded_at": "Início do Monitoramento"
         },
+        {
+          "price": 57.9,
+          "original_price": 74.9,
+          "discount_pct": 22.7,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 57.9
+    },
+    {
+      "id": 99,
+      "name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon 750ml (Copercana)",
+      "category": "vinho",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 51.9,
+      "avg_price": 51.9,
+      "max_price": 51.9,
+      "total_checks": 2,
+      "current_price": 51.9,
+      "original_price": 66.9,
+      "discount_pct": 22.4,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
         {
           "price": 51.9,
           "original_price": 66.9,
           "discount_pct": 22.4,
           "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 51.9,
+          "original_price": 66.9,
+          "discount_pct": 22.4,
+          "recorded_at": "2026-10-02 22:02:15"
         }
       ],
       "price": 51.9
+    },
+    {
+      "id": 253,
+      "name": "Sabonete em Barra Dove Original / Rexona 90g (Paulistão Atacadista)",
+      "category": "higiene",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 3.49,
+      "avg_price": 3.49,
+      "max_price": 3.49,
+      "total_checks": 1,
+      "current_price": 3.49,
+      "original_price": 4.49,
+      "discount_pct": 22.3,
+      "last_recorded_at": "2026-10-02 22:02:16",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 4.49,
+          "original_price": 4.49,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 3.49,
+          "original_price": 4.49,
+          "discount_pct": 22.3,
+          "recorded_at": "2026-10-02 22:02:16"
+        }
+      ],
+      "price": 3.49
     },
     {
       "id": 66,
@@ -759,19 +1161,139 @@
       "price": 34.9
     },
     {
+      "id": 208,
+      "name": "Creme Dental Colgate Total 12 / Tripla Ação 90g (Copercana)",
+      "category": "higiene",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 5.29,
+      "avg_price": 5.29,
+      "max_price": 5.29,
+      "total_checks": 1,
+      "current_price": 5.29,
+      "original_price": 6.79,
+      "discount_pct": 22.1,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 6.79,
+          "original_price": 6.79,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 5.29,
+          "original_price": 6.79,
+          "discount_pct": 22.1,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 5.29
+    },
+    {
+      "id": 227,
+      "name": "Molho de Tomate Tradicional Sachê 300g (Elefante / Fugini / Pomarola) (Paulistão Atacadista)",
+      "category": "mercearia",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 1.95,
+      "avg_price": 1.95,
+      "max_price": 1.95,
+      "total_checks": 1,
+      "current_price": 1.95,
+      "original_price": 2.49,
+      "discount_pct": 21.7,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 2.49,
+          "original_price": 2.49,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 1.95,
+          "original_price": 2.49,
+          "discount_pct": 21.7,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 1.95
+    },
+    {
+      "id": 251,
+      "name": "Água Sanitária Q-Boa / Candida 2 Litros (Paulistão Atacadista)",
+      "category": "limpeza",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 4.69,
+      "avg_price": 4.69,
+      "max_price": 4.69,
+      "total_checks": 1,
+      "current_price": 4.69,
+      "original_price": 5.99,
+      "discount_pct": 21.7,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 5.99,
+          "original_price": 5.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 4.69,
+          "original_price": 5.99,
+          "discount_pct": 21.7,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 4.69
+    },
+    {
       "id": 7,
       "name": "Kit 4 Vinhos Tintos Chilenos Reservado Concha y Toro 750ml",
       "category": "vinho",
       "store": "Mercado Livre Full",
       "link": "https://lista.mercadolivre.com.br/kit-vinho-tinto-reservado_OrderId_PRICE*ASC_Shipping_fulfillment",
       "min_price": 124.9,
-      "avg_price": 124.9,
+      "avg_price": 124.90000000000002,
       "max_price": 124.9,
-      "total_checks": 5,
+      "total_checks": 6,
       "current_price": 124.9,
       "original_price": 159.6,
       "discount_pct": 21.7,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "last_recorded_at": "2026-10-02 22:02:16",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -812,9 +1334,135 @@
           "original_price": 159.6,
           "discount_pct": 21.7,
           "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 124.9,
+          "original_price": 159.6,
+          "discount_pct": 21.7,
+          "recorded_at": "2026-10-02 22:02:16"
         }
       ],
       "price": 124.9
+    },
+    {
+      "id": 163,
+      "name": "Água Sanitária Q-Boa / Candida 2 Litros (Savegnago)",
+      "category": "limpeza",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Água+Sanitária+2L",
+      "min_price": 5.49,
+      "avg_price": 5.49,
+      "max_price": 5.49,
+      "total_checks": 1,
+      "current_price": 5.49,
+      "original_price": 6.99,
+      "discount_pct": 21.5,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 6.99,
+          "original_price": 6.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 5.49,
+          "original_price": 6.99,
+          "discount_pct": 21.5,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 5.49
+    },
+    {
+      "id": 164,
+      "name": "Creme Dental Colgate Total 12 / Tripla Ação 90g (Savegnago)",
+      "category": "higiene",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Creme+Dental+Colgate+90g",
+      "min_price": 5.49,
+      "avg_price": 5.49,
+      "max_price": 5.49,
+      "total_checks": 1,
+      "current_price": 5.49,
+      "original_price": 6.99,
+      "discount_pct": 21.5,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 6.99,
+          "original_price": 6.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 5.49,
+          "original_price": 6.99,
+          "discount_pct": 21.5,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 5.49
+    },
+    {
+      "id": 244,
+      "name": "Batata Inglesa Lavada Kg (Paulistão Atacadista)",
+      "category": "hortifruti",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 5.49,
+      "avg_price": 5.49,
+      "max_price": 5.49,
+      "total_checks": 1,
+      "current_price": 5.49,
+      "original_price": 6.99,
+      "discount_pct": 21.5,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 6.99,
+          "original_price": 6.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 5.49,
+          "original_price": 6.99,
+          "discount_pct": 21.5,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 5.49
     },
     {
       "id": 113,
@@ -857,6 +1505,46 @@
       "price": 21.9
     },
     {
+      "id": 241,
+      "name": "Banana Prata Selecionada Kg (Paulistão Atacadista)",
+      "category": "hortifruti",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 6.29,
+      "avg_price": 6.29,
+      "max_price": 6.29,
+      "total_checks": 1,
+      "current_price": 6.29,
+      "original_price": 7.99,
+      "discount_pct": 21.3,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 7.99,
+          "original_price": 7.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 6.29,
+          "original_price": 7.99,
+          "discount_pct": 21.3,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 6.29
+    },
+    {
       "id": 115,
       "name": "Contrafilé Bovino Peça / Kg (Açougue Paulistão)",
       "category": "acougue",
@@ -897,6 +1585,46 @@
       "price": 36.9
     },
     {
+      "id": 198,
+      "name": "Tomate Italiano Especial Kg (Copercana)",
+      "category": "hortifruti",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 7.49,
+      "avg_price": 7.49,
+      "max_price": 7.49,
+      "total_checks": 1,
+      "current_price": 7.49,
+      "original_price": 9.49,
+      "discount_pct": 21.1,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 9.49,
+          "original_price": 9.49,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 7.49,
+          "original_price": 9.49,
+          "discount_pct": 21.1,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 7.49
+    },
+    {
       "id": 31,
       "name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon (Amazon Prime)",
       "category": "vinho",
@@ -935,6 +1663,46 @@
         }
       ],
       "price": 48.9
+    },
+    {
+      "id": 196,
+      "name": "Linguiça Toscana para Churrasco Kg (Seara / Aurora / Perdigão) (Copercana)",
+      "category": "acougue",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 18.9,
+      "avg_price": 18.9,
+      "max_price": 18.9,
+      "total_checks": 1,
+      "current_price": 18.9,
+      "original_price": 23.9,
+      "discount_pct": 20.9,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 23.9,
+          "original_price": 23.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 18.9,
+          "original_price": 23.9,
+          "discount_pct": 20.9,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 18.9
     },
     {
       "id": 62,
@@ -1017,6 +1785,86 @@
       "price": 22.9
     },
     {
+      "id": 161,
+      "name": "Papel Higiênico Neve Folha Dupla Pacote c/ 12 Rolos (Savegnago)",
+      "category": "limpeza",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Papel+Neve+12+Rolos",
+      "min_price": 22.9,
+      "avg_price": 22.9,
+      "max_price": 22.9,
+      "total_checks": 1,
+      "current_price": 22.9,
+      "original_price": 28.9,
+      "discount_pct": 20.8,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 28.9,
+          "original_price": 28.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 22.9,
+          "original_price": 28.9,
+          "discount_pct": 20.8,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 22.9
+    },
+    {
+      "id": 203,
+      "name": "Amaciante Concentrado Downy / Comfort 1,5L (Copercana)",
+      "category": "limpeza",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 22.9,
+      "avg_price": 22.9,
+      "max_price": 22.9,
+      "total_checks": 1,
+      "current_price": 22.9,
+      "original_price": 28.9,
+      "discount_pct": 20.8,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 28.9,
+          "original_price": 28.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 22.9,
+          "original_price": 28.9,
+          "discount_pct": 20.8,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 22.9
+    },
+    {
       "id": 8,
       "name": "Kit 6 Garrafas Vinho Argentino Malbec Finca Las Moras",
       "category": "vinho",
@@ -1025,11 +1873,11 @@
       "min_price": 189.9,
       "avg_price": 189.9,
       "max_price": 189.9,
-      "total_checks": 5,
+      "total_checks": 6,
       "current_price": 189.9,
       "original_price": 239.4,
       "discount_pct": 20.7,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "last_recorded_at": "2026-10-02 22:02:16",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -1070,6 +1918,12 @@
           "original_price": 239.4,
           "discount_pct": 20.7,
           "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 189.9,
+          "original_price": 239.4,
+          "discount_pct": 20.7,
+          "recorded_at": "2026-10-02 22:02:16"
         }
       ],
       "price": 189.9
@@ -1115,6 +1969,286 @@
       "price": 38.9
     },
     {
+      "id": 228,
+      "name": "Maionese Tradicional Pote 500g (Hellmann's / Heinz) (Paulistão Atacadista)",
+      "category": "mercearia",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 8.69,
+      "avg_price": 8.69,
+      "max_price": 8.69,
+      "total_checks": 1,
+      "current_price": 8.69,
+      "original_price": 10.9,
+      "discount_pct": 20.3,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 10.9,
+          "original_price": 10.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 8.69,
+          "original_price": 10.9,
+          "discount_pct": 20.3,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 8.69
+    },
+    {
+      "id": 140,
+      "name": "Maionese Tradicional Pote 500g (Hellmann's / Heinz) (Savegnago)",
+      "category": "mercearia",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Maionese+Hellmann's+500g",
+      "min_price": 9.49,
+      "avg_price": 9.49,
+      "max_price": 9.49,
+      "total_checks": 1,
+      "current_price": 9.49,
+      "original_price": 11.9,
+      "discount_pct": 20.3,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 11.9,
+          "original_price": 11.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 9.49,
+          "original_price": 11.9,
+          "discount_pct": 20.3,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 9.49
+    },
+    {
+      "id": 206,
+      "name": "Desinfetante Pinho Sol / Veja Perfumado 1L (Copercana)",
+      "category": "limpeza",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 9.49,
+      "avg_price": 9.49,
+      "max_price": 9.49,
+      "total_checks": 1,
+      "current_price": 9.49,
+      "original_price": 11.9,
+      "discount_pct": 20.3,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 11.9,
+          "original_price": 11.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 9.49,
+          "original_price": 11.9,
+          "discount_pct": 20.3,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 9.49
+    },
+    {
+      "id": 152,
+      "name": "Linguiça Toscana para Churrasco Kg (Seara / Aurora / Perdigão) (Savegnago)",
+      "category": "acougue",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Linguiça+Toscana+(Kg)",
+      "min_price": 19.9,
+      "avg_price": 19.9,
+      "max_price": 19.9,
+      "total_checks": 1,
+      "current_price": 19.9,
+      "original_price": 24.9,
+      "discount_pct": 20.1,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 24.9,
+          "original_price": 24.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 19.9,
+          "original_price": 24.9,
+          "discount_pct": 20.1,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 19.9
+    },
+    {
+      "id": 249,
+      "name": "Papel Higiênico Neve Folha Dupla Pacote c/ 12 Rolos (Paulistão Atacadista)",
+      "category": "limpeza",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 19.9,
+      "avg_price": 19.9,
+      "max_price": 19.9,
+      "total_checks": 1,
+      "current_price": 19.9,
+      "original_price": 24.9,
+      "discount_pct": 20.1,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 24.9,
+          "original_price": 24.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 19.9,
+          "original_price": 24.9,
+          "discount_pct": 20.1,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 19.9
+    },
+    {
+      "id": 254,
+      "name": "Shampoo Pantene Restauração / Seda 400ml (Paulistão Atacadista)",
+      "category": "higiene",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 19.9,
+      "avg_price": 19.9,
+      "max_price": 19.9,
+      "total_checks": 1,
+      "current_price": 19.9,
+      "original_price": 24.9,
+      "discount_pct": 20.1,
+      "last_recorded_at": "2026-10-02 22:02:16",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 24.9,
+          "original_price": 24.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 19.9,
+          "original_price": 24.9,
+          "discount_pct": 20.1,
+          "recorded_at": "2026-10-02 22:02:16"
+        }
+      ],
+      "price": 19.9
+    },
+    {
+      "id": 247,
+      "name": "Amaciante Concentrado Downy / Comfort 1,5L (Paulistão Atacadista)",
+      "category": "limpeza",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 21.5,
+      "avg_price": 21.5,
+      "max_price": 21.5,
+      "total_checks": 1,
+      "current_price": 21.5,
+      "original_price": 26.9,
+      "discount_pct": 20.1,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 26.9,
+          "original_price": 26.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 21.5,
+          "original_price": 26.9,
+          "discount_pct": 20.1,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 21.5
+    },
+    {
       "id": 61,
       "name": "Amaciante Concentrado Comfort 1,5L (Savegnago)",
       "category": "limpeza",
@@ -1150,6 +2284,46 @@
           "original_price": 29.9,
           "discount_pct": 20.1,
           "recorded_at": "2026-10-02 16:03:28"
+        }
+      ],
+      "price": 23.9
+    },
+    {
+      "id": 159,
+      "name": "Amaciante Concentrado Downy / Comfort 1,5L (Savegnago)",
+      "category": "limpeza",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Amaciante+Concentrado+1.5L",
+      "min_price": 23.9,
+      "avg_price": 23.9,
+      "max_price": 23.9,
+      "total_checks": 1,
+      "current_price": 23.9,
+      "original_price": 29.9,
+      "discount_pct": 20.1,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 29.9,
+          "original_price": 29.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 23.9,
+          "original_price": 29.9,
+          "discount_pct": 20.1,
+          "recorded_at": "2026-10-02 22:02:14"
         }
       ],
       "price": 23.9
@@ -1195,6 +2369,166 @@
       "price": 31.9
     },
     {
+      "id": 165,
+      "name": "Sabonete em Barra Dove Original / Rexona 90g (Savegnago)",
+      "category": "higiene",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Sabonete+Dove+90g",
+      "min_price": 3.99,
+      "avg_price": 3.99,
+      "max_price": 3.99,
+      "total_checks": 1,
+      "current_price": 3.99,
+      "original_price": 4.99,
+      "discount_pct": 20.0,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 4.99,
+          "original_price": 4.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 3.99,
+          "original_price": 4.99,
+          "discount_pct": 20.0,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 3.99
+    },
+    {
+      "id": 252,
+      "name": "Creme Dental Colgate Total 12 / Tripla Ação 90g (Paulistão Atacadista)",
+      "category": "higiene",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 4.79,
+      "avg_price": 4.79,
+      "max_price": 4.79,
+      "total_checks": 1,
+      "current_price": 4.79,
+      "original_price": 5.99,
+      "discount_pct": 20.0,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 5.99,
+          "original_price": 5.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 4.79,
+          "original_price": 5.99,
+          "discount_pct": 20.0,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 4.79
+    },
+    {
+      "id": 155,
+      "name": "Cebola Nacional Selecionada Kg (Savegnago)",
+      "category": "hortifruti",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Cebola+Nacional+(Kg)",
+      "min_price": 5.99,
+      "avg_price": 5.99,
+      "max_price": 5.99,
+      "total_checks": 1,
+      "current_price": 5.99,
+      "original_price": 7.49,
+      "discount_pct": 20.0,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 7.49,
+          "original_price": 7.49,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 5.99,
+          "original_price": 7.49,
+          "discount_pct": 20.0,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 5.99
+    },
+    {
+      "id": 154,
+      "name": "Tomate Italiano Especial Kg (Savegnago)",
+      "category": "hortifruti",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Tomate+Italiano+(Kg)",
+      "min_price": 7.99,
+      "avg_price": 7.99,
+      "max_price": 7.99,
+      "total_checks": 1,
+      "current_price": 7.99,
+      "original_price": 9.99,
+      "discount_pct": 20.0,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 9.99,
+          "original_price": 9.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 7.99,
+          "original_price": 9.99,
+          "discount_pct": 20.0,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 7.99
+    },
+    {
       "id": 64,
       "name": "Contrafilé Bovino Resfriado Kg (Açougue Savegnago)",
       "category": "acougue",
@@ -1230,6 +2564,46 @@
           "original_price": 49.9,
           "discount_pct": 20.0,
           "recorded_at": "2026-10-02 16:03:28"
+        }
+      ],
+      "price": 39.9
+    },
+    {
+      "id": 148,
+      "name": "Contrafilé Bovino Resfriado (Bife / Peça) Kg (Savegnago)",
+      "category": "acougue",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Contrafilé+Bovino+(Kg)",
+      "min_price": 39.9,
+      "avg_price": 39.9,
+      "max_price": 39.9,
+      "total_checks": 1,
+      "current_price": 39.9,
+      "original_price": 49.9,
+      "discount_pct": 20.0,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 49.9,
+          "original_price": 49.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 39.9,
+          "original_price": 49.9,
+          "discount_pct": 20.0,
+          "recorded_at": "2026-10-02 22:02:14"
         }
       ],
       "price": 39.9
@@ -1275,6 +2649,46 @@
       "price": 47.9
     },
     {
+      "id": 261,
+      "name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon 750ml (Paulistão Atacadista)",
+      "category": "vinho",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 47.9,
+      "avg_price": 47.9,
+      "max_price": 47.9,
+      "total_checks": 1,
+      "current_price": 47.9,
+      "original_price": 59.9,
+      "discount_pct": 20.0,
+      "last_recorded_at": "2026-10-02 22:02:16",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 59.9,
+          "original_price": 59.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 47.9,
+          "original_price": 59.9,
+          "discount_pct": 20.0,
+          "recorded_at": "2026-10-02 22:02:16"
+        }
+      ],
+      "price": 47.9
+    },
+    {
       "id": 19,
       "name": "Espumante Brasileiro Salton Brut 750ml (Wine)",
       "category": "vinho",
@@ -1283,11 +2697,11 @@
       "min_price": 36.9,
       "avg_price": 36.9,
       "max_price": 36.9,
-      "total_checks": 5,
+      "total_checks": 6,
       "current_price": 36.9,
       "original_price": 45.9,
       "discount_pct": 19.6,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "last_recorded_at": "2026-10-02 22:02:16",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -1328,9 +2742,215 @@
           "original_price": 45.9,
           "discount_pct": 19.6,
           "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 36.9,
+          "original_price": 45.9,
+          "discount_pct": 19.6,
+          "recorded_at": "2026-10-02 22:02:16"
         }
       ],
       "price": 36.9
+    },
+    {
+      "id": 236,
+      "name": "Contrafilé Bovino Resfriado (Bife / Peça) Kg (Paulistão Atacadista)",
+      "category": "acougue",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 36.9,
+      "avg_price": 36.9,
+      "max_price": 36.9,
+      "total_checks": 1,
+      "current_price": 36.9,
+      "original_price": 45.9,
+      "discount_pct": 19.6,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 45.9,
+          "original_price": 45.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 36.9,
+          "original_price": 45.9,
+          "discount_pct": 19.6,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 36.9
+    },
+    {
+      "id": 234,
+      "name": "Requeijão Cremoso Tradicional 200g (Catupiry / Vigor / Poços de Caldas) (Paulistão Atacadista)",
+      "category": "laticinios",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 7.99,
+      "avg_price": 7.99,
+      "max_price": 7.99,
+      "total_checks": 1,
+      "current_price": 7.99,
+      "original_price": 9.9,
+      "discount_pct": 19.3,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 9.9,
+          "original_price": 9.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 7.99,
+          "original_price": 9.9,
+          "discount_pct": 19.3,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 7.99
+    },
+    {
+      "id": 250,
+      "name": "Desinfetante Pinho Sol / Veja Perfumado 1L (Paulistão Atacadista)",
+      "category": "limpeza",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 8.8,
+      "avg_price": 8.8,
+      "max_price": 8.8,
+      "total_checks": 1,
+      "current_price": 8.8,
+      "original_price": 10.9,
+      "discount_pct": 19.3,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 10.9,
+          "original_price": 10.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 8.8,
+          "original_price": 10.9,
+          "discount_pct": 19.3,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 8.8
+    },
+    {
+      "id": 184,
+      "name": "Maionese Tradicional Pote 500g (Hellmann's / Heinz) (Copercana)",
+      "category": "mercearia",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 9.29,
+      "avg_price": 9.29,
+      "max_price": 9.29,
+      "total_checks": 1,
+      "current_price": 9.29,
+      "original_price": 11.49,
+      "discount_pct": 19.1,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 11.49,
+          "original_price": 11.49,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 9.29,
+          "original_price": 11.49,
+          "discount_pct": 19.1,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 9.29
+    },
+    {
+      "id": 195,
+      "name": "Filé de Peito de Frango Resfriado Kg (Sadia / Seara) (Copercana)",
+      "category": "acougue",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 16.9,
+      "avg_price": 16.9,
+      "max_price": 16.9,
+      "total_checks": 1,
+      "current_price": 16.9,
+      "original_price": 20.9,
+      "discount_pct": 19.1,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 20.9,
+          "original_price": 20.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 16.9,
+          "original_price": 20.9,
+          "discount_pct": 19.1,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 16.9
     },
     {
       "id": 100,
@@ -1373,6 +2993,698 @@
       "price": 46.9
     },
     {
+      "id": 248,
+      "name": "Detergente Líquido Ypê 500ml (Neutro / Coco / Maçã) (Paulistão Atacadista)",
+      "category": "limpeza",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 2.15,
+      "avg_price": 2.15,
+      "max_price": 2.15,
+      "total_checks": 1,
+      "current_price": 2.15,
+      "original_price": 2.65,
+      "discount_pct": 18.9,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 2.65,
+          "original_price": 2.65,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 2.15,
+          "original_price": 2.65,
+          "discount_pct": 18.9,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 2.15
+    },
+    {
+      "id": 149,
+      "name": "Alcatra com Maminha Bovina Kg (Savegnago)",
+      "category": "acougue",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Alcatra+Bovina+(Kg)",
+      "min_price": 42.9,
+      "avg_price": 42.9,
+      "max_price": 42.9,
+      "total_checks": 1,
+      "current_price": 42.9,
+      "original_price": 52.9,
+      "discount_pct": 18.9,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 52.9,
+          "original_price": 52.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 42.9,
+          "original_price": 52.9,
+          "discount_pct": 18.9,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 42.9
+    },
+    {
+      "id": 209,
+      "name": "Sabonete em Barra Dove Original / Rexona 90g (Copercana)",
+      "category": "higiene",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 3.89,
+      "avg_price": 3.89,
+      "max_price": 3.89,
+      "total_checks": 1,
+      "current_price": 3.89,
+      "original_price": 4.79,
+      "discount_pct": 18.8,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 4.79,
+          "original_price": 4.79,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 3.89,
+          "original_price": 4.79,
+          "discount_pct": 18.8,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 3.89
+    },
+    {
+      "id": 156,
+      "name": "Batata Inglesa Lavada Kg (Savegnago)",
+      "category": "hortifruti",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Batata+Inglesa+(Kg)",
+      "min_price": 6.49,
+      "avg_price": 6.49,
+      "max_price": 6.49,
+      "total_checks": 1,
+      "current_price": 6.49,
+      "original_price": 7.99,
+      "discount_pct": 18.8,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 7.99,
+          "original_price": 7.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 6.49,
+          "original_price": 7.99,
+          "discount_pct": 18.8,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 6.49
+    },
+    {
+      "id": 192,
+      "name": "Contrafilé Bovino Resfriado (Bife / Peça) Kg (Copercana)",
+      "category": "acougue",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 38.9,
+      "avg_price": 38.9,
+      "max_price": 38.9,
+      "total_checks": 1,
+      "current_price": 38.9,
+      "original_price": 47.9,
+      "discount_pct": 18.8,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 47.9,
+          "original_price": 47.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 38.9,
+          "original_price": 47.9,
+          "discount_pct": 18.8,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 38.9
+    },
+    {
+      "id": 183,
+      "name": "Molho de Tomate Tradicional Sachê 300g (Elefante / Fugini / Pomarola) (Copercana)",
+      "category": "mercearia",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 2.19,
+      "avg_price": 2.19,
+      "max_price": 2.19,
+      "total_checks": 1,
+      "current_price": 2.19,
+      "original_price": 2.69,
+      "discount_pct": 18.6,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 2.69,
+          "original_price": 2.69,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 2.19,
+          "original_price": 2.69,
+          "discount_pct": 18.6,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 2.19
+    },
+    {
+      "id": 205,
+      "name": "Papel Higiênico Neve Folha Dupla Pacote c/ 12 Rolos (Copercana)",
+      "category": "limpeza",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 21.9,
+      "avg_price": 21.9,
+      "max_price": 21.9,
+      "total_checks": 1,
+      "current_price": 21.9,
+      "original_price": 26.9,
+      "discount_pct": 18.6,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 26.9,
+          "original_price": 26.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 21.9,
+          "original_price": 26.9,
+          "discount_pct": 18.6,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 21.9
+    },
+    {
+      "id": 210,
+      "name": "Shampoo Pantene Restauração / Seda 400ml (Copercana)",
+      "category": "higiene",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 21.9,
+      "avg_price": 21.9,
+      "max_price": 21.9,
+      "total_checks": 1,
+      "current_price": 21.9,
+      "original_price": 26.9,
+      "discount_pct": 18.6,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 26.9,
+          "original_price": 26.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 21.9,
+          "original_price": 26.9,
+          "discount_pct": 18.6,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 21.9
+    },
+    {
+      "id": 207,
+      "name": "Água Sanitária Q-Boa / Candida 2 Litros (Copercana)",
+      "category": "limpeza",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 5.29,
+      "avg_price": 5.29,
+      "max_price": 5.29,
+      "total_checks": 1,
+      "current_price": 5.29,
+      "original_price": 6.49,
+      "discount_pct": 18.5,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 6.49,
+          "original_price": 6.49,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 5.29,
+          "original_price": 6.49,
+          "discount_pct": 18.5,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 5.29
+    },
+    {
+      "id": 37,
+      "name": "Contra Filé Bovino Peça Vácuo 3,5kg",
+      "category": "acougue",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/contra-file-bovino-peca-vacuo-3-5kg/p",
+      "min_price": 48.9,
+      "avg_price": 57.15,
+      "max_price": 59.9,
+      "total_checks": 4,
+      "current_price": 48.9,
+      "original_price": 59.9,
+      "discount_pct": 18.4,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 14.4,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 59.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-02 12:08:00"
+        },
+        {
+          "price": 59.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-02 15:11:36"
+        },
+        {
+          "price": 59.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 48.9,
+          "original_price": 59.9,
+          "discount_pct": 18.4,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 48.9
+    },
+    {
+      "id": 146,
+      "name": "Requeijão Cremoso Tradicional 200g (Catupiry / Vigor / Poços de Caldas) (Savegnago)",
+      "category": "laticinios",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Requeijão+Cremoso+200g",
+      "min_price": 8.9,
+      "avg_price": 8.9,
+      "max_price": 8.9,
+      "total_checks": 1,
+      "current_price": 8.9,
+      "original_price": 10.9,
+      "discount_pct": 18.3,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 10.9,
+          "original_price": 10.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 8.9,
+          "original_price": 10.9,
+          "discount_pct": 18.3,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 8.9
+    },
+    {
+      "id": 151,
+      "name": "Filé de Peito de Frango Resfriado Kg (Sadia / Seara) (Savegnago)",
+      "category": "acougue",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Filé+de+Peito+de+Frango+(Kg)",
+      "min_price": 17.9,
+      "avg_price": 17.9,
+      "max_price": 17.9,
+      "total_checks": 1,
+      "current_price": 17.9,
+      "original_price": 21.9,
+      "discount_pct": 18.3,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 21.9,
+          "original_price": 21.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 17.9,
+          "original_price": 21.9,
+          "discount_pct": 18.3,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 17.9
+    },
+    {
+      "id": 178,
+      "name": "Café Torrado e Moído Tradicional 500g (Pilão / 3 Corações) (Copercana)",
+      "category": "mercearia",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 17.9,
+      "avg_price": 17.9,
+      "max_price": 17.9,
+      "total_checks": 1,
+      "current_price": 17.9,
+      "original_price": 21.9,
+      "discount_pct": 18.3,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 21.9,
+          "original_price": 21.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 17.9,
+          "original_price": 21.9,
+          "discount_pct": 18.3,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 17.9
+    },
+    {
+      "id": 190,
+      "name": "Requeijão Cremoso Tradicional 200g (Catupiry / Vigor / Poços de Caldas) (Copercana)",
+      "category": "laticinios",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 8.6,
+      "avg_price": 8.6,
+      "max_price": 8.6,
+      "total_checks": 1,
+      "current_price": 8.6,
+      "original_price": 10.5,
+      "discount_pct": 18.1,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 10.5,
+          "original_price": 10.5,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 8.6,
+          "original_price": 10.5,
+          "discount_pct": 18.1,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 8.6
+    },
+    {
+      "id": 139,
+      "name": "Molho de Tomate Tradicional Sachê 300g (Elefante / Fugini / Pomarola) (Savegnago)",
+      "category": "mercearia",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Molho+de+Tomate+300g",
+      "min_price": 2.29,
+      "avg_price": 2.29,
+      "max_price": 2.29,
+      "total_checks": 1,
+      "current_price": 2.29,
+      "original_price": 2.79,
+      "discount_pct": 17.9,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 2.79,
+          "original_price": 2.79,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 2.29,
+          "original_price": 2.79,
+          "discount_pct": 17.9,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 2.29
+    },
+    {
+      "id": 224,
+      "name": "Sal Refinado Iodado 1kg (Cisne / Lebre) (Paulistão Atacadista)",
+      "category": "mercearia",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 2.29,
+      "avg_price": 2.29,
+      "max_price": 2.29,
+      "total_checks": 1,
+      "current_price": 2.29,
+      "original_price": 2.79,
+      "discount_pct": 17.9,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 2.79,
+          "original_price": 2.79,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 2.29,
+          "original_price": 2.79,
+          "discount_pct": 17.9,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 2.29
+    },
+    {
+      "id": 166,
+      "name": "Shampoo Pantene Restauração / Seda 400ml (Savegnago)",
+      "category": "higiene",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Shampoo+Pantene+400ml",
+      "min_price": 22.9,
+      "avg_price": 22.9,
+      "max_price": 22.9,
+      "total_checks": 1,
+      "current_price": 22.9,
+      "original_price": 27.9,
+      "discount_pct": 17.9,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 27.9,
+          "original_price": 27.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 22.9,
+          "original_price": 27.9,
+          "discount_pct": 17.9,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 22.9
+    },
+    {
       "id": 101,
       "name": "Espumante Salton Brut 750ml (Copercana)",
       "category": "vinho",
@@ -1411,6 +3723,646 @@
         }
       ],
       "price": 36.9
+    },
+    {
+      "id": 197,
+      "name": "Banana Prata Selecionada Kg (Copercana)",
+      "category": "hortifruti",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 6.99,
+      "avg_price": 6.99,
+      "max_price": 6.99,
+      "total_checks": 1,
+      "current_price": 6.99,
+      "original_price": 8.49,
+      "discount_pct": 17.7,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 8.49,
+          "original_price": 8.49,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 6.99,
+          "original_price": 8.49,
+          "discount_pct": 17.7,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 6.99
+    },
+    {
+      "id": 134,
+      "name": "Café Torrado e Moído Tradicional 500g (Pilão / 3 Corações) (Savegnago)",
+      "category": "mercearia",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Café+Tradicional+500g",
+      "min_price": 18.9,
+      "avg_price": 18.9,
+      "max_price": 18.9,
+      "total_checks": 1,
+      "current_price": 18.9,
+      "original_price": 22.9,
+      "discount_pct": 17.5,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 22.9,
+          "original_price": 22.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 18.9,
+          "original_price": 22.9,
+          "discount_pct": 17.5,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 18.9
+    },
+    {
+      "id": 185,
+      "name": "Ovos Brancos Grandes (Bandeja c/ 30 unidades) (Copercana)",
+      "category": "laticinios",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 18.9,
+      "avg_price": 18.9,
+      "max_price": 18.9,
+      "total_checks": 1,
+      "current_price": 18.9,
+      "original_price": 22.9,
+      "discount_pct": 17.5,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 22.9,
+          "original_price": 22.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 18.9,
+          "original_price": 22.9,
+          "discount_pct": 17.5,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 18.9
+    },
+    {
+      "id": 200,
+      "name": "Batata Inglesa Lavada Kg (Copercana)",
+      "category": "hortifruti",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 6.19,
+      "avg_price": 6.19,
+      "max_price": 6.19,
+      "total_checks": 1,
+      "current_price": 6.19,
+      "original_price": 7.49,
+      "discount_pct": 17.4,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 7.49,
+          "original_price": 7.49,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 6.19,
+          "original_price": 7.49,
+          "discount_pct": 17.4,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 6.19
+    },
+    {
+      "id": 246,
+      "name": "Sabão em Pó OMO Lavagem Perfeita Caixa 1,6kg (Paulistão Atacadista)",
+      "category": "limpeza",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 21.9,
+      "avg_price": 21.9,
+      "max_price": 21.9,
+      "total_checks": 1,
+      "current_price": 21.9,
+      "original_price": 26.5,
+      "discount_pct": 17.4,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 26.5,
+          "original_price": 26.5,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 21.9,
+          "original_price": 26.5,
+          "discount_pct": 17.4,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 21.9
+    },
+    {
+      "id": 204,
+      "name": "Detergente Líquido Ypê 500ml (Neutro / Coco / Maçã) (Copercana)",
+      "category": "limpeza",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 2.39,
+      "avg_price": 2.39,
+      "max_price": 2.39,
+      "total_checks": 1,
+      "current_price": 2.39,
+      "original_price": 2.89,
+      "discount_pct": 17.3,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 2.89,
+          "original_price": 2.89,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 2.39,
+          "original_price": 2.89,
+          "discount_pct": 17.3,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 2.39
+    },
+    {
+      "id": 202,
+      "name": "Sabão em Pó OMO Lavagem Perfeita Caixa 1,6kg (Copercana)",
+      "category": "limpeza",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 23.9,
+      "avg_price": 23.9,
+      "max_price": 23.9,
+      "total_checks": 1,
+      "current_price": 23.9,
+      "original_price": 28.9,
+      "discount_pct": 17.3,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 28.9,
+          "original_price": 28.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 23.9,
+          "original_price": 28.9,
+          "discount_pct": 17.3,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 23.9
+    },
+    {
+      "id": 199,
+      "name": "Cebola Nacional Selecionada Kg (Copercana)",
+      "category": "hortifruti",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 5.79,
+      "avg_price": 5.79,
+      "max_price": 5.79,
+      "total_checks": 1,
+      "current_price": 5.79,
+      "original_price": 6.99,
+      "discount_pct": 17.2,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 6.99,
+          "original_price": 6.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 5.79,
+          "original_price": 6.99,
+          "discount_pct": 17.2,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 5.79
+    },
+    {
+      "id": 237,
+      "name": "Alcatra com Maminha Bovina Kg (Paulistão Atacadista)",
+      "category": "acougue",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 38.9,
+      "avg_price": 38.9,
+      "max_price": 38.9,
+      "total_checks": 1,
+      "current_price": 38.9,
+      "original_price": 46.9,
+      "discount_pct": 17.1,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 46.9,
+          "original_price": 46.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 38.9,
+          "original_price": 46.9,
+          "discount_pct": 17.1,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 38.9
+    },
+    {
+      "id": 160,
+      "name": "Detergente Líquido Ypê 500ml (Neutro / Coco / Maçã) (Savegnago)",
+      "category": "limpeza",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Detergente+Ypê+500ml",
+      "min_price": 2.49,
+      "avg_price": 2.49,
+      "max_price": 2.49,
+      "total_checks": 1,
+      "current_price": 2.49,
+      "original_price": 2.99,
+      "discount_pct": 16.7,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 2.99,
+          "original_price": 2.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 2.49,
+          "original_price": 2.99,
+          "discount_pct": 16.7,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 2.49
+    },
+    {
+      "id": 226,
+      "name": "Macarrão com Ovos Espaguete 500g (Dona Benta / Adria / Renata) (Paulistão Atacadista)",
+      "category": "mercearia",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 3.49,
+      "avg_price": 3.49,
+      "max_price": 3.49,
+      "total_checks": 1,
+      "current_price": 3.49,
+      "original_price": 4.19,
+      "discount_pct": 16.7,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 4.19,
+          "original_price": 4.19,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 3.49,
+          "original_price": 4.19,
+          "discount_pct": 16.7,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 3.49
+    },
+    {
+      "id": 153,
+      "name": "Banana Prata Selecionada Kg (Savegnago)",
+      "category": "hortifruti",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Banana+Prata+(Kg)",
+      "min_price": 7.49,
+      "avg_price": 7.49,
+      "max_price": 7.49,
+      "total_checks": 1,
+      "current_price": 7.49,
+      "original_price": 8.99,
+      "discount_pct": 16.7,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 8.99,
+          "original_price": 8.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 7.49,
+          "original_price": 8.99,
+          "discount_pct": 16.7,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 7.49
+    },
+    {
+      "id": 141,
+      "name": "Ovos Brancos Grandes (Bandeja c/ 30 unidades) (Savegnago)",
+      "category": "laticinios",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Ovos+Brancos+(Cartela+c/+30)",
+      "min_price": 19.9,
+      "avg_price": 19.9,
+      "max_price": 19.9,
+      "total_checks": 1,
+      "current_price": 19.9,
+      "original_price": 23.9,
+      "discount_pct": 16.7,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 23.9,
+          "original_price": 23.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 19.9,
+          "original_price": 23.9,
+          "discount_pct": 16.7,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 19.9
+    },
+    {
+      "id": 158,
+      "name": "Sabão em Pó OMO Lavagem Perfeita Caixa 1,6kg (Savegnago)",
+      "category": "limpeza",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=OMO+em+Pó+1.6kg",
+      "min_price": 24.9,
+      "avg_price": 24.9,
+      "max_price": 24.9,
+      "total_checks": 1,
+      "current_price": 24.9,
+      "original_price": 29.9,
+      "discount_pct": 16.7,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 29.9,
+          "original_price": 29.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 24.9,
+          "original_price": 29.9,
+          "discount_pct": 16.7,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 24.9
+    },
+    {
+      "id": 150,
+      "name": "Carne Moída Patinho Bovino Resfriado Kg (Savegnago)",
+      "category": "acougue",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Carne+Moída+Patinho+(Kg)",
+      "min_price": 34.9,
+      "avg_price": 34.9,
+      "max_price": 34.9,
+      "total_checks": 1,
+      "current_price": 34.9,
+      "original_price": 41.9,
+      "discount_pct": 16.7,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 41.9,
+          "original_price": 41.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 34.9,
+          "original_price": 41.9,
+          "discount_pct": 16.7,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 34.9
+    },
+    {
+      "id": 218,
+      "name": "Vinho Chileno Concha y Toro Reservado Tinto 750ml (Copercana)",
+      "category": "vinho",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 34.9,
+      "avg_price": 34.9,
+      "max_price": 34.9,
+      "total_checks": 1,
+      "current_price": 34.9,
+      "original_price": 41.9,
+      "discount_pct": 16.7,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 41.9,
+          "original_price": 41.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 34.9,
+          "original_price": 41.9,
+          "discount_pct": 16.7,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 34.9
     },
     {
       "id": 29,
@@ -1453,6 +4405,286 @@
       "price": 39.92
     },
     {
+      "id": 239,
+      "name": "Filé de Peito de Frango Resfriado Kg (Sadia / Seara) (Paulistão Atacadista)",
+      "category": "acougue",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 15.8,
+      "avg_price": 15.8,
+      "max_price": 15.8,
+      "total_checks": 1,
+      "current_price": 15.8,
+      "original_price": 18.9,
+      "discount_pct": 16.4,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 18.9,
+          "original_price": 18.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 15.8,
+          "original_price": 18.9,
+          "discount_pct": 16.4,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 15.8
+    },
+    {
+      "id": 229,
+      "name": "Ovos Brancos Grandes (Bandeja c/ 30 unidades) (Paulistão Atacadista)",
+      "category": "laticinios",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 17.5,
+      "avg_price": 17.5,
+      "max_price": 17.5,
+      "total_checks": 1,
+      "current_price": 17.5,
+      "original_price": 20.9,
+      "discount_pct": 16.3,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 20.9,
+          "original_price": 20.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 17.5,
+          "original_price": 20.9,
+          "discount_pct": 16.3,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 17.5
+    },
+    {
+      "id": 193,
+      "name": "Alcatra com Maminha Bovina Kg (Copercana)",
+      "category": "acougue",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 41.9,
+      "avg_price": 41.9,
+      "max_price": 41.9,
+      "total_checks": 1,
+      "current_price": 41.9,
+      "original_price": 49.9,
+      "discount_pct": 16.0,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 49.9,
+          "original_price": 49.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 41.9,
+          "original_price": 49.9,
+          "discount_pct": 16.0,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 41.9
+    },
+    {
+      "id": 238,
+      "name": "Carne Moída Patinho Bovino Resfriado Kg (Paulistão Atacadista)",
+      "category": "acougue",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 31.9,
+      "avg_price": 31.9,
+      "max_price": 31.9,
+      "total_checks": 1,
+      "current_price": 31.9,
+      "original_price": 37.9,
+      "discount_pct": 15.8,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 37.9,
+          "original_price": 37.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 31.9,
+          "original_price": 37.9,
+          "discount_pct": 15.8,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 31.9
+    },
+    {
+      "id": 262,
+      "name": "Vinho Chileno Concha y Toro Reservado Tinto 750ml (Paulistão Atacadista)",
+      "category": "vinho",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 31.9,
+      "avg_price": 31.9,
+      "max_price": 31.9,
+      "total_checks": 1,
+      "current_price": 31.9,
+      "original_price": 37.9,
+      "discount_pct": 15.8,
+      "last_recorded_at": "2026-10-02 22:02:16",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 37.9,
+          "original_price": 37.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 31.9,
+          "original_price": 37.9,
+          "discount_pct": 15.8,
+          "recorded_at": "2026-10-02 22:02:16"
+        }
+      ],
+      "price": 31.9
+    },
+    {
+      "id": 136,
+      "name": "Sal Refinado Iodado 1kg (Cisne / Lebre) (Savegnago)",
+      "category": "mercearia",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Sal+Refinado+1kg",
+      "min_price": 2.69,
+      "avg_price": 2.69,
+      "max_price": 2.69,
+      "total_checks": 1,
+      "current_price": 2.69,
+      "original_price": 3.19,
+      "discount_pct": 15.7,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 3.19,
+          "original_price": 3.19,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 2.69,
+          "original_price": 3.19,
+          "discount_pct": 15.7,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 2.69
+    },
+    {
+      "id": 222,
+      "name": "Café Torrado e Moído Tradicional 500g (Pilão / 3 Corações) (Paulistão Atacadista)",
+      "category": "mercearia",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 16.8,
+      "avg_price": 16.8,
+      "max_price": 16.8,
+      "total_checks": 1,
+      "current_price": 16.8,
+      "original_price": 19.9,
+      "discount_pct": 15.6,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 19.9,
+          "original_price": 19.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 16.8,
+          "original_price": 19.9,
+          "discount_pct": 15.6,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 16.8
+    },
+    {
       "id": 28,
       "name": "Cerveja Corona Extra 330ml Pack com 6 unidades (Amazon Prime)",
       "category": "cerveja",
@@ -1461,11 +4693,11 @@
       "min_price": 37.9,
       "avg_price": 37.9,
       "max_price": 37.9,
-      "total_checks": 4,
+      "total_checks": 5,
       "current_price": 37.9,
       "original_price": 44.9,
       "discount_pct": 15.6,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "last_recorded_at": "2026-10-02 22:02:16",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -1500,9 +4732,135 @@
           "original_price": 44.9,
           "discount_pct": 15.6,
           "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 37.9,
+          "original_price": 44.9,
+          "discount_pct": 15.6,
+          "recorded_at": "2026-10-02 22:02:16"
         }
       ],
       "price": 37.9
+    },
+    {
+      "id": 142,
+      "name": "Ovos Vermelhos Selecionados (Bandeja c/ 20 unidades) (Savegnago)",
+      "category": "laticinios",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Ovos+Vermelhos+(Cartela+c/+20)",
+      "min_price": 16.9,
+      "avg_price": 16.9,
+      "max_price": 16.9,
+      "total_checks": 1,
+      "current_price": 16.9,
+      "original_price": 19.9,
+      "discount_pct": 15.1,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 19.9,
+          "original_price": 19.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 16.9,
+          "original_price": 19.9,
+          "discount_pct": 15.1,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 16.9
+    },
+    {
+      "id": 174,
+      "name": "Vinho Chileno Concha y Toro Reservado Tinto 750ml (Savegnago)",
+      "category": "vinho",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Concha+y+Toro+Reservado+750ml",
+      "min_price": 33.9,
+      "avg_price": 33.9,
+      "max_price": 33.9,
+      "total_checks": 1,
+      "current_price": 33.9,
+      "original_price": 39.9,
+      "discount_pct": 15.0,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 39.9,
+          "original_price": 39.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 33.9,
+          "original_price": 39.9,
+          "discount_pct": 15.0,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 33.9
+    },
+    {
+      "id": 194,
+      "name": "Carne Moída Patinho Bovino Resfriado Kg (Copercana)",
+      "category": "acougue",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 33.9,
+      "avg_price": 33.9,
+      "max_price": 33.9,
+      "total_checks": 1,
+      "current_price": 33.9,
+      "original_price": 39.9,
+      "discount_pct": 15.0,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 39.9,
+          "original_price": 39.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 33.9,
+          "original_price": 39.9,
+          "discount_pct": 15.0,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 33.9
     },
     {
       "id": 9,
@@ -1545,6 +4903,286 @@
       "price": 237.4
     },
     {
+      "id": 145,
+      "name": "Queijo Mussarela Fatiado Resfriado (Preço por Kg) (Savegnago)",
+      "category": "laticinios",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Mussarela+Fatiada+(Kg)",
+      "min_price": 41.9,
+      "avg_price": 41.9,
+      "max_price": 41.9,
+      "total_checks": 1,
+      "current_price": 41.9,
+      "original_price": 48.9,
+      "discount_pct": 14.3,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 48.9,
+          "original_price": 48.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 41.9,
+          "original_price": 48.9,
+          "discount_pct": 14.3,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 41.9
+    },
+    {
+      "id": 225,
+      "name": "Farinha de Trigo Tradicional Tipo 1 1kg (Dona Benta / Renata) (Paulistão Atacadista)",
+      "category": "mercearia",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 4.29,
+      "avg_price": 4.29,
+      "max_price": 4.29,
+      "total_checks": 1,
+      "current_price": 4.29,
+      "original_price": 4.99,
+      "discount_pct": 14.0,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 4.99,
+          "original_price": 4.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 4.29,
+          "original_price": 4.99,
+          "discount_pct": 14.0,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 4.29
+    },
+    {
+      "id": 189,
+      "name": "Queijo Mussarela Fatiado Resfriado (Preço por Kg) (Copercana)",
+      "category": "laticinios",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 42.9,
+      "avg_price": 42.9,
+      "max_price": 42.9,
+      "total_checks": 1,
+      "current_price": 42.9,
+      "original_price": 49.9,
+      "discount_pct": 14.0,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 49.9,
+          "original_price": 49.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 42.9,
+          "original_price": 49.9,
+          "discount_pct": 14.0,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 42.9
+    },
+    {
+      "id": 180,
+      "name": "Sal Refinado Iodado 1kg (Cisne / Lebre) (Copercana)",
+      "category": "mercearia",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 2.59,
+      "avg_price": 2.59,
+      "max_price": 2.59,
+      "total_checks": 1,
+      "current_price": 2.59,
+      "original_price": 2.99,
+      "discount_pct": 13.4,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 2.99,
+          "original_price": 2.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 2.59,
+          "original_price": 2.99,
+          "discount_pct": 13.4,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 2.59
+    },
+    {
+      "id": 182,
+      "name": "Macarrão com Ovos Espaguete 500g (Dona Benta / Adria / Renata) (Copercana)",
+      "category": "mercearia",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 3.89,
+      "avg_price": 3.89,
+      "max_price": 3.89,
+      "total_checks": 1,
+      "current_price": 3.89,
+      "original_price": 4.49,
+      "discount_pct": 13.4,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 4.49,
+          "original_price": 4.49,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 3.89,
+          "original_price": 4.49,
+          "discount_pct": 13.4,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 3.89
+    },
+    {
+      "id": 144,
+      "name": "Manteiga de Primeira Qualidade com Sal 200g (Aviação / Scala) (Savegnago)",
+      "category": "laticinios",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Manteiga+c/+Sal+200g",
+      "min_price": 12.9,
+      "avg_price": 12.9,
+      "max_price": 12.9,
+      "total_checks": 1,
+      "current_price": 12.9,
+      "original_price": 14.9,
+      "discount_pct": 13.4,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 14.9,
+          "original_price": 14.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 12.9,
+          "original_price": 14.9,
+          "discount_pct": 13.4,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 12.9
+    },
+    {
+      "id": 230,
+      "name": "Ovos Vermelhos Selecionados (Bandeja c/ 20 unidades) (Paulistão Atacadista)",
+      "category": "laticinios",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 15.5,
+      "avg_price": 15.5,
+      "max_price": 15.5,
+      "total_checks": 1,
+      "current_price": 15.5,
+      "original_price": 17.9,
+      "discount_pct": 13.4,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 17.9,
+          "original_price": 17.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 15.5,
+          "original_price": 17.9,
+          "discount_pct": 13.4,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 15.5
+    },
+    {
       "id": 6,
       "name": "Pack Cerveja Corona Extra 6 Long Necks 330ml",
       "category": "cerveja",
@@ -1553,11 +5191,11 @@
       "min_price": 38.9,
       "avg_price": 38.9,
       "max_price": 38.9,
-      "total_checks": 5,
+      "total_checks": 6,
       "current_price": 38.9,
       "original_price": 44.9,
       "discount_pct": 13.4,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "last_recorded_at": "2026-10-02 22:02:16",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -1598,6 +5236,52 @@
           "original_price": 44.9,
           "discount_pct": 13.4,
           "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 38.9,
+          "original_price": 44.9,
+          "discount_pct": 13.4,
+          "recorded_at": "2026-10-02 22:02:16"
+        }
+      ],
+      "price": 38.9
+    },
+    {
+      "id": 233,
+      "name": "Queijo Mussarela Fatiado Resfriado (Preço por Kg) (Paulistão Atacadista)",
+      "category": "laticinios",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 38.9,
+      "avg_price": 38.9,
+      "max_price": 38.9,
+      "total_checks": 1,
+      "current_price": 38.9,
+      "original_price": 44.9,
+      "discount_pct": 13.4,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 44.9,
+          "original_price": 44.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 38.9,
+          "original_price": 44.9,
+          "discount_pct": 13.4,
+          "recorded_at": "2026-10-02 22:02:15"
         }
       ],
       "price": 38.9
@@ -1609,20 +5293,20 @@
       "store": "Mercado Livre Full",
       "link": "https://lista.mercadolivre.com.br/cerveja-heineken-pack_OrderId_PRICE*ASC_Shipping_fulfillment",
       "min_price": 62.28,
-      "avg_price": 62.279999999999994,
+      "avg_price": 62.28,
       "max_price": 62.28,
-      "total_checks": 5,
+      "total_checks": 6,
       "current_price": 62.28,
       "original_price": 71.88,
       "discount_pct": 13.4,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "last_recorded_at": "2026-10-02 22:02:16",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -1656,6 +5340,12 @@
           "original_price": 71.88,
           "discount_pct": 13.4,
           "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 62.28,
+          "original_price": 71.88,
+          "discount_pct": 13.4,
+          "recorded_at": "2026-10-02 22:02:16"
         }
       ],
       "price": 62.28
@@ -1701,6 +5391,46 @@
       "price": 3.29
     },
     {
+      "id": 138,
+      "name": "Macarrão com Ovos Espaguete 500g (Dona Benta / Adria / Renata) (Savegnago)",
+      "category": "mercearia",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Macarrão+Espaguete+500g",
+      "min_price": 3.99,
+      "avg_price": 3.99,
+      "max_price": 3.99,
+      "total_checks": 1,
+      "current_price": 3.99,
+      "original_price": 4.59,
+      "discount_pct": 13.1,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 4.59,
+          "original_price": 4.59,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 3.99,
+          "original_price": 4.59,
+          "discount_pct": 13.1,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 3.99
+    },
+    {
       "id": 98,
       "name": "Cerveja Colorado Ribeirão Lager Lata 350ml (Copercana)",
       "category": "cerveja",
@@ -1741,26 +5471,266 @@
       "price": 4.79
     },
     {
-      "id": 5,
-      "name": "Pack Cerveja Spaten Puro Malte 12 Latas 350ml (Mercado Envios Full)",
-      "category": "cerveja",
-      "store": "Mercado Livre Full",
-      "link": "https://lista.mercadolivre.com.br/cerveja-spaten-pack_OrderId_PRICE*ASC_Shipping_fulfillment",
-      "min_price": 52.68,
-      "avg_price": 52.67999999999999,
-      "max_price": 52.68,
-      "total_checks": 5,
-      "current_price": 52.68,
-      "original_price": 59.9,
-      "discount_pct": 12.1,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "id": 137,
+      "name": "Farinha de Trigo Tradicional Tipo 1 1kg (Dona Benta / Renata) (Savegnago)",
+      "category": "mercearia",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Farinha+de+Trigo+1kg",
+      "min_price": 4.79,
+      "avg_price": 4.79,
+      "max_price": 4.79,
+      "total_checks": 1,
+      "current_price": 4.79,
+      "original_price": 5.49,
+      "discount_pct": 12.8,
+      "last_recorded_at": "2026-10-02 22:02:14",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 5.49,
+          "original_price": 5.49,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 4.79,
+          "original_price": 5.49,
+          "discount_pct": 12.8,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 4.79
+    },
+    {
+      "id": 186,
+      "name": "Ovos Vermelhos Selecionados (Bandeja c/ 20 unidades) (Copercana)",
+      "category": "laticinios",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 16.49,
+      "avg_price": 16.49,
+      "max_price": 16.49,
+      "total_checks": 1,
+      "current_price": 16.49,
+      "original_price": 18.9,
+      "discount_pct": 12.8,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 18.9,
+          "original_price": 18.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 16.49,
+          "original_price": 18.9,
+          "discount_pct": 12.8,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 16.49
+    },
+    {
+      "id": 220,
+      "name": "Feijão Carioca Tipo 1 1kg (Camil / Kicaldo) (Paulistão Atacadista)",
+      "category": "mercearia",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 6.99,
+      "avg_price": 6.99,
+      "max_price": 6.99,
+      "total_checks": 1,
+      "current_price": 6.99,
+      "original_price": 7.99,
+      "discount_pct": 12.5,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 7.99,
+          "original_price": 7.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 6.99,
+          "original_price": 7.99,
+          "discount_pct": 12.5,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 6.99
+    },
+    {
+      "id": 175,
+      "name": "Arroz Tipo 1 Pacote 5kg (Tio João / Camil) (Copercana)",
+      "category": "mercearia",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 27.9,
+      "avg_price": 27.9,
+      "max_price": 27.9,
+      "total_checks": 1,
+      "current_price": 27.9,
+      "original_price": 31.9,
+      "discount_pct": 12.5,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 31.9,
+          "original_price": 31.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 27.9,
+          "original_price": 31.9,
+          "discount_pct": 12.5,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 27.9
+    },
+    {
+      "id": 132,
+      "name": "Feijão Carioca Tipo 1 1kg (Camil / Kicaldo) (Savegnago)",
+      "category": "mercearia",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Feijão+Carioca+1kg",
+      "min_price": 7.89,
+      "avg_price": 7.89,
+      "max_price": 7.89,
+      "total_checks": 1,
+      "current_price": 7.89,
+      "original_price": 8.99,
+      "discount_pct": 12.2,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 8.99,
+          "original_price": 8.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 7.89,
+          "original_price": 8.99,
+          "discount_pct": 12.2,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 7.89
+    },
+    {
+      "id": 131,
+      "name": "Arroz Tipo 1 Pacote 5kg (Tio João / Camil) (Savegnago)",
+      "category": "mercearia",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Arroz+Tipo+1+5kg",
+      "min_price": 28.9,
+      "avg_price": 28.9,
+      "max_price": 28.9,
+      "total_checks": 1,
+      "current_price": 28.9,
+      "original_price": 32.9,
+      "discount_pct": 12.2,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 32.9,
+          "original_price": 32.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 28.9,
+          "original_price": 32.9,
+          "discount_pct": 12.2,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 28.9
+    },
+    {
+      "id": 5,
+      "name": "Pack Cerveja Spaten Puro Malte 12 Latas 350ml (Mercado Envios Full)",
+      "category": "cerveja",
+      "store": "Mercado Livre Full",
+      "link": "https://lista.mercadolivre.com.br/cerveja-spaten-pack_OrderId_PRICE*ASC_Shipping_fulfillment",
+      "min_price": 52.68,
+      "avg_price": 52.68,
+      "max_price": 52.68,
+      "total_checks": 6,
+      "current_price": 52.68,
+      "original_price": 59.9,
+      "discount_pct": 12.1,
+      "last_recorded_at": "2026-10-02 22:02:16",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -1794,6 +5764,12 @@
           "original_price": 59.9,
           "discount_pct": 12.1,
           "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 52.68,
+          "original_price": 59.9,
+          "discount_pct": 12.1,
+          "recorded_at": "2026-10-02 22:02:16"
         }
       ],
       "price": 52.68
@@ -1839,6 +5815,46 @@
       "price": 43.9
     },
     {
+      "id": 176,
+      "name": "Feijão Carioca Tipo 1 1kg (Camil / Kicaldo) (Copercana)",
+      "category": "mercearia",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 7.49,
+      "avg_price": 7.49,
+      "max_price": 7.49,
+      "total_checks": 1,
+      "current_price": 7.49,
+      "original_price": 8.49,
+      "discount_pct": 11.8,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 8.49,
+          "original_price": 8.49,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 7.49,
+          "original_price": 8.49,
+          "discount_pct": 11.8,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 7.49
+    },
+    {
       "id": 108,
       "name": "Cerveja Amstel Puro Malte 350ml Lata (Paulistão Atacadista)",
       "category": "cerveja",
@@ -1879,19 +5895,19 @@
       "price": 3.79
     },
     {
-      "id": 106,
-      "name": "Cerveja Heineken Puro Malte Lata 350ml (Paulistão Atacadista)",
-      "category": "cerveja",
+      "id": 223,
+      "name": "Açúcar Refinado 1kg (União / Caravelas) (Paulistão Atacadista)",
+      "category": "mercearia",
       "store": "Paulistão Atacadista",
       "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
-      "min_price": 5.29,
-      "avg_price": 5.29,
-      "max_price": 5.29,
+      "min_price": 4.15,
+      "avg_price": 4.15,
+      "max_price": 4.15,
       "total_checks": 1,
-      "current_price": 5.29,
-      "original_price": 5.89,
-      "discount_pct": 10.2,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "current_price": 4.15,
+      "original_price": 4.69,
+      "discount_pct": 11.5,
+      "last_recorded_at": "2026-10-02 22:02:15",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -1904,19 +5920,299 @@
       },
       "history_points": [
         {
-          "price": 5.89,
-          "original_price": 5.89,
+          "price": 4.69,
+          "original_price": 4.69,
           "discount_pct": 0,
           "recorded_at": "Início do Monitoramento"
         },
         {
-          "price": 5.29,
-          "original_price": 5.89,
-          "discount_pct": 10.2,
-          "recorded_at": "2026-10-02 16:03:28"
+          "price": 4.15,
+          "original_price": 4.69,
+          "discount_pct": 11.5,
+          "recorded_at": "2026-10-02 22:02:15"
         }
       ],
-      "price": 5.29
+      "price": 4.15
+    },
+    {
+      "id": 219,
+      "name": "Arroz Tipo 1 Pacote 5kg (Tio João / Camil) (Paulistão Atacadista)",
+      "category": "mercearia",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 26.5,
+      "avg_price": 26.5,
+      "max_price": 26.5,
+      "total_checks": 1,
+      "current_price": 26.5,
+      "original_price": 29.9,
+      "discount_pct": 11.4,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 29.9,
+          "original_price": 29.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 26.5,
+          "original_price": 29.9,
+          "discount_pct": 11.4,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 26.5
+    },
+    {
+      "id": 181,
+      "name": "Farinha de Trigo Tradicional Tipo 1 1kg (Dona Benta / Renata) (Copercana)",
+      "category": "mercearia",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 4.69,
+      "avg_price": 4.69,
+      "max_price": 4.69,
+      "total_checks": 1,
+      "current_price": 4.69,
+      "original_price": 5.29,
+      "discount_pct": 11.3,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 5.29,
+          "original_price": 5.29,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 4.69,
+          "original_price": 5.29,
+          "discount_pct": 11.3,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 4.69
+    },
+    {
+      "id": 172,
+      "name": "Refrigerante Guaraná Antarctica Pet 2 Litros (Savegnago)",
+      "category": "cerveja",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Guaraná+Antarctica+2L",
+      "min_price": 7.99,
+      "avg_price": 7.99,
+      "max_price": 7.99,
+      "total_checks": 1,
+      "current_price": 7.99,
+      "original_price": 8.99,
+      "discount_pct": 11.1,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 8.99,
+          "original_price": 8.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 7.99,
+          "original_price": 8.99,
+          "discount_pct": 11.1,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 7.99
+    },
+    {
+      "id": 143,
+      "name": "Leite Longa Vida UHT Integral 1L (Piracanjuba / Italac / Jussara) (Savegnago)",
+      "category": "laticinios",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Leite+UHT+Integral+1L",
+      "min_price": 4.89,
+      "avg_price": 4.89,
+      "max_price": 4.89,
+      "total_checks": 1,
+      "current_price": 4.89,
+      "original_price": 5.49,
+      "discount_pct": 10.9,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 5.49,
+          "original_price": 5.49,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 4.89,
+          "original_price": 5.49,
+          "discount_pct": 10.9,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 4.89
+    },
+    {
+      "id": 260,
+      "name": "Refrigerante Guaraná Antarctica Pet 2 Litros (Paulistão Atacadista)",
+      "category": "cerveja",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 7.39,
+      "avg_price": 7.39,
+      "max_price": 7.39,
+      "total_checks": 1,
+      "current_price": 7.39,
+      "original_price": 8.29,
+      "discount_pct": 10.9,
+      "last_recorded_at": "2026-10-02 22:02:16",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 8.29,
+          "original_price": 8.29,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 7.39,
+          "original_price": 8.29,
+          "discount_pct": 10.9,
+          "recorded_at": "2026-10-02 22:02:16"
+        }
+      ],
+      "price": 7.39
+    },
+    {
+      "id": 232,
+      "name": "Manteiga de Primeira Qualidade com Sal 200g (Aviação / Scala) (Paulistão Atacadista)",
+      "category": "laticinios",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 11.8,
+      "avg_price": 11.8,
+      "max_price": 11.8,
+      "total_checks": 1,
+      "current_price": 11.8,
+      "original_price": 13.2,
+      "discount_pct": 10.6,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 13.2,
+          "original_price": 13.2,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 11.8,
+          "original_price": 13.2,
+          "discount_pct": 10.6,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 11.8
+    },
+    {
+      "id": 179,
+      "name": "Açúcar Refinado 1kg (União / Caravelas) (Copercana)",
+      "category": "mercearia",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 4.39,
+      "avg_price": 4.39,
+      "max_price": 4.39,
+      "total_checks": 1,
+      "current_price": 4.39,
+      "original_price": 4.89,
+      "discount_pct": 10.2,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 4.89,
+          "original_price": 4.89,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 4.39,
+          "original_price": 4.89,
+          "discount_pct": 10.2,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 4.39
     },
     {
       "id": 97,
@@ -1959,6 +6255,126 @@
       "price": 6.19
     },
     {
+      "id": 213,
+      "name": "Cerveja Corona Extra Long Neck 330ml (Copercana)",
+      "category": "cerveja",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 6.19,
+      "avg_price": 6.19,
+      "max_price": 6.19,
+      "total_checks": 1,
+      "current_price": 6.19,
+      "original_price": 6.89,
+      "discount_pct": 10.2,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 6.89,
+          "original_price": 6.89,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 6.19,
+          "original_price": 6.89,
+          "discount_pct": 10.2,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 6.19
+    },
+    {
+      "id": 216,
+      "name": "Refrigerante Guaraná Antarctica Pet 2 Litros (Copercana)",
+      "category": "cerveja",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 7.89,
+      "avg_price": 7.89,
+      "max_price": 7.89,
+      "total_checks": 1,
+      "current_price": 7.89,
+      "original_price": 8.79,
+      "discount_pct": 10.2,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 8.79,
+          "original_price": 8.79,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 7.89,
+          "original_price": 8.79,
+          "discount_pct": 10.2,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 7.89
+    },
+    {
+      "id": 188,
+      "name": "Manteiga de Primeira Qualidade com Sal 200g (Aviação / Scala) (Copercana)",
+      "category": "laticinios",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 12.49,
+      "avg_price": 12.49,
+      "max_price": 12.49,
+      "total_checks": 1,
+      "current_price": 12.49,
+      "original_price": 13.9,
+      "discount_pct": 10.1,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 13.9,
+          "original_price": 13.9,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 12.49,
+          "original_price": 13.9,
+          "discount_pct": 10.1,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 12.49
+    },
+    {
       "id": 107,
       "name": "Cerveja Spaten Munich Helles 350ml Fardo 12 Latas (Paulistão Atacadista)",
       "category": "cerveja",
@@ -1994,6 +6410,126 @@
           "original_price": 4.99,
           "discount_pct": 10.0,
           "recorded_at": "2026-10-02 16:03:28"
+        }
+      ],
+      "price": 4.49
+    },
+    {
+      "id": 135,
+      "name": "Açúcar Refinado 1kg (União / Caravelas) (Savegnago)",
+      "category": "mercearia",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Açúcar+Refinado+1kg",
+      "min_price": 4.49,
+      "avg_price": 4.49,
+      "max_price": 4.49,
+      "total_checks": 1,
+      "current_price": 4.49,
+      "original_price": 4.99,
+      "discount_pct": 10.0,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 4.99,
+          "original_price": 4.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 4.49,
+          "original_price": 4.99,
+          "discount_pct": 10.0,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 4.49
+    },
+    {
+      "id": 231,
+      "name": "Leite Longa Vida UHT Integral 1L (Piracanjuba / Italac / Jussara) (Paulistão Atacadista)",
+      "category": "laticinios",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 4.49,
+      "avg_price": 4.49,
+      "max_price": 4.49,
+      "total_checks": 1,
+      "current_price": 4.49,
+      "original_price": 4.99,
+      "discount_pct": 10.0,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 4.99,
+          "original_price": 4.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 4.49,
+          "original_price": 4.99,
+          "discount_pct": 10.0,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 4.49
+    },
+    {
+      "id": 256,
+      "name": "Cerveja Spaten Munich Helles Puro Malte Lata 350ml (Paulistão Atacadista)",
+      "category": "cerveja",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 4.49,
+      "avg_price": 4.49,
+      "max_price": 4.49,
+      "total_checks": 1,
+      "current_price": 4.49,
+      "original_price": 4.99,
+      "discount_pct": 10.0,
+      "last_recorded_at": "2026-10-02 22:02:16",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 4.99,
+          "original_price": 4.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 4.49,
+          "original_price": 4.99,
+          "discount_pct": 10.0,
+          "recorded_at": "2026-10-02 22:02:16"
         }
       ],
       "price": 4.49
@@ -2079,6 +6615,86 @@
       "price": 4.59
     },
     {
+      "id": 212,
+      "name": "Cerveja Spaten Munich Helles Puro Malte Lata 350ml (Copercana)",
+      "category": "cerveja",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 4.59,
+      "avg_price": 4.59,
+      "max_price": 4.59,
+      "total_checks": 1,
+      "current_price": 4.59,
+      "original_price": 5.09,
+      "discount_pct": 9.8,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 5.09,
+          "original_price": 5.09,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 4.59,
+          "original_price": 5.09,
+          "discount_pct": 9.8,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 4.59
+    },
+    {
+      "id": 169,
+      "name": "Cerveja Corona Extra Long Neck 330ml (Savegnago)",
+      "category": "cerveja",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Corona+Long+Neck+330ml",
+      "min_price": 6.49,
+      "avg_price": 6.49,
+      "max_price": 6.49,
+      "total_checks": 1,
+      "current_price": 6.49,
+      "original_price": 7.19,
+      "discount_pct": 9.7,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 7.19,
+          "original_price": 7.19,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 6.49,
+          "original_price": 7.19,
+          "discount_pct": 9.7,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 6.49
+    },
+    {
       "id": 2,
       "name": "Cerveja Spaten Munich Helles Lata 350ml (Savegnago)",
       "category": "cerveja",
@@ -2119,19 +6735,19 @@
       "price": 4.69
     },
     {
-      "id": 1,
-      "name": "Cerveja Heineken Puro Malte Lata 350ml (Savegnago)",
+      "id": 168,
+      "name": "Cerveja Spaten Munich Helles Puro Malte Lata 350ml (Savegnago)",
       "category": "cerveja",
       "store": "Savegnago Supermercados",
-      "link": "https://www.savegnago.com.br/busca?ft=heineken",
-      "min_price": 5.49,
-      "avg_price": 5.49,
-      "max_price": 5.49,
-      "total_checks": 4,
-      "current_price": 5.49,
-      "original_price": 5.99,
-      "discount_pct": 8.3,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "link": "https://www.savegnago.com.br/busca?ft=Spaten+Lata+350ml",
+      "min_price": 4.69,
+      "avg_price": 4.69,
+      "max_price": 4.69,
+      "total_checks": 1,
+      "current_price": 4.69,
+      "original_price": 5.19,
+      "discount_pct": 9.6,
+      "last_recorded_at": "2026-10-02 22:02:14",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -2139,6 +6755,526 @@
         "emoji": "🟢",
         "color": "emerald",
         "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 5.19,
+          "original_price": 5.19,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 4.69,
+          "original_price": 5.19,
+          "discount_pct": 9.6,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 4.69
+    },
+    {
+      "id": 258,
+      "name": "Cerveja Amstel Puro Malte Lata 350ml (Paulistão Atacadista)",
+      "category": "cerveja",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 3.79,
+      "avg_price": 3.79,
+      "max_price": 3.79,
+      "total_checks": 1,
+      "current_price": 3.79,
+      "original_price": 4.19,
+      "discount_pct": 9.5,
+      "last_recorded_at": "2026-10-02 22:02:16",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 4.19,
+          "original_price": 4.19,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 3.79,
+          "original_price": 4.19,
+          "discount_pct": 9.5,
+          "recorded_at": "2026-10-02 22:02:16"
+        }
+      ],
+      "price": 3.79
+    },
+    {
+      "id": 187,
+      "name": "Leite Longa Vida UHT Integral 1L (Piracanjuba / Italac / Jussara) (Copercana)",
+      "category": "laticinios",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 4.79,
+      "avg_price": 4.79,
+      "max_price": 4.79,
+      "total_checks": 1,
+      "current_price": 4.79,
+      "original_price": 5.29,
+      "discount_pct": 9.5,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 5.29,
+          "original_price": 5.29,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 4.79,
+          "original_price": 5.29,
+          "discount_pct": 9.5,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 4.79
+    },
+    {
+      "id": 171,
+      "name": "Refrigerante Coca-Cola Pet 2 Litros (Original / Sem Açúcar) (Savegnago)",
+      "category": "cerveja",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Coca-Cola+2L",
+      "min_price": 9.49,
+      "avg_price": 9.49,
+      "max_price": 9.49,
+      "total_checks": 1,
+      "current_price": 9.49,
+      "original_price": 10.49,
+      "discount_pct": 9.5,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 10.49,
+          "original_price": 10.49,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 9.49,
+          "original_price": 10.49,
+          "discount_pct": 9.5,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 9.49
+    },
+    {
+      "id": 177,
+      "name": "Óleo de Soja Refinado 900ml (Liza / Soya) (Copercana)",
+      "category": "mercearia",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 6.79,
+      "avg_price": 6.79,
+      "max_price": 6.79,
+      "total_checks": 1,
+      "current_price": 6.79,
+      "original_price": 7.49,
+      "discount_pct": 9.3,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 7.49,
+          "original_price": 7.49,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 6.79,
+          "original_price": 7.49,
+          "discount_pct": 9.3,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 6.79
+    },
+    {
+      "id": 259,
+      "name": "Refrigerante Coca-Cola Pet 2 Litros (Original / Sem Açúcar) (Paulistão Atacadista)",
+      "category": "cerveja",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 8.79,
+      "avg_price": 8.79,
+      "max_price": 8.79,
+      "total_checks": 1,
+      "current_price": 8.79,
+      "original_price": 9.69,
+      "discount_pct": 9.3,
+      "last_recorded_at": "2026-10-02 22:02:16",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 9.69,
+          "original_price": 9.69,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 8.79,
+          "original_price": 9.69,
+          "discount_pct": 9.3,
+          "recorded_at": "2026-10-02 22:02:16"
+        }
+      ],
+      "price": 8.79
+    },
+    {
+      "id": 133,
+      "name": "Óleo de Soja Refinado 900ml (Liza / Soya) (Savegnago)",
+      "category": "mercearia",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Óleo+de+Soja+900ml",
+      "min_price": 6.89,
+      "avg_price": 6.89,
+      "max_price": 6.89,
+      "total_checks": 1,
+      "current_price": 6.89,
+      "original_price": 7.59,
+      "discount_pct": 9.2,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 7.59,
+          "original_price": 7.59,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 6.89,
+          "original_price": 7.59,
+          "discount_pct": 9.2,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 6.89
+    },
+    {
+      "id": 170,
+      "name": "Cerveja Amstel Puro Malte Lata 350ml (Savegnago)",
+      "category": "cerveja",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Amstel+Lata+350ml",
+      "min_price": 3.99,
+      "avg_price": 3.99,
+      "max_price": 3.99,
+      "total_checks": 1,
+      "current_price": 3.99,
+      "original_price": 4.39,
+      "discount_pct": 9.1,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 4.39,
+          "original_price": 4.39,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 3.99,
+          "original_price": 4.39,
+          "discount_pct": 9.1,
+          "recorded_at": "2026-10-02 22:02:14"
+        }
+      ],
+      "price": 3.99
+    },
+    {
+      "id": 214,
+      "name": "Cerveja Amstel Puro Malte Lata 350ml (Copercana)",
+      "category": "cerveja",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 3.99,
+      "avg_price": 3.99,
+      "max_price": 3.99,
+      "total_checks": 1,
+      "current_price": 3.99,
+      "original_price": 4.39,
+      "discount_pct": 9.1,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 4.39,
+          "original_price": 4.39,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 3.99,
+          "original_price": 4.39,
+          "discount_pct": 9.1,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 3.99
+    },
+    {
+      "id": 257,
+      "name": "Cerveja Corona Extra Long Neck 330ml (Paulistão Atacadista)",
+      "category": "cerveja",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 5.99,
+      "avg_price": 5.99,
+      "max_price": 5.99,
+      "total_checks": 1,
+      "current_price": 5.99,
+      "original_price": 6.59,
+      "discount_pct": 9.1,
+      "last_recorded_at": "2026-10-02 22:02:16",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 6.59,
+          "original_price": 6.59,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 5.99,
+          "original_price": 6.59,
+          "discount_pct": 9.1,
+          "recorded_at": "2026-10-02 22:02:16"
+        }
+      ],
+      "price": 5.99
+    },
+    {
+      "id": 215,
+      "name": "Refrigerante Coca-Cola Pet 2 Litros (Original / Sem Açúcar) (Copercana)",
+      "category": "cerveja",
+      "store": "Supermercados Copercana",
+      "link": "https://www.supermercadoscopercana.com.br",
+      "min_price": 9.29,
+      "avg_price": 9.29,
+      "max_price": 9.29,
+      "total_checks": 1,
+      "current_price": 9.29,
+      "original_price": 10.19,
+      "discount_pct": 8.8,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 10.19,
+          "original_price": 10.19,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 9.29,
+          "original_price": 10.19,
+          "discount_pct": 8.8,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 9.29
+    },
+    {
+      "id": 106,
+      "name": "Cerveja Heineken Puro Malte Lata 350ml (Paulistão Atacadista)",
+      "category": "cerveja",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 5.29,
+      "avg_price": 5.29,
+      "max_price": 5.29,
+      "total_checks": 2,
+      "current_price": 5.29,
+      "original_price": 5.79,
+      "discount_pct": 8.6,
+      "last_recorded_at": "2026-10-02 22:02:16",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 5.29,
+          "original_price": 5.89,
+          "discount_pct": 10.2,
+          "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 5.29,
+          "original_price": 5.79,
+          "discount_pct": 8.6,
+          "recorded_at": "2026-10-02 22:02:16"
+        }
+      ],
+      "price": 5.29
+    },
+    {
+      "id": 221,
+      "name": "Óleo de Soja Refinado 900ml (Liza / Soya) (Paulistão Atacadista)",
+      "category": "mercearia",
+      "store": "Paulistão Atacadista",
+      "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
+      "min_price": 6.39,
+      "avg_price": 6.39,
+      "max_price": 6.39,
+      "total_checks": 1,
+      "current_price": 6.39,
+      "original_price": 6.99,
+      "discount_pct": 8.6,
+      "last_recorded_at": "2026-10-02 22:02:15",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "history_points": [
+        {
+          "price": 6.99,
+          "original_price": 6.99,
+          "discount_pct": 0,
+          "recorded_at": "Início do Monitoramento"
+        },
+        {
+          "price": 6.39,
+          "original_price": 6.99,
+          "discount_pct": 8.6,
+          "recorded_at": "2026-10-02 22:02:15"
+        }
+      ],
+      "price": 6.39
+    },
+    {
+      "id": 1,
+      "name": "Cerveja Heineken Puro Malte Lata 350ml (Savegnago)",
+      "category": "cerveja",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/busca?ft=Heineken+Lata+350ml",
+      "min_price": 5.39,
+      "avg_price": 5.470000000000001,
+      "max_price": 5.49,
+      "total_checks": 5,
+      "current_price": 5.39,
+      "original_price": 5.89,
+      "discount_pct": 8.5,
+      "last_recorded_at": "2026-10-02 22:02:14",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 1.5,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -2166,9 +7302,15 @@
           "original_price": 5.99,
           "discount_pct": 8.3,
           "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 5.39,
+          "original_price": 5.89,
+          "discount_pct": 8.5,
+          "recorded_at": "2026-10-02 22:02:14"
         }
       ],
-      "price": 5.49
+      "price": 5.39
     },
     {
       "id": 35,
@@ -2179,11 +7321,11 @@
       "min_price": 58.9,
       "avg_price": 58.9,
       "max_price": 58.9,
-      "total_checks": 3,
+      "total_checks": 4,
       "current_price": 58.9,
       "original_price": 63.9,
       "discount_pct": 7.8,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "last_recorded_at": "2026-10-02 22:02:14",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -2212,6 +7354,12 @@
           "original_price": 63.9,
           "discount_pct": 7.8,
           "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 58.9,
+          "original_price": 63.9,
+          "discount_pct": 7.8,
+          "recorded_at": "2026-10-02 22:02:14"
         }
       ],
       "price": 58.9
@@ -2221,15 +7369,15 @@
       "name": "Cerveja Heineken Puro Malte Lata 350ml (Copercana)",
       "category": "cerveja",
       "store": "Supermercados Copercana",
-      "link": "https://www.supermercadoscopercana.com.br/cervejas",
+      "link": "https://www.supermercadoscopercana.com.br",
       "min_price": 5.59,
       "avg_price": 5.59,
       "max_price": 5.59,
-      "total_checks": 1,
+      "total_checks": 2,
       "current_price": 5.59,
       "original_price": 5.99,
       "discount_pct": 6.7,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "last_recorded_at": "2026-10-02 22:02:15",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -2242,16 +7390,16 @@
       },
       "history_points": [
         {
-          "price": 5.99,
+          "price": 5.59,
           "original_price": 5.99,
-          "discount_pct": 0,
-          "recorded_at": "Início do Monitoramento"
+          "discount_pct": 6.7,
+          "recorded_at": "2026-10-02 16:03:28"
         },
         {
           "price": 5.59,
           "original_price": 5.99,
           "discount_pct": 6.7,
-          "recorded_at": "2026-10-02 16:03:28"
+          "recorded_at": "2026-10-02 22:02:15"
         }
       ],
       "price": 5.59
@@ -2697,52 +7845,6 @@
       "price": 54.5
     },
     {
-      "id": 37,
-      "name": "Contra Filé Bovino Peça Vácuo 3,5kg",
-      "category": "acougue",
-      "store": "Savegnago Supermercados",
-      "link": "https://www.savegnago.com.br/contra-file-bovino-peca-vacuo-3-5kg/p",
-      "min_price": 59.9,
-      "avg_price": 59.9,
-      "max_price": 59.9,
-      "total_checks": 3,
-      "current_price": 59.9,
-      "original_price": null,
-      "discount_pct": 0.0,
-      "last_recorded_at": "2026-10-02 16:03:28",
-      "intelligence": {
-        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
-        "tag": "Excelente Preço",
-        "score": "great",
-        "emoji": "🟢",
-        "color": "emerald",
-        "savings_pct": 0.0,
-        "is_all_time_low": true,
-        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      },
-      "history_points": [
-        {
-          "price": 59.9,
-          "original_price": null,
-          "discount_pct": 0.0,
-          "recorded_at": "2026-10-02 12:08:00"
-        },
-        {
-          "price": 59.9,
-          "original_price": null,
-          "discount_pct": 0.0,
-          "recorded_at": "2026-10-02 15:11:36"
-        },
-        {
-          "price": 59.9,
-          "original_price": null,
-          "discount_pct": 0.0,
-          "recorded_at": "2026-10-02 16:03:28"
-        }
-      ],
-      "price": 59.9
-    },
-    {
       "id": 36,
       "name": "Contra Filé Minerva Pedaço 600g Bandeja",
       "category": "acougue",
@@ -2751,11 +7853,11 @@
       "min_price": 64.9,
       "avg_price": 64.9,
       "max_price": 64.9,
-      "total_checks": 3,
+      "total_checks": 4,
       "current_price": 64.9,
       "original_price": null,
       "discount_pct": 0.0,
-      "last_recorded_at": "2026-10-02 16:03:28",
+      "last_recorded_at": "2026-10-02 22:02:14",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -2784,6 +7886,12 @@
           "original_price": null,
           "discount_pct": 0.0,
           "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 64.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-02 22:02:14"
         }
       ],
       "price": 64.9
@@ -4104,14 +9212,14 @@
       "savegnago": {
         "name": "Cerveja Heineken Puro Malte Lata 350ml (Savegnago)",
         "store": "Savegnago Supermercados",
-        "link": "https://www.savegnago.com.br/busca?ft=heineken",
-        "price": 5.49,
-        "original_price": 5.99
+        "link": "https://www.savegnago.com.br/busca?ft=Heineken+Lata+350ml",
+        "price": 5.39,
+        "original_price": 5.89
       },
       "copercana": {
         "name": "Cerveja Heineken Puro Malte Lata 350ml (Copercana)",
         "store": "Supermercados Copercana",
-        "link": "https://www.supermercadoscopercana.com.br/cervejas",
+        "link": "https://www.supermercadoscopercana.com.br",
         "price": 5.59,
         "original_price": 5.99
       },
@@ -4120,7 +9228,7 @@
         "store": "Paulistão Atacadista",
         "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
         "price": 5.29,
-        "original_price": 5.89
+        "original_price": 5.79
       },
       "marketplace": {
         "name": "Pack Cerveja Heineken 12 Latas 350ml (Mercado Envios Full)",
@@ -4138,21 +9246,21 @@
       "query": "Spaten",
       "product_name": "Cerveja Spaten Munich Helles Puro Malte Lata 350ml",
       "savegnago": {
-        "name": "Cerveja Spaten Munich Helles Lata 350ml (Savegnago)",
+        "name": "Cerveja Spaten Munich Helles Puro Malte Lata 350ml (Savegnago)",
         "store": "Savegnago Supermercados",
-        "link": "https://www.savegnago.com.br/busca?ft=spaten",
+        "link": "https://www.savegnago.com.br/busca?ft=Spaten+Lata+350ml",
         "price": 4.69,
         "original_price": 5.19
       },
       "copercana": {
-        "name": "Cerveja Spaten Munich Helles Lata 350ml (Copercana)",
+        "name": "Cerveja Spaten Munich Helles Puro Malte Lata 350ml (Copercana)",
         "store": "Supermercados Copercana",
-        "link": "https://www.supermercadoscopercana.com.br/cervejas",
+        "link": "https://www.supermercadoscopercana.com.br",
         "price": 4.59,
         "original_price": 5.09
       },
       "paulistao": {
-        "name": "Cerveja Spaten Munich Helles 350ml Fardo 12 Latas (Paulistão Atacadista)",
+        "name": "Cerveja Spaten Munich Helles Puro Malte Lata 350ml (Paulistão Atacadista)",
         "store": "Paulistão Atacadista",
         "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
         "price": 4.49,
@@ -4174,25 +9282,25 @@
       "query": "Corona",
       "product_name": "Cerveja Corona Extra Long Neck 330ml",
       "savegnago": {
-        "name": "Cerveja Corona Extra Long Neck 330ml",
+        "name": "Cerveja Corona Extra Long Neck 330ml (Savegnago)",
         "store": "Savegnago Supermercados",
+        "link": "https://www.savegnago.com.br/busca?ft=Corona+Long+Neck+330ml",
         "price": 6.49,
-        "original_price": 7.19,
-        "link": "https://www.savegnago.com.br/busca?ft=Corona"
+        "original_price": 7.19
       },
       "copercana": {
-        "name": "Cerveja Corona Extra 330ml Long Neck (Copercana)",
+        "name": "Cerveja Corona Extra Long Neck 330ml (Copercana)",
         "store": "Supermercados Copercana",
-        "link": "https://www.supermercadoscopercana.com.br/cervejas",
+        "link": "https://www.supermercadoscopercana.com.br",
         "price": 6.19,
         "original_price": 6.89
       },
       "paulistao": {
-        "name": "Cerveja Corona Extra Long Neck 330ml",
+        "name": "Cerveja Corona Extra Long Neck 330ml (Paulistão Atacadista)",
         "store": "Paulistão Atacadista",
+        "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
         "price": 5.99,
-        "original_price": 6.59,
-        "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho"
+        "original_price": 6.59
       },
       "marketplace": {
         "name": "Cerveja Corona Extra 330ml Pack com 6 unidades (Amazon Prime)",
@@ -4212,19 +9320,19 @@
       "savegnago": {
         "name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon 750ml (Savegnago)",
         "store": "Savegnago Supermercados",
-        "link": "https://www.savegnago.com.br/busca?ft=casillero",
+        "link": "https://www.savegnago.com.br/busca?ft=Casillero+del+Diablo+750ml",
         "price": 49.9,
         "original_price": 64.9
       },
       "copercana": {
         "name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon 750ml (Copercana)",
         "store": "Supermercados Copercana",
-        "link": "https://www.supermercadoscopercana.com.br/vinhos",
+        "link": "https://www.supermercadoscopercana.com.br",
         "price": 51.9,
         "original_price": 66.9
       },
       "paulistao": {
-        "name": "Vinho Chileno Casillero del Diablo 750ml (Paulistão Atacadista)",
+        "name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon 750ml (Paulistão Atacadista)",
         "store": "Paulistão Atacadista",
         "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
         "price": 47.9,
@@ -4246,21 +9354,21 @@
       "query": "Picanha",
       "product_name": "Picanha Bovina Resfriada Peça / Kg (Friboi / Minerva)",
       "savegnago": {
-        "name": "Picanha Bovina Peça / Kg (Açougue Savegnago)",
+        "name": "Picanha Bovina Resfriada Peça / Kg (Friboi / Minerva) (Savegnago)",
         "store": "Savegnago Supermercados",
-        "link": "https://www.savegnago.com.br/busca?ft=picanha",
-        "price": 59.9,
-        "original_price": 79.9
+        "link": "https://www.savegnago.com.br/busca?ft=Picanha+Bovina+(Kg)",
+        "price": 68.9,
+        "original_price": 89.9
       },
       "copercana": {
-        "name": "Picanha Bovina Peça / Kg (Açougue Copercana)",
+        "name": "Picanha Bovina Resfriada Peça / Kg (Friboi / Minerva) (Copercana)",
         "store": "Supermercados Copercana",
-        "link": "https://www.supermercadoscopercana.com.br/acougue",
+        "link": "https://www.supermercadoscopercana.com.br",
         "price": 62.9,
         "original_price": 82.9
       },
       "paulistao": {
-        "name": "Picanha Bovina Peça Inteira Kg (Açougue Paulistão)",
+        "name": "Picanha Bovina Resfriada Peça / Kg (Friboi / Minerva) (Paulistão Atacadista)",
         "store": "Paulistão Atacadista",
         "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
         "price": 57.9,
@@ -4269,8 +9377,8 @@
       "marketplace": null,
       "winner": "Paulistão Atacadista",
       "best_price": 57.9,
-      "diff_amount": 5.0,
-      "diff_pct": 7.9
+      "diff_amount": 11.0,
+      "diff_pct": 16.0
     },
     {
       "query": "Sabão Líquido OMO",
@@ -4278,19 +9386,19 @@
       "savegnago": {
         "name": "Sabão Líquido OMO Lavagem Perfeita 3 Litros (Savegnago)",
         "store": "Savegnago Supermercados",
-        "link": "https://www.savegnago.com.br/busca?ft=omo+liquido",
+        "link": "https://www.savegnago.com.br/busca?ft=OMO+Líquido+3L",
         "price": 38.9,
         "original_price": 52.9
       },
       "copercana": {
         "name": "Sabão Líquido OMO Lavagem Perfeita 3 Litros (Copercana)",
         "store": "Supermercados Copercana",
-        "link": "https://www.supermercadoscopercana.com.br/limpeza",
+        "link": "https://www.supermercadoscopercana.com.br",
         "price": 39.9,
         "original_price": 54.9
       },
       "paulistao": {
-        "name": "Sabão Líquido OMO Lavagem Perfeita 3L / 5L (Paulistão Atacadista)",
+        "name": "Sabão Líquido OMO Lavagem Perfeita 3 Litros (Paulistão Atacadista)",
         "store": "Paulistão Atacadista",
         "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
         "price": 36.9,
@@ -4305,18 +9413,18 @@
   ],
   "basket_comparison": {
     "total_items": 5,
-    "total_savegnago": 158.88,
+    "total_savegnago": 167.78,
     "total_copercana": 164.88,
     "total_paulistao": 152.48,
     "total_mixed": 152.48,
     "winner": "Paulistão Atacadista",
-    "single_store_savings": 12.4,
-    "single_store_savings_pct": 7.5,
-    "split_store_savings": 12.4,
+    "single_store_savings": 15.3,
+    "single_store_savings_pct": 9.1,
+    "split_store_savings": 15.3,
     "items": [
       {
         "item_name": "Heineken",
-        "price_savegnago": 5.49,
+        "price_savegnago": 5.39,
         "price_copercana": 5.59,
         "price_paulistao": 5.29,
         "best_store": "Paulistão Atacadista",
@@ -4340,7 +9448,7 @@
       },
       {
         "item_name": "Picanha",
-        "price_savegnago": 59.9,
+        "price_savegnago": 68.9,
         "price_copercana": 62.9,
         "price_paulistao": 57.9,
         "best_store": "Paulistão Atacadista",
