@@ -24,6 +24,9 @@
     }
   </script>
   
+  <!-- Chart.js CDN for Price Timeline Charts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
   
@@ -140,6 +143,9 @@
           <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-category="mercearia">
             🍚 Mercearia & Ovos
           </button>
+          <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-tab="timeline">
+            📈 Linha do Tempo
+          </button>
           <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-tab="supermarkets">
             🛒 Supermercados Locais
           </button>
@@ -156,7 +162,7 @@
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-1 w-full">
     
     <!-- Price Scale Legend -->
-    <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-4 mb-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
+    <div id="scaleLegendBox" class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-4 mb-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
       <div class="flex items-center gap-2 font-semibold text-slate-300">
         <i data-lucide="gauge" class="w-4 h-4 text-rose-400"></i>
         <span>Legenda do Termômetro:</span>
@@ -182,7 +188,7 @@
     </div>
 
     <!-- Stats Bar -->
-    <div class="flex items-center justify-between mb-6 text-xs text-slate-400">
+    <div id="statsBar" class="flex items-center justify-between mb-6 text-xs text-slate-400">
       <div>Exibindo <span id="itemCount" class="font-bold text-slate-200">0</span> produtos analisados</div>
       <div class="flex items-center gap-2">
         <i data-lucide="database" class="w-4 h-4 text-sky-400"></i>
@@ -193,6 +199,74 @@
     <!-- Deals Grid -->
     <div id="dealsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
       <!-- Cards inseridos dinamicamente -->
+    </div>
+
+    <!-- Dedicated Price Timeline Section (Conditional Tab) -->
+    <div id="timelineSection" class="hidden space-y-8">
+      <div class="border-b border-slate-800 pb-4 mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-bold text-white flex items-center gap-2">
+            <span>📈</span> Linha do Tempo & Evolução de Preços
+          </h2>
+          <p class="text-slate-400 text-sm">Histórico cronológico das varreduras diárias (08h, 13h, 19h) nos supermercados de Sertãozinho.</p>
+        </div>
+        <div class="w-full md:w-80">
+          <label class="block text-xs font-semibold text-slate-400 mb-1.5">Selecione o produto para ver a curva:</label>
+          <select id="timelineProductSelect" class="w-full bg-slate-900 border border-slate-700 text-slate-200 text-xs rounded-xl p-3 focus:ring-2 focus:ring-rose-500 focus:outline-none">
+            <!-- Options dinâmicas -->
+          </select>
+        </div>
+      </div>
+
+      <!-- Main Timeline Chart Box -->
+      <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-800">
+          <div>
+            <span id="timelineProductStore" class="text-xs font-semibold text-rose-400 uppercase tracking-wider">Supermercado</span>
+            <h3 id="timelineProductName" class="text-xl font-extrabold text-white mt-0.5">Selecione um produto</h3>
+          </div>
+          <div class="flex items-center gap-3">
+            <span id="timelineVerdictBadge" class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-950 text-emerald-300 border border-emerald-700">🟢 Excelente Preço</span>
+            <div class="text-right">
+              <span class="text-[11px] text-slate-400 block">Preço Atual</span>
+              <span id="timelineCurrentPrice" class="text-2xl font-black text-white">R$ 0,00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metrics Row -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
+            <span class="text-xs text-slate-400 font-medium">📉 Menor Histórico</span>
+            <div id="timelineMinPrice" class="text-lg font-black text-emerald-400 mt-1">R$ 0,00</div>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
+            <span class="text-xs text-slate-400 font-medium">📊 Preço Médio</span>
+            <div id="timelineAvgPrice" class="text-lg font-black text-slate-200 mt-1">R$ 0,00</div>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
+            <span class="text-xs text-slate-400 font-medium">📈 Maior Preço</span>
+            <div id="timelineMaxPrice" class="text-lg font-black text-rose-400 mt-1">R$ 0,00</div>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
+            <span class="text-xs text-slate-400 font-medium">🔄 Varreduras</span>
+            <div id="timelineTotalChecks" class="text-lg font-black text-sky-400 mt-1">0</div>
+          </div>
+        </div>
+
+        <!-- Chart Container -->
+        <div class="h-72 w-full relative">
+          <canvas id="mainTimelineChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Chronological History List -->
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 md:p-8">
+        <h4 class="text-base font-bold text-white mb-4 flex items-center gap-2">
+          <span>🕒</span> Registros Cronológicos de Varredura
+        </h4>
+        <div id="timelineLogList" class="space-y-3"></div>
+      </div>
     </div>
 
     <!-- Supermarkets Section (Conditional Tab) -->
@@ -418,7 +492,12 @@
               </div>
             </div>
 
-            <div class="pt-2">
+            <div class="pt-2 flex flex-col gap-2">
+              <button onclick="openTimelineModal(${item.id})"
+                 class="w-full flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs border border-slate-700 transition-all hover:text-white hover:border-slate-600">
+                <i data-lucide="line-chart" class="w-3.5 h-3.5 text-sky-400"></i>
+                <span>Ver Linha do Tempo</span>
+              </button>
               <a href="${item.link}" target="_blank" rel="noopener noreferrer"
                  class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-500 hover:to-rose-600 text-white font-semibold text-xs transition-all shadow-md shadow-rose-950/30 hover:scale-[1.02]">
                 <span>Ver Oferta na Loja</span>
@@ -539,7 +618,7 @@
 
     function renderCoupons() {
       const grid = document.getElementById('couponsGrid');
-      grid.innerHTML = appData.coupons.map(c => `
+      grid.innerHTML = (appData.coupons || []).map(c => `
         <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
           <div>
             <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2">
@@ -606,20 +685,43 @@
         const filter = btn.dataset.filter;
 
         const dealsGrid = document.getElementById('dealsGrid');
+        const timelineSection = document.getElementById('timelineSection');
         const supermarketsSection = document.getElementById('supermarketsSection');
         const couponsSection = document.getElementById('couponsSection');
+        const scaleLegendBox = document.getElementById('scaleLegendBox');
+        const statsBar = document.getElementById('statsBar');
 
-        if (tab === 'supermarkets') {
+        if (tab === 'timeline') {
           dealsGrid.classList.add('hidden');
+          supermarketsSection.classList.add('hidden');
           couponsSection.classList.add('hidden');
+          scaleLegendBox.classList.add('hidden');
+          statsBar.classList.add('hidden');
+          timelineSection.classList.remove('hidden');
+          const sel = document.getElementById('timelineProductSelect');
+          if (sel && sel.value) {
+            updateMainTimeline(Number(sel.value));
+          }
+        } else if (tab === 'supermarkets') {
+          dealsGrid.classList.add('hidden');
+          timelineSection.classList.add('hidden');
+          couponsSection.classList.add('hidden');
+          scaleLegendBox.classList.add('hidden');
+          statsBar.classList.add('hidden');
           supermarketsSection.classList.remove('hidden');
         } else if (tab === 'coupons') {
           dealsGrid.classList.add('hidden');
+          timelineSection.classList.add('hidden');
           supermarketsSection.classList.add('hidden');
+          scaleLegendBox.classList.add('hidden');
+          statsBar.classList.add('hidden');
           couponsSection.classList.remove('hidden');
         } else {
+          timelineSection.classList.add('hidden');
           supermarketsSection.classList.add('hidden');
           couponsSection.classList.add('hidden');
+          scaleLegendBox.classList.remove('hidden');
+          statsBar.classList.remove('hidden');
           dealsGrid.classList.remove('hidden');
           currentCategory = cat || 'all';
           currentScoreFilter = filter || null;
@@ -628,9 +730,95 @@
       });
     });
 
+    // Close modal on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeTimelineModal();
+    });
+
     // Initialize
     loadDeals();
   </script>
+
+  <!-- Interactive Price Timeline Modal -->
+  <div id="timelineModal" class="fixed inset-0 z-50 hidden bg-slate-950/85 backdrop-blur-md flex items-center justify-center p-4 transition-all duration-300">
+    <div class="bg-slate-900 border border-slate-700/80 rounded-3xl max-w-2xl w-full p-6 md:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      
+      <!-- Modal Close Button -->
+      <button onclick="closeTimelineModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <!-- Modal Header -->
+      <div class="mb-6 pr-8">
+        <div class="flex items-center gap-2 mb-1.5">
+          <span id="modalProductStore" class="px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-slate-800 text-slate-300 border border-slate-700">Savegnago</span>
+          <span id="modalVerdictBadge" class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-700">🟢 Excelente Preço</span>
+        </div>
+        <h3 id="modalProductName" class="text-xl font-extrabold text-white leading-tight">Nome do Produto</h3>
+      </div>
+
+      <!-- Price Highlights -->
+      <div class="grid grid-cols-3 gap-3 mb-6">
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3.5 text-center">
+          <span class="text-[11px] text-slate-400 font-medium block">Preço Atual</span>
+          <span id="modalCurrentPrice" class="text-lg font-black text-white">R$ 0,00</span>
+        </div>
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3.5 text-center">
+          <span class="text-[11px] text-emerald-400 font-medium block">Menor Histórico</span>
+          <span id="modalMinPrice" class="text-lg font-black text-emerald-400">R$ 0,00</span>
+        </div>
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3.5 text-center">
+          <span class="text-[11px] text-slate-400 font-medium block">Preço Médio</span>
+          <span id="modalAvgPrice" class="text-lg font-black text-slate-300">R$ 0,00</span>
+        </div>
+      </div>
+
+      <!-- Chart Container -->
+      <div class="bg-slate-950/80 border border-slate-800 rounded-2xl p-4 mb-6">
+        <span class="text-xs font-bold text-slate-300 mb-3 block flex items-center gap-1.5">
+          <i data-lucide="trending-down" class="w-4 h-4 text-emerald-400"></i> Curva de Evolução do Preço:
+        </span>
+        <div class="h-60 w-full relative">
+          <canvas id="modalTimelineChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Chronological History Points -->
+      <div class="mb-6">
+        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Histórico de Varreduras:</h4>
+        <div id="modalTimelineLogList" class="space-y-2 max-h-48 overflow-y-auto pr-1"></div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3 pt-2">
+        <a id="modalStoreLink" href="#" target="_blank" rel="noopener noreferrer"
+           class="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-500 hover:to-rose-600 text-white font-bold text-xs text-center transition-all shadow-lg shadow-rose-950/30">
+          Acessar Oferta na Loja
+        </a>
+        <button onclick="closeTimelineModal()" class="py-3 px-5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs transition-colors">
+          Fechar
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 bg-slate-950 py-8 px-4 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <p class="font-medium text-slate-400">Beer & Wine Promo — Sertãozinho/SP</p>
+        <p class="text-slate-600 mt-1">Bebidas para maiores de 18 anos. Beba com moderação.</p>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://t.me/beerstz_bot" target="_blank" class="text-slate-400 hover:text-sky-400 flex items-center gap-1 transition-colors">
+          <i data-lucide="send" class="w-4 h-4"></i>
+          <span>Telegram Bot (@beerstz_bot)</span>
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
+
 

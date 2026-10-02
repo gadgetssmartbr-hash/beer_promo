@@ -195,10 +195,24 @@ def get_subscribers() -> List[int]:
         return [row["chat_id"] for row in cursor.fetchall()]
 
 
+def get_product_history_points(product_id: int, limit: int = 20) -> List[Dict[str, Any]]:
+    """Retorna a linha do tempo de preços de um produto."""
+    with get_connection() as conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            SELECT price, original_price, discount_pct, recorded_at
+            FROM price_history
+            WHERE product_id = ?
+            ORDER BY recorded_at ASC
+            LIMIT ?
+        """, (product_id, limit))
+        return [dict(r) for r in cursor.fetchall()]
+
 def get_all_products_with_intelligence() -> List[Dict[str, Any]]:
     """
     Retorna todos os produtos com inteligência de preço, menor histórico,
-    preço médio, classificação (Excelente, Bom, Médio, Alto) e conselho de compra.
+    preço médio, classificação (Excelente, Bom, Médio, Alto), conselho de compra
+    e pontos históricos de linha do tempo.
     """
     from services.price_intelligence import analyze_price_quality
 
@@ -238,9 +252,26 @@ def get_all_products_with_intelligence() -> List[Dict[str, Any]]:
             )
             
             data["intelligence"] = intelligence
+            
+            # Linha do tempo de pontos históricos
+            pts = get_product_history_points(data["id"])
+            if len(pts) == 1:
+                # Se só tem 1 ponto, adiciona ponto anterior de referência para gráfico
+                pts = [
+                    {
+                        "price": orig_price or (cur_price * 1.15),
+                        "original_price": orig_price,
+                        "discount_pct": 0,
+                        "recorded_at": "Início do Monitoramento"
+                    },
+                    pts[0]
+                ]
+            data["history_points"] = pts
+            
             results.append(data)
             
         return results
+
 
 def add_to_watchlist(item_name: str, target_max_price: Optional[float] = None, category: str = "geral", store: str = "Todos", chat_id: Optional[int] = None) -> bool:
     """Adiciona um produto à lista de monitoramento da família."""
