@@ -1,7 +1,7 @@
 {
   "metadata": {
     "city": "Sertãozinho - SP",
-    "updated_at": "04/10/2026 às 20:48",
+    "updated_at": "04/10/2026 às 22:03",
     "telegram_bot": "https://t.me/beerstz_bot",
     "total_items": 189
   },
@@ -15,11 +15,11 @@
       "min_price": 219.0,
       "avg_price": 219.0,
       "max_price": 219.0,
-      "total_checks": 11,
+      "total_checks": 12,
       "current_price": 219.0,
       "original_price": 389.0,
       "discount_pct": 43.7,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:30",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -96,6 +96,12 @@
           "original_price": 389.0,
           "discount_pct": 43.7,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 219.0,
+          "original_price": 389.0,
+          "discount_pct": 43.7,
+          "recorded_at": "2026-10-04 22:03:30"
         }
       ],
       "price": 219.0
@@ -107,13 +113,13 @@
       "store": "Wine.com.br",
       "link": "https://www.wine.com.br/vinhos/ofertas",
       "min_price": 109.9,
-      "avg_price": 109.9,
+      "avg_price": 109.90000000000002,
       "max_price": 109.9,
-      "total_checks": 11,
+      "total_checks": 12,
       "current_price": 109.9,
       "original_price": 179.7,
       "discount_pct": 38.8,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:30",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -190,6 +196,12 @@
           "original_price": 179.7,
           "discount_pct": 38.8,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 109.9,
+          "original_price": 179.7,
+          "discount_pct": 38.8,
+          "recorded_at": "2026-10-04 22:03:30"
         }
       ],
       "price": 109.9
@@ -203,11 +215,11 @@
       "min_price": 39.9,
       "avg_price": 39.9,
       "max_price": 39.9,
-      "total_checks": 7,
+      "total_checks": 8,
       "current_price": 39.9,
       "original_price": 54.9,
       "discount_pct": 27.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -260,6 +272,12 @@
           "original_price": 54.9,
           "discount_pct": 27.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 39.9,
+          "original_price": 54.9,
+          "discount_pct": 27.3,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 39.9
@@ -273,11 +291,11 @@
       "min_price": 38.9,
       "avg_price": 38.9,
       "max_price": 38.9,
-      "total_checks": 8,
+      "total_checks": 9,
       "current_price": 38.9,
       "original_price": 52.9,
       "discount_pct": 26.5,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -336,6 +354,12 @@
           "original_price": 52.9,
           "discount_pct": 26.5,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 38.9,
+          "original_price": 52.9,
+          "discount_pct": 26.5,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 38.9
@@ -389,11 +413,11 @@
       "min_price": 36.9,
       "avg_price": 36.9,
       "max_price": 36.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 36.9,
       "original_price": 49.9,
       "discount_pct": 26.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -440,6 +464,12 @@
           "original_price": 49.9,
           "discount_pct": 26.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 36.9,
+          "original_price": 49.9,
+          "discount_pct": 26.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 36.9
@@ -451,20 +481,20 @@
       "store": "Amazon Brasil",
       "link": "https://www.amazon.com.br/s?k=sabao+liquido+ariel&i=grocery",
       "min_price": 31.9,
-      "avg_price": 31.899999999999995,
+      "avg_price": 31.9,
       "max_price": 31.9,
-      "total_checks": 9,
+      "total_checks": 10,
       "current_price": 31.9,
       "original_price": 42.9,
       "discount_pct": 25.6,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:30",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -522,6 +552,12 @@
           "original_price": 42.9,
           "discount_pct": 25.6,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 31.9,
+          "original_price": 42.9,
+          "discount_pct": 25.6,
+          "recorded_at": "2026-10-04 22:03:30"
         }
       ],
       "price": 31.9
@@ -575,11 +611,11 @@
       "min_price": 44.9,
       "avg_price": 44.9,
       "max_price": 44.9,
-      "total_checks": 10,
+      "total_checks": 11,
       "current_price": 44.9,
       "original_price": 59.9,
       "discount_pct": 25.0,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:30",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -650,6 +686,12 @@
           "original_price": 59.9,
           "discount_pct": 25.0,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 44.9,
+          "original_price": 59.9,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-10-04 22:03:30"
         }
       ],
       "price": 44.9
@@ -703,11 +745,11 @@
       "min_price": 24.9,
       "avg_price": 24.9,
       "max_price": 24.9,
-      "total_checks": 9,
+      "total_checks": 10,
       "current_price": 24.9,
       "original_price": 32.9,
       "discount_pct": 24.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:30",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -772,6 +814,12 @@
           "original_price": 32.9,
           "discount_pct": 24.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 24.9,
+          "original_price": 32.9,
+          "discount_pct": 24.3,
+          "recorded_at": "2026-10-04 22:03:30"
         }
       ],
       "price": 24.9
@@ -865,11 +913,11 @@
       "min_price": 62.9,
       "avg_price": 62.9,
       "max_price": 62.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 62.9,
       "original_price": 82.9,
       "discount_pct": 24.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -916,6 +964,12 @@
           "original_price": 82.9,
           "discount_pct": 24.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 62.9,
+          "original_price": 82.9,
+          "discount_pct": 24.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 62.9
@@ -929,11 +983,11 @@
       "min_price": 6.89,
       "avg_price": 6.89,
       "max_price": 6.89,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 6.89,
       "original_price": 8.99,
       "discount_pct": 23.4,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -980,6 +1034,12 @@
           "original_price": 8.99,
           "discount_pct": 23.4,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 6.89,
+          "original_price": 8.99,
+          "discount_pct": 23.4,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 6.89
@@ -993,11 +1053,11 @@
       "min_price": 68.9,
       "avg_price": 68.9,
       "max_price": 68.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 68.9,
       "original_price": 89.9,
       "discount_pct": 23.4,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -1044,6 +1104,12 @@
           "original_price": 89.9,
           "discount_pct": 23.4,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 68.9,
+          "original_price": 89.9,
+          "discount_pct": 23.4,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 68.9
@@ -1057,11 +1123,11 @@
       "min_price": 9.9,
       "avg_price": 9.9,
       "max_price": 9.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 9.9,
       "original_price": 12.9,
       "discount_pct": 23.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -1108,6 +1174,12 @@
           "original_price": 12.9,
           "discount_pct": 23.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 9.9,
+          "original_price": 12.9,
+          "discount_pct": 23.3,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 9.9
@@ -1161,11 +1233,11 @@
       "min_price": 4.99,
       "avg_price": 4.99,
       "max_price": 4.99,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 4.99,
       "original_price": 6.49,
       "discount_pct": 23.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -1212,6 +1284,12 @@
           "original_price": 6.49,
           "discount_pct": 23.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 4.99,
+          "original_price": 6.49,
+          "discount_pct": 23.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 4.99
@@ -1225,11 +1303,11 @@
       "min_price": 49.9,
       "avg_price": 49.9,
       "max_price": 49.9,
-      "total_checks": 10,
+      "total_checks": 11,
       "current_price": 49.9,
       "original_price": 64.9,
       "discount_pct": 23.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -1300,6 +1378,12 @@
           "original_price": 64.9,
           "discount_pct": 23.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 49.9,
+          "original_price": 64.9,
+          "discount_pct": 23.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 49.9
@@ -1313,11 +1397,11 @@
       "min_price": 16.9,
       "avg_price": 16.9,
       "max_price": 16.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 16.9,
       "original_price": 21.9,
       "discount_pct": 22.8,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -1364,6 +1448,12 @@
           "original_price": 21.9,
           "discount_pct": 22.8,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 16.9,
+          "original_price": 21.9,
+          "discount_pct": 22.8,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 16.9
@@ -1417,11 +1507,11 @@
       "min_price": 57.9,
       "avg_price": 57.9,
       "max_price": 57.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 57.9,
       "original_price": 74.9,
       "discount_pct": 22.7,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -1468,6 +1558,12 @@
           "original_price": 74.9,
           "discount_pct": 22.7,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 57.9,
+          "original_price": 74.9,
+          "discount_pct": 22.7,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 57.9
@@ -1481,11 +1577,11 @@
       "min_price": 51.9,
       "avg_price": 51.9,
       "max_price": 51.9,
-      "total_checks": 7,
+      "total_checks": 8,
       "current_price": 51.9,
       "original_price": 66.9,
       "discount_pct": 22.4,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -1538,6 +1634,12 @@
           "original_price": 66.9,
           "discount_pct": 22.4,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 51.9,
+          "original_price": 66.9,
+          "discount_pct": 22.4,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 51.9
@@ -1549,20 +1651,20 @@
       "store": "Paulistão Atacadista",
       "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
       "min_price": 3.49,
-      "avg_price": 3.49,
+      "avg_price": 3.4899999999999998,
       "max_price": 3.49,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 3.49,
       "original_price": 4.49,
       "discount_pct": 22.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -1602,6 +1704,12 @@
           "original_price": 4.49,
           "discount_pct": 22.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 3.49,
+          "original_price": 4.49,
+          "discount_pct": 22.3,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 3.49
@@ -1655,11 +1763,11 @@
       "min_price": 5.29,
       "avg_price": 5.29,
       "max_price": 5.29,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 5.29,
       "original_price": 6.79,
       "discount_pct": 22.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -1706,6 +1814,12 @@
           "original_price": 6.79,
           "discount_pct": 22.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 5.29,
+          "original_price": 6.79,
+          "discount_pct": 22.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 5.29
@@ -1719,11 +1833,11 @@
       "min_price": 1.95,
       "avg_price": 1.95,
       "max_price": 1.95,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 1.95,
       "original_price": 2.49,
       "discount_pct": 21.7,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -1770,6 +1884,12 @@
           "original_price": 2.49,
           "discount_pct": 21.7,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 1.95,
+          "original_price": 2.49,
+          "discount_pct": 21.7,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 1.95
@@ -1783,11 +1903,11 @@
       "min_price": 4.69,
       "avg_price": 4.69,
       "max_price": 4.69,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 4.69,
       "original_price": 5.99,
       "discount_pct": 21.7,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -1834,6 +1954,12 @@
           "original_price": 5.99,
           "discount_pct": 21.7,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 4.69,
+          "original_price": 5.99,
+          "discount_pct": 21.7,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 4.69
@@ -1845,13 +1971,13 @@
       "store": "Mercado Livre Full",
       "link": "https://lista.mercadolivre.com.br/kit-vinho-tinto-reservado_OrderId_PRICE*ASC_Shipping_fulfillment",
       "min_price": 124.9,
-      "avg_price": 124.9,
+      "avg_price": 124.90000000000002,
       "max_price": 124.9,
-      "total_checks": 11,
+      "total_checks": 12,
       "current_price": 124.9,
       "original_price": 159.6,
       "discount_pct": 21.7,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:30",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -1928,6 +2054,12 @@
           "original_price": 159.6,
           "discount_pct": 21.7,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 124.9,
+          "original_price": 159.6,
+          "discount_pct": 21.7,
+          "recorded_at": "2026-10-04 22:03:30"
         }
       ],
       "price": 124.9
@@ -1939,20 +2071,20 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Água+Sanitária+2L",
       "min_price": 5.49,
-      "avg_price": 5.489999999999999,
+      "avg_price": 5.49,
       "max_price": 5.49,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 5.49,
       "original_price": 6.99,
       "discount_pct": 21.5,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -1992,6 +2124,12 @@
           "original_price": 6.99,
           "discount_pct": 21.5,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 5.49,
+          "original_price": 6.99,
+          "discount_pct": 21.5,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 5.49
@@ -2003,20 +2141,20 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Creme+Dental+Colgate+90g",
       "min_price": 5.49,
-      "avg_price": 5.489999999999999,
+      "avg_price": 5.49,
       "max_price": 5.49,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 5.49,
       "original_price": 6.99,
       "discount_pct": 21.5,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -2056,6 +2194,12 @@
           "original_price": 6.99,
           "discount_pct": 21.5,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 5.49,
+          "original_price": 6.99,
+          "discount_pct": 21.5,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 5.49
@@ -2067,20 +2211,20 @@
       "store": "Paulistão Atacadista",
       "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
       "min_price": 5.49,
-      "avg_price": 5.489999999999999,
+      "avg_price": 5.49,
       "max_price": 5.49,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 5.49,
       "original_price": 6.99,
       "discount_pct": 21.5,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -2120,6 +2264,12 @@
           "original_price": 6.99,
           "discount_pct": 21.5,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 5.49,
+          "original_price": 6.99,
+          "discount_pct": 21.5,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 5.49
@@ -2173,11 +2323,11 @@
       "min_price": 6.29,
       "avg_price": 6.29,
       "max_price": 6.29,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 6.29,
       "original_price": 7.99,
       "discount_pct": 21.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -2224,6 +2374,12 @@
           "original_price": 7.99,
           "discount_pct": 21.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 6.29,
+          "original_price": 7.99,
+          "discount_pct": 21.3,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 6.29
@@ -2275,20 +2431,20 @@
       "store": "Supermercados Copercana",
       "link": "https://www.supermercadoscopercana.com.br",
       "min_price": 7.49,
-      "avg_price": 7.489999999999999,
+      "avg_price": 7.49,
       "max_price": 7.49,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 7.49,
       "original_price": 9.49,
       "discount_pct": 21.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -2328,6 +2484,12 @@
           "original_price": 9.49,
           "discount_pct": 21.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 7.49,
+          "original_price": 9.49,
+          "discount_pct": 21.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 7.49
@@ -2381,11 +2543,11 @@
       "min_price": 18.9,
       "avg_price": 18.9,
       "max_price": 18.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 18.9,
       "original_price": 23.9,
       "discount_pct": 20.9,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -2432,6 +2594,12 @@
           "original_price": 23.9,
           "discount_pct": 20.9,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 18.9,
+          "original_price": 23.9,
+          "discount_pct": 20.9,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 18.9
@@ -2523,20 +2691,20 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Papel+Neve+12+Rolos",
       "min_price": 22.9,
-      "avg_price": 22.899999999999995,
+      "avg_price": 22.9,
       "max_price": 22.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 22.9,
       "original_price": 28.9,
       "discount_pct": 20.8,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -2576,6 +2744,12 @@
           "original_price": 28.9,
           "discount_pct": 20.8,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 22.9,
+          "original_price": 28.9,
+          "discount_pct": 20.8,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 22.9
@@ -2587,20 +2761,20 @@
       "store": "Supermercados Copercana",
       "link": "https://www.supermercadoscopercana.com.br",
       "min_price": 22.9,
-      "avg_price": 22.899999999999995,
+      "avg_price": 22.9,
       "max_price": 22.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 22.9,
       "original_price": 28.9,
       "discount_pct": 20.8,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -2640,6 +2814,12 @@
           "original_price": 28.9,
           "discount_pct": 20.8,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 22.9,
+          "original_price": 28.9,
+          "discount_pct": 20.8,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 22.9
@@ -2653,11 +2833,11 @@
       "min_price": 189.9,
       "avg_price": 189.9,
       "max_price": 189.9,
-      "total_checks": 11,
+      "total_checks": 12,
       "current_price": 189.9,
       "original_price": 239.4,
       "discount_pct": 20.7,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:30",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -2734,6 +2914,12 @@
           "original_price": 239.4,
           "discount_pct": 20.7,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 189.9,
+          "original_price": 239.4,
+          "discount_pct": 20.7,
+          "recorded_at": "2026-10-04 22:03:30"
         }
       ],
       "price": 189.9
@@ -2787,11 +2973,11 @@
       "min_price": 8.69,
       "avg_price": 8.69,
       "max_price": 8.69,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 8.69,
       "original_price": 10.9,
       "discount_pct": 20.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -2838,6 +3024,12 @@
           "original_price": 10.9,
           "discount_pct": 20.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 8.69,
+          "original_price": 10.9,
+          "discount_pct": 20.3,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 8.69
@@ -2851,11 +3043,11 @@
       "min_price": 9.49,
       "avg_price": 9.49,
       "max_price": 9.49,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 9.49,
       "original_price": 11.9,
       "discount_pct": 20.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -2902,6 +3094,12 @@
           "original_price": 11.9,
           "discount_pct": 20.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 9.49,
+          "original_price": 11.9,
+          "discount_pct": 20.3,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 9.49
@@ -2915,11 +3113,11 @@
       "min_price": 9.49,
       "avg_price": 9.49,
       "max_price": 9.49,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 9.49,
       "original_price": 11.9,
       "discount_pct": 20.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -2966,6 +3164,12 @@
           "original_price": 11.9,
           "discount_pct": 20.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 9.49,
+          "original_price": 11.9,
+          "discount_pct": 20.3,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 9.49
@@ -2979,11 +3183,11 @@
       "min_price": 19.9,
       "avg_price": 19.9,
       "max_price": 19.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 19.9,
       "original_price": 24.9,
       "discount_pct": 20.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -3030,6 +3234,12 @@
           "original_price": 24.9,
           "discount_pct": 20.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 19.9,
+          "original_price": 24.9,
+          "discount_pct": 20.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 19.9
@@ -3043,11 +3253,11 @@
       "min_price": 19.9,
       "avg_price": 19.9,
       "max_price": 19.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 19.9,
       "original_price": 24.9,
       "discount_pct": 20.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -3094,6 +3304,12 @@
           "original_price": 24.9,
           "discount_pct": 20.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 19.9,
+          "original_price": 24.9,
+          "discount_pct": 20.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 19.9
@@ -3107,11 +3323,11 @@
       "min_price": 19.9,
       "avg_price": 19.9,
       "max_price": 19.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 19.9,
       "original_price": 24.9,
       "discount_pct": 20.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -3158,6 +3374,12 @@
           "original_price": 24.9,
           "discount_pct": 20.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 19.9,
+          "original_price": 24.9,
+          "discount_pct": 20.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 19.9
@@ -3171,11 +3393,11 @@
       "min_price": 21.5,
       "avg_price": 21.5,
       "max_price": 21.5,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 21.5,
       "original_price": 26.9,
       "discount_pct": 20.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -3222,6 +3444,12 @@
           "original_price": 26.9,
           "discount_pct": 20.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 21.5,
+          "original_price": 26.9,
+          "discount_pct": 20.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 21.5
@@ -3273,20 +3501,20 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Amaciante+Concentrado+1.5L",
       "min_price": 23.9,
-      "avg_price": 23.899999999999995,
+      "avg_price": 23.9,
       "max_price": 23.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 23.9,
       "original_price": 29.9,
       "discount_pct": 20.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -3326,6 +3554,12 @@
           "original_price": 29.9,
           "discount_pct": 20.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 23.9,
+          "original_price": 29.9,
+          "discount_pct": 20.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 23.9
@@ -3377,20 +3611,20 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Sabonete+Dove+90g",
       "min_price": 3.99,
-      "avg_price": 3.99,
+      "avg_price": 3.9899999999999998,
       "max_price": 3.99,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 3.99,
       "original_price": 4.99,
       "discount_pct": 20.0,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -3430,6 +3664,12 @@
           "original_price": 4.99,
           "discount_pct": 20.0,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 3.99,
+          "original_price": 4.99,
+          "discount_pct": 20.0,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 3.99
@@ -3443,11 +3683,11 @@
       "min_price": 4.79,
       "avg_price": 4.79,
       "max_price": 4.79,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 4.79,
       "original_price": 5.99,
       "discount_pct": 20.0,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -3494,6 +3734,12 @@
           "original_price": 5.99,
           "discount_pct": 20.0,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 4.79,
+          "original_price": 5.99,
+          "discount_pct": 20.0,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 4.79
@@ -3505,20 +3751,20 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Cebola+Nacional+(Kg)",
       "min_price": 5.99,
-      "avg_price": 5.989999999999999,
+      "avg_price": 5.99,
       "max_price": 5.99,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 5.99,
       "original_price": 7.49,
       "discount_pct": 20.0,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -3558,6 +3804,12 @@
           "original_price": 7.49,
           "discount_pct": 20.0,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 5.99,
+          "original_price": 7.49,
+          "discount_pct": 20.0,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 5.99
@@ -3569,20 +3821,20 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Tomate+Italiano+(Kg)",
       "min_price": 7.99,
-      "avg_price": 7.989999999999999,
+      "avg_price": 7.99,
       "max_price": 7.99,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 7.99,
       "original_price": 9.99,
       "discount_pct": 20.0,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -3622,6 +3874,12 @@
           "original_price": 9.99,
           "discount_pct": 20.0,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 7.99,
+          "original_price": 9.99,
+          "discount_pct": 20.0,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 7.99
@@ -3675,11 +3933,11 @@
       "min_price": 39.9,
       "avg_price": 39.9,
       "max_price": 39.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 39.9,
       "original_price": 49.9,
       "discount_pct": 20.0,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -3726,6 +3984,12 @@
           "original_price": 49.9,
           "discount_pct": 20.0,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 39.9,
+          "original_price": 49.9,
+          "discount_pct": 20.0,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 39.9
@@ -3779,11 +4043,11 @@
       "min_price": 47.9,
       "avg_price": 47.9,
       "max_price": 47.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 47.9,
       "original_price": 59.9,
       "discount_pct": 20.0,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:30",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -3830,6 +4094,12 @@
           "original_price": 59.9,
           "discount_pct": 20.0,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 47.9,
+          "original_price": 59.9,
+          "discount_pct": 20.0,
+          "recorded_at": "2026-10-04 22:03:30"
         }
       ],
       "price": 47.9
@@ -3843,11 +4113,11 @@
       "min_price": 36.9,
       "avg_price": 36.9,
       "max_price": 36.9,
-      "total_checks": 11,
+      "total_checks": 12,
       "current_price": 36.9,
       "original_price": 45.9,
       "discount_pct": 19.6,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:30",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -3924,6 +4194,12 @@
           "original_price": 45.9,
           "discount_pct": 19.6,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 36.9,
+          "original_price": 45.9,
+          "discount_pct": 19.6,
+          "recorded_at": "2026-10-04 22:03:30"
         }
       ],
       "price": 36.9
@@ -3937,11 +4213,11 @@
       "min_price": 36.9,
       "avg_price": 36.9,
       "max_price": 36.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 36.9,
       "original_price": 45.9,
       "discount_pct": 19.6,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -3988,6 +4264,12 @@
           "original_price": 45.9,
           "discount_pct": 19.6,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 36.9,
+          "original_price": 45.9,
+          "discount_pct": 19.6,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 36.9
@@ -3999,20 +4281,20 @@
       "store": "Paulistão Atacadista",
       "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
       "min_price": 7.99,
-      "avg_price": 7.989999999999999,
+      "avg_price": 7.99,
       "max_price": 7.99,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 7.99,
       "original_price": 9.9,
       "discount_pct": 19.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -4052,6 +4334,12 @@
           "original_price": 9.9,
           "discount_pct": 19.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 7.99,
+          "original_price": 9.9,
+          "discount_pct": 19.3,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 7.99
@@ -4065,11 +4353,11 @@
       "min_price": 8.8,
       "avg_price": 8.8,
       "max_price": 8.8,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 8.8,
       "original_price": 10.9,
       "discount_pct": 19.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -4116,6 +4404,12 @@
           "original_price": 10.9,
           "discount_pct": 19.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 8.8,
+          "original_price": 10.9,
+          "discount_pct": 19.3,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 8.8
@@ -4127,13 +4421,13 @@
       "store": "Supermercados Copercana",
       "link": "https://www.supermercadoscopercana.com.br",
       "min_price": 9.29,
-      "avg_price": 9.29,
+      "avg_price": 9.290000000000001,
       "max_price": 9.29,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 9.29,
       "original_price": 11.49,
       "discount_pct": 19.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -4180,6 +4474,12 @@
           "original_price": 11.49,
           "discount_pct": 19.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 9.29,
+          "original_price": 11.49,
+          "discount_pct": 19.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 9.29
@@ -4193,11 +4493,11 @@
       "min_price": 16.9,
       "avg_price": 16.9,
       "max_price": 16.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 16.9,
       "original_price": 20.9,
       "discount_pct": 19.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -4244,6 +4544,12 @@
           "original_price": 20.9,
           "discount_pct": 19.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 16.9,
+          "original_price": 20.9,
+          "discount_pct": 19.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 16.9
@@ -4297,11 +4603,11 @@
       "min_price": 2.15,
       "avg_price": 2.15,
       "max_price": 2.15,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 2.15,
       "original_price": 2.65,
       "discount_pct": 18.9,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -4348,6 +4654,12 @@
           "original_price": 2.65,
           "discount_pct": 18.9,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 2.15,
+          "original_price": 2.65,
+          "discount_pct": 18.9,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 2.15
@@ -4361,11 +4673,11 @@
       "min_price": 42.9,
       "avg_price": 42.9,
       "max_price": 42.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 42.9,
       "original_price": 52.9,
       "discount_pct": 18.9,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -4412,6 +4724,12 @@
           "original_price": 52.9,
           "discount_pct": 18.9,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 42.9,
+          "original_price": 52.9,
+          "discount_pct": 18.9,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 42.9
@@ -4425,11 +4743,11 @@
       "min_price": 3.89,
       "avg_price": 3.89,
       "max_price": 3.89,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 3.89,
       "original_price": 4.79,
       "discount_pct": 18.8,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -4476,6 +4794,12 @@
           "original_price": 4.79,
           "discount_pct": 18.8,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 3.89,
+          "original_price": 4.79,
+          "discount_pct": 18.8,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 3.89
@@ -4487,20 +4811,20 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Batata+Inglesa+(Kg)",
       "min_price": 6.49,
-      "avg_price": 6.489999999999999,
+      "avg_price": 6.49,
       "max_price": 6.49,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 6.49,
       "original_price": 7.99,
       "discount_pct": 18.8,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -4540,6 +4864,12 @@
           "original_price": 7.99,
           "discount_pct": 18.8,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 6.49,
+          "original_price": 7.99,
+          "discount_pct": 18.8,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 6.49
@@ -4553,11 +4883,11 @@
       "min_price": 38.9,
       "avg_price": 38.9,
       "max_price": 38.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 38.9,
       "original_price": 47.9,
       "discount_pct": 18.8,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -4604,6 +4934,12 @@
           "original_price": 47.9,
           "discount_pct": 18.8,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 38.9,
+          "original_price": 47.9,
+          "discount_pct": 18.8,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 38.9
@@ -4617,11 +4953,11 @@
       "min_price": 2.19,
       "avg_price": 2.19,
       "max_price": 2.19,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 2.19,
       "original_price": 2.69,
       "discount_pct": 18.6,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -4668,6 +5004,12 @@
           "original_price": 2.69,
           "discount_pct": 18.6,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 2.19,
+          "original_price": 2.69,
+          "discount_pct": 18.6,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 2.19
@@ -4679,20 +5021,20 @@
       "store": "Supermercados Copercana",
       "link": "https://www.supermercadoscopercana.com.br",
       "min_price": 21.9,
-      "avg_price": 21.899999999999995,
+      "avg_price": 21.9,
       "max_price": 21.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 21.9,
       "original_price": 26.9,
       "discount_pct": 18.6,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -4732,6 +5074,12 @@
           "original_price": 26.9,
           "discount_pct": 18.6,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 21.9,
+          "original_price": 26.9,
+          "discount_pct": 18.6,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 21.9
@@ -4743,20 +5091,20 @@
       "store": "Supermercados Copercana",
       "link": "https://www.supermercadoscopercana.com.br",
       "min_price": 21.9,
-      "avg_price": 21.899999999999995,
+      "avg_price": 21.9,
       "max_price": 21.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 21.9,
       "original_price": 26.9,
       "discount_pct": 18.6,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -4796,6 +5144,12 @@
           "original_price": 26.9,
           "discount_pct": 18.6,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 21.9,
+          "original_price": 26.9,
+          "discount_pct": 18.6,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 21.9
@@ -4809,11 +5163,11 @@
       "min_price": 5.29,
       "avg_price": 5.29,
       "max_price": 5.29,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 5.29,
       "original_price": 6.49,
       "discount_pct": 18.5,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -4860,6 +5214,12 @@
           "original_price": 6.49,
           "discount_pct": 18.5,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 5.29,
+          "original_price": 6.49,
+          "discount_pct": 18.5,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 5.29
@@ -4873,11 +5233,11 @@
       "min_price": 8.9,
       "avg_price": 8.9,
       "max_price": 8.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 8.9,
       "original_price": 10.9,
       "discount_pct": 18.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -4924,6 +5284,12 @@
           "original_price": 10.9,
           "discount_pct": 18.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 8.9,
+          "original_price": 10.9,
+          "discount_pct": 18.3,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 8.9
@@ -4937,11 +5303,11 @@
       "min_price": 17.9,
       "avg_price": 17.9,
       "max_price": 17.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 17.9,
       "original_price": 21.9,
       "discount_pct": 18.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -4988,6 +5354,12 @@
           "original_price": 21.9,
           "discount_pct": 18.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 17.9,
+          "original_price": 21.9,
+          "discount_pct": 18.3,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 17.9
@@ -5001,11 +5373,11 @@
       "min_price": 17.9,
       "avg_price": 17.9,
       "max_price": 17.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 17.9,
       "original_price": 21.9,
       "discount_pct": 18.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -5052,6 +5424,12 @@
           "original_price": 21.9,
           "discount_pct": 18.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 17.9,
+          "original_price": 21.9,
+          "discount_pct": 18.3,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 17.9
@@ -5065,11 +5443,11 @@
       "min_price": 8.6,
       "avg_price": 8.6,
       "max_price": 8.6,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 8.6,
       "original_price": 10.5,
       "discount_pct": 18.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -5116,6 +5494,12 @@
           "original_price": 10.5,
           "discount_pct": 18.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 8.6,
+          "original_price": 10.5,
+          "discount_pct": 18.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 8.6
@@ -5129,11 +5513,11 @@
       "min_price": 2.29,
       "avg_price": 2.29,
       "max_price": 2.29,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 2.29,
       "original_price": 2.79,
       "discount_pct": 17.9,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -5180,6 +5564,12 @@
           "original_price": 2.79,
           "discount_pct": 17.9,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 2.29,
+          "original_price": 2.79,
+          "discount_pct": 17.9,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 2.29
@@ -5193,11 +5583,11 @@
       "min_price": 2.29,
       "avg_price": 2.29,
       "max_price": 2.29,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 2.29,
       "original_price": 2.79,
       "discount_pct": 17.9,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -5244,6 +5634,12 @@
           "original_price": 2.79,
           "discount_pct": 17.9,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 2.29,
+          "original_price": 2.79,
+          "discount_pct": 17.9,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 2.29
@@ -5255,20 +5651,20 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Shampoo+Pantene+400ml",
       "min_price": 22.9,
-      "avg_price": 22.899999999999995,
+      "avg_price": 22.9,
       "max_price": 22.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 22.9,
       "original_price": 27.9,
       "discount_pct": 17.9,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -5308,6 +5704,12 @@
           "original_price": 27.9,
           "discount_pct": 17.9,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 22.9,
+          "original_price": 27.9,
+          "discount_pct": 17.9,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 22.9
@@ -5359,20 +5761,20 @@
       "store": "Supermercados Copercana",
       "link": "https://www.supermercadoscopercana.com.br",
       "min_price": 6.99,
-      "avg_price": 6.989999999999999,
+      "avg_price": 6.99,
       "max_price": 6.99,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 6.99,
       "original_price": 8.49,
       "discount_pct": 17.7,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -5412,6 +5814,12 @@
           "original_price": 8.49,
           "discount_pct": 17.7,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 6.99,
+          "original_price": 8.49,
+          "discount_pct": 17.7,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 6.99
@@ -5425,11 +5833,11 @@
       "min_price": 18.9,
       "avg_price": 18.9,
       "max_price": 18.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 18.9,
       "original_price": 22.9,
       "discount_pct": 17.5,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -5476,6 +5884,12 @@
           "original_price": 22.9,
           "discount_pct": 17.5,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 18.9,
+          "original_price": 22.9,
+          "discount_pct": 17.5,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 18.9
@@ -5489,11 +5903,11 @@
       "min_price": 18.9,
       "avg_price": 18.9,
       "max_price": 18.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 18.9,
       "original_price": 22.9,
       "discount_pct": 17.5,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -5540,6 +5954,12 @@
           "original_price": 22.9,
           "discount_pct": 17.5,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 18.9,
+          "original_price": 22.9,
+          "discount_pct": 17.5,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 18.9
@@ -5553,11 +5973,11 @@
       "min_price": 6.19,
       "avg_price": 6.19,
       "max_price": 6.19,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 6.19,
       "original_price": 7.49,
       "discount_pct": 17.4,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -5604,6 +6024,12 @@
           "original_price": 7.49,
           "discount_pct": 17.4,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 6.19,
+          "original_price": 7.49,
+          "discount_pct": 17.4,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 6.19
@@ -5615,20 +6041,20 @@
       "store": "Paulistão Atacadista",
       "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
       "min_price": 21.9,
-      "avg_price": 21.899999999999995,
+      "avg_price": 21.9,
       "max_price": 21.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 21.9,
       "original_price": 26.5,
       "discount_pct": 17.4,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -5668,6 +6094,12 @@
           "original_price": 26.5,
           "discount_pct": 17.4,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 21.9,
+          "original_price": 26.5,
+          "discount_pct": 17.4,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 21.9
@@ -5681,11 +6113,11 @@
       "min_price": 2.39,
       "avg_price": 2.39,
       "max_price": 2.39,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 2.39,
       "original_price": 2.89,
       "discount_pct": 17.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -5732,6 +6164,12 @@
           "original_price": 2.89,
           "discount_pct": 17.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 2.39,
+          "original_price": 2.89,
+          "discount_pct": 17.3,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 2.39
@@ -5743,20 +6181,20 @@
       "store": "Supermercados Copercana",
       "link": "https://www.supermercadoscopercana.com.br",
       "min_price": 23.9,
-      "avg_price": 23.899999999999995,
+      "avg_price": 23.9,
       "max_price": 23.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 23.9,
       "original_price": 28.9,
       "discount_pct": 17.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -5796,6 +6234,12 @@
           "original_price": 28.9,
           "discount_pct": 17.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 23.9,
+          "original_price": 28.9,
+          "discount_pct": 17.3,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 23.9
@@ -5809,11 +6253,11 @@
       "min_price": 5.79,
       "avg_price": 5.79,
       "max_price": 5.79,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 5.79,
       "original_price": 6.99,
       "discount_pct": 17.2,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -5860,6 +6304,12 @@
           "original_price": 6.99,
           "discount_pct": 17.2,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 5.79,
+          "original_price": 6.99,
+          "discount_pct": 17.2,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 5.79
@@ -5873,11 +6323,11 @@
       "min_price": 38.9,
       "avg_price": 38.9,
       "max_price": 38.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 38.9,
       "original_price": 46.9,
       "discount_pct": 17.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -5924,6 +6374,12 @@
           "original_price": 46.9,
           "discount_pct": 17.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 38.9,
+          "original_price": 46.9,
+          "discount_pct": 17.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 38.9
@@ -5935,20 +6391,20 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Detergente+Ypê+500ml",
       "min_price": 2.49,
-      "avg_price": 2.49,
+      "avg_price": 2.4899999999999998,
       "max_price": 2.49,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 2.49,
       "original_price": 2.99,
       "discount_pct": 16.7,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -5988,6 +6444,12 @@
           "original_price": 2.99,
           "discount_pct": 16.7,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 2.49,
+          "original_price": 2.99,
+          "discount_pct": 16.7,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 2.49
@@ -5999,20 +6461,20 @@
       "store": "Paulistão Atacadista",
       "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
       "min_price": 3.49,
-      "avg_price": 3.49,
+      "avg_price": 3.4899999999999998,
       "max_price": 3.49,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 3.49,
       "original_price": 4.19,
       "discount_pct": 16.7,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -6052,6 +6514,12 @@
           "original_price": 4.19,
           "discount_pct": 16.7,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 3.49,
+          "original_price": 4.19,
+          "discount_pct": 16.7,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 3.49
@@ -6063,20 +6531,20 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Banana+Prata+(Kg)",
       "min_price": 7.49,
-      "avg_price": 7.489999999999999,
+      "avg_price": 7.49,
       "max_price": 7.49,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 7.49,
       "original_price": 8.99,
       "discount_pct": 16.7,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -6116,6 +6584,12 @@
           "original_price": 8.99,
           "discount_pct": 16.7,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 7.49,
+          "original_price": 8.99,
+          "discount_pct": 16.7,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 7.49
@@ -6129,11 +6603,11 @@
       "min_price": 19.9,
       "avg_price": 19.9,
       "max_price": 19.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 19.9,
       "original_price": 23.9,
       "discount_pct": 16.7,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -6180,6 +6654,12 @@
           "original_price": 23.9,
           "discount_pct": 16.7,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 19.9,
+          "original_price": 23.9,
+          "discount_pct": 16.7,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 19.9
@@ -6191,20 +6671,20 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=OMO+em+Pó+1.6kg",
       "min_price": 24.9,
-      "avg_price": 24.899999999999995,
+      "avg_price": 24.9,
       "max_price": 24.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 24.9,
       "original_price": 29.9,
       "discount_pct": 16.7,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -6244,6 +6724,12 @@
           "original_price": 29.9,
           "discount_pct": 16.7,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 24.9,
+          "original_price": 29.9,
+          "discount_pct": 16.7,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 24.9
@@ -6257,11 +6743,11 @@
       "min_price": 34.9,
       "avg_price": 34.9,
       "max_price": 34.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 34.9,
       "original_price": 41.9,
       "discount_pct": 16.7,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -6308,6 +6794,12 @@
           "original_price": 41.9,
           "discount_pct": 16.7,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 34.9,
+          "original_price": 41.9,
+          "discount_pct": 16.7,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 34.9
@@ -6321,11 +6813,11 @@
       "min_price": 34.9,
       "avg_price": 34.9,
       "max_price": 34.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 34.9,
       "original_price": 41.9,
       "discount_pct": 16.7,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -6372,6 +6864,12 @@
           "original_price": 41.9,
           "discount_pct": 16.7,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 34.9,
+          "original_price": 41.9,
+          "discount_pct": 16.7,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 34.9
@@ -6423,13 +6921,13 @@
       "store": "Paulistão Atacadista",
       "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
       "min_price": 15.8,
-      "avg_price": 15.800000000000002,
+      "avg_price": 15.8,
       "max_price": 15.8,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 15.8,
       "original_price": 18.9,
       "discount_pct": 16.4,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -6476,6 +6974,12 @@
           "original_price": 18.9,
           "discount_pct": 16.4,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 15.8,
+          "original_price": 18.9,
+          "discount_pct": 16.4,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 15.8
@@ -6489,11 +6993,11 @@
       "min_price": 17.5,
       "avg_price": 17.5,
       "max_price": 17.5,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 17.5,
       "original_price": 20.9,
       "discount_pct": 16.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -6540,6 +7044,12 @@
           "original_price": 20.9,
           "discount_pct": 16.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 17.5,
+          "original_price": 20.9,
+          "discount_pct": 16.3,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 17.5
@@ -6553,11 +7063,11 @@
       "min_price": 41.9,
       "avg_price": 41.9,
       "max_price": 41.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 41.9,
       "original_price": 49.9,
       "discount_pct": 16.0,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -6604,6 +7114,12 @@
           "original_price": 49.9,
           "discount_pct": 16.0,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 41.9,
+          "original_price": 49.9,
+          "discount_pct": 16.0,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 41.9
@@ -6615,20 +7131,20 @@
       "store": "Paulistão Atacadista",
       "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
       "min_price": 31.9,
-      "avg_price": 31.899999999999995,
+      "avg_price": 31.9,
       "max_price": 31.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 31.9,
       "original_price": 37.9,
       "discount_pct": 15.8,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -6668,6 +7184,12 @@
           "original_price": 37.9,
           "discount_pct": 15.8,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 31.9,
+          "original_price": 37.9,
+          "discount_pct": 15.8,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 31.9
@@ -6679,20 +7201,20 @@
       "store": "Paulistão Atacadista",
       "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
       "min_price": 31.9,
-      "avg_price": 31.899999999999995,
+      "avg_price": 31.9,
       "max_price": 31.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 31.9,
       "original_price": 37.9,
       "discount_pct": 15.8,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:30",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -6732,6 +7254,12 @@
           "original_price": 37.9,
           "discount_pct": 15.8,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 31.9,
+          "original_price": 37.9,
+          "discount_pct": 15.8,
+          "recorded_at": "2026-10-04 22:03:30"
         }
       ],
       "price": 31.9
@@ -6745,11 +7273,11 @@
       "min_price": 2.69,
       "avg_price": 2.69,
       "max_price": 2.69,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 2.69,
       "original_price": 3.19,
       "discount_pct": 15.7,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -6796,6 +7324,12 @@
           "original_price": 3.19,
           "discount_pct": 15.7,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 2.69,
+          "original_price": 3.19,
+          "discount_pct": 15.7,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 2.69
@@ -6809,11 +7343,11 @@
       "min_price": 16.8,
       "avg_price": 16.8,
       "max_price": 16.8,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 16.8,
       "original_price": 19.9,
       "discount_pct": 15.6,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -6860,6 +7394,12 @@
           "original_price": 19.9,
           "discount_pct": 15.6,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 16.8,
+          "original_price": 19.9,
+          "discount_pct": 15.6,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 16.8
@@ -6873,11 +7413,11 @@
       "min_price": 37.9,
       "avg_price": 37.9,
       "max_price": 37.9,
-      "total_checks": 10,
+      "total_checks": 11,
       "current_price": 37.9,
       "original_price": 44.9,
       "discount_pct": 15.6,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:30",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -6948,6 +7488,12 @@
           "original_price": 44.9,
           "discount_pct": 15.6,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 37.9,
+          "original_price": 44.9,
+          "discount_pct": 15.6,
+          "recorded_at": "2026-10-04 22:03:30"
         }
       ],
       "price": 37.9
@@ -6961,11 +7507,11 @@
       "min_price": 16.9,
       "avg_price": 16.9,
       "max_price": 16.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 16.9,
       "original_price": 19.9,
       "discount_pct": 15.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -7012,6 +7558,12 @@
           "original_price": 19.9,
           "discount_pct": 15.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 16.9,
+          "original_price": 19.9,
+          "discount_pct": 15.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 16.9
@@ -7025,11 +7577,11 @@
       "min_price": 33.9,
       "avg_price": 33.9,
       "max_price": 33.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 33.9,
       "original_price": 39.9,
       "discount_pct": 15.0,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -7076,6 +7628,12 @@
           "original_price": 39.9,
           "discount_pct": 15.0,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 33.9,
+          "original_price": 39.9,
+          "discount_pct": 15.0,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 33.9
@@ -7089,11 +7647,11 @@
       "min_price": 33.9,
       "avg_price": 33.9,
       "max_price": 33.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 33.9,
       "original_price": 39.9,
       "discount_pct": 15.0,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -7140,6 +7698,12 @@
           "original_price": 39.9,
           "discount_pct": 15.0,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 33.9,
+          "original_price": 39.9,
+          "discount_pct": 15.0,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 33.9
@@ -7193,11 +7757,11 @@
       "min_price": 41.9,
       "avg_price": 41.9,
       "max_price": 41.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 41.9,
       "original_price": 48.9,
       "discount_pct": 14.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -7244,6 +7808,12 @@
           "original_price": 48.9,
           "discount_pct": 14.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 41.9,
+          "original_price": 48.9,
+          "discount_pct": 14.3,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 41.9
@@ -7257,11 +7827,11 @@
       "min_price": 4.29,
       "avg_price": 4.29,
       "max_price": 4.29,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 4.29,
       "original_price": 4.99,
       "discount_pct": 14.0,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -7308,6 +7878,12 @@
           "original_price": 4.99,
           "discount_pct": 14.0,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 4.29,
+          "original_price": 4.99,
+          "discount_pct": 14.0,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 4.29
@@ -7321,11 +7897,11 @@
       "min_price": 42.9,
       "avg_price": 42.9,
       "max_price": 42.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 42.9,
       "original_price": 49.9,
       "discount_pct": 14.0,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -7372,6 +7948,12 @@
           "original_price": 49.9,
           "discount_pct": 14.0,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 42.9,
+          "original_price": 49.9,
+          "discount_pct": 14.0,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 42.9
@@ -7385,11 +7967,11 @@
       "min_price": 2.59,
       "avg_price": 2.59,
       "max_price": 2.59,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 2.59,
       "original_price": 2.99,
       "discount_pct": 13.4,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -7436,6 +8018,12 @@
           "original_price": 2.99,
           "discount_pct": 13.4,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 2.59,
+          "original_price": 2.99,
+          "discount_pct": 13.4,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 2.59
@@ -7449,11 +8037,11 @@
       "min_price": 3.89,
       "avg_price": 3.89,
       "max_price": 3.89,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 3.89,
       "original_price": 4.49,
       "discount_pct": 13.4,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -7500,6 +8088,12 @@
           "original_price": 4.49,
           "discount_pct": 13.4,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 3.89,
+          "original_price": 4.49,
+          "discount_pct": 13.4,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 3.89
@@ -7513,11 +8107,11 @@
       "min_price": 12.9,
       "avg_price": 12.9,
       "max_price": 12.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 12.9,
       "original_price": 14.9,
       "discount_pct": 13.4,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -7564,6 +8158,12 @@
           "original_price": 14.9,
           "discount_pct": 13.4,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 12.9,
+          "original_price": 14.9,
+          "discount_pct": 13.4,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 12.9
@@ -7577,11 +8177,11 @@
       "min_price": 15.5,
       "avg_price": 15.5,
       "max_price": 15.5,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 15.5,
       "original_price": 17.9,
       "discount_pct": 13.4,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -7628,6 +8228,12 @@
           "original_price": 17.9,
           "discount_pct": 13.4,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 15.5,
+          "original_price": 17.9,
+          "discount_pct": 13.4,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 15.5
@@ -7641,11 +8247,11 @@
       "min_price": 38.9,
       "avg_price": 38.9,
       "max_price": 38.9,
-      "total_checks": 11,
+      "total_checks": 12,
       "current_price": 38.9,
       "original_price": 44.9,
       "discount_pct": 13.4,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:30",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -7722,6 +8328,12 @@
           "original_price": 44.9,
           "discount_pct": 13.4,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 38.9,
+          "original_price": 44.9,
+          "discount_pct": 13.4,
+          "recorded_at": "2026-10-04 22:03:30"
         }
       ],
       "price": 38.9
@@ -7735,11 +8347,11 @@
       "min_price": 38.9,
       "avg_price": 38.9,
       "max_price": 38.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 38.9,
       "original_price": 44.9,
       "discount_pct": 13.4,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -7786,6 +8398,12 @@
           "original_price": 44.9,
           "discount_pct": 13.4,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 38.9,
+          "original_price": 44.9,
+          "discount_pct": 13.4,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 38.9
@@ -7799,11 +8417,11 @@
       "min_price": 62.28,
       "avg_price": 62.28,
       "max_price": 62.28,
-      "total_checks": 11,
+      "total_checks": 12,
       "current_price": 62.28,
       "original_price": 71.88,
       "discount_pct": 13.4,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:30",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -7880,6 +8498,12 @@
           "original_price": 71.88,
           "discount_pct": 13.4,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 62.28,
+          "original_price": 71.88,
+          "discount_pct": 13.4,
+          "recorded_at": "2026-10-04 22:03:30"
         }
       ],
       "price": 62.28
@@ -7931,20 +8555,20 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Macarrão+Espaguete+500g",
       "min_price": 3.99,
-      "avg_price": 3.99,
+      "avg_price": 3.9899999999999998,
       "max_price": 3.99,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 3.99,
       "original_price": 4.59,
       "discount_pct": 13.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -7984,6 +8608,12 @@
           "original_price": 4.59,
           "discount_pct": 13.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 3.99,
+          "original_price": 4.59,
+          "discount_pct": 13.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 3.99
@@ -8037,11 +8667,11 @@
       "min_price": 4.79,
       "avg_price": 4.79,
       "max_price": 4.79,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 4.79,
       "original_price": 5.49,
       "discount_pct": 12.8,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -8088,6 +8718,12 @@
           "original_price": 5.49,
           "discount_pct": 12.8,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 4.79,
+          "original_price": 5.49,
+          "discount_pct": 12.8,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 4.79
@@ -8101,11 +8737,11 @@
       "min_price": 16.49,
       "avg_price": 16.49,
       "max_price": 16.49,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 16.49,
       "original_price": 18.9,
       "discount_pct": 12.8,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -8152,6 +8788,12 @@
           "original_price": 18.9,
           "discount_pct": 12.8,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 16.49,
+          "original_price": 18.9,
+          "discount_pct": 12.8,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 16.49
@@ -8163,20 +8805,20 @@
       "store": "Paulistão Atacadista",
       "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
       "min_price": 6.99,
-      "avg_price": 6.989999999999999,
+      "avg_price": 6.99,
       "max_price": 6.99,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 6.99,
       "original_price": 7.99,
       "discount_pct": 12.5,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -8216,6 +8858,12 @@
           "original_price": 7.99,
           "discount_pct": 12.5,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 6.99,
+          "original_price": 7.99,
+          "discount_pct": 12.5,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 6.99
@@ -8227,20 +8875,20 @@
       "store": "Supermercados Copercana",
       "link": "https://www.supermercadoscopercana.com.br",
       "min_price": 27.9,
-      "avg_price": 27.899999999999995,
+      "avg_price": 27.9,
       "max_price": 27.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 27.9,
       "original_price": 31.9,
       "discount_pct": 12.5,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -8280,6 +8928,12 @@
           "original_price": 31.9,
           "discount_pct": 12.5,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 27.9,
+          "original_price": 31.9,
+          "discount_pct": 12.5,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 27.9
@@ -8293,11 +8947,11 @@
       "min_price": 7.89,
       "avg_price": 7.89,
       "max_price": 7.89,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 7.89,
       "original_price": 8.99,
       "discount_pct": 12.2,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -8344,6 +8998,12 @@
           "original_price": 8.99,
           "discount_pct": 12.2,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 7.89,
+          "original_price": 8.99,
+          "discount_pct": 12.2,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 7.89
@@ -8355,20 +9015,20 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Arroz+Tipo+1+5kg",
       "min_price": 28.9,
-      "avg_price": 28.899999999999995,
+      "avg_price": 28.9,
       "max_price": 28.9,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 28.9,
       "original_price": 32.9,
       "discount_pct": 12.2,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -8408,6 +9068,12 @@
           "original_price": 32.9,
           "discount_pct": 12.2,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 28.9,
+          "original_price": 32.9,
+          "discount_pct": 12.2,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 28.9
@@ -8421,11 +9087,11 @@
       "min_price": 52.68,
       "avg_price": 52.68,
       "max_price": 52.68,
-      "total_checks": 11,
+      "total_checks": 12,
       "current_price": 52.68,
       "original_price": 59.9,
       "discount_pct": 12.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:30",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -8502,6 +9168,12 @@
           "original_price": 59.9,
           "discount_pct": 12.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 52.68,
+          "original_price": 59.9,
+          "discount_pct": 12.1,
+          "recorded_at": "2026-10-04 22:03:30"
         }
       ],
       "price": 52.68
@@ -8553,20 +9225,20 @@
       "store": "Supermercados Copercana",
       "link": "https://www.supermercadoscopercana.com.br",
       "min_price": 7.49,
-      "avg_price": 7.489999999999999,
+      "avg_price": 7.49,
       "max_price": 7.49,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 7.49,
       "original_price": 8.49,
       "discount_pct": 11.8,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -8606,6 +9278,12 @@
           "original_price": 8.49,
           "discount_pct": 11.8,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 7.49,
+          "original_price": 8.49,
+          "discount_pct": 11.8,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 7.49
@@ -8657,20 +9335,20 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/contra-file-bovino-peca-vacuo-3-5kg/p",
       "min_price": 48.9,
-      "avg_price": 53.45555555555555,
+      "avg_price": 53.4,
       "max_price": 59.9,
-      "total_checks": 9,
+      "total_checks": 10,
       "current_price": 52.9,
       "original_price": 59.9,
       "discount_pct": 11.7,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "⚖️ Preço Normal / Habitual",
         "tag": "Preço Médio",
         "score": "fair",
         "emoji": "🟡",
         "color": "amber",
-        "savings_pct": 1.0,
+        "savings_pct": 0.9,
         "is_all_time_low": false,
         "advice": "Dentro da média praticada no mercado. Compre apenas se estiver precisando."
       },
@@ -8728,6 +9406,12 @@
           "original_price": 59.9,
           "discount_pct": 11.7,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 52.9,
+          "original_price": 59.9,
+          "discount_pct": 11.7,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 52.9
@@ -8741,11 +9425,11 @@
       "min_price": 4.15,
       "avg_price": 4.15,
       "max_price": 4.15,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 4.15,
       "original_price": 4.69,
       "discount_pct": 11.5,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -8792,6 +9476,12 @@
           "original_price": 4.69,
           "discount_pct": 11.5,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 4.15,
+          "original_price": 4.69,
+          "discount_pct": 11.5,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 4.15
@@ -8805,11 +9495,11 @@
       "min_price": 26.5,
       "avg_price": 26.5,
       "max_price": 26.5,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 26.5,
       "original_price": 29.9,
       "discount_pct": 11.4,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -8856,6 +9546,12 @@
           "original_price": 29.9,
           "discount_pct": 11.4,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 26.5,
+          "original_price": 29.9,
+          "discount_pct": 11.4,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 26.5
@@ -8869,11 +9565,11 @@
       "min_price": 4.69,
       "avg_price": 4.69,
       "max_price": 4.69,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 4.69,
       "original_price": 5.29,
       "discount_pct": 11.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -8920,6 +9616,12 @@
           "original_price": 5.29,
           "discount_pct": 11.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 4.69,
+          "original_price": 5.29,
+          "discount_pct": 11.3,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 4.69
@@ -8931,20 +9633,20 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Guaraná+Antarctica+2L",
       "min_price": 7.99,
-      "avg_price": 7.989999999999999,
+      "avg_price": 7.99,
       "max_price": 7.99,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 7.99,
       "original_price": 8.99,
       "discount_pct": 11.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -8984,6 +9686,12 @@
           "original_price": 8.99,
           "discount_pct": 11.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 7.99,
+          "original_price": 8.99,
+          "discount_pct": 11.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 7.99
@@ -8997,11 +9705,11 @@
       "min_price": 4.89,
       "avg_price": 4.89,
       "max_price": 4.89,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 4.89,
       "original_price": 5.49,
       "discount_pct": 10.9,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -9048,6 +9756,12 @@
           "original_price": 5.49,
           "discount_pct": 10.9,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 4.89,
+          "original_price": 5.49,
+          "discount_pct": 10.9,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 4.89
@@ -9061,11 +9775,11 @@
       "min_price": 7.39,
       "avg_price": 7.39,
       "max_price": 7.39,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 7.39,
       "original_price": 8.29,
       "discount_pct": 10.9,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:30",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -9112,6 +9826,12 @@
           "original_price": 8.29,
           "discount_pct": 10.9,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 7.39,
+          "original_price": 8.29,
+          "discount_pct": 10.9,
+          "recorded_at": "2026-10-04 22:03:30"
         }
       ],
       "price": 7.39
@@ -9123,13 +9843,13 @@
       "store": "Paulistão Atacadista",
       "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
       "min_price": 11.8,
-      "avg_price": 11.800000000000002,
+      "avg_price": 11.8,
       "max_price": 11.8,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 11.8,
       "original_price": 13.2,
       "discount_pct": 10.6,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -9176,6 +9896,12 @@
           "original_price": 13.2,
           "discount_pct": 10.6,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 11.8,
+          "original_price": 13.2,
+          "discount_pct": 10.6,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 11.8
@@ -9189,11 +9915,11 @@
       "min_price": 4.39,
       "avg_price": 4.39,
       "max_price": 4.39,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 4.39,
       "original_price": 4.89,
       "discount_pct": 10.2,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -9240,6 +9966,12 @@
           "original_price": 4.89,
           "discount_pct": 10.2,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 4.39,
+          "original_price": 4.89,
+          "discount_pct": 10.2,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 4.39
@@ -9293,11 +10025,11 @@
       "min_price": 6.19,
       "avg_price": 6.19,
       "max_price": 6.19,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 6.19,
       "original_price": 6.89,
       "discount_pct": 10.2,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -9344,6 +10076,12 @@
           "original_price": 6.89,
           "discount_pct": 10.2,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 6.19,
+          "original_price": 6.89,
+          "discount_pct": 10.2,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 6.19
@@ -9357,11 +10095,11 @@
       "min_price": 7.89,
       "avg_price": 7.89,
       "max_price": 7.89,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 7.89,
       "original_price": 8.79,
       "discount_pct": 10.2,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -9408,6 +10146,12 @@
           "original_price": 8.79,
           "discount_pct": 10.2,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 7.89,
+          "original_price": 8.79,
+          "discount_pct": 10.2,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 7.89
@@ -9421,11 +10165,11 @@
       "min_price": 12.49,
       "avg_price": 12.49,
       "max_price": 12.49,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 12.49,
       "original_price": 13.9,
       "discount_pct": 10.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -9472,6 +10216,12 @@
           "original_price": 13.9,
           "discount_pct": 10.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 12.49,
+          "original_price": 13.9,
+          "discount_pct": 10.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 12.49
@@ -9525,11 +10275,11 @@
       "min_price": 4.49,
       "avg_price": 4.49,
       "max_price": 4.49,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 4.49,
       "original_price": 4.99,
       "discount_pct": 10.0,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -9576,6 +10326,12 @@
           "original_price": 4.99,
           "discount_pct": 10.0,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 4.49,
+          "original_price": 4.99,
+          "discount_pct": 10.0,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 4.49
@@ -9589,11 +10345,11 @@
       "min_price": 4.49,
       "avg_price": 4.49,
       "max_price": 4.49,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 4.49,
       "original_price": 4.99,
       "discount_pct": 10.0,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -9640,6 +10396,12 @@
           "original_price": 4.99,
           "discount_pct": 10.0,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 4.49,
+          "original_price": 4.99,
+          "discount_pct": 10.0,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 4.49
@@ -9653,11 +10415,11 @@
       "min_price": 4.49,
       "avg_price": 4.49,
       "max_price": 4.49,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 4.49,
       "original_price": 4.99,
       "discount_pct": 10.0,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -9704,6 +10466,12 @@
           "original_price": 4.99,
           "discount_pct": 10.0,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 4.49,
+          "original_price": 4.99,
+          "discount_pct": 10.0,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 4.49
@@ -9795,20 +10563,20 @@
       "store": "Supermercados Copercana",
       "link": "https://www.supermercadoscopercana.com.br",
       "min_price": 4.59,
-      "avg_price": 4.59,
+      "avg_price": 4.589999999999999,
       "max_price": 4.59,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 4.59,
       "original_price": 5.09,
       "discount_pct": 9.8,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -9848,6 +10616,12 @@
           "original_price": 5.09,
           "discount_pct": 9.8,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 4.59,
+          "original_price": 5.09,
+          "discount_pct": 9.8,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 4.59
@@ -9859,20 +10633,20 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Corona+Long+Neck+330ml",
       "min_price": 6.49,
-      "avg_price": 6.489999999999999,
+      "avg_price": 6.49,
       "max_price": 6.49,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 6.49,
       "original_price": 7.19,
       "discount_pct": 9.7,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -9912,6 +10686,12 @@
           "original_price": 7.19,
           "discount_pct": 9.7,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 6.49,
+          "original_price": 7.19,
+          "discount_pct": 9.7,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 6.49
@@ -9965,11 +10745,11 @@
       "min_price": 4.69,
       "avg_price": 4.69,
       "max_price": 4.69,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 4.69,
       "original_price": 5.19,
       "discount_pct": 9.6,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -10016,6 +10796,12 @@
           "original_price": 5.19,
           "discount_pct": 9.6,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 4.69,
+          "original_price": 5.19,
+          "discount_pct": 9.6,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 4.69
@@ -10027,13 +10813,13 @@
       "store": "Paulistão Atacadista",
       "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
       "min_price": 3.79,
-      "avg_price": 3.7900000000000005,
+      "avg_price": 3.79,
       "max_price": 3.79,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 3.79,
       "original_price": 4.19,
       "discount_pct": 9.5,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -10080,6 +10866,12 @@
           "original_price": 4.19,
           "discount_pct": 9.5,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 3.79,
+          "original_price": 4.19,
+          "discount_pct": 9.5,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 3.79
@@ -10093,11 +10885,11 @@
       "min_price": 4.79,
       "avg_price": 4.79,
       "max_price": 4.79,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 4.79,
       "original_price": 5.29,
       "discount_pct": 9.5,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -10144,6 +10936,12 @@
           "original_price": 5.29,
           "discount_pct": 9.5,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 4.79,
+          "original_price": 5.29,
+          "discount_pct": 9.5,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 4.79
@@ -10157,11 +10955,11 @@
       "min_price": 9.49,
       "avg_price": 9.49,
       "max_price": 9.49,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 9.49,
       "original_price": 10.49,
       "discount_pct": 9.5,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -10208,6 +11006,12 @@
           "original_price": 10.49,
           "discount_pct": 9.5,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 9.49,
+          "original_price": 10.49,
+          "discount_pct": 9.5,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 9.49
@@ -10221,11 +11025,11 @@
       "min_price": 6.79,
       "avg_price": 6.79,
       "max_price": 6.79,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 6.79,
       "original_price": 7.49,
       "discount_pct": 9.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -10272,6 +11076,12 @@
           "original_price": 7.49,
           "discount_pct": 9.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 6.79,
+          "original_price": 7.49,
+          "discount_pct": 9.3,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 6.79
@@ -10285,11 +11095,11 @@
       "min_price": 8.79,
       "avg_price": 8.79,
       "max_price": 8.79,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 8.79,
       "original_price": 9.69,
       "discount_pct": 9.3,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -10336,6 +11146,12 @@
           "original_price": 9.69,
           "discount_pct": 9.3,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 8.79,
+          "original_price": 9.69,
+          "discount_pct": 9.3,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 8.79
@@ -10349,11 +11165,11 @@
       "min_price": 6.89,
       "avg_price": 6.89,
       "max_price": 6.89,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 6.89,
       "original_price": 7.59,
       "discount_pct": 9.2,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -10400,6 +11216,12 @@
           "original_price": 7.59,
           "discount_pct": 9.2,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 6.89,
+          "original_price": 7.59,
+          "discount_pct": 9.2,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 6.89
@@ -10411,20 +11233,20 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Amstel+Lata+350ml",
       "min_price": 3.99,
-      "avg_price": 3.99,
+      "avg_price": 3.9899999999999998,
       "max_price": 3.99,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 3.99,
       "original_price": 4.39,
       "discount_pct": 9.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -10464,6 +11286,12 @@
           "original_price": 4.39,
           "discount_pct": 9.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 3.99,
+          "original_price": 4.39,
+          "discount_pct": 9.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 3.99
@@ -10475,20 +11303,20 @@
       "store": "Supermercados Copercana",
       "link": "https://www.supermercadoscopercana.com.br",
       "min_price": 3.99,
-      "avg_price": 3.99,
+      "avg_price": 3.9899999999999998,
       "max_price": 3.99,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 3.99,
       "original_price": 4.39,
       "discount_pct": 9.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -10528,6 +11356,12 @@
           "original_price": 4.39,
           "discount_pct": 9.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 3.99,
+          "original_price": 4.39,
+          "discount_pct": 9.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 3.99
@@ -10539,20 +11373,20 @@
       "store": "Paulistão Atacadista",
       "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
       "min_price": 5.99,
-      "avg_price": 5.989999999999999,
+      "avg_price": 5.99,
       "max_price": 5.99,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 5.99,
       "original_price": 6.59,
       "discount_pct": 9.1,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -10592,6 +11426,12 @@
           "original_price": 6.59,
           "discount_pct": 9.1,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 5.99,
+          "original_price": 6.59,
+          "discount_pct": 9.1,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 5.99
@@ -10603,13 +11443,13 @@
       "store": "Supermercados Copercana",
       "link": "https://www.supermercadoscopercana.com.br",
       "min_price": 9.29,
-      "avg_price": 9.29,
+      "avg_price": 9.290000000000001,
       "max_price": 9.29,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 9.29,
       "original_price": 10.19,
       "discount_pct": 8.8,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -10656,6 +11496,12 @@
           "original_price": 10.19,
           "discount_pct": 8.8,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 9.29,
+          "original_price": 10.19,
+          "discount_pct": 8.8,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 9.29
@@ -10669,11 +11515,11 @@
       "min_price": 5.29,
       "avg_price": 5.29,
       "max_price": 5.29,
-      "total_checks": 7,
+      "total_checks": 8,
       "current_price": 5.29,
       "original_price": 5.79,
       "discount_pct": 8.6,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -10726,6 +11572,12 @@
           "original_price": 5.79,
           "discount_pct": 8.6,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 5.29,
+          "original_price": 5.79,
+          "discount_pct": 8.6,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 5.29
@@ -10739,11 +11591,11 @@
       "min_price": 6.39,
       "avg_price": 6.39,
       "max_price": 6.39,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 6.39,
       "original_price": 6.99,
       "discount_pct": 8.6,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -10790,6 +11642,12 @@
           "original_price": 6.99,
           "discount_pct": 8.6,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 6.39,
+          "original_price": 6.99,
+          "discount_pct": 8.6,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 6.39
@@ -10801,13 +11659,13 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Heineken+Lata+350ml",
       "min_price": 5.39,
-      "avg_price": 5.43,
+      "avg_price": 5.426363636363636,
       "max_price": 5.49,
-      "total_checks": 10,
+      "total_checks": 11,
       "current_price": 5.39,
       "original_price": 5.89,
       "discount_pct": 8.5,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -10878,6 +11736,12 @@
           "original_price": 5.89,
           "discount_pct": 8.5,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 5.39,
+          "original_price": 5.89,
+          "discount_pct": 8.5,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 5.39
@@ -10889,13 +11753,13 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/file-costela-bovino-noix-2500kg-peca-vacuo/p",
       "min_price": 58.9,
-      "avg_price": 58.900000000000006,
+      "avg_price": 58.9,
       "max_price": 58.9,
-      "total_checks": 9,
+      "total_checks": 10,
       "current_price": 58.9,
       "original_price": 63.9,
       "discount_pct": 7.8,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -10960,6 +11824,12 @@
           "original_price": 63.9,
           "discount_pct": 7.8,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 58.9,
+          "original_price": 63.9,
+          "discount_pct": 7.8,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 58.9
@@ -10971,20 +11841,20 @@
       "store": "Supermercados Copercana",
       "link": "https://www.supermercadoscopercana.com.br",
       "min_price": 5.59,
-      "avg_price": 5.589999999999999,
+      "avg_price": 5.59,
       "max_price": 5.59,
-      "total_checks": 7,
+      "total_checks": 8,
       "current_price": 5.59,
       "original_price": 5.99,
       "discount_pct": 6.7,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -11030,6 +11900,12 @@
           "original_price": 5.99,
           "discount_pct": 6.7,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 5.59,
+          "original_price": 5.99,
+          "discount_pct": 6.7,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 5.59
@@ -11481,20 +12357,20 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/contra-file-minerva-kg-pedaco-embalado/p",
       "min_price": 51.9,
-      "avg_price": 60.56666666666667,
+      "avg_price": 61.0,
       "max_price": 64.9,
-      "total_checks": 9,
+      "total_checks": 10,
       "current_price": 64.9,
       "original_price": null,
       "discount_pct": 0.0,
-      "last_recorded_at": "2026-10-04 20:48:47",
+      "last_recorded_at": "2026-10-04 22:03:29",
       "intelligence": {
         "verdict": "⏳ Preço Alto (Acima da Média)",
         "tag": "Preço Alto",
         "score": "high",
         "emoji": "🔴",
         "color": "rose",
-        "savings_pct": -7.2,
+        "savings_pct": -6.4,
         "is_all_time_low": false,
         "advice": "Está mais caro que a média recente. Recomendamos aguardar nova promoção."
       },
@@ -11552,6 +12428,12 @@
           "original_price": null,
           "discount_pct": 0.0,
           "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 64.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-04 22:03:29"
         }
       ],
       "price": 64.9
