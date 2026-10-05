@@ -70,35 +70,25 @@ def get_main_menu_keyboard(chat_id: int = None):
     )
     
     keyboard = [
-        # --- SEÇÃO 1: BEBIDAS & ADEGA (FOCO PRINCIPAL) ---
+        # --- DOIS AMBIENTES DEDICADOS E SEPARADOS ---
         [
-            InlineKeyboardButton("🍺 Cervejas em Oferta", callback_data="menu_beers"),
-            InlineKeyboardButton("🍷 Vinhos & Espumantes", callback_data="menu_wines"),
+            InlineKeyboardButton("🏪 SUPERMERCADOS SERTÃOZINHO", callback_data="menu_local_env"),
         ],
         [
-            InlineKeyboardButton("🎟️ Cupons & Zé Delivery", callback_data="menu_coupons"),
-            InlineKeyboardButton("🍇 Clubes Wine & Evino", callback_data="menu_wines"),
+            InlineKeyboardButton("🌐 MARKETPLACES & ADEGA ONLINE", callback_data="menu_online_env"),
         ],
-        # --- SEÇÃO 2: SUPERMERCADOS LOCAIS & LISTA DA FAMÍLIA ---
+        # --- ATALHOS RÁPIDOS ---
         [
-            InlineKeyboardButton("🛒 Simulador de Economia (3 Lojas)", callback_data="menu_basket"),
+            InlineKeyboardButton("🛒 Simulador de Carrinho (3 Lojas)", callback_data="menu_basket"),
             InlineKeyboardButton("📸 Foto / Scanner no Mercado", callback_data="menu_scanner"),
         ],
         [
-            InlineKeyboardButton("📋 Lista Básica de Supermercado", callback_data="menu_basic_basket"),
-            InlineKeyboardButton("⚔️ Batalha 3 Redes", callback_data="menu_supermarkets"),
-        ],
-        [
-            InlineKeyboardButton("📝 Minha Lista da Família", callback_data="menu_watchlist"),
-            InlineKeyboardButton("🧼 Limpeza & Açougue Local", callback_data="menu_grocery"),
-        ],
-        [
-            InlineKeyboardButton("📊 Termômetro de Preços", callback_data="menu_history"),
-            InlineKeyboardButton("⚡ Rodar Busca Agora", callback_data="menu_run_now"),
+            InlineKeyboardButton("🍺 Cervejas em Oferta", callback_data="menu_beers"),
+            InlineKeyboardButton("🍷 Vinhos & Adega", callback_data="menu_wines"),
         ],
         # --- UTILITÁRIOS ---
         [
-            InlineKeyboardButton("🌐 Ver Microsite Web", callback_data="menu_microsite"),
+            InlineKeyboardButton("🌐 Ver Microsite Web (Separado)", callback_data="menu_microsite"),
             alert_btn,
         ],
         [
@@ -107,6 +97,86 @@ def get_main_menu_keyboard(chat_id: int = None):
     ]
 
     return InlineKeyboardMarkup(keyboard)
+
+async def handle_local_env_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Submenu exclusivo para Supermercados Regionais de Sertãozinho."""
+    query = update.callback_query
+    if query:
+        await query.answer()
+
+    text = (
+        "🏪 *AMBIENTE: SUPERMERCADOS DE SERTÃOZINHO / SP* 📍\n\n"
+        "Ambiente 100% focado no consumo local e delivery na cidade:\n"
+        "• **Savegnago Supermercados**\n"
+        "• **Supermercados Copercana**\n"
+        "• **Paulistão Atacadista**\n\n"
+        "👇 *Escolha uma ferramenta local:*"
+    )
+
+    keyboard = InlineKeyboardMarkup([
+        [
+            InlineKeyboardButton("🛒 Simulador de Economia (3 Lojas)", callback_data="menu_basket"),
+            InlineKeyboardButton("📸 Scanner & Foto na Gôndola", callback_data="menu_scanner"),
+        ],
+        [
+            InlineKeyboardButton("⚔️ Batalha Direta 3 Redes", callback_data="menu_supermarkets"),
+            InlineKeyboardButton("📋 Lista Básica de Supermercado", callback_data="menu_basic_basket"),
+        ],
+        [
+            InlineKeyboardButton("🥩 Açougue & Carnes", callback_data="cat_carnes"),
+            InlineKeyboardButton("🧼 Limpeza & Casa", callback_data="cat_limpeza"),
+        ],
+        [
+            InlineKeyboardButton("📝 Minha Lista da Família", callback_data="menu_watchlist"),
+            InlineKeyboardButton("⚡ Rodar Busca Agora", callback_data="menu_run_now"),
+        ],
+        [
+            InlineKeyboardButton("🔙 Voltar ao Início", callback_data="menu_start"),
+        ]
+    ])
+
+    if query:
+        await query.edit_message_text(text, reply_markup=keyboard, parse_mode="Markdown")
+    elif update.message:
+        await update.message.reply_text(text, reply_markup=keyboard, parse_mode="Markdown")
+
+async def handle_online_env_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Submenu exclusivo para Marketplaces e E-commerce Nacional."""
+    query = update.callback_query
+    if query:
+        await query.answer()
+
+    text = (
+        "🌐 *AMBIENTE: MARKETPLACES & ADEGA ONLINE* 📦\n\n"
+        "Ambiente 100% focado em compras pela internet com entrega em Sertãozinho:\n"
+        "• **Mercado Livre Full** (Packs fechados e latas)\n"
+        "• **Amazon Brasil** (Frete Prime e caixas)\n"
+        "• **Clubes Wine & Evino** (Kits e vinhos importados)\n"
+        "• **Zé Delivery & iFood** (Cupons e entrega rápida)\n\n"
+        "👇 *Escolha uma opção online:*"
+    )
+
+    keyboard = InlineKeyboardMarkup([
+        [
+            InlineKeyboardButton("🍺 Cervejas em Packs (ML / Amazon)", callback_data="menu_beers"),
+            InlineKeyboardButton("🍷 Vinhos & Espumantes", callback_data="menu_wines"),
+        ],
+        [
+            InlineKeyboardButton("🎟️ Central de Cupons & Zé Delivery", callback_data="menu_coupons"),
+            InlineKeyboardButton("🍇 Clubes Wine & Evino", callback_data="menu_wines"),
+        ],
+        [
+            InlineKeyboardButton("📊 Termômetro de Preços na Web", callback_data="menu_history"),
+        ],
+        [
+            InlineKeyboardButton("🔙 Voltar ao Início", callback_data="menu_start"),
+        ]
+    ])
+
+    if query:
+        await query.edit_message_text(text, reply_markup=keyboard, parse_mode="Markdown")
+    elif update.message:
+        await update.message.reply_text(text, reply_markup=keyboard, parse_mode="Markdown")
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Comando /start - Menu Inicial"""
@@ -1019,8 +1089,10 @@ async def callback_router(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await handle_run_now(update, context)
     elif data == "menu_microsite":
         await handle_microsite(update, context)
-    elif data == "menu_how_to_watch":
-        await handle_how_to_watch(update, context)
+    elif data == "menu_local_env":
+        await handle_local_env_menu(update, context)
+    elif data == "menu_online_env":
+        await handle_online_env_menu(update, context)
     elif data == "menu_basket" or data.startswith("basket_preset:"):
         await handle_basket_comparison(update, context)
     elif data == "menu_scanner":

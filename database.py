@@ -266,8 +266,18 @@ def get_all_products_with_intelligence() -> List[Dict[str, Any]]:
                     },
                     pts[0]
                 ]
-            data["history_points"] = pts
-            
+            # Classifica o ambiente: Local (Sertãozinho) vs Online (Marketplace)
+            store_lower = (data.get("store") or "").lower()
+            if any(s in store_lower for s in ["savegnago", "copercana", "paulistão", "paulistao"]):
+                data["origin_type"] = "local"
+            elif any(s in store_lower for s in ["mercado livre", "amazon", "wine", "evino", "zé delivery", "ze delivery"]):
+                data["origin_type"] = "online"
+            else:
+                if data.get("category") in ["acougue", "mercearia", "hortifruti", "laticinios", "limpeza", "higiene"]:
+                    data["origin_type"] = "local"
+                else:
+                    data["origin_type"] = "online"
+
             results.append(data)
             
         return results
