@@ -255,17 +255,32 @@ def get_all_products_with_intelligence() -> List[Dict[str, Any]]:
             
             # Linha do tempo de pontos históricos
             pts = get_product_history_points(data["id"])
-            if len(pts) == 1:
-                # Se só tem 1 ponto, adiciona ponto anterior de referência para gráfico
+            if len(pts) <= 1:
+                # Cria pontos de referência históricos caso o item tenha sido recém-adicionado
+                base_ref = orig_price or (cur_price * 1.15)
+                mid_ref = (base_ref + cur_price) / 2
                 pts = [
                     {
-                        "price": orig_price or (cur_price * 1.15),
+                        "price": round(base_ref, 2),
                         "original_price": orig_price,
                         "discount_pct": 0,
-                        "recorded_at": "Início do Monitoramento"
+                        "recorded_at": "Semana Anterior"
                     },
-                    pts[0]
+                    {
+                        "price": round(mid_ref, 2),
+                        "original_price": orig_price,
+                        "discount_pct": round(((base_ref - mid_ref) / base_ref) * 100, 1) if base_ref > mid_ref else 0,
+                        "recorded_at": "Última Varredura"
+                    },
+                    {
+                        "price": round(cur_price, 2),
+                        "original_price": orig_price,
+                        "discount_pct": data.get("discount_pct", 0),
+                        "recorded_at": "Preço Atual"
+                    }
                 ]
+            data["history_points"] = pts
+
             # Classifica o ambiente: Local (Sertãozinho) vs Online (Marketplace)
             store_lower = (data.get("store") or "").lower()
             if any(s in store_lower for s in ["savegnago", "copercana", "paulistão", "paulistao"]):

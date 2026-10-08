@@ -833,15 +833,23 @@
       }
     }
 
+    let cardChartInstances = {};
+
     // --- RENDER DEALS (ISOLADO 100% POR AMBIENTE) ---
     function renderDeals() {
       const grid = document.getElementById('dealsGrid');
       const search = (document.getElementById('searchInput').value || '').toLowerCase().trim();
       const sort = document.getElementById('sortSelect').value;
 
+      // Limpa gráficos anteriores dos cards para liberar memória
+      Object.keys(cardChartInstances).forEach(id => {
+        if (cardChartInstances[id]) {
+          cardChartInstances[id].destroy();
+          delete cardChartInstances[id];
+        }
+      });
+
       // FILTRAGEM ESTRITA DE AMBIENTE:
-      // Se currentEnv == 'local' -> Somente Savegnago, Copercana, Paulistão Atacadista ou origin_type == 'local'
-      // Se currentEnv == 'online' -> Somente Mercado Livre, Amazon, Wine, Evino, Zé Delivery ou origin_type == 'online'
       let filtered = (appData.deals || []).filter(item => {
         const storeLower = (item.store || '').toLowerCase();
         const isLocalStore = storeLower.includes('savegnago') || storeLower.includes('copercana') || storeLower.includes('paulistão') || storeLower.includes('paulistao');
@@ -929,6 +937,26 @@
         const minPriceDisplay = `R$ ${minVal.toFixed(2).replace('.', ',')}`;
         const avgPriceDisplay = `R$ ${avgVal.toFixed(2).replace('.', ',')}`;
 
+        // Cálculo da variação recente
+        const pts = item.history_points || [];
+        let variationLabel = '● Variação Estável';
+        let variationColor = 'text-slate-400';
+        if (pts.length >= 2) {
+          const firstP = pts[0].price;
+          const lastP = pts[pts.length - 1].price;
+          const diffPct = ((lastP - firstP) / firstP) * 100;
+          if (diffPct < -2) {
+            variationLabel = `📉 ${Math.abs(diffPct).toFixed(1)}% queda recente`;
+            variationColor = 'text-emerald-400 font-bold';
+          } else if (diffPct > 2) {
+            variationLabel = `📈 +${diffPct.toFixed(1)}% alta recente`;
+            variationColor = 'text-rose-400 font-semibold';
+          }
+        } else if (intel.is_all_time_low) {
+          variationLabel = `🔥 Menor Preço Histórico!`;
+          variationColor = 'text-emerald-400 font-bold';
+        }
+
         const isLocal = currentEnv === 'local';
         const buttonGradient = isLocal 
           ? 'bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500' 
@@ -953,7 +981,7 @@
                 ${item.name}
               </h3>
 
-              <div class="flex items-baseline justify-between mb-4">
+              <div class="flex items-baseline justify-between mb-3">
                 <div>
                   ${originalPrice}
                   <div class="text-2xl font-black text-white tracking-tight">
@@ -972,6 +1000,20 @@
                   <span>📊 Preço Médio:</span>
                   <span class="font-medium text-slate-300">${avgPriceDisplay}</span>
                 </div>
+
+                <!-- Gráfico de Variação Individual no Card -->
+                <div class="pt-2 border-t border-slate-800/70">
+                  <div class="flex items-center justify-between text-[10px] mb-1">
+                    <span class="text-slate-400 font-medium flex items-center gap-1">
+                      <span>📈</span> Curva de Variação:
+                    </span>
+                    <span class="${variationColor} text-[10px]">${variationLabel}</span>
+                  </div>
+                  <div class="h-14 w-full relative bg-slate-900/60 rounded-lg p-1">
+                    <canvas id="cardChart_${item.id}" class="w-full h-full"></canvas>
+                  </div>
+                </div>
+
                 <div class="text-[11px] text-slate-300 font-medium pt-1 border-t border-slate-900 flex items-center gap-1.5">
                   <i data-lucide="info" class="w-3.5 h-3.5 text-sky-400 shrink-0"></i>
                   <span class="line-clamp-1">${intel.advice}</span>
@@ -983,7 +1025,7 @@
               <button onclick="openTimelineModal(${item.id})"
                  class="w-full flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs border border-slate-700 transition-all hover:text-white hover:border-slate-600">
                 <i data-lucide="line-chart" class="w-3.5 h-3.5 text-sky-400"></i>
-                <span>Ver Linha do Tempo</span>
+                <span>Ver Gráfico Detalhado</span>
               </button>
               <a href="${item.link}" target="_blank" rel="noopener noreferrer"
                  class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl ${buttonGradient} text-white font-semibold text-xs transition-all shadow-md hover:scale-[1.02]">
@@ -996,6 +1038,74 @@
       }).join('');
 
       if (window.lucide) lucide.createIcons();
+
+      // Renderiza os gráficos de variação de cada card
+      setTimeout(() => {
+        renderCardSparklines(filtered);
+      }, 50);
+    }
+
+    // --- RENDERIZADOR DE SPARKLINE / GRÁFICO DE CADA CARD ---
+    function renderCardSparklines(items) {
+      items.forEach(item => {
+        const canvas = document.getElementById(`cardChart_${item.id}`);
+        if (!canvas) return;
+
+        const ctx = canvas.getContext('2d');
+        const priceVal = Number(item.current_price !== undefined ? item.current_price : (item.price || 0));
+        const pts = item.history_points && item.history_points.length > 0 
+          ? item.history_points 
+          : [{ recorded_at: 'Anterior', price: (item.original_price || priceVal * 1.15) }, { recorded_at: 'Atual', price: priceVal }];
+
+        const labels = pts.map(p => p.recorded_at ? p.recorded_at.split(' ')[0] : '');
+        const dataPoints = pts.map(p => Number(p.price));
+
+        const isDrop = dataPoints[dataPoints.length - 1] < dataPoints[0];
+        const lineColor = isDrop ? '#10b981' : (currentEnv === 'local' ? '#14b8a6' : '#f43f5e');
+        const fillColor = isDrop ? 'rgba(16, 185, 129, 0.12)' : (currentEnv === 'local' ? 'rgba(20, 184, 166, 0.10)' : 'rgba(244, 63, 94, 0.10)');
+
+        cardChartInstances[item.id] = new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: labels,
+            datasets: [{
+              data: dataPoints,
+              borderColor: lineColor,
+              backgroundColor: fillColor,
+              borderWidth: 2,
+              pointRadius: 2.5,
+              pointHoverRadius: 4,
+              pointBackgroundColor: lineColor,
+              fill: true,
+              tension: 0.35
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                enabled: true,
+                padding: 4,
+                displayColors: false,
+                callbacks: {
+                  title: (items) => items[0].label || '',
+                  label: (context) => `R$ ${Number(context.raw).toFixed(2).replace('.', ',')}`
+                }
+              }
+            },
+            scales: {
+              x: { display: false },
+              y: {
+                display: false,
+                suggestedMin: Math.min(...dataPoints) * 0.96,
+                suggestedMax: Math.max(...dataPoints) * 1.04
+              }
+            }
+          }
+        });
+      });
     }
 
     // --- TIMELINE DROPDOWN FILTERED BY ACTIVE ENVIRONMENT ---
@@ -1065,7 +1175,7 @@
       if (mainChartInstance) mainChartInstance.destroy();
 
       const labels = historyPoints.length > 0 ? historyPoints.map(p => p.recorded_at.split(' ')[0]) : ['Atual'];
-      const dataPoints = historyPoints.length > 0 ? historyPoints.map(p => p.price) : [priceVal];
+      const dataPoints = historyPoints.length > 0 ? historyPoints.map(p => Number(p.price)) : [priceVal];
       const chartColor = currentEnv === 'local' ? '#34d399' : '#f43f5e';
 
       mainChartInstance = new Chart(ctx, {
@@ -1132,7 +1242,7 @@
       if (modalChartInstance) modalChartInstance.destroy();
 
       const labels = historyPoints.length > 0 ? historyPoints.map(p => p.recorded_at.split(' ')[0]) : ['Atual'];
-      const dataPoints = historyPoints.length > 0 ? historyPoints.map(p => p.price) : [priceVal];
+      const dataPoints = historyPoints.length > 0 ? historyPoints.map(p => Number(p.price)) : [priceVal];
 
       modalChartInstance = new Chart(ctx, {
         type: 'line',
