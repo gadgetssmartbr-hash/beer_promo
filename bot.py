@@ -186,13 +186,15 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     welcome_text = (
         "🍻 *Monitor & Inteligência de Preços — Sertãozinho / SP* 🍷\n\n"
-        "Seu assistente inteligente para economizar nas compras de **Bebidas (Cervejas, Vinhos)** "
-        "e nos **Supermercados Locais (Savegnago, Copercana e Paulistão Atacadista)**.\n\n"
+        "Seu assistente inteligente com dois ambientes dedicados:\n"
+        "🏪 **Supermercados de Sertãozinho** (Savegnago, Copercana e Paulistão Atacadista)\n"
+        "🌐 **Marketplaces & Adega Online** (Mercado Livre, Amazon, Wine e Zé Delivery)\n\n"
         "⚡ *Busca em Tempo Real:* Digite o nome de qualquer item (ex: `Ovos`, `Heineken`, `Picanha`, `Sabão OMO`) "
         "e o bot compara na hora as lojas da cidade!\n\n"
-        "📋 *Lista Básica:* Consulte preços dos itens essenciais do dia a dia pelo botão **'Lista Básica de Supermercado'**.\n\n"
-        "⏰ *Varreduras automáticas:* **3x ao dia** (08h, 13h, 19h)!\n\n"
-        "👇 *Escolha uma opção ou digite o nome do produto:*"
+        "⏰ *Varreduras automáticas:*\n"
+        "• 🌐 **Marketplaces (Bebidas/Vinhos):** De **hora em hora** (08h às 23h) para promoções relâmpago!\n"
+        "• 🏪 **Supermercados Locais:** **3x ao dia** (08h, 13h, 19h).\n\n"
+        "👇 *Escolha um ambiente abaixo ou digite o nome do produto:*"
     )
 
     if update.message:

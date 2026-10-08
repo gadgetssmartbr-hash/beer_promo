@@ -1,6 +1,8 @@
 """
-Agendador de Tarefas: Executa a busca nos sites 3 vezes ao dia (08:00, 13:00, 19:00)
-e envia notificações de promoções aos inscritos no Telegram.
+Agendador de Tarefas Híbrido:
+1. Supermercados Locais de Sertãozinho (Savegnago, Copercana, Paulistão): 3x ao dia (08:00, 13:00, 19:00).
+2. Bebidas e Vinhos em Marketplaces (Mercado Livre, Amazon, Wine, Evino): Varredura de HORA EM HORA (08:00 às 23:00)
+   para capturar ofertas relâmpago e quedas de preço instantâneas!
 """
 import os
 import asyncio
@@ -10,19 +12,18 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.cron import CronTrigger
 from telegram import Bot
 
-from services.scrapers import run_all_scrapers
+from services.scrapers import run_all_scrapers, run_marketplaces_scrapers
 from database import get_subscribers, get_recent_price_drops
 
 logger = logging.getLogger(__name__)
 
 async def run_scheduled_scraping(bot: Bot = None):
-    """Executa a rotina de busca de ofertas e dispara alertas."""
+    """Executa a rotina completa de busca (supermercados locais + marketplaces) e dispara resumo geral."""
     now_str = datetime.now().strftime("%d/%m/%Y %H:%M")
-    logger.info(f"⏰ [SCHEDULER] Iniciando busca agendada de promoções ({now_str})...")
+    logger.info(f"⏰ [SCHEDULER GERAL] Iniciando busca completa diária ({now_str})...")
     
-    # Executa os scrapers e salva no SQLite
     summary = run_all_scrapers()
-    logger.info(f"✅ [SCHEDULER] Concluído: {summary['total_scraped']} itens analisados.")
+    logger.info(f"✅ [SCHEDULER GERAL] Concluído: {summary['total_scraped']} itens analisados.")
 
     if not bot:
         return
@@ -32,10 +33,9 @@ async def run_scheduled_scraping(bot: Bot = None):
         logger.info("ℹ️ Nenhum usuário inscrito para receber notificações agendadas.")
         return
 
-    # Monta a mensagem de resumo
     lines = [
-        f"🔔 *ATUALIZAÇÃO DE OFERTAS ({now_str})*\n",
-        f"Realizamos a varredura nos supermercados de Sertãozinho e marketplaces!\n"
+        f"🔔 *ATUALIZAÇÃO GERAL DE OFERTAS ({now_str})*\n",
+        f"Varredura completa nos **Supermercados de Sertãozinho** e **Marketplaces Online**!\n"
     ]
     
     if summary["price_drops"]:
@@ -70,22 +70,71 @@ async def run_scheduled_scraping(bot: Bot = None):
                 disable_web_page_preview=True
             )
         except Exception as e:
-            logger.error(f"Erro ao enviar notificação para chat {chat_id}: {e}")
+            logger.error(f"Erro ao enviar notificação geral para chat {chat_id}: {e}")
+
+async def run_scheduled_marketplaces_hourly(bot: Bot = None):
+    """Executa a rotina horária de busca de bebidas e vinhos nos Marketplaces Online."""
+    now_str = datetime.now().strftime("%d/%m/%Y %H:%M")
+    logger.info(f"⚡ [SCHEDULER MARKETPLACES] Iniciando varredura horária de bebidas ({now_str})...")
+    
+    summary = run_marketplaces_scrapers()
+    logger.info(f"✅ [SCHEDULER MARKETPLACES] Concluído: {summary['total_scraped']} itens analisados.")
+
+    # Notifica os usuários apenas se houver queda de preço/oferta relâmpago nova detectada nesta hora
+    if summary["price_drops"] and bot:
+        subscribers = get_subscribers()
+        if not subscribers:
+            return
+            
+        lines = [
+            f"⚡ *ALERTA RELÂMPAGO — MARKETPLACES ({now_str})* 📦\n",
+            f"Detectamos queda de preço em bebidas nos marketplaces online!\n"
+        ]
+        for drop in summary["price_drops"]:
+            lines.append(
+                f"• *{drop['name']}* ({drop['store']})\n"
+                f"  De ~R$ {drop['old_price']:.2f}~ por *R$ {drop['new_price']:.2f}*\n"
+                f"  🔗 [Acessar Oferta]({drop['link']})"
+            )
+        lines.append("\n🌐 Confira todos os preços atualizados no Microsite.")
+        
+        text = "\n".join(lines)
+        for chat_id in subscribers:
+            try:
+                await bot.send_message(
+                    chat_id=chat_id,
+                    text=text,
+                    parse_mode="Markdown",
+                    disable_web_page_preview=True
+                )
+            except Exception as e:
+                logger.error(f"Erro ao enviar alerta horário para chat {chat_id}: {e}")
 
 async def start_scheduler_job(app):
-    """Inicia o agendador após o loop de eventos estar ativo (post_init) 3x ao dia."""
+    """Configura e inicia o agendador de tarefas híbrido."""
     scheduler = AsyncIOScheduler()
-    scheduled_hours = [8, 13, 19]
     
-    for hour in scheduled_hours:
+    # 1. Varredura Completa Geral: 3x ao dia (08:00, 13:00, 19:00)
+    scheduled_general_hours = [8, 13, 19]
+    for hour in scheduled_general_hours:
         trigger = CronTrigger(hour=hour, minute=0)
         scheduler.add_job(
             run_scheduled_scraping,
             trigger=trigger,
             args=[app.bot],
-            name=f"scraping_job_{hour}h"
+            name=f"scraping_geral_{hour}h"
         )
-        logger.info(f"📅 Agendada busca diária para as {hour:02d}:00.")
+        logger.info(f"📅 [Geral] Agendada busca completa para as {hour:02d}:00.")
+
+    # 2. Varredura Horária de Marketplaces (Bebidas e Vinhos): de hora em hora entre 08h e 23h
+    trigger_hourly = CronTrigger(minute=0, hour="8-23")
+    scheduler.add_job(
+        run_scheduled_marketplaces_hourly,
+        trigger=trigger_hourly,
+        args=[app.bot],
+        name="scraping_marketplaces_hourly"
+    )
+    logger.info("⚡ [Marketplaces] Agendada varredura de HORA EM HORA (08h às 23h).")
 
     scheduler.start()
-    logger.info("⏰ Scheduler 3x/dia ativado com sucesso (08h, 13h, 19h).")
+    logger.info("⏰ Scheduler híbrido ativado com sucesso (Geral 3x/dia + Marketplaces 1x/hora).")
