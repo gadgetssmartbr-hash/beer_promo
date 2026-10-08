@@ -88,6 +88,18 @@ def compare_product_in_stores(query: str) -> Dict[str, Any]:
                 "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho"
             }
 
+    from services.unit_parser import parse_unit_pricing
+    for store_key in ["savegnago", "copercana", "paulistao"]:
+        item_data = locals()[f"{store_key[:3]}_dict"]
+        if item_data:
+            u_info = parse_unit_pricing(
+                name=item_data.get("name", ""),
+                price=item_data.get("price", 0.0),
+                original_price=item_data.get("original_price"),
+                category="cerveja" if any(b in (item_data.get("name") or "").lower() for b in ["heineken", "spaten", "corona", "cerveja", "chopp"]) else "geral"
+            )
+            item_data["unit_pricing"] = u_info
+
     res = {
         "query": search_term,
         "product_name": staple["name"] if staple else search_term,
@@ -101,19 +113,22 @@ def compare_product_in_stores(query: str) -> Dict[str, Any]:
         "diff_pct": 0.0
     }
 
-    # Identifica o menor preço entre as redes locais de Sertãozinho
+    # Identifica o menor preço unitário / total entre as redes locais de Sertãozinho
     local_candidates = []
     if res["savegnago"]:
-        local_candidates.append(("Savegnago", res["savegnago"]["price"]))
+        p = res["savegnago"].get("unit_pricing", {}).get("unit_price") or res["savegnago"]["price"]
+        local_candidates.append(("Savegnago", p, res["savegnago"]["price"]))
     if res["copercana"]:
-        local_candidates.append(("Copercana", res["copercana"]["price"]))
+        p = res["copercana"].get("unit_pricing", {}).get("unit_price") or res["copercana"]["price"]
+        local_candidates.append(("Copercana", p, res["copercana"]["price"]))
     if res["paulistao"]:
-        local_candidates.append(("Paulistão Atacadista", res["paulistao"]["price"]))
+        p = res["paulistao"].get("unit_pricing", {}).get("unit_price") or res["paulistao"]["price"]
+        local_candidates.append(("Paulistão Atacadista", p, res["paulistao"]["price"]))
 
     if local_candidates:
         local_candidates.sort(key=lambda x: x[1])
-        winner_name, best_p = local_candidates[0]
-        max_p = max(c[1] for c in local_candidates)
+        winner_name, best_u, best_p = local_candidates[0]
+        max_p = max(c[2] for c in local_candidates)
         
         res["winner"] = winner_name
         res["best_price"] = best_p

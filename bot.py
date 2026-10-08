@@ -504,12 +504,16 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     has_local = battle.get("savegnago") or battle.get("copercana") or battle.get("paulistao")
     if has_local:
         msg_lines.append("⚔️ *BATALHA DE PREÇOS EM SERTÃOZINHO:*")
-        if battle.get("savegnago"):
-            msg_lines.append(f"  🏪 *Savegnago:* R$ {battle['savegnago']['price']:.2f}")
-        if battle.get("copercana"):
-            msg_lines.append(f"  🏪 *Copercana:* R$ {battle['copercana']['price']:.2f}")
-        if battle.get("paulistao"):
-            msg_lines.append(f"  🏪 *Paulistão Atacadista:* R$ {battle['paulistao']['price']:.2f}")
+        for store_key, store_title in [("savegnago", "Savegnago"), ("copercana", "Copercana"), ("paulistao", "Paulistão Atacadista")]:
+            store_data = battle.get(store_key)
+            if store_data:
+                u_info = store_data.get("unit_pricing")
+                if u_info and u_info.get("is_pack"):
+                    msg_lines.append(f"  🏪 *{store_title}:* **{u_info['unit_price_display']}** _(Total: R$ {store_data['price']:.2f} - {u_info['pack_label']})_")
+                elif u_info:
+                    msg_lines.append(f"  🏪 *{store_title}:* **R$ {store_data['price']:.2f}** / {u_info['unit_name']} _({u_info['container_type']})_")
+                else:
+                    msg_lines.append(f"  🏪 *{store_title}:* R$ {store_data['price']:.2f}")
             
         if battle.get("winner") and battle["winner"] != "Empate":
             diff = battle.get('diff_amount', 0.0)
@@ -522,16 +526,19 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # 2. Avaliação de Preço e Histórico
     if history_records:
-        msg_lines.append("📊 *TERMÔMETRO DE PREÇOS:*")
+        msg_lines.append("📊 *TERMÔMETRO & PREÇO POR UNIDADE:*")
         for hr in history_records:
             intel = analyze_price_quality(
                 current_price=hr["current_price"],
                 historical_min=hr["min_price"],
                 historical_avg=hr["avg_price"]
             )
+            from services.unit_parser import parse_unit_pricing
+            u_info = parse_unit_pricing(hr["name"], hr["current_price"], category="cerveja" if is_beverage else "geral")
+            unit_str = f" | 🎯 *{u_info['unit_price_display']}*" if u_info.get("is_pack") else ""
             msg_lines.append(
                 f"  {intel['emoji']} *{hr['name']}*\n"
-                f"  💰 Preço Atual: *R$ {hr['current_price']:.2f}* | Média: R$ {hr['avg_price']:.2f}\n"
+                f"  💰 Preço Total: *R$ {hr['current_price']:.2f}*{unit_str}\n"
                 f"  🏷️ *Avaliação:* {intel['verdict']}\n"
             )
         msg_lines.append("")

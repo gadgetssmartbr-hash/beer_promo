@@ -1,7 +1,7 @@
 {
   "metadata": {
     "city": "Sertãozinho - SP",
-    "updated_at": "08/10/2026 às 16:28",
+    "updated_at": "08/10/2026 às 16:44",
     "telegram_bot": "https://t.me/beerstz_bot",
     "total_items": 202
   },
@@ -30,6 +30,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 39.78,
+        "orig_unit_price": 39780.0,
+        "price_per_liter": 113.66,
+        "unit_price_display": "R$ 39,78 / lata"
+      },
+      "unit_price": 39.78,
       "history_points": [
         {
           "price": 39780.0,
@@ -77,6 +90,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 47.92,
+        "orig_unit_price": 191.68,
+        "price_per_liter": 136.91,
+        "unit_price_display": "R$ 47,92 / lata"
+      },
+      "unit_price": 47.92,
       "history_points": [
         {
           "price": 191.68,
@@ -124,6 +150,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 6,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Pack c/ 6 garrafas",
+        "unit_price": 36.5,
+        "orig_unit_price": 64.83,
+        "price_per_liter": 48.67,
+        "unit_price_display": "R$ 36,50 / garrafa"
+      },
+      "unit_price": 36.5,
       "history_points": [
         {
           "price": 219.0,
@@ -273,6 +312,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 3,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Pack c/ 3 garrafas",
+        "unit_price": 36.63,
+        "orig_unit_price": 59.9,
+        "price_per_liter": 48.84,
+        "unit_price_display": "R$ 36,63 / garrafa"
+      },
+      "unit_price": 36.63,
       "history_points": [
         {
           "price": 109.9,
@@ -422,6 +474,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 3000,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 39.9,
+        "orig_unit_price": 54.9,
+        "price_per_liter": 13.3,
+        "unit_price_display": "R$ 39,90 / un"
+      },
+      "unit_price": 39.9,
       "history_points": [
         {
           "price": 39.9,
@@ -565,6 +630,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 3000,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 38.9,
+        "orig_unit_price": 52.9,
+        "price_per_liter": 12.97,
+        "unit_price_display": "R$ 38,90 / un"
+      },
+      "unit_price": 38.9,
       "history_points": [
         {
           "price": 38.9,
@@ -714,6 +792,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 3000,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 36.9,
+        "orig_unit_price": 49.9,
+        "price_per_liter": 12.3,
+        "unit_price_display": "R$ 36,90 / un"
+      },
+      "unit_price": 36.9,
       "history_points": [
         {
           "price": 49.9,
@@ -761,6 +852,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 3000,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 36.9,
+        "orig_unit_price": 49.9,
+        "price_per_liter": 12.3,
+        "unit_price_display": "R$ 36,90 / un"
+      },
+      "unit_price": 36.9,
       "history_points": [
         {
           "price": 36.9,
@@ -898,6 +1002,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 2000,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 31.9,
+        "orig_unit_price": 42.9,
+        "price_per_liter": 15.95,
+        "unit_price_display": "R$ 31,90 / un"
+      },
+      "unit_price": 31.9,
       "history_points": [
         {
           "price": 31.9,
@@ -1047,6 +1164,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 31.88,
+        "orig_unit_price": 42.51,
+        "price_per_liter": 42.51,
+        "unit_price_display": "R$ 31,88 / garrafa"
+      },
+      "unit_price": 31.88,
       "history_points": [
         {
           "price": 42.51,
@@ -1094,6 +1224,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 44.9,
+        "orig_unit_price": 59.9,
+        "price_per_liter": 59.87,
+        "unit_price_display": "R$ 44,90 / garrafa"
+      },
+      "unit_price": 44.9,
       "history_points": [
         {
           "price": 44.9,
@@ -1243,6 +1386,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 59.9,
+        "orig_unit_price": 79.9,
+        "price_per_liter": 171.14,
+        "unit_price_display": "R$ 59,90 / lata"
+      },
+      "unit_price": 59.9,
       "history_points": [
         {
           "price": 59.9,
@@ -1284,6 +1440,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 1500,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 24.9,
+        "orig_unit_price": 32.9,
+        "price_per_liter": 16.6,
+        "unit_price_display": "R$ 24,90 / un"
+      },
+      "unit_price": 24.9,
       "history_points": [
         {
           "price": 24.9,
@@ -1433,6 +1602,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 18.9,
+        "orig_unit_price": 24.9,
+        "price_per_liter": 54.0,
+        "unit_price_display": "R$ 18,90 / lata"
+      },
+      "unit_price": 18.9,
       "history_points": [
         {
           "price": 18.9,
@@ -1474,6 +1656,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 62.9,
+        "orig_unit_price": 82.9,
+        "price_per_liter": 179.71,
+        "unit_price_display": "R$ 62,90 / lata"
+      },
+      "unit_price": 62.9,
       "history_points": [
         {
           "price": 82.9,
@@ -1521,6 +1716,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 62.9,
+        "orig_unit_price": 82.9,
+        "price_per_liter": 179.71,
+        "unit_price_display": "R$ 62,90 / lata"
+      },
+      "unit_price": 62.9,
       "history_points": [
         {
           "price": 62.9,
@@ -1658,6 +1866,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 6.89,
+        "orig_unit_price": 8.99,
+        "price_per_liter": 19.69,
+        "unit_price_display": "R$ 6,89 / lata"
+      },
+      "unit_price": 6.89,
       "history_points": [
         {
           "price": 6.89,
@@ -1795,6 +2016,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 68.9,
+        "orig_unit_price": 89.9,
+        "price_per_liter": 196.86,
+        "unit_price_display": "R$ 68,90 / lata"
+      },
+      "unit_price": 68.9,
       "history_points": [
         {
           "price": 68.9,
@@ -1932,6 +2166,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 1000,
+        "container_type": "Garrafa 1000ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 1000ml)",
+        "unit_price": 9.9,
+        "orig_unit_price": 12.9,
+        "price_per_liter": 9.9,
+        "unit_price_display": "R$ 9,90 / garrafa"
+      },
+      "unit_price": 9.9,
       "history_points": [
         {
           "price": 9.9,
@@ -2069,6 +2316,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 19.9,
+        "orig_unit_price": 25.9,
+        "price_per_liter": 56.86,
+        "unit_price_display": "R$ 19,90 / lata"
+      },
+      "unit_price": 19.9,
       "history_points": [
         {
           "price": 19.9,
@@ -2110,6 +2370,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 4.99,
+        "orig_unit_price": 6.49,
+        "price_per_liter": 14.26,
+        "unit_price_display": "R$ 4,99 / lata"
+      },
+      "unit_price": 4.99,
       "history_points": [
         {
           "price": 4.99,
@@ -2247,6 +2520,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 49.9,
+        "orig_unit_price": 64.9,
+        "price_per_liter": 66.53,
+        "unit_price_display": "R$ 49,90 / garrafa"
+      },
+      "unit_price": 49.9,
       "history_points": [
         {
           "price": 49.9,
@@ -2396,6 +2682,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 16.9,
+        "orig_unit_price": 21.9,
+        "price_per_liter": 48.29,
+        "unit_price_display": "R$ 16,90 / lata"
+      },
+      "unit_price": 16.9,
       "history_points": [
         {
           "price": 16.9,
@@ -2533,6 +2832,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 57.9,
+        "orig_unit_price": 74.9,
+        "price_per_liter": 165.43,
+        "unit_price_display": "R$ 57,90 / lata"
+      },
+      "unit_price": 57.9,
       "history_points": [
         {
           "price": 74.9,
@@ -2580,6 +2892,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 57.9,
+        "orig_unit_price": 74.9,
+        "price_per_liter": 165.43,
+        "unit_price_display": "R$ 57,90 / lata"
+      },
+      "unit_price": 57.9,
       "history_points": [
         {
           "price": 57.9,
@@ -2717,6 +3042,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 51.9,
+        "orig_unit_price": 66.9,
+        "price_per_liter": 69.2,
+        "unit_price_display": "R$ 51,90 / garrafa"
+      },
+      "unit_price": 51.9,
       "history_points": [
         {
           "price": 51.9,
@@ -2860,6 +3198,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 3.49,
+        "orig_unit_price": 4.49,
+        "price_per_liter": 9.97,
+        "unit_price_display": "R$ 3,49 / lata"
+      },
+      "unit_price": 3.49,
       "history_points": [
         {
           "price": 3.49,
@@ -2997,6 +3348,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 500,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 34.9,
+        "orig_unit_price": 44.9,
+        "price_per_liter": 69.8,
+        "unit_price_display": "R$ 34,90 / un"
+      },
+      "unit_price": 34.9,
       "history_points": [
         {
           "price": 34.9,
@@ -3038,6 +3402,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 5.29,
+        "orig_unit_price": 6.79,
+        "price_per_liter": 15.11,
+        "unit_price_display": "R$ 5,29 / lata"
+      },
+      "unit_price": 5.29,
       "history_points": [
         {
           "price": 5.29,
@@ -3175,6 +3552,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 1.95,
+        "orig_unit_price": 2.49,
+        "price_per_liter": 5.57,
+        "unit_price_display": "R$ 1,95 / lata"
+      },
+      "unit_price": 1.95,
       "history_points": [
         {
           "price": 1.95,
@@ -3312,6 +3702,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 2000,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 4.69,
+        "orig_unit_price": 5.99,
+        "price_per_liter": 2.35,
+        "unit_price_display": "R$ 4,69 / un"
+      },
+      "unit_price": 4.69,
       "history_points": [
         {
           "price": 4.69,
@@ -3449,6 +3852,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 4,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Pack c/ 4 garrafas",
+        "unit_price": 31.23,
+        "orig_unit_price": 39.9,
+        "price_per_liter": 41.64,
+        "unit_price_display": "R$ 31,23 / garrafa"
+      },
+      "unit_price": 31.23,
       "history_points": [
         {
           "price": 124.9,
@@ -3598,6 +4014,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 2000,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 5.49,
+        "orig_unit_price": 6.99,
+        "price_per_liter": 2.75,
+        "unit_price_display": "R$ 5,49 / un"
+      },
+      "unit_price": 5.49,
       "history_points": [
         {
           "price": 5.49,
@@ -3735,6 +4164,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 5.49,
+        "orig_unit_price": 6.99,
+        "price_per_liter": 15.69,
+        "unit_price_display": "R$ 5,49 / lata"
+      },
+      "unit_price": 5.49,
       "history_points": [
         {
           "price": 5.49,
@@ -3872,6 +4314,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 5.49,
+        "orig_unit_price": 6.99,
+        "price_per_liter": 15.69,
+        "unit_price_display": "R$ 5,49 / lata"
+      },
+      "unit_price": 5.49,
       "history_points": [
         {
           "price": 5.49,
@@ -4009,6 +4464,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 1500,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 21.9,
+        "orig_unit_price": 27.9,
+        "price_per_liter": 14.6,
+        "unit_price_display": "R$ 21,90 / un"
+      },
+      "unit_price": 21.9,
       "history_points": [
         {
           "price": 27.9,
@@ -4056,6 +4524,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 6.29,
+        "orig_unit_price": 7.99,
+        "price_per_liter": 17.97,
+        "unit_price_display": "R$ 6,29 / lata"
+      },
+      "unit_price": 6.29,
       "history_points": [
         {
           "price": 6.29,
@@ -4193,6 +4674,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 36.9,
+        "orig_unit_price": 46.9,
+        "price_per_liter": 105.43,
+        "unit_price_display": "R$ 36,90 / lata"
+      },
+      "unit_price": 36.9,
       "history_points": [
         {
           "price": 46.9,
@@ -4240,6 +4734,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 7.49,
+        "orig_unit_price": 9.49,
+        "price_per_liter": 21.4,
+        "unit_price_display": "R$ 7,49 / lata"
+      },
+      "unit_price": 7.49,
       "history_points": [
         {
           "price": 7.49,
@@ -4377,6 +4884,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 48.9,
+        "orig_unit_price": 62.0,
+        "price_per_liter": 65.2,
+        "unit_price_display": "R$ 48,90 / garrafa"
+      },
+      "unit_price": 48.9,
       "history_points": [
         {
           "price": 62.0,
@@ -4424,6 +4944,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 32.39,
+        "orig_unit_price": 41.0,
+        "price_per_liter": 43.19,
+        "unit_price_display": "R$ 32,39 / garrafa"
+      },
+      "unit_price": 32.39,
       "history_points": [
         {
           "price": 41.0,
@@ -4471,6 +5004,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 18.9,
+        "orig_unit_price": 23.9,
+        "price_per_liter": 54.0,
+        "unit_price_display": "R$ 18,90 / lata"
+      },
+      "unit_price": 18.9,
       "history_points": [
         {
           "price": 18.9,
@@ -4608,6 +5154,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 22.9,
+        "orig_unit_price": 28.9,
+        "price_per_liter": 65.43,
+        "unit_price_display": "R$ 22,90 / lata"
+      },
+      "unit_price": 22.9,
       "history_points": [
         {
           "price": 22.9,
@@ -4649,6 +5208,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 1500,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 22.9,
+        "orig_unit_price": 28.9,
+        "price_per_liter": 15.27,
+        "unit_price_display": "R$ 22,90 / un"
+      },
+      "unit_price": 22.9,
       "history_points": [
         {
           "price": 28.9,
@@ -4696,6 +5268,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 22.9,
+        "orig_unit_price": 28.9,
+        "price_per_liter": 65.43,
+        "unit_price_display": "R$ 22,90 / lata"
+      },
+      "unit_price": 22.9,
       "history_points": [
         {
           "price": 22.9,
@@ -4833,6 +5418,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 1500,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 22.9,
+        "orig_unit_price": 28.9,
+        "price_per_liter": 15.27,
+        "unit_price_display": "R$ 22,90 / un"
+      },
+      "unit_price": 22.9,
       "history_points": [
         {
           "price": 22.9,
@@ -4970,6 +5568,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 6,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Pack c/ 6 garrafas",
+        "unit_price": 31.65,
+        "orig_unit_price": 39.9,
+        "price_per_liter": 42.2,
+        "unit_price_display": "R$ 31,65 / garrafa"
+      },
+      "unit_price": 31.65,
       "history_points": [
         {
           "price": 189.9,
@@ -5119,6 +5730,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 38.9,
+        "orig_unit_price": 48.9,
+        "price_per_liter": 111.14,
+        "unit_price_display": "R$ 38,90 / lata"
+      },
+      "unit_price": 38.9,
       "history_points": [
         {
           "price": 48.9,
@@ -5166,6 +5790,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 8.69,
+        "orig_unit_price": 10.9,
+        "price_per_liter": 24.83,
+        "unit_price_display": "R$ 8,69 / lata"
+      },
+      "unit_price": 8.69,
       "history_points": [
         {
           "price": 8.69,
@@ -5303,6 +5940,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 9.49,
+        "orig_unit_price": 11.9,
+        "price_per_liter": 27.11,
+        "unit_price_display": "R$ 9,49 / lata"
+      },
+      "unit_price": 9.49,
       "history_points": [
         {
           "price": 9.49,
@@ -5440,6 +6090,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 1000,
+        "container_type": "Garrafa 1000ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 1000ml)",
+        "unit_price": 9.49,
+        "orig_unit_price": 11.9,
+        "price_per_liter": 9.49,
+        "unit_price_display": "R$ 9,49 / garrafa"
+      },
+      "unit_price": 9.49,
       "history_points": [
         {
           "price": 9.49,
@@ -5577,6 +6240,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 19.9,
+        "orig_unit_price": 24.9,
+        "price_per_liter": 56.86,
+        "unit_price_display": "R$ 19,90 / lata"
+      },
+      "unit_price": 19.9,
       "history_points": [
         {
           "price": 19.9,
@@ -5714,6 +6390,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 19.9,
+        "orig_unit_price": 24.9,
+        "price_per_liter": 56.86,
+        "unit_price_display": "R$ 19,90 / lata"
+      },
+      "unit_price": 19.9,
       "history_points": [
         {
           "price": 19.9,
@@ -5851,6 +6540,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 400,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 19.9,
+        "orig_unit_price": 24.9,
+        "price_per_liter": 49.75,
+        "unit_price_display": "R$ 19,90 / un"
+      },
+      "unit_price": 19.9,
       "history_points": [
         {
           "price": 19.9,
@@ -5988,6 +6690,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 1500,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 21.5,
+        "orig_unit_price": 26.9,
+        "price_per_liter": 14.33,
+        "unit_price_display": "R$ 21,50 / un"
+      },
+      "unit_price": 21.5,
       "history_points": [
         {
           "price": 21.5,
@@ -6125,6 +6840,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 1500,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 23.9,
+        "orig_unit_price": 29.9,
+        "price_per_liter": 15.93,
+        "unit_price_display": "R$ 23,90 / un"
+      },
+      "unit_price": 23.9,
       "history_points": [
         {
           "price": 23.9,
@@ -6166,6 +6894,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 1500,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 23.9,
+        "orig_unit_price": 29.9,
+        "price_per_liter": 15.93,
+        "unit_price_display": "R$ 23,90 / un"
+      },
+      "unit_price": 23.9,
       "history_points": [
         {
           "price": 23.9,
@@ -6303,6 +7044,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 31.9,
+        "orig_unit_price": 39.9,
+        "price_per_liter": 42.53,
+        "unit_price_display": "R$ 31,90 / garrafa"
+      },
+      "unit_price": 31.9,
       "history_points": [
         {
           "price": 39.9,
@@ -6350,6 +7104,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 3.99,
+        "orig_unit_price": 4.99,
+        "price_per_liter": 11.4,
+        "unit_price_display": "R$ 3,99 / lata"
+      },
+      "unit_price": 3.99,
       "history_points": [
         {
           "price": 3.99,
@@ -6487,6 +7254,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 4.79,
+        "orig_unit_price": 5.99,
+        "price_per_liter": 13.69,
+        "unit_price_display": "R$ 4,79 / lata"
+      },
+      "unit_price": 4.79,
       "history_points": [
         {
           "price": 4.79,
@@ -6624,6 +7404,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 5.99,
+        "orig_unit_price": 7.49,
+        "price_per_liter": 17.11,
+        "unit_price_display": "R$ 5,99 / lata"
+      },
+      "unit_price": 5.99,
       "history_points": [
         {
           "price": 5.99,
@@ -6761,6 +7554,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 7.99,
+        "orig_unit_price": 9.99,
+        "price_per_liter": 22.83,
+        "unit_price_display": "R$ 7,99 / lata"
+      },
+      "unit_price": 7.99,
       "history_points": [
         {
           "price": 7.99,
@@ -6898,6 +7704,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 39.9,
+        "orig_unit_price": 49.9,
+        "price_per_liter": 114.0,
+        "unit_price_display": "R$ 39,90 / lata"
+      },
+      "unit_price": 39.9,
       "history_points": [
         {
           "price": 39.9,
@@ -6939,6 +7758,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 39.9,
+        "orig_unit_price": 49.9,
+        "price_per_liter": 114.0,
+        "unit_price_display": "R$ 39,90 / lata"
+      },
+      "unit_price": 39.9,
       "history_points": [
         {
           "price": 39.9,
@@ -7076,6 +7908,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 47.9,
+        "orig_unit_price": 59.9,
+        "price_per_liter": 63.87,
+        "unit_price_display": "R$ 47,90 / garrafa"
+      },
+      "unit_price": 47.9,
       "history_points": [
         {
           "price": 59.9,
@@ -7123,6 +7968,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 47.9,
+        "orig_unit_price": 59.9,
+        "price_per_liter": 63.87,
+        "unit_price_display": "R$ 47,90 / garrafa"
+      },
+      "unit_price": 47.9,
       "history_points": [
         {
           "price": 47.9,
@@ -7260,6 +8118,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 36.9,
+        "orig_unit_price": 45.9,
+        "price_per_liter": 49.2,
+        "unit_price_display": "R$ 36,90 / garrafa"
+      },
+      "unit_price": 36.9,
       "history_points": [
         {
           "price": 36.9,
@@ -7409,6 +8280,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 36.9,
+        "orig_unit_price": 45.9,
+        "price_per_liter": 105.43,
+        "unit_price_display": "R$ 36,90 / lata"
+      },
+      "unit_price": 36.9,
       "history_points": [
         {
           "price": 36.9,
@@ -7546,6 +8430,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 7.99,
+        "orig_unit_price": 9.9,
+        "price_per_liter": 22.83,
+        "unit_price_display": "R$ 7,99 / lata"
+      },
+      "unit_price": 7.99,
       "history_points": [
         {
           "price": 7.99,
@@ -7683,6 +8580,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 1000,
+        "container_type": "Garrafa 1000ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 1000ml)",
+        "unit_price": 8.8,
+        "orig_unit_price": 10.9,
+        "price_per_liter": 8.8,
+        "unit_price_display": "R$ 8,80 / garrafa"
+      },
+      "unit_price": 8.8,
       "history_points": [
         {
           "price": 8.8,
@@ -7820,6 +8730,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 9.29,
+        "orig_unit_price": 11.49,
+        "price_per_liter": 26.54,
+        "unit_price_display": "R$ 9,29 / lata"
+      },
+      "unit_price": 9.29,
       "history_points": [
         {
           "price": 9.29,
@@ -7957,6 +8880,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 16.9,
+        "orig_unit_price": 20.9,
+        "price_per_liter": 48.29,
+        "unit_price_display": "R$ 16,90 / lata"
+      },
+      "unit_price": 16.9,
       "history_points": [
         {
           "price": 16.9,
@@ -8094,6 +9030,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 46.9,
+        "orig_unit_price": 58.0,
+        "price_per_liter": 62.53,
+        "unit_price_display": "R$ 46,90 / garrafa"
+      },
+      "unit_price": 46.9,
       "history_points": [
         {
           "price": 58.0,
@@ -8141,6 +9090,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 500,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 2.15,
+        "orig_unit_price": 2.65,
+        "price_per_liter": 4.3,
+        "unit_price_display": "R$ 2,15 / un"
+      },
+      "unit_price": 2.15,
       "history_points": [
         {
           "price": 2.15,
@@ -8278,6 +9240,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 42.9,
+        "orig_unit_price": 52.9,
+        "price_per_liter": 122.57,
+        "unit_price_display": "R$ 42,90 / lata"
+      },
+      "unit_price": 42.9,
       "history_points": [
         {
           "price": 42.9,
@@ -8415,6 +9390,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 3.89,
+        "orig_unit_price": 4.79,
+        "price_per_liter": 11.11,
+        "unit_price_display": "R$ 3,89 / lata"
+      },
+      "unit_price": 3.89,
       "history_points": [
         {
           "price": 3.89,
@@ -8552,6 +9540,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 6.49,
+        "orig_unit_price": 7.99,
+        "price_per_liter": 18.54,
+        "unit_price_display": "R$ 6,49 / lata"
+      },
+      "unit_price": 6.49,
       "history_points": [
         {
           "price": 6.49,
@@ -8689,6 +9690,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 38.9,
+        "orig_unit_price": 47.9,
+        "price_per_liter": 111.14,
+        "unit_price_display": "R$ 38,90 / lata"
+      },
+      "unit_price": 38.9,
       "history_points": [
         {
           "price": 38.9,
@@ -8826,6 +9840,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 2.19,
+        "orig_unit_price": 2.69,
+        "price_per_liter": 6.26,
+        "unit_price_display": "R$ 2,19 / lata"
+      },
+      "unit_price": 2.19,
       "history_points": [
         {
           "price": 2.19,
@@ -8963,6 +9990,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 21.9,
+        "orig_unit_price": 26.9,
+        "price_per_liter": 62.57,
+        "unit_price_display": "R$ 21,90 / lata"
+      },
+      "unit_price": 21.9,
       "history_points": [
         {
           "price": 21.9,
@@ -9100,6 +10140,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 400,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 21.9,
+        "orig_unit_price": 26.9,
+        "price_per_liter": 54.75,
+        "unit_price_display": "R$ 21,90 / un"
+      },
+      "unit_price": 21.9,
       "history_points": [
         {
           "price": 21.9,
@@ -9237,6 +10290,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 2000,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 5.29,
+        "orig_unit_price": 6.49,
+        "price_per_liter": 2.65,
+        "unit_price_display": "R$ 5,29 / un"
+      },
+      "unit_price": 5.29,
       "history_points": [
         {
           "price": 5.29,
@@ -9374,6 +10440,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 8.9,
+        "orig_unit_price": 10.9,
+        "price_per_liter": 25.43,
+        "unit_price_display": "R$ 8,90 / lata"
+      },
+      "unit_price": 8.9,
       "history_points": [
         {
           "price": 8.9,
@@ -9511,6 +10590,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 17.9,
+        "orig_unit_price": 21.9,
+        "price_per_liter": 51.14,
+        "unit_price_display": "R$ 17,90 / lata"
+      },
+      "unit_price": 17.9,
       "history_points": [
         {
           "price": 17.9,
@@ -9648,6 +10740,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 17.9,
+        "orig_unit_price": 21.9,
+        "price_per_liter": 51.14,
+        "unit_price_display": "R$ 17,90 / lata"
+      },
+      "unit_price": 17.9,
       "history_points": [
         {
           "price": 17.9,
@@ -9785,6 +10890,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 8.6,
+        "orig_unit_price": 10.5,
+        "price_per_liter": 24.57,
+        "unit_price_display": "R$ 8,60 / lata"
+      },
+      "unit_price": 8.6,
       "history_points": [
         {
           "price": 8.6,
@@ -9922,6 +11040,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 2.29,
+        "orig_unit_price": 2.79,
+        "price_per_liter": 6.54,
+        "unit_price_display": "R$ 2,29 / lata"
+      },
+      "unit_price": 2.29,
       "history_points": [
         {
           "price": 2.29,
@@ -10059,6 +11190,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 2.29,
+        "orig_unit_price": 2.79,
+        "price_per_liter": 6.54,
+        "unit_price_display": "R$ 2,29 / lata"
+      },
+      "unit_price": 2.29,
       "history_points": [
         {
           "price": 2.29,
@@ -10196,6 +11340,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 400,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 22.9,
+        "orig_unit_price": 27.9,
+        "price_per_liter": 57.25,
+        "unit_price_display": "R$ 22,90 / un"
+      },
+      "unit_price": 22.9,
       "history_points": [
         {
           "price": 22.9,
@@ -10333,6 +11490,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 36.9,
+        "orig_unit_price": 44.9,
+        "price_per_liter": 49.2,
+        "unit_price_display": "R$ 36,90 / garrafa"
+      },
+      "unit_price": 36.9,
       "history_points": [
         {
           "price": 44.9,
@@ -10380,6 +11550,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 6.99,
+        "orig_unit_price": 8.49,
+        "price_per_liter": 19.97,
+        "unit_price_display": "R$ 6,99 / lata"
+      },
+      "unit_price": 6.99,
       "history_points": [
         {
           "price": 6.99,
@@ -10517,6 +11700,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 18.9,
+        "orig_unit_price": 22.9,
+        "price_per_liter": 54.0,
+        "unit_price_display": "R$ 18,90 / lata"
+      },
+      "unit_price": 18.9,
       "history_points": [
         {
           "price": 18.9,
@@ -10654,6 +11850,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 30,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Pack c/ 30 latas",
+        "unit_price": 0.63,
+        "orig_unit_price": 0.76,
+        "price_per_liter": 1.8,
+        "unit_price_display": "R$ 0,63 / lata"
+      },
+      "unit_price": 0.63,
       "history_points": [
         {
           "price": 18.9,
@@ -10791,6 +12000,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 6.19,
+        "orig_unit_price": 7.49,
+        "price_per_liter": 17.69,
+        "unit_price_display": "R$ 6,19 / lata"
+      },
+      "unit_price": 6.19,
       "history_points": [
         {
           "price": 6.19,
@@ -10928,6 +12150,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 21.9,
+        "orig_unit_price": 26.5,
+        "price_per_liter": 62.57,
+        "unit_price_display": "R$ 21,90 / lata"
+      },
+      "unit_price": 21.9,
       "history_points": [
         {
           "price": 21.9,
@@ -11065,6 +12300,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 500,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 2.39,
+        "orig_unit_price": 2.89,
+        "price_per_liter": 4.78,
+        "unit_price_display": "R$ 2,39 / un"
+      },
+      "unit_price": 2.39,
       "history_points": [
         {
           "price": 2.39,
@@ -11202,6 +12450,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 23.9,
+        "orig_unit_price": 28.9,
+        "price_per_liter": 68.29,
+        "unit_price_display": "R$ 23,90 / lata"
+      },
+      "unit_price": 23.9,
       "history_points": [
         {
           "price": 23.9,
@@ -11339,6 +12600,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 5.79,
+        "orig_unit_price": 6.99,
+        "price_per_liter": 16.54,
+        "unit_price_display": "R$ 5,79 / lata"
+      },
+      "unit_price": 5.79,
       "history_points": [
         {
           "price": 5.79,
@@ -11476,6 +12750,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 38.9,
+        "orig_unit_price": 46.9,
+        "price_per_liter": 111.14,
+        "unit_price_display": "R$ 38,90 / lata"
+      },
+      "unit_price": 38.9,
       "history_points": [
         {
           "price": 38.9,
@@ -11613,6 +12900,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 500,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 2.49,
+        "orig_unit_price": 2.99,
+        "price_per_liter": 4.98,
+        "unit_price_display": "R$ 2,49 / un"
+      },
+      "unit_price": 2.49,
       "history_points": [
         {
           "price": 2.49,
@@ -11750,6 +13050,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 3.49,
+        "orig_unit_price": 4.19,
+        "price_per_liter": 9.97,
+        "unit_price_display": "R$ 3,49 / lata"
+      },
+      "unit_price": 3.49,
       "history_points": [
         {
           "price": 3.49,
@@ -11887,6 +13200,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 7.49,
+        "orig_unit_price": 8.99,
+        "price_per_liter": 21.4,
+        "unit_price_display": "R$ 7,49 / lata"
+      },
+      "unit_price": 7.49,
       "history_points": [
         {
           "price": 7.49,
@@ -12024,6 +13350,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 30,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Pack c/ 30 latas",
+        "unit_price": 0.66,
+        "orig_unit_price": 0.8,
+        "price_per_liter": 1.89,
+        "unit_price_display": "R$ 0,66 / lata"
+      },
+      "unit_price": 0.66,
       "history_points": [
         {
           "price": 19.9,
@@ -12161,6 +13500,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 24.9,
+        "orig_unit_price": 29.9,
+        "price_per_liter": 71.14,
+        "unit_price_display": "R$ 24,90 / lata"
+      },
+      "unit_price": 24.9,
       "history_points": [
         {
           "price": 24.9,
@@ -12298,6 +13650,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 34.9,
+        "orig_unit_price": 41.9,
+        "price_per_liter": 99.71,
+        "unit_price_display": "R$ 34,90 / lata"
+      },
+      "unit_price": 34.9,
       "history_points": [
         {
           "price": 34.9,
@@ -12435,6 +13800,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 34.9,
+        "orig_unit_price": 41.9,
+        "price_per_liter": 46.53,
+        "unit_price_display": "R$ 34,90 / garrafa"
+      },
+      "unit_price": 34.9,
       "history_points": [
         {
           "price": 34.9,
@@ -12572,6 +13950,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 8,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Pack c/ 8 latas",
+        "unit_price": 4.99,
+        "orig_unit_price": 5.99,
+        "price_per_liter": 14.26,
+        "unit_price_display": "R$ 4,99 / lata"
+      },
+      "unit_price": 4.99,
       "history_points": [
         {
           "price": 47.9,
@@ -12619,6 +14010,19 @@
         "is_all_time_low": false,
         "advice": "Preço vantajoso com desconto real em relação ao mercado."
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 49.9,
+        "orig_unit_price": 59.9,
+        "price_per_liter": 142.57,
+        "unit_price_display": "R$ 49,90 / lata"
+      },
+      "unit_price": 49.9,
       "history_points": [
         {
           "price": 59.9,
@@ -12768,6 +14172,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 15.8,
+        "orig_unit_price": 18.9,
+        "price_per_liter": 45.14,
+        "unit_price_display": "R$ 15,80 / lata"
+      },
+      "unit_price": 15.8,
       "history_points": [
         {
           "price": 15.8,
@@ -12905,6 +14322,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 30,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Pack c/ 30 latas",
+        "unit_price": 0.58,
+        "orig_unit_price": 0.7,
+        "price_per_liter": 1.66,
+        "unit_price_display": "R$ 0,58 / lata"
+      },
+      "unit_price": 0.58,
       "history_points": [
         {
           "price": 17.5,
@@ -13042,6 +14472,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 41.9,
+        "orig_unit_price": 49.9,
+        "price_per_liter": 119.71,
+        "unit_price_display": "R$ 41,90 / lata"
+      },
+      "unit_price": 41.9,
       "history_points": [
         {
           "price": 41.9,
@@ -13179,6 +14622,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 31.9,
+        "orig_unit_price": 37.9,
+        "price_per_liter": 91.14,
+        "unit_price_display": "R$ 31,90 / lata"
+      },
+      "unit_price": 31.9,
       "history_points": [
         {
           "price": 31.9,
@@ -13316,6 +14772,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 31.9,
+        "orig_unit_price": 37.9,
+        "price_per_liter": 42.53,
+        "unit_price_display": "R$ 31,90 / garrafa"
+      },
+      "unit_price": 31.9,
       "history_points": [
         {
           "price": 31.9,
@@ -13453,6 +14922,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 2.69,
+        "orig_unit_price": 3.19,
+        "price_per_liter": 7.69,
+        "unit_price_display": "R$ 2,69 / lata"
+      },
+      "unit_price": 2.69,
       "history_points": [
         {
           "price": 2.69,
@@ -13590,6 +15072,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 16.8,
+        "orig_unit_price": 19.9,
+        "price_per_liter": 48.0,
+        "unit_price_display": "R$ 16,80 / lata"
+      },
+      "unit_price": 16.8,
       "history_points": [
         {
           "price": 16.8,
@@ -13727,6 +15222,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 6,
+        "unit_volume_ml": 330,
+        "container_type": "Long Neck",
+        "unit_name": "long neck",
+        "pack_label": "Pack c/ 6 long necks",
+        "unit_price": 6.32,
+        "orig_unit_price": 7.48,
+        "price_per_liter": 19.15,
+        "unit_price_display": "R$ 6,32 / long neck"
+      },
+      "unit_price": 6.32,
       "history_points": [
         {
           "price": 37.9,
@@ -13876,6 +15384,19 @@
         "is_all_time_low": false,
         "advice": "Preço vantajoso com desconto real em relação ao mercado."
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 54.9,
+        "orig_unit_price": 64.9,
+        "price_per_liter": 156.86,
+        "unit_price_display": "R$ 54,90 / lata"
+      },
+      "unit_price": 54.9,
       "history_points": [
         {
           "price": 64.9,
@@ -14025,6 +15546,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 20,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Pack c/ 20 latas",
+        "unit_price": 0.84,
+        "orig_unit_price": 0.99,
+        "price_per_liter": 2.4,
+        "unit_price_display": "R$ 0,84 / lata"
+      },
+      "unit_price": 0.84,
       "history_points": [
         {
           "price": 16.9,
@@ -14162,6 +15696,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 33.9,
+        "orig_unit_price": 39.9,
+        "price_per_liter": 45.2,
+        "unit_price_display": "R$ 33,90 / garrafa"
+      },
+      "unit_price": 33.9,
       "history_points": [
         {
           "price": 33.9,
@@ -14299,6 +15846,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 33.9,
+        "orig_unit_price": 39.9,
+        "price_per_liter": 96.86,
+        "unit_price_display": "R$ 33,90 / lata"
+      },
+      "unit_price": 33.9,
       "history_points": [
         {
           "price": 33.9,
@@ -14436,6 +15996,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 6,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Pack c/ 6 garrafas",
+        "unit_price": 39.57,
+        "orig_unit_price": 46.5,
+        "price_per_liter": 52.76,
+        "unit_price_display": "R$ 39,57 / garrafa"
+      },
+      "unit_price": 39.57,
       "history_points": [
         {
           "price": 279.0,
@@ -14483,6 +16056,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 41.9,
+        "orig_unit_price": 48.9,
+        "price_per_liter": 119.71,
+        "unit_price_display": "R$ 41,90 / lata"
+      },
+      "unit_price": 41.9,
       "history_points": [
         {
           "price": 41.9,
@@ -14620,6 +16206,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 4.29,
+        "orig_unit_price": 4.99,
+        "price_per_liter": 12.26,
+        "unit_price_display": "R$ 4,29 / lata"
+      },
+      "unit_price": 4.29,
       "history_points": [
         {
           "price": 4.29,
@@ -14757,6 +16356,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 42.9,
+        "orig_unit_price": 49.9,
+        "price_per_liter": 122.57,
+        "unit_price_display": "R$ 42,90 / lata"
+      },
+      "unit_price": 42.9,
       "history_points": [
         {
           "price": 42.9,
@@ -14894,6 +16506,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 2.59,
+        "orig_unit_price": 2.99,
+        "price_per_liter": 7.4,
+        "unit_price_display": "R$ 2,59 / lata"
+      },
+      "unit_price": 2.59,
       "history_points": [
         {
           "price": 2.59,
@@ -15031,6 +16656,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 3.89,
+        "orig_unit_price": 4.49,
+        "price_per_liter": 11.11,
+        "unit_price_display": "R$ 3,89 / lata"
+      },
+      "unit_price": 3.89,
       "history_points": [
         {
           "price": 3.89,
@@ -15168,6 +16806,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 12.9,
+        "orig_unit_price": 14.9,
+        "price_per_liter": 36.86,
+        "unit_price_display": "R$ 12,90 / lata"
+      },
+      "unit_price": 12.9,
       "history_points": [
         {
           "price": 12.9,
@@ -15305,6 +16956,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 20,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Pack c/ 20 latas",
+        "unit_price": 0.78,
+        "orig_unit_price": 0.89,
+        "price_per_liter": 2.23,
+        "unit_price_display": "R$ 0,78 / lata"
+      },
+      "unit_price": 0.78,
       "history_points": [
         {
           "price": 15.5,
@@ -15442,6 +17106,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 330,
+        "container_type": "Long Neck",
+        "unit_name": "long neck",
+        "pack_label": "Unidade Avulsa (Long Neck)",
+        "unit_price": 38.9,
+        "orig_unit_price": 44.9,
+        "price_per_liter": 117.88,
+        "unit_price_display": "R$ 38,90 / long neck"
+      },
+      "unit_price": 38.9,
       "history_points": [
         {
           "price": 38.9,
@@ -15591,6 +17268,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 38.9,
+        "orig_unit_price": 44.9,
+        "price_per_liter": 111.14,
+        "unit_price_display": "R$ 38,90 / lata"
+      },
+      "unit_price": 38.9,
       "history_points": [
         {
           "price": 38.9,
@@ -15728,6 +17418,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 12,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Pack c/ 12 latas",
+        "unit_price": 5.19,
+        "orig_unit_price": 5.99,
+        "price_per_liter": 14.83,
+        "unit_price_display": "R$ 5,19 / lata"
+      },
+      "unit_price": 5.19,
       "history_points": [
         {
           "price": 62.28,
@@ -15877,6 +17580,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 3.29,
+        "orig_unit_price": 3.79,
+        "price_per_liter": 9.4,
+        "unit_price_display": "R$ 3,29 / lata"
+      },
+      "unit_price": 3.29,
       "history_points": [
         {
           "price": 3.79,
@@ -15924,6 +17640,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 3.99,
+        "orig_unit_price": 4.59,
+        "price_per_liter": 11.4,
+        "unit_price_display": "R$ 3,99 / lata"
+      },
+      "unit_price": 3.99,
       "history_points": [
         {
           "price": 3.99,
@@ -16061,6 +17790,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 4.79,
+        "orig_unit_price": 5.49,
+        "price_per_liter": 13.69,
+        "unit_price_display": "R$ 4,79 / lata"
+      },
+      "unit_price": 4.79,
       "history_points": [
         {
           "price": 5.49,
@@ -16108,6 +17850,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 4.79,
+        "orig_unit_price": 5.49,
+        "price_per_liter": 13.69,
+        "unit_price_display": "R$ 4,79 / lata"
+      },
+      "unit_price": 4.79,
       "history_points": [
         {
           "price": 4.79,
@@ -16245,6 +18000,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 20,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Pack c/ 20 latas",
+        "unit_price": 0.82,
+        "orig_unit_price": 0.94,
+        "price_per_liter": 2.34,
+        "unit_price_display": "R$ 0,82 / lata"
+      },
+      "unit_price": 0.82,
       "history_points": [
         {
           "price": 16.49,
@@ -16382,6 +18150,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 6.99,
+        "orig_unit_price": 7.99,
+        "price_per_liter": 19.97,
+        "unit_price_display": "R$ 6,99 / lata"
+      },
+      "unit_price": 6.99,
       "history_points": [
         {
           "price": 6.99,
@@ -16519,6 +18300,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 27.9,
+        "orig_unit_price": 31.9,
+        "price_per_liter": 79.71,
+        "unit_price_display": "R$ 27,90 / lata"
+      },
+      "unit_price": 27.9,
       "history_points": [
         {
           "price": 27.9,
@@ -16656,6 +18450,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 7.89,
+        "orig_unit_price": 8.99,
+        "price_per_liter": 22.54,
+        "unit_price_display": "R$ 7,89 / lata"
+      },
+      "unit_price": 7.89,
       "history_points": [
         {
           "price": 7.89,
@@ -16793,6 +18600,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 28.9,
+        "orig_unit_price": 32.9,
+        "price_per_liter": 82.57,
+        "unit_price_display": "R$ 28,90 / lata"
+      },
+      "unit_price": 28.9,
       "history_points": [
         {
           "price": 28.9,
@@ -16930,6 +18750,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 12,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Pack c/ 12 latas",
+        "unit_price": 4.39,
+        "orig_unit_price": 4.99,
+        "price_per_liter": 12.54,
+        "unit_price_display": "R$ 4,39 / lata"
+      },
+      "unit_price": 4.39,
       "history_points": [
         {
           "price": 52.68,
@@ -17079,6 +18912,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 43.9,
+        "orig_unit_price": 49.9,
+        "price_per_liter": 125.43,
+        "unit_price_display": "R$ 43,90 / lata"
+      },
+      "unit_price": 43.9,
       "history_points": [
         {
           "price": 49.9,
@@ -17126,6 +18972,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 7.49,
+        "orig_unit_price": 8.49,
+        "price_per_liter": 21.4,
+        "unit_price_display": "R$ 7,49 / lata"
+      },
+      "unit_price": 7.49,
       "history_points": [
         {
           "price": 7.49,
@@ -17263,6 +19122,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 3.79,
+        "orig_unit_price": 4.29,
+        "price_per_liter": 10.83,
+        "unit_price_display": "R$ 3,79 / lata"
+      },
+      "unit_price": 3.79,
       "history_points": [
         {
           "price": 4.29,
@@ -17310,6 +19182,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 4.15,
+        "orig_unit_price": 4.69,
+        "price_per_liter": 11.86,
+        "unit_price_display": "R$ 4,15 / lata"
+      },
+      "unit_price": 4.15,
       "history_points": [
         {
           "price": 4.15,
@@ -17447,6 +19332,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 26.5,
+        "orig_unit_price": 29.9,
+        "price_per_liter": 75.71,
+        "unit_price_display": "R$ 26,50 / lata"
+      },
+      "unit_price": 26.5,
       "history_points": [
         {
           "price": 26.5,
@@ -17584,6 +19482,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 4.69,
+        "orig_unit_price": 5.29,
+        "price_per_liter": 13.4,
+        "unit_price_display": "R$ 4,69 / lata"
+      },
+      "unit_price": 4.69,
       "history_points": [
         {
           "price": 4.69,
@@ -17721,6 +19632,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 2000,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 7.99,
+        "orig_unit_price": 8.99,
+        "price_per_liter": 4.0,
+        "unit_price_display": "R$ 7,99 / un"
+      },
+      "unit_price": 7.99,
       "history_points": [
         {
           "price": 7.99,
@@ -17858,6 +19782,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 1000,
+        "container_type": "Garrafa 1000ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 1000ml)",
+        "unit_price": 4.89,
+        "orig_unit_price": 5.49,
+        "price_per_liter": 4.89,
+        "unit_price_display": "R$ 4,89 / garrafa"
+      },
+      "unit_price": 4.89,
       "history_points": [
         {
           "price": 4.89,
@@ -17995,6 +19932,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 2000,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 7.39,
+        "orig_unit_price": 8.29,
+        "price_per_liter": 3.69,
+        "unit_price_display": "R$ 7,39 / un"
+      },
+      "unit_price": 7.39,
       "history_points": [
         {
           "price": 7.39,
@@ -18132,6 +20082,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 11.8,
+        "orig_unit_price": 13.2,
+        "price_per_liter": 33.71,
+        "unit_price_display": "R$ 11,80 / lata"
+      },
+      "unit_price": 11.8,
       "history_points": [
         {
           "price": 11.8,
@@ -18269,6 +20232,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 4.39,
+        "orig_unit_price": 4.89,
+        "price_per_liter": 12.54,
+        "unit_price_display": "R$ 4,39 / lata"
+      },
+      "unit_price": 4.39,
       "history_points": [
         {
           "price": 4.39,
@@ -18406,6 +20382,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 330,
+        "container_type": "Long Neck",
+        "unit_name": "long neck",
+        "pack_label": "Unidade Avulsa (Long Neck)",
+        "unit_price": 6.19,
+        "orig_unit_price": 6.89,
+        "price_per_liter": 18.76,
+        "unit_price_display": "R$ 6,19 / long neck"
+      },
+      "unit_price": 6.19,
       "history_points": [
         {
           "price": 6.89,
@@ -18453,6 +20442,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 330,
+        "container_type": "Long Neck",
+        "unit_name": "long neck",
+        "pack_label": "Unidade Avulsa (Long Neck)",
+        "unit_price": 6.19,
+        "orig_unit_price": 6.89,
+        "price_per_liter": 18.76,
+        "unit_price_display": "R$ 6,19 / long neck"
+      },
+      "unit_price": 6.19,
       "history_points": [
         {
           "price": 6.19,
@@ -18590,6 +20592,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 2000,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 7.89,
+        "orig_unit_price": 8.79,
+        "price_per_liter": 3.94,
+        "unit_price_display": "R$ 7,89 / un"
+      },
+      "unit_price": 7.89,
       "history_points": [
         {
           "price": 7.89,
@@ -18727,6 +20742,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 12.49,
+        "orig_unit_price": 13.9,
+        "price_per_liter": 35.69,
+        "unit_price_display": "R$ 12,49 / lata"
+      },
+      "unit_price": 12.49,
       "history_points": [
         {
           "price": 12.49,
@@ -18864,6 +20892,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 12,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Pack c/ 12 latas",
+        "unit_price": 0.37,
+        "orig_unit_price": 0.42,
+        "price_per_liter": 1.06,
+        "unit_price_display": "R$ 0,37 / lata"
+      },
+      "unit_price": 0.37,
       "history_points": [
         {
           "price": 4.99,
@@ -18911,6 +20952,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 4.49,
+        "orig_unit_price": 4.99,
+        "price_per_liter": 12.83,
+        "unit_price_display": "R$ 4,49 / lata"
+      },
+      "unit_price": 4.49,
       "history_points": [
         {
           "price": 4.49,
@@ -19048,6 +21102,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 1000,
+        "container_type": "Garrafa 1000ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 1000ml)",
+        "unit_price": 4.49,
+        "orig_unit_price": 4.99,
+        "price_per_liter": 4.49,
+        "unit_price_display": "R$ 4,49 / garrafa"
+      },
+      "unit_price": 4.49,
       "history_points": [
         {
           "price": 4.49,
@@ -19185,6 +21252,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 4.49,
+        "orig_unit_price": 4.99,
+        "price_per_liter": 12.83,
+        "unit_price_display": "R$ 4,49 / lata"
+      },
+      "unit_price": 4.49,
       "history_points": [
         {
           "price": 4.49,
@@ -19322,6 +21402,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 6,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Pack c/ 6 garrafas",
+        "unit_price": 35.62,
+        "orig_unit_price": 39.57,
+        "price_per_liter": 47.49,
+        "unit_price_display": "R$ 35,62 / garrafa"
+      },
+      "unit_price": 35.62,
       "history_points": [
         {
           "price": 237.44,
@@ -19369,6 +21462,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 4.59,
+        "orig_unit_price": 5.09,
+        "price_per_liter": 13.11,
+        "unit_price_display": "R$ 4,59 / lata"
+      },
+      "unit_price": 4.59,
       "history_points": [
         {
           "price": 5.09,
@@ -19416,6 +21522,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 4.59,
+        "orig_unit_price": 5.09,
+        "price_per_liter": 13.11,
+        "unit_price_display": "R$ 4,59 / lata"
+      },
+      "unit_price": 4.59,
       "history_points": [
         {
           "price": 4.59,
@@ -19553,6 +21672,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 330,
+        "container_type": "Long Neck",
+        "unit_name": "long neck",
+        "pack_label": "Unidade Avulsa (Long Neck)",
+        "unit_price": 6.49,
+        "orig_unit_price": 7.19,
+        "price_per_liter": 19.67,
+        "unit_price_display": "R$ 6,49 / long neck"
+      },
+      "unit_price": 6.49,
       "history_points": [
         {
           "price": 6.49,
@@ -19690,6 +21822,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 4.69,
+        "orig_unit_price": 5.19,
+        "price_per_liter": 13.4,
+        "unit_price_display": "R$ 4,69 / lata"
+      },
+      "unit_price": 4.69,
       "history_points": [
         {
           "price": 4.69,
@@ -19731,6 +21876,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 4.69,
+        "orig_unit_price": 5.19,
+        "price_per_liter": 13.4,
+        "unit_price_display": "R$ 4,69 / lata"
+      },
+      "unit_price": 4.69,
       "history_points": [
         {
           "price": 4.69,
@@ -19868,6 +22026,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 3.79,
+        "orig_unit_price": 4.19,
+        "price_per_liter": 10.83,
+        "unit_price_display": "R$ 3,79 / lata"
+      },
+      "unit_price": 3.79,
       "history_points": [
         {
           "price": 3.79,
@@ -20005,6 +22176,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 1000,
+        "container_type": "Garrafa 1000ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 1000ml)",
+        "unit_price": 4.79,
+        "orig_unit_price": 5.29,
+        "price_per_liter": 4.79,
+        "unit_price_display": "R$ 4,79 / garrafa"
+      },
+      "unit_price": 4.79,
       "history_points": [
         {
           "price": 4.79,
@@ -20142,6 +22326,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 2000,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 9.49,
+        "orig_unit_price": 10.49,
+        "price_per_liter": 4.75,
+        "unit_price_display": "R$ 9,49 / un"
+      },
+      "unit_price": 9.49,
       "history_points": [
         {
           "price": 9.49,
@@ -20279,6 +22476,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 900,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 6.79,
+        "orig_unit_price": 7.49,
+        "price_per_liter": 7.54,
+        "unit_price_display": "R$ 6,79 / un"
+      },
+      "unit_price": 6.79,
       "history_points": [
         {
           "price": 6.79,
@@ -20416,6 +22626,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 2000,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 8.79,
+        "orig_unit_price": 9.69,
+        "price_per_liter": 4.39,
+        "unit_price_display": "R$ 8,79 / un"
+      },
+      "unit_price": 8.79,
       "history_points": [
         {
           "price": 8.79,
@@ -20553,6 +22776,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 900,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 6.89,
+        "orig_unit_price": 7.59,
+        "price_per_liter": 7.66,
+        "unit_price_display": "R$ 6,89 / un"
+      },
+      "unit_price": 6.89,
       "history_points": [
         {
           "price": 6.89,
@@ -20690,6 +22926,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 3.99,
+        "orig_unit_price": 4.39,
+        "price_per_liter": 11.4,
+        "unit_price_display": "R$ 3,99 / lata"
+      },
+      "unit_price": 3.99,
       "history_points": [
         {
           "price": 3.99,
@@ -20827,6 +23076,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 3.99,
+        "orig_unit_price": 4.39,
+        "price_per_liter": 11.4,
+        "unit_price_display": "R$ 3,99 / lata"
+      },
+      "unit_price": 3.99,
       "history_points": [
         {
           "price": 3.99,
@@ -20964,6 +23226,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 330,
+        "container_type": "Long Neck",
+        "unit_name": "long neck",
+        "pack_label": "Unidade Avulsa (Long Neck)",
+        "unit_price": 5.99,
+        "orig_unit_price": 6.59,
+        "price_per_liter": 18.15,
+        "unit_price_display": "R$ 5,99 / long neck"
+      },
+      "unit_price": 5.99,
       "history_points": [
         {
           "price": 5.99,
@@ -21101,6 +23376,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 2000,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 9.29,
+        "orig_unit_price": 10.19,
+        "price_per_liter": 4.64,
+        "unit_price_display": "R$ 9,29 / un"
+      },
+      "unit_price": 9.29,
       "history_points": [
         {
           "price": 9.29,
@@ -21238,6 +23526,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 5.29,
+        "orig_unit_price": 5.79,
+        "price_per_liter": 15.11,
+        "unit_price_display": "R$ 5,29 / lata"
+      },
+      "unit_price": 5.29,
       "history_points": [
         {
           "price": 5.29,
@@ -21381,6 +23682,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 900,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 6.39,
+        "orig_unit_price": 6.99,
+        "price_per_liter": 7.1,
+        "unit_price_display": "R$ 6,39 / un"
+      },
+      "unit_price": 6.39,
       "history_points": [
         {
           "price": 6.39,
@@ -21518,6 +23832,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 5.39,
+        "orig_unit_price": 5.89,
+        "price_per_liter": 15.4,
+        "unit_price_display": "R$ 5,39 / lata"
+      },
+      "unit_price": 5.39,
       "history_points": [
         {
           "price": 5.49,
@@ -21667,6 +23994,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 5.59,
+        "orig_unit_price": 5.99,
+        "price_per_liter": 15.97,
+        "unit_price_display": "R$ 5,59 / lata"
+      },
+      "unit_price": 5.59,
       "history_points": [
         {
           "price": 5.59,
@@ -21810,6 +24150,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 42.18,
+        "orig_unit_price": 44.4,
+        "price_per_liter": 120.51,
+        "unit_price_display": "R$ 42,18 / lata"
+      },
+      "unit_price": 42.18,
       "history_points": [
         {
           "price": 44.4,
@@ -21857,6 +24210,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 46.5,
+        "orig_unit_price": 48.95,
+        "price_per_liter": 132.86,
+        "unit_price_display": "R$ 46,50 / lata"
+      },
+      "unit_price": 46.5,
       "history_points": [
         {
           "price": 48.95,
@@ -21904,6 +24270,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 47.4,
+        "orig_unit_price": 49.9,
+        "price_per_liter": 63.2,
+        "unit_price_display": "R$ 47,40 / garrafa"
+      },
+      "unit_price": 47.4,
       "history_points": [
         {
           "price": 49.9,
@@ -21951,6 +24330,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 56.9,
+        "orig_unit_price": 59.9,
+        "price_per_liter": 75.87,
+        "unit_price_display": "R$ 56,90 / garrafa"
+      },
+      "unit_price": 56.9,
       "history_points": [
         {
           "price": 59.9,
@@ -21998,6 +24390,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 69.35,
+        "orig_unit_price": 73.0,
+        "price_per_liter": 92.47,
+        "unit_price_display": "R$ 69,35 / garrafa"
+      },
+      "unit_price": 69.35,
       "history_points": [
         {
           "price": 73.0,
@@ -22045,6 +24450,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 74.56,
+        "orig_unit_price": 78.49,
+        "price_per_liter": 213.03,
+        "unit_price_display": "R$ 74,56 / lata"
+      },
+      "unit_price": 74.56,
       "history_points": [
         {
           "price": 78.49,
@@ -22092,6 +24510,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 75.95,
+        "orig_unit_price": 79.95,
+        "price_per_liter": 217.0,
+        "unit_price_display": "R$ 75,95 / lata"
+      },
+      "unit_price": 75.95,
       "history_points": [
         {
           "price": 79.95,
@@ -22139,6 +24570,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 12,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Pack c/ 12 latas",
+        "unit_price": 9.26,
+        "orig_unit_price": 9.75,
+        "price_per_liter": 26.46,
+        "unit_price_display": "R$ 9,26 / lata"
+      },
+      "unit_price": 9.26,
       "history_points": [
         {
           "price": 111.14,
@@ -22180,6 +24624,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 1614.05,
+        "orig_unit_price": 1699.0,
+        "price_per_liter": 2152.07,
+        "unit_price_display": "R$ 1614,05 / garrafa"
+      },
+      "unit_price": 1614.05,
       "history_points": [
         {
           "price": 1699.0,
@@ -22227,6 +24684,19 @@
         "is_all_time_low": false,
         "advice": "Dentro da média praticada no mercado. Compre apenas se estiver precisando."
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 62.9,
+        "orig_unit_price": 65.9,
+        "price_per_liter": 179.71,
+        "unit_price_display": "R$ 62,90 / lata"
+      },
+      "unit_price": 62.9,
       "history_points": [
         {
           "price": 58.9,
@@ -22376,6 +24846,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 6.9,
+        "orig_unit_price": null,
+        "price_per_liter": 19.71,
+        "unit_price_display": "R$ 6,90 / lata"
+      },
+      "unit_price": 6.9,
       "history_points": [
         {
           "price": 7.93,
@@ -22423,6 +24906,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 8.99,
+        "orig_unit_price": null,
+        "price_per_liter": 25.69,
+        "unit_price_display": "R$ 8,99 / lata"
+      },
+      "unit_price": 8.99,
       "history_points": [
         {
           "price": 10.34,
@@ -22470,6 +24966,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 20.61,
+        "orig_unit_price": null,
+        "price_per_liter": 27.48,
+        "unit_price_display": "R$ 20,61 / garrafa"
+      },
+      "unit_price": 20.61,
       "history_points": [
         {
           "price": 22.9,
@@ -22511,6 +25020,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+        "unit_price": 36.0,
+        "orig_unit_price": null,
+        "price_per_liter": 48.0,
+        "unit_price_display": "R$ 36,00 / garrafa"
+      },
+      "unit_price": 36.0,
       "history_points": [
         {
           "price": 0.05,
@@ -22558,6 +25080,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 8,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Pack c/ 8 latas",
+        "unit_price": 5.7,
+        "orig_unit_price": null,
+        "price_per_liter": 16.29,
+        "unit_price_display": "R$ 5,70 / lata"
+      },
+      "unit_price": 5.7,
       "history_points": [
         {
           "price": 5.7,
@@ -22605,6 +25140,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 3000,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 49.89,
+        "orig_unit_price": null,
+        "price_per_liter": 16.63,
+        "unit_price_display": "R$ 49,89 / un"
+      },
+      "unit_price": 49.89,
       "history_points": [
         {
           "price": 49.89,
@@ -22652,6 +25200,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 3000,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 50.08,
+        "orig_unit_price": null,
+        "price_per_liter": 16.69,
+        "unit_price_display": "R$ 50,08 / un"
+      },
+      "unit_price": 50.08,
       "history_points": [
         {
           "price": 16.69,
@@ -22699,6 +25260,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 54.5,
+        "orig_unit_price": null,
+        "price_per_liter": 155.71,
+        "unit_price_display": "R$ 54,50 / lata"
+      },
+      "unit_price": 54.5,
       "history_points": [
         {
           "price": 62.67,
@@ -22746,6 +25320,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 12,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Pack c/ 12 latas",
+        "unit_price": 4.55,
+        "orig_unit_price": null,
+        "price_per_liter": 13.0,
+        "unit_price_display": "R$ 4,55 / lata"
+      },
+      "unit_price": 4.55,
       "history_points": [
         {
           "price": 4.55,
@@ -22793,6 +25380,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 3000,
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "Unidade Avulsa (Unidade)",
+        "unit_price": 54.99,
+        "orig_unit_price": null,
+        "price_per_liter": 18.33,
+        "unit_price_display": "R$ 54,99 / un"
+      },
+      "unit_price": 54.99,
       "history_points": [
         {
           "price": 18.33,
@@ -22840,6 +25440,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 12,
+        "unit_volume_ml": 473,
+        "container_type": "Latão 473ml",
+        "unit_name": "latão",
+        "pack_label": "Pack c/ 12 latãos",
+        "unit_price": 5.83,
+        "orig_unit_price": null,
+        "price_per_liter": 12.33,
+        "unit_price_display": "R$ 5,83 / latão"
+      },
+      "unit_price": 5.83,
       "history_points": [
         {
           "price": 5.83,
@@ -22887,6 +25500,19 @@
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Unidade Avulsa (Lata 350ml)",
+        "unit_price": 74.9,
+        "orig_unit_price": null,
+        "price_per_liter": 214.0,
+        "unit_price_display": "R$ 74,90 / lata"
+      },
+      "unit_price": 74.9,
       "history_points": [
         {
           "price": 74.9,
@@ -24228,21 +26854,57 @@
         "store": "Savegnago Supermercados",
         "link": "https://www.savegnago.com.br/busca?ft=Heineken+Lata+350ml",
         "price": 5.39,
-        "original_price": 5.89
+        "original_price": 5.89,
+        "unit_pricing": {
+          "is_pack": false,
+          "units_count": 1,
+          "unit_volume_ml": 350,
+          "container_type": "Lata 350ml",
+          "unit_name": "lata",
+          "pack_label": "Unidade Avulsa (Lata 350ml)",
+          "unit_price": 5.39,
+          "orig_unit_price": 5.89,
+          "price_per_liter": 15.4,
+          "unit_price_display": "R$ 5,39 / lata"
+        }
       },
       "copercana": {
         "name": "Cerveja Heineken Puro Malte Lata 350ml (Copercana)",
         "store": "Supermercados Copercana",
         "link": "https://www.supermercadoscopercana.com.br",
         "price": 5.59,
-        "original_price": 5.99
+        "original_price": 5.99,
+        "unit_pricing": {
+          "is_pack": false,
+          "units_count": 1,
+          "unit_volume_ml": 350,
+          "container_type": "Lata 350ml",
+          "unit_name": "lata",
+          "pack_label": "Unidade Avulsa (Lata 350ml)",
+          "unit_price": 5.59,
+          "orig_unit_price": 5.99,
+          "price_per_liter": 15.97,
+          "unit_price_display": "R$ 5,59 / lata"
+        }
       },
       "paulistao": {
         "name": "Cerveja Heineken Puro Malte Lata 350ml (Paulistão Atacadista)",
         "store": "Paulistão Atacadista",
         "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
         "price": 5.29,
-        "original_price": 5.79
+        "original_price": 5.79,
+        "unit_pricing": {
+          "is_pack": false,
+          "units_count": 1,
+          "unit_volume_ml": 350,
+          "container_type": "Lata 350ml",
+          "unit_name": "lata",
+          "pack_label": "Unidade Avulsa (Lata 350ml)",
+          "unit_price": 5.29,
+          "orig_unit_price": 5.79,
+          "price_per_liter": 15.11,
+          "unit_price_display": "R$ 5,29 / lata"
+        }
       },
       "marketplace": {
         "name": "Heineken Cerveja Sleek Lata 350ml Pack 12 Unidades (Amazon Prime)",
@@ -24264,21 +26926,57 @@
         "store": "Savegnago Supermercados",
         "link": "https://www.savegnago.com.br/busca?ft=Spaten+Lata+350ml",
         "price": 4.69,
-        "original_price": 5.19
+        "original_price": 5.19,
+        "unit_pricing": {
+          "is_pack": false,
+          "units_count": 1,
+          "unit_volume_ml": 350,
+          "container_type": "Lata 350ml",
+          "unit_name": "lata",
+          "pack_label": "Unidade Avulsa (Lata 350ml)",
+          "unit_price": 4.69,
+          "orig_unit_price": 5.19,
+          "price_per_liter": 13.4,
+          "unit_price_display": "R$ 4,69 / lata"
+        }
       },
       "copercana": {
         "name": "Cerveja Spaten Munich Helles Puro Malte Lata 350ml (Copercana)",
         "store": "Supermercados Copercana",
         "link": "https://www.supermercadoscopercana.com.br",
         "price": 4.59,
-        "original_price": 5.09
+        "original_price": 5.09,
+        "unit_pricing": {
+          "is_pack": false,
+          "units_count": 1,
+          "unit_volume_ml": 350,
+          "container_type": "Lata 350ml",
+          "unit_name": "lata",
+          "pack_label": "Unidade Avulsa (Lata 350ml)",
+          "unit_price": 4.59,
+          "orig_unit_price": 5.09,
+          "price_per_liter": 13.11,
+          "unit_price_display": "R$ 4,59 / lata"
+        }
       },
       "paulistao": {
         "name": "Cerveja Spaten Munich Helles Puro Malte Lata 350ml (Paulistão Atacadista)",
         "store": "Paulistão Atacadista",
         "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
         "price": 4.49,
-        "original_price": 4.99
+        "original_price": 4.99,
+        "unit_pricing": {
+          "is_pack": false,
+          "units_count": 1,
+          "unit_volume_ml": 350,
+          "container_type": "Lata 350ml",
+          "unit_name": "lata",
+          "pack_label": "Unidade Avulsa (Lata 350ml)",
+          "unit_price": 4.49,
+          "orig_unit_price": 4.99,
+          "price_per_liter": 12.83,
+          "unit_price_display": "R$ 4,49 / lata"
+        }
       },
       "marketplace": {
         "name": "Pack Cerveja Spaten Puro Malte 12 Latas 350ml (Mercado Envios Full)",
@@ -24300,21 +26998,57 @@
         "store": "Savegnago Supermercados",
         "link": "https://www.savegnago.com.br/busca?ft=Corona+Long+Neck+330ml",
         "price": 6.49,
-        "original_price": 7.19
+        "original_price": 7.19,
+        "unit_pricing": {
+          "is_pack": false,
+          "units_count": 1,
+          "unit_volume_ml": 330,
+          "container_type": "Long Neck",
+          "unit_name": "long neck",
+          "pack_label": "Unidade Avulsa (Long Neck)",
+          "unit_price": 6.49,
+          "orig_unit_price": 7.19,
+          "price_per_liter": 19.67,
+          "unit_price_display": "R$ 6,49 / long neck"
+        }
       },
       "copercana": {
         "name": "Cerveja Corona Extra Long Neck 330ml (Copercana)",
         "store": "Supermercados Copercana",
         "link": "https://www.supermercadoscopercana.com.br",
         "price": 6.19,
-        "original_price": 6.89
+        "original_price": 6.89,
+        "unit_pricing": {
+          "is_pack": false,
+          "units_count": 1,
+          "unit_volume_ml": 330,
+          "container_type": "Long Neck",
+          "unit_name": "long neck",
+          "pack_label": "Unidade Avulsa (Long Neck)",
+          "unit_price": 6.19,
+          "orig_unit_price": 6.89,
+          "price_per_liter": 18.76,
+          "unit_price_display": "R$ 6,19 / long neck"
+        }
       },
       "paulistao": {
         "name": "Cerveja Corona Extra Long Neck 330ml (Paulistão Atacadista)",
         "store": "Paulistão Atacadista",
         "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
         "price": 5.99,
-        "original_price": 6.59
+        "original_price": 6.59,
+        "unit_pricing": {
+          "is_pack": false,
+          "units_count": 1,
+          "unit_volume_ml": 330,
+          "container_type": "Long Neck",
+          "unit_name": "long neck",
+          "pack_label": "Unidade Avulsa (Long Neck)",
+          "unit_price": 5.99,
+          "orig_unit_price": 6.59,
+          "price_per_liter": 18.15,
+          "unit_price_display": "R$ 5,99 / long neck"
+        }
       },
       "marketplace": {
         "name": "Cerveja Corona Extra 330ml Pack com 6 unidades (Amazon Prime)",
@@ -24336,21 +27070,57 @@
         "store": "Savegnago Supermercados",
         "link": "https://www.savegnago.com.br/busca?ft=Casillero+del+Diablo+750ml",
         "price": 49.9,
-        "original_price": 64.9
+        "original_price": 64.9,
+        "unit_pricing": {
+          "is_pack": false,
+          "units_count": 1,
+          "unit_volume_ml": 750,
+          "container_type": "Garrafa 750ml",
+          "unit_name": "garrafa",
+          "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+          "unit_price": 49.9,
+          "orig_unit_price": 64.9,
+          "price_per_liter": 66.53,
+          "unit_price_display": "R$ 49,90 / garrafa"
+        }
       },
       "copercana": {
         "name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon 750ml (Copercana)",
         "store": "Supermercados Copercana",
         "link": "https://www.supermercadoscopercana.com.br",
         "price": 51.9,
-        "original_price": 66.9
+        "original_price": 66.9,
+        "unit_pricing": {
+          "is_pack": false,
+          "units_count": 1,
+          "unit_volume_ml": 750,
+          "container_type": "Garrafa 750ml",
+          "unit_name": "garrafa",
+          "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+          "unit_price": 51.9,
+          "orig_unit_price": 66.9,
+          "price_per_liter": 69.2,
+          "unit_price_display": "R$ 51,90 / garrafa"
+        }
       },
       "paulistao": {
         "name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon 750ml (Paulistão Atacadista)",
         "store": "Paulistão Atacadista",
         "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
         "price": 47.9,
-        "original_price": 59.9
+        "original_price": 59.9,
+        "unit_pricing": {
+          "is_pack": false,
+          "units_count": 1,
+          "unit_volume_ml": 750,
+          "container_type": "Garrafa 750ml",
+          "unit_name": "garrafa",
+          "pack_label": "Unidade Avulsa (Garrafa 750ml)",
+          "unit_price": 47.9,
+          "orig_unit_price": 59.9,
+          "price_per_liter": 63.87,
+          "unit_price_display": "R$ 47,90 / garrafa"
+        }
       },
       "marketplace": {
         "name": "Concha y Toro Casillero Del Diablo Cabernet Sauvignon 750ml (Amazon Prime)",
@@ -24372,21 +27142,57 @@
         "store": "Savegnago Supermercados",
         "link": "https://www.savegnago.com.br/busca?ft=Picanha+Bovina+(Kg)",
         "price": 68.9,
-        "original_price": 89.9
+        "original_price": 89.9,
+        "unit_pricing": {
+          "is_pack": false,
+          "units_count": 1,
+          "unit_volume_ml": 350,
+          "container_type": "Lata 350ml",
+          "unit_name": "lata",
+          "pack_label": "Unidade Avulsa (Lata 350ml)",
+          "unit_price": 68.9,
+          "orig_unit_price": 89.9,
+          "price_per_liter": 196.86,
+          "unit_price_display": "R$ 68,90 / lata"
+        }
       },
       "copercana": {
         "name": "Picanha Bovina Resfriada Peça / Kg (Friboi / Minerva) (Copercana)",
         "store": "Supermercados Copercana",
         "link": "https://www.supermercadoscopercana.com.br",
         "price": 62.9,
-        "original_price": 82.9
+        "original_price": 82.9,
+        "unit_pricing": {
+          "is_pack": false,
+          "units_count": 1,
+          "unit_volume_ml": 350,
+          "container_type": "Lata 350ml",
+          "unit_name": "lata",
+          "pack_label": "Unidade Avulsa (Lata 350ml)",
+          "unit_price": 62.9,
+          "orig_unit_price": 82.9,
+          "price_per_liter": 179.71,
+          "unit_price_display": "R$ 62,90 / lata"
+        }
       },
       "paulistao": {
         "name": "Picanha Bovina Resfriada Peça / Kg (Friboi / Minerva) (Paulistão Atacadista)",
         "store": "Paulistão Atacadista",
         "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
         "price": 57.9,
-        "original_price": 74.9
+        "original_price": 74.9,
+        "unit_pricing": {
+          "is_pack": false,
+          "units_count": 1,
+          "unit_volume_ml": 350,
+          "container_type": "Lata 350ml",
+          "unit_name": "lata",
+          "pack_label": "Unidade Avulsa (Lata 350ml)",
+          "unit_price": 57.9,
+          "orig_unit_price": 74.9,
+          "price_per_liter": 165.43,
+          "unit_price_display": "R$ 57,90 / lata"
+        }
       },
       "marketplace": null,
       "winner": "Paulistão Atacadista",
@@ -24402,21 +27208,57 @@
         "store": "Savegnago Supermercados",
         "link": "https://www.savegnago.com.br/busca?ft=OMO+Líquido+3L",
         "price": 38.9,
-        "original_price": 52.9
+        "original_price": 52.9,
+        "unit_pricing": {
+          "is_pack": false,
+          "units_count": 1,
+          "unit_volume_ml": 3000,
+          "container_type": "Unidade",
+          "unit_name": "un",
+          "pack_label": "Unidade Avulsa (Unidade)",
+          "unit_price": 38.9,
+          "orig_unit_price": 52.9,
+          "price_per_liter": 12.97,
+          "unit_price_display": "R$ 38,90 / un"
+        }
       },
       "copercana": {
         "name": "Sabão Líquido OMO Lavagem Perfeita 3 Litros (Copercana)",
         "store": "Supermercados Copercana",
         "link": "https://www.supermercadoscopercana.com.br",
         "price": 39.9,
-        "original_price": 54.9
+        "original_price": 54.9,
+        "unit_pricing": {
+          "is_pack": false,
+          "units_count": 1,
+          "unit_volume_ml": 3000,
+          "container_type": "Unidade",
+          "unit_name": "un",
+          "pack_label": "Unidade Avulsa (Unidade)",
+          "unit_price": 39.9,
+          "orig_unit_price": 54.9,
+          "price_per_liter": 13.3,
+          "unit_price_display": "R$ 39,90 / un"
+        }
       },
       "paulistao": {
         "name": "Sabão Líquido OMO Lavagem Perfeita 3 Litros (Paulistão Atacadista)",
         "store": "Paulistão Atacadista",
         "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
         "price": 36.9,
-        "original_price": 49.9
+        "original_price": 49.9,
+        "unit_pricing": {
+          "is_pack": false,
+          "units_count": 1,
+          "unit_volume_ml": 3000,
+          "container_type": "Unidade",
+          "unit_name": "un",
+          "pack_label": "Unidade Avulsa (Unidade)",
+          "unit_price": 36.9,
+          "orig_unit_price": 49.9,
+          "price_per_liter": 12.3,
+          "unit_price_display": "R$ 36,90 / un"
+        }
       },
       "marketplace": null,
       "winner": "Paulistão Atacadista",

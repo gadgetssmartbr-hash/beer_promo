@@ -253,6 +253,17 @@ def get_all_products_with_intelligence() -> List[Dict[str, Any]]:
             
             data["intelligence"] = intelligence
             
+            # Análise de Preço por Unidade (Lata, Long Neck, Pack, Litro)
+            from services.unit_parser import parse_unit_pricing
+            unit_info = parse_unit_pricing(
+                name=data.get("name", ""),
+                price=cur_price,
+                original_price=orig_price,
+                category=data.get("category", "cerveja")
+            )
+            data["unit_pricing"] = unit_info
+            data["unit_price"] = unit_info["unit_price"]
+
             # Linha do tempo de pontos históricos
             pts = get_product_history_points(data["id"])
             if len(pts) <= 1:
