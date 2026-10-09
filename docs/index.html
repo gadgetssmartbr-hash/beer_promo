@@ -130,6 +130,7 @@
           </div>
           <select id="sortSelect" class="bg-slate-950 border border-slate-700 text-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 font-medium">
             <option value="unit_price_asc" selected>🎯 Menor Preço por Unidade (R$/lata ou un)</option>
+            <option value="puro_malte_cost">🥇 Menor Custo/Litro Puro Malte</option>
             <option value="discount">🏷️ Maior Desconto %</option>
             <option value="price_asc">💰 Menor Preço Total (R$)</option>
             <option value="deals_first">🔥 Melhores Oportunidades</option>
@@ -144,6 +145,25 @@
         </div>
 
       </div>
+
+      <!-- Radar de Ofertas do Dia em Sertãozinho -->
+      <div id="todaySpecialsBanner" class="mt-4 max-w-4xl mx-auto bg-slate-950/80 border border-emerald-600/40 rounded-2xl p-3 sm:p-4 text-left flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-lg">
+        <div class="flex items-center gap-3">
+          <span class="w-9 h-9 rounded-xl bg-emerald-950 border border-emerald-600/60 text-emerald-400 flex items-center justify-center text-lg shrink-0">🗓️</span>
+          <div>
+            <div class="flex items-center gap-2">
+              <span id="specialsDayLabel" class="text-xs font-black uppercase tracking-wider text-emerald-400">Hoje em Sertãozinho:</span>
+              <span id="specialsThemeBadge" class="bg-emerald-900/80 text-emerald-200 text-[10px] font-extrabold px-2 py-0.5 rounded-md border border-emerald-700">Encarte Ativo</span>
+            </div>
+            <p id="specialsDescText" class="text-xs text-slate-300 mt-0.5 line-clamp-1">Carregando os dias temáticos de hoje...</p>
+          </div>
+        </div>
+        <button onclick="activateTab('specials')" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs shrink-0 transition-colors flex items-center gap-1">
+          <span>Ver Calendário Completo</span>
+          <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+        </button>
+      </div>
+
     </div>
   </section>
 
@@ -491,6 +511,135 @@
       </div>
     </div>
 
+    <!-- ========================================================================= -->
+    <!-- 6. ABA: CHURRASCÔMETRO & CALCULADORA DE FESTAS (AMBIENTE LOCAL)           -->
+    <!-- ========================================================================= -->
+    <div id="bbqSection" class="hidden space-y-8">
+      <div class="border-b border-slate-800 pb-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-bold text-white flex items-center gap-2">
+            <span>🥩</span> Churrascômetro & Calculadora de Festas (Sertãozinho)
+          </h2>
+          <p class="text-slate-400 text-xs sm:text-sm mt-0.5">
+            Defina o número de convidados e compare na hora o custo exato do churrasco entre Savegnago, Copercana e Paulistão Atacadista!
+          </p>
+        </div>
+
+        <button onclick="exportBBQToWhatsApp()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-lg shadow-emerald-950/40 transition-all hover:scale-105 shrink-0">
+          <i data-lucide="share-2" class="w-4 h-4"></i>
+          <span>Enviar Roteiro no WhatsApp</span>
+        </button>
+      </div>
+
+      <!-- BBQ Controls & Presets -->
+      <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-6 pb-6 border-b border-slate-800/80">
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1.5 flex items-center gap-1">
+              <span>👨</span> Homens:
+            </label>
+            <input type="number" id="bbqMenInput" value="4" min="0" max="100" onchange="runLiveBBQCalculation()"
+                   class="w-full bg-slate-950 border border-slate-700 text-white font-bold text-base rounded-xl px-4 py-2.5 focus:ring-2 focus:ring-emerald-500 focus:outline-none" />
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1.5 flex items-center gap-1">
+              <span>👩</span> Mulheres:
+            </label>
+            <input type="number" id="bbqWomenInput" value="4" min="0" max="100" onchange="runLiveBBQCalculation()"
+                   class="w-full bg-slate-950 border border-slate-700 text-white font-bold text-base rounded-xl px-4 py-2.5 focus:ring-2 focus:ring-emerald-500 focus:outline-none" />
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1.5 flex items-center gap-1">
+              <span>🧒</span> Crianças:
+            </label>
+            <input type="number" id="bbqKidsInput" value="2" min="0" max="100" onchange="runLiveBBQCalculation()"
+                   class="w-full bg-slate-950 border border-slate-700 text-white font-bold text-base rounded-xl px-4 py-2.5 focus:ring-2 focus:ring-emerald-500 focus:outline-none" />
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1.5 flex items-center gap-1">
+              <span>⏱️</span> Duração (Horas):
+            </label>
+            <input type="number" id="bbqHoursInput" value="5" min="2" max="12" onchange="runLiveBBQCalculation()"
+                   class="w-full bg-slate-950 border border-slate-700 text-white font-bold text-base rounded-xl px-4 py-2.5 focus:ring-2 focus:ring-emerald-500 focus:outline-none" />
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1.5 flex items-center gap-1">
+              <span>🍺</span> Cerveja Escolhida:
+            </label>
+            <select id="bbqBeerSelect" onchange="runLiveBBQCalculation()"
+                    class="w-full bg-slate-950 border border-slate-700 text-white font-bold text-xs rounded-xl px-3 py-3 focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+              <option value="spaten_lata_350ml" selected>Spaten Puro Malte (350ml)</option>
+              <option value="heineken_lata_350ml">Heineken Puro Malte (350ml)</option>
+              <option value="amstel_lata_350ml">Amstel Puro Malte (350ml)</option>
+              <option value="corona_330ml">Corona Long Neck (330ml)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- 4 BBQ Total Cards -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
+            <span class="text-xs text-slate-400 font-medium">🏪 Total Savegnago</span>
+            <div id="bbqTotalSavegnago" class="text-xl sm:text-2xl font-black text-white mt-1">R$ 0,00</div>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
+            <span class="text-xs text-slate-400 font-medium">🏪 Total Copercana</span>
+            <div id="bbqTotalCopercana" class="text-xl sm:text-2xl font-black text-white mt-1">R$ 0,00</div>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
+            <span class="text-xs text-slate-400 font-medium">🏪 Total Paulistão</span>
+            <div id="bbqTotalPaulistao" class="text-xl sm:text-2xl font-black text-white mt-1">R$ 0,00</div>
+          </div>
+          <div class="bg-emerald-950/80 border border-emerald-600/80 rounded-2xl p-4 text-center shadow-lg shadow-emerald-950/50">
+            <span class="text-xs text-emerald-300 font-bold">🌟 Churrasco Mix Ideal</span>
+            <div id="bbqTotalMixed" class="text-xl sm:text-2xl font-black text-emerald-400 mt-1">R$ 0,00</div>
+          </div>
+        </div>
+
+        <!-- Savings & Cost Per Person Summary -->
+        <div class="p-4 rounded-2xl bg-emerald-950/50 border border-emerald-700/60 text-xs text-emerald-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div class="flex items-center gap-2">
+            <span class="text-xl">🏆</span>
+            <div>
+              <strong>Supermercado Vencedor do Churrasco:</strong> <span id="bbqWinnerStore" class="font-bold text-white">Paulistão Atacadista</span>.
+              <span id="bbqPerPersonText" class="text-emerald-300 block sm:inline sm:ml-2">Custo médio por convidado: R$ 0,00</span>
+            </div>
+          </div>
+          <span id="bbqSplitSavingsBadge" class="font-extrabold bg-emerald-600 px-3.5 py-1.5 rounded-full text-white shadow-sm shrink-0">
+            Economia Dividindo: R$ 0,00
+          </span>
+        </div>
+      </div>
+
+      <!-- Itemized BBQ Consumption Breakdown Table -->
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 md:p-8 shadow-xl">
+        <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+          <span>📋</span> Quantidades Recomendadas de Consumo
+        </h3>
+        <div id="bbqQuantitiesGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- 7. ABA: RADAR DE ENCARTES & DIAS DE OFERTAS (AMBIENTE LOCAL)              -->
+    <!-- ========================================================================= -->
+    <div id="specialsSection" class="hidden space-y-8">
+      <div class="border-b border-slate-800 pb-4">
+        <h2 class="text-2xl font-bold text-white flex items-center gap-2">
+          <span>🗓️</span> Calendário de Encartes & Dias de Oferta em Sertãozinho
+        </h2>
+        <p class="text-slate-400 text-xs sm:text-sm mt-0.5">
+          Guia completo dos dias tradicionais de descontos e feiras no Savegnago, Copercana e Paulistão Atacadista.
+        </p>
+      </div>
+
+      <div id="weeklySpecialsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+
   </main>
 
   <!-- Modal: Linha do Tempo Individual -->
@@ -697,6 +846,7 @@
       // 4. Renderiza as seções e dados
       activateTab('deals');
       renderDeals();
+      renderTodaySpecialsBanner();
       renderTimelineDropdown();
       renderShelfProductSelect();
       renderSupermarkets();
@@ -718,11 +868,20 @@
           <button class="tool-tab-btn active px-3.5 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 text-white transition-all shadow-sm" data-tab="deals" data-category="all">
             ✨ Ofertas Locais
           </button>
+          <button class="tool-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all flex items-center gap-1.5" data-tab="bbq">
+            <span>🥩</span> Churrascômetro
+          </button>
+          <button class="tool-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all flex items-center gap-1.5" data-tab="specials">
+            <span>🗓️</span> Dias de Oferta
+          </button>
           <button class="tool-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all flex items-center gap-1.5" data-tab="family_list">
-            <span>📋</span> Lista & Simulador (3 Redes)
+            <span>📋</span> Lista (3 Redes)
+          </button>
+          <button class="tool-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-amber-950/80 hover:bg-amber-900 border border-amber-700/80 text-amber-300 transition-all flex items-center gap-1.5" data-tab="deals" data-category="cerveja" data-sort="puro_malte_cost">
+            <span>🥇</span> Puro Malte (Custo/L)
           </button>
           <button class="tool-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all flex items-center gap-1.5" data-tab="scanner">
-            <span>📸</span> Scanner & Foto na Gôndola
+            <span>📸</span> Scanner na Gôndola
           </button>
           <button class="tool-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all" data-tab="supermarkets">
             ⚔️ Batalha 3 Redes
@@ -751,6 +910,9 @@
           <button class="tool-tab-btn active px-3.5 py-1.5 rounded-lg text-xs font-bold bg-rose-700 text-white transition-all shadow-sm" data-tab="deals" data-category="all">
             ✨ Todas Ofertas Online
           </button>
+          <button class="tool-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-amber-950/80 hover:bg-amber-900 border border-amber-700/80 text-amber-300 transition-all flex items-center gap-1.5" data-tab="deals" data-category="cerveja" data-sort="puro_malte_cost">
+            <span>🥇</span> Puro Malte (Custo/L)
+          </button>
           <button class="tool-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all flex items-center gap-1.5" data-tab="deals" data-category="cerveja">
             <span>🍺</span> Cervejas & Packs Fechados
           </button>
@@ -771,6 +933,7 @@
         btn.addEventListener('click', () => {
           const tab = btn.dataset.tab || 'deals';
           const cat = btn.dataset.category;
+          const sortVal = btn.dataset.sort;
 
           document.querySelectorAll('.tool-tab-btn').forEach(b => {
             b.classList.remove('bg-emerald-600', 'bg-rose-700', 'text-white', 'shadow-sm');
@@ -784,6 +947,10 @@
           if (cat !== undefined) {
             currentCategory = cat;
           }
+          if (sortVal) {
+            const sortSelect = document.getElementById('sortSelect');
+            if (sortSelect) sortSelect.value = sortVal;
+          }
           activateTab(tab);
         });
       });
@@ -795,6 +962,8 @@
       currentTab = tab;
       const dealsGrid = document.getElementById('dealsGrid');
       const familyListSection = document.getElementById('familyListSection');
+      const bbqSection = document.getElementById('bbqSection');
+      const specialsSection = document.getElementById('specialsSection');
       const scannerSection = document.getElementById('scannerSection');
       const supermarketsSection = document.getElementById('supermarketsSection');
       const timelineSection = document.getElementById('timelineSection');
@@ -804,28 +973,36 @@
 
       // Oculta todas
       dealsGrid.classList.add('hidden');
-      familyListSection.classList.add('hidden');
-      scannerSection.classList.add('hidden');
-      supermarketsSection.classList.add('hidden');
-      timelineSection.classList.add('hidden');
-      couponsSection.classList.add('hidden');
+      if (familyListSection) familyListSection.classList.add('hidden');
+      if (bbqSection) bbqSection.classList.add('hidden');
+      if (specialsSection) specialsSection.classList.add('hidden');
+      if (scannerSection) scannerSection.classList.add('hidden');
+      if (supermarketsSection) supermarketsSection.classList.add('hidden');
+      if (timelineSection) timelineSection.classList.add('hidden');
+      if (couponsSection) couponsSection.classList.add('hidden');
       scaleLegendBox.classList.add('hidden');
       statsBar.classList.add('hidden');
 
       if (tab === 'family_list') {
-        familyListSection.classList.remove('hidden');
+        if (familyListSection) familyListSection.classList.remove('hidden');
         renderFamilyChecklist();
         calculateFamilyBasketEconomy();
+      } else if (tab === 'bbq') {
+        if (bbqSection) bbqSection.classList.remove('hidden');
+        runLiveBBQCalculation();
+      } else if (tab === 'specials') {
+        if (specialsSection) specialsSection.classList.remove('hidden');
+        renderWeeklySpecials();
       } else if (tab === 'scanner') {
-        scannerSection.classList.remove('hidden');
+        if (scannerSection) scannerSection.classList.remove('hidden');
       } else if (tab === 'supermarkets') {
-        supermarketsSection.classList.remove('hidden');
+        if (supermarketsSection) supermarketsSection.classList.remove('hidden');
       } else if (tab === 'timeline') {
-        timelineSection.classList.remove('hidden');
+        if (timelineSection) timelineSection.classList.remove('hidden');
         const sel = document.getElementById('timelineProductSelect');
         if (sel && sel.value) updateMainTimeline(Number(sel.value));
       } else if (tab === 'coupons') {
-        couponsSection.classList.remove('hidden');
+        if (couponsSection) couponsSection.classList.remove('hidden');
       } else {
         dealsGrid.classList.remove('hidden');
         scaleLegendBox.classList.remove('hidden');
@@ -867,8 +1044,19 @@
         return matchesCategory && matchesSearch && matchesScore;
       });
 
-      // Ordenação
-      if (sort === 'unit_price_asc') {
+      // Ordenação e Filtros Especiais
+      if (sort === 'puro_malte_cost') {
+        const puroKeywords = ['puro malte', 'spaten', 'heineken', 'amstel', 'corona', 'stella', 'eisenbahn', 'colorado', 'bohemia', 'becks', 'beck'];
+        filtered = filtered.filter(it => {
+          const n = (it.name || '').toLowerCase();
+          return puroKeywords.some(k => n.includes(k));
+        });
+        filtered.sort((a, b) => {
+          const pplA = (a.unit_pricing && a.unit_pricing.price_per_liter) ? a.unit_pricing.price_per_liter : 999;
+          const pplB = (b.unit_pricing && b.unit_pricing.price_per_liter) ? b.unit_pricing.price_per_liter : 999;
+          return pplA - pplB;
+        });
+      } else if (sort === 'unit_price_asc') {
         filtered.sort((a, b) => {
           const upA = (a.unit_pricing && a.unit_pricing.unit_price) ? a.unit_pricing.unit_price : (a.unit_price || (a.current_price !== undefined ? a.current_price : a.price) || 0);
           const upB = (b.unit_pricing && b.unit_pricing.unit_price) ? b.unit_pricing.unit_price : (b.unit_price || (b.current_price !== undefined ? b.current_price : b.price) || 0);
@@ -1069,6 +1257,11 @@
             </div>
 
             <div class="pt-2 flex flex-col gap-2">
+              <a href="https://t.me/beerstz_bot?start=watch_${item.id}" target="_blank"
+                 class="w-full flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-sky-950/80 hover:bg-sky-900/90 text-sky-300 font-semibold text-xs border border-sky-800/80 transition-all hover:text-white hover:border-sky-600 shadow-sm">
+                <i data-lucide="bell-ring" class="w-3.5 h-3.5 text-sky-400"></i>
+                <span>Criar Alerta no Telegram</span>
+              </a>
               <button onclick="openTimelineModal(${item.id})"
                  class="w-full flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs border border-slate-700 transition-all hover:text-white hover:border-slate-600">
                 <i data-lucide="line-chart" class="w-3.5 h-3.5 text-sky-400"></i>
@@ -1491,7 +1684,7 @@
       const selectedItems = catalog.filter(it => familyBasket[it.id] && familyBasket[it.id].selected);
 
       if (selectedItems.length === 0) {
-        showToast("Selecione pelo menos um item para copiar a lista!");
+        showToast("Selecione pelo menos um item para enviar a lista!");
         return;
       }
 
@@ -1511,17 +1704,257 @@
         totalMix += subtotal;
 
         text += `${idx + 1}. *${it.short_name || it.name}* (x${qty} ${it.unit})\n`;
-        text += `   👉 Comprar no *${best.store}* por R$ ${best.price.toFixed(2).replace('.', ',')} (Subtotal: R$ ${subtotal.toFixed(2).replace('.', ',')})\n`;
+        text += `   👉 Melhor no *${best.store}* por R$ ${best.price.toFixed(2).replace('.', ',')} (Subtotal: R$ ${subtotal.toFixed(2).replace('.', ',')})\n`;
       });
 
-      text += `\n💰 *Total no Melhor Mix Local:* R$ ${totalMix.toFixed(2).replace('.', ',')}\n`;
-      text += `🌐 _Gerado pelo Beer & Market Promo Sertãozinho_`;
+      text += `\n💰 *Total no Mix Ideal:* R$ ${totalMix.toFixed(2).replace('.', ',')}\n`;
+      text += `🌐 _Gerado pelo Beer & Market Promo Sertãozinho_\nhttps://gadgetssmartbr-hash.github.io/beer_promo/`;
 
-      navigator.clipboard.writeText(text).then(() => {
-        showToast("📋 Lista copiada para o WhatsApp!");
-      }).catch(() => {
-        showToast("Erro ao copiar.");
+      try {
+        navigator.clipboard.writeText(text);
+      } catch (e) {}
+      window.open('https://wa.me/?text=' + encodeURIComponent(text), '_blank');
+      showToast("📋 Roteiro aberto no WhatsApp!");
+    }
+
+    // --- 🥩 CHURRASCÔMETRO & CALCULADORA INTELIGENTE (SERTÃOZINHO) ---
+    function runLiveBBQCalculation() {
+      const men = parseInt(document.getElementById('bbqMenInput')?.value || 4);
+      const women = parseInt(document.getElementById('bbqWomenInput')?.value || 4);
+      const kids = parseInt(document.getElementById('bbqKidsInput')?.value || 2);
+      const hours = parseInt(document.getElementById('bbqHoursInput')?.value || 5);
+      const beerType = document.getElementById('bbqBeerSelect')?.value || 'spaten_lata_350ml';
+
+      const extraHours = Math.max(0, hours - 4);
+      const totalPeople = men + women + kids;
+
+      // 1. Carnes (kg)
+      let meatKg = (men * 0.45) + (women * 0.30) + (kids * 0.15);
+      meatKg *= (1 + (extraHours * 0.08));
+      meatKg = Math.round(meatKg * 100) / 100;
+
+      const picanhaKg = Math.round(meatKg * 0.35 * 100) / 100;
+      const contrafileKg = Math.round(meatKg * 0.25 * 100) / 100;
+      const linguicaKg = Math.round(meatKg * 0.25 * 100) / 100;
+      const frangoKg = Math.round(meatKg * 0.15 * 100) / 100;
+
+      // 2. Bebidas & Acompanhamentos
+      const beerCans = Math.round((men * (5 + extraHours * 1.2)) + (women * (3 + extraHours * 0.8)));
+      const sodaLiters = (kids * (0.5 + extraHours * 0.1)) + ((men + women) * 0.25);
+      const sodaBottles = Math.max(1, Math.round(sodaLiters / 2));
+      const adults = men + women;
+      const carvaoBags = Math.max(1, Math.ceil(meatKg / 4));
+      const geloBags = Math.max(1, Math.ceil((adults * 1.2) / 5));
+      const paoAlhoPcts = Math.max(1, Math.ceil(adults / 4));
+
+      // Busca preços do catálogo
+      const catalog = appData.basic_catalog || [];
+      const getPrice = (id, store) => {
+        const it = catalog.find(x => x.id === id);
+        return it && it[store] ? it[store].price : 0;
+      };
+
+      const stores = ['savegnago', 'copercana', 'paulistao'];
+      const totals = {};
+      const itemsList = [
+        { id: 'picanha_kg', name: 'Picanha Bovina', qty: picanhaKg, unit: 'kg' },
+        { id: 'contrafile_kg', name: 'Contrafilé', qty: contrafileKg, unit: 'kg' },
+        { id: 'linguica_toscana_kg', name: 'Linguiça Toscana', qty: linguicaKg, unit: 'kg' },
+        { id: 'frango_file_kg', name: 'Filé de Frango', qty: frangoKg, unit: 'kg' },
+        { id: beerType, name: 'Cerveja Puro Malte', qty: beerCans, unit: 'latas' },
+        { id: 'coca_cola_2l', name: 'Coca-Cola 2L', qty: sodaBottles, unit: 'pet 2L' }
+      ];
+
+      stores.forEach(st => {
+        let total = 0;
+        itemsList.forEach(it => {
+          total += it.qty * getPrice(it.id, st);
+        });
+        total += (carvaoBags * 18.90) + (geloBags * 12.00) + (paoAlhoPcts * 12.90);
+        totals[st] = total;
       });
+
+      // Mix Ideal
+      let mixTotal = 0;
+      itemsList.forEach(it => {
+        const storePrices = stores.map(st => ({ store: st, price: getPrice(it.id, st) })).filter(p => p.price > 0);
+        storePrices.sort((a, b) => a.price - b.price);
+        const best = storePrices[0] || { store: 'paulistao', price: 0 };
+        mixTotal += it.qty * best.price;
+      });
+      mixTotal += (carvaoBags * 18.90) + (geloBags * 12.00) + (paoAlhoPcts * 12.90);
+      totals['mixed'] = mixTotal;
+
+      // Atualiza Cards de Totais
+      const savEl = document.getElementById('bbqTotalSavegnago');
+      const copEl = document.getElementById('bbqTotalCopercana');
+      const pauEl = document.getElementById('bbqTotalPaulistao');
+      const mixEl = document.getElementById('bbqTotalMixed');
+      if (savEl) savEl.innerText = `R$ ${totals.savegnago.toFixed(2).replace('.', ',')}`;
+      if (copEl) copEl.innerText = `R$ ${totals.copercana.toFixed(2).replace('.', ',')}`;
+      if (pauEl) pauEl.innerText = `R$ ${totals.paulistao.toFixed(2).replace('.', ',')}`;
+      if (mixEl) mixEl.innerText = `R$ ${totals.mixed.toFixed(2).replace('.', ',')}`;
+
+      // Ranking do Vencedor
+      const storeRanking = [
+        { name: 'Paulistão Atacadista', total: totals.paulistao },
+        { name: 'Supermercados Copercana', total: totals.copercana },
+        { name: 'Savegnago Supermercados', total: totals.savegnago }
+      ];
+      storeRanking.sort((a, b) => a.total - b.total);
+      const winner = storeRanking[0];
+      const maxStore = storeRanking[storeRanking.length - 1];
+      const splitSavings = Math.max(0, maxStore.total - totals.mixed);
+      const costPerPerson = totalPeople > 0 ? (totals.mixed / totalPeople) : 0;
+
+      const winnerEl = document.getElementById('bbqWinnerStore');
+      const perPersonEl = document.getElementById('bbqPerPersonText');
+      const savingsEl = document.getElementById('bbqSplitSavingsBadge');
+      if (winnerEl) winnerEl.innerText = winner.name;
+      if (perPersonEl) perPersonEl.innerText = `Custo por pessoa: R$ ${costPerPerson.toFixed(2).replace('.', ',')}`;
+      if (savingsEl) savingsEl.innerText = `Economia no Mix: R$ ${splitSavings.toFixed(2).replace('.', ',')}`;
+
+      // Renderiza Tabela de Quantidades
+      const grid = document.getElementById('bbqQuantitiesGrid');
+      if (grid) {
+        const displayItems = [
+          { name: '🥩 Picanha Bovina', qty: `${picanhaKg} kg`, note: 'Corte nobre' },
+          { name: '🥩 Contrafilé', qty: `${contrafileKg} kg`, note: 'Grelha rápida' },
+          { name: '🌭 Linguiça Toscana', qty: `${linguicaKg} kg`, note: 'Aperitivo inicial' },
+          { name: '🍗 Filé de Frango/Asinha', qty: `${frangoKg} kg`, note: 'Opção leve' },
+          { name: '🍺 Cerveja Gelada', qty: `${beerCans} latas`, note: `${Math.ceil(beerCans / 12)} packs de 12` },
+          { name: '🥤 Refrigerante / Sucos', qty: `${sodaBottles} garrafas (2L)`, note: 'Bebidas não alcoólicas' },
+          { name: '🪵 Carvão Vegetal', qty: `${carvaoBags} saco(s) 4kg`, note: 'Brasa garantida' },
+          { name: '🧊 Gelo em Cubos', qty: `${geloBags} saco(s) 5kg`, note: 'Caixa térmica' },
+          { name: '🥖 Pão de Alho Especial', qty: `${paoAlhoPcts} pct 400g`, note: 'Acompanhamento' }
+        ];
+
+        grid.innerHTML = displayItems.map(d => `
+          <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800 flex items-center justify-between">
+            <div>
+              <span class="font-bold text-white text-xs block">${d.name}</span>
+              <span class="text-[11px] text-slate-400">${d.note}</span>
+            </div>
+            <span class="font-black text-emerald-400 text-sm bg-slate-900 px-3 py-1.5 rounded-xl border border-slate-800">
+              ${d.qty}
+            </span>
+          </div>
+        `).join('');
+      }
+    }
+
+    function exportBBQToWhatsApp() {
+      const men = parseInt(document.getElementById('bbqMenInput')?.value || 4);
+      const women = parseInt(document.getElementById('bbqWomenInput')?.value || 4);
+      const kids = parseInt(document.getElementById('bbqKidsInput')?.value || 2);
+      const hours = parseInt(document.getElementById('bbqHoursInput')?.value || 5);
+      const totalPeople = men + women + kids;
+
+      const sav = document.getElementById('bbqTotalSavegnago')?.innerText || 'R$ 0,00';
+      const cop = document.getElementById('bbqTotalCopercana')?.innerText || 'R$ 0,00';
+      const pau = document.getElementById('bbqTotalPaulistao')?.innerText || 'R$ 0,00';
+      const mix = document.getElementById('bbqTotalMixed')?.innerText || 'R$ 0,00';
+      const winner = document.getElementById('bbqWinnerStore')?.innerText || 'Paulistão Atacadista';
+      const perPerson = document.getElementById('bbqPerPersonText')?.innerText || '';
+
+      let text = `🥩 *ROTEIRO DO CHURRASCO (SERTÃOZINHO/SP)* 🍺\n\n`;
+      text += `👥 *Convidados:* ${men} Homens, ${women} Mulheres, ${kids} Crianças (${totalPeople} total)\n`;
+      text += `⏱️ *Duração prevista:* ${hours} Horas\n\n`;
+      text += `🛒 *BATALHA DE PREÇOS LOCAL:*\n`;
+      text += `• Savegnago: ${sav}\n`;
+      text += `• Copercana: ${cop}\n`;
+      text += `• Paulistão Atacadista: ${pau}\n`;
+      text += `🌟 *Churrasco no Melhor Mix:* ${mix}\n`;
+      text += `🏆 *Supermercado Vencedor:* ${winner}\n`;
+      if (perPerson) text += `💵 ${perPerson}\n\n`;
+      text += `📱 _Calculado via Beer & Market Promo Sertãozinho:_\nhttps://gadgetssmartbr-hash.github.io/beer_promo/`;
+
+      try {
+        navigator.clipboard.writeText(text);
+      } catch (e) {}
+      window.open('https://wa.me/?text=' + encodeURIComponent(text), '_blank');
+      showToast("🥩 Roteiro do churrasco aberto no WhatsApp!");
+    }
+
+    // --- 🗓️ RADAR DE ENCARTES & DIAS DE OFERTA ---
+    function renderTodaySpecialsBanner() {
+      const banner = document.getElementById('todaySpecialsBanner');
+      if (!banner) return;
+
+      if (currentEnv !== 'local') {
+        banner.classList.add('hidden');
+        return;
+      }
+      banner.classList.remove('hidden');
+
+      const days = ['domingo', 'segunda', 'terca', 'quarta', 'quinta', 'sexta', 'sabado'];
+      const todayKey = days[new Date().getDay()];
+      const weeklySpecials = appData.weekly_specials || {};
+      const todayData = weeklySpecials[todayKey];
+
+      const dayLabel = document.getElementById('specialsDayLabel');
+      const themeBadge = document.getElementById('specialsThemeBadge');
+      const descText = document.getElementById('specialsDescText');
+
+      if (todayData && todayData.highlights && todayData.highlights.length > 0) {
+        const first = todayData.highlights[0];
+        if (dayLabel) dayLabel.innerText = `Hoje (${todayData.day_name}):`;
+        if (themeBadge) themeBadge.innerText = first.badge || 'Encarte do Dia';
+        if (descText) descText.innerText = `${first.store}: ${first.theme} — ${first.desc}`;
+      } else {
+        if (dayLabel) dayLabel.innerText = "Hoje em Sertãozinho:";
+        if (themeBadge) themeBadge.innerText = "Ofertas Ativas";
+        if (descText) descText.innerText = "Confira as promoções nos encartes do Savegnago, Copercana e Paulistão Atacadista.";
+      }
+    }
+
+    function renderWeeklySpecials() {
+      const grid = document.getElementById('weeklySpecialsGrid');
+      if (!grid) return;
+
+      const weeklySpecials = appData.weekly_specials || {};
+      const days = ['segunda', 'terca', 'quarta', 'quinta', 'sexta', 'sabado', 'domingo'];
+      const todayIdx = new Date().getDay();
+      const todayKey = ['domingo', 'segunda', 'terca', 'quarta', 'quinta', 'sexta', 'sabado'][todayIdx];
+
+      grid.innerHTML = days.map(dayKey => {
+        const dayObj = weeklySpecials[dayKey];
+        if (!dayObj) return '';
+        const isToday = dayKey === todayKey;
+
+        return `
+          <div class="bg-slate-900/90 border ${isToday ? 'border-emerald-500 shadow-xl shadow-emerald-950/40 ring-1 ring-emerald-500/50' : 'border-slate-800'} rounded-3xl p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-800">
+                <div class="flex items-center gap-2">
+                  <span class="text-base font-extrabold text-white">${dayObj.day_name}</span>
+                  ${isToday ? `<span class="bg-emerald-500 text-slate-950 text-[10px] font-black px-2 py-0.5 rounded-full uppercase tracking-wider">Hoje</span>` : ''}
+                </div>
+                <i data-lucide="calendar" class="w-4 h-4 text-slate-500"></i>
+              </div>
+
+              <div class="space-y-3">
+                ${dayObj.highlights.map(h => `
+                  <div class="p-3.5 rounded-2xl bg-slate-950/80 border border-slate-800/80 space-y-1">
+                    <div class="flex items-center justify-between">
+                      <span class="text-[11px] font-bold text-slate-300">${h.store}</span>
+                      <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-md bg-slate-800 text-emerald-300 border border-slate-700">${h.badge}</span>
+                    </div>
+                    <h5 class="text-xs font-black text-white">${h.theme}</h5>
+                    <p class="text-[11px] text-slate-400 leading-snug">${h.desc}</p>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+            
+            <button onclick="switchEnvironment('local'); activateTab('deals');" class="mt-4 w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs transition-colors text-center">
+              Ver Ofertas Deste Setor
+            </button>
+          </div>
+        `;
+      }).join('');
+
+      if (window.lucide) lucide.createIcons();
     }
 
     // --- SCANNER & COMPARADOR NA GÔNDOLA ---

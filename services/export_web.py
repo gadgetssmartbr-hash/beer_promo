@@ -57,7 +57,11 @@ def export_deals_to_json() -> str:
     # 4. Inclui Catálogo de Itens Básicos da Família
     from services.basic_basket import BASIC_CATALOG
 
-    # 5. Monta o payload final
+    # 5. Inclui Dias de Oferta e Calculadora de Churrasco
+    from services.weekly_specials import get_today_specials
+    from services.party_calculator import calculate_bbq_plan
+
+    # 6. Monta o payload final
     payload: Dict[str, Any] = {
         "metadata": {
             "city": "Sertãozinho - SP",
@@ -67,6 +71,8 @@ def export_deals_to_json() -> str:
         },
         "deals": products_db,
         "basic_catalog": BASIC_CATALOG,
+        "weekly_specials": get_today_specials(),
+        "default_bbq_plan": calculate_bbq_plan(),
         "store_battles": store_battles,
         "basket_comparison": basket_analysis,
         "supermarkets": get_local_supermarkets(),

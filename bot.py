@@ -179,22 +179,47 @@ async def handle_online_env_menu(update: Update, context: ContextTypes.DEFAULT_T
         await update.message.reply_text(text, reply_markup=keyboard, parse_mode="Markdown")
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Comando /start - Menu Inicial"""
+    """Comando /start - Menu Inicial com suporte a deep-linking do microsite"""
     chat_id = update.effective_chat.id
     # Auto-inscreve o usuário ao dar /start para comodidade
     add_subscriber(chat_id, update.effective_user.username if update.effective_user else "")
+
+    # Suporte a deep-link vindo do microsite (ex: /start watch_2)
+    if context.args and len(context.args) > 0:
+        arg = context.args[0]
+        if arg.startswith("watch_"):
+            try:
+                prod_id = int(arg.replace("watch_", ""))
+                from database import get_connection
+                with get_connection() as conn:
+                    cursor = conn.cursor()
+                    cursor.execute("SELECT name, store FROM products WHERE id = ?", (prod_id,))
+                    row = cursor.fetchone()
+                    if row:
+                        prod_name = row["name"]
+                        add_to_watchlist(item_name=prod_name, chat_id=chat_id)
+                        await update.message.reply_text(
+                            f"🔔 *ALERTA ATIVADO COM SUCESSO!*\n\n"
+                            f"Estamos vigiando o produto:\n"
+                            f"📌 *{prod_name}* ({row['store']})\n\n"
+                            f"Assim que o preço cair ou entrar em promoção real, você será avisado imediatamente aqui no Telegram! 🎯",
+                            parse_mode="Markdown"
+                        )
+                        return
+            except Exception as e:
+                logger.error(f"Erro ao processar deep link watch: {e}")
 
     welcome_text = (
         "🍻 *Monitor & Inteligência de Preços — Sertãozinho / SP* 🍷\n\n"
         "Seu assistente inteligente com dois ambientes dedicados:\n"
         "🏪 **Supermercados de Sertãozinho** (Savegnago, Copercana e Paulistão Atacadista)\n"
         "🌐 **Marketplaces & Adega Online** (Mercado Livre, Amazon, Wine e Zé Delivery)\n\n"
-        "⚡ *Busca em Tempo Real:* Digite o nome de qualquer item (ex: `Ovos`, `Heineken`, `Picanha`, `Sabão OMO`) "
-        "e o bot compara na hora as lojas da cidade!\n\n"
-        "⏰ *Varreduras automáticas:*\n"
-        "• 🌐 **Marketplaces (Bebidas/Vinhos):** De **hora em hora** (08h às 23h) para promoções relâmpago!\n"
-        "• 🏪 **Supermercados Locais:** **3x ao dia** (08h, 13h, 19h).\n\n"
-        "👇 *Escolha um ambiente abaixo ou digite o nome do produto:*"
+        "⚡ *Novos Recursos Ativos:*\n"
+        "• 🥩 **/churrasco** — Churrascômetro com Batalha 3 Redes\n"
+        "• 🗓️ **/dias** — Radar de Encartes & Dias de Oferta da Semana\n"
+        "• 🥇 **/puromalte** — Ranking de Custo por Litro de Puro Malte\n"
+        "• 🛒 **/carrinho** — Simulador de Economia Familiar\n\n"
+        "👇 *Escolha uma opção abaixo ou digite o nome do produto:*"
     )
 
     if update.message:
@@ -638,12 +663,12 @@ async def handle_basket_comparison(update: Update, context: ContextTypes.DEFAULT
 
     keyboard = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("🍚 Cesta Essencial", callback_data="basket_preset:cesta"),
-            InlineKeyboardButton("🥩 Churrasco", callback_data="basket_preset:churrasco"),
+            InlineKeyboardButton("🥩 Churrascômetro Completo", callback_data="menu_bbq"),
+            InlineKeyboardButton("🗓️ Dias de Oferta da Semana", callback_data="menu_specials"),
         ],
         [
-            InlineKeyboardButton("🧼 Faxina & Limpeza", callback_data="basket_preset:limpeza"),
-            InlineKeyboardButton("📝 Minha Lista", callback_data="menu_watchlist"),
+            InlineKeyboardButton("🍚 Cesta Essencial", callback_data="basket_preset:cesta"),
+            InlineKeyboardButton("🥇 Ranking Puro Malte", callback_data="menu_puromalte"),
         ],
         [
             InlineKeyboardButton("🌐 Ver Simulador Interativo no Microsite", callback_data="menu_microsite"),
@@ -667,6 +692,168 @@ async def handle_basket_comparison(update: Update, context: ContextTypes.DEFAULT
             parse_mode="Markdown",
             disable_web_page_preview=True
         )
+
+async def handle_bbq_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Calculadora Inteligente de Churrasco & Eventos em Sertãozinho."""
+    query = update.callback_query
+    if query:
+        await query.answer()
+
+    # Parâmetros padrão: 4 homens, 4 mulheres, 2 crianças, 5 horas
+    men = 4
+    women = 4
+    kids = 2
+    hours = 5
+    beer_choice = "spaten_lata_350ml"
+
+    if context.args and len(context.args) >= 3:
+        try:
+            men = int(context.args[0])
+            women = int(context.args[1])
+            kids = int(context.args[2])
+            if len(context.args) >= 4:
+                hours = int(context.args[3])
+        except Exception:
+            pass
+
+    from services.party_calculator import calculate_bbq_plan
+    plan = calculate_bbq_plan(men=men, women=women, kids=kids, duration_hours=hours, beer_type=beer_choice)
+    q = plan["quantities"]
+    t = plan["totals"]
+
+    lines = [
+        f"🥩 *CHURRASCÔMETRO SERTÃOZINHO* 🍺\n",
+        f"Planejamento para **{plan['params']['total_people']} pessoas** ({men}H, {women}M, {kids}C - {hours}h de festa):\n",
+        f"📦 *LISTA DE CONSUMO ESTIMADA:*",
+        f"• **Carnes:** `{q['total_meat_kg']} kg` (Picanha: {q['picanha_kg']}kg, Contrafilé: {q['contrafile_kg']}kg, Linguiça: {q['linguica_kg']}kg, Frango: {q['frango_kg']}kg)",
+        f"• **Cervejas:** `{q['total_beer_cans']} latas 350ml`",
+        f"• **Refrigerante / Suco:** `{q['soda_2l_bottles']} garrafas 2L`",
+        f"• **Carvão & Gelo:** `{q['carvao_kg']}kg carvão` + `{q['gelo_kg']}kg gelo` + `{q['pao_alho_pct']} pct pão de alho`\n",
+        f"⚔️ *BATALHA DO CHURRASCO EM SERTÃOZINHO:*",
+        f"🏪 **Savegnago:** `R$ {t['savegnago']:.2f}`",
+        f"🏪 **Copercana:** `R$ {t['copercana']:.2f}`",
+        f"🏪 **Paulistão Atacadista:** `R$ {t['paulistao']:.2f}`",
+        f"🌟 **Churrasco Otimizado (Mix Ideal):** `R$ {t['mix_otimizado']:.2f}`\n",
+        f"💰 *Economia Máxima Dividindo Compras:* **R$ {plan['economy_mix']:.2f}**",
+        f"👥 *Custo Médio por Pessoa:* **R$ {plan['cost_per_person']:.2f}**\n",
+        f"💡 _Dica: Digite `/churrasco 6 6 3` para simular 6 homens, 6 mulheres e 3 crianças._"
+    ]
+
+    keyboard = InlineKeyboardMarkup([
+        [
+            InlineKeyboardButton("👥 10 Pessoas (Padrão)", callback_data="bbq_preset:4:4:2"),
+            InlineKeyboardButton("👨‍👩‍👧‍👦 15 Pessoas", callback_data="bbq_preset:6:6:3"),
+        ],
+        [
+            InlineKeyboardButton("🎉 20 Pessoas (Festa)", callback_data="bbq_preset:8:8:4"),
+            InlineKeyboardButton("📱 Enviar no WhatsApp", callback_data="menu_microsite"),
+        ],
+        [InlineKeyboardButton("🔙 Voltar ao Início", callback_data="menu_start")]
+    ])
+
+    if query:
+        await query.edit_message_text("\n".join(lines), reply_markup=keyboard, parse_mode="Markdown")
+    elif update.message:
+        await update.message.reply_text("\n".join(lines), reply_markup=keyboard, parse_mode="Markdown")
+
+async def handle_weekly_specials_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Guia e Radar de Dias de Ofertas e Encartes em Sertãozinho."""
+    query = update.callback_query
+    if query:
+        await query.answer()
+
+    from services.weekly_specials import get_today_specials
+    specials = get_today_specials()
+
+    lines = [
+        f"🗓️ *RADAR DE DIAS DE OFERTAS — SERTÃOZINHO* 📢\n",
+        f"🔥 *HOJE É {specials['day_name'].upper()}:*",
+    ]
+
+    for h in specials["highlights"]:
+        lines.append(f"• 🏪 *{h['store']}* ({h['badge']}):\n  _{h['theme']}_ — {h['desc']}")
+
+    lines.append("\n📅 *CALENDÁRIO SEMANAL DE ENCARTES:*")
+    lines.append("• **Terça/Quarta:** Terça e Quarta Verde no *Copercana* & Feira no *Paulistão* 🥬")
+    lines.append("• **Quarta/Quinta:** Super Feira de Hortifruti no *Savegnago* 🍎")
+    lines.append("• **Quinta:** Quinta do Açougue & Carnes no *Paulistão Atacadista* 🥩")
+    lines.append("• **Sexta/Sábado:** Festival de Carnes & Cervejas no *Savegnago* e *Paulistão* 🍺")
+    lines.append("• **Fim de Semana:** Ofertas do Cooperado *Copercana* & Adega *Savegnago* 🍷")
+
+    keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("🥩 Calcular Churrasco", callback_data="menu_bbq")],
+        [InlineKeyboardButton("🛒 Comparar Carrinho de Hoje", callback_data="menu_basket")],
+        [InlineKeyboardButton("🔙 Menu Principal", callback_data="menu_start")]
+    ])
+
+    if query:
+        await query.edit_message_text("\n".join(lines), reply_markup=keyboard, parse_mode="Markdown")
+    elif update.message:
+        await update.message.reply_text("\n".join(lines), reply_markup=keyboard, parse_mode="Markdown")
+
+async def handle_puro_malte_ranking(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Ranking de Cervejas Puro Malte por Menor Custo por Litro."""
+    query = update.callback_query
+    if query:
+        await query.answer()
+
+    from database import get_connection
+    from services.unit_parser import parse_unit_pricing
+
+    beers = []
+    with get_connection() as conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            SELECT p.name, p.store, p.link, ph.price, ph.original_price
+            FROM products p
+            JOIN price_history ph ON ph.product_id = p.id
+            WHERE p.category = 'cerveja'
+            GROUP BY p.id
+            ORDER BY ph.price ASC
+        """)
+        rows = cursor.fetchall()
+
+        for r in rows:
+            name_low = r["name"].lower()
+            # Filtra apenas puro malte
+            if any(pm in name_low for pm in ["puro malte", "spaten", "heineken", "amstel", "corona", "stella", "eisenbahn", "colorado"]):
+                u_info = parse_unit_pricing(r["name"], r["price"], r["original_price"], category="cerveja")
+                if u_info.get("price_per_liter"):
+                    beers.append({
+                        "name": r["name"],
+                        "store": r["store"],
+                        "price": r["price"],
+                        "unit_pricing": u_info,
+                        "price_per_liter": u_info["price_per_liter"]
+                    })
+
+    beers.sort(key=lambda x: x["price_per_liter"])
+
+    lines = ["🥇 *RANKING: MENOR CUSTO POR LITRO (PURO MALTE)* 🍺\n"]
+    lines.append("Cervejas puro malte com maior custo-benefício em Sertãozinho e Online:\n")
+
+    medals = ["🥇", "🥈", "🥉", "4️⃣", "5️⃣", "6️⃣"]
+    for idx, b in enumerate(beers[:6]):
+        m = medals[idx] if idx < len(medals) else "•"
+        u = b["unit_pricing"]
+        lines.append(
+            f"{m} *{b['name']}*\n"
+            f"  💰 **R$ {u['price_per_liter']:.2f} / Litro** (🎯 {u['unit_price_display']})\n"
+            f"  🏪 {b['store']} | Total: R$ {b['price']:.2f}\n"
+        )
+
+    lines.append("💡 _Dica: Packs fechados de 12x ou fardos costumam ter o menor preço por litro._")
+
+    keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("🥩 Simular Churrasco", callback_data="menu_bbq")],
+        [InlineKeyboardButton("🌐 Ver no Microsite", callback_data="menu_microsite")],
+        [InlineKeyboardButton("🔙 Menu Principal", callback_data="menu_start")]
+    ])
+
+    if query:
+        await query.edit_message_text("\n".join(lines), reply_markup=keyboard, parse_mode="Markdown")
+    elif update.message:
+        await update.message.reply_text("\n".join(lines), reply_markup=keyboard, parse_mode="Markdown")
 
 async def handle_scanner_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Menu explicativo do scanner de fotos e código de barras no mercado."""
@@ -1104,6 +1291,12 @@ async def callback_router(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await handle_online_env_menu(update, context)
     elif data == "menu_basket" or data.startswith("basket_preset:"):
         await handle_basket_comparison(update, context)
+    elif data == "menu_bbq" or data.startswith("bbq_preset:"):
+        await handle_bbq_command(update, context)
+    elif data == "menu_specials":
+        await handle_weekly_specials_command(update, context)
+    elif data == "menu_puromalte":
+        await handle_puro_malte_ranking(update, context)
     elif data == "menu_scanner":
         await handle_scanner_menu(update, context)
     elif data == "menu_toggle_alerts":
@@ -1123,6 +1316,9 @@ def main():
 
     # Handlers de comandos
     app.add_handler(CommandHandler(["start", "ajuda", "menu"], start_command))
+    app.add_handler(CommandHandler(["churrasco", "churras", "festa", "churrascometro"], handle_bbq_command))
+    app.add_handler(CommandHandler(["dias", "encartes", "folhetos", "ofertasdodia"], handle_weekly_specials_command))
+    app.add_handler(CommandHandler(["puromalte", "rankingpuro", "cervejas"], handle_puro_malte_ranking))
     app.add_handler(CommandHandler(["basica", "cesta", "produtos", "essenciais"], handle_basic_basket))
     app.add_handler(CommandHandler(["vigiar", "adicionar"], watch_command))
     app.add_handler(CommandHandler(["minhalista", "lista"], handle_watchlist))

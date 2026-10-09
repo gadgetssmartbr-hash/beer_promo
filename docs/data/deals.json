@@ -1,7 +1,7 @@
 {
   "metadata": {
     "city": "Sertãozinho - SP",
-    "updated_at": "09/10/2026 às 08:50",
+    "updated_at": "09/10/2026 às 09:20",
     "telegram_bot": "https://t.me/beerstz_bot",
     "total_items": 219
   },
@@ -135,11 +135,11 @@
       "min_price": 219.0,
       "avg_price": 219.0,
       "max_price": 219.0,
-      "total_checks": 31,
+      "total_checks": 32,
       "current_price": 219.0,
       "original_price": 389.0,
       "discount_pct": 43.7,
-      "last_recorded_at": "2026-10-09 08:00:03",
+      "last_recorded_at": "2026-10-09 09:00:05",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -297,11 +297,11 @@
       "min_price": 109.9,
       "avg_price": 109.9,
       "max_price": 109.9,
-      "total_checks": 31,
+      "total_checks": 32,
       "current_price": 109.9,
       "original_price": 179.7,
       "discount_pct": 38.8,
-      "last_recorded_at": "2026-10-09 08:00:03",
+      "last_recorded_at": "2026-10-09 09:00:05",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -987,11 +987,11 @@
       "min_price": 31.9,
       "avg_price": 31.9,
       "max_price": 31.9,
-      "total_checks": 25,
+      "total_checks": 26,
       "current_price": 31.9,
       "original_price": 42.9,
       "discount_pct": 25.6,
-      "last_recorded_at": "2026-10-09 08:00:03",
+      "last_recorded_at": "2026-10-09 09:00:05",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -1207,20 +1207,20 @@
       "store": "Amazon Brasil",
       "link": "https://www.amazon.com.br/s?k=vinho+cordero+con+piel+de+lobo&i=grocery",
       "min_price": 44.9,
-      "avg_price": 44.89999999999999,
+      "avg_price": 44.9,
       "max_price": 44.9,
-      "total_checks": 26,
+      "total_checks": 27,
       "current_price": 44.9,
       "original_price": 59.9,
       "discount_pct": 25.0,
-      "last_recorded_at": "2026-10-09 08:00:03",
+      "last_recorded_at": "2026-10-09 09:00:05",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -1425,11 +1425,11 @@
       "min_price": 24.9,
       "avg_price": 24.9,
       "max_price": 24.9,
-      "total_checks": 25,
+      "total_checks": 26,
       "current_price": 24.9,
       "original_price": 32.9,
       "discount_pct": 24.3,
-      "last_recorded_at": "2026-10-09 08:00:03",
+      "last_recorded_at": "2026-10-09 09:00:05",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -3837,11 +3837,11 @@
       "min_price": 124.9,
       "avg_price": 124.9,
       "max_price": 124.9,
-      "total_checks": 31,
+      "total_checks": 32,
       "current_price": 124.9,
       "original_price": 159.6,
       "discount_pct": 21.7,
-      "last_recorded_at": "2026-10-09 08:00:03",
+      "last_recorded_at": "2026-10-09 09:00:05",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -5553,11 +5553,11 @@
       "min_price": 189.9,
       "avg_price": 189.9,
       "max_price": 189.9,
-      "total_checks": 31,
+      "total_checks": 32,
       "current_price": 189.9,
       "original_price": 239.4,
       "discount_pct": 20.7,
-      "last_recorded_at": "2026-10-09 08:00:03",
+      "last_recorded_at": "2026-10-09 09:00:05",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -8103,11 +8103,11 @@
       "min_price": 36.9,
       "avg_price": 36.9,
       "max_price": 36.9,
-      "total_checks": 31,
+      "total_checks": 32,
       "current_price": 36.9,
       "original_price": 45.9,
       "discount_pct": 19.6,
-      "last_recorded_at": "2026-10-09 08:00:03",
+      "last_recorded_at": "2026-10-09 09:00:05",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -15267,11 +15267,11 @@
       "min_price": 37.9,
       "avg_price": 37.9,
       "max_price": 37.9,
-      "total_checks": 26,
+      "total_checks": 27,
       "current_price": 37.9,
       "original_price": 44.9,
       "discount_pct": 15.6,
-      "last_recorded_at": "2026-10-09 08:00:03",
+      "last_recorded_at": "2026-10-09 09:00:05",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -17211,11 +17211,11 @@
       "min_price": 38.9,
       "avg_price": 38.9,
       "max_price": 38.9,
-      "total_checks": 31,
+      "total_checks": 32,
       "current_price": 38.9,
       "original_price": 44.9,
       "discount_pct": 13.4,
-      "last_recorded_at": "2026-10-09 08:00:03",
+      "last_recorded_at": "2026-10-09 09:00:05",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -17523,11 +17523,11 @@
       "min_price": 62.28,
       "avg_price": 62.28,
       "max_price": 62.28,
-      "total_checks": 31,
+      "total_checks": 32,
       "current_price": 62.28,
       "original_price": 71.88,
       "discount_pct": 13.4,
-      "last_recorded_at": "2026-10-09 08:00:03",
+      "last_recorded_at": "2026-10-09 09:00:05",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -18795,11 +18795,11 @@
       "min_price": 52.68,
       "avg_price": 52.68,
       "max_price": 52.68,
-      "total_checks": 31,
+      "total_checks": 32,
       "current_price": 52.68,
       "original_price": 59.9,
       "discount_pct": 12.1,
-      "last_recorded_at": "2026-10-09 08:00:03",
+      "last_recorded_at": "2026-10-09 09:00:05",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -27835,6 +27835,317 @@
       }
     }
   ],
+  "weekly_specials": {
+    "today_key": "sexta",
+    "day_name": "Sexta-feira",
+    "highlights": [
+      {
+        "store": "Savegnago",
+        "theme": "Sexta e Sábado do Churrasco & Cerveja",
+        "badge": "🍺 Cerveja & Carnes",
+        "color": "rose",
+        "desc": "Ofertas em picanha, cervejas puro malte, carvão e linguiças para o fim de semana."
+      },
+      {
+        "store": "Paulistão Atacadista",
+        "theme": "Sexta do Boteco & Bebidas",
+        "badge": "🍺 Fardos de Bebidas",
+        "color": "amber",
+        "desc": "Fardos de cerveja (Spaten, Heineken, Amstel) e refrigerantes no menor preço."
+      },
+      {
+        "store": "Copercana",
+        "theme": "Sexta Especial do Cooperado",
+        "badge": "⭐ Cooperados",
+        "color": "teal",
+        "desc": "Descontos no cartão Copercana e ofertas em itens de mercearia e açougue."
+      }
+    ],
+    "all_schedule": {
+      "segunda": {
+        "day_name": "Segunda-feira",
+        "highlights": [
+          {
+            "store": "Savegnago",
+            "theme": "Segunda da Limpeza & Higiene",
+            "badge": "🧼 Limpeza",
+            "color": "sky",
+            "desc": "Descontos em sabão líquido, amaciantes, papel higiênico e desinfetantes."
+          },
+          {
+            "store": "Paulistão Atacadista",
+            "theme": "Segunda do Comerciante & Food Service",
+            "badge": "📦 Volume",
+            "color": "amber",
+            "desc": "Preços especiais em embalagens institucionais e caixas fechadas."
+          }
+        ]
+      },
+      "terca": {
+        "day_name": "Terça-feira",
+        "highlights": [
+          {
+            "store": "Copercana",
+            "theme": "Terça e Quarta Verde",
+            "badge": "🥬 Hortifruti",
+            "color": "emerald",
+            "desc": "Feira completa com frutas, legumes e verduras direto dos produtores cooperados."
+          },
+          {
+            "store": "Paulistão Atacadista",
+            "theme": "Terça da Feira & Hortifruti Atacado",
+            "badge": "🥬 Feira",
+            "color": "emerald",
+            "desc": "Sacos e caixas de batata, cebola, tomate e frutas com preço de atacado."
+          }
+        ]
+      },
+      "quarta": {
+        "day_name": "Quarta-feira",
+        "highlights": [
+          {
+            "store": "Savegnago",
+            "theme": "Quarta e Quinta do Hortifruti",
+            "badge": "🥬 Super Feira",
+            "color": "emerald",
+            "desc": "A maior feira da rede com bananas, tomates, maçãs e legumes frescos."
+          },
+          {
+            "store": "Copercana",
+            "theme": "Quarta Verde (2º Dia)",
+            "badge": "🥬 Hortifruti",
+            "color": "emerald",
+            "desc": "Continuação da feira de hortifruti com preços reduzidos."
+          }
+        ]
+      },
+      "quinta": {
+        "day_name": "Quinta-feira",
+        "highlights": [
+          {
+            "store": "Paulistão Atacadista",
+            "theme": "Quinta do Açougue & Carnes",
+            "badge": "🥩 Açougue",
+            "color": "rose",
+            "desc": "Cortes nobres bovinos, picanha, contrafilé e frango com desconto especial."
+          },
+          {
+            "store": "Savegnago",
+            "theme": "Quinta do Hortifruti & Padaria",
+            "badge": "🥖 Pães & Feira",
+            "color": "amber",
+            "desc": "Fechamento da feira e ofertas no setor de padaria e laticínios."
+          }
+        ]
+      },
+      "sexta": {
+        "day_name": "Sexta-feira",
+        "highlights": [
+          {
+            "store": "Savegnago",
+            "theme": "Sexta e Sábado do Churrasco & Cerveja",
+            "badge": "🍺 Cerveja & Carnes",
+            "color": "rose",
+            "desc": "Ofertas em picanha, cervejas puro malte, carvão e linguiças para o fim de semana."
+          },
+          {
+            "store": "Paulistão Atacadista",
+            "theme": "Sexta do Boteco & Bebidas",
+            "badge": "🍺 Fardos de Bebidas",
+            "color": "amber",
+            "desc": "Fardos de cerveja (Spaten, Heineken, Amstel) e refrigerantes no menor preço."
+          },
+          {
+            "store": "Copercana",
+            "theme": "Sexta Especial do Cooperado",
+            "badge": "⭐ Cooperados",
+            "color": "teal",
+            "desc": "Descontos no cartão Copercana e ofertas em itens de mercearia e açougue."
+          }
+        ]
+      },
+      "sabado": {
+        "day_name": "Sábado",
+        "highlights": [
+          {
+            "store": "Savegnago",
+            "theme": "Sábado da Família & Adega",
+            "badge": "🍷 Vinhos & Carnes",
+            "color": "wine",
+            "desc": "Descontos em vinhos importados, queijos, carnes nobres e cervejas artesanais."
+          },
+          {
+            "store": "Copercana",
+            "theme": "Sábado do Churrasco",
+            "badge": "🥩 Carnes",
+            "color": "rose",
+            "desc": "Cortes especiais de açougue e cervejas geladas."
+          },
+          {
+            "store": "Paulistão Atacadista",
+            "theme": "Sábado do Carrinho Cheio",
+            "badge": "🛒 Cesta Básica",
+            "color": "sky",
+            "desc": "Ofertas em volume para abastecer o mês da família."
+          }
+        ]
+      },
+      "domingo": {
+        "day_name": "Domingo",
+        "highlights": [
+          {
+            "store": "Savegnago",
+            "theme": "Domingo de Ofertas Relâmpago",
+            "badge": "⚡ Relâmpago",
+            "color": "amber",
+            "desc": "Ofertas exclusivas de domingo em carnes, aves e bebidas."
+          },
+          {
+            "store": "Copercana",
+            "theme": "Domingo em Família",
+            "badge": "🥖 Padaria & Assados",
+            "color": "teal",
+            "desc": "Frango assado, massas e bebidas para o almoço de domingo."
+          }
+        ]
+      }
+    }
+  },
+  "default_bbq_plan": {
+    "params": {
+      "men": 4,
+      "women": 4,
+      "kids": 2,
+      "total_people": 10,
+      "duration_hours": 5,
+      "beer_type": "spaten_lata_350ml"
+    },
+    "quantities": {
+      "total_meat_kg": 3.56,
+      "picanha_kg": 1.25,
+      "contrafile_kg": 0.89,
+      "linguica_kg": 0.89,
+      "frango_kg": 0.53,
+      "total_beer_cans": 40,
+      "soda_2l_bottles": 2,
+      "carvao_kg": 4,
+      "gelo_kg": 10,
+      "pao_alho_pct": 2
+    },
+    "itemized": {
+      "picanha": {
+        "name": "Picanha Bovina",
+        "qty": 1.25,
+        "unit": "kg"
+      },
+      "contrafile": {
+        "name": "Contrafilé",
+        "qty": 0.89,
+        "unit": "kg"
+      },
+      "linguica": {
+        "name": "Linguiça Toscana",
+        "qty": 0.89,
+        "unit": "kg"
+      },
+      "frango": {
+        "name": "Filé de Frango",
+        "qty": 0.53,
+        "unit": "kg"
+      },
+      "cerveja": {
+        "name": "Spaten Lata 350ml",
+        "qty": 40,
+        "unit": "latas"
+      },
+      "refrigerante": {
+        "name": "Coca-Cola 2L",
+        "qty": 2,
+        "unit": "pet 2L"
+      },
+      "carvao": {
+        "name": "Carvão Especial 4kg",
+        "qty": 1,
+        "unit": "saco 4kg",
+        "fixed_price": 18.9
+      },
+      "gelo": {
+        "name": "Gelo em Cubos 5kg",
+        "qty": 2,
+        "unit": "saco 5kg",
+        "fixed_price": 12.0
+      },
+      "pao_alho": {
+        "name": "Pão de Alho 400g",
+        "qty": 2,
+        "unit": "pct",
+        "fixed_price": 12.9
+      }
+    },
+    "totals": {
+      "savegnago": 424.11,
+      "copercana": 409.9,
+      "paulistao": 394.51,
+      "mix_otimizado": 394.51
+    },
+    "ranked_stores": [
+      {
+        "store": "Paulistão Atacadista",
+        "store_key": "paulistao",
+        "total": 394.51
+      },
+      {
+        "store": "Supermercados Copercana",
+        "store_key": "copercana",
+        "total": 409.9
+      },
+      {
+        "store": "Savegnago Supermercados",
+        "store_key": "savegnago",
+        "total": 424.11
+      }
+    ],
+    "best_picks": {
+      "Picanha": {
+        "store": "paulistao",
+        "unit_price": 57.9,
+        "total_cost": 72.38,
+        "qty": 1.25
+      },
+      "Contrafilé": {
+        "store": "paulistao",
+        "unit_price": 36.9,
+        "total_cost": 32.84,
+        "qty": 0.89
+      },
+      "Linguiça": {
+        "store": "paulistao",
+        "unit_price": 16.9,
+        "total_cost": 15.04,
+        "qty": 0.89
+      },
+      "Frango": {
+        "store": "paulistao",
+        "unit_price": 15.8,
+        "total_cost": 8.37,
+        "qty": 0.53
+      },
+      "Cerveja": {
+        "store": "paulistao",
+        "unit_price": 4.49,
+        "total_cost": 179.6,
+        "qty": 40
+      },
+      "Refrigerante": {
+        "store": "paulistao",
+        "unit_price": 8.79,
+        "total_cost": 17.58,
+        "qty": 2
+      }
+    },
+    "economy_mix": 29.6,
+    "cost_per_person": 39.45
+  },
   "store_battles": [
     {
       "query": "Heineken",
