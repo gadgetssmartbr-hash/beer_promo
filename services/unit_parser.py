@@ -12,6 +12,56 @@ Trata especificamente cada setor com rigorosa ordem de precedência:
 import re
 from typing import Dict, Any, Optional
 
+def detect_country_and_beer_style(name: str) -> Dict[str, Any]:
+    """Identifica o país de origem, bandeira emoji, estilo da cerveja e se é importada."""
+    name_lower = (name or "").lower()
+    
+    # 1. Alemanha
+    if any(k in name_lower for k in ["paulaner", "erdinger", "franziskaner", "weihenstephaner", "warsteiner", "spaten", "hofbrau", "lowenbrau", "krombacher", "bitburger", "schofferhofer", "beck's", "becks"]):
+        style = "Weissbier (Trigo)" if any(k in name_lower for k in ["weiss", "weizen", "trigo", "hefe"]) else ("Munich Helles" if "spaten" in name_lower or "helles" in name_lower else "German Pilsener")
+        is_imp = not ("spaten" in name_lower and "brasil" in name_lower) # Spaten tem fábrica nacional Ambev, mas outras são 100% importadas
+        if any(k in name_lower for k in ["paulaner", "erdinger", "franziskaner", "weihenstephaner", "warsteiner"]):
+            is_imp = True
+        return {"country": "Alemanha", "flag": "🇩🇪", "origin": "Importada" if is_imp else "Puro Malte", "style": style, "is_imported": is_imp}
+        
+    # 2. Bélgica
+    if any(k in name_lower for k in ["hoegaarden", "leffe", "duvel", "la chouffe", "chouffe", "delirium", "chimay", "rochefort", "westmalle", "kasteel", "gulden draak", "stella artois", "stella"]):
+        style = "Witbier" if "hoegaarden" in name_lower or "witbier" in name_lower else ("Belgian Blond Ale" if "leffe" in name_lower or "chouffe" in name_lower else ("Belgian Strong Ale" if "duvel" in name_lower or "delirium" in name_lower else ("Trapista" if "chimay" in name_lower else "Belgian Ale")))
+        is_imp = not ("stella" in name_lower and "lata" in name_lower) # Stella tem linha nacional
+        if any(k in name_lower for k in ["hoegaarden", "leffe", "duvel", "chouffe", "delirium", "chimay"]):
+            is_imp = True
+        return {"country": "Bélgica", "flag": "🇧🇪", "origin": "Importada" if is_imp else "Puro Malte", "style": style, "is_imported": is_imp}
+        
+    # 3. Irlanda / Reino Unido
+    if any(k in name_lower for k in ["guinness", "kilkenny", "murphy's", "fuller's", "fullers", "london pride", "newcastle"]):
+        style = "Dry Stout Nitrogenada" if "guinness" in name_lower else "English Pale Ale / ESB"
+        return {"country": "Irlanda/UK", "flag": "🇮🇪", "origin": "Importada", "style": style, "is_imported": True}
+        
+    # 4. Estados Unidos
+    if any(k in name_lower for k in ["blue moon", "goose island", "brooklyn", "samuel adams", "sierra nevada", "budweiser"]):
+        style = "Belgian White" if "blue moon" in name_lower else ("American IPA" if "goose" in name_lower or "ipa" in name_lower else "American Lager")
+        is_imp = any(k in name_lower for k in ["blue moon", "brooklyn", "samuel adams", "sierra nevada"])
+        return {"country": "EUA", "flag": "🇺🇸", "origin": "Importada" if is_imp else "Nacional", "style": style, "is_imported": is_imp}
+        
+    # 5. México
+    if any(k in name_lower for k in ["corona", "modelo", "sol", "dos equis", "pacifico"]):
+        return {"country": "México", "flag": "🇲🇽", "origin": "Importada", "style": "Mexican Premium Lager", "is_imported": True}
+        
+    # 6. Japão
+    if any(k in name_lower for k in ["asahi", "sapporo", "kirin"]):
+        return {"country": "Japão", "flag": "🇯🇵", "origin": "Importada", "style": "Japanese Super Dry Lager", "is_imported": True}
+        
+    # 7. Holanda
+    if any(k in name_lower for k in ["heineken", "amstel", "grolsch", "bavaria"]):
+        return {"country": "Holanda", "flag": "🇳🇱", "origin": "Puro Malte", "style": "European Premium Lager", "is_imported": False}
+        
+    # 8. Brasil (Artesanais & Especiais)
+    if any(k in name_lower for k in ["colorado", "baden baden", "roleta russa", "eisenbahn", "wals", "wäls"]):
+        style = "Trigo e Mel (Appia)" if "appia" in name_lower else ("India Pale Ale (IPA)" if "indica" in name_lower or "ipa" in name_lower else ("Ribeirão Lager" if "ribeir" in name_lower else "Artesanal Premium"))
+        return {"country": "Brasil", "flag": "🇧🇷", "origin": "Artesanal Nacional", "style": style, "is_imported": False}
+        
+    return {"country": "Brasil", "flag": "🇧🇷", "origin": "Nacional", "style": "Lager / Pilsen", "is_imported": False}
+
 def parse_unit_pricing(
     name: str,
     price: float,
@@ -174,6 +224,9 @@ def parse_unit_pricing(
         unit_price_formatted = f"R$ {unit_price:.2f}".replace('.', ',')
         unit_price_display = f"{unit_price_formatted} / {unit_name}"
 
+        # Detecção de Origem / País e Estilo para Cervejas e Vinhos
+        beer_meta = detect_country_and_beer_style(name_lower)
+
         return {
             "is_pack": is_pack,
             "units_count": units_count,
@@ -184,7 +237,11 @@ def parse_unit_pricing(
             "unit_price": unit_price,
             "orig_unit_price": orig_unit_price,
             "price_per_liter": price_per_liter,
-            "unit_price_display": unit_price_display
+            "unit_price_display": unit_price_display,
+            "is_imported": beer_meta["is_imported"],
+            "country": beer_meta["country"],
+            "country_flag": beer_meta["flag"],
+            "beer_style": beer_meta["style"]
         }
 
     # =========================================================================

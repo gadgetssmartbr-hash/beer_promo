@@ -83,15 +83,16 @@ def get_main_menu_keyboard(chat_id: int = None):
             InlineKeyboardButton("📸 Foto / Scanner no Mercado", callback_data="menu_scanner"),
         ],
         [
-            InlineKeyboardButton("🍺 Cervejas em Oferta", callback_data="menu_beers"),
+            InlineKeyboardButton("🍺 Cervejas Nacionais", callback_data="menu_beers"),
+            InlineKeyboardButton("🌍 Cervejas Importadas", callback_data="menu_importadas"),
+        ],
+        [
             InlineKeyboardButton("🍷 Vinhos & Adega", callback_data="menu_wines"),
+            InlineKeyboardButton("🌐 Ver Microsite Web", callback_data="menu_microsite"),
         ],
         # --- UTILITÁRIOS ---
         [
-            InlineKeyboardButton("🌐 Ver Microsite Web (Separado)", callback_data="menu_microsite"),
             alert_btn,
-        ],
-        [
             InlineKeyboardButton("🔄 Atualizar Menu", callback_data="menu_start"),
         ]
     ]
@@ -151,6 +152,7 @@ async def handle_online_env_menu(update: Update, context: ContextTypes.DEFAULT_T
         "Ambiente 100% focado em compras pela internet com entrega em Sertãozinho:\n"
         "• **Mercado Livre Full** (Packs fechados e latas)\n"
         "• **Amazon Brasil** (Frete Prime e caixas)\n"
+        "• **Cervejas Importadas** (Alemanha, Bélgica, Irlanda, EUA)\n"
         "• **Clubes Wine & Evino** (Kits e vinhos importados)\n"
         "• **Zé Delivery & iFood** (Cupons e entrega rápida)\n\n"
         "👇 *Escolha uma opção online:*"
@@ -159,11 +161,11 @@ async def handle_online_env_menu(update: Update, context: ContextTypes.DEFAULT_T
     keyboard = InlineKeyboardMarkup([
         [
             InlineKeyboardButton("🍺 Cervejas em Packs (ML / Amazon)", callback_data="menu_beers"),
-            InlineKeyboardButton("🍷 Vinhos & Espumantes", callback_data="menu_wines"),
+            InlineKeyboardButton("🌍 Cervejas Importadas & Especiais", callback_data="menu_importadas"),
         ],
         [
+            InlineKeyboardButton("🍷 Vinhos & Espumantes", callback_data="menu_wines"),
             InlineKeyboardButton("🎟️ Central de Cupons & Zé Delivery", callback_data="menu_coupons"),
-            InlineKeyboardButton("🍇 Clubes Wine & Evino", callback_data="menu_wines"),
         ],
         [
             InlineKeyboardButton("📊 Termômetro de Preços na Web", callback_data="menu_history"),
@@ -215,9 +217,10 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "🏪 **Supermercados de Sertãozinho** (Savegnago, Copercana e Paulistão Atacadista)\n"
         "🌐 **Marketplaces & Adega Online** (Mercado Livre, Amazon, Wine e Zé Delivery)\n\n"
         "⚡ *Novos Recursos Ativos:*\n"
+        "• 🌍 **/importadas** — Cervejas Importadas & Especiais (🇩🇪, 🇧🇪, 🇮🇪, 🇺🇸)\n"
+        "• 🥇 **/puromalte** — Ranking de Custo por Litro de Puro Malte\n"
         "• 🥩 **/churrasco** — Churrascômetro com Batalha 3 Redes\n"
         "• 🗓️ **/dias** — Radar de Encartes & Dias de Oferta da Semana\n"
-        "• 🥇 **/puromalte** — Ranking de Custo por Litro de Puro Malte\n"
         "• 🛒 **/carrinho** — Simulador de Economia Familiar\n\n"
         "👇 *Escolha uma opção abaixo ou digite o nome do produto:*"
     )
@@ -855,6 +858,75 @@ async def handle_puro_malte_ranking(update: Update, context: ContextTypes.DEFAUL
     elif update.message:
         await update.message.reply_text("\n".join(lines), reply_markup=keyboard, parse_mode="Markdown")
 
+async def handle_imported_beers(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Exibe seleção e ranking de Cervejas Importadas e Artesanais Especiais."""
+    query = update.callback_query
+    if query:
+        await query.answer()
+
+    from database import get_connection
+    from services.unit_parser import parse_unit_pricing, detect_country_and_beer_style
+
+    imported_items = []
+    with get_connection() as conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            SELECT p.name, p.store, p.link, p.country, p.country_flag, p.beer_style, ph.price, ph.original_price
+            FROM products p
+            JOIN price_history ph ON ph.product_id = p.id
+            WHERE p.is_imported = 1 OR p.category = 'importada'
+            GROUP BY p.name, p.store
+            ORDER BY ph.price ASC
+        """)
+        rows = cursor.fetchall()
+        for r in rows:
+            u_info = parse_unit_pricing(r["name"], r["price"], r["original_price"], category="cerveja")
+            c_info = detect_country_and_beer_style(r["name"])
+            flag = r["country_flag"] or c_info["flag"]
+            country = r["country"] or c_info["country"]
+            style = r["beer_style"] or c_info["style"]
+            imported_items.append({
+                "name": r["name"],
+                "store": r["store"],
+                "link": r["link"],
+                "price": r["price"],
+                "flag": flag,
+                "country": country,
+                "style": style,
+                "unit_pricing": u_info,
+            })
+
+    lines = ["🌍 *CERVEJAS IMPORTADAS & ESPECIAIS EM DESTAQUE* 🍻\n"]
+    lines.append("Seleção das melhores cervejas do mundo disponíveis para Sertãozinho e Online:\n")
+
+    if imported_items:
+        for item in imported_items[:8]:
+            u = item["unit_pricing"]
+            flag = item["flag"]
+            style_str = f" • _{item['style']}_" if item['style'] else ""
+            unit_display = f" (🎯 {u['unit_price_display']})" if u.get("is_pack") else f" ({u['unit_name']})"
+            
+            lines.append(
+                f"{flag} *{item['name']}*{style_str}\n"
+                f"  💰 **R$ {item['price']:.2f}**{unit_display}\n"
+                f"  🏪 {item['store']} | 🔗 [Ver Oferta]({item['link']})\n"
+            )
+    else:
+        lines.append("⚡ Nenhuma cerveja importada encontrada no momento. Atualizando base...")
+
+    lines.append("💡 _Alemanha (Weissbier), Bélgica (Witbier/Blonde), Irlanda (Stout) e artesanais._")
+
+    keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("🌐 Ver Todas no Microsite", callback_data="menu_microsite")],
+        [InlineKeyboardButton("🍺 Ranking Puro Malte", callback_data="menu_puromalte")],
+        [InlineKeyboardButton("🔙 Menu Principal", callback_data="menu_start")]
+    ])
+
+    if query:
+        await query.edit_message_text("\n".join(lines), reply_markup=keyboard, parse_mode="Markdown", disable_web_page_preview=True)
+    elif update.message:
+        await update.message.reply_text("\n".join(lines), reply_markup=keyboard, parse_mode="Markdown", disable_web_page_preview=True)
+
 async def handle_scanner_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Menu explicativo do scanner de fotos e código de barras no mercado."""
     query = update.callback_query
@@ -1273,6 +1345,8 @@ async def callback_router(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await handle_grocery(update, context)
     elif data == "menu_beers":
         await handle_beers(update, context)
+    elif data == "menu_importadas":
+        await handle_imported_beers(update, context)
     elif data == "menu_wines":
         await handle_wines(update, context)
     elif data == "menu_supermarkets":
@@ -1319,6 +1393,7 @@ def main():
     app.add_handler(CommandHandler(["churrasco", "churras", "festa", "churrascometro"], handle_bbq_command))
     app.add_handler(CommandHandler(["dias", "encartes", "folhetos", "ofertasdodia"], handle_weekly_specials_command))
     app.add_handler(CommandHandler(["puromalte", "rankingpuro", "cervejas"], handle_puro_malte_ranking))
+    app.add_handler(CommandHandler(["importadas", "importada", "especiais", "artesanais"], handle_imported_beers))
     app.add_handler(CommandHandler(["basica", "cesta", "produtos", "essenciais"], handle_basic_basket))
     app.add_handler(CommandHandler(["vigiar", "adicionar"], watch_command))
     app.add_handler(CommandHandler(["minhalista", "lista"], handle_watchlist))

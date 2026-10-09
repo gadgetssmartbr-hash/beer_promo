@@ -868,6 +868,9 @@
           <button class="tool-tab-btn active px-3.5 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 text-white transition-all shadow-sm" data-tab="deals" data-category="all">
             ✨ Ofertas Locais
           </button>
+          <button class="tool-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-indigo-950/90 hover:bg-indigo-900 border border-indigo-700/80 text-indigo-300 transition-all flex items-center gap-1.5" data-tab="deals" data-category="importada">
+            <span>🌍</span> Cervejas Importadas (Alemanha, Bélgica, etc.)
+          </button>
           <button class="tool-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all flex items-center gap-1.5" data-tab="bbq">
             <span>🥩</span> Churrascômetro
           </button>
@@ -909,6 +912,9 @@
           </span>
           <button class="tool-tab-btn active px-3.5 py-1.5 rounded-lg text-xs font-bold bg-rose-700 text-white transition-all shadow-sm" data-tab="deals" data-category="all">
             ✨ Todas Ofertas Online
+          </button>
+          <button class="tool-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-indigo-950/90 hover:bg-indigo-900 border border-indigo-700/80 text-indigo-300 transition-all flex items-center gap-1.5" data-tab="deals" data-category="importada">
+            <span>🌍</span> Cervejas Importadas (Packs & Especiais)
           </button>
           <button class="tool-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-amber-950/80 hover:bg-amber-900 border border-amber-700/80 text-amber-300 transition-all flex items-center gap-1.5" data-tab="deals" data-category="cerveja" data-sort="puro_malte_cost">
             <span>🥇</span> Puro Malte (Custo/L)
@@ -1036,7 +1042,16 @@
         const matchesEnvironment = (currentEnv === 'local') ? (item.origin_type === 'local' || isLocalStore) : (item.origin_type === 'online' || isOnlineStore);
         if (!matchesEnvironment) return false;
 
-        const matchesCategory = (currentCategory === 'all') || (item.category === currentCategory);
+        let matchesCategory = false;
+        if (currentCategory === 'all') {
+          matchesCategory = true;
+        } else if (currentCategory === 'importada') {
+          const isImp = Boolean(item.is_imported || (item.unit_pricing && item.unit_pricing.is_imported) || (item.country && item.country !== 'Brasil'));
+          matchesCategory = isImp && (item.category === 'cerveja');
+        } else {
+          matchesCategory = (item.category === currentCategory);
+        }
+
         const itemName = (item.name || '').toLowerCase();
         const matchesSearch = !search || itemName.includes(search) || storeLower.includes(search);
         const matchesScore = !currentScoreFilter || (item.intelligence && item.intelligence.score === currentScoreFilter);
@@ -1182,6 +1197,13 @@
                     <span>${icon}</span>
                     <span>${item.store}</span>
                   </span>
+
+                  ${(item.country_flag || (item.unit_pricing && item.unit_pricing.country_flag)) ? `
+                    <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold bg-indigo-950/90 text-indigo-300 border border-indigo-700/80 shadow-sm">
+                      <span>${item.country_flag || item.unit_pricing.country_flag}</span>
+                      <span>${item.country || item.unit_pricing.country}</span>
+                    </span>
+                  ` : ''}
                   
                   <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold ${isPack ? 'bg-amber-950/80 text-amber-300 border border-amber-700' : 'bg-slate-800/80 text-slate-300 border border-slate-700'}">
                     <span>${isPack ? '📦' : '🥫'}</span>

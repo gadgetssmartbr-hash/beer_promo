@@ -24,7 +24,12 @@ def scrape_amazon_deals() -> List[Dict[str, Any]]:
         ("amaciante concentrado", "limpeza"),
         ("papel higienico", "limpeza"),
         ("cafe em graos torrado", "mercearia"),
-        ("cerveja pack", "cerveja"),
+        ("cerveja paulaner", "cerveja"),
+        ("cerveja erdinger", "cerveja"),
+        ("cerveja guinness", "cerveja"),
+        ("cerveja leffe", "cerveja"),
+        ("cerveja hoegaarden", "cerveja"),
+        ("cerveja blue moon", "cerveja"),
         ("vinho tinto", "vinho")
     ]
     
@@ -70,9 +75,57 @@ def scrape_amazon_deals() -> List[Dict[str, Any]]:
         except Exception:
             pass
 
-    # Curadoria padrão de itens de mercado na Amazon
-    if len(deals) < 4:
+    # Curadoria padrão de Cervejas Importadas e Mercado na Amazon
+    if len(deals) < 6:
         deals.extend([
+            {
+                "name": "Cerveja Paulaner Hefe-Weissbier Garrafa 500ml (Alemanha) (Amazon Prime)",
+                "category": "cerveja",
+                "store": "Amazon Brasil",
+                "price": 19.90,
+                "original_price": 25.90,
+                "link": "https://www.amazon.com.br/s?k=cerveja+paulaner&i=grocery"
+            },
+            {
+                "name": "Cerveja Erdinger Weissbier Garrafa 500ml (Alemanha) (Amazon Prime)",
+                "category": "cerveja",
+                "store": "Amazon Brasil",
+                "price": 18.90,
+                "original_price": 23.90,
+                "link": "https://www.amazon.com.br/s?k=cerveja+erdinger&i=grocery"
+            },
+            {
+                "name": "Cerveja Guinness Draught Stout Lata 440ml c/ Nitrogênio (Irlanda) (Amazon Prime)",
+                "category": "cerveja",
+                "store": "Amazon Brasil",
+                "price": 23.90,
+                "original_price": 28.90,
+                "link": "https://www.amazon.com.br/s?k=cerveja+guinness&i=grocery"
+            },
+            {
+                "name": "Cerveja Leffe Blonde 330ml Long Neck (Bélgica) (Amazon Prime)",
+                "category": "cerveja",
+                "store": "Amazon Brasil",
+                "price": 9.90,
+                "original_price": 12.90,
+                "link": "https://www.amazon.com.br/s?k=cerveja+leffe&i=grocery"
+            },
+            {
+                "name": "Cerveja Hoegaarden Witbier 330ml Long Neck (Bélgica) (Amazon Prime)",
+                "category": "cerveja",
+                "store": "Amazon Brasil",
+                "price": 8.90,
+                "original_price": 11.49,
+                "link": "https://www.amazon.com.br/s?k=cerveja+hoegaarden&i=grocery"
+            },
+            {
+                "name": "Cerveja Blue Moon Belgian White 355ml Long Neck (EUA) (Amazon Prime)",
+                "category": "cerveja",
+                "store": "Amazon Brasil",
+                "price": 9.90,
+                "original_price": 12.50,
+                "link": "https://www.amazon.com.br/s?k=cerveja+blue+moon&i=grocery"
+            },
             {
                 "name": "Sabão Líquido Ariel Expert Concentrado 2L (Amazon Prime)",
                 "category": "limpeza",
@@ -88,22 +141,6 @@ def scrape_amazon_deals() -> List[Dict[str, Any]]:
                 "price": 24.90,
                 "original_price": 32.90,
                 "link": "https://www.amazon.com.br/s?k=amaciante+downy&i=grocery"
-            },
-            {
-                "name": "Cerveja Corona Extra 330ml Pack com 6 unidades (Amazon Prime)",
-                "category": "cerveja",
-                "store": "Amazon Brasil",
-                "price": 37.90,
-                "original_price": 44.90,
-                "link": "https://www.amazon.com.br/s?k=cerveja+corona+pack&i=grocery"
-            },
-            {
-                "name": "Vinho Argentino Cordero Con Piel de Lobo Malbec 750ml (Amazon)",
-                "category": "vinho",
-                "store": "Amazon Brasil",
-                "price": 44.90,
-                "original_price": 59.90,
-                "link": "https://www.amazon.com.br/s?k=vinho+cordero+con+piel+de+lobo&i=grocery"
             }
         ])
 

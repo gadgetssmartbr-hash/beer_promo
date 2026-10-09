@@ -263,6 +263,10 @@ def get_all_products_with_intelligence() -> List[Dict[str, Any]]:
             )
             data["unit_pricing"] = unit_info
             data["unit_price"] = unit_info["unit_price"]
+            data["is_imported"] = unit_info.get("is_imported", False)
+            data["country"] = unit_info.get("country", "")
+            data["country_flag"] = unit_info.get("country_flag", "")
+            data["beer_style"] = unit_info.get("beer_style", "")
 
             # Linha do tempo de pontos históricos
             pts = get_product_history_points(data["id"])

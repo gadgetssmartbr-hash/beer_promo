@@ -1,7 +1,7 @@
 {
   "metadata": {
     "city": "Sertãozinho - SP",
-    "updated_at": "09/10/2026 às 10:32",
+    "updated_at": "09/10/2026 às 10:57",
     "telegram_bot": "https://t.me/beerstz_bot",
     "total_items": 221
   },
@@ -43,6 +43,10 @@
         "unit_price_display": "R$ 39,78 / 500g"
       },
       "unit_price": 39.78,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 39780.0,
@@ -103,6 +107,10 @@
         "unit_price_display": "R$ 47,92 / 250g"
       },
       "unit_price": 47.92,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 191.68,
@@ -160,9 +168,17 @@
         "unit_price": 36.5,
         "orig_unit_price": 64.83,
         "price_per_liter": 48.67,
-        "unit_price_display": "R$ 36,50 / garrafa"
+        "unit_price_display": "R$ 36,50 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 36.5,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 219.0,
@@ -322,9 +338,17 @@
         "unit_price": 36.63,
         "orig_unit_price": 59.9,
         "price_per_liter": 48.84,
-        "unit_price_display": "R$ 36,63 / garrafa"
+        "unit_price_display": "R$ 36,63 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 36.63,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 109.9,
@@ -487,6 +511,10 @@
         "unit_price_display": "R$ 13,30 / L"
       },
       "unit_price": 13.3,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 39.9,
@@ -643,6 +671,10 @@
         "unit_price_display": "R$ 12,97 / L"
       },
       "unit_price": 12.97,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 38.9,
@@ -805,6 +837,10 @@
         "unit_price_display": "R$ 12,30 / L"
       },
       "unit_price": 12.3,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 49.9,
@@ -865,6 +901,10 @@
         "unit_price_display": "R$ 12,30 / L"
       },
       "unit_price": 12.3,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 36.9,
@@ -1015,6 +1055,10 @@
         "unit_price_display": "R$ 15,95 / L"
       },
       "unit_price": 15.95,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 31.9,
@@ -1174,9 +1218,17 @@
         "unit_price": 31.88,
         "orig_unit_price": 42.51,
         "price_per_liter": 42.51,
-        "unit_price_display": "R$ 31,88 / garrafa"
+        "unit_price_display": "R$ 31,88 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 31.88,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 42.51,
@@ -1234,9 +1286,17 @@
         "unit_price": 44.9,
         "orig_unit_price": 59.9,
         "price_per_liter": 59.87,
-        "unit_price_display": "R$ 44,90 / garrafa"
+        "unit_price_display": "R$ 44,90 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 44.9,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 44.9,
@@ -1399,6 +1459,10 @@
         "unit_price_display": "R$ 59,90 / kg"
       },
       "unit_price": 59.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 59.9,
@@ -1453,6 +1517,10 @@
         "unit_price_display": "R$ 24,90 / frasco"
       },
       "unit_price": 24.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 24.9,
@@ -1615,6 +1683,10 @@
         "unit_price_display": "R$ 18,90 / kg"
       },
       "unit_price": 18.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 18.9,
@@ -1669,6 +1741,10 @@
         "unit_price_display": "R$ 62,90 / kg"
       },
       "unit_price": 62.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 82.9,
@@ -1729,6 +1805,10 @@
         "unit_price_display": "R$ 62,90 / kg"
       },
       "unit_price": 62.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 62.9,
@@ -1879,6 +1959,10 @@
         "unit_price_display": "R$ 6,89 / kg"
       },
       "unit_price": 6.89,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 6.89,
@@ -2029,6 +2113,10 @@
         "unit_price_display": "R$ 68,90 / kg"
       },
       "unit_price": 68.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 68.9,
@@ -2179,6 +2267,10 @@
         "unit_price_display": "R$ 9,90 / un"
       },
       "unit_price": 9.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 9.9,
@@ -2329,6 +2421,10 @@
         "unit_price_display": "R$ 19,90 / 500g"
       },
       "unit_price": 19.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 19.9,
@@ -2383,6 +2479,10 @@
         "unit_price_display": "R$ 4,99 / kg"
       },
       "unit_price": 4.99,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 4.99,
@@ -2530,9 +2630,17 @@
         "unit_price": 49.9,
         "orig_unit_price": 64.9,
         "price_per_liter": 66.53,
-        "unit_price_display": "R$ 49,90 / garrafa"
+        "unit_price_display": "R$ 49,90 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 49.9,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 49.9,
@@ -2695,6 +2803,10 @@
         "unit_price_display": "R$ 16,90 / kg"
       },
       "unit_price": 16.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 16.9,
@@ -2845,6 +2957,10 @@
         "unit_price_display": "R$ 57,90 / kg"
       },
       "unit_price": 57.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 74.9,
@@ -2905,6 +3021,10 @@
         "unit_price_display": "R$ 57,90 / kg"
       },
       "unit_price": 57.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 57.9,
@@ -3052,9 +3172,17 @@
         "unit_price": 51.9,
         "orig_unit_price": 66.9,
         "price_per_liter": 69.2,
-        "unit_price_display": "R$ 51,90 / garrafa"
+        "unit_price_display": "R$ 51,90 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 51.9,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 51.9,
@@ -3211,6 +3339,10 @@
         "unit_price_display": "R$ 3,49 / sabonete"
       },
       "unit_price": 3.49,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 3.49,
@@ -3361,6 +3493,10 @@
         "unit_price_display": "R$ 34,90 / garrafa"
       },
       "unit_price": 34.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 34.9,
@@ -3415,6 +3551,10 @@
         "unit_price_display": "R$ 5,29 / tubo"
       },
       "unit_price": 5.29,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 5.29,
@@ -3565,6 +3705,10 @@
         "unit_price_display": "R$ 1,95 / sachê"
       },
       "unit_price": 1.95,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 1.95,
@@ -3715,6 +3859,10 @@
         "unit_price_display": "R$ 4,69 / un"
       },
       "unit_price": 4.69,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 4.69,
@@ -3862,9 +4010,17 @@
         "unit_price": 31.23,
         "orig_unit_price": 39.9,
         "price_per_liter": 41.64,
-        "unit_price_display": "R$ 31,23 / garrafa"
+        "unit_price_display": "R$ 31,23 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 31.23,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 124.9,
@@ -4027,6 +4183,10 @@
         "unit_price_display": "R$ 5,49 / un"
       },
       "unit_price": 5.49,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 5.49,
@@ -4177,6 +4337,10 @@
         "unit_price_display": "R$ 5,49 / tubo"
       },
       "unit_price": 5.49,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 5.49,
@@ -4327,6 +4491,10 @@
         "unit_price_display": "R$ 5,49 / kg"
       },
       "unit_price": 5.49,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 5.49,
@@ -4477,6 +4645,10 @@
         "unit_price_display": "R$ 21,90 / frasco"
       },
       "unit_price": 21.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 27.9,
@@ -4537,6 +4709,10 @@
         "unit_price_display": "R$ 6,29 / kg"
       },
       "unit_price": 6.29,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 6.29,
@@ -4687,6 +4863,10 @@
         "unit_price_display": "R$ 36,90 / kg"
       },
       "unit_price": 36.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 46.9,
@@ -4747,6 +4927,10 @@
         "unit_price_display": "R$ 7,49 / kg"
       },
       "unit_price": 7.49,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 7.49,
@@ -4894,9 +5078,17 @@
         "unit_price": 48.9,
         "orig_unit_price": 62.0,
         "price_per_liter": 65.2,
-        "unit_price_display": "R$ 48,90 / garrafa"
+        "unit_price_display": "R$ 48,90 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 48.9,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 62.0,
@@ -4954,9 +5146,17 @@
         "unit_price": 32.39,
         "orig_unit_price": 41.0,
         "price_per_liter": 43.19,
-        "unit_price_display": "R$ 32,39 / garrafa"
+        "unit_price_display": "R$ 32,39 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 32.39,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 41.0,
@@ -5017,6 +5217,10 @@
         "unit_price_display": "R$ 18,90 / kg"
       },
       "unit_price": 18.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 18.9,
@@ -5167,6 +5371,10 @@
         "unit_price_display": "R$ 1,91 / rolo"
       },
       "unit_price": 1.91,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 22.9,
@@ -5221,6 +5429,10 @@
         "unit_price_display": "R$ 22,90 / frasco"
       },
       "unit_price": 22.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 28.9,
@@ -5281,6 +5493,10 @@
         "unit_price_display": "R$ 1,91 / rolo"
       },
       "unit_price": 1.91,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 22.9,
@@ -5431,6 +5647,10 @@
         "unit_price_display": "R$ 22,90 / frasco"
       },
       "unit_price": 22.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 22.9,
@@ -5578,9 +5798,17 @@
         "unit_price": 31.65,
         "orig_unit_price": 39.9,
         "price_per_liter": 42.2,
-        "unit_price_display": "R$ 31,65 / garrafa"
+        "unit_price_display": "R$ 31,65 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 31.65,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 189.9,
@@ -5743,6 +5971,10 @@
         "unit_price_display": "R$ 38,90 / kg"
       },
       "unit_price": 38.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 48.9,
@@ -5803,6 +6035,10 @@
         "unit_price_display": "R$ 8,69 / un"
       },
       "unit_price": 8.69,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 8.69,
@@ -5953,6 +6189,10 @@
         "unit_price_display": "R$ 9,49 / un"
       },
       "unit_price": 9.49,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 9.49,
@@ -6103,6 +6343,10 @@
         "unit_price_display": "R$ 9,49 / un"
       },
       "unit_price": 9.49,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 9.49,
@@ -6253,6 +6497,10 @@
         "unit_price_display": "R$ 19,90 / kg"
       },
       "unit_price": 19.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 19.9,
@@ -6403,6 +6651,10 @@
         "unit_price_display": "R$ 1,66 / rolo"
       },
       "unit_price": 1.66,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 19.9,
@@ -6553,6 +6805,10 @@
         "unit_price_display": "R$ 19,90 / frasco"
       },
       "unit_price": 19.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 19.9,
@@ -6703,6 +6959,10 @@
         "unit_price_display": "R$ 21,50 / frasco"
       },
       "unit_price": 21.5,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 21.5,
@@ -6853,6 +7113,10 @@
         "unit_price_display": "R$ 23,90 / frasco"
       },
       "unit_price": 23.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 23.9,
@@ -6907,6 +7171,10 @@
         "unit_price_display": "R$ 23,90 / frasco"
       },
       "unit_price": 23.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 23.9,
@@ -7054,9 +7322,17 @@
         "unit_price": 31.9,
         "orig_unit_price": 39.9,
         "price_per_liter": 42.53,
-        "unit_price_display": "R$ 31,90 / garrafa"
+        "unit_price_display": "R$ 31,90 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 31.9,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 39.9,
@@ -7117,6 +7393,10 @@
         "unit_price_display": "R$ 3,99 / sabonete"
       },
       "unit_price": 3.99,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 3.99,
@@ -7267,6 +7547,10 @@
         "unit_price_display": "R$ 4,79 / tubo"
       },
       "unit_price": 4.79,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 4.79,
@@ -7417,6 +7701,10 @@
         "unit_price_display": "R$ 5,99 / kg"
       },
       "unit_price": 5.99,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 5.99,
@@ -7567,6 +7855,10 @@
         "unit_price_display": "R$ 7,99 / kg"
       },
       "unit_price": 7.99,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 7.99,
@@ -7717,6 +8009,10 @@
         "unit_price_display": "R$ 39,90 / kg"
       },
       "unit_price": 39.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 39.9,
@@ -7771,6 +8067,10 @@
         "unit_price_display": "R$ 39,90 / kg"
       },
       "unit_price": 39.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 39.9,
@@ -7918,9 +8218,17 @@
         "unit_price": 47.9,
         "orig_unit_price": 59.9,
         "price_per_liter": 63.87,
-        "unit_price_display": "R$ 47,90 / garrafa"
+        "unit_price_display": "R$ 47,90 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 47.9,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 59.9,
@@ -7978,9 +8286,17 @@
         "unit_price": 47.9,
         "orig_unit_price": 59.9,
         "price_per_liter": 63.87,
-        "unit_price_display": "R$ 47,90 / garrafa"
+        "unit_price_display": "R$ 47,90 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 47.9,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 47.9,
@@ -8128,9 +8444,17 @@
         "unit_price": 36.9,
         "orig_unit_price": 45.9,
         "price_per_liter": 49.2,
-        "unit_price_display": "R$ 36,90 / garrafa"
+        "unit_price_display": "R$ 36,90 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 36.9,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 36.9,
@@ -8293,6 +8617,10 @@
         "unit_price_display": "R$ 36,90 / kg"
       },
       "unit_price": 36.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 36.9,
@@ -8443,6 +8771,10 @@
         "unit_price_display": "R$ 7,99 / un"
       },
       "unit_price": 7.99,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 7.99,
@@ -8593,6 +8925,10 @@
         "unit_price_display": "R$ 8,80 / un"
       },
       "unit_price": 8.8,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 8.8,
@@ -8743,6 +9079,10 @@
         "unit_price_display": "R$ 9,29 / un"
       },
       "unit_price": 9.29,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 9.29,
@@ -8893,6 +9233,10 @@
         "unit_price_display": "R$ 16,90 / kg"
       },
       "unit_price": 16.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 16.9,
@@ -9040,9 +9384,17 @@
         "unit_price": 46.9,
         "orig_unit_price": 58.0,
         "price_per_liter": 62.53,
-        "unit_price_display": "R$ 46,90 / garrafa"
+        "unit_price_display": "R$ 46,90 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 46.9,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 58.0,
@@ -9103,6 +9455,10 @@
         "unit_price_display": "R$ 2,15 / frasco"
       },
       "unit_price": 2.15,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 2.15,
@@ -9253,6 +9609,10 @@
         "unit_price_display": "R$ 42,90 / kg"
       },
       "unit_price": 42.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 42.9,
@@ -9403,6 +9763,10 @@
         "unit_price_display": "R$ 3,89 / sabonete"
       },
       "unit_price": 3.89,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 3.89,
@@ -9553,6 +9917,10 @@
         "unit_price_display": "R$ 6,49 / kg"
       },
       "unit_price": 6.49,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 6.49,
@@ -9703,6 +10071,10 @@
         "unit_price_display": "R$ 38,90 / kg"
       },
       "unit_price": 38.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 38.9,
@@ -9853,6 +10225,10 @@
         "unit_price_display": "R$ 2,19 / sachê"
       },
       "unit_price": 2.19,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 2.19,
@@ -10003,6 +10379,10 @@
         "unit_price_display": "R$ 1,82 / rolo"
       },
       "unit_price": 1.82,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 21.9,
@@ -10153,6 +10533,10 @@
         "unit_price_display": "R$ 21,90 / frasco"
       },
       "unit_price": 21.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 21.9,
@@ -10303,6 +10687,10 @@
         "unit_price_display": "R$ 5,29 / un"
       },
       "unit_price": 5.29,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 5.29,
@@ -10453,6 +10841,10 @@
         "unit_price_display": "R$ 8,90 / un"
       },
       "unit_price": 8.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 8.9,
@@ -10603,6 +10995,10 @@
         "unit_price_display": "R$ 17,90 / kg"
       },
       "unit_price": 17.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 17.9,
@@ -10753,6 +11149,10 @@
         "unit_price_display": "R$ 17,90 / 500g"
       },
       "unit_price": 17.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 17.9,
@@ -10903,6 +11303,10 @@
         "unit_price_display": "R$ 8,60 / un"
       },
       "unit_price": 8.6,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 8.6,
@@ -11053,6 +11457,10 @@
         "unit_price_display": "R$ 2,29 / sachê"
       },
       "unit_price": 2.29,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 2.29,
@@ -11203,6 +11611,10 @@
         "unit_price_display": "R$ 2,29 / kg"
       },
       "unit_price": 2.29,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 2.29,
@@ -11353,6 +11765,10 @@
         "unit_price_display": "R$ 22,90 / frasco"
       },
       "unit_price": 22.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 22.9,
@@ -11500,9 +11916,17 @@
         "unit_price": 36.9,
         "orig_unit_price": 44.9,
         "price_per_liter": 49.2,
-        "unit_price_display": "R$ 36,90 / garrafa"
+        "unit_price_display": "R$ 36,90 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 36.9,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 44.9,
@@ -11563,6 +11987,10 @@
         "unit_price_display": "R$ 6,99 / kg"
       },
       "unit_price": 6.99,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 6.99,
@@ -11713,6 +12141,10 @@
         "unit_price_display": "R$ 18,90 / 500g"
       },
       "unit_price": 18.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 18.9,
@@ -11863,6 +12295,10 @@
         "unit_price_display": "R$ 0,63 / ovo"
       },
       "unit_price": 0.63,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 18.9,
@@ -12013,6 +12449,10 @@
         "unit_price_display": "R$ 6,19 / kg"
       },
       "unit_price": 6.19,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 6.19,
@@ -12163,6 +12603,10 @@
         "unit_price_display": "R$ 13,69 / kg"
       },
       "unit_price": 13.69,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 21.9,
@@ -12313,6 +12757,10 @@
         "unit_price_display": "R$ 2,39 / frasco"
       },
       "unit_price": 2.39,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 2.39,
@@ -12463,6 +12911,10 @@
         "unit_price_display": "R$ 14,94 / kg"
       },
       "unit_price": 14.94,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 23.9,
@@ -12613,6 +13065,10 @@
         "unit_price_display": "R$ 5,79 / kg"
       },
       "unit_price": 5.79,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 5.79,
@@ -12763,6 +13219,10 @@
         "unit_price_display": "R$ 38,90 / kg"
       },
       "unit_price": 38.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 38.9,
@@ -12910,9 +13370,17 @@
         "unit_price": 137.99,
         "orig_unit_price": 165.9,
         "price_per_liter": 183.99,
-        "unit_price_display": "R$ 137,99 / garrafa"
+        "unit_price_display": "R$ 137,99 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 137.99,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 165.9,
@@ -12973,6 +13441,10 @@
         "unit_price_display": "R$ 2,49 / frasco"
       },
       "unit_price": 2.49,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 2.49,
@@ -13123,6 +13595,10 @@
         "unit_price_display": "R$ 3,49 / pct"
       },
       "unit_price": 3.49,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 3.49,
@@ -13273,6 +13749,10 @@
         "unit_price_display": "R$ 7,49 / kg"
       },
       "unit_price": 7.49,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 7.49,
@@ -13423,6 +13903,10 @@
         "unit_price_display": "R$ 0,66 / ovo"
       },
       "unit_price": 0.66,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 19.9,
@@ -13573,6 +14057,10 @@
         "unit_price_display": "R$ 15,56 / kg"
       },
       "unit_price": 15.56,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 24.9,
@@ -13723,6 +14211,10 @@
         "unit_price_display": "R$ 34,90 / kg"
       },
       "unit_price": 34.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 34.9,
@@ -13870,9 +14362,17 @@
         "unit_price": 34.9,
         "orig_unit_price": 41.9,
         "price_per_liter": 46.53,
-        "unit_price_display": "R$ 34,90 / garrafa"
+        "unit_price_display": "R$ 34,90 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 34.9,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 34.9,
@@ -14020,9 +14520,17 @@
         "unit_price": 4.99,
         "orig_unit_price": 5.99,
         "price_per_liter": 14.26,
-        "unit_price_display": "R$ 4,99 / lata"
+        "unit_price_display": "R$ 4,99 / lata",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Ribeirão Lager"
       },
       "unit_price": 4.99,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Ribeirão Lager",
       "history_points": [
         {
           "price": 47.9,
@@ -14083,6 +14591,10 @@
         "unit_price_display": "R$ 49,90 / kg"
       },
       "unit_price": 49.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 59.9,
@@ -14245,6 +14757,10 @@
         "unit_price_display": "R$ 15,80 / kg"
       },
       "unit_price": 15.8,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 15.8,
@@ -14395,6 +14911,10 @@
         "unit_price_display": "R$ 0,58 / ovo"
       },
       "unit_price": 0.58,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 17.5,
@@ -14545,6 +15065,10 @@
         "unit_price_display": "R$ 41,90 / kg"
       },
       "unit_price": 41.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 41.9,
@@ -14695,6 +15219,10 @@
         "unit_price_display": "R$ 31,90 / kg"
       },
       "unit_price": 31.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 31.9,
@@ -14842,9 +15370,17 @@
         "unit_price": 31.9,
         "orig_unit_price": 37.9,
         "price_per_liter": 42.53,
-        "unit_price_display": "R$ 31,90 / garrafa"
+        "unit_price_display": "R$ 31,90 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 31.9,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 31.9,
@@ -14995,6 +15531,10 @@
         "unit_price_display": "R$ 2,69 / kg"
       },
       "unit_price": 2.69,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 2.69,
@@ -15145,6 +15685,10 @@
         "unit_price_display": "R$ 16,80 / 500g"
       },
       "unit_price": 16.8,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 16.8,
@@ -15292,9 +15836,17 @@
         "unit_price": 6.32,
         "orig_unit_price": 7.48,
         "price_per_liter": 19.15,
-        "unit_price_display": "R$ 6,32 / long neck"
+        "unit_price_display": "R$ 6,32 / long neck",
+        "is_imported": true,
+        "country": "México",
+        "country_flag": "🇲🇽",
+        "beer_style": "Mexican Premium Lager"
       },
       "unit_price": 6.32,
+      "is_imported": true,
+      "country": "México",
+      "country_flag": "🇲🇽",
+      "beer_style": "Mexican Premium Lager",
       "history_points": [
         {
           "price": 37.9,
@@ -15457,6 +16009,10 @@
         "unit_price_display": "R$ 6,33 / rolo"
       },
       "unit_price": 6.33,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 151.9,
@@ -15511,6 +16067,10 @@
         "unit_price_display": "R$ 54,90 / kg"
       },
       "unit_price": 54.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 64.9,
@@ -15673,6 +16233,10 @@
         "unit_price_display": "R$ 0,84 / ovo"
       },
       "unit_price": 0.84,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 16.9,
@@ -15820,9 +16384,17 @@
         "unit_price": 33.9,
         "orig_unit_price": 39.9,
         "price_per_liter": 45.2,
-        "unit_price_display": "R$ 33,90 / garrafa"
+        "unit_price_display": "R$ 33,90 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 33.9,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 33.9,
@@ -15973,6 +16545,10 @@
         "unit_price_display": "R$ 33,90 / kg"
       },
       "unit_price": 33.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 33.9,
@@ -16120,9 +16696,17 @@
         "unit_price": 39.57,
         "orig_unit_price": 46.5,
         "price_per_liter": 52.76,
-        "unit_price_display": "R$ 39,57 / garrafa"
+        "unit_price_display": "R$ 39,57 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 39.57,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 279.0,
@@ -16183,6 +16767,10 @@
         "unit_price_display": "R$ 41,90 / kg"
       },
       "unit_price": 41.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 41.9,
@@ -16333,6 +16921,10 @@
         "unit_price_display": "R$ 4,29 / kg"
       },
       "unit_price": 4.29,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 4.29,
@@ -16483,6 +17075,10 @@
         "unit_price_display": "R$ 42,90 / kg"
       },
       "unit_price": 42.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 42.9,
@@ -16633,6 +17229,10 @@
         "unit_price_display": "R$ 2,59 / kg"
       },
       "unit_price": 2.59,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 2.59,
@@ -16783,6 +17383,10 @@
         "unit_price_display": "R$ 3,89 / pct"
       },
       "unit_price": 3.89,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 3.89,
@@ -16933,6 +17537,10 @@
         "unit_price_display": "R$ 12,90 / un"
       },
       "unit_price": 12.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 12.9,
@@ -17083,6 +17691,10 @@
         "unit_price_display": "R$ 0,78 / ovo"
       },
       "unit_price": 0.78,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 15.5,
@@ -17230,9 +17842,17 @@
         "unit_price": 6.48,
         "orig_unit_price": 7.48,
         "price_per_liter": 19.64,
-        "unit_price_display": "R$ 6,48 / long neck"
+        "unit_price_display": "R$ 6,48 / long neck",
+        "is_imported": true,
+        "country": "México",
+        "country_flag": "🇲🇽",
+        "beer_style": "Mexican Premium Lager"
       },
       "unit_price": 6.48,
+      "is_imported": true,
+      "country": "México",
+      "country_flag": "🇲🇽",
+      "beer_style": "Mexican Premium Lager",
       "history_points": [
         {
           "price": 38.9,
@@ -17395,6 +18015,10 @@
         "unit_price_display": "R$ 38,90 / kg"
       },
       "unit_price": 38.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 38.9,
@@ -17542,9 +18166,17 @@
         "unit_price": 5.19,
         "orig_unit_price": 5.99,
         "price_per_liter": 14.83,
-        "unit_price_display": "R$ 5,19 / lata"
+        "unit_price_display": "R$ 5,19 / lata",
+        "is_imported": false,
+        "country": "Holanda",
+        "country_flag": "🇳🇱",
+        "beer_style": "European Premium Lager"
       },
       "unit_price": 5.19,
+      "is_imported": false,
+      "country": "Holanda",
+      "country_flag": "🇳🇱",
+      "beer_style": "European Premium Lager",
       "history_points": [
         {
           "price": 62.28,
@@ -17707,6 +18339,10 @@
         "unit_price_display": "R$ 3,99 / pct"
       },
       "unit_price": 3.99,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 3.99,
@@ -17854,9 +18490,17 @@
         "unit_price": 4.79,
         "orig_unit_price": 5.49,
         "price_per_liter": 13.69,
-        "unit_price_display": "R$ 4,79 / lata"
+        "unit_price_display": "R$ 4,79 / lata",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Ribeirão Lager"
       },
       "unit_price": 4.79,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Ribeirão Lager",
       "history_points": [
         {
           "price": 5.49,
@@ -17917,6 +18561,10 @@
         "unit_price_display": "R$ 4,79 / kg"
       },
       "unit_price": 4.79,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 4.79,
@@ -18067,6 +18715,10 @@
         "unit_price_display": "R$ 0,82 / ovo"
       },
       "unit_price": 0.82,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 16.49,
@@ -18217,6 +18869,10 @@
         "unit_price_display": "R$ 6,99 / kg"
       },
       "unit_price": 6.99,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 6.99,
@@ -18367,6 +19023,10 @@
         "unit_price_display": "R$ 5,58 / kg"
       },
       "unit_price": 5.58,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 27.9,
@@ -18517,6 +19177,10 @@
         "unit_price_display": "R$ 7,89 / kg"
       },
       "unit_price": 7.89,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 7.89,
@@ -18667,6 +19331,10 @@
         "unit_price_display": "R$ 5,78 / kg"
       },
       "unit_price": 5.78,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 28.9,
@@ -18814,9 +19482,17 @@
         "unit_price": 4.39,
         "orig_unit_price": 4.99,
         "price_per_liter": 12.54,
-        "unit_price_display": "R$ 4,39 / lata"
+        "unit_price_display": "R$ 4,39 / lata",
+        "is_imported": true,
+        "country": "Alemanha",
+        "country_flag": "🇩🇪",
+        "beer_style": "Munich Helles"
       },
       "unit_price": 4.39,
+      "is_imported": true,
+      "country": "Alemanha",
+      "country_flag": "🇩🇪",
+      "beer_style": "Munich Helles",
       "history_points": [
         {
           "price": 52.68,
@@ -18979,6 +19655,10 @@
         "unit_price_display": "R$ 43,90 / kg"
       },
       "unit_price": 43.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 49.9,
@@ -19039,6 +19719,10 @@
         "unit_price_display": "R$ 7,49 / kg"
       },
       "unit_price": 7.49,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 7.49,
@@ -19186,9 +19870,17 @@
         "unit_price": 122.55,
         "orig_unit_price": 139.0,
         "price_per_liter": 163.4,
-        "unit_price_display": "R$ 122,55 / garrafa"
+        "unit_price_display": "R$ 122,55 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 122.55,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 139.0,
@@ -19246,9 +19938,17 @@
         "unit_price": 3.79,
         "orig_unit_price": 4.29,
         "price_per_liter": 10.83,
-        "unit_price_display": "R$ 3,79 / lata"
+        "unit_price_display": "R$ 3,79 / lata",
+        "is_imported": false,
+        "country": "Holanda",
+        "country_flag": "🇳🇱",
+        "beer_style": "European Premium Lager"
       },
       "unit_price": 3.79,
+      "is_imported": false,
+      "country": "Holanda",
+      "country_flag": "🇳🇱",
+      "beer_style": "European Premium Lager",
       "history_points": [
         {
           "price": 4.29,
@@ -19309,6 +20009,10 @@
         "unit_price_display": "R$ 4,15 / kg"
       },
       "unit_price": 4.15,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 4.15,
@@ -19459,6 +20163,10 @@
         "unit_price_display": "R$ 5,30 / kg"
       },
       "unit_price": 5.3,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 26.5,
@@ -19609,6 +20317,10 @@
         "unit_price_display": "R$ 4,69 / kg"
       },
       "unit_price": 4.69,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 4.69,
@@ -19756,9 +20468,17 @@
         "unit_price": 7.99,
         "orig_unit_price": 8.99,
         "price_per_liter": 4.0,
-        "unit_price_display": "R$ 7,99 / garrafa"
+        "unit_price_display": "R$ 7,99 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 7.99,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 7.99,
@@ -19909,6 +20629,10 @@
         "unit_price_display": "R$ 4,89 / L"
       },
       "unit_price": 4.89,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 4.89,
@@ -20056,9 +20780,17 @@
         "unit_price": 7.39,
         "orig_unit_price": 8.29,
         "price_per_liter": 3.69,
-        "unit_price_display": "R$ 7,39 / garrafa"
+        "unit_price_display": "R$ 7,39 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 7.39,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 7.39,
@@ -20209,6 +20941,10 @@
         "unit_price_display": "R$ 11,80 / un"
       },
       "unit_price": 11.8,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 11.8,
@@ -20359,6 +21095,10 @@
         "unit_price_display": "R$ 4,39 / kg"
       },
       "unit_price": 4.39,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 4.39,
@@ -20506,9 +21246,17 @@
         "unit_price": 6.19,
         "orig_unit_price": 6.89,
         "price_per_liter": 18.76,
-        "unit_price_display": "R$ 6,19 / long neck"
+        "unit_price_display": "R$ 6,19 / long neck",
+        "is_imported": true,
+        "country": "México",
+        "country_flag": "🇲🇽",
+        "beer_style": "Mexican Premium Lager"
       },
       "unit_price": 6.19,
+      "is_imported": true,
+      "country": "México",
+      "country_flag": "🇲🇽",
+      "beer_style": "Mexican Premium Lager",
       "history_points": [
         {
           "price": 6.89,
@@ -20566,9 +21314,17 @@
         "unit_price": 6.19,
         "orig_unit_price": 6.89,
         "price_per_liter": 18.76,
-        "unit_price_display": "R$ 6,19 / long neck"
+        "unit_price_display": "R$ 6,19 / long neck",
+        "is_imported": true,
+        "country": "México",
+        "country_flag": "🇲🇽",
+        "beer_style": "Mexican Premium Lager"
       },
       "unit_price": 6.19,
+      "is_imported": true,
+      "country": "México",
+      "country_flag": "🇲🇽",
+      "beer_style": "Mexican Premium Lager",
       "history_points": [
         {
           "price": 6.19,
@@ -20716,9 +21472,17 @@
         "unit_price": 7.89,
         "orig_unit_price": 8.79,
         "price_per_liter": 3.94,
-        "unit_price_display": "R$ 7,89 / garrafa"
+        "unit_price_display": "R$ 7,89 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 7.89,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 7.89,
@@ -20869,6 +21633,10 @@
         "unit_price_display": "R$ 12,49 / un"
       },
       "unit_price": 12.49,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 12.49,
@@ -21019,6 +21787,10 @@
         "unit_price_display": "R$ 4,49 / kg"
       },
       "unit_price": 4.49,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 4.49,
@@ -21169,6 +21941,10 @@
         "unit_price_display": "R$ 4,49 / L"
       },
       "unit_price": 4.49,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 4.49,
@@ -21316,9 +22092,17 @@
         "unit_price": 4.49,
         "orig_unit_price": 4.99,
         "price_per_liter": 12.83,
-        "unit_price_display": "R$ 4,49 / lata"
+        "unit_price_display": "R$ 4,49 / lata",
+        "is_imported": true,
+        "country": "Alemanha",
+        "country_flag": "🇩🇪",
+        "beer_style": "Munich Helles"
       },
       "unit_price": 4.49,
+      "is_imported": true,
+      "country": "Alemanha",
+      "country_flag": "🇩🇪",
+      "beer_style": "Munich Helles",
       "history_points": [
         {
           "price": 4.49,
@@ -21466,9 +22250,17 @@
         "unit_price": 35.62,
         "orig_unit_price": 39.57,
         "price_per_liter": 47.49,
-        "unit_price_display": "R$ 35,62 / garrafa"
+        "unit_price_display": "R$ 35,62 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 35.62,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 237.44,
@@ -21526,9 +22318,17 @@
         "unit_price": 4.59,
         "orig_unit_price": 5.09,
         "price_per_liter": 13.11,
-        "unit_price_display": "R$ 4,59 / lata"
+        "unit_price_display": "R$ 4,59 / lata",
+        "is_imported": true,
+        "country": "Alemanha",
+        "country_flag": "🇩🇪",
+        "beer_style": "Munich Helles"
       },
       "unit_price": 4.59,
+      "is_imported": true,
+      "country": "Alemanha",
+      "country_flag": "🇩🇪",
+      "beer_style": "Munich Helles",
       "history_points": [
         {
           "price": 5.09,
@@ -21586,9 +22386,17 @@
         "unit_price": 4.59,
         "orig_unit_price": 5.09,
         "price_per_liter": 13.11,
-        "unit_price_display": "R$ 4,59 / lata"
+        "unit_price_display": "R$ 4,59 / lata",
+        "is_imported": true,
+        "country": "Alemanha",
+        "country_flag": "🇩🇪",
+        "beer_style": "Munich Helles"
       },
       "unit_price": 4.59,
+      "is_imported": true,
+      "country": "Alemanha",
+      "country_flag": "🇩🇪",
+      "beer_style": "Munich Helles",
       "history_points": [
         {
           "price": 4.59,
@@ -21736,9 +22544,17 @@
         "unit_price": 6.49,
         "orig_unit_price": 7.19,
         "price_per_liter": 19.67,
-        "unit_price_display": "R$ 6,49 / long neck"
+        "unit_price_display": "R$ 6,49 / long neck",
+        "is_imported": true,
+        "country": "México",
+        "country_flag": "🇲🇽",
+        "beer_style": "Mexican Premium Lager"
       },
       "unit_price": 6.49,
+      "is_imported": true,
+      "country": "México",
+      "country_flag": "🇲🇽",
+      "beer_style": "Mexican Premium Lager",
       "history_points": [
         {
           "price": 6.49,
@@ -21886,9 +22702,17 @@
         "unit_price": 4.69,
         "orig_unit_price": 5.19,
         "price_per_liter": 13.4,
-        "unit_price_display": "R$ 4,69 / lata"
+        "unit_price_display": "R$ 4,69 / lata",
+        "is_imported": true,
+        "country": "Alemanha",
+        "country_flag": "🇩🇪",
+        "beer_style": "Munich Helles"
       },
       "unit_price": 4.69,
+      "is_imported": true,
+      "country": "Alemanha",
+      "country_flag": "🇩🇪",
+      "beer_style": "Munich Helles",
       "history_points": [
         {
           "price": 4.69,
@@ -21940,9 +22764,17 @@
         "unit_price": 4.69,
         "orig_unit_price": 5.19,
         "price_per_liter": 13.4,
-        "unit_price_display": "R$ 4,69 / lata"
+        "unit_price_display": "R$ 4,69 / lata",
+        "is_imported": true,
+        "country": "Alemanha",
+        "country_flag": "🇩🇪",
+        "beer_style": "Munich Helles"
       },
       "unit_price": 4.69,
+      "is_imported": true,
+      "country": "Alemanha",
+      "country_flag": "🇩🇪",
+      "beer_style": "Munich Helles",
       "history_points": [
         {
           "price": 4.69,
@@ -22090,9 +22922,17 @@
         "unit_price": 3.79,
         "orig_unit_price": 4.19,
         "price_per_liter": 10.83,
-        "unit_price_display": "R$ 3,79 / lata"
+        "unit_price_display": "R$ 3,79 / lata",
+        "is_imported": false,
+        "country": "Holanda",
+        "country_flag": "🇳🇱",
+        "beer_style": "European Premium Lager"
       },
       "unit_price": 3.79,
+      "is_imported": false,
+      "country": "Holanda",
+      "country_flag": "🇳🇱",
+      "beer_style": "European Premium Lager",
       "history_points": [
         {
           "price": 3.79,
@@ -22243,6 +23083,10 @@
         "unit_price_display": "R$ 4,79 / L"
       },
       "unit_price": 4.79,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 4.79,
@@ -22390,9 +23234,17 @@
         "unit_price": 9.49,
         "orig_unit_price": 10.49,
         "price_per_liter": 4.75,
-        "unit_price_display": "R$ 9,49 / garrafa"
+        "unit_price_display": "R$ 9,49 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 9.49,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 9.49,
@@ -22543,6 +23395,10 @@
         "unit_price_display": "R$ 6,79 / un"
       },
       "unit_price": 6.79,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 6.79,
@@ -22690,9 +23546,17 @@
         "unit_price": 8.79,
         "orig_unit_price": 9.69,
         "price_per_liter": 4.39,
-        "unit_price_display": "R$ 8,79 / garrafa"
+        "unit_price_display": "R$ 8,79 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 8.79,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 8.79,
@@ -22843,6 +23707,10 @@
         "unit_price_display": "R$ 6,89 / un"
       },
       "unit_price": 6.89,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 6.89,
@@ -22990,9 +23858,17 @@
         "unit_price": 3.99,
         "orig_unit_price": 4.39,
         "price_per_liter": 11.4,
-        "unit_price_display": "R$ 3,99 / lata"
+        "unit_price_display": "R$ 3,99 / lata",
+        "is_imported": false,
+        "country": "Holanda",
+        "country_flag": "🇳🇱",
+        "beer_style": "European Premium Lager"
       },
       "unit_price": 3.99,
+      "is_imported": false,
+      "country": "Holanda",
+      "country_flag": "🇳🇱",
+      "beer_style": "European Premium Lager",
       "history_points": [
         {
           "price": 3.99,
@@ -23140,9 +24016,17 @@
         "unit_price": 3.99,
         "orig_unit_price": 4.39,
         "price_per_liter": 11.4,
-        "unit_price_display": "R$ 3,99 / lata"
+        "unit_price_display": "R$ 3,99 / lata",
+        "is_imported": false,
+        "country": "Holanda",
+        "country_flag": "🇳🇱",
+        "beer_style": "European Premium Lager"
       },
       "unit_price": 3.99,
+      "is_imported": false,
+      "country": "Holanda",
+      "country_flag": "🇳🇱",
+      "beer_style": "European Premium Lager",
       "history_points": [
         {
           "price": 3.99,
@@ -23290,9 +24174,17 @@
         "unit_price": 5.99,
         "orig_unit_price": 6.59,
         "price_per_liter": 18.15,
-        "unit_price_display": "R$ 5,99 / long neck"
+        "unit_price_display": "R$ 5,99 / long neck",
+        "is_imported": true,
+        "country": "México",
+        "country_flag": "🇲🇽",
+        "beer_style": "Mexican Premium Lager"
       },
       "unit_price": 5.99,
+      "is_imported": true,
+      "country": "México",
+      "country_flag": "🇲🇽",
+      "beer_style": "Mexican Premium Lager",
       "history_points": [
         {
           "price": 5.99,
@@ -23440,9 +24332,17 @@
         "unit_price": 9.29,
         "orig_unit_price": 10.19,
         "price_per_liter": 4.64,
-        "unit_price_display": "R$ 9,29 / garrafa"
+        "unit_price_display": "R$ 9,29 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 9.29,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 9.29,
@@ -23590,9 +24490,17 @@
         "unit_price": 5.29,
         "orig_unit_price": 5.79,
         "price_per_liter": 15.11,
-        "unit_price_display": "R$ 5,29 / lata"
+        "unit_price_display": "R$ 5,29 / lata",
+        "is_imported": false,
+        "country": "Holanda",
+        "country_flag": "🇳🇱",
+        "beer_style": "European Premium Lager"
       },
       "unit_price": 5.29,
+      "is_imported": false,
+      "country": "Holanda",
+      "country_flag": "🇳🇱",
+      "beer_style": "European Premium Lager",
       "history_points": [
         {
           "price": 5.29,
@@ -23749,6 +24657,10 @@
         "unit_price_display": "R$ 6,39 / un"
       },
       "unit_price": 6.39,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 6.39,
@@ -23896,9 +24808,17 @@
         "unit_price": 5.39,
         "orig_unit_price": 5.89,
         "price_per_liter": 15.4,
-        "unit_price_display": "R$ 5,39 / lata"
+        "unit_price_display": "R$ 5,39 / lata",
+        "is_imported": false,
+        "country": "Holanda",
+        "country_flag": "🇳🇱",
+        "beer_style": "European Premium Lager"
       },
       "unit_price": 5.39,
+      "is_imported": false,
+      "country": "Holanda",
+      "country_flag": "🇳🇱",
+      "beer_style": "European Premium Lager",
       "history_points": [
         {
           "price": 5.49,
@@ -24058,9 +24978,17 @@
         "unit_price": 5.59,
         "orig_unit_price": 5.99,
         "price_per_liter": 15.97,
-        "unit_price_display": "R$ 5,59 / lata"
+        "unit_price_display": "R$ 5,59 / lata",
+        "is_imported": false,
+        "country": "Holanda",
+        "country_flag": "🇳🇱",
+        "beer_style": "European Premium Lager"
       },
       "unit_price": 5.59,
+      "is_imported": false,
+      "country": "Holanda",
+      "country_flag": "🇳🇱",
+      "beer_style": "European Premium Lager",
       "history_points": [
         {
           "price": 5.59,
@@ -24217,6 +25145,10 @@
         "unit_price_display": "R$ 2,66 / rolo"
       },
       "unit_price": 2.66,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 42.18,
@@ -24277,6 +25209,10 @@
         "unit_price_display": "R$ 5,81 / rolo"
       },
       "unit_price": 5.81,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 48.95,
@@ -24337,6 +25273,10 @@
         "unit_price_display": "R$ 47,21 / 250g"
       },
       "unit_price": 47.21,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 49.7,
@@ -24394,9 +25334,17 @@
         "unit_price": 47.4,
         "orig_unit_price": 49.9,
         "price_per_liter": 63.2,
-        "unit_price_display": "R$ 47,40 / garrafa"
+        "unit_price_display": "R$ 47,40 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 47.4,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 49.9,
@@ -24454,9 +25402,17 @@
         "unit_price": 56.9,
         "orig_unit_price": 59.9,
         "price_per_liter": 75.87,
-        "unit_price_display": "R$ 56,90 / garrafa"
+        "unit_price_display": "R$ 56,90 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 56.9,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 59.9,
@@ -24514,9 +25470,17 @@
         "unit_price": 69.35,
         "orig_unit_price": 73.0,
         "price_per_liter": 92.47,
-        "unit_price_display": "R$ 69,35 / garrafa"
+        "unit_price_display": "R$ 69,35 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 69.35,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 73.0,
@@ -24577,6 +25541,10 @@
         "unit_price_display": "R$ 3,11 / rolo"
       },
       "unit_price": 3.11,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 78.49,
@@ -24637,6 +25605,10 @@
         "unit_price_display": "R$ 4,75 / rolo"
       },
       "unit_price": 4.75,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 79.95,
@@ -24694,9 +25666,17 @@
         "unit_price": 84.55,
         "orig_unit_price": 89.0,
         "price_per_liter": 112.73,
-        "unit_price_display": "R$ 84,55 / garrafa"
+        "unit_price_display": "R$ 84,55 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 84.55,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 84.55,
@@ -24748,9 +25728,17 @@
         "unit_price": 84.55,
         "orig_unit_price": 89.0,
         "price_per_liter": 112.73,
-        "unit_price_display": "R$ 84,55 / garrafa"
+        "unit_price_display": "R$ 84,55 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 84.55,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 89.0,
@@ -24811,6 +25799,10 @@
         "unit_price_display": "R$ 89,30 / 500g"
       },
       "unit_price": 89.3,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 94.0,
@@ -24868,9 +25860,17 @@
         "unit_price": 103.55,
         "orig_unit_price": 109.0,
         "price_per_liter": 138.07,
-        "unit_price_display": "R$ 103,55 / garrafa"
+        "unit_price_display": "R$ 103,55 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 103.55,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 109.0,
@@ -24931,6 +25931,10 @@
         "unit_price_display": "R$ 9,26 / rolo"
       },
       "unit_price": 9.26,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 111.14,
@@ -24997,6 +26001,10 @@
         "unit_price_display": "R$ 125,30 / 1kg"
       },
       "unit_price": 125.3,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 125.3,
@@ -25048,9 +26056,17 @@
         "unit_price": 179.55,
         "orig_unit_price": 189.0,
         "price_per_liter": 239.4,
-        "unit_price_display": "R$ 179,55 / garrafa"
+        "unit_price_display": "R$ 179,55 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 179.55,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 179.55,
@@ -25102,9 +26118,17 @@
         "unit_price": 227.05,
         "orig_unit_price": 239.0,
         "price_per_liter": 302.73,
-        "unit_price_display": "R$ 227,05 / garrafa"
+        "unit_price_display": "R$ 227,05 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 227.05,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 239.0,
@@ -25165,6 +26189,10 @@
         "unit_price_display": "R$ 1424,05 / 500g"
       },
       "unit_price": 1424.05,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 1499.0,
@@ -25222,9 +26250,17 @@
         "unit_price": 1614.05,
         "orig_unit_price": 1699.0,
         "price_per_liter": 2152.07,
-        "unit_price_display": "R$ 1614,05 / garrafa"
+        "unit_price_display": "R$ 1614,05 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 1614.05,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 1699.0,
@@ -25285,6 +26321,10 @@
         "unit_price_display": "R$ 62,90 / kg"
       },
       "unit_price": 62.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 58.9,
@@ -25447,6 +26487,10 @@
         "unit_price_display": "R$ 6,90 / un"
       },
       "unit_price": 6.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 7.93,
@@ -25507,6 +26551,10 @@
         "unit_price_display": "R$ 8,99 / un"
       },
       "unit_price": 8.99,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 10.34,
@@ -25564,9 +26612,17 @@
         "unit_price": 20.61,
         "orig_unit_price": null,
         "price_per_liter": 27.48,
-        "unit_price_display": "R$ 20,61 / garrafa"
+        "unit_price_display": "R$ 20,61 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 20.61,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 22.9,
@@ -25621,6 +26677,10 @@
         "unit_price_display": "R$ 13,83 / L"
       },
       "unit_price": 13.83,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 13.83,
@@ -25681,6 +26741,10 @@
         "unit_price_display": "R$ 27,99 / kg"
       },
       "unit_price": 27.99,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 27.99,
@@ -25738,9 +26802,17 @@
         "unit_price": 7.42,
         "orig_unit_price": null,
         "price_per_liter": 29.68,
-        "unit_price_display": "R$ 7,42 / lata"
+        "unit_price_display": "R$ 7,42 / lata",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 7.42,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 7.42,
@@ -25798,9 +26870,17 @@
         "unit_price": 36.0,
         "orig_unit_price": null,
         "price_per_liter": 48.0,
-        "unit_price_display": "R$ 36,00 / garrafa"
+        "unit_price_display": "R$ 36,00 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 36.0,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 0.05,
@@ -25861,6 +26941,10 @@
         "unit_price_display": "R$ 38,90 / 250g"
       },
       "unit_price": 38.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 38.9,
@@ -25921,6 +27005,10 @@
         "unit_price_display": "R$ 13,99 / L"
       },
       "unit_price": 13.99,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 0.02,
@@ -25978,9 +27066,17 @@
         "unit_price": 5.7,
         "orig_unit_price": null,
         "price_per_liter": 16.29,
-        "unit_price_display": "R$ 5,70 / lata"
+        "unit_price_display": "R$ 5,70 / lata",
+        "is_imported": false,
+        "country": "Bélgica",
+        "country_flag": "🇧🇪",
+        "beer_style": "Belgian Ale"
       },
       "unit_price": 5.7,
+      "is_imported": false,
+      "country": "Bélgica",
+      "country_flag": "🇧🇪",
+      "beer_style": "Belgian Ale",
       "history_points": [
         {
           "price": 5.7,
@@ -26041,6 +27137,10 @@
         "unit_price_display": "R$ 49,89 / frasco"
       },
       "unit_price": 49.89,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 49.89,
@@ -26107,6 +27207,10 @@
         "unit_price_display": "R$ 50,08 / frasco"
       },
       "unit_price": 50.08,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 50.08,
@@ -26167,6 +27271,10 @@
         "unit_price_display": "R$ 10,79 / L"
       },
       "unit_price": 10.79,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 53.95,
@@ -26227,6 +27335,10 @@
         "unit_price_display": "R$ 54,50 / kg"
       },
       "unit_price": 54.5,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 62.67,
@@ -26284,9 +27396,17 @@
         "unit_price": 4.55,
         "orig_unit_price": null,
         "price_per_liter": 13.0,
-        "unit_price_display": "R$ 4,55 / lata"
+        "unit_price_display": "R$ 4,55 / lata",
+        "is_imported": false,
+        "country": "Holanda",
+        "country_flag": "🇳🇱",
+        "beer_style": "European Premium Lager"
       },
       "unit_price": 4.55,
+      "is_imported": false,
+      "country": "Holanda",
+      "country_flag": "🇳🇱",
+      "beer_style": "European Premium Lager",
       "history_points": [
         {
           "price": 4.55,
@@ -26347,6 +27467,10 @@
         "unit_price_display": "R$ 54,99 / frasco"
       },
       "unit_price": 54.99,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 54.99,
@@ -26410,9 +27534,17 @@
         "unit_price": 5.33,
         "orig_unit_price": null,
         "price_per_liter": 11.27,
-        "unit_price_display": "R$ 5,33 / latão"
+        "unit_price_display": "R$ 5,33 / latão",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
       },
       "unit_price": 5.33,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
       "history_points": [
         {
           "price": 5.33,
@@ -26470,9 +27602,17 @@
         "unit_price": 5.83,
         "orig_unit_price": null,
         "price_per_liter": 12.33,
-        "unit_price_display": "R$ 5,83 / latão"
+        "unit_price_display": "R$ 5,83 / latão",
+        "is_imported": false,
+        "country": "Holanda",
+        "country_flag": "🇳🇱",
+        "beer_style": "European Premium Lager"
       },
       "unit_price": 5.83,
+      "is_imported": false,
+      "country": "Holanda",
+      "country_flag": "🇳🇱",
+      "beer_style": "European Premium Lager",
       "history_points": [
         {
           "price": 5.83,
@@ -26533,6 +27673,10 @@
         "unit_price_display": "R$ 74,90 / 1kg"
       },
       "unit_price": 74.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 74.9,
@@ -26590,9 +27734,17 @@
         "unit_price": 12.9,
         "orig_unit_price": null,
         "price_per_liter": 36.86,
-        "unit_price_display": "R$ 12,90 / lata"
+        "unit_price_display": "R$ 12,90 / lata",
+        "is_imported": true,
+        "country": "Alemanha",
+        "country_flag": "🇩🇪",
+        "beer_style": "Munich Helles"
       },
       "unit_price": 12.9,
+      "is_imported": true,
+      "country": "Alemanha",
+      "country_flag": "🇩🇪",
+      "beer_style": "Munich Helles",
       "history_points": [
         {
           "price": 12.9,
@@ -26653,6 +27805,10 @@
         "unit_price_display": "R$ 127,00 / 1kg"
       },
       "unit_price": 127.0,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
           "price": 127.0,
@@ -27870,6 +29026,239 @@
       }
     },
     {
+      "id": "paulaner_weiss_500ml",
+      "name": "Cerveja Paulaner Hefe-Weissbier 500ml (Alemanha)",
+      "short_name": "Paulaner Weiss 500ml",
+      "category": "cerveja",
+      "category_label": "🍺 Bebidas & Cervejas",
+      "keywords": [
+        "paulaner",
+        "paulaner weiss",
+        "cerveja paulaner",
+        "cerveja trigo alema",
+        "paulaner hefe"
+      ],
+      "barcode": "4066600000276",
+      "unit": "garrafa 500ml",
+      "default_qty": 2,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 19.9,
+        "original_price": 25.9
+      },
+      "copercana": {
+        "price": 20.9,
+        "original_price": 26.9
+      },
+      "paulistao": {
+        "price": 18.9,
+        "original_price": 23.9
+      }
+    },
+    {
+      "id": "erdinger_weiss_500ml",
+      "name": "Cerveja Erdinger Weissbier 500ml (Alemanha)",
+      "short_name": "Erdinger Weiss 500ml",
+      "category": "cerveja",
+      "category_label": "🍺 Bebidas & Cervejas",
+      "keywords": [
+        "erdinger",
+        "erdinger weiss",
+        "cerveja erdinger",
+        "erdinger trigo"
+      ],
+      "barcode": "4002103000021",
+      "unit": "garrafa 500ml",
+      "default_qty": 2,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 18.9,
+        "original_price": 23.9
+      },
+      "copercana": {
+        "price": 19.5,
+        "original_price": 24.9
+      },
+      "paulistao": {
+        "price": 17.9,
+        "original_price": 22.5
+      }
+    },
+    {
+      "id": "franziskaner_weiss_500ml",
+      "name": "Cerveja Franziskaner Hefe-Weissbier Hell 500ml (Alemanha)",
+      "short_name": "Franziskaner Weiss 500ml",
+      "category": "cerveja",
+      "category_label": "🍺 Bebidas & Cervejas",
+      "keywords": [
+        "franziskaner",
+        "franziskaner weiss",
+        "cerveja franziskaner"
+      ],
+      "barcode": "4006067000018",
+      "unit": "garrafa 500ml",
+      "default_qty": 2,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 18.9,
+        "original_price": 23.9
+      },
+      "copercana": {
+        "price": 19.49,
+        "original_price": 24.5
+      },
+      "paulistao": {
+        "price": 17.8,
+        "original_price": 22.0
+      }
+    },
+    {
+      "id": "hoegaarden_330ml",
+      "name": "Cerveja Hoegaarden Witbier 330ml Long Neck (Bélgica)",
+      "short_name": "Hoegaarden Witbier 330ml",
+      "category": "cerveja",
+      "category_label": "🍺 Bebidas & Cervejas",
+      "keywords": [
+        "hoegaarden",
+        "witbier",
+        "cerveja hoegaarden",
+        "hoegaarden 330ml"
+      ],
+      "barcode": "7891991012348",
+      "unit": "long neck 330ml",
+      "default_qty": 4,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 8.9,
+        "original_price": 11.49
+      },
+      "copercana": {
+        "price": 9.2,
+        "original_price": 11.9
+      },
+      "paulistao": {
+        "price": 7.99,
+        "original_price": 10.5
+      }
+    },
+    {
+      "id": "leffe_blonde_330ml",
+      "name": "Cerveja Leffe Blonde 330ml Long Neck (Bélgica)",
+      "short_name": "Leffe Blonde 330ml",
+      "category": "cerveja",
+      "category_label": "🍺 Bebidas & Cervejas",
+      "keywords": [
+        "leffe",
+        "leffe blonde",
+        "cerveja leffe",
+        "leffe 330ml"
+      ],
+      "barcode": "7891991013451",
+      "unit": "long neck 330ml",
+      "default_qty": 4,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 9.9,
+        "original_price": 12.9
+      },
+      "copercana": {
+        "price": 10.49,
+        "original_price": 13.5
+      },
+      "paulistao": {
+        "price": 8.99,
+        "original_price": 11.9
+      }
+    },
+    {
+      "id": "blue_moon_355ml",
+      "name": "Cerveja Blue Moon Belgian White 355ml Long Neck (EUA)",
+      "short_name": "Blue Moon 355ml",
+      "category": "cerveja",
+      "category_label": "🍺 Bebidas & Cervejas",
+      "keywords": [
+        "blue moon",
+        "cerveja blue moon",
+        "blue moon 355ml",
+        "belgian white"
+      ],
+      "barcode": "7896045507016",
+      "unit": "long neck 355ml",
+      "default_qty": 4,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 9.9,
+        "original_price": 12.9
+      },
+      "copercana": {
+        "price": 10.5,
+        "original_price": 13.2
+      },
+      "paulistao": {
+        "price": 8.99,
+        "original_price": 11.8
+      }
+    },
+    {
+      "id": "guinness_440ml",
+      "name": "Cerveja Guinness Draught Stout Lata 440ml c/ Nitrogênio (Irlanda)",
+      "short_name": "Guinness Stout 440ml",
+      "category": "cerveja",
+      "category_label": "🍺 Bebidas & Cervejas",
+      "keywords": [
+        "guinness",
+        "guinness stout",
+        "cerveja guinness",
+        "guinness nitrogenio",
+        "guinness 440ml"
+      ],
+      "barcode": "5000213000674",
+      "unit": "lata 440ml",
+      "default_qty": 2,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 23.9,
+        "original_price": 29.9
+      },
+      "copercana": {
+        "price": 24.5,
+        "original_price": 30.5
+      },
+      "paulistao": {
+        "price": 22.9,
+        "original_price": 27.9
+      }
+    },
+    {
+      "id": "colorado_appia_600ml",
+      "name": "Cerveja Colorado Appia Trigo e Mel 600ml (Brasil)",
+      "short_name": "Colorado Appia 600ml",
+      "category": "cerveja",
+      "category_label": "🍺 Bebidas & Cervejas",
+      "keywords": [
+        "colorado appia",
+        "colorado mel",
+        "colorado trigo",
+        "cerveja colorado"
+      ],
+      "barcode": "7898336330018",
+      "unit": "garrafa 600ml",
+      "default_qty": 2,
+      "preset_basket": false,
+      "savegnago": {
+        "price": 12.9,
+        "original_price": 16.9
+      },
+      "copercana": {
+        "price": 13.5,
+        "original_price": 17.5
+      },
+      "paulistao": {
+        "price": 11.9,
+        "original_price": 15.5
+      }
+    },
+    {
       "id": "coca_cola_2l",
       "name": "Refrigerante Coca-Cola Pet 2 Litros (Original / Sem Açúcar)",
       "short_name": "Coca-Cola 2L",
@@ -28316,7 +29705,11 @@
           "unit_price": 5.39,
           "orig_unit_price": 5.89,
           "price_per_liter": 15.4,
-          "unit_price_display": "R$ 5,39 / lata"
+          "unit_price_display": "R$ 5,39 / lata",
+          "is_imported": false,
+          "country": "Holanda",
+          "country_flag": "🇳🇱",
+          "beer_style": "European Premium Lager"
         }
       },
       "copercana": {
@@ -28335,7 +29728,11 @@
           "unit_price": 5.59,
           "orig_unit_price": 5.99,
           "price_per_liter": 15.97,
-          "unit_price_display": "R$ 5,59 / lata"
+          "unit_price_display": "R$ 5,59 / lata",
+          "is_imported": false,
+          "country": "Holanda",
+          "country_flag": "🇳🇱",
+          "beer_style": "European Premium Lager"
         }
       },
       "paulistao": {
@@ -28354,7 +29751,11 @@
           "unit_price": 5.29,
           "orig_unit_price": 5.79,
           "price_per_liter": 15.11,
-          "unit_price_display": "R$ 5,29 / lata"
+          "unit_price_display": "R$ 5,29 / lata",
+          "is_imported": false,
+          "country": "Holanda",
+          "country_flag": "🇳🇱",
+          "beer_style": "European Premium Lager"
         }
       },
       "marketplace": {
@@ -28388,7 +29789,11 @@
           "unit_price": 4.69,
           "orig_unit_price": 5.19,
           "price_per_liter": 13.4,
-          "unit_price_display": "R$ 4,69 / lata"
+          "unit_price_display": "R$ 4,69 / lata",
+          "is_imported": true,
+          "country": "Alemanha",
+          "country_flag": "🇩🇪",
+          "beer_style": "Munich Helles"
         }
       },
       "copercana": {
@@ -28407,7 +29812,11 @@
           "unit_price": 4.59,
           "orig_unit_price": 5.09,
           "price_per_liter": 13.11,
-          "unit_price_display": "R$ 4,59 / lata"
+          "unit_price_display": "R$ 4,59 / lata",
+          "is_imported": true,
+          "country": "Alemanha",
+          "country_flag": "🇩🇪",
+          "beer_style": "Munich Helles"
         }
       },
       "paulistao": {
@@ -28426,7 +29835,11 @@
           "unit_price": 4.49,
           "orig_unit_price": 4.99,
           "price_per_liter": 12.83,
-          "unit_price_display": "R$ 4,49 / lata"
+          "unit_price_display": "R$ 4,49 / lata",
+          "is_imported": true,
+          "country": "Alemanha",
+          "country_flag": "🇩🇪",
+          "beer_style": "Munich Helles"
         }
       },
       "marketplace": {
@@ -28460,7 +29873,11 @@
           "unit_price": 6.49,
           "orig_unit_price": 7.19,
           "price_per_liter": 19.67,
-          "unit_price_display": "R$ 6,49 / long neck"
+          "unit_price_display": "R$ 6,49 / long neck",
+          "is_imported": true,
+          "country": "México",
+          "country_flag": "🇲🇽",
+          "beer_style": "Mexican Premium Lager"
         }
       },
       "copercana": {
@@ -28479,7 +29896,11 @@
           "unit_price": 6.19,
           "orig_unit_price": 6.89,
           "price_per_liter": 18.76,
-          "unit_price_display": "R$ 6,19 / long neck"
+          "unit_price_display": "R$ 6,19 / long neck",
+          "is_imported": true,
+          "country": "México",
+          "country_flag": "🇲🇽",
+          "beer_style": "Mexican Premium Lager"
         }
       },
       "paulistao": {
@@ -28498,7 +29919,11 @@
           "unit_price": 5.99,
           "orig_unit_price": 6.59,
           "price_per_liter": 18.15,
-          "unit_price_display": "R$ 5,99 / long neck"
+          "unit_price_display": "R$ 5,99 / long neck",
+          "is_imported": true,
+          "country": "México",
+          "country_flag": "🇲🇽",
+          "beer_style": "Mexican Premium Lager"
         }
       },
       "marketplace": {
@@ -28532,7 +29957,11 @@
           "unit_price": 49.9,
           "orig_unit_price": 64.9,
           "price_per_liter": 66.53,
-          "unit_price_display": "R$ 49,90 / garrafa"
+          "unit_price_display": "R$ 49,90 / garrafa",
+          "is_imported": false,
+          "country": "Brasil",
+          "country_flag": "🇧🇷",
+          "beer_style": "Lager / Pilsen"
         }
       },
       "copercana": {
@@ -28551,7 +29980,11 @@
           "unit_price": 51.9,
           "orig_unit_price": 66.9,
           "price_per_liter": 69.2,
-          "unit_price_display": "R$ 51,90 / garrafa"
+          "unit_price_display": "R$ 51,90 / garrafa",
+          "is_imported": false,
+          "country": "Brasil",
+          "country_flag": "🇧🇷",
+          "beer_style": "Lager / Pilsen"
         }
       },
       "paulistao": {
@@ -28570,7 +30003,11 @@
           "unit_price": 47.9,
           "orig_unit_price": 59.9,
           "price_per_liter": 63.87,
-          "unit_price_display": "R$ 47,90 / garrafa"
+          "unit_price_display": "R$ 47,90 / garrafa",
+          "is_imported": false,
+          "country": "Brasil",
+          "country_flag": "🇧🇷",
+          "beer_style": "Lager / Pilsen"
         }
       },
       "marketplace": {
