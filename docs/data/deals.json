@@ -1,9 +1,9 @@
 {
   "metadata": {
     "city": "Sertãozinho - SP",
-    "updated_at": "09/10/2026 às 09:20",
+    "updated_at": "09/10/2026 às 10:32",
     "telegram_bot": "https://t.me/beerstz_bot",
-    "total_items": 219
+    "total_items": 221
   },
   "deals": [
     {
@@ -40,7 +40,7 @@
         "unit_price": 39.78,
         "orig_unit_price": 39780.0,
         "price_per_liter": null,
-        "unit_price_display": "R$ 39,78 / pct"
+        "unit_price_display": "R$ 39,78 / 500g"
       },
       "unit_price": 39.78,
       "history_points": [
@@ -94,13 +94,13 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": null,
-        "container_type": "Pacote 500g",
-        "unit_name": "pct 500g",
-        "pack_label": "Pacote 500g",
+        "container_type": "Pacote 250g",
+        "unit_name": "pct 250g",
+        "pack_label": "Pacote 250g",
         "unit_price": 47.92,
         "orig_unit_price": 191.68,
         "price_per_liter": null,
-        "unit_price_display": "R$ 47,92 / pct"
+        "unit_price_display": "R$ 47,92 / 250g"
       },
       "unit_price": 47.92,
       "history_points": [
@@ -135,11 +135,11 @@
       "min_price": 219.0,
       "avg_price": 219.0,
       "max_price": 219.0,
-      "total_checks": 32,
+      "total_checks": 33,
       "current_price": 219.0,
       "original_price": 389.0,
       "discount_pct": 43.7,
-      "last_recorded_at": "2026-10-09 09:00:05",
+      "last_recorded_at": "2026-10-09 10:00:06",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -297,11 +297,11 @@
       "min_price": 109.9,
       "avg_price": 109.9,
       "max_price": 109.9,
-      "total_checks": 32,
+      "total_checks": 33,
       "current_price": 109.9,
       "original_price": 179.7,
       "discount_pct": 38.8,
-      "last_recorded_at": "2026-10-09 09:00:05",
+      "last_recorded_at": "2026-10-09 10:00:06",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -1006,9 +1006,9 @@
         "is_pack": true,
         "units_count": 2,
         "unit_volume_ml": 2000,
-        "container_type": "Galão 2L",
+        "container_type": "Frasco 2L",
         "unit_name": "litro",
-        "pack_label": "Galão 2L",
+        "pack_label": "Frasco 2L",
         "unit_price": 15.95,
         "orig_unit_price": 21.45,
         "price_per_liter": 15.95,
@@ -1443,14 +1443,14 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "unit_volume_ml": 1500,
+        "container_type": "Frasco 1.5L",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 1.5L",
         "unit_price": 24.9,
         "orig_unit_price": 32.9,
-        "price_per_liter": null,
-        "unit_price_display": "R$ 24,90 / un"
+        "price_per_liter": 16.6,
+        "unit_price_display": "R$ 24,90 / frasco"
       },
       "unit_price": 24.9,
       "history_points": [
@@ -2169,13 +2169,13 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "unit_volume_ml": 1000,
+        "container_type": "Frasco 1L",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 1L",
         "unit_price": 9.9,
         "orig_unit_price": 12.9,
-        "price_per_liter": null,
+        "price_per_liter": 9.9,
         "unit_price_display": "R$ 9,90 / un"
       },
       "unit_price": 9.9,
@@ -2326,7 +2326,7 @@
         "unit_price": 19.9,
         "orig_unit_price": 25.9,
         "price_per_liter": null,
-        "unit_price_display": "R$ 19,90 / pct"
+        "unit_price_display": "R$ 19,90 / 500g"
       },
       "unit_price": 19.9,
       "history_points": [
@@ -3351,14 +3351,14 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "unit_volume_ml": 500,
+        "container_type": "Garrafa 500ml",
+        "unit_name": "garrafa",
+        "pack_label": "Garrafa 500ml",
         "unit_price": 34.9,
         "orig_unit_price": 44.9,
-        "price_per_liter": null,
-        "unit_price_display": "R$ 34,90 / un"
+        "price_per_liter": 69.8,
+        "unit_price_display": "R$ 34,90 / garrafa"
       },
       "unit_price": 34.9,
       "history_points": [
@@ -3556,13 +3556,13 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": null,
-        "container_type": "Quilo (Kg)",
-        "unit_name": "kg",
-        "pack_label": "Preço por Kg",
+        "container_type": "Sachê 300g",
+        "unit_name": "sachê",
+        "pack_label": "Sachê 300g",
         "unit_price": 1.95,
         "orig_unit_price": 2.49,
         "price_per_liter": null,
-        "unit_price_display": "R$ 1,95 / kg"
+        "unit_price_display": "R$ 1,95 / sachê"
       },
       "unit_price": 1.95,
       "history_points": [
@@ -3705,13 +3705,13 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "unit_volume_ml": 2000,
+        "container_type": "Frasco 2L",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 2L",
         "unit_price": 4.69,
         "orig_unit_price": 5.99,
-        "price_per_liter": null,
+        "price_per_liter": 2.35,
         "unit_price_display": "R$ 4,69 / un"
       },
       "unit_price": 4.69,
@@ -3835,20 +3835,20 @@
       "store": "Mercado Livre Full",
       "link": "https://lista.mercadolivre.com.br/kit-vinho-tinto-reservado_OrderId_PRICE*ASC_Shipping_fulfillment",
       "min_price": 124.9,
-      "avg_price": 124.9,
+      "avg_price": 124.89999999999999,
       "max_price": 124.9,
-      "total_checks": 32,
+      "total_checks": 33,
       "current_price": 124.9,
       "original_price": 159.6,
       "discount_pct": 21.7,
-      "last_recorded_at": "2026-10-09 09:00:05",
+      "last_recorded_at": "2026-10-09 10:00:06",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -4017,13 +4017,13 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "unit_volume_ml": 2000,
+        "container_type": "Frasco 2L",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 2L",
         "unit_price": 5.49,
         "orig_unit_price": 6.99,
-        "price_per_liter": null,
+        "price_per_liter": 2.75,
         "unit_price_display": "R$ 5,49 / un"
       },
       "unit_price": 5.49,
@@ -4467,14 +4467,14 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "unit_volume_ml": 1500,
+        "container_type": "Frasco 1.5L",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 1.5L",
         "unit_price": 21.9,
         "orig_unit_price": 27.9,
-        "price_per_liter": null,
-        "unit_price_display": "R$ 21,90 / un"
+        "price_per_liter": 14.6,
+        "unit_price_display": "R$ 21,90 / frasco"
       },
       "unit_price": 21.9,
       "history_points": [
@@ -5211,14 +5211,14 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "unit_volume_ml": 1500,
+        "container_type": "Frasco 1.5L",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 1.5L",
         "unit_price": 22.9,
         "orig_unit_price": 28.9,
-        "price_per_liter": null,
-        "unit_price_display": "R$ 22,90 / un"
+        "price_per_liter": 15.27,
+        "unit_price_display": "R$ 22,90 / frasco"
       },
       "unit_price": 22.9,
       "history_points": [
@@ -5421,14 +5421,14 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "unit_volume_ml": 1500,
+        "container_type": "Frasco 1.5L",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 1.5L",
         "unit_price": 22.9,
         "orig_unit_price": 28.9,
-        "price_per_liter": null,
-        "unit_price_display": "R$ 22,90 / un"
+        "price_per_liter": 15.27,
+        "unit_price_display": "R$ 22,90 / frasco"
       },
       "unit_price": 22.9,
       "history_points": [
@@ -5553,11 +5553,11 @@
       "min_price": 189.9,
       "avg_price": 189.9,
       "max_price": 189.9,
-      "total_checks": 32,
+      "total_checks": 33,
       "current_price": 189.9,
       "original_price": 239.4,
       "discount_pct": 20.7,
-      "last_recorded_at": "2026-10-09 09:00:05",
+      "last_recorded_at": "2026-10-09 10:00:06",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -5794,9 +5794,9 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "container_type": "Pote 500g",
+        "unit_name": "pote 500g",
+        "pack_label": "Pote 500g",
         "unit_price": 8.69,
         "orig_unit_price": 10.9,
         "price_per_liter": null,
@@ -5944,9 +5944,9 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "container_type": "Pote 500g",
+        "unit_name": "pote 500g",
+        "pack_label": "Pote 500g",
         "unit_price": 9.49,
         "orig_unit_price": 11.9,
         "price_per_liter": null,
@@ -6093,13 +6093,13 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "unit_volume_ml": 1000,
+        "container_type": "Frasco 1L",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 1L",
         "unit_price": 9.49,
         "orig_unit_price": 11.9,
-        "price_per_liter": null,
+        "price_per_liter": 9.49,
         "unit_price_display": "R$ 9,49 / un"
       },
       "unit_price": 9.49,
@@ -6545,12 +6545,12 @@
         "units_count": 1,
         "unit_volume_ml": null,
         "container_type": "Unidade",
-        "unit_name": "un",
+        "unit_name": "frasco",
         "pack_label": "Unidade Avulsa",
         "unit_price": 19.9,
         "orig_unit_price": 24.9,
         "price_per_liter": null,
-        "unit_price_display": "R$ 19,90 / un"
+        "unit_price_display": "R$ 19,90 / frasco"
       },
       "unit_price": 19.9,
       "history_points": [
@@ -6693,14 +6693,14 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "unit_volume_ml": 1500,
+        "container_type": "Frasco 1.5L",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 1.5L",
         "unit_price": 21.5,
         "orig_unit_price": 26.9,
-        "price_per_liter": null,
-        "unit_price_display": "R$ 21,50 / un"
+        "price_per_liter": 14.33,
+        "unit_price_display": "R$ 21,50 / frasco"
       },
       "unit_price": 21.5,
       "history_points": [
@@ -6843,14 +6843,14 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "unit_volume_ml": 1500,
+        "container_type": "Frasco 1.5L",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 1.5L",
         "unit_price": 23.9,
         "orig_unit_price": 29.9,
-        "price_per_liter": null,
-        "unit_price_display": "R$ 23,90 / un"
+        "price_per_liter": 15.93,
+        "unit_price_display": "R$ 23,90 / frasco"
       },
       "unit_price": 23.9,
       "history_points": [
@@ -6897,14 +6897,14 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "unit_volume_ml": 1500,
+        "container_type": "Frasco 1.5L",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 1.5L",
         "unit_price": 23.9,
         "orig_unit_price": 29.9,
-        "price_per_liter": null,
-        "unit_price_display": "R$ 23,90 / un"
+        "price_per_liter": 15.93,
+        "unit_price_display": "R$ 23,90 / frasco"
       },
       "unit_price": 23.9,
       "history_points": [
@@ -8103,11 +8103,11 @@
       "min_price": 36.9,
       "avg_price": 36.9,
       "max_price": 36.9,
-      "total_checks": 32,
+      "total_checks": 33,
       "current_price": 36.9,
       "original_price": 45.9,
       "discount_pct": 19.6,
-      "last_recorded_at": "2026-10-09 09:00:05",
+      "last_recorded_at": "2026-10-09 10:00:06",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -8433,14 +8433,14 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": 350,
-        "container_type": "Lata 350ml",
-        "unit_name": "lata",
-        "pack_label": "1 Lata Avulsa",
+        "unit_volume_ml": null,
+        "container_type": "Copo 200g",
+        "unit_name": "copo 200g",
+        "pack_label": "Copo 200g",
         "unit_price": 7.99,
         "orig_unit_price": 9.9,
-        "price_per_liter": 22.83,
-        "unit_price_display": "R$ 7,99 / lata"
+        "price_per_liter": null,
+        "unit_price_display": "R$ 7,99 / un"
       },
       "unit_price": 7.99,
       "history_points": [
@@ -8583,13 +8583,13 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "unit_volume_ml": 1000,
+        "container_type": "Frasco 1L",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 1L",
         "unit_price": 8.8,
         "orig_unit_price": 10.9,
-        "price_per_liter": null,
+        "price_per_liter": 8.8,
         "unit_price_display": "R$ 8,80 / un"
       },
       "unit_price": 8.8,
@@ -8734,9 +8734,9 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "container_type": "Pote 500g",
+        "unit_name": "pote 500g",
+        "pack_label": "Pote 500g",
         "unit_price": 9.29,
         "orig_unit_price": 11.49,
         "price_per_liter": null,
@@ -9091,18 +9091,18 @@
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
       "unit_pricing": {
-        "is_pack": true,
-        "units_count": 3,
-        "unit_volume_ml": 3000,
-        "container_type": "Galão 3L",
-        "unit_name": "litro",
-        "pack_label": "Galão 3L",
-        "unit_price": 0.72,
-        "orig_unit_price": 0.88,
-        "price_per_liter": 0.72,
-        "unit_price_display": "R$ 0,72 / L"
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 500,
+        "container_type": "Frasco 500ml",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 500ml",
+        "unit_price": 2.15,
+        "orig_unit_price": 2.65,
+        "price_per_liter": 4.3,
+        "unit_price_display": "R$ 2,15 / frasco"
       },
-      "unit_price": 0.72,
+      "unit_price": 2.15,
       "history_points": [
         {
           "price": 2.15,
@@ -9844,13 +9844,13 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": null,
-        "container_type": "Quilo (Kg)",
-        "unit_name": "kg",
-        "pack_label": "Preço por Kg",
+        "container_type": "Sachê 300g",
+        "unit_name": "sachê",
+        "pack_label": "Sachê 300g",
         "unit_price": 2.19,
         "orig_unit_price": 2.69,
         "price_per_liter": null,
-        "unit_price_display": "R$ 2,19 / kg"
+        "unit_price_display": "R$ 2,19 / sachê"
       },
       "unit_price": 2.19,
       "history_points": [
@@ -10145,12 +10145,12 @@
         "units_count": 1,
         "unit_volume_ml": null,
         "container_type": "Unidade",
-        "unit_name": "un",
+        "unit_name": "frasco",
         "pack_label": "Unidade Avulsa",
         "unit_price": 21.9,
         "orig_unit_price": 26.9,
         "price_per_liter": null,
-        "unit_price_display": "R$ 21,90 / un"
+        "unit_price_display": "R$ 21,90 / frasco"
       },
       "unit_price": 21.9,
       "history_points": [
@@ -10293,13 +10293,13 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "unit_volume_ml": 2000,
+        "container_type": "Frasco 2L",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 2L",
         "unit_price": 5.29,
         "orig_unit_price": 6.49,
-        "price_per_liter": null,
+        "price_per_liter": 2.65,
         "unit_price_display": "R$ 5,29 / un"
       },
       "unit_price": 5.29,
@@ -10443,14 +10443,14 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": 350,
-        "container_type": "Lata 350ml",
-        "unit_name": "lata",
-        "pack_label": "1 Lata Avulsa",
+        "unit_volume_ml": null,
+        "container_type": "Copo 200g",
+        "unit_name": "copo 200g",
+        "pack_label": "Copo 200g",
         "unit_price": 8.9,
         "orig_unit_price": 10.9,
-        "price_per_liter": 25.43,
-        "unit_price_display": "R$ 8,90 / lata"
+        "price_per_liter": null,
+        "unit_price_display": "R$ 8,90 / un"
       },
       "unit_price": 8.9,
       "history_points": [
@@ -10750,7 +10750,7 @@
         "unit_price": 17.9,
         "orig_unit_price": 21.9,
         "price_per_liter": null,
-        "unit_price_display": "R$ 17,90 / pct"
+        "unit_price_display": "R$ 17,90 / 500g"
       },
       "unit_price": 17.9,
       "history_points": [
@@ -10893,14 +10893,14 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": 350,
-        "container_type": "Lata 350ml",
-        "unit_name": "lata",
-        "pack_label": "1 Lata Avulsa",
+        "unit_volume_ml": null,
+        "container_type": "Copo 200g",
+        "unit_name": "copo 200g",
+        "pack_label": "Copo 200g",
         "unit_price": 8.6,
         "orig_unit_price": 10.5,
-        "price_per_liter": 24.57,
-        "unit_price_display": "R$ 8,60 / lata"
+        "price_per_liter": null,
+        "unit_price_display": "R$ 8,60 / un"
       },
       "unit_price": 8.6,
       "history_points": [
@@ -11044,13 +11044,13 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": null,
-        "container_type": "Quilo (Kg)",
-        "unit_name": "kg",
-        "pack_label": "Preço por Kg",
+        "container_type": "Sachê 300g",
+        "unit_name": "sachê",
+        "pack_label": "Sachê 300g",
         "unit_price": 2.29,
         "orig_unit_price": 2.79,
         "price_per_liter": null,
-        "unit_price_display": "R$ 2,29 / kg"
+        "unit_price_display": "R$ 2,29 / sachê"
       },
       "unit_price": 2.29,
       "history_points": [
@@ -11345,12 +11345,12 @@
         "units_count": 1,
         "unit_volume_ml": null,
         "container_type": "Unidade",
-        "unit_name": "un",
+        "unit_name": "frasco",
         "pack_label": "Unidade Avulsa",
         "unit_price": 22.9,
         "orig_unit_price": 27.9,
         "price_per_liter": null,
-        "unit_price_display": "R$ 22,90 / un"
+        "unit_price_display": "R$ 22,90 / frasco"
       },
       "unit_price": 22.9,
       "history_points": [
@@ -11710,7 +11710,7 @@
         "unit_price": 18.9,
         "orig_unit_price": 22.9,
         "price_per_liter": null,
-        "unit_price_display": "R$ 18,90 / pct"
+        "unit_price_display": "R$ 18,90 / 500g"
       },
       "unit_price": 18.9,
       "history_points": [
@@ -12301,18 +12301,18 @@
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
       "unit_pricing": {
-        "is_pack": true,
-        "units_count": 3,
-        "unit_volume_ml": 3000,
-        "container_type": "Galão 3L",
-        "unit_name": "litro",
-        "pack_label": "Galão 3L",
-        "unit_price": 0.8,
-        "orig_unit_price": 0.96,
-        "price_per_liter": 0.8,
-        "unit_price_display": "R$ 0,80 / L"
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 500,
+        "container_type": "Frasco 500ml",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 500ml",
+        "unit_price": 2.39,
+        "orig_unit_price": 2.89,
+        "price_per_liter": 4.78,
+        "unit_price_display": "R$ 2,39 / frasco"
       },
-      "unit_price": 0.8,
+      "unit_price": 2.39,
       "history_points": [
         {
           "price": 2.39,
@@ -12961,18 +12961,18 @@
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
       "unit_pricing": {
-        "is_pack": true,
-        "units_count": 3,
-        "unit_volume_ml": 3000,
-        "container_type": "Galão 3L",
-        "unit_name": "litro",
-        "pack_label": "Galão 3L",
-        "unit_price": 0.83,
-        "orig_unit_price": 1.0,
-        "price_per_liter": 0.83,
-        "unit_price_display": "R$ 0,83 / L"
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 500,
+        "container_type": "Frasco 500ml",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 500ml",
+        "unit_price": 2.49,
+        "orig_unit_price": 2.99,
+        "price_per_liter": 4.98,
+        "unit_price_display": "R$ 2,49 / frasco"
       },
-      "unit_price": 0.83,
+      "unit_price": 2.49,
       "history_points": [
         {
           "price": 2.49,
@@ -13114,13 +13114,13 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "container_type": "Pacote 500g",
+        "unit_name": "pct 500g",
+        "pack_label": "Pacote 500g",
         "unit_price": 3.49,
         "orig_unit_price": 4.19,
         "price_per_liter": null,
-        "unit_price_display": "R$ 3,49 / un"
+        "unit_price_display": "R$ 3,49 / pct"
       },
       "unit_price": 3.49,
       "history_points": [
@@ -15142,7 +15142,7 @@
         "unit_price": 16.8,
         "orig_unit_price": 19.9,
         "price_per_liter": null,
-        "unit_price_display": "R$ 16,80 / pct"
+        "unit_price_display": "R$ 16,80 / 500g"
       },
       "unit_price": 16.8,
       "history_points": [
@@ -15429,11 +15429,11 @@
       "min_price": 151.9,
       "avg_price": 151.9,
       "max_price": 151.9,
-      "total_checks": 1,
+      "total_checks": 2,
       "current_price": 151.9,
       "original_price": 179.9,
       "discount_pct": 15.6,
-      "last_recorded_at": "2026-10-08 18:00:04",
+      "last_recorded_at": "2026-10-09 10:00:06",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -15459,22 +15459,16 @@
       "unit_price": 6.33,
       "history_points": [
         {
-          "price": 179.9,
+          "price": 151.9,
           "original_price": 179.9,
-          "discount_pct": 0,
-          "recorded_at": "Semana Anterior"
-        },
-        {
-          "price": 165.9,
-          "original_price": 179.9,
-          "discount_pct": 7.8,
-          "recorded_at": "Última Varredura"
+          "discount_pct": 15.6,
+          "recorded_at": "2026-10-08 18:00:04"
         },
         {
           "price": 151.9,
           "original_price": 179.9,
           "discount_pct": 15.6,
-          "recorded_at": "Preço Atual"
+          "recorded_at": "2026-10-09 10:00:06"
         }
       ],
       "origin_type": "online",
@@ -16179,14 +16173,14 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": 350,
-        "container_type": "Lata 350ml",
-        "unit_name": "lata",
-        "pack_label": "1 Lata Avulsa",
+        "unit_volume_ml": null,
+        "container_type": "Quilo (Kg)",
+        "unit_name": "kg",
+        "pack_label": "Preço por Kg",
         "unit_price": 41.9,
         "orig_unit_price": 48.9,
-        "price_per_liter": 119.71,
-        "unit_price_display": "R$ 41,90 / lata"
+        "price_per_liter": null,
+        "unit_price_display": "R$ 41,90 / kg"
       },
       "unit_price": 41.9,
       "history_points": [
@@ -16330,13 +16324,13 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "container_type": "Pacote 1kg",
+        "unit_name": "kg",
+        "pack_label": "Pacote 1kg",
         "unit_price": 4.29,
         "orig_unit_price": 4.99,
         "price_per_liter": null,
-        "unit_price_display": "R$ 4,29 / un"
+        "unit_price_display": "R$ 4,29 / kg"
       },
       "unit_price": 4.29,
       "history_points": [
@@ -16479,14 +16473,14 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": 350,
-        "container_type": "Lata 350ml",
-        "unit_name": "lata",
-        "pack_label": "1 Lata Avulsa",
+        "unit_volume_ml": null,
+        "container_type": "Quilo (Kg)",
+        "unit_name": "kg",
+        "pack_label": "Preço por Kg",
         "unit_price": 42.9,
         "orig_unit_price": 49.9,
-        "price_per_liter": 122.57,
-        "unit_price_display": "R$ 42,90 / lata"
+        "price_per_liter": null,
+        "unit_price_display": "R$ 42,90 / kg"
       },
       "unit_price": 42.9,
       "history_points": [
@@ -16780,13 +16774,13 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "container_type": "Pacote 500g",
+        "unit_name": "pct 500g",
+        "pack_label": "Pacote 500g",
         "unit_price": 3.89,
         "orig_unit_price": 4.49,
         "price_per_liter": null,
-        "unit_price_display": "R$ 3,89 / un"
+        "unit_price_display": "R$ 3,89 / pct"
       },
       "unit_price": 3.89,
       "history_points": [
@@ -16929,14 +16923,14 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": 350,
-        "container_type": "Lata 350ml",
-        "unit_name": "lata",
-        "pack_label": "1 Lata Avulsa",
+        "unit_volume_ml": null,
+        "container_type": "Pote 200g",
+        "unit_name": "pote 200g",
+        "pack_label": "Pote 200g",
         "unit_price": 12.9,
         "orig_unit_price": 14.9,
-        "price_per_liter": 36.86,
-        "unit_price_display": "R$ 12,90 / lata"
+        "price_per_liter": null,
+        "unit_price_display": "R$ 12,90 / un"
       },
       "unit_price": 12.9,
       "history_points": [
@@ -17211,11 +17205,11 @@
       "min_price": 38.9,
       "avg_price": 38.9,
       "max_price": 38.9,
-      "total_checks": 32,
+      "total_checks": 33,
       "current_price": 38.9,
       "original_price": 44.9,
       "discount_pct": 13.4,
-      "last_recorded_at": "2026-10-09 09:00:05",
+      "last_recorded_at": "2026-10-09 10:00:06",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -17227,18 +17221,18 @@
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
       "unit_pricing": {
-        "is_pack": false,
-        "units_count": 1,
+        "is_pack": true,
+        "units_count": 6,
         "unit_volume_ml": 330,
         "container_type": "Long Neck 330ml",
         "unit_name": "long neck",
-        "pack_label": "1 Long neck Avulsa",
-        "unit_price": 38.9,
-        "orig_unit_price": 44.9,
-        "price_per_liter": 117.88,
-        "unit_price_display": "R$ 38,90 / long neck"
+        "pack_label": "Pack c/ 6 long necks",
+        "unit_price": 6.48,
+        "orig_unit_price": 7.48,
+        "price_per_liter": 19.64,
+        "unit_price_display": "R$ 6,48 / long neck"
       },
-      "unit_price": 38.9,
+      "unit_price": 6.48,
       "history_points": [
         {
           "price": 38.9,
@@ -17391,14 +17385,14 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": 350,
-        "container_type": "Lata 350ml",
-        "unit_name": "lata",
-        "pack_label": "1 Lata Avulsa",
+        "unit_volume_ml": null,
+        "container_type": "Quilo (Kg)",
+        "unit_name": "kg",
+        "pack_label": "Preço por Kg",
         "unit_price": 38.9,
         "orig_unit_price": 44.9,
-        "price_per_liter": 111.14,
-        "unit_price_display": "R$ 38,90 / lata"
+        "price_per_liter": null,
+        "unit_price_display": "R$ 38,90 / kg"
       },
       "unit_price": 38.9,
       "history_points": [
@@ -17521,13 +17515,13 @@
       "store": "Mercado Livre Full",
       "link": "https://lista.mercadolivre.com.br/cerveja-heineken-pack_OrderId_PRICE*ASC_Shipping_fulfillment",
       "min_price": 62.28,
-      "avg_price": 62.28,
+      "avg_price": 62.28000000000001,
       "max_price": 62.28,
-      "total_checks": 32,
+      "total_checks": 33,
       "current_price": 62.28,
       "original_price": 71.88,
       "discount_pct": 13.4,
-      "last_recorded_at": "2026-10-09 09:00:05",
+      "last_recorded_at": "2026-10-09 10:00:06",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -17704,13 +17698,13 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "container_type": "Pacote 500g",
+        "unit_name": "pct 500g",
+        "pack_label": "Pacote 500g",
         "unit_price": 3.99,
         "orig_unit_price": 4.59,
         "price_per_liter": null,
-        "unit_price_display": "R$ 3,99 / un"
+        "unit_price_display": "R$ 3,99 / pct"
       },
       "unit_price": 3.99,
       "history_points": [
@@ -17914,13 +17908,13 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "container_type": "Pacote 1kg",
+        "unit_name": "kg",
+        "pack_label": "Pacote 1kg",
         "unit_price": 4.79,
         "orig_unit_price": 5.49,
         "price_per_liter": null,
-        "unit_price_display": "R$ 4,79 / un"
+        "unit_price_display": "R$ 4,79 / kg"
       },
       "unit_price": 4.79,
       "history_points": [
@@ -18795,11 +18789,11 @@
       "min_price": 52.68,
       "avg_price": 52.68,
       "max_price": 52.68,
-      "total_checks": 32,
+      "total_checks": 33,
       "current_price": 52.68,
       "original_price": 59.9,
       "discount_pct": 12.1,
-      "last_recorded_at": "2026-10-09 09:00:05",
+      "last_recorded_at": "2026-10-09 10:00:06",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -19606,13 +19600,13 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "container_type": "Pacote 1kg",
+        "unit_name": "kg",
+        "pack_label": "Pacote 1kg",
         "unit_price": 4.69,
         "orig_unit_price": 5.29,
         "price_per_liter": null,
-        "unit_price_display": "R$ 4,69 / un"
+        "unit_price_display": "R$ 4,69 / kg"
       },
       "unit_price": 4.69,
       "history_points": [
@@ -19906,13 +19900,13 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": 1000,
-        "container_type": "Garrafa 1000ml",
-        "unit_name": "garrafa",
-        "pack_label": "1 Garrafa Avulsa",
+        "container_type": "Caixa 1L",
+        "unit_name": "litro",
+        "pack_label": "Caixa 1L",
         "unit_price": 4.89,
         "orig_unit_price": 5.49,
         "price_per_liter": 4.89,
-        "unit_price_display": "R$ 4,89 / garrafa"
+        "unit_price_display": "R$ 4,89 / L"
       },
       "unit_price": 4.89,
       "history_points": [
@@ -20205,14 +20199,14 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": 350,
-        "container_type": "Lata 350ml",
-        "unit_name": "lata",
-        "pack_label": "1 Lata Avulsa",
+        "unit_volume_ml": null,
+        "container_type": "Pote 200g",
+        "unit_name": "pote 200g",
+        "pack_label": "Pote 200g",
         "unit_price": 11.8,
         "orig_unit_price": 13.2,
-        "price_per_liter": 33.71,
-        "unit_price_display": "R$ 11,80 / lata"
+        "price_per_liter": null,
+        "unit_price_display": "R$ 11,80 / un"
       },
       "unit_price": 11.8,
       "history_points": [
@@ -20865,14 +20859,14 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": 350,
-        "container_type": "Lata 350ml",
-        "unit_name": "lata",
-        "pack_label": "1 Lata Avulsa",
+        "unit_volume_ml": null,
+        "container_type": "Pote 200g",
+        "unit_name": "pote 200g",
+        "pack_label": "Pote 200g",
         "unit_price": 12.49,
         "orig_unit_price": 13.9,
-        "price_per_liter": 35.69,
-        "unit_price_display": "R$ 12,49 / lata"
+        "price_per_liter": null,
+        "unit_price_display": "R$ 12,49 / un"
       },
       "unit_price": 12.49,
       "history_points": [
@@ -21166,13 +21160,13 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": 1000,
-        "container_type": "Garrafa 1000ml",
-        "unit_name": "garrafa",
-        "pack_label": "1 Garrafa Avulsa",
+        "container_type": "Caixa 1L",
+        "unit_name": "litro",
+        "pack_label": "Caixa 1L",
         "unit_price": 4.49,
         "orig_unit_price": 4.99,
         "price_per_liter": 4.49,
-        "unit_price_display": "R$ 4,49 / garrafa"
+        "unit_price_display": "R$ 4,49 / L"
       },
       "unit_price": 4.49,
       "history_points": [
@@ -22240,13 +22234,13 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": 1000,
-        "container_type": "Garrafa 1000ml",
-        "unit_name": "garrafa",
-        "pack_label": "1 Garrafa Avulsa",
+        "container_type": "Caixa 1L",
+        "unit_name": "litro",
+        "pack_label": "Caixa 1L",
         "unit_price": 4.79,
         "orig_unit_price": 5.29,
         "price_per_liter": 4.79,
-        "unit_price_display": "R$ 4,79 / garrafa"
+        "unit_price_display": "R$ 4,79 / L"
       },
       "unit_price": 4.79,
       "history_points": [
@@ -24193,20 +24187,20 @@
       "store": "Amazon Brasil",
       "link": "https://www.amazon.com.br",
       "min_price": 42.18,
-      "avg_price": 42.18,
-      "max_price": 42.18,
-      "total_checks": 2,
-      "current_price": 42.18,
-      "original_price": 44.4,
+      "avg_price": 42.28666666666667,
+      "max_price": 42.5,
+      "total_checks": 3,
+      "current_price": 42.5,
+      "original_price": 44.74,
       "discount_pct": 5.0,
-      "last_recorded_at": "2026-10-08 18:00:04",
+      "last_recorded_at": "2026-10-09 10:00:06",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.5,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -24217,12 +24211,12 @@
         "container_type": "Pacote c/ 16 rolos",
         "unit_name": "rolo",
         "pack_label": "Pacote c/ 16 rolos",
-        "unit_price": 2.64,
-        "orig_unit_price": 2.77,
+        "unit_price": 2.66,
+        "orig_unit_price": 2.8,
         "price_per_liter": null,
-        "unit_price_display": "R$ 2,64 / rolo"
+        "unit_price_display": "R$ 2,66 / rolo"
       },
-      "unit_price": 2.64,
+      "unit_price": 2.66,
       "history_points": [
         {
           "price": 42.18,
@@ -24235,10 +24229,16 @@
           "original_price": 44.4,
           "discount_pct": 5.0,
           "recorded_at": "2026-10-08 18:00:04"
+        },
+        {
+          "price": 42.5,
+          "original_price": 44.74,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-10-09 10:00:06"
         }
       ],
       "origin_type": "online",
-      "price": 42.18
+      "price": 42.5
     },
     {
       "id": 2478,
@@ -24299,6 +24299,66 @@
       ],
       "origin_type": "online",
       "price": 46.5
+    },
+    {
+      "id": 2923,
+      "name": "Pronova Coffee Stories Special Fruity - Café Especial em Grãos 250g (Amazon Prime)",
+      "category": "mercearia",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br",
+      "min_price": 47.21,
+      "avg_price": 47.21,
+      "max_price": 47.21,
+      "total_checks": 1,
+      "current_price": 47.21,
+      "original_price": 49.7,
+      "discount_pct": 5.0,
+      "last_recorded_at": "2026-10-09 10:00:06",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": null,
+        "container_type": "Pacote 250g",
+        "unit_name": "pct 250g",
+        "pack_label": "Pacote 250g",
+        "unit_price": 47.21,
+        "orig_unit_price": 49.7,
+        "price_per_liter": null,
+        "unit_price_display": "R$ 47,21 / 250g"
+      },
+      "unit_price": 47.21,
+      "history_points": [
+        {
+          "price": 49.7,
+          "original_price": 49.7,
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 48.45,
+          "original_price": 49.7,
+          "discount_pct": 2.5,
+          "recorded_at": "Última Varredura"
+        },
+        {
+          "price": 47.21,
+          "original_price": 49.7,
+          "discount_pct": 5.0,
+          "recorded_at": "Preço Atual"
+        }
+      ],
+      "origin_type": "online",
+      "price": 47.21
     },
     {
       "id": 13,
@@ -24715,6 +24775,66 @@
       "price": 84.55
     },
     {
+      "id": 2922,
+      "name": "Pronova Coffee Stories Special Intense - Café Especial em Grãos 500g (Amazon Prime)",
+      "category": "mercearia",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br",
+      "min_price": 89.3,
+      "avg_price": 89.3,
+      "max_price": 89.3,
+      "total_checks": 1,
+      "current_price": 89.3,
+      "original_price": 94.0,
+      "discount_pct": 5.0,
+      "last_recorded_at": "2026-10-09 10:00:06",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": null,
+        "container_type": "Pacote 500g",
+        "unit_name": "pct 500g",
+        "pack_label": "Pacote 500g",
+        "unit_price": 89.3,
+        "orig_unit_price": 94.0,
+        "price_per_liter": null,
+        "unit_price_display": "R$ 89,30 / 500g"
+      },
+      "unit_price": 89.3,
+      "history_points": [
+        {
+          "price": 94.0,
+          "original_price": 94.0,
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 91.65,
+          "original_price": 94.0,
+          "discount_pct": 2.5,
+          "recorded_at": "Última Varredura"
+        },
+        {
+          "price": 89.3,
+          "original_price": 94.0,
+          "discount_pct": 5.0,
+          "recorded_at": "Preço Atual"
+        }
+      ],
+      "origin_type": "online",
+      "price": 89.3
+    },
+    {
       "id": 2795,
       "name": "Vinho Tinto Italiano Vanitá Montepulciano D'Abruzzo 750ml (Amazon Prime)",
       "category": "vinho",
@@ -24783,11 +24903,11 @@
       "min_price": 111.14,
       "avg_price": 111.14,
       "max_price": 111.14,
-      "total_checks": 3,
+      "total_checks": 4,
       "current_price": 111.14,
       "original_price": 116.99,
       "discount_pct": 5.0,
-      "last_recorded_at": "2026-10-08 18:00:04",
+      "last_recorded_at": "2026-10-09 10:00:06",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -24829,6 +24949,12 @@
           "original_price": 116.99,
           "discount_pct": 5.0,
           "recorded_at": "2026-10-08 18:00:04"
+        },
+        {
+          "price": 111.14,
+          "original_price": 116.99,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-10-09 10:00:06"
         }
       ],
       "origin_type": "online",
@@ -24862,13 +24988,13 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": null,
-        "container_type": "Pacote 500g",
-        "unit_name": "pct 500g",
-        "pack_label": "Pacote 500g",
+        "container_type": "Pacote 1kg",
+        "unit_name": "pct 1kg",
+        "pack_label": "Pacote 1kg",
         "unit_price": 125.3,
         "orig_unit_price": 131.9,
         "price_per_liter": null,
-        "unit_price_display": "R$ 125,30 / pct"
+        "unit_price_display": "R$ 125,30 / 1kg"
       },
       "unit_price": 125.3,
       "history_points": [
@@ -25036,7 +25162,7 @@
         "unit_price": 1424.05,
         "orig_unit_price": 1499.0,
         "price_per_liter": null,
-        "unit_price_display": "R$ 1424,05 / pct"
+        "unit_price_display": "R$ 1424,05 / 500g"
       },
       "unit_price": 1424.05,
       "history_points": [
@@ -25312,13 +25438,13 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": null,
-        "container_type": "Quilo (Kg)",
-        "unit_name": "kg",
-        "pack_label": "Preço por Kg",
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "1 Unidade",
         "unit_price": 6.9,
         "orig_unit_price": null,
         "price_per_liter": null,
-        "unit_price_display": "R$ 6,90 / kg"
+        "unit_price_display": "R$ 6,90 / un"
       },
       "unit_price": 6.9,
       "history_points": [
@@ -25372,13 +25498,13 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": null,
-        "container_type": "Quilo (Kg)",
-        "unit_name": "kg",
-        "pack_label": "Preço por Kg",
+        "container_type": "Unidade",
+        "unit_name": "un",
+        "pack_label": "1 Unidade",
         "unit_price": 8.99,
         "orig_unit_price": null,
         "price_per_liter": null,
-        "unit_price_display": "R$ 8,99 / kg"
+        "unit_price_display": "R$ 8,99 / un"
       },
       "unit_price": 8.99,
       "history_points": [
@@ -25486,9 +25612,9 @@
         "is_pack": true,
         "units_count": 1,
         "unit_volume_ml": 1800,
-        "container_type": "Galão 1.8L",
+        "container_type": "Frasco 1.8L",
         "unit_name": "litro",
-        "pack_label": "Galão 1.8L",
+        "pack_label": "Frasco 1.8L",
         "unit_price": 13.83,
         "orig_unit_price": null,
         "price_per_liter": 13.83,
@@ -25726,13 +25852,13 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": null,
-        "container_type": "Pacote 500g",
-        "unit_name": "pct 500g",
-        "pack_label": "Pacote 500g",
+        "container_type": "Pacote 250g",
+        "unit_name": "pct 250g",
+        "pack_label": "Pacote 250g",
         "unit_price": 38.9,
         "orig_unit_price": null,
         "price_per_liter": null,
-        "unit_price_display": "R$ 38,90 / pct"
+        "unit_price_display": "R$ 38,90 / 250g"
       },
       "unit_price": 38.9,
       "history_points": [
@@ -25885,13 +26011,13 @@
       "store": "Amazon Brasil",
       "link": "https://www.amazon.com.br",
       "min_price": 49.89,
-      "avg_price": 49.89000000000001,
+      "avg_price": 49.89,
       "max_price": 49.89,
-      "total_checks": 3,
+      "total_checks": 4,
       "current_price": 49.89,
       "original_price": 49.89,
       "discount_pct": 0.0,
-      "last_recorded_at": "2026-10-08 19:00:08",
+      "last_recorded_at": "2026-10-09 10:00:06",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -25903,18 +26029,18 @@
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
       "unit_pricing": {
-        "is_pack": true,
-        "units_count": 3,
+        "is_pack": false,
+        "units_count": 1,
         "unit_volume_ml": 3000,
-        "container_type": "Galão 3L",
-        "unit_name": "litro",
-        "pack_label": "Galão 3L",
-        "unit_price": 16.63,
+        "container_type": "Frasco 3L",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 3L",
+        "unit_price": 49.89,
         "orig_unit_price": null,
         "price_per_liter": 16.63,
-        "unit_price_display": "R$ 16,63 / L"
+        "unit_price_display": "R$ 49,89 / frasco"
       },
-      "unit_price": 16.63,
+      "unit_price": 49.89,
       "history_points": [
         {
           "price": 49.89,
@@ -25933,6 +26059,12 @@
           "original_price": 49.89,
           "discount_pct": 0.0,
           "recorded_at": "2026-10-08 19:00:08"
+        },
+        {
+          "price": 49.89,
+          "original_price": 49.89,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-09 10:00:06"
         }
       ],
       "origin_type": "online",
@@ -25945,13 +26077,13 @@
       "store": "Amazon Brasil",
       "link": "https://www.amazon.com.br",
       "min_price": 50.08,
-      "avg_price": 50.08,
+      "avg_price": 50.080000000000005,
       "max_price": 50.08,
-      "total_checks": 2,
+      "total_checks": 3,
       "current_price": 50.08,
       "original_price": 16.69,
       "discount_pct": 0.0,
-      "last_recorded_at": "2026-10-08 19:00:08",
+      "last_recorded_at": "2026-10-09 10:00:06",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -25965,14 +26097,14 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": null,
-        "container_type": "Unidade",
-        "unit_name": "un",
-        "pack_label": "Unidade",
+        "unit_volume_ml": 3000,
+        "container_type": "Frasco 3L",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 3L",
         "unit_price": 50.08,
         "orig_unit_price": null,
-        "price_per_liter": null,
-        "unit_price_display": "R$ 50,08 / un"
+        "price_per_liter": 16.69,
+        "unit_price_display": "R$ 50,08 / frasco"
       },
       "unit_price": 50.08,
       "history_points": [
@@ -25987,6 +26119,12 @@
           "original_price": 16.69,
           "discount_pct": 0.0,
           "recorded_at": "2026-10-08 19:00:08"
+        },
+        {
+          "price": 50.08,
+          "original_price": 16.69,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-09 10:00:06"
         }
       ],
       "origin_type": "online",
@@ -26181,11 +26319,11 @@
       "min_price": 54.99,
       "avg_price": 54.99,
       "max_price": 54.99,
-      "total_checks": 3,
+      "total_checks": 4,
       "current_price": 54.99,
       "original_price": 18.33,
       "discount_pct": 0.0,
-      "last_recorded_at": "2026-10-08 19:00:08",
+      "last_recorded_at": "2026-10-09 10:00:06",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -26197,18 +26335,18 @@
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
       "unit_pricing": {
-        "is_pack": true,
-        "units_count": 3,
+        "is_pack": false,
+        "units_count": 1,
         "unit_volume_ml": 3000,
-        "container_type": "Galão 3L",
-        "unit_name": "litro",
-        "pack_label": "Galão 3L",
-        "unit_price": 18.33,
+        "container_type": "Frasco 3L",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 3L",
+        "unit_price": 54.99,
         "orig_unit_price": null,
         "price_per_liter": 18.33,
-        "unit_price_display": "R$ 18,33 / L"
+        "unit_price_display": "R$ 54,99 / frasco"
       },
-      "unit_price": 18.33,
+      "unit_price": 54.99,
       "history_points": [
         {
           "price": 54.99,
@@ -26227,6 +26365,12 @@
           "original_price": 18.33,
           "discount_pct": 0.0,
           "recorded_at": "2026-10-08 19:00:08"
+        },
+        {
+          "price": 54.99,
+          "original_price": 18.33,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-09 10:00:06"
         }
       ],
       "origin_type": "online",
@@ -26380,13 +26524,13 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": null,
-        "container_type": "Pacote 500g",
-        "unit_name": "pct 500g",
-        "pack_label": "Pacote 500g",
+        "container_type": "Pacote 1kg",
+        "unit_name": "pct 1kg",
+        "pack_label": "Pacote 1kg",
         "unit_price": 74.9,
         "orig_unit_price": null,
         "price_per_liter": null,
-        "unit_price_display": "R$ 74,90 / pct"
+        "unit_price_display": "R$ 74,90 / 1kg"
       },
       "unit_price": 74.9,
       "history_points": [
@@ -26481,11 +26625,11 @@
       "min_price": 127.0,
       "avg_price": 127.0,
       "max_price": 127.0,
-      "total_checks": 2,
+      "total_checks": 3,
       "current_price": 127.0,
       "original_price": 127.0,
       "discount_pct": 0.0,
-      "last_recorded_at": "2026-10-08 23:00:04",
+      "last_recorded_at": "2026-10-09 10:00:06",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -26500,13 +26644,13 @@
         "is_pack": false,
         "units_count": 1,
         "unit_volume_ml": null,
-        "container_type": "Pacote 500g",
-        "unit_name": "pct 500g",
-        "pack_label": "Pacote 500g",
+        "container_type": "Pacote 1kg",
+        "unit_name": "pct 1kg",
+        "pack_label": "Pacote 1kg",
         "unit_price": 127.0,
         "orig_unit_price": null,
         "price_per_liter": null,
-        "unit_price_display": "R$ 127,00 / pct"
+        "unit_price_display": "R$ 127,00 / 1kg"
       },
       "unit_price": 127.0,
       "history_points": [
@@ -26521,6 +26665,12 @@
           "original_price": 127.0,
           "discount_pct": 0.0,
           "recorded_at": "2026-10-08 23:00:04"
+        },
+        {
+          "price": 127.0,
+          "original_price": 127.0,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-09 10:00:06"
         }
       ],
       "origin_type": "online",
@@ -28511,16 +28661,16 @@
         "price": 38.9,
         "original_price": 52.9,
         "unit_pricing": {
-          "is_pack": false,
-          "units_count": 1,
+          "is_pack": true,
+          "units_count": 3,
           "unit_volume_ml": 3000,
-          "container_type": "Pet 3L",
-          "unit_name": "garrafa",
-          "pack_label": "1 Garrafa Avulsa",
-          "unit_price": 38.9,
-          "orig_unit_price": 52.9,
+          "container_type": "Galão 3L",
+          "unit_name": "litro",
+          "pack_label": "Galão 3L",
+          "unit_price": 12.97,
+          "orig_unit_price": 17.63,
           "price_per_liter": 12.97,
-          "unit_price_display": "R$ 38,90 / garrafa"
+          "unit_price_display": "R$ 12,97 / L"
         }
       },
       "copercana": {
@@ -28530,16 +28680,16 @@
         "price": 39.9,
         "original_price": 54.9,
         "unit_pricing": {
-          "is_pack": false,
-          "units_count": 1,
+          "is_pack": true,
+          "units_count": 3,
           "unit_volume_ml": 3000,
-          "container_type": "Pet 3L",
-          "unit_name": "garrafa",
-          "pack_label": "1 Garrafa Avulsa",
-          "unit_price": 39.9,
-          "orig_unit_price": 54.9,
+          "container_type": "Galão 3L",
+          "unit_name": "litro",
+          "pack_label": "Galão 3L",
+          "unit_price": 13.3,
+          "orig_unit_price": 18.3,
           "price_per_liter": 13.3,
-          "unit_price_display": "R$ 39,90 / garrafa"
+          "unit_price_display": "R$ 13,30 / L"
         }
       },
       "paulistao": {
@@ -28549,16 +28699,16 @@
         "price": 36.9,
         "original_price": 49.9,
         "unit_pricing": {
-          "is_pack": false,
-          "units_count": 1,
+          "is_pack": true,
+          "units_count": 3,
           "unit_volume_ml": 3000,
-          "container_type": "Pet 3L",
-          "unit_name": "garrafa",
-          "pack_label": "1 Garrafa Avulsa",
-          "unit_price": 36.9,
-          "orig_unit_price": 49.9,
+          "container_type": "Galão 3L",
+          "unit_name": "litro",
+          "pack_label": "Galão 3L",
+          "unit_price": 12.3,
+          "orig_unit_price": 16.63,
           "price_per_liter": 12.3,
-          "unit_price_display": "R$ 36,90 / garrafa"
+          "unit_price_display": "R$ 12,30 / L"
         }
       },
       "marketplace": null,
