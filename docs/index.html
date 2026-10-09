@@ -1032,7 +1032,7 @@
 
                 ${isPack ? `
                   <div class="text-[11px] text-slate-400 mt-2 flex items-center justify-between border-t border-slate-800/80 pt-1.5">
-                    <span>Total do Pacote (${unitsCount} un):</span>
+                    <span>${(unitName === 'ovo') ? `Total da Bandeja (${unitsCount} ovos):` : ((unitName === 'rolo') ? `Total do Pacote (${unitsCount} rolos):` : `Total do Pacote (${unitsCount} un):`)}</span>
                     <span class="font-black text-white">R$ ${priceVal.toFixed(2).replace('.', ',')}</span>
                   </div>
                 ` : ''}
