@@ -3,6 +3,7 @@ Gerenciador de Banco de Dados SQLite para Histórico de Preços e Promoções.
 """
 import sqlite3
 import os
+import re
 from datetime import datetime
 from typing import List, Dict, Any, Optional, Tuple
 
@@ -67,6 +68,16 @@ def init_db():
                 UNIQUE(item_name, chat_id)
             )
         """)
+
+        # Migração: adiciona colunas de rastreamento de alertas se não existirem
+        try:
+            cursor.execute("ALTER TABLE watchlist ADD COLUMN last_alerted_price REAL")
+        except Exception:
+            pass
+        try:
+            cursor.execute("ALTER TABLE watchlist ADD COLUMN last_alerted_at TIMESTAMP")
+        except Exception:
+            pass
         
         conn.commit()
 
@@ -367,6 +378,194 @@ def remove_from_watchlist(item_name: str, chat_id: Optional[int] = None) -> bool
             cursor.execute("DELETE FROM watchlist WHERE item_name LIKE ?", (f"%{item_name}%",))
         conn.commit()
         return cursor.rowcount > 0
+
+def delete_alert_by_id(alert_id: int, chat_id: int) -> bool:
+    """Remove um alerta específico pelo ID."""
+    with get_connection() as conn:
+        cursor = conn.cursor()
+        cursor.execute("DELETE FROM watchlist WHERE id = ? AND chat_id = ?", (alert_id, chat_id))
+        conn.commit()
+        return cursor.rowcount > 0
+
+def find_best_deal_for_item(query: str, store_filter: str = "Todos") -> Optional[Dict[str, Any]]:
+    """
+    Busca o produto mais recente no banco que melhor corresponde ao termo e calcula o preço unitário efetivo.
+    """
+    from services.unit_parser import parse_unit_pricing
+    cleaned = (query or "").strip()
+    if not cleaned:
+        return None
+
+    words = [w.lower() for w in re.findall(r'[a-zA-Z0-9áéíóúâêîôûãõçÁÉÍÓÚÂÊÎÔÛÃÕÇ]+', cleaned) if len(w) > 1 and not w.replace('.', '').isdigit()]
+    if not words:
+        words = [cleaned.lower()]
+
+    with get_connection() as conn:
+        cursor = conn.cursor()
+        sql = """
+            SELECT p.id, p.name, p.store, p.link, p.category, ph.price, ph.original_price, ph.discount_pct, ph.recorded_at
+            FROM products p
+            JOIN price_history ph ON ph.product_id = p.id
+            WHERE ph.id = (
+                SELECT id FROM price_history 
+                WHERE product_id = p.id 
+                ORDER BY recorded_at DESC, id DESC 
+                LIMIT 1
+            )
+        """
+        cursor.execute(sql)
+        all_rows = cursor.fetchall()
+
+    matches = []
+    for r in all_rows:
+        name_lower = r["name"].lower()
+        if all(w in name_lower for w in words):
+            u_info = parse_unit_pricing(r["name"], r["price"], r["original_price"], r["category"])
+            effective_p = u_info["unit_price"] if u_info.get("is_pack") else r["price"]
+            matches.append({
+                "product_id": r["id"],
+                "name": r["name"],
+                "store": r["store"],
+                "link": r["link"],
+                "price": r["price"],
+                "original_price": r["original_price"],
+                "discount_pct": r["discount_pct"],
+                "effective_price": effective_p,
+                "unit_pricing": u_info,
+            })
+
+    # Fallback se não encontrou todas as palavras juntas: tenta com a primeira palavra (marca)
+    if not matches and len(words) > 1:
+        primary_brand = words[0]
+        for r in all_rows:
+            name_lower = r["name"].lower()
+            if primary_brand in name_lower:
+                u_info = parse_unit_pricing(r["name"], r["price"], r["original_price"], r["category"])
+                effective_p = u_info["unit_price"] if u_info.get("is_pack") else r["price"]
+                matches.append({
+                    "product_id": r["id"],
+                    "name": r["name"],
+                    "store": r["store"],
+                    "link": r["link"],
+                    "price": r["price"],
+                    "original_price": r["original_price"],
+                    "discount_pct": r["discount_pct"],
+                    "effective_price": effective_p,
+                    "unit_pricing": u_info,
+                })
+
+    if not matches:
+        return None
+
+    matches.sort(key=lambda x: x["effective_price"])
+    return matches[0]
+
+def add_or_update_price_alert(chat_id: int, item_name: str, target_max_price: float, store: str = "Todos") -> Dict[str, Any]:
+    """
+    Cria ou atualiza um alerta de preço alvo e avalia imediatamente o mercado.
+    """
+    cleaned_name = item_name.strip()
+    with get_connection() as conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            INSERT INTO watchlist (item_name, target_max_price, store, chat_id)
+            VALUES (?, ?, ?, ?)
+            ON CONFLICT(item_name, chat_id) DO UPDATE SET
+                target_max_price = excluded.target_max_price,
+                store = excluded.store
+        """, (cleaned_name, target_max_price, store, chat_id))
+        conn.commit()
+
+    best_deal = find_best_deal_for_item(cleaned_name)
+    is_hit = False
+    if best_deal and best_deal["effective_price"] <= target_max_price:
+        is_hit = True
+
+    return {
+        "item_name": cleaned_name,
+        "target_max_price": target_max_price,
+        "best_deal": best_deal,
+        "is_hit": is_hit
+    }
+
+def get_active_alerts(chat_id: int) -> List[Dict[str, Any]]:
+    """
+    Retorna todos os alertas do usuário enriquecidos com status atual do mercado.
+    """
+    with get_connection() as conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            SELECT id, item_name, target_max_price, store, last_alerted_price, last_alerted_at, created_at
+            FROM watchlist
+            WHERE chat_id = ? AND target_max_price IS NOT NULL AND target_max_price > 0
+            ORDER BY created_at DESC
+        """, (chat_id,))
+        rows = [dict(r) for r in cursor.fetchall()]
+
+    for row in rows:
+        best_deal = find_best_deal_for_item(row["item_name"])
+        row["best_deal"] = best_deal
+        if best_deal:
+            row["current_price"] = best_deal["effective_price"]
+            row["is_target_met"] = best_deal["effective_price"] <= row["target_max_price"]
+            row["diff"] = best_deal["effective_price"] - row["target_max_price"]
+        else:
+            row["current_price"] = None
+            row["is_target_met"] = False
+            row["diff"] = 0.0
+
+    return rows
+
+def check_target_hits_for_watchlist() -> List[Dict[str, Any]]:
+    """
+    Varre todos os alertas ativos e identifica quais atingiram o preço alvo agora.
+    Evita duplicação se o preço já foi alertado recentemente para o mesmo valor ou superior.
+    """
+    hits = []
+    with get_connection() as conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            SELECT id, item_name, target_max_price, chat_id, last_alerted_price, last_alerted_at
+            FROM watchlist
+            WHERE target_max_price IS NOT NULL AND target_max_price > 0 AND chat_id IS NOT NULL
+        """)
+        rows = [dict(r) for r in cursor.fetchall()]
+
+        for row in rows:
+            target = row["target_max_price"]
+            chat_id = row["chat_id"]
+            item_name = row["item_name"]
+            last_price = row.get("last_alerted_price")
+
+            best_deal = find_best_deal_for_item(item_name)
+            if best_deal and best_deal["effective_price"] <= target:
+                # Notifica se nunca foi alertado ou se o preço caiu ainda mais
+                if last_price is None or best_deal["effective_price"] < (last_price - 0.05):
+                    savings = target - best_deal["effective_price"]
+                    hits.append({
+                        "alert_id": row["id"],
+                        "chat_id": chat_id,
+                        "item_name": item_name,
+                        "target_price": target,
+                        "current_price": best_deal["effective_price"],
+                        "total_price": best_deal["price"],
+                        "product_name": best_deal["name"],
+                        "store": best_deal["store"],
+                        "link": best_deal["link"],
+                        "unit_pricing": best_deal["unit_pricing"],
+                        "savings": savings,
+                        "is_pack": best_deal["unit_pricing"].get("is_pack", False),
+                        "unit_price_display": best_deal["unit_pricing"].get("unit_price_display", "")
+                    })
+                    cursor.execute("""
+                        UPDATE watchlist
+                        SET last_alerted_price = ?, last_alerted_at = CURRENT_TIMESTAMP
+                        WHERE id = ?
+                    """, (best_deal["effective_price"], row["id"]))
+
+        conn.commit()
+
+    return hits
 
 # Inicializa o banco ao importar
 init_db()

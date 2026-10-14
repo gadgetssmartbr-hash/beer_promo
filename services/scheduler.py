@@ -31,6 +31,9 @@ async def run_scheduled_scraping(bot: Bot = None):
     if not bot:
         return
 
+    # 1. Verifica alertas individuais por preço-alvo
+    await check_and_notify_target_alerts(bot)
+
     subscribers = get_subscribers()
     if not subscribers:
         logger.info("ℹ️ Nenhum usuário inscrito para receber notificações agendadas.")
@@ -91,6 +94,44 @@ async def run_scheduled_scraping(bot: Bot = None):
         except Exception as e:
             logger.error(f"Erro ao enviar notificação geral para chat {chat_id}: {e}")
 
+async def check_and_notify_target_alerts(bot: Bot):
+    """
+    Verifica se algum produto atingiu o preço alvo configurado pelos usuários.
+    Envia mensagens diretas personalizadas para cada usuário.
+    """
+    from database import check_target_hits_for_watchlist
+    hits = check_target_hits_for_watchlist()
+    if not hits:
+        return
+
+    logger.info(f"🎯 [TARGET ALERTS] {len(hits)} alertas de preço alvo disparados!")
+    for h in hits:
+        chat_id = h["chat_id"]
+        savings_text = f" (Economia de R$ {h['savings']:.2f} por unidade!)" if h.get("savings", 0) > 0 else ""
+        pack_text = f"\n📦 Embalagem: {h['unit_pricing'].get('pack_label', '')}" if h.get("is_pack") else ""
+        unit_display = h.get("unit_price_display") or f"R$ {h['current_price']:.2f}"
+        
+        msg = (
+            f"🎯 *ALERTA DE PREÇO ALVO ATINGIDO!* 🔔\n\n"
+            f"O produto que você estava vigiando atingiu o seu preço desejado:\n"
+            f"📌 *{h['item_name']}*\n"
+            f"🏷️ *{h['product_name']}*\n\n"
+            f"🎯 Seu Preço Alvo: *R$ {h['target_price']:.2f}*\n"
+            f"💰 Preço Encontrado: *{unit_display}*{savings_text}\n"
+            f"🏪 Loja: *{h['store']}*{pack_text}\n\n"
+            f"👉 [CLIQUE AQUI PARA APROVEITAR A OFERTA]({h['link']})\n\n"
+            f"⚡ _Monitorado automaticamente pelo robô de Sertãozinho._"
+        )
+        try:
+            await bot.send_message(
+                chat_id=chat_id,
+                text=msg,
+                parse_mode="Markdown",
+                disable_web_page_preview=False
+            )
+        except Exception as e:
+            logger.error(f"Erro ao enviar alerta de preço alvo para {chat_id}: {e}")
+
 async def run_scheduled_marketplaces_hourly(bot: Bot = None):
     """
     Executa a rotina horária de bebidas e vinhos nos Marketplaces Online.
@@ -104,6 +145,9 @@ async def run_scheduled_marketplaces_hourly(bot: Bot = None):
 
     if not bot:
         return
+
+    # 1. Verifica alertas individuais por preço-alvo
+    await check_and_notify_target_alerts(bot)
 
     price_drops = summary.get("price_drops", [])
     if not price_drops:

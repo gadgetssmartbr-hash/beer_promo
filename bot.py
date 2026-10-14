@@ -44,6 +44,10 @@ from database import (
     add_to_watchlist,
     get_watchlist,
     remove_from_watchlist,
+    add_or_update_price_alert,
+    get_active_alerts,
+    delete_alert_by_id,
+    find_best_deal_for_item,
 )
 
 
@@ -64,9 +68,9 @@ def get_main_menu_keyboard(chat_id: int = None):
     is_subscribed = chat_id in subscribers if chat_id else False
     
     alert_btn = (
-        InlineKeyboardButton("🔕 Desativar Alertas", callback_data="menu_toggle_alerts")
+        InlineKeyboardButton("🔕 Desativar Notificações", callback_data="menu_toggle_alerts")
         if is_subscribed else
-        InlineKeyboardButton("🔔 Ativar Alertas (3x/dia)", callback_data="menu_toggle_alerts")
+        InlineKeyboardButton("🔔 Ativar Notificações (3x/dia)", callback_data="menu_toggle_alerts")
     )
     
     keyboard = [
@@ -79,8 +83,12 @@ def get_main_menu_keyboard(chat_id: int = None):
         ],
         # --- ATALHOS RÁPIDOS ---
         [
-            InlineKeyboardButton("🛒 Simulador de Carrinho (3 Lojas)", callback_data="menu_basket"),
+            InlineKeyboardButton("🎯 Alertas de Preço-Alvo", callback_data="menu_alerts"),
+            InlineKeyboardButton("🛒 Simulador de Carrinho", callback_data="menu_basket"),
+        ],
+        [
             InlineKeyboardButton("📸 Foto / Scanner no Mercado", callback_data="menu_scanner"),
+            InlineKeyboardButton("📝 Minha Lista de Compras", callback_data="menu_watchlist"),
         ],
         [
             InlineKeyboardButton("🍺 Cervejas Nacionais", callback_data="menu_beers"),
@@ -195,16 +203,26 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 from database import get_connection
                 with get_connection() as conn:
                     cursor = conn.cursor()
-                    cursor.execute("SELECT name, store FROM products WHERE id = ?", (prod_id,))
+                    cursor.execute("""
+                        SELECT p.name, p.store, ph.price, ph.original_price
+                        FROM products p
+                        LEFT JOIN price_history ph ON ph.product_id = p.id
+                        WHERE p.id = ?
+                        ORDER BY ph.recorded_at DESC, ph.id DESC LIMIT 1
+                    """, (prod_id,))
                     row = cursor.fetchone()
                     if row:
                         prod_name = row["name"]
-                        add_to_watchlist(item_name=prod_name, chat_id=chat_id)
+                        cur_p = row["price"] or 0.0
+                        target_p = round(cur_p * 0.95, 2) if cur_p > 0 else None
+                        add_or_update_price_alert(chat_id=chat_id, item_name=prod_name, target_max_price=target_p)
+                        target_str = f"\n🎯 Preço-Alvo: **R$ {target_p:.2f}** (Preço atual: R$ {cur_p:.2f})" if target_p else ""
                         await update.message.reply_text(
-                            f"🔔 *ALERTA ATIVADO COM SUCESSO!*\n\n"
-                            f"Estamos vigiando o produto:\n"
-                            f"📌 *{prod_name}* ({row['store']})\n\n"
-                            f"Assim que o preço cair ou entrar em promoção real, você será avisado imediatamente aqui no Telegram! 🎯",
+                            f"🔔 *ALERTA DE PREÇO ATIVADO!* 🎯\n\n"
+                            f"Estamos vigiando o produto vindo do microsite:\n"
+                            f"📌 *{prod_name}* ({row['store']}){target_str}\n\n"
+                            f"Assim que o preço atingir o alvo ou entrar em promoção real, você será avisado imediatamente aqui no Telegram!\n\n"
+                            f"💡 _Para ajustar o valor alvo, envie: `/alerta {prod_name} <seu_valor>`._",
                             parse_mode="Markdown"
                         )
                         return
@@ -216,7 +234,8 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "Seu assistente inteligente com dois ambientes dedicados:\n"
         "🏪 **Supermercados de Sertãozinho** (Savegnago, Copercana e Paulistão Atacadista)\n"
         "🌐 **Marketplaces & Adega Online** (Mercado Livre, Amazon, Wine e Zé Delivery)\n\n"
-        "⚡ *Novos Recursos Ativos:*\n"
+        "⚡ *Recursos Inteligentes Ativos:*\n"
+        "• 🎯 **/alerta** — Alerta de Preço-Alvo (Ex: `/alerta Heineken 4.50`)\n"
         "• 🌍 **/importadas** — Cervejas Importadas & Especiais (🇩🇪, 🇧🇪, 🇮🇪, 🇺🇸)\n"
         "• 🥇 **/puromalte** — Ranking de Custo por Litro de Puro Malte\n"
         "• 🥩 **/churrasco** — Churrascômetro com Batalha 3 Redes\n"
@@ -1241,56 +1260,173 @@ async def handle_grocery(update: Update, context: ContextTypes.DEFAULT_TYPE):
         disable_web_page_preview=True
     )
 
-async def watch_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Comando /vigiar <produto> [preco_alvo]"""
-    if not context.args:
-        await update.message.reply_text(
-            "⚠️ *Como usar o comando /vigiar:*\n\n"
-            "Envie: `/vigiar <nome do produto> [preço alvo opcional]`\n\n"
-            "Exemplos:\n"
-            "👉 `/vigiar Sabão Líquido Omo 3L 39.90`\n"
-            "👉 `/vigiar Picanha Savegnago 60.00`\n"
-            "👉 `/vigiar Papel Neve`",
-            parse_mode="Markdown"
-        )
-        return
-        
+async def handle_price_alert_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Comando /alerta [produto] [preco_alvo] - Cria alertas com preço-alvo ou abre painel."""
     chat_id = update.effective_chat.id
-    raw_text = " ".join(context.args)
-    
-    # Tenta extrair preço alvo se a última palavra for um número
+    if not context.args:
+        await show_alerts_dashboard(update, context, chat_id)
+        return
+
+    raw_text = " ".join(context.args).strip()
     parts = raw_text.split()
     target_price = None
-    if len(parts) > 1:
-        last_part = parts[-1].replace(",", ".")
+    item_parts = []
+
+    # Extrai o preço alvo (pode vir no fim ou no início, ex: "Heineken 4.50" ou "4.50 Heineken")
+    for p in reversed(parts):
+        clean_p = p.replace("R$", "").replace("r$", "").replace("$", "").replace(",", ".").strip()
         try:
-            target_price = float(last_part)
-            item_name = " ".join(parts[:-1])
+            val = float(clean_p)
+            if target_price is None and val > 0:
+                target_price = val
+                continue
         except ValueError:
-            item_name = raw_text
-    else:
+            pass
+        item_parts.insert(0, p)
+
+    item_name = " ".join(item_parts).strip()
+    if not item_name:
         item_name = raw_text
 
-    add_to_watchlist(item_name=item_name, target_max_price=target_price, chat_id=chat_id)
-    
-    price_info = f" com preço alvo de *R$ {target_price:.2f}*" if target_price else ""
-    text = (
-        f"✅ *Item adicionado à Lista da Família!* 👨‍👩‍👧\n\n"
-        f"📌 *Produto:* `{item_name}`{price_info}\n\n"
-        f"O robô vigiará o **Savegnago, Copercana, Amazon e Mercado Livre** 4x ao dia e avisará sempre que encontrar uma boa oferta!"
-    )
-    
+    best_deal = find_best_deal_for_item(item_name)
+
+    if target_price is None:
+        if best_deal:
+            ref_price = best_deal["effective_price"]
+            target_price = round(ref_price * 0.90, 2)
+            suggested_note = f"\n\n💡 _Como o valor não foi especificado, definimos um alvo com 10% de desconto (R$ {ref_price:.2f} ➔ R$ {target_price:.2f}). Para mudar: `/alerta {item_name} <novo_valor>`._"
+        else:
+            await update.message.reply_text(
+                "⚠️ *Informe o produto e o seu preço-alvo desejado!*\n\n"
+                "Exemplos de uso:\n"
+                "👉 `/alerta Heineken 350ml 4.50`\n"
+                "👉 `/alerta Guinness 17.50`\n"
+                "👉 `/alerta Spaten 3.79`\n"
+                "👉 `/alerta Picanha 59.90`\n"
+                "👉 `/alerta Sabão OMO 35.00`",
+                parse_mode="Markdown"
+            )
+            return
+    else:
+        suggested_note = ""
+
+    alert_info = add_or_update_price_alert(chat_id=chat_id, item_name=item_name, target_max_price=target_price)
+    best_deal = alert_info.get("best_deal")
+    is_hit = alert_info.get("is_hit", False)
+
+    if is_hit and best_deal:
+        u_info = best_deal["unit_pricing"]
+        unit_display = u_info.get("unit_price_display") or f"R$ {best_deal['effective_price']:.2f}"
+        savings = target_price - best_deal["effective_price"]
+        savings_str = f" (🔥 Economia de **R$ {savings:.2f}** abaixo do seu teto!)" if savings > 0.01 else " (🎯 Exatamente no seu preço alvo!)"
+        pack_info = f"\n📦 *Formato:* {u_info['pack_label']} (Total: R$ {best_deal['price']:.2f})" if u_info.get("is_pack") else ""
+
+        text = (
+            f"🎯 *OFERTA ENCONTRADA NO SEU PREÇO-ALVO!* 💥\n\n"
+            f"Boas notícias! Já encontramos uma oferta ativa dentro do seu objetivo:\n\n"
+            f"📌 *Produto vigiado:* `{item_name}`\n"
+            f"🏷️ *Item:* {best_deal['name']}\n"
+            f"💰 *Preço Atual:* **{unit_display}**{savings_str}{pack_info}\n"
+            f"🏪 *Onde:* {best_deal['store']}\n"
+            f"🎯 *Seu Teto:* R$ {target_price:.2f}\n\n"
+            f"👉 [CLIQUE AQUI PARA APROVEITAR A OFERTA]({best_deal['link']})\n\n"
+            f"🔔 _O alerta permanecerá ativo e você será avisado se o preço cair ainda mais!_"
+        )
+    else:
+        if best_deal:
+            u_info = best_deal["unit_pricing"]
+            unit_display = u_info.get("unit_price_display") or f"R$ {best_deal['effective_price']:.2f}"
+            cur_info = f"Hoje o menor preço encontrado é **{unit_display}** no *{best_deal['store']}*."
+        else:
+            cur_info = "Aguardando próxima varredura de preços nos supermercados e marketplaces."
+
+        text = (
+            f"🔔 *ALERTA DE PREÇO ATIVADO COM SUCESSO!* ✅\n\n"
+            f"📌 *Produto:* `{item_name}`\n"
+            f"🎯 *Preço-Alvo:* **R$ {target_price:.2f}**\n\n"
+            f"📊 *Situação no Mercado:* {cur_info}{suggested_note}\n\n"
+            f"⚡ O robô vigiará o **Savegnago, Copercana, Paulistão, Amazon e Mercado Livre** 24/7.\n"
+            f"Assim que o valor bater **R$ {target_price:.2f}** ou menos, você receberá uma notificação direta aqui no Telegram!"
+        )
+
     keyboard = InlineKeyboardMarkup([
-        [InlineKeyboardButton("📝 Ver Minha Lista", callback_data="menu_watchlist")],
-        [InlineKeyboardButton("⚡ Rodar Busca Agora", callback_data="menu_run_now")]
+        [InlineKeyboardButton("🔔 Ver Meus Alertas Ativos", callback_data="menu_alerts")],
+        [InlineKeyboardButton("⚡ Rodar Busca Agora", callback_data="menu_run_now")],
+        [InlineKeyboardButton("🔙 Menu Principal", callback_data="menu_start")]
     ])
-    
-    await update.message.reply_text(text, reply_markup=keyboard, parse_mode="Markdown")
+
+    await update.message.reply_text(text, reply_markup=keyboard, parse_mode="Markdown", disable_web_page_preview=False)
+
+
+async def show_alerts_dashboard(update: Update, context: ContextTypes.DEFAULT_TYPE, chat_id: int):
+    """Exibe painel de controle de alertas do usuário com status em tempo real e botões de atalho."""
+    alerts = get_active_alerts(chat_id)
+
+    lines = ["🎯 *PAINEL DE ALERTAS DE PREÇO-ALVO* 🔔\n"]
+    lines.append("O robô vigia estes itens 24/7 e te avisa no Telegram assim que atingirem o valor desejado:\n")
+
+    keyboard_buttons = []
+    if alerts:
+        for idx, a in enumerate(alerts, start=1):
+            target = a["target_max_price"]
+            cur_p = a.get("current_price")
+            status_emoji = "🟢" if a.get("is_target_met") else "🟡"
+            status_text = "ALVO ATINGIDO!" if a.get("is_target_met") else "Aguardando queda"
+
+            cur_str = f"R$ {cur_p:.2f}" if cur_p else "Buscando..."
+            best = a.get("best_deal")
+            store_str = f" no {best['store']}" if best else ""
+
+            lines.append(
+                f"{status_emoji} *{idx}. {a['item_name']}*\n"
+                f"  🎯 Seu Alvo: **R$ {target:.2f}** | Atual: *{cur_str}*{store_str}\n"
+                f"  🏷️ Status: _{status_text}_\n"
+            )
+            keyboard_buttons.append([
+                InlineKeyboardButton(f"🗑️ Excluir alerta #{idx}: {a['item_name'][:18]}", callback_data=f"del_alert:{a['id']}")
+            ])
+    else:
+        lines.append(
+            "_Você ainda não tem alertas de preço configurados!_\n\n"
+            "💡 *Como criar um alerta:* envie no chat:\n"
+            "👉 `/alerta Heineken 350ml 4.50`\n"
+            "👉 `/alerta Guinness 17.50`\n"
+            "👉 `/alerta Picanha 59.90`\n"
+        )
+
+    lines.append("\n⚡ *Criar Alertas Rápidos com 1 Clique:*")
+    keyboard_buttons.append([
+        InlineKeyboardButton("🍺 Heineken R$ 4,50", callback_data="preset_alert:Heineken 350ml:4.50"),
+        InlineKeyboardButton("🍺 Spaten R$ 3,80", callback_data="preset_alert:Spaten 350ml:3.80"),
+    ])
+    keyboard_buttons.append([
+        InlineKeyboardButton("🇮🇪 Guinness R$ 17,00", callback_data="preset_alert:Guinness 440ml:17.00"),
+        InlineKeyboardButton("🥩 Picanha R$ 59,90", callback_data="preset_alert:Picanha:59.90"),
+    ])
+    keyboard_buttons.append([
+        InlineKeyboardButton("🧼 Sabão OMO R$ 36,00", callback_data="preset_alert:Sabão Líquido OMO:36.00"),
+        InlineKeyboardButton("🍷 Casillero R$ 39,90", callback_data="preset_alert:Casillero del Diablo:39.90"),
+    ])
+    keyboard_buttons.append([
+        InlineKeyboardButton("🔄 Atualizar Status", callback_data="menu_alerts"),
+        InlineKeyboardButton("🔙 Menu Principal", callback_data="menu_start")
+    ])
+
+    reply_markup = InlineKeyboardMarkup(keyboard_buttons)
+    if update.callback_query:
+        await update.callback_query.edit_message_text("\n".join(lines), reply_markup=reply_markup, parse_mode="Markdown")
+    elif update.message:
+        await update.message.reply_text("\n".join(lines), reply_markup=reply_markup, parse_mode="Markdown")
+
+
+async def watch_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Comando /vigiar como alias para /alerta"""
+    await handle_price_alert_command(update, context)
 
 async def remove_watch_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Comando /remover <produto>"""
     if not context.args:
-        await update.message.reply_text("Envie: `/remover <nome do produto>` para tirar da lista.", parse_mode="Markdown")
+        await update.message.reply_text("Envie: `/remover <nome do produto>` para tirar da lista de alertas.", parse_mode="Markdown")
         return
         
     chat_id = update.effective_chat.id
@@ -1298,9 +1434,9 @@ async def remove_watch_command(update: Update, context: ContextTypes.DEFAULT_TYP
     removed = remove_from_watchlist(item_name, chat_id=chat_id)
     
     if removed:
-        await update.message.reply_text(f"🗑️ *'{item_name}'* foi removido da sua lista com sucesso.", parse_mode="Markdown")
+        await update.message.reply_text(f"🗑️ *'{item_name}'* foi removido dos seus alertas com sucesso.", parse_mode="Markdown")
     else:
-        await update.message.reply_text(f"❓ Não encontrei *'{item_name}'* na sua lista.", parse_mode="Markdown")
+        await update.message.reply_text(f"❓ Não encontrei *'{item_name}'* nos seus alertas.", parse_mode="Markdown")
 
 async def handle_how_to_watch(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
@@ -1373,8 +1509,29 @@ async def callback_router(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await handle_puro_malte_ranking(update, context)
     elif data == "menu_scanner":
         await handle_scanner_menu(update, context)
+    elif data == "menu_alerts":
+        chat_id = update.effective_chat.id
+        await show_alerts_dashboard(update, context, chat_id)
+    elif data.startswith("preset_alert:"):
+        _, item_name, price_str = data.split(":", 2)
+        chat_id = update.effective_chat.id
+        t_price = float(price_str)
+        res = add_or_update_price_alert(chat_id=chat_id, item_name=item_name, target_max_price=t_price)
+        hit_str = " (🎯 Alvo já atingido hoje!)" if res.get("is_hit") else ""
+        await query.answer(f"✅ Alerta para '{item_name}' (R$ {t_price:.2f}) ativado!{hit_str}", show_alert=True)
+        await show_alerts_dashboard(update, context, chat_id)
+    elif data.startswith("del_alert:"):
+        alert_id = int(data.split("del_alert:", 1)[1])
+        chat_id = update.effective_chat.id
+        delete_alert_by_id(alert_id, chat_id)
+        await query.answer("🗑️ Alerta removido com sucesso!", show_alert=True)
+        await show_alerts_dashboard(update, context, chat_id)
     elif data == "menu_toggle_alerts":
         await handle_toggle_alerts(update, context)
+
+async def show_alerts_dashboard_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    chat_id = update.effective_chat.id
+    await show_alerts_dashboard(update, context, chat_id)
 
 def main():
     if not TELEGRAM_BOT_TOKEN or TELEGRAM_BOT_TOKEN == "SEU_TOKEN_AQUI":
@@ -1386,24 +1543,26 @@ def main():
     # Inicializa o banco de dados SQLite
     init_db()
 
-    app = Application.builder().token(TELEGRAM_BOT_TOKEN).post_init(start_scheduler_job).build()
+    from telegram.request import HTTPXRequest
+    request = HTTPXRequest(connect_timeout=20.0, read_timeout=30.0)
+    app = Application.builder().token(TELEGRAM_BOT_TOKEN).request(request).post_init(start_scheduler_job).build()
 
     # Handlers de comandos
     app.add_handler(CommandHandler(["start", "ajuda", "menu"], start_command))
+    app.add_handler(CommandHandler(["alerta", "alertas", "alertapreco", "precoalvo", "vigiar", "adicionar"], handle_price_alert_command))
+    app.add_handler(CommandHandler(["meusalertas", "minhalista", "lista"], show_alerts_dashboard_command))
     app.add_handler(CommandHandler(["churrasco", "churras", "festa", "churrascometro"], handle_bbq_command))
     app.add_handler(CommandHandler(["dias", "encartes", "folhetos", "ofertasdodia"], handle_weekly_specials_command))
     app.add_handler(CommandHandler(["puromalte", "rankingpuro", "cervejas"], handle_puro_malte_ranking))
     app.add_handler(CommandHandler(["importadas", "importada", "especiais", "artesanais"], handle_imported_beers))
     app.add_handler(CommandHandler(["basica", "cesta", "produtos", "essenciais"], handle_basic_basket))
-    app.add_handler(CommandHandler(["vigiar", "adicionar"], watch_command))
-    app.add_handler(CommandHandler(["minhalista", "lista"], handle_watchlist))
     app.add_handler(CommandHandler(["carrinho", "comparar", "economia", "simulador"], handle_basket_comparison))
     app.add_handler(CommandHandler(["scanner", "foto", "camera"], handle_scanner_menu))
     app.add_handler(CommandHandler(["remover", "deletar"], remove_watch_command))
     app.add_handler(CommandHandler("buscar", search_command))
     app.add_handler(CommandHandler("historico", handle_history))
     app.add_handler(CommandHandler("rodaragora", handle_run_now))
-    app.add_handler(CommandHandler("alertas", handle_toggle_alerts))
+    app.add_handler(CommandHandler(["notificacoes", "broadcast"], handle_toggle_alerts))
     app.add_handler(CallbackQueryHandler(callback_router))
     app.add_handler(MessageHandler(filters.PHOTO, handle_photo_message))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, search_command))
@@ -1412,7 +1571,7 @@ def main():
     print("⏰ Agendamento: 3 buscas diárias (08:00, 13:00, 19:00).")
     print("💾 Banco de Dados SQLite: promotions_history.db pronto.")
     
-    app.run_polling()
+    app.run_polling(bootstrap_retries=5)
 
 
 if __name__ == "__main__":
