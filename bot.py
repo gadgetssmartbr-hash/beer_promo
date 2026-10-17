@@ -1065,11 +1065,13 @@ async def handle_photo_message(update: Update, context: ContextTypes.DEFAULT_TYP
 async def handle_run_now(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Executa a varredura nos sites imediatamente sob demanda."""
     query = update.callback_query
-    await query.answer()
+    if query:
+        await query.answer()
+        wait_msg = await query.edit_message_text("⏳ *Executando bots de busca em tempo real (Savegnago, Mercado Livre, Amazon, Wine)...*", parse_mode="Markdown")
+    else:
+        wait_msg = await update.message.reply_text("⏳ *Executando bots de busca em tempo real (Savegnago, Mercado Livre, Amazon, Wine)...*", parse_mode="Markdown")
     
-    await query.edit_message_text("⏳ *Executando bots de busca em tempo real (Savegnago, Mercado Livre, Amazon, Wine)...*", parse_mode="Markdown")
-    
-    summary = run_all_scrapers()
+    summary = await asyncio.to_thread(run_all_scrapers)
     
     lines = [
         f"✅ *VARREDURA CONCLUÍDA COM SUCESSO!*\n",
@@ -1097,37 +1099,53 @@ async def handle_run_now(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [InlineKeyboardButton("🔙 Voltar ao Menu Principal", callback_data="menu_start")]
     ])
     
-    await query.edit_message_text(
-        "\n".join(lines),
-        reply_markup=back_keyboard,
-        parse_mode="Markdown",
-        disable_web_page_preview=True
-    )
+    if query:
+        await query.edit_message_text(
+            "\n".join(lines),
+            reply_markup=back_keyboard,
+            parse_mode="Markdown",
+            disable_web_page_preview=True
+        )
+    else:
+        await wait_msg.edit_text(
+            "\n".join(lines),
+            reply_markup=back_keyboard,
+            parse_mode="Markdown",
+            disable_web_page_preview=True
+        )
 
 async def handle_toggle_alerts(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Ativa ou desativa notificações agendadas 4x/dia."""
+    """Ativa ou desativa notificações agendadas 3x/dia."""
     query = update.callback_query
-    await query.answer()
+    if query:
+        await query.answer()
     chat_id = update.effective_chat.id
     username = update.effective_user.username if update.effective_user else ""
     
     subscribers = get_subscribers()
     if chat_id in subscribers:
         remove_subscriber(chat_id)
-        text = "🔕 *Alertas automáticos desativados.* Você não receberá mais os resumos das 4 rodadas diárias."
+        text = "🔕 *Notificações automáticas desativadas.* Você não receberá mais os resumos das 3 rodadas diárias (08h, 13h e 19h)."
     else:
         add_subscriber(chat_id, username)
-        text = "🔔 *Alertas automáticos ativados com sucesso!*\n\nVocê receberá as melhores ofertas e quedas de preço 4 vezes ao dia: às **08:00, 12:00, 16:00 e 20:00**."
+        text = "🔔 *Notificações automáticas ativadas com sucesso!*\n\nVocê receberá as melhores ofertas reais e quedas de preço 3 vezes ao dia: às **08:00, 13:00 e 19:00**."
         
     back_keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("🔙 Voltar ao Menu Principal", callback_data="menu_start")]
     ])
     
-    await query.edit_message_text(
-        text,
-        reply_markup=back_keyboard,
-        parse_mode="Markdown"
-    )
+    if query:
+        await query.edit_message_text(
+            text,
+            reply_markup=back_keyboard,
+            parse_mode="Markdown"
+        )
+    else:
+        await update.message.reply_text(
+            text,
+            reply_markup=back_keyboard,
+            parse_mode="Markdown"
+        )
 
 
 
