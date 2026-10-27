@@ -95,6 +95,7 @@ def get_main_menu_keyboard(chat_id: int = None):
             InlineKeyboardButton("🌍 Cervejas Importadas", callback_data="menu_importadas"),
         ],
         [
+            InlineKeyboardButton("🍷 Sommelier Amazon (Tintos)", callback_data="menu_sommelier_wine"),
             InlineKeyboardButton("🍷 Vinhos & Adega", callback_data="menu_wines"),
             InlineKeyboardButton("🌐 Ver Microsite Web", callback_data="menu_microsite"),
         ],
@@ -172,6 +173,7 @@ async def handle_online_env_menu(update: Update, context: ContextTypes.DEFAULT_T
             InlineKeyboardButton("🌍 Cervejas Importadas & Especiais", callback_data="menu_importadas"),
         ],
         [
+            InlineKeyboardButton("🍷 Sommelier Amazon (Tintos Secos)", callback_data="menu_sommelier_wine"),
             InlineKeyboardButton("🍷 Vinhos & Espumantes", callback_data="menu_wines"),
             InlineKeyboardButton("🎟️ Central de Cupons & Zé Delivery", callback_data="menu_coupons"),
         ],
@@ -946,6 +948,64 @@ async def handle_imported_beers(update: Update, context: ContextTypes.DEFAULT_TY
     elif update.message:
         await update.message.reply_text("\n".join(lines), reply_markup=keyboard, parse_mode="Markdown", disable_web_page_preview=True)
 
+async def handle_sommelier_wine(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """
+    Especialista Sommelier Amazon: Exibe os melhores vinhos tintos secos finos,
+    com entrega rápida Prime, perfil de uva, harmonização e notas de degustação.
+    """
+    query = update.callback_query
+    if query:
+        await query.answer()
+
+    from services.wine_sommelier import get_best_amazon_red_wines, format_wine_sommelier_catalog
+
+    wines = get_best_amazon_red_wines()
+    text = format_wine_sommelier_catalog(wines, limit=6)
+
+    keyboard = InlineKeyboardMarkup([
+        [
+            InlineKeyboardButton("🍷 Card com Notas do Especialista", callback_data="menu_sommelier_next"),
+            InlineKeyboardButton("📦 Ver no Microsite", callback_data="menu_microsite"),
+        ],
+        [
+            InlineKeyboardButton("🔙 Menu Principal", callback_data="menu_start"),
+        ]
+    ])
+
+    if query:
+        await query.edit_message_text(text, reply_markup=keyboard, parse_mode="Markdown", disable_web_page_preview=True)
+    elif update.message:
+        await update.message.reply_text(text, reply_markup=keyboard, parse_mode="Markdown", disable_web_page_preview=True)
+
+async def handle_sommelier_next(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Exibe o card detalhado do próximo vinho tinto seco selecionado pelo Sommelier."""
+    query = update.callback_query
+    if query:
+        await query.answer()
+
+    from services.wine_sommelier import get_next_hourly_sommelier_wine, format_wine_sommelier_card
+
+    wine = get_next_hourly_sommelier_wine()
+    if not wine:
+        text = "🍷 Nenhum vinho encontrado no momento. Tente novamente em instantes."
+    else:
+        text = format_wine_sommelier_card(wine)
+
+    keyboard = InlineKeyboardMarkup([
+        [
+            InlineKeyboardButton("🍷 Mais um Rótulo", callback_data="menu_sommelier_next"),
+            InlineKeyboardButton("📋 Ver Lista Top 6", callback_data="menu_sommelier_wine"),
+        ],
+        [
+            InlineKeyboardButton("🔙 Menu Principal", callback_data="menu_start"),
+        ]
+    ])
+
+    if query:
+        await query.edit_message_text(text, reply_markup=keyboard, parse_mode="Markdown", disable_web_page_preview=False)
+    elif update.message:
+        await update.message.reply_text(text, reply_markup=keyboard, parse_mode="Markdown", disable_web_page_preview=False)
+
 async def handle_scanner_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Menu explicativo do scanner de fotos e código de barras no mercado."""
     query = update.callback_query
@@ -1501,6 +1561,10 @@ async def callback_router(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await handle_beers(update, context)
     elif data == "menu_importadas":
         await handle_imported_beers(update, context)
+    elif data == "menu_sommelier_wine":
+        await handle_sommelier_wine(update, context)
+    elif data == "menu_sommelier_next":
+        await handle_sommelier_next(update, context)
     elif data == "menu_wines":
         await handle_wines(update, context)
     elif data == "menu_supermarkets":
@@ -1572,6 +1636,7 @@ def main():
     app.add_handler(CommandHandler(["churrasco", "churras", "festa", "churrascometro"], handle_bbq_command))
     app.add_handler(CommandHandler(["dias", "encartes", "folhetos", "ofertasdodia"], handle_weekly_specials_command))
     app.add_handler(CommandHandler(["puromalte", "rankingpuro", "cervejas"], handle_puro_malte_ranking))
+    app.add_handler(CommandHandler(["vinho", "vinhos", "sommelier", "adega"], handle_sommelier_wine))
     app.add_handler(CommandHandler(["importadas", "importada", "especiais", "artesanais"], handle_imported_beers))
     app.add_handler(CommandHandler(["basica", "cesta", "produtos", "essenciais"], handle_basic_basket))
     app.add_handler(CommandHandler(["carrinho", "comparar", "economia", "simulador"], handle_basket_comparison))

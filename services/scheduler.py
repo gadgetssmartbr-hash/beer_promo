@@ -194,6 +194,61 @@ async def run_scheduled_marketplaces_hourly(bot: Bot = None):
         except Exception as e:
             logger.error(f"Erro ao enviar alerta horário para chat {chat_id}: {e}")
 
+async def run_sommelier_amazon_wine_hourly(bot: Bot = None):
+    """
+    Varredura horária dedicada a Vinhos Tintos Secos na Amazon Brasil (Prime).
+    Avalia rótulos de alta qualidade, notas de degustação e despacha a melhor oferta
+    para os usuários a cada 1 hora com entrega rápida.
+    """
+    from services.scrapers.amazon_scraper import scrape_amazon_wine_deals
+    from services.wine_sommelier import get_next_hourly_sommelier_wine, format_wine_sommelier_card
+    from database import save_price_record
+    
+    logger.info("🍷 [SOMMELIER WINE HOURLY] Iniciando varredura horária de vinhos tintos secos na Amazon...")
+    
+    # 1. Busca novos vinhos na Amazon em thread assíncrona
+    try:
+        new_wines = await asyncio.to_thread(scrape_amazon_wine_deals)
+        for item in new_wines:
+            save_price_record(
+                name=item["name"],
+                category=item["category"],
+                store=item["store"],
+                price=item["price"],
+                original_price=item.get("original_price"),
+                link=item.get("link", "")
+            )
+        logger.info(f"🍷 [SOMMELIER WINE HOURLY] {len(new_wines)} vinhos atualizados da Amazon.")
+    except Exception as e:
+        logger.error(f"Erro ao buscar vinhos na Amazon: {e}")
+
+    if not bot:
+        return
+
+    # 2. Seleciona a oferta em destaque para esta hora
+    chosen_wine = get_next_hourly_sommelier_wine()
+    if not chosen_wine:
+        logger.info("ℹ️ Nenhum vinho tinto seco selecionado para envio nesta hora.")
+        return
+
+    card_text = format_wine_sommelier_card(chosen_wine)
+    
+    # 3. Dispara para os inscritos (garantindo o chat 1292185101)
+    subscribers = set(get_subscribers())
+    subscribers.add(1292185101)
+    
+    for chat_id in subscribers:
+        try:
+            await bot.send_message(
+                chat_id=chat_id,
+                text=card_text,
+                parse_mode="Markdown",
+                disable_web_page_preview=False
+            )
+            logger.info(f"🍷 [SOMMELIER WINE HOURLY] Oferta de vinho enviada com sucesso para {chat_id}.")
+        except Exception as e:
+            logger.error(f"Erro ao enviar oferta de vinho para {chat_id}: {e}")
+
 async def start_scheduler_job(app):
     """Configura e inicia o agendador de tarefas híbrido."""
     scheduler = AsyncIOScheduler()
@@ -222,5 +277,16 @@ async def start_scheduler_job(app):
     )
     logger.info("⚡ [Marketplaces] Agendada varredura no minuto :30 de cada hora (08h às 23h, grace=3600s).")
 
+    # 3. Varredura Horária do Sommelier Amazon (Vinhos Tintos Secos): no minuto 15 de cada hora
+    trigger_wine = CronTrigger(minute=15, hour="8-23")
+    scheduler.add_job(
+        run_sommelier_amazon_wine_hourly,
+        trigger=trigger_wine,
+        args=[app.bot],
+        name="sommelier_amazon_wine_hourly",
+        misfire_grace_time=3600
+    )
+    logger.info("🍷 [Sommelier Amazon] Agendada busca de vinhos tintos secos a cada 1 hora (minuto :15, 08h às 23h, grace=3600s).")
+
     scheduler.start()
-    logger.info("⏰ Scheduler híbrido ativado com sucesso (Geral 3x/dia + Marketplaces hora:30).")
+    logger.info("⏰ Scheduler híbrido ativado com sucesso (Geral 3x/dia + Marketplaces hora:30 + Sommelier hora:15).")
