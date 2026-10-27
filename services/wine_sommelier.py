@@ -261,41 +261,41 @@ def analyze_wine_profile(name: str, price: float = 0.0, original_price: Optional
 
 def get_sommelier_curated_catalog() -> List[Dict[str, Any]]:
     """
-    Catálogo permanente de rótulos consagrados de vinhos tintos secos na Amazon Brasil com Prime.
-    Garante disponibilidade imediata de recomendações com entrega rápida.
+    Catálogo permanente de rótulos consagrados de vinhos tintos secos na Amazon Brasil (Prime).
+    Todos os links apontam DIRETAMENTE para a página do produto (/dp/ASIN).
     """
     return [
         {
             "name": "Concha y Toro Casillero Del Diablo Cabernet Sauvignon 750ml (Amazon Prime)",
             "category": "vinho",
             "store": "Amazon Brasil",
-            "price": 36.00,
+            "price": 47.40,
             "original_price": 59.90,
-            "link": "https://www.amazon.com.br/s?k=casillero+del+diablo+cabernet&i=grocery"
+            "link": "https://www.amazon.com.br/Vinho-Casillero-Diablo-Cabernet-Sauvignon/dp/B07LBK41YG"
+        },
+        {
+            "name": "Concha y Toro Casillero Del Diablo Carmenere 750ml (Amazon Prime)",
+            "category": "vinho",
+            "store": "Amazon Brasil",
+            "price": 39.97,
+            "original_price": 54.90,
+            "link": "https://www.amazon.com.br/Vinho-Casillero-Diablo-Carmenere-750ml/dp/B01IT28BY2"
         },
         {
             "name": "Vinho Pé Tinto Esporão Alentejo 750ml (Amazon Prime)",
             "category": "vinho",
             "store": "Amazon Brasil",
-            "price": 32.39,
+            "price": 39.90,
             "original_price": 49.90,
-            "link": "https://www.amazon.com.br/s?k=vinho+pe+tinto+esporao&i=grocery"
+            "link": "https://www.amazon.com.br/Vinho-Espor%C3%A3o-Tinto-750ml-2018/dp/B00DTRY07A"
         },
         {
-            "name": "Vinho Argentino Cordero Con Piel de Lobo Malbec 750ml (Amazon Prime)",
+            "name": "Vinho Argentino Cordero Con Piel de Lobo 750ml (Amazon Prime)",
             "category": "vinho",
             "store": "Amazon Brasil",
-            "price": 44.90,
+            "price": 44.93,
             "original_price": 64.90,
-            "link": "https://www.amazon.com.br/s?k=vinho+cordero+con+piel+de+lobo&i=grocery"
-        },
-        {
-            "name": "Vinho Fino Tinto Português Intimista Alentejo 750ml (Amazon Prime)",
-            "category": "vinho",
-            "store": "Amazon Brasil",
-            "price": 35.41,
-            "original_price": 49.90,
-            "link": "https://www.amazon.com.br/s?k=vinho+intimista+tinto&i=grocery"
+            "link": "https://www.amazon.com.br/Vinho-Argentino-Cordero-Cabernet-Sauvignon/dp/B092R993VQ"
         },
         {
             "name": "Vinho Tinto Alandra Esporão 750ml (Amazon Prime)",
@@ -303,74 +303,102 @@ def get_sommelier_curated_catalog() -> List[Dict[str, Any]]:
             "store": "Amazon Brasil",
             "price": 32.50,
             "original_price": 46.00,
-            "link": "https://www.amazon.com.br/s?k=vinho+alandra+tinto&i=grocery"
+            "link": "https://www.amazon.com.br/Espor%C3%A3o-Vinho-Tinto-Alandra/dp/B0CHWYSRTD"
         },
         {
-            "name": "Vinho Tinto Italiano Magnifico Primitivo Tarantino IGT 750ml (Amazon Prime)",
+            "name": "Vinho Fino Tinto Português Intimista Alentejo 750ml (Amazon Prime)",
             "category": "vinho",
             "store": "Amazon Brasil",
-            "price": 58.31,
-            "original_price": 89.90,
-            "link": "https://www.amazon.com.br/s?k=vinho+magnifico+primitivo&i=grocery"
+            "price": 33.52,
+            "original_price": 49.90,
+            "link": "https://www.amazon.com.br/Vinho-Tinto-Portugu%C3%AAs-Intimista-Alentejo/dp/B0D4NH9363"
         },
         {
-            "name": "Vinho Tinto Chileno Carménère Santo Graal Gran Reserva Single Vineyard 750ml (Amazon Prime)",
+            "name": "Vinho Tinto Chileno Escudo Rojo Gran Reserva Origine Cabernet Sauvignon 750ml (Amazon Prime)",
             "category": "vinho",
             "store": "Amazon Brasil",
-            "price": 84.55,
-            "original_price": 119.00,
-            "link": "https://www.amazon.com.br/s?k=santo+graal+gran+reserva+carmenere&i=grocery"
+            "price": 188.10,
+            "original_price": 240.00,
+            "link": "https://www.amazon.com.br/Chileno-Reserva-Origine-Cabernet-Sauvignon/dp/B09SHY372L"
         },
         {
-            "name": "Vinho Tinto Chileno Escudo Rojo Gran Reserva Cabernet Sauvignon 750ml (Amazon Prime)",
+            "name": "DV Catena Cabernet Malbec 6 Garrafas (Amazon Prime)",
             "category": "vinho",
             "store": "Amazon Brasil",
-            "price": 122.55,
-            "original_price": 169.90,
-            "link": "https://www.amazon.com.br/s?k=escudo+rojo+gran+reserva&i=grocery"
+            "price": 484.99,
+            "original_price": 599.00,
+            "link": "https://www.amazon.com.br/DV-Catena-Cabernet-Malbec-Garrafas/dp/B0HM7F3WLF"
         },
         {
-            "name": "Concha y Toro Marques De Casa Concha Merlot 750ml (Amazon Prime)",
+            "name": "Concha y Toro Reservado Cabernet Sauvignon 750ml (Amazon Prime)",
             "category": "vinho",
             "store": "Amazon Brasil",
-            "price": 122.89,
-            "original_price": 179.90,
-            "link": "https://www.amazon.com.br/s?k=marques+de+casa+concha&i=grocery"
+            "price": 29.79,
+            "original_price": 39.90,
+            "link": "https://www.amazon.com.br/Concha-Toro-Reservado-Cabernet-Sauvignon/dp/B07XLMJHRN"
         },
         {
-            "name": "Luigi Bosca, Vinho Argentino Tinto Cabernet Franc De Sangre 750ml (Amazon Prime)",
+            "name": "Concha y Toro Reservado Vinho Chileno Merlot 750ml (Amazon Prime)",
             "category": "vinho",
             "store": "Amazon Brasil",
-            "price": 137.99,
-            "original_price": 195.00,
-            "link": "https://www.amazon.com.br/s?k=luigi+bosca+de+sangre&i=grocery"
+            "price": 24.98,
+            "original_price": 34.90,
+            "link": "https://www.amazon.com.br/Concha-Reservado-Vinho-Chileno-Merlot/dp/B09Q4JK85H"
         },
         {
-            "name": "DV Catena Cabernet Malbec Mendoza (Amazon Prime)",
+            "name": "Sierra Batuco Vinho Tinto Chileno Cabernet Sauvignon 750ml (Amazon Prime)",
             "category": "vinho",
             "store": "Amazon Brasil",
-            "price": 149.90,
+            "price": 35.00,
+            "original_price": 45.00,
+            "link": "https://www.amazon.com.br/Chileno-Sierra-Batuco-Cabernet-Sauvignon/dp/B0BNQSFV8T"
+        },
+        {
+            "name": "Vinho Tinto Português Casa Ferreirinha Esteva Douro 750ml (Amazon Prime)",
+            "category": "vinho",
+            "store": "Amazon Brasil",
+            "price": 93.95,
+            "original_price": 120.00,
+            "link": "https://www.amazon.com.br/Vinho-Tinto-Portugu%C3%AAs-Ferreirinha-Esteva/dp/B0FW6DDVP9"
+        },
+        {
+            "name": "Montes Limited Selection Pinot Noir Vinho Tinto Chileno 750ml (Amazon Prime)",
+            "category": "vinho",
+            "store": "Amazon Brasil",
+            "price": 154.40,
             "original_price": 199.00,
-            "link": "https://www.amazon.com.br/s?k=dv+catena+cabernet+malbec&i=grocery"
+            "link": "https://www.amazon.com.br/Montes-Limited-Selection-Pinot-chileno/dp/B001M2DUIY"
         },
         {
-            "name": "Vinho Tinto Italiano Chianti Classico DOCG Storia di Famiglia Cecchi 750ml (Amazon Prime)",
+            "name": "Tormaresca Neprica Vinho Tinto Seco Primitivo Puglia IGT 750ml (Amazon Prime)",
+            "category": "vinho",
+            "store": "Amazon Brasil",
+            "price": 182.10,
+            "original_price": 230.00,
+            "link": "https://www.amazon.com.br/Tormaresca-Neprica-Primitivo-encorpado-frutado/dp/B00O0SCESO"
+        },
+        {
+            "name": "Vinho Faustino Crianza Tinto Seco DOCa Rioja 750ml (Amazon Prime)",
             "category": "vinho",
             "store": "Amazon Brasil",
             "price": 179.55,
-            "original_price": 240.00,
-            "link": "https://www.amazon.com.br/s?k=chianti+classico+cecchi&i=grocery"
+            "original_price": 235.00,
+            "link": "https://www.amazon.com.br/Vinho-Faustino-Crianza-Tinto-750ml/dp/B009XPFHV0"
         }
     ]
 
 def get_best_amazon_red_wines() -> List[Dict[str, Any]]:
     """
     Combina os vinhos do banco SQLite e a curadoria permanente do Sommelier,
-    filtrando estritamente por vinhos tintos secos da Amazon com entrega rápida.
+    garantindo que TODOS os links sejam diretos (/dp/ASIN) para a compra na Amazon.
     """
     from database import get_connection
     wines = []
     seen_names = set()
+    curated = get_sommelier_curated_catalog()
+    
+    # Mapeamento de links diretos verificados
+    curated_map = {item["name"][:20].lower(): item["link"] for item in curated}
 
     with get_connection() as conn:
         cursor = conn.cursor()
@@ -391,6 +419,22 @@ def get_best_amazon_red_wines() -> List[Dict[str, Any]]:
         for r in rows:
             name = r["name"]
             price = r["price"]
+            link = r.get("link", "")
+            
+            # Se o link no banco for genérico (apenas amazon.com.br) ou sem /dp/, tenta resgatar o link direto
+            if not link or link in ["https://www.amazon.com.br", "https://www.amazon.com.br/"] or "/dp/" not in link:
+                matched = None
+                n_low = name[:20].lower()
+                for ck, cl in curated_map.items():
+                    if ck in n_low or n_low in ck:
+                        matched = cl
+                        break
+                if matched:
+                    link = matched
+                else:
+                    # Não possui link direto para a garrafa -> pula para não enviar link genérico
+                    continue
+                    
             if is_good_dry_red(name, price):
                 prof = analyze_wine_profile(name, price, r.get("original_price"))
                 clean_key = prof["clean_name"][:25].lower()
@@ -400,7 +444,7 @@ def get_best_amazon_red_wines() -> List[Dict[str, Any]]:
                         "id": r["id"],
                         "name": r["name"],
                         "store": r["store"],
-                        "link": r["link"],
+                        "link": link,
                         "price": price,
                         "original_price": r.get("original_price"),
                         "discount_pct": prof["discount_pct"],
@@ -408,7 +452,6 @@ def get_best_amazon_red_wines() -> List[Dict[str, Any]]:
                     })
 
     # Adiciona a curadoria se ainda faltarem itens de referência
-    curated = get_sommelier_curated_catalog()
     for item in curated:
         name = item["name"]
         price = item["price"]
