@@ -1589,6 +1589,74 @@
       "price": 39.9
     },
     {
+      "id": 16813,
+      "name": "Concha y Toro Casillero Del Diablo Carmenere 750ml (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Vinho-Casillero-Diablo-Carmenere-750ml/dp/B01IT28BY2",
+      "min_price": 39.97,
+      "avg_price": 39.97,
+      "max_price": 39.97,
+      "total_checks": 3,
+      "current_price": 39.97,
+      "original_price": 54.9,
+      "discount_pct": 27.2,
+      "last_recorded_at": "2026-10-28 11:29:20",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 39.97,
+        "orig_unit_price": 54.9,
+        "price_per_liter": 53.29,
+        "unit_price_display": "R$ 39,97 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 39.97,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 39.97,
+          "original_price": 54.9,
+          "discount_pct": 27.2,
+          "recorded_at": "2026-10-27 16:33:42"
+        },
+        {
+          "price": 39.97,
+          "original_price": 54.9,
+          "discount_pct": 27.2,
+          "recorded_at": "2026-10-27 22:22:55"
+        },
+        {
+          "price": 39.97,
+          "original_price": 54.9,
+          "discount_pct": 27.2,
+          "recorded_at": "2026-10-28 11:29:20"
+        }
+      ],
+      "origin_type": "online",
+      "price": 39.97
+    },
+    {
       "id": 60,
       "name": "Sabão Líquido OMO Lavagem Perfeita 3 Litros (Savegnago)",
       "category": "limpeza",
@@ -2103,14 +2171,14 @@
       "discount_pct": 25.0,
       "last_recorded_at": "2026-10-27 20:30:32",
       "intelligence": {
-        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
-        "tag": "Excelente Preço",
-        "score": "great",
-        "emoji": "🟢",
-        "color": "emerald",
-        "savings_pct": 0.0,
-        "is_all_time_low": true,
-        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+        "verdict": "⏳ Preço Alto (Acima da Média)",
+        "tag": "Preço Alto",
+        "score": "high",
+        "emoji": "🔴",
+        "color": "rose",
+        "savings_pct": -9.9,
+        "is_all_time_low": false,
+        "advice": "Está mais caro que a média recente. Recomendamos aguardar nova promoção."
       },
       "unit_pricing": {
         "is_pack": false,
@@ -2601,7 +2669,7 @@
       "store": "Paulistão Atacadista",
       "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
       "min_price": 8.99,
-      "avg_price": 8.99,
+      "avg_price": 8.990000000000002,
       "max_price": 8.99,
       "total_checks": 56,
       "current_price": 8.99,
@@ -3229,7 +3297,7 @@
       "store": "Paulistão Atacadista",
       "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
       "min_price": 8.99,
-      "avg_price": 8.99,
+      "avg_price": 8.990000000000002,
       "max_price": 8.99,
       "total_checks": 56,
       "current_price": 8.99,
@@ -6753,7 +6821,7 @@
       "store": "Supermercados Copercana",
       "link": "https://www.supermercadoscopercana.com.br",
       "min_price": 10.49,
-      "avg_price": 10.49,
+      "avg_price": 10.490000000000002,
       "max_price": 10.49,
       "total_checks": 56,
       "current_price": 10.49,
@@ -12341,7 +12409,7 @@
       "store": "Mercado Livre Full",
       "link": "https://lista.mercadolivre.com.br/cerveja-paulaner-500ml_OrderId_PRICE*ASC_Shipping_fulfillment",
       "min_price": 19.9,
-      "avg_price": 19.9,
+      "avg_price": 19.899999999999995,
       "max_price": 19.9,
       "total_checks": 215,
       "current_price": 19.9,
@@ -12354,7 +12422,7 @@
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -13071,7 +13139,7 @@
       "store": "Mercado Livre Full",
       "link": "https://lista.mercadolivre.com.br/cerveja-duvel-330ml_OrderId_PRICE*ASC_Shipping_fulfillment",
       "min_price": 27.9,
-      "avg_price": 27.9,
+      "avg_price": 27.899999999999995,
       "max_price": 27.9,
       "total_checks": 215,
       "current_price": 27.9,
@@ -13084,7 +13152,7 @@
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -19175,7 +19243,7 @@
       "store": "Mercado Livre Full",
       "link": "https://lista.mercadolivre.com.br/cerveja-erdinger-pack_OrderId_PRICE*ASC_Shipping_fulfillment",
       "min_price": 114.9,
-      "avg_price": 114.9,
+      "avg_price": 114.90000000000002,
       "max_price": 114.9,
       "total_checks": 215,
       "current_price": 114.9,
@@ -21811,7 +21879,7 @@
       "store": "Mercado Livre Full",
       "link": "https://lista.mercadolivre.com.br/cerveja-guinness-lata-440ml_OrderId_PRICE*ASC_Shipping_fulfillment",
       "min_price": 24.9,
-      "avg_price": 24.9,
+      "avg_price": 24.899999999999995,
       "max_price": 24.9,
       "total_checks": 215,
       "current_price": 24.9,
@@ -21824,7 +21892,7 @@
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -27227,7 +27295,7 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Feijão+Carioca+1kg",
       "min_price": 7.89,
-      "avg_price": 7.890000000000001,
+      "avg_price": 7.89,
       "max_price": 7.89,
       "total_checks": 74,
       "current_price": 7.89,
@@ -29059,7 +29127,7 @@
       "store": "Paulistão Atacadista",
       "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
       "min_price": 7.39,
-      "avg_price": 7.390000000000001,
+      "avg_price": 7.39,
       "max_price": 7.39,
       "total_checks": 74,
       "current_price": 7.39,
@@ -29965,7 +30033,7 @@
       "store": "Supermercados Copercana",
       "link": "https://www.supermercadoscopercana.com.br",
       "min_price": 7.89,
-      "avg_price": 7.890000000000001,
+      "avg_price": 7.89,
       "max_price": 7.89,
       "total_checks": 74,
       "current_price": 7.89,
@@ -40305,22 +40373,22 @@
     }
   ],
   "weekly_specials": {
-    "today_key": "terca",
-    "day_name": "Terça-feira",
+    "today_key": "quarta",
+    "day_name": "Quarta-feira",
     "highlights": [
       {
-        "store": "Copercana",
-        "theme": "Terça e Quarta Verde",
-        "badge": "🥬 Hortifruti",
+        "store": "Savegnago",
+        "theme": "Quarta e Quinta do Hortifruti",
+        "badge": "🥬 Super Feira",
         "color": "emerald",
-        "desc": "Feira completa com frutas, legumes e verduras direto dos produtores cooperados."
+        "desc": "A maior feira da rede com bananas, tomates, maçãs e legumes frescos."
       },
       {
-        "store": "Paulistão Atacadista",
-        "theme": "Terça da Feira & Hortifruti Atacado",
-        "badge": "🥬 Feira",
+        "store": "Copercana",
+        "theme": "Quarta Verde (2º Dia)",
+        "badge": "🥬 Hortifruti",
         "color": "emerald",
-        "desc": "Sacos e caixas de batata, cebola, tomate e frutas com preço de atacado."
+        "desc": "Continuação da feira de hortifruti com preços reduzidos."
       }
     ],
     "all_schedule": {
