@@ -7,6 +7,70 @@
   },
   "deals": [
     {
+      "id": 18124,
+      "name": "Comfort Amaciante Concentrado Frescor Intenso 1 L (Amazon Prime)",
+      "category": "limpeza",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Comfort-Amaciante-Concentrado-Azul/dp/B07DTLS9M7",
+      "min_price": 17.99,
+      "avg_price": 17.99,
+      "max_price": 17.99,
+      "total_checks": 1,
+      "current_price": 17.99,
+      "original_price": 17990.0,
+      "discount_pct": 99.9,
+      "last_recorded_at": "2026-10-29 16:37:36",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 1000,
+        "container_type": "Frasco 1L",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 1L",
+        "unit_price": 17.99,
+        "orig_unit_price": 17990.0,
+        "price_per_liter": 17.99,
+        "unit_price_display": "R$ 17,99 / frasco"
+      },
+      "unit_price": 17.99,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
+      "history_points": [
+        {
+          "price": 17990.0,
+          "original_price": 17990.0,
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 9004.0,
+          "original_price": 17990.0,
+          "discount_pct": 49.9,
+          "recorded_at": "Última Varredura"
+        },
+        {
+          "price": 17.99,
+          "original_price": 17990.0,
+          "discount_pct": 99.9,
+          "recorded_at": "Preço Atual"
+        }
+      ],
+      "origin_type": "online",
+      "price": 17.99
+    },
+    {
       "id": 17028,
       "name": "Duvel Cerveja Vedett Extra White 330Ml (Amazon Prime)",
       "category": "cerveja",
@@ -4131,6 +4195,74 @@
       ],
       "origin_type": "local",
       "price": 59.9
+    },
+    {
+      "id": 17944,
+      "name": "Finca La Linda Malbec 750ml, Vinho Tinto (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Finca-Linda-Malbec-750ml-Vinho/dp/B00406XPOS",
+      "min_price": 64.98,
+      "avg_price": 64.98,
+      "max_price": 64.98,
+      "total_checks": 1,
+      "current_price": 64.98,
+      "original_price": 86.64,
+      "discount_pct": 25.0,
+      "last_recorded_at": "2026-10-29 11:29:39",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 64.98,
+        "orig_unit_price": 86.64,
+        "price_per_liter": 86.64,
+        "unit_price_display": "R$ 64,98 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 64.98,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 86.64,
+          "original_price": 86.64,
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 75.81,
+          "original_price": 86.64,
+          "discount_pct": 12.5,
+          "recorded_at": "Última Varredura"
+        },
+        {
+          "price": 64.98,
+          "original_price": 86.64,
+          "discount_pct": 25.0,
+          "recorded_at": "Preço Atual"
+        }
+      ],
+      "origin_type": "online",
+      "price": 64.98
     },
     {
       "id": 16635,
@@ -9429,6 +9561,74 @@
       ],
       "origin_type": "local",
       "price": 34.9
+    },
+    {
+      "id": 18140,
+      "name": "Terre San Vicenzo V. Dal 1947 Tt Primitivo Di Manduria 750 Ml (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Dal-1947-Primitivo-Manduria-750/dp/B087FQBHMK",
+      "min_price": 256.4,
+      "avg_price": 256.4,
+      "max_price": 256.4,
+      "total_checks": 1,
+      "current_price": 256.4,
+      "original_price": 330.0,
+      "discount_pct": 22.3,
+      "last_recorded_at": "2026-10-29 16:37:36",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 256.4,
+        "orig_unit_price": 330.0,
+        "price_per_liter": 341.87,
+        "unit_price_display": "R$ 256,40 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 256.4,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 330.0,
+          "original_price": 330.0,
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 293.2,
+          "original_price": 330.0,
+          "discount_pct": 11.2,
+          "recorded_at": "Última Varredura"
+        },
+        {
+          "price": 256.4,
+          "original_price": 330.0,
+          "discount_pct": 22.3,
+          "recorded_at": "Preço Atual"
+        }
+      ],
+      "origin_type": "online",
+      "price": 256.4
     },
     {
       "id": 16680,
@@ -19641,7 +19841,7 @@
       "store": "Amazon Brasil",
       "link": "https://www.amazon.com.br/DV-Catena-Cabernet-Malbec-Garrafas/dp/B0HM7F3WLF",
       "min_price": 484.99,
-      "avg_price": 484.99000000000007,
+      "avg_price": 484.99,
       "max_price": 484.99,
       "total_checks": 21,
       "current_price": 484.99,
@@ -24577,7 +24777,7 @@
       "store": "Amazon Brasil",
       "link": "https://www.amazon.com.br/Cerveja-Guinness-Draught-Lata-440ml/dp/B07H8K7B6K",
       "min_price": 23.9,
-      "avg_price": 23.9,
+      "avg_price": 23.899999999999995,
       "max_price": 23.9,
       "total_checks": 11,
       "current_price": 23.9,
@@ -24590,7 +24790,7 @@
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -35675,7 +35875,7 @@
       "store": "Amazon Brasil",
       "link": "https://www.amazon.com.br/Vinho-Chileno-Escudo-Reserva-Blend/dp/B0058NLS6E",
       "min_price": 106.4,
-      "avg_price": 106.4,
+      "avg_price": 106.40000000000002,
       "max_price": 106.4,
       "total_checks": 15,
       "current_price": 106.4,
@@ -41943,6 +42143,74 @@
       "price": 132.05
     },
     {
+      "id": 18143,
+      "name": "Vinho Tinto Chileno Escudo Rojo Gran Reserva Pinot Noir 750ml (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Vinho-Tinto-Chileno-Escudo-Reserva/dp/B0FH7BRV95",
+      "min_price": 132.05,
+      "avg_price": 132.05,
+      "max_price": 132.05,
+      "total_checks": 1,
+      "current_price": 132.05,
+      "original_price": 139.0,
+      "discount_pct": 5.0,
+      "last_recorded_at": "2026-10-29 16:37:36",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 132.05,
+        "orig_unit_price": 139.0,
+        "price_per_liter": 176.07,
+        "unit_price_display": "R$ 132,05 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 132.05,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 139.0,
+          "original_price": 139.0,
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 135.53,
+          "original_price": 139.0,
+          "discount_pct": 2.5,
+          "recorded_at": "Última Varredura"
+        },
+        {
+          "price": 132.05,
+          "original_price": 139.0,
+          "discount_pct": 5.0,
+          "recorded_at": "Preço Atual"
+        }
+      ],
+      "origin_type": "online",
+      "price": 132.05
+    },
+    {
       "id": 16870,
       "name": "Vinho Pacheco Pereda Linaje Malbec 750ml (Amazon Prime)",
       "category": "vinho",
@@ -43149,6 +43417,74 @@
       "price": 225.53
     },
     {
+      "id": 17939,
+      "name": "Paulaner Oktoberfest Bier Cerveja Lager Festiva Barril 5L (Amazon Prime)",
+      "category": "cerveja",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Paulaner-Oktoberfest-Integrada-Produzida-Importada/dp/B0HKTJSTYC",
+      "min_price": 226.95,
+      "avg_price": 226.95,
+      "max_price": 226.95,
+      "total_checks": 1,
+      "current_price": 226.95,
+      "original_price": 238.9,
+      "discount_pct": 5.0,
+      "last_recorded_at": "2026-10-29 11:29:39",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 5000,
+        "container_type": "Barril 5L",
+        "unit_name": "barril",
+        "pack_label": "1 Barril Avulsa",
+        "unit_price": 226.95,
+        "orig_unit_price": 238.9,
+        "price_per_liter": 45.39,
+        "unit_price_display": "R$ 226,95 / barril",
+        "is_imported": true,
+        "country": "Alemanha",
+        "country_flag": "🇩🇪",
+        "beer_style": "German Pilsener"
+      },
+      "unit_price": 226.95,
+      "is_imported": true,
+      "country": "Alemanha",
+      "country_flag": "🇩🇪",
+      "beer_style": "German Pilsener",
+      "history_points": [
+        {
+          "price": 238.9,
+          "original_price": 238.9,
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 232.93,
+          "original_price": 238.9,
+          "discount_pct": 2.5,
+          "recorded_at": "Última Varredura"
+        },
+        {
+          "price": 226.95,
+          "original_price": 238.9,
+          "discount_pct": 5.0,
+          "recorded_at": "Preço Atual"
+        }
+      ],
+      "origin_type": "online",
+      "price": 226.95
+    },
+    {
       "id": 16862,
       "name": "Vinho Tinto Seco Lote 43 Miolo 750ml (Amazon Prime)",
       "category": "vinho",
@@ -44043,11 +44379,11 @@
       "min_price": 19.9,
       "avg_price": 19.9,
       "max_price": 19.9,
-      "total_checks": 1,
+      "total_checks": 2,
       "current_price": 19.9,
       "original_price": 0.01,
       "discount_pct": 0.0,
-      "last_recorded_at": "2026-10-27 16:30:18",
+      "last_recorded_at": "2026-10-29 16:37:36",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -44077,22 +44413,16 @@
       "beer_style": "",
       "history_points": [
         {
-          "price": 0.01,
+          "price": 19.9,
           "original_price": 0.01,
-          "discount_pct": 0,
-          "recorded_at": "Semana Anterior"
-        },
-        {
-          "price": 9.96,
-          "original_price": 0.01,
-          "discount_pct": 0,
-          "recorded_at": "Última Varredura"
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-27 16:30:18"
         },
         {
           "price": 19.9,
           "original_price": 0.01,
           "discount_pct": 0.0,
-          "recorded_at": "Preço Atual"
+          "recorded_at": "2026-10-29 16:37:36"
         }
       ],
       "origin_type": "online",
@@ -44245,7 +44575,7 @@
       "store": "Amazon Brasil",
       "link": "https://www.amazon.com.br/Paulaner-CERVEJA-PAULANER-WEISSBIER-500ML/dp/B0D384WXRH",
       "min_price": 25.9,
-      "avg_price": 25.9,
+      "avg_price": 25.899999999999995,
       "max_price": 25.9,
       "total_checks": 9,
       "current_price": 25.9,
@@ -44258,7 +44588,7 @@
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -44343,6 +44673,70 @@
       "price": 25.9
     },
     {
+      "id": 18125,
+      "name": "Personal Papel Higiênico Vip Folha Dupla, 16 Unidades Branco (Embalagem Pode Variar) (Amazon Prime)",
+      "category": "limpeza",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Papel-Higi%C3%AAnico-Personal-Branco-pacote/dp/B07D5LTDT4",
+      "min_price": 26.65,
+      "avg_price": 26.65,
+      "max_price": 26.65,
+      "total_checks": 1,
+      "current_price": 26.65,
+      "original_price": 1.67,
+      "discount_pct": 0.0,
+      "last_recorded_at": "2026-10-29 16:37:36",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 16,
+        "unit_volume_ml": null,
+        "container_type": "Pacote c/ 16 rolos",
+        "unit_name": "rolo",
+        "pack_label": "Pacote c/ 16 rolos",
+        "unit_price": 1.67,
+        "orig_unit_price": null,
+        "price_per_liter": null,
+        "unit_price_display": "R$ 1,67 / rolo"
+      },
+      "unit_price": 1.67,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
+      "history_points": [
+        {
+          "price": 1.67,
+          "original_price": 1.67,
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 14.16,
+          "original_price": 1.67,
+          "discount_pct": 0,
+          "recorded_at": "Última Varredura"
+        },
+        {
+          "price": 26.65,
+          "original_price": 1.67,
+          "discount_pct": 0.0,
+          "recorded_at": "Preço Atual"
+        }
+      ],
+      "origin_type": "online",
+      "price": 26.65
+    },
+    {
       "id": 17101,
       "name": "Cerveja Sem Álcool Budweiser, Lata 350ml, Pack com 8 unidades (Amazon Prime)",
       "category": "cerveja",
@@ -44351,11 +44745,11 @@
       "min_price": 26.8,
       "avg_price": 26.8,
       "max_price": 26.8,
-      "total_checks": 1,
+      "total_checks": 2,
       "current_price": 26.8,
       "original_price": 3.35,
       "discount_pct": 0.0,
-      "last_recorded_at": "2026-10-27 18:30:17",
+      "last_recorded_at": "2026-10-29 16:37:36",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -44389,22 +44783,16 @@
       "beer_style": "American Lager",
       "history_points": [
         {
-          "price": 3.35,
+          "price": 26.8,
           "original_price": 3.35,
-          "discount_pct": 0,
-          "recorded_at": "Semana Anterior"
-        },
-        {
-          "price": 15.08,
-          "original_price": 3.35,
-          "discount_pct": 0,
-          "recorded_at": "Última Varredura"
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-27 18:30:17"
         },
         {
           "price": 26.8,
           "original_price": 3.35,
           "discount_pct": 0.0,
-          "recorded_at": "Preço Atual"
+          "recorded_at": "2026-10-29 16:37:36"
         }
       ],
       "origin_type": "online",
