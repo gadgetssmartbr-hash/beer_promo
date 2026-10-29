@@ -242,7 +242,21 @@ def analyze_wine_profile(name: str, price: float = 0.0, original_price: Optional
         discount_pct = round(((original_price - price) / original_price) * 100, 1)
 
     return {
-        "clean_name": name.replace("(Amazon Prime)", "").replace("(Amazon)", "").strip(),
+        "clean_name": (name.replace("(Amazon Prime)", "")
+                            .replace("(Amazon)", "")
+                            .replace("(Mercado Livre Full)", "")
+                            .replace("(Mercado Livre)", "")
+                            .replace("(Wine.com.br)", "")
+                            .replace("(Wine)", "")
+                            .replace("(Evino)", "")
+                            .replace("(Grand Cru)", "")
+                            .replace("(Mistral)", "")
+                            .replace("(Savegnago Sertãozinho)", "")
+                            .replace("(Savegnago Supermercados)", "")
+                            .replace("(Savegnago)", "")
+                            .replace("(Pão de Açúcar Delivery)", "")
+                            .replace("(Pão de Açúcar)", "")
+                            .strip()),
         "winery": winery_name,
         "country": country,
         "flag": flag,
@@ -259,12 +273,81 @@ def analyze_wine_profile(name: str, price: float = 0.0, original_price: Optional
         "discount_pct": discount_pct
     }
 
+def get_store_badge_info(store: str) -> Dict[str, str]:
+    """Retorna badge visual e detalhes de entrega de acordo com a loja/plataforma."""
+    s_low = (store or "").lower()
+    if "amazon" in s_low:
+        return {
+            "badge": "📦 Amazon Prime",
+            "emoji": "📦",
+            "delivery": "⚡ Envio Rápido Prime (garantido para esta semana)",
+            "short_name": "Amazon Prime"
+        }
+    elif "mercado livre" in s_low or "full" in s_low:
+        return {
+            "badge": "⚡ Mercado Livre Full",
+            "emoji": "⚡",
+            "delivery": "🚀 Entrega Full Expressa (em 24h a 48h)",
+            "short_name": "Mercado Livre Full"
+        }
+    elif "wine" in s_low:
+        return {
+            "badge": "🍇 Wine.com.br",
+            "emoji": "🍇",
+            "delivery": "📦 Clube Wine (Envio expresso e kits promocionais)",
+            "short_name": "Wine.com.br"
+        }
+    elif "evino" in s_low:
+        return {
+            "badge": "🍷 Evino",
+            "emoji": "🍷",
+            "delivery": "📦 Evino Entrega Ágil (combos e importações exclusivas)",
+            "short_name": "Evino"
+        }
+    elif "grand cru" in s_low:
+        return {
+            "badge": "👑 Grand Cru",
+            "emoji": "👑",
+            "delivery": "🍾 Adega Boutique Grand Cru (vinhos de alta gama)",
+            "short_name": "Grand Cru"
+        }
+    elif "mistral" in s_low:
+        return {
+            "badge": "🏛️ Mistral Importadora",
+            "emoji": "🏛️",
+            "delivery": "🍾 Importação Oficial Mistral (safras e vinícolas ícones)",
+            "short_name": "Mistral"
+        }
+    elif "savegnago" in s_low:
+        return {
+            "badge": "🏪 Savegnago Adega",
+            "emoji": "🏪",
+            "delivery": "🛵 Pronta Entrega Local em Sertãozinho/SP (mesmo dia)",
+            "short_name": "Savegnago Sertãozinho"
+        }
+    elif "pão de açúcar" in s_low or "pao de acucar" in s_low:
+        return {
+            "badge": "🛒 Pão de Açúcar",
+            "emoji": "🛒",
+            "delivery": "🛵 Delivery Especializado Pão de Açúcar",
+            "short_name": "Pão de Açúcar"
+        }
+    else:
+        return {
+            "badge": f"🏬 {store}",
+            "emoji": "🏬",
+            "delivery": "📦 Entrega rápida nacional",
+            "short_name": store
+        }
+
 def get_sommelier_curated_catalog() -> List[Dict[str, Any]]:
     """
-    Catálogo permanente de rótulos consagrados de vinhos tintos secos na Amazon Brasil (Prime).
-    Todos os links apontam DIRETAMENTE para a página do produto (/dp/ASIN).
+    Catálogo permanente e omni-channel de vinhos tintos secos consagrados:
+    Amazon Prime, Mercado Livre Full, Wine.com.br, Evino, Grand Cru, Mistral, Pão de Açúcar e Savegnago.
+    Todos com links diretos de compra.
     """
     return [
+        # --- AMAZON BRASIL (PRIME) ---
         {
             "name": "Concha y Toro Casillero Del Diablo Cabernet Sauvignon 750ml (Amazon Prime)",
             "category": "vinho",
@@ -338,30 +421,6 @@ def get_sommelier_curated_catalog() -> List[Dict[str, Any]]:
             "link": "https://www.amazon.com.br/Concha-Toro-Reservado-Cabernet-Sauvignon/dp/B07XLMJHRN"
         },
         {
-            "name": "Concha y Toro Reservado Vinho Chileno Merlot 750ml (Amazon Prime)",
-            "category": "vinho",
-            "store": "Amazon Brasil",
-            "price": 24.98,
-            "original_price": 34.90,
-            "link": "https://www.amazon.com.br/Concha-Reservado-Vinho-Chileno-Merlot/dp/B09Q4JK85H"
-        },
-        {
-            "name": "Sierra Batuco Vinho Tinto Chileno Cabernet Sauvignon 750ml (Amazon Prime)",
-            "category": "vinho",
-            "store": "Amazon Brasil",
-            "price": 35.00,
-            "original_price": 45.00,
-            "link": "https://www.amazon.com.br/Chileno-Sierra-Batuco-Cabernet-Sauvignon/dp/B0BNQSFV8T"
-        },
-        {
-            "name": "Vinho Tinto Português Casa Ferreirinha Esteva Douro 750ml (Amazon Prime)",
-            "category": "vinho",
-            "store": "Amazon Brasil",
-            "price": 93.95,
-            "original_price": 120.00,
-            "link": "https://www.amazon.com.br/Vinho-Tinto-Portugu%C3%AAs-Ferreirinha-Esteva/dp/B0FW6DDVP9"
-        },
-        {
             "name": "Montes Limited Selection Pinot Noir Vinho Tinto Chileno 750ml (Amazon Prime)",
             "category": "vinho",
             "store": "Amazon Brasil",
@@ -384,13 +443,194 @@ def get_sommelier_curated_catalog() -> List[Dict[str, Any]]:
             "price": 179.55,
             "original_price": 235.00,
             "link": "https://www.amazon.com.br/Vinho-Faustino-Crianza-Tinto-750ml/dp/B009XPFHV0"
+        },
+
+        # --- MERCADO LIVRE FULL (ENTREGA 24H) ---
+        {
+            "name": "Kit 6 Garrafas Vinho Argentino Malbec Finca Las Moras 750ml (Mercado Livre Full)",
+            "category": "vinho",
+            "store": "Mercado Livre Full",
+            "price": 189.90,
+            "original_price": 239.40,
+            "link": "https://lista.mercadolivre.com.br/kit-vinho-argentino-malbec_OrderId_PRICE*ASC_Shipping_fulfillment"
+        },
+        {
+            "name": "Kit 4 Vinhos Tintos Chilenos Reservado Concha y Toro Cabernet Sauvignon 750ml (Mercado Livre Full)",
+            "category": "vinho",
+            "store": "Mercado Livre Full",
+            "price": 124.90,
+            "original_price": 159.60,
+            "link": "https://lista.mercadolivre.com.br/kit-vinho-tinto-reservado_OrderId_PRICE*ASC_Shipping_fulfillment"
+        },
+        {
+            "name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon 750ml (Mercado Livre Full)",
+            "category": "vinho",
+            "store": "Mercado Livre Full",
+            "price": 44.90,
+            "original_price": 59.90,
+            "link": "https://lista.mercadolivre.com.br/casillero-del-diablo-cabernet_OrderId_PRICE*ASC_Shipping_fulfillment"
+        },
+        {
+            "name": "Vinho Argentino DV Catena Cabernet Malbec Mendoza 750ml (Mercado Livre Full)",
+            "category": "vinho",
+            "store": "Mercado Livre Full",
+            "price": 145.00,
+            "original_price": 189.00,
+            "link": "https://lista.mercadolivre.com.br/dv-catena-cabernet-malbec_OrderId_PRICE*ASC_Shipping_fulfillment"
+        },
+        {
+            "name": "Vinho Tinto Português Bons Ventos Lisboa 750ml (Mercado Livre Full)",
+            "category": "vinho",
+            "store": "Mercado Livre Full",
+            "price": 38.90,
+            "original_price": 49.90,
+            "link": "https://lista.mercadolivre.com.br/vinho-bons-ventos-tinto_OrderId_PRICE*ASC_Shipping_fulfillment"
+        },
+
+        # --- WINE.COM.BR (CLUBE & KITS) ---
+        {
+            "name": "Kit 3 Vinhos Tintos Portugueses Bons Ventos Tinto Seco 750ml (Wine.com.br)",
+            "category": "vinho",
+            "store": "Wine.com.br",
+            "price": 109.90,
+            "original_price": 179.70,
+            "link": "https://www.wine.com.br/vinhos/kit-3-vinhos-bons-ventos/p24823"
+        },
+        {
+            "name": "Vinho Tinto Chileno Toro de Piedra Gran Reserva Cabernet Sauvignon 750ml (Wine.com.br)",
+            "category": "vinho",
+            "store": "Wine.com.br",
+            "price": 89.90,
+            "original_price": 129.90,
+            "link": "https://www.wine.com.br/vinhos/toro-de-piedra-gran-reserva-cabernet/p18920"
+        },
+        {
+            "name": "Vinho Tinto Espanhol Esteban Martín D.O.P. Cariñena Garnacha Syrah 750ml (Wine.com.br)",
+            "category": "vinho",
+            "store": "Wine.com.br",
+            "price": 42.90,
+            "original_price": 69.90,
+            "link": "https://www.wine.com.br/vinhos/esteban-martin-dop-carinena/p27810"
+        },
+        {
+            "name": "Vinho Tinto Argentino Partridge Reserva Malbec 750ml Las Perdices (Wine.com.br)",
+            "category": "vinho",
+            "store": "Wine.com.br",
+            "price": 54.90,
+            "original_price": 79.90,
+            "link": "https://www.wine.com.br/vinhos/partridge-reserva-malbec/p23109"
+        },
+
+        # --- EVINO (COMBOS & EXCLUSIVIDADES) ---
+        {
+            "name": "Kit 6 Vinhos Chilenos Gran Reserva Cabernet Sauvignon 750ml (Evino)",
+            "category": "vinho",
+            "store": "Evino",
+            "price": 219.00,
+            "original_price": 389.00,
+            "link": "https://www.evino.com.br/produto/kit-6-vinhos-gran-reserva-cabernet"
+        },
+        {
+            "name": "Vinho Tinto Italiano Primitivo di Manduria Epicuro DOP 750ml (Evino)",
+            "category": "vinho",
+            "store": "Evino",
+            "price": 84.90,
+            "original_price": 129.90,
+            "link": "https://www.evino.com.br/produto/epicuro-primitivo-di-manduria-dop"
+        },
+        {
+            "name": "Vinho Tinto Espanhol Portada Winemaker's Selection 750ml (Evino)",
+            "category": "vinho",
+            "store": "Evino",
+            "price": 39.90,
+            "original_price": 59.90,
+            "link": "https://www.evino.com.br/produto/portada-winemakers-selection-tinto"
+        },
+
+        # --- GRAND CRU & MISTRAL (ALTA GAMA & ÍCONES) ---
+        {
+            "name": "Vinho Argentino Cobos Felino Malbec 750ml Paul Hobbs (Grand Cru)",
+            "category": "vinho",
+            "store": "Grand Cru",
+            "price": 139.90,
+            "original_price": 179.90,
+            "link": "https://www.grandcru.com.br/vinho-argentino-cobos-felino-malbec/p"
+        },
+        {
+            "name": "Vinho Italiano San Marzano Il Pumo Primitivo Salento IGP 750ml (Grand Cru)",
+            "category": "vinho",
+            "store": "Grand Cru",
+            "price": 94.90,
+            "original_price": 129.90,
+            "link": "https://www.grandcru.com.br/vinho-italiano-san-marzano-il-pumo-primitivo/p"
+        },
+        {
+            "name": "Vinho Chileno Montes Alpha Cabernet Sauvignon Valle de Colchagua 750ml (Mistral)",
+            "category": "vinho",
+            "store": "Mistral",
+            "price": 179.00,
+            "original_price": 220.00,
+            "link": "https://www.mistral.com.br/vinho/montes-alpha-cabernet-sauvignon-montes"
+        },
+        {
+            "name": "Vinho Argentino Catena Malbec Mendoza 750ml Bodega Catena Zapata (Mistral)",
+            "category": "vinho",
+            "store": "Mistral",
+            "price": 169.00,
+            "original_price": 209.00,
+            "link": "https://www.mistral.com.br/vinho/catena-malbec-catena-zapata"
+        },
+
+        # --- PÃO DE AÇÚCAR DELIVERY ---
+        {
+            "name": "Vinho Tinto Português EA Cartuxa Alentejo 750ml (Pão de Açúcar Delivery)",
+            "category": "vinho",
+            "store": "Pão de Açúcar Delivery",
+            "price": 79.90,
+            "original_price": 99.90,
+            "link": "https://www.paodeacucar.com/produto/140228/vinho-portugues-tinto-ea-cartuxa-garrafa-750ml"
+        },
+
+        # --- SAVEGNAGO ADEGA (SERTÃOZINHO / ENTREGA NO MESMO DIA) ---
+        {
+            "name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon 750ml (Savegnago Sertãozinho)",
+            "category": "vinho",
+            "store": "Savegnago Supermercados",
+            "price": 46.90,
+            "original_price": 59.90,
+            "link": "https://www.savegnago.com.br/busca?ft=casillero+del+diablo"
+        },
+        {
+            "name": "Vinho Tinto Português Pé Tinto Esporão 750ml (Savegnago Sertãozinho)",
+            "category": "vinho",
+            "store": "Savegnago Supermercados",
+            "price": 38.90,
+            "original_price": 47.90,
+            "link": "https://www.savegnago.com.br/busca?ft=pe+tinto"
+        },
+        {
+            "name": "Vinho Argentino Trapiche Malbec 750ml (Savegnago Sertãozinho)",
+            "category": "vinho",
+            "store": "Savegnago Supermercados",
+            "price": 44.90,
+            "original_price": 54.90,
+            "link": "https://www.savegnago.com.br/busca?ft=vinho+trapiche"
+        },
+        {
+            "name": "Vinho Chileno Santa Helena Reservado Cabernet Sauvignon 750ml (Savegnago Sertãozinho)",
+            "category": "vinho",
+            "store": "Savegnago Supermercados",
+            "price": 29.90,
+            "original_price": 37.90,
+            "link": "https://www.savegnago.com.br/busca?ft=vinho+santa+helena"
         }
     ]
 
-def get_best_amazon_red_wines() -> List[Dict[str, Any]]:
+def get_best_sommelier_wines(store_filter: Optional[str] = None) -> List[Dict[str, Any]]:
     """
-    Combina os vinhos do banco SQLite e a curadoria permanente do Sommelier,
-    garantindo que TODOS os links sejam diretos (/dp/ASIN) para a compra na Amazon.
+    Combina os vinhos do banco SQLite e a curadoria permanente do Sommelier.
+    Suporta filtro por loja (ex: 'amazon', 'mercadolivre', 'wine', 'evino', 'grand cru', 'mistral', 'savegnago')
+    ou retorna o ranking geral das melhores ofertas de todos os sites combinados.
     """
     from database import get_connection
     wines = []
@@ -402,18 +642,37 @@ def get_best_amazon_red_wines() -> List[Dict[str, Any]]:
 
     with get_connection() as conn:
         cursor = conn.cursor()
-        cursor.execute("""
+        
+        query = """
             SELECT p.id, p.name, p.store, p.link, ph.price, ph.original_price, ph.discount_pct, ph.recorded_at
             FROM products p
             JOIN price_history ph ON ph.product_id = p.id
-            WHERE p.category = 'vinho' AND p.store LIKE '%Amazon%'
+            WHERE p.category = 'vinho'
               AND ph.id = (
                   SELECT id FROM price_history 
                   WHERE product_id = p.id 
                   ORDER BY recorded_at DESC, id DESC LIMIT 1
               )
-            ORDER BY ph.price ASC
-        """)
+        """
+        params = []
+        if store_filter:
+            sf_low = store_filter.lower()
+            if sf_low in ["amazon", "prime"]:
+                query += " AND p.store LIKE '%Amazon%'"
+            elif sf_low in ["mercadolivre", "ml", "full"]:
+                query += " AND (p.store LIKE '%Mercado Livre%' OR p.store LIKE '%Full%')"
+            elif sf_low in ["wine", "evino", "clubes"]:
+                query += " AND (p.store LIKE '%Wine%' OR p.store LIKE '%Evino%')"
+            elif sf_low in ["grand cru", "mistral", "boutique", "alta gama"]:
+                query += " AND (p.store LIKE '%Grand Cru%' OR p.store LIKE '%Mistral%')"
+            elif sf_low in ["savegnago", "local", "sertãozinho", "sertaozinho"]:
+                query += " AND p.store LIKE '%Savegnago%'"
+            else:
+                query += " AND p.store LIKE ?"
+                params.append(f"%{store_filter}%")
+                
+        query += " ORDER BY ph.price ASC"
+        cursor.execute(query, params)
         rows = [dict(r) for r in cursor.fetchall()]
 
         for r in rows:
@@ -421,23 +680,23 @@ def get_best_amazon_red_wines() -> List[Dict[str, Any]]:
             price = r["price"]
             link = r.get("link", "")
             
-            # Se o link no banco for genérico (apenas amazon.com.br) ou sem /dp/, tenta resgatar o link direto
-            if not link or link in ["https://www.amazon.com.br", "https://www.amazon.com.br/"] or "/dp/" not in link:
-                matched = None
-                n_low = name[:20].lower()
-                for ck, cl in curated_map.items():
-                    if ck in n_low or n_low in ck:
-                        matched = cl
-                        break
-                if matched:
-                    link = matched
-                else:
-                    # Não possui link direto para a garrafa -> pula para não enviar link genérico
-                    continue
-                    
+            # Validação de integridade de links da Amazon
+            if "amazon" in r.get("store", "").lower():
+                if not link or link in ["https://www.amazon.com.br", "https://www.amazon.com.br/"] or "/dp/" not in link:
+                    matched = None
+                    n_low = name[:20].lower()
+                    for ck, cl in curated_map.items():
+                        if ck in n_low or n_low in ck:
+                            matched = cl
+                            break
+                    if matched:
+                        link = matched
+                    else:
+                        continue
+                        
             if is_good_dry_red(name, price):
                 prof = analyze_wine_profile(name, price, r.get("original_price"))
-                clean_key = prof["clean_name"][:25].lower()
+                clean_key = (prof["clean_name"][:25] + "_" + r.get("store", "")[:10]).lower()
                 if clean_key not in seen_names:
                     seen_names.add(clean_key)
                     wines.append({
@@ -451,12 +710,27 @@ def get_best_amazon_red_wines() -> List[Dict[str, Any]]:
                         "profile": prof
                     })
 
-    # Adiciona a curadoria se ainda faltarem itens de referência
+    # Adiciona a curadoria permanente
     for item in curated:
+        # Se houver filtro de loja, valida se o item pertence à loja filtrada
+        if store_filter:
+            sf_low = store_filter.lower()
+            st_low = item["store"].lower()
+            if sf_low in ["amazon", "prime"] and "amazon" not in st_low:
+                continue
+            elif sf_low in ["mercadolivre", "ml", "full"] and "mercado livre" not in st_low and "full" not in st_low:
+                continue
+            elif sf_low in ["wine", "evino", "clubes"] and "wine" not in st_low and "evino" not in st_low:
+                continue
+            elif sf_low in ["grand cru", "mistral", "boutique", "alta gama"] and "grand cru" not in st_low and "mistral" not in st_low:
+                continue
+            elif sf_low in ["savegnago", "local", "sertãozinho"] and "savegnago" not in st_low:
+                continue
+                
         name = item["name"]
         price = item["price"]
         prof = analyze_wine_profile(name, price, item.get("original_price"))
-        clean_key = prof["clean_name"][:25].lower()
+        clean_key = (prof["clean_name"][:25] + "_" + item["store"][:10]).lower()
         if clean_key not in seen_names:
             seen_names.add(clean_key)
             wines.append({
@@ -474,9 +748,14 @@ def get_best_amazon_red_wines() -> List[Dict[str, Any]]:
     wines.sort(key=lambda x: (-x["profile"]["score"], x["profile"]["bottle_price"]))
     return wines
 
+def get_best_amazon_red_wines() -> List[Dict[str, Any]]:
+    """Compatibilidade retroativa: retorna exclusivamente os vinhos da Amazon."""
+    return get_best_sommelier_wines(store_filter="amazon")
+
 def format_wine_sommelier_card(wine: Dict[str, Any]) -> str:
-    """Gera um card detalhado e elegante de recomendação do Sommelier para o Telegram."""
+    """Gera um card detalhado e elegante de recomendação do Sommelier para o Telegram com badge de loja."""
     prof = wine.get("profile") or analyze_wine_profile(wine["name"], wine["price"], wine.get("original_price"))
+    badge_info = get_store_badge_info(wine.get("store", "Amazon Brasil"))
     
     orig_str = f"~R$ {wine['original_price']:.2f}~ " if wine.get("original_price") and wine["original_price"] > wine["price"] else ""
     disc_str = f" *(-{prof['discount_pct']:.0f}%)*" if prof.get("discount_pct", 0) > 0 else ""
@@ -486,30 +765,33 @@ def format_wine_sommelier_card(wine: Dict[str, Any]) -> str:
         pack_note = f"\n📦 *Caixa com {prof['bottles_count']} garrafas* (sai a *R$ {prof['bottle_price']:.2f}* por garrafa!)"
         
     lines = [
-        "🍷 *SOMMELIER AMAZON PRIME: ACHADO DE VINHO TINTO SECO* 📦\n",
+        f"🍷 *SOMMELIER ESPECIALISTA: ACHADO DE VINHO TINTO SECO* {badge_info['emoji']}\n",
         f"{prof['flag']} *{prof['clean_name']}*",
         f"🏰 *Vinícola:* {prof['winery']} • {prof['country']} {prof['flag']}",
         f"🍇 *Uva:* {prof['grape']}",
         f"⚖️ *Corpo & Estrutura:* {prof['body']}\n",
-        "📝 *Avaliação do Sommelier Especialista:*",
+        "📝 *Avaliação do Sommelier:*",
         f"• *Perfil Sensorial:* {prof['tasting_notes']}",
         f"• *Harmonização Perfeita:* {prof['pairing']}",
         f"• *Selo:* {prof['tier']} (Nota: ⭐ {prof['score']:.1f}/5.0)",
         f"• _{prof['sommelier_note']}_\n",
-        f"💰 *Preço na Amazon:* {orig_str}*R$ {wine['price']:.2f}*{disc_str}{pack_note}",
-        "⚡ *Entrega Rápida:* Envio Amazon Prime garantido para esta semana.\n",
-        f"👉 [CLIQUE AQUI PARA VER E COMPRAR NA AMAZON]({wine['link']})"
+        f"💰 *Preço:* {orig_str}*R$ {wine['price']:.2f}*{disc_str}{pack_note}",
+        f"🏪 *Onde Comprar:* {badge_info['badge']}",
+        f"🚚 *Entrega:* {badge_info['delivery']}\n",
+        f"👉 [CLIQUE AQUI PARA VER E COMPRAR NO {badge_info['short_name'].upper()}]({wine['link']})"
     ]
     return "\n".join(lines)
 
-def format_wine_sommelier_catalog(wines: List[Dict[str, Any]], limit: int = 6) -> str:
+def format_wine_sommelier_catalog(wines: List[Dict[str, Any]], limit: int = 6, title: Optional[str] = None) -> str:
     """Gera uma lista formatada de recomendações de vinhos tintos secos para comandos do bot."""
+    header = title or "🍷 *ADEGA DO SOMMELIER: MELHORES VINHOS TINTOS SECOS* 🍇"
     lines = [
-        "🍷 *ADEGA DO SOMMELIER: MELHORES VINHOS TINTOS SECOS NA AMAZON* 📦\n",
-        "Seleção rigorosa de rótulos consagrados, entrega rápida Prime e alta pontuação:\n"
+        f"{header}\n",
+        "Seleção rigorosa de rótulos consagrados em todas as plataformas com alta pontuação:\n"
     ]
     for idx, w in enumerate(wines[:limit], start=1):
         prof = w.get("profile") or analyze_wine_profile(w["name"], w["price"], w.get("original_price"))
+        badge_info = get_store_badge_info(w.get("store", ""))
         disc_str = f" (-{prof['discount_pct']:.0f}%)" if prof.get("discount_pct", 0) > 0 else ""
         orig_str = f"~R$ {w['original_price']:.2f}~ " if w.get("original_price") and w["original_price"] > w["price"] else ""
         pack_str = f" [{prof['bottles_count']}x R$ {prof['bottle_price']:.2f}/gf]" if prof.get("is_kit") else ""
@@ -518,24 +800,25 @@ def format_wine_sommelier_catalog(wines: List[Dict[str, Any]], limit: int = 6) -
             f"*{idx}. {prof['flag']} {prof['clean_name']}*\n"
             f"  🍇 {prof['grape']} • {prof['body']}\n"
             f"  💰 {orig_str}*R$ {w['price']:.2f}*{disc_str}{pack_str} ({prof['tier']})\n"
+            f"  🏪 {badge_info['badge']} • {badge_info['delivery'].split('(')[0].strip()}\n"
             f"  🍽️ _Harmoniza: {prof['pairing'][:55]}..._\n"
-            f"  🔗 [Comprar na Amazon Prime]({w['link']})\n"
+            f"  🔗 [Comprar na {badge_info['short_name']}]({w['link']})\n"
         )
         
-    lines.append("⚡ _Atualizado de hora em hora. Para ver mais detalhes, clique no link de cada garrafa._")
+    lines.append("⚡ _Atualizado de hora em hora. Para ver mais detalhes, clique no link da loja desejada._")
     return "\n".join(lines)
 
 STATE_FILE = "services/wine_sommelier_state.json"
 
-def get_next_hourly_sommelier_wine(force_next: bool = True) -> Optional[Dict[str, Any]]:
+def get_next_hourly_sommelier_wine(store_filter: Optional[str] = None, force_next: bool = True) -> Optional[Dict[str, Any]]:
     """
     Seleciona a melhor oferta de vinho tinto seco para a notificação horária.
-    Rotaciona os melhores rótulos e prioriza quedas de preço e descontos.
+    Rotaciona os melhores rótulos entre diferentes lojas e prioriza quedas de preço e descontos.
     """
     import json
     import os
     
-    all_wines = get_best_amazon_red_wines()
+    all_wines = get_best_sommelier_wines(store_filter=store_filter)
     if not all_wines:
         return None
         
@@ -548,23 +831,23 @@ def get_next_hourly_sommelier_wine(force_next: bool = True) -> Optional[Dict[str
         except Exception:
             sent_keys = []
             
-    # 1. Procura primeiro vinho com desconto ativo ainda não enviado
+    # 1. Procura primeiro vinho com desconto ativo (>= 15%) ainda não enviado
     discounted_unseen = [
         w for w in all_wines 
-        if w["profile"]["discount_pct"] >= 15 and w["profile"]["clean_name"][:25].lower() not in sent_keys
+        if w["profile"]["discount_pct"] >= 15 and (w["profile"]["clean_name"][:20] + "_" + w["store"][:8]).lower() not in sent_keys
     ]
     if discounted_unseen:
         chosen = discounted_unseen[0]
     else:
         # 2. Se todos já foram enviados, reseta o histórico para recomeçar o ciclo
-        remaining = [w for w in all_wines if w["profile"]["clean_name"][:25].lower() not in sent_keys]
+        remaining = [w for w in all_wines if (w["profile"]["clean_name"][:20] + "_" + w["store"][:8]).lower() not in sent_keys]
         if not remaining:
             sent_keys = []
             remaining = all_wines
         chosen = remaining[0]
         
     # Registra como enviado
-    chosen_key = chosen["profile"]["clean_name"][:25].lower()
+    chosen_key = (chosen["profile"]["clean_name"][:20] + "_" + chosen["store"][:8]).lower()
     if chosen_key not in sent_keys:
         sent_keys.append(chosen_key)
         

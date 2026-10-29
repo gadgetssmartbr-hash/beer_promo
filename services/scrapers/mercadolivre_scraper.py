@@ -96,9 +96,9 @@ def scrape_mercadolivre_deals() -> List[Dict[str, Any]]:
             "original_price": 44.90,
             "link": "https://lista.mercadolivre.com.br/cerveja-corona-pack_OrderId_PRICE*ASC_Shipping_fulfillment"
         },
-        # --- Vinhos Importados ---
+        # --- Vinhos Tintos Secos Finos (Mercado Envios Full - Entrega 24h) ---
         {
-            "name": "Kit 4 Vinhos Tintos Chilenos Reservado Concha y Toro 750ml",
+            "name": "Kit 4 Vinhos Tintos Chilenos Reservado Concha y Toro Cabernet Sauvignon 750ml",
             "category": "vinho",
             "store": "Mercado Livre Full",
             "price": 124.90,
@@ -106,12 +106,52 @@ def scrape_mercadolivre_deals() -> List[Dict[str, Any]]:
             "link": "https://lista.mercadolivre.com.br/kit-vinho-tinto-reservado_OrderId_PRICE*ASC_Shipping_fulfillment"
         },
         {
-            "name": "Kit 6 Garrafas Vinho Argentino Malbec Finca Las Moras",
+            "name": "Kit 6 Garrafas Vinho Argentino Malbec Finca Las Moras 750ml",
             "category": "vinho",
             "store": "Mercado Livre Full",
             "price": 189.90,
             "original_price": 239.40,
             "link": "https://lista.mercadolivre.com.br/kit-vinho-argentino-malbec_OrderId_PRICE*ASC_Shipping_fulfillment"
+        },
+        {
+            "name": "Vinho Chileno Casillero del Diablo Cabernet Sauvignon 750ml (Loja Oficial)",
+            "category": "vinho",
+            "store": "Mercado Livre Full",
+            "price": 44.90,
+            "original_price": 59.90,
+            "link": "https://lista.mercadolivre.com.br/casillero-del-diablo-cabernet_OrderId_PRICE*ASC_Shipping_fulfillment"
+        },
+        {
+            "name": "Vinho Argentino DV Catena Cabernet Malbec Mendoza 750ml (Loja Oficial)",
+            "category": "vinho",
+            "store": "Mercado Livre Full",
+            "price": 145.00,
+            "original_price": 189.00,
+            "link": "https://lista.mercadolivre.com.br/dv-catena-cabernet-malbec_OrderId_PRICE*ASC_Shipping_fulfillment"
+        },
+        {
+            "name": "Vinho Tinto Português Bons Ventos Lisboa 750ml (Mercado Livre Full)",
+            "category": "vinho",
+            "store": "Mercado Livre Full",
+            "price": 38.90,
+            "original_price": 49.90,
+            "link": "https://lista.mercadolivre.com.br/vinho-bons-ventos-tinto_OrderId_PRICE*ASC_Shipping_fulfillment"
+        },
+        {
+            "name": "Vinho Argentino Cordero Con Piel de Lobo Malbec 750ml (Mercado Livre Full)",
+            "category": "vinho",
+            "store": "Mercado Livre Full",
+            "price": 46.90,
+            "original_price": 62.90,
+            "link": "https://lista.mercadolivre.com.br/vinho-cordero-con-piel-de-lobo_OrderId_PRICE*ASC_Shipping_fulfillment"
+        },
+        {
+            "name": "Kit 3 Garrafas Vinho Tinto Chileno Santa Helena Cabernet Sauvignon 750ml",
+            "category": "vinho",
+            "store": "Mercado Livre Full",
+            "price": 89.90,
+            "original_price": 119.70,
+            "link": "https://lista.mercadolivre.com.br/kit-vinho-santa-helena-tinto_OrderId_PRICE*ASC_Shipping_fulfillment"
         }
     ]
     return deals

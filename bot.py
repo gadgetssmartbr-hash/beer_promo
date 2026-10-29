@@ -95,7 +95,7 @@ def get_main_menu_keyboard(chat_id: int = None):
             InlineKeyboardButton("🌍 Cervejas Importadas", callback_data="menu_importadas"),
         ],
         [
-            InlineKeyboardButton("🍷 Sommelier Amazon (Tintos)", callback_data="menu_sommelier_wine"),
+            InlineKeyboardButton("🍷 Sommelier de Vinhos (Todos os Sites)", callback_data="menu_sommelier_wine"),
             InlineKeyboardButton("🍷 Vinhos & Adega", callback_data="menu_wines"),
             InlineKeyboardButton("🌐 Ver Microsite Web", callback_data="menu_microsite"),
         ],
@@ -173,7 +173,7 @@ async def handle_online_env_menu(update: Update, context: ContextTypes.DEFAULT_T
             InlineKeyboardButton("🌍 Cervejas Importadas & Especiais", callback_data="menu_importadas"),
         ],
         [
-            InlineKeyboardButton("🍷 Sommelier Amazon (Tintos Secos)", callback_data="menu_sommelier_wine"),
+            InlineKeyboardButton("🍷 Sommelier Omni-Channel (Todos os Sites)", callback_data="menu_sommelier_wine"),
             InlineKeyboardButton("🍷 Vinhos & Espumantes", callback_data="menu_wines"),
             InlineKeyboardButton("🎟️ Central de Cupons & Zé Delivery", callback_data="menu_coupons"),
         ],
@@ -950,24 +950,54 @@ async def handle_imported_beers(update: Update, context: ContextTypes.DEFAULT_TY
 
 async def handle_sommelier_wine(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """
-    Especialista Sommelier Amazon: Exibe os melhores vinhos tintos secos finos,
-    com entrega rápida Prime, perfil de uva, harmonização e notas de degustação.
+    Especialista Sommelier Omni-Channel: Exibe os melhores vinhos tintos secos finos,
+    com entrega rápida, perfil de uva, harmonização e notas de degustação em todas as lojas.
     """
     query = update.callback_query
+    store_filter = None
     if query:
         await query.answer()
+        data = query.data
+        if data.startswith("sommelier_filter:"):
+            filter_val = data.split("sommelier_filter:")[1]
+            if filter_val != "all":
+                store_filter = filter_val
 
-    from services.wine_sommelier import get_best_amazon_red_wines, format_wine_sommelier_catalog
+    from services.wine_sommelier import get_best_sommelier_wines, format_wine_sommelier_catalog
 
-    wines = get_best_amazon_red_wines()
-    text = format_wine_sommelier_catalog(wines, limit=6)
+    wines = get_best_sommelier_wines(store_filter=store_filter)
+    
+    title_suffix = ""
+    if store_filter == "amazon":
+        title_suffix = " (Amazon Prime)"
+    elif store_filter in ["mercadolivre", "ml"]:
+        title_suffix = " (Mercado Livre Full)"
+    elif store_filter in ["wine", "evino"]:
+        title_suffix = " (Wine & Evino)"
+    elif store_filter in ["grand cru", "boutique"]:
+        title_suffix = " (Grand Cru & Mistral)"
+    elif store_filter in ["savegnago", "local"]:
+        title_suffix = " (Savegnago Sertãozinho)"
 
+    title = f"🍷 *ADEGA DO SOMMELIER: MELHORES VINHOS TINTOS SECOS*{title_suffix} 🍇"
+    text = format_wine_sommelier_catalog(wines, limit=6, title=title)
+
+    filter_tag = store_filter or "all"
     keyboard = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("🍷 Card com Notas do Especialista", callback_data="menu_sommelier_next"),
-            InlineKeyboardButton("📦 Ver no Microsite", callback_data="menu_microsite"),
+            InlineKeyboardButton("🌟 Todos os Sites", callback_data="sommelier_filter:all"),
+            InlineKeyboardButton("📦 Amazon Prime", callback_data="sommelier_filter:amazon"),
         ],
         [
+            InlineKeyboardButton("⚡ Mercado Livre Full", callback_data="sommelier_filter:ml"),
+            InlineKeyboardButton("🍇 Wine & Evino", callback_data="sommelier_filter:wine"),
+        ],
+        [
+            InlineKeyboardButton("👑 Grand Cru & Mistral", callback_data="sommelier_filter:boutique"),
+            InlineKeyboardButton("🏪 Savegnago (Sertãozinho)", callback_data="sommelier_filter:local"),
+        ],
+        [
+            InlineKeyboardButton("🍷 Destaque Detalhado", callback_data=f"menu_sommelier_next:{filter_tag}"),
             InlineKeyboardButton("🔙 Menu Principal", callback_data="menu_start"),
         ]
     ])
@@ -980,23 +1010,31 @@ async def handle_sommelier_wine(update: Update, context: ContextTypes.DEFAULT_TY
 async def handle_sommelier_next(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Exibe o card detalhado do próximo vinho tinto seco selecionado pelo Sommelier."""
     query = update.callback_query
+    store_filter = None
     if query:
         await query.answer()
+        data = query.data
+        if ":" in data:
+            filter_val = data.split(":", 1)[1]
+            if filter_val != "all":
+                store_filter = filter_val
 
     from services.wine_sommelier import get_next_hourly_sommelier_wine, format_wine_sommelier_card
 
-    wine = get_next_hourly_sommelier_wine()
+    wine = get_next_hourly_sommelier_wine(store_filter=store_filter)
     if not wine:
-        text = "🍷 Nenhum vinho encontrado no momento. Tente novamente em instantes."
+        text = "🍷 Nenhum vinho encontrado no momento para este filtro. Tente 'Todos os Sites'."
     else:
         text = format_wine_sommelier_card(wine)
 
+    filter_tag = store_filter or "all"
     keyboard = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("🍷 Mais um Rótulo", callback_data="menu_sommelier_next"),
-            InlineKeyboardButton("📋 Ver Lista Top 6", callback_data="menu_sommelier_wine"),
+            InlineKeyboardButton("🍷 Próximo Rótulo", callback_data=f"menu_sommelier_next:{filter_tag}"),
+            InlineKeyboardButton("📋 Ver Lista Top 6", callback_data=f"sommelier_filter:{filter_tag}"),
         ],
         [
+            InlineKeyboardButton("🌟 Ver Todos os Sites", callback_data="sommelier_filter:all"),
             InlineKeyboardButton("🔙 Menu Principal", callback_data="menu_start"),
         ]
     ])
@@ -1561,9 +1599,9 @@ async def callback_router(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await handle_beers(update, context)
     elif data == "menu_importadas":
         await handle_imported_beers(update, context)
-    elif data == "menu_sommelier_wine":
+    elif data == "menu_sommelier_wine" or data.startswith("sommelier_filter:"):
         await handle_sommelier_wine(update, context)
-    elif data == "menu_sommelier_next":
+    elif data == "menu_sommelier_next" or data.startswith("menu_sommelier_next:"):
         await handle_sommelier_next(update, context)
     elif data == "menu_wines":
         await handle_wines(update, context)

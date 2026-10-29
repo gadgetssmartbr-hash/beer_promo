@@ -196,20 +196,25 @@ async def run_scheduled_marketplaces_hourly(bot: Bot = None):
 
 async def run_sommelier_amazon_wine_hourly(bot: Bot = None):
     """
-    Varredura horária dedicada a Vinhos Tintos Secos na Amazon Brasil (Prime).
+    Varredura horária omni-channel de Vinhos Tintos Secos Finos.
+    Monitora Amazon Prime, Mercado Livre Full, Wine, Evino, Grand Cru, Mistral e Savegnago.
     Avalia rótulos de alta qualidade, notas de degustação e despacha a melhor oferta
     para os usuários a cada 1 hora com entrega rápida.
     """
     from services.scrapers.amazon_scraper import scrape_amazon_wine_deals
+    from services.scrapers.wine_scraper import scrape_wine_evino_deals
     from services.wine_sommelier import get_next_hourly_sommelier_wine, format_wine_sommelier_card
     from database import save_price_record
     
-    logger.info("🍷 [SOMMELIER WINE HOURLY] Iniciando varredura horária de vinhos tintos secos na Amazon...")
+    logger.info("🍷 [SOMMELIER WINE HOURLY] Iniciando varredura omni-channel de vinhos tintos secos...")
     
-    # 1. Busca novos vinhos na Amazon em thread assíncrona
+    # 1. Busca e atualiza novos vinhos nos marketplaces e adegas
     try:
         new_wines = await asyncio.to_thread(scrape_amazon_wine_deals)
-        for item in new_wines:
+        wine_clubs = await asyncio.to_thread(scrape_wine_evino_deals)
+        all_incoming = (new_wines or []) + (wine_clubs or [])
+        
+        for item in all_incoming:
             save_price_record(
                 name=item["name"],
                 category=item["category"],
@@ -218,14 +223,14 @@ async def run_sommelier_amazon_wine_hourly(bot: Bot = None):
                 original_price=item.get("original_price"),
                 link=item.get("link", "")
             )
-        logger.info(f"🍷 [SOMMELIER WINE HOURLY] {len(new_wines)} vinhos atualizados da Amazon.")
+        logger.info(f"🍷 [SOMMELIER WINE HOURLY] {len(all_incoming)} vinhos atualizados de múltiplas plataformas.")
     except Exception as e:
-        logger.error(f"Erro ao buscar vinhos na Amazon: {e}")
+        logger.error(f"Erro ao buscar vinhos nas lojas: {e}")
 
     if not bot:
         return
 
-    # 2. Seleciona a oferta em destaque para esta hora
+    # 2. Seleciona a oferta em destaque para esta hora (rotacionando lojas e priorizando descontos)
     chosen_wine = get_next_hourly_sommelier_wine()
     if not chosen_wine:
         logger.info("ℹ️ Nenhum vinho tinto seco selecionado para envio nesta hora.")
@@ -245,7 +250,7 @@ async def run_sommelier_amazon_wine_hourly(bot: Bot = None):
                 parse_mode="Markdown",
                 disable_web_page_preview=False
             )
-            logger.info(f"🍷 [SOMMELIER WINE HOURLY] Oferta de vinho enviada com sucesso para {chat_id}.")
+            logger.info(f"🍷 [SOMMELIER WINE HOURLY] Oferta de vinho ({chosen_wine.get('store')}) enviada para {chat_id}.")
         except Exception as e:
             logger.error(f"Erro ao enviar oferta de vinho para {chat_id}: {e}")
 
