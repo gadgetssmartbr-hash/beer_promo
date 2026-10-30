@@ -713,7 +713,7 @@
       "store": "Amazon Brasil",
       "link": "https://www.amazon.com.br/Cerveja-Paulaner-Munchner-500ml-Packs/dp/B07XMMGR31",
       "min_price": 27.9,
-      "avg_price": 27.9,
+      "avg_price": 27.899999999999995,
       "max_price": 27.9,
       "total_checks": 4,
       "current_price": 27.9,
@@ -726,7 +726,7 @@
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -3395,7 +3395,7 @@
       "store": "Amazon Brasil",
       "link": "https://www.amazon.com.br/Concha-Reservado-Vinho-Chileno-Merlot/dp/B09Q4JK85H",
       "min_price": 24.98,
-      "avg_price": 24.980000000000004,
+      "avg_price": 24.98,
       "max_price": 24.98,
       "total_checks": 22,
       "current_price": 24.98,
@@ -8463,7 +8463,7 @@
       "store": "Amazon Brasil",
       "link": "https://www.amazon.com.br/Cerveja-Leffe-Blonde-330ml/dp/B073XQL7R1",
       "min_price": 9.9,
-      "avg_price": 9.9,
+      "avg_price": 9.900000000000002,
       "max_price": 9.9,
       "total_checks": 22,
       "current_price": 9.9,
@@ -13161,7 +13161,7 @@
       "store": "Amazon Brasil",
       "link": "https://www.amazon.com.br/Vinho-Tinto-Portugu%C3%AAs-Ferreirinha-Esteva/dp/B0FW6DDVP9",
       "min_price": 93.95,
-      "avg_price": 93.95,
+      "avg_price": 93.95000000000002,
       "max_price": 93.95,
       "total_checks": 22,
       "current_price": 93.95,
@@ -16115,7 +16115,7 @@
       "store": "Amazon Brasil",
       "link": "https://www.amazon.com.br/Cerveja-Blue-Moon-Belgian-White/dp/B0852932W4",
       "min_price": 9.9,
-      "avg_price": 9.9,
+      "avg_price": 9.900000000000002,
       "max_price": 9.9,
       "total_checks": 22,
       "current_price": 9.9,
@@ -48599,7 +48599,7 @@
       "min_price": 26.8,
       "avg_price": 26.8,
       "max_price": 26.8,
-      "total_checks": 2,
+      "total_checks": 1,
       "current_price": 26.8,
       "original_price": 3.35,
       "discount_pct": 0.0,
@@ -48637,10 +48637,16 @@
       "beer_style": "American Lager",
       "history_points": [
         {
-          "price": 26.8,
+          "price": 3.35,
           "original_price": 3.35,
-          "discount_pct": 0.0,
-          "recorded_at": "2026-10-27 18:30:17"
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 15.08,
+          "original_price": 3.35,
+          "discount_pct": 0,
+          "recorded_at": "Última Varredura"
         },
         {
           "price": 26.8,
@@ -50197,13 +50203,13 @@
       "store": "Amazon Brasil",
       "link": "https://www.amazon.com.br/Amaciante-Concentrado-Downy-Brisa-Ver%C3%A3o/dp/B07MBXDB51",
       "min_price": 46.37,
-      "avg_price": 46.373333333333335,
+      "avg_price": 46.37571428571429,
       "max_price": 46.39,
-      "total_checks": 6,
+      "total_checks": 7,
       "current_price": 46.39,
       "original_price": 15.46,
       "discount_pct": 0.0,
-      "last_recorded_at": "2026-10-29 14:30:26",
+      "last_recorded_at": "2026-10-29 22:25:58",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -50267,6 +50273,12 @@
           "original_price": 15.46,
           "discount_pct": 0.0,
           "recorded_at": "2026-10-29 14:30:26"
+        },
+        {
+          "price": 46.39,
+          "original_price": 15.46,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-29 22:25:58"
         }
       ],
       "origin_type": "online",
@@ -50359,13 +50371,13 @@
       "store": "Amazon Brasil",
       "link": "https://www.amazon.com.br/Amaciante-Downy-Concentrado-intenso%E2%97%8A-prote%C3%A7%C3%A3o/dp/B0C6NJWJ11",
       "min_price": 46.6,
-      "avg_price": 46.6,
+      "avg_price": 46.60000000000001,
       "max_price": 46.6,
-      "total_checks": 12,
+      "total_checks": 13,
       "current_price": 46.6,
       "original_price": 46.6,
       "discount_pct": 0.0,
-      "last_recorded_at": "2026-10-29 14:30:26",
+      "last_recorded_at": "2026-10-29 22:25:58",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -50465,6 +50477,12 @@
           "original_price": 46.6,
           "discount_pct": 0.0,
           "recorded_at": "2026-10-29 14:30:26"
+        },
+        {
+          "price": 46.6,
+          "original_price": 46.6,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-29 22:25:58"
         }
       ],
       "origin_type": "online",
