@@ -48,18 +48,86 @@ def extract_amazon_product_url(card) -> Optional[str]:
 
     return None
 
+import random
+import time
+
+
+def _create_amazon_session() -> requests.Session:
+    """Inicializa uma sessão HTTP com cabeçalhos de navegador e warmup na Amazon Brasil."""
+    session = requests.Session()
+    session.headers.update({
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Referer": "https://www.amazon.com.br/",
+        "Upgrade-Insecure-Requests": "1",
+    })
+    try:
+        session.get("https://www.amazon.com.br/gp/browse.html?node=19645263011", timeout=5)
+    except Exception:
+        pass
+    return session
+
+
+def _fetch_search_cards(session: requests.Session, term: str, max_cards: int = 5):
+    """Executa uma busca na Amazon Brasil com delay aleatório e retry único em 503."""
+    time.sleep(random.uniform(0.6, 1.2))
+    params = {"k": term, "i": "grocery"}
+    response = session.get(AMAZON_SEARCH_URL, params=params, timeout=8)
+    if response.status_code == 503:
+        time.sleep(2.0)
+        response = session.get(AMAZON_SEARCH_URL, params=params, timeout=8)
+    if response.status_code != 200:
+        return []
+    soup = BeautifulSoup(response.text, "html.parser")
+    return soup.select("div[data-component-type='s-search-result']")[:max_cards]
+
+
+def _parse_amazon_card(card):
+    """Extrai (nome, preco, preco_original, url) de um card de busca da Amazon."""
+    title_elem = card.select_one("h2 span") or card.select_one("h2")
+    price_whole = card.select_one(".a-price-whole")
+    price_fraction = card.select_one(".a-price-fraction")
+    product_url = extract_amazon_product_url(card)
+
+    if not (title_elem and price_whole and product_url):
+        return None
+
+    name = title_elem.get_text().strip()
+    price_str = price_whole.get_text().replace(".", "").replace(",", "")
+    fraction_str = price_fraction.get_text() if price_fraction else "00"
+    try:
+        price_val = float(f"{price_str}.{fraction_str}")
+    except ValueError:
+        return None
+
+    if price_val <= 0:
+        return None
+
+    # Evita capturar preço unitário (.a-text-price sem data-a-strike="true") como preço riscado
+    strike_elem = card.select_one('.a-text-price[data-a-strike="true"] .a-offscreen')
+    orig_val = None
+    if strike_elem:
+        strike_text = strike_elem.get_text().replace("R$", "").replace(".", "").replace(",", ".").strip()
+        try:
+            orig_val = float(strike_text)
+        except ValueError:
+            orig_val = None
+
+    if orig_val is not None and orig_val <= price_val:
+        orig_val = None
+
+    return name, price_val, orig_val, product_url
+
+
 def scrape_amazon_deals() -> List[Dict[str, Any]]:
     """
     Busca ofertas e preços em destaque de produtos de supermercado, limpeza e bebidas na Amazon Brasil.
     """
     deals = []
-    
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-    }
-    
+    seen_urls = set()
+    session = _create_amazon_session()
+
     queries = [
         ("sabao liquido omo", "limpeza"),
         ("amaciante concentrado", "limpeza"),
@@ -71,7 +139,10 @@ def scrape_amazon_deals() -> List[Dict[str, Any]]:
         ("cerveja leffe", "cerveja"),
         ("cerveja hoegaarden", "cerveja"),
         ("cerveja blue moon", "cerveja"),
+        ("cerveja heineken pack", "cerveja"),
+        ("cerveja importada pack", "cerveja"),
         ("vinho tinto seco fino", "vinho"),
+        ("kit vinho tinto seco", "vinho"),
         ("vinho tinto cabernet sauvignon", "vinho"),
         ("vinho tinto malbec", "vinho"),
         ("vinho casillero del diablo", "vinho"),
@@ -82,44 +153,26 @@ def scrape_amazon_deals() -> List[Dict[str, Any]]:
         ("vinho primitivo di manduria", "vinho"),
         ("vinho escudo rojo", "vinho")
     ]
-    
+
     for term, category in queries:
         try:
-            params = {"k": term, "i": "grocery"}
-            response = requests.get(AMAZON_SEARCH_URL, params=params, headers=headers, timeout=5)
-            if response.status_code == 200:
-                soup = BeautifulSoup(response.text, "html.parser")
-                cards = soup.select("div[data-component-type='s-search-result']")
-                for card in cards[:3]:
-                    title_elem = card.select_one("h2 span") or card.select_one("h2")
-                    price_whole = card.select_one(".a-price-whole")
-                    price_fraction = card.select_one(".a-price-fraction")
-                    product_url = extract_amazon_product_url(card)
-                    
-                    if title_elem and price_whole and product_url:
-                        name = title_elem.get_text().strip()
-                        price_str = price_whole.get_text().replace(".", "").replace(",", "")
-                        fraction_str = price_fraction.get_text() if price_fraction else "00"
-                        price_val = float(f"{price_str}.{fraction_str}")
-                        
-                        strike_elem = card.select_one(".a-text-price .a-offscreen")
-                        orig_val = None
-                        if strike_elem:
-                            strike_text = strike_elem.get_text().replace("R$", "").replace(".", "").replace(",", ".").strip()
-                            try:
-                                orig_val = float(strike_text)
-                            except ValueError:
-                                orig_val = None
-                                
-                        if price_val > 0:
-                            deals.append({
-                                "name": f"{name} (Amazon Prime)",
-                                "category": category,
-                                "store": "Amazon Brasil",
-                                "price": price_val,
-                                "original_price": orig_val,
-                                "link": product_url
-                            })
+            cards = _fetch_search_cards(session, term, max_cards=5)
+            for card in cards:
+                parsed = _parse_amazon_card(card)
+                if not parsed:
+                    continue
+                name, price_val, orig_val, product_url = parsed
+                if product_url in seen_urls:
+                    continue
+                seen_urls.add(product_url)
+                deals.append({
+                    "name": f"{name} (Amazon Prime)",
+                    "category": category,
+                    "store": "Amazon Brasil",
+                    "price": price_val,
+                    "original_price": orig_val,
+                    "link": product_url
+                })
         except Exception:
             pass
 
@@ -304,9 +357,10 @@ def scrape_amazon_wine_deals() -> List[Dict[str, Any]]:
     Garante links diretos para a página do produto (/dp/ASIN).
     """
     from services.wine_sommelier import is_good_dry_red
-    
+
     wine_queries = [
         "vinho tinto seco fino",
+        "kit vinho tinto seco",
         "vinho tinto cabernet sauvignon",
         "vinho tinto malbec",
         "vinho casillero del diablo",
@@ -317,62 +371,37 @@ def scrape_amazon_wine_deals() -> List[Dict[str, Any]]:
         "vinho escudo rojo",
         "vinho dv catena"
     ]
-    
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-    }
-    
+
     wine_deals = []
     seen_titles = set()
-    
+    seen_urls = set()
+    session = _create_amazon_session()
+
     for term in wine_queries:
         try:
-            params = {"k": term, "i": "grocery"}
-            response = requests.get(AMAZON_SEARCH_URL, params=params, headers=headers, timeout=5)
-            if response.status_code == 200:
-                soup = BeautifulSoup(response.text, "html.parser")
-                cards = soup.select("div[data-component-type='s-search-result']")
-                for card in cards[:4]:
-                    title_elem = card.select_one("h2 span") or card.select_one("h2")
-                    price_whole = card.select_one(".a-price-whole")
-                    price_fraction = card.select_one(".a-price-fraction")
-                    product_url = extract_amazon_product_url(card)
-                    
-                    if title_elem and price_whole and product_url:
-                        name = title_elem.get_text().strip()
-                        title_key = name[:25].lower()
-                        if title_key in seen_titles:
-                            continue
-                            
-                        price_str = price_whole.get_text().replace(".", "").replace(",", "")
-                        fraction_str = price_fraction.get_text() if price_fraction else "00"
-                        price_val = float(f"{price_str}.{fraction_str}")
-                        
-                        if not is_good_dry_red(name, price_val):
-                            continue
-                            
-                        seen_titles.add(title_key)
-                        
-                        strike_elem = card.select_one(".a-text-price .a-offscreen")
-                        orig_val = None
-                        if strike_elem:
-                            strike_text = strike_elem.get_text().replace("R$", "").replace(".", "").replace(",", ".").strip()
-                            try:
-                                orig_val = float(strike_text)
-                            except ValueError:
-                                orig_val = None
-                                
-                        wine_deals.append({
-                            "name": f"{name} (Amazon Prime)",
-                            "category": "vinho",
-                            "store": "Amazon Brasil",
-                            "price": price_val,
-                            "original_price": orig_val,
-                            "link": product_url
-                        })
+            cards = _fetch_search_cards(session, term, max_cards=5)
+            for card in cards:
+                parsed = _parse_amazon_card(card)
+                if not parsed:
+                    continue
+                name, price_val, orig_val, product_url = parsed
+                title_key = name[:25].lower()
+                if title_key in seen_titles or product_url in seen_urls:
+                    continue
+                if not is_good_dry_red(name, price_val):
+                    continue
+
+                seen_titles.add(title_key)
+                seen_urls.add(product_url)
+                wine_deals.append({
+                    "name": f"{name} (Amazon Prime)",
+                    "category": "vinho",
+                    "store": "Amazon Brasil",
+                    "price": price_val,
+                    "original_price": orig_val,
+                    "link": product_url
+                })
         except Exception:
             pass
-            
+
     return wine_deals
