@@ -604,7 +604,165 @@
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": 12.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 500,
+        "container_type": "Garrafa 500ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 21.75,
+        "orig_unit_price": 43.5,
+        "price_per_liter": 43.5,
+        "unit_price_display": "R$ 21,75 / garrafa",
+        "is_imported": true,
+        "country": "Alemanha",
+        "country_flag": "🇩🇪",
+        "beer_style": "German Pilsener"
+      },
+      "unit_price": 21.75,
+      "is_imported": true,
+      "country": "Alemanha",
+      "country_flag": "🇩🇪",
+      "beer_style": "German Pilsener",
+      "history_points": [
+        {
+          "price": 24.9,
+          "original_price": 49.8,
+          "discount_pct": 50.0,
+          "recorded_at": "2026-10-28 18:30:18"
+        },
+        {
+          "price": 24.9,
+          "original_price": 49.8,
+          "discount_pct": 50.0,
+          "recorded_at": "2026-10-28 19:30:25"
+        },
+        {
+          "price": 24.9,
+          "original_price": 49.8,
+          "discount_pct": 50.0,
+          "recorded_at": "2026-10-29 18:30:21"
+        },
+        {
+          "price": 24.9,
+          "original_price": 49.8,
+          "discount_pct": 50.0,
+          "recorded_at": "2026-10-31 19:00:24"
+        },
+        {
+          "price": 24.9,
+          "original_price": 49.8,
+          "discount_pct": 50.0,
+          "recorded_at": "2026-11-02 12:12:30"
+        },
+        {
+          "price": 24.9,
+          "original_price": 49.8,
+          "discount_pct": 50.0,
+          "recorded_at": "2026-11-02 15:30:13"
+        },
+        {
+          "price": 24.9,
+          "original_price": 49.8,
+          "discount_pct": 50.0,
+          "recorded_at": "2026-11-02 17:30:12"
+        },
+        {
+          "price": 24.9,
+          "original_price": 49.8,
+          "discount_pct": 50.0,
+          "recorded_at": "2026-11-02 19:30:14"
+        },
+        {
+          "price": 24.9,
+          "original_price": 49.8,
+          "discount_pct": 50.0,
+          "recorded_at": "2026-11-05 18:27:58"
+        },
+        {
+          "price": 24.9,
+          "original_price": 49.8,
+          "discount_pct": 50.0,
+          "recorded_at": "2026-11-06 01:52:48"
+        },
+        {
+          "price": 24.9,
+          "original_price": 49.8,
+          "discount_pct": 50.0,
+          "recorded_at": "2026-11-06 01:52:49"
+        },
+        {
+          "price": 24.9,
+          "original_price": 49.8,
+          "discount_pct": 50.0,
+          "recorded_at": "2026-11-06 17:47:34"
+        },
+        {
+          "price": 24.9,
+          "original_price": 49.8,
+          "discount_pct": 50.0,
+          "recorded_at": "2026-11-07 19:43:20"
+        },
+        {
+          "price": 24.9,
+          "original_price": 49.8,
+          "discount_pct": 50.0,
+          "recorded_at": "2026-11-08 00:57:28"
+        },
+        {
+          "price": 24.9,
+          "original_price": 49.8,
+          "discount_pct": 50.0,
+          "recorded_at": "2026-11-08 16:53:44"
+        },
+        {
+          "price": 24.9,
+          "original_price": 49.8,
+          "discount_pct": 50.0,
+          "recorded_at": "2026-11-08 16:53:44"
+        },
+        {
+          "price": 24.9,
+          "original_price": 49.8,
+          "discount_pct": 50.0,
+          "recorded_at": "2026-11-08 20:01:43"
+        },
+        {
+          "price": 21.75,
+          "original_price": 43.5,
+          "discount_pct": 50.0,
+          "recorded_at": "2026-11-11 01:33:43"
+        }
+      ],
+      "origin_type": "online",
+      "price": 21.75
+    },
+    {
+      "id": 17357,
+      "name": "Cerveja Artesanal Paulaner, Münchner Hell, 500ml 1un (Amazon Prime)",
+      "category": "cerveja",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Cerveja-Paulaner-Munchner-500ml-Packs/dp/B07XMMGR31",
+      "min_price": 22.59,
+      "avg_price": 25.109333333333332,
+      "max_price": 27.9,
+      "total_checks": 15,
+      "current_price": 22.59,
+      "original_price": 45.18,
+      "discount_pct": 50.0,
+      "last_recorded_at": "2026-11-08 20:01:43",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 10.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -903,32 +1061,32 @@
         "container_type": "Garrafa 750ml",
         "unit_name": "garrafa",
         "pack_label": "1 Garrafa Avulsa",
-        "unit_price": 56.9,
-        "orig_unit_price": 112.0,
-        "price_per_liter": 75.87,
-        "unit_price_display": "R$ 56,90 / garrafa",
+        "unit_price": 46.07,
+        "orig_unit_price": 83.37,
+        "price_per_liter": 61.43,
+        "unit_price_display": "R$ 46,07 / garrafa",
         "is_imported": false,
         "country": "Brasil",
         "country_flag": "🇧🇷",
         "beer_style": "Lager / Pilsen"
       },
-      "unit_price": 56.9,
+      "unit_price": 46.07,
       "is_imported": false,
       "country": "Brasil",
       "country_flag": "🇧🇷",
       "beer_style": "Lager / Pilsen",
       "history_points": [
         {
-          "price": 56.9,
-          "original_price": 112.0,
-          "discount_pct": 49.2,
-          "recorded_at": "2026-10-30 21:30:15"
+          "price": 46.07,
+          "original_price": 83.37,
+          "discount_pct": 44.7,
+          "recorded_at": "2026-11-05 21:38:34"
         },
         {
-          "price": 56.9,
-          "original_price": 112.0,
-          "discount_pct": 49.2,
-          "recorded_at": "2026-10-30 22:15:07"
+          "price": 46.07,
+          "original_price": 83.37,
+          "discount_pct": 44.7,
+          "recorded_at": "2026-11-08 16:53:44"
         },
         {
           "price": 56.9,
@@ -7567,6 +7725,600 @@
       "price": 34.06
     },
     {
+      "id": 28654,
+      "name": "Santa Helena Vinho Reservado Carmenere 750Ml (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Santa-Helena-Carmenere-750ml/dp/B07XTQ8HJW",
+      "min_price": 19.95,
+      "avg_price": 19.95,
+      "max_price": 19.95,
+      "total_checks": 2,
+      "current_price": 19.95,
+      "original_price": 26.6,
+      "discount_pct": 25.0,
+      "last_recorded_at": "2026-11-06 01:52:49",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 19.95,
+        "orig_unit_price": 26.6,
+        "price_per_liter": 26.6,
+        "unit_price_display": "R$ 19,95 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 19.95,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 19.95,
+          "original_price": 26.6,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-05 01:53:01"
+        },
+        {
+          "price": 19.95,
+          "original_price": 26.6,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-06 01:52:49"
+        }
+      ],
+      "origin_type": "online",
+      "price": 19.95
+    },
+    {
+      "id": 21443,
+      "name": "Vinho Fino Tinto Chileno Santa Loreto Varietal Cabernet Sauvignon 750ml (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Santa-Loreto-Varietal-Cabernet-Sauvignon/dp/B0D546H38R",
+      "min_price": 19.99,
+      "avg_price": 20.381666666666668,
+      "max_price": 22.34,
+      "total_checks": 18,
+      "current_price": 19.99,
+      "original_price": 26.65,
+      "discount_pct": 25.0,
+      "last_recorded_at": "2026-11-08 20:01:43",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 1.9,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 19.99,
+        "orig_unit_price": 26.65,
+        "price_per_liter": 26.65,
+        "unit_price_display": "R$ 19,99 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 19.99,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 22.34,
+          "original_price": 23.52,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-10-31 08:00:19"
+        },
+        {
+          "price": 22.34,
+          "original_price": 23.52,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-10-31 15:30:20"
+        },
+        {
+          "price": 22.34,
+          "original_price": 23.52,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-11-02 15:30:13"
+        },
+        {
+          "price": 19.99,
+          "original_price": 26.65,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-04 21:36:25"
+        },
+        {
+          "price": 19.99,
+          "original_price": 26.65,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-05 01:53:01"
+        },
+        {
+          "price": 19.99,
+          "original_price": 26.65,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-05 18:27:58"
+        },
+        {
+          "price": 19.99,
+          "original_price": 26.65,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-05 21:38:34"
+        },
+        {
+          "price": 19.99,
+          "original_price": 26.65,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-06 01:52:49"
+        },
+        {
+          "price": 19.99,
+          "original_price": 26.65,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-06 01:52:49"
+        },
+        {
+          "price": 19.99,
+          "original_price": 26.65,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-06 17:47:34"
+        },
+        {
+          "price": 19.99,
+          "original_price": 26.65,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-06 21:08:21"
+        },
+        {
+          "price": 19.99,
+          "original_price": 26.65,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-07 01:23:52"
+        },
+        {
+          "price": 19.99,
+          "original_price": 26.65,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-07 19:43:20"
+        },
+        {
+          "price": 19.99,
+          "original_price": 26.65,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-07 19:43:20"
+        },
+        {
+          "price": 19.99,
+          "original_price": 26.65,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-08 00:57:28"
+        },
+        {
+          "price": 19.99,
+          "original_price": 26.65,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-08 00:57:28"
+        },
+        {
+          "price": 19.99,
+          "original_price": 26.65,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-08 20:01:43"
+        },
+        {
+          "price": 19.99,
+          "original_price": 26.65,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-08 20:01:43"
+        }
+      ],
+      "origin_type": "online",
+      "price": 19.99
+    },
+    {
+      "id": 21081,
+      "name": "Vinho Fino Tinto Chileno Santa Loreto Varietal Carmenere 750ml (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Chileno-Santa-Loreto-Varietal-Carmenere/dp/B0D544DQ8W",
+      "min_price": 20.52,
+      "avg_price": 20.82470588235294,
+      "max_price": 20.89,
+      "total_checks": 17,
+      "current_price": 20.89,
+      "original_price": 27.85,
+      "discount_pct": 25.0,
+      "last_recorded_at": "2026-11-08 20:01:43",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": -0.3,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 20.89,
+        "orig_unit_price": 27.85,
+        "price_per_liter": 27.85,
+        "unit_price_display": "R$ 20,89 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 20.89,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 20.52,
+          "original_price": 23.32,
+          "discount_pct": 12.0,
+          "recorded_at": "2026-10-30 21:30:15"
+        },
+        {
+          "price": 20.52,
+          "original_price": 23.32,
+          "discount_pct": 12.0,
+          "recorded_at": "2026-10-31 15:30:20"
+        },
+        {
+          "price": 20.52,
+          "original_price": 23.32,
+          "discount_pct": 12.0,
+          "recorded_at": "2026-11-02 13:30:14"
+        },
+        {
+          "price": 20.89,
+          "original_price": 27.85,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-04 21:36:25"
+        },
+        {
+          "price": 20.89,
+          "original_price": 27.85,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-05 01:53:01"
+        },
+        {
+          "price": 20.89,
+          "original_price": 27.85,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-06 01:52:49"
+        },
+        {
+          "price": 20.89,
+          "original_price": 27.85,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-06 01:52:49"
+        },
+        {
+          "price": 20.89,
+          "original_price": 27.85,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-06 17:47:34"
+        },
+        {
+          "price": 20.89,
+          "original_price": 27.85,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-06 17:47:34"
+        },
+        {
+          "price": 20.89,
+          "original_price": 27.85,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-06 21:08:21"
+        },
+        {
+          "price": 20.89,
+          "original_price": 27.85,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-07 01:23:52"
+        },
+        {
+          "price": 20.89,
+          "original_price": 27.85,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-07 01:23:52"
+        },
+        {
+          "price": 20.89,
+          "original_price": 27.85,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-07 19:43:20"
+        },
+        {
+          "price": 20.89,
+          "original_price": 27.85,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-07 19:43:20"
+        },
+        {
+          "price": 20.89,
+          "original_price": 27.85,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-08 00:57:28"
+        },
+        {
+          "price": 20.89,
+          "original_price": 27.85,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-08 00:57:28"
+        },
+        {
+          "price": 20.89,
+          "original_price": 27.85,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-08 20:01:43"
+        }
+      ],
+      "origin_type": "online",
+      "price": 20.89
+    },
+    {
+      "id": 28889,
+      "name": "Santa Helena Vinho Reservado Malbec 750Ml (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Santa-Helena-Malbec-750ml/dp/B07XTRS4FK",
+      "min_price": 22.0,
+      "avg_price": 22.188333333333333,
+      "max_price": 23.13,
+      "total_checks": 6,
+      "current_price": 23.13,
+      "original_price": 30.84,
+      "discount_pct": 25.0,
+      "last_recorded_at": "2026-11-07 19:43:20",
+      "intelligence": {
+        "verdict": "⚖️ Preço Normal / Habitual",
+        "tag": "Preço Médio",
+        "score": "fair",
+        "emoji": "🟡",
+        "color": "amber",
+        "savings_pct": -4.2,
+        "is_all_time_low": false,
+        "advice": "Dentro da média praticada no mercado. Compre apenas se estiver precisando."
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 23.13,
+        "orig_unit_price": 30.84,
+        "price_per_liter": 30.84,
+        "unit_price_display": "R$ 23,13 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 23.13,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 22.0,
+          "original_price": 29.33,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-05 18:27:58"
+        },
+        {
+          "price": 22.0,
+          "original_price": 29.33,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-05 21:38:34"
+        },
+        {
+          "price": 22.0,
+          "original_price": 29.33,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-06 17:47:34"
+        },
+        {
+          "price": 22.0,
+          "original_price": 29.33,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-06 21:08:21"
+        },
+        {
+          "price": 22.0,
+          "original_price": 29.33,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-07 01:23:52"
+        },
+        {
+          "price": 23.13,
+          "original_price": 30.84,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-07 19:43:20"
+        }
+      ],
+      "origin_type": "online",
+      "price": 23.13
+    },
+    {
+      "id": 31392,
+      "name": "Santa Helena Vinho Reservado Cabernet Sauvignon 750Ml (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Santa-Helena-Cabernet-Sauvignon-750ml/dp/B0051WTB7A",
+      "min_price": 26.9,
+      "avg_price": 26.9,
+      "max_price": 26.9,
+      "total_checks": 1,
+      "current_price": 26.9,
+      "original_price": 35.87,
+      "discount_pct": 25.0,
+      "last_recorded_at": "2026-11-08 20:01:43",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 26.9,
+        "orig_unit_price": 35.87,
+        "price_per_liter": 35.87,
+        "unit_price_display": "R$ 26,90 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 26.9,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 35.87,
+          "original_price": 35.87,
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 31.38,
+          "original_price": 35.87,
+          "discount_pct": 12.5,
+          "recorded_at": "Última Varredura"
+        },
+        {
+          "price": 26.9,
+          "original_price": 35.87,
+          "discount_pct": 25.0,
+          "recorded_at": "Preço Atual"
+        }
+      ],
+      "origin_type": "online",
+      "price": 26.9
+    },
+    {
+      "id": 30888,
+      "name": "Vinho Fino Tinto Argentino Pirueta Varietal Malbec 750ml (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Vinho-Argentino-Pirueta-Varietal-Malbec/dp/B0D4NXLGHX",
+      "min_price": 35.37,
+      "avg_price": 35.37,
+      "max_price": 35.37,
+      "total_checks": 1,
+      "current_price": 35.37,
+      "original_price": 47.16,
+      "discount_pct": 25.0,
+      "last_recorded_at": "2026-11-08 00:57:28",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 35.37,
+        "orig_unit_price": 47.16,
+        "price_per_liter": 47.16,
+        "unit_price_display": "R$ 35,37 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 35.37,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 47.16,
+          "original_price": 47.16,
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 41.27,
+          "original_price": 47.16,
+          "discount_pct": 12.5,
+          "recorded_at": "Última Varredura"
+        },
+        {
+          "price": 35.37,
+          "original_price": 47.16,
+          "discount_pct": 25.0,
+          "recorded_at": "Preço Atual"
+        }
+      ],
+      "origin_type": "online",
+      "price": 35.37
+    },
+    {
       "id": 19060,
       "name": "Vinho Chileno - Santa Vita Reserva Especial 750ml (Carménère) (Amazon Prime)",
       "category": "vinho",
@@ -7575,11 +8327,11 @@
       "min_price": 38.9,
       "avg_price": 38.9,
       "max_price": 38.9,
-      "total_checks": 5,
+      "total_checks": 8,
       "current_price": 38.9,
       "original_price": 51.87,
       "discount_pct": 25.0,
-      "last_recorded_at": "2026-11-01 18:30:21",
+      "last_recorded_at": "2026-11-08 20:01:43",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -7641,6 +8393,24 @@
           "original_price": 51.87,
           "discount_pct": 25.0,
           "recorded_at": "2026-11-01 18:30:21"
+        },
+        {
+          "price": 38.9,
+          "original_price": 51.87,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-05 21:38:34"
+        },
+        {
+          "price": 38.9,
+          "original_price": 51.87,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-08 16:53:44"
+        },
+        {
+          "price": 38.9,
+          "original_price": 51.87,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-08 20:01:43"
         }
       ],
       "origin_type": "online",
@@ -7653,20 +8423,20 @@
       "store": "Amazon Brasil",
       "link": "https://www.amazon.com.br/Vinho-Portugu%C3%AAs-Alentejano-Ouro-Meu/dp/B0F7YSZ77M",
       "min_price": 39.9,
-      "avg_price": 39.9,
+      "avg_price": 39.89999999999999,
       "max_price": 39.9,
-      "total_checks": 7,
+      "total_checks": 13,
       "current_price": 39.9,
       "original_price": 53.2,
       "discount_pct": 25.0,
-      "last_recorded_at": "2026-11-02 17:15:06",
+      "last_recorded_at": "2026-11-07 19:43:20",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -7733,10 +8503,114 @@
           "original_price": 53.2,
           "discount_pct": 25.0,
           "recorded_at": "2026-11-02 17:15:06"
+        },
+        {
+          "price": 39.9,
+          "original_price": 53.2,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-04 21:36:25"
+        },
+        {
+          "price": 39.9,
+          "original_price": 53.2,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-05 18:27:58"
+        },
+        {
+          "price": 39.9,
+          "original_price": 53.2,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-06 01:52:49"
+        },
+        {
+          "price": 39.9,
+          "original_price": 53.2,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-06 17:47:34"
+        },
+        {
+          "price": 39.9,
+          "original_price": 53.2,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-07 01:23:52"
+        },
+        {
+          "price": 39.9,
+          "original_price": 53.2,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-07 19:43:20"
         }
       ],
       "origin_type": "online",
       "price": 39.9
+    },
+    {
+      "id": 28898,
+      "name": "Vinho Tinto Argentino Signos Malbec 750ml (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Vinho-Tinto-Argentino-Signos-Malbec/dp/B0CS8PZFNP",
+      "min_price": 39.95,
+      "avg_price": 39.95,
+      "max_price": 39.95,
+      "total_checks": 1,
+      "current_price": 39.95,
+      "original_price": 53.27,
+      "discount_pct": 25.0,
+      "last_recorded_at": "2026-11-05 18:27:58",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 39.95,
+        "orig_unit_price": 53.27,
+        "price_per_liter": 53.27,
+        "unit_price_display": "R$ 39,95 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 39.95,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 53.27,
+          "original_price": 53.27,
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 46.61,
+          "original_price": 53.27,
+          "discount_pct": 12.5,
+          "recorded_at": "Última Varredura"
+        },
+        {
+          "price": 39.95,
+          "original_price": 53.27,
+          "discount_pct": 25.0,
+          "recorded_at": "Preço Atual"
+        }
+      ],
+      "origin_type": "online",
+      "price": 39.95
     },
     {
       "id": 30,
@@ -10601,7 +11475,7 @@
       "store": "Paulistão Atacadista",
       "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
       "min_price": 6.89,
-      "avg_price": 6.89,
+      "avg_price": 6.889999999999999,
       "max_price": 6.89,
       "total_checks": 96,
       "current_price": 6.89,
@@ -10614,7 +11488,7 @@
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -18255,6 +19129,176 @@
       "price": 29.9
     },
     {
+      "id": 2630,
+      "name": "Vinho Pé Tinto Esporão 750ml (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Vinho-Espor%C3%A3o-Tinto-750ml-2018/dp/B00DTRY07A",
+      "min_price": 32.38,
+      "avg_price": 40.6124,
+      "max_price": 46.74,
+      "total_checks": 25,
+      "current_price": 32.38,
+      "original_price": 40.99,
+      "discount_pct": 21.0,
+      "last_recorded_at": "2026-11-07 19:43:20",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 20.3,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 32.38,
+        "orig_unit_price": 40.99,
+        "price_per_liter": 43.17,
+        "unit_price_display": "R$ 32,38 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 32.38,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 32.39,
+          "original_price": 41.0,
+          "discount_pct": 21.0,
+          "recorded_at": "2026-10-08 11:08:38"
+        },
+        {
+          "price": 39.9,
+          "original_price": 42.0,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-10-27 15:15:07"
+        },
+        {
+          "price": 39.9,
+          "original_price": 42.0,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-10-28 12:15:08"
+        },
+        {
+          "price": 39.9,
+          "original_price": 42.0,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-10-28 16:15:09"
+        },
+        {
+          "price": 39.9,
+          "original_price": 42.0,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-10-28 21:15:09"
+        },
+        {
+          "price": 39.9,
+          "original_price": 42.0,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-10-28 23:15:07"
+        },
+        {
+          "price": 39.9,
+          "original_price": 42.0,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-10-29 09:15:14"
+        },
+        {
+          "price": 39.9,
+          "original_price": 42.0,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-10-29 10:15:14"
+        },
+        {
+          "price": 39.9,
+          "original_price": 42.0,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-10-29 11:15:16"
+        },
+        {
+          "price": 39.9,
+          "original_price": 42.0,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-10-30 21:30:15"
+        },
+        {
+          "price": 39.9,
+          "original_price": 42.0,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-10-30 22:15:07"
+        },
+        {
+          "price": 39.9,
+          "original_price": 42.0,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-10-31 10:15:06"
+        },
+        {
+          "price": 39.9,
+          "original_price": 42.0,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-10-31 14:15:13"
+        },
+        {
+          "price": 39.9,
+          "original_price": 42.0,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-10-31 15:15:10"
+        },
+        {
+          "price": 39.9,
+          "original_price": 42.0,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-10-31 19:15:13"
+        },
+        {
+          "price": 46.74,
+          "original_price": 49.2,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-11-01 15:15:14"
+        },
+        {
+          "price": 46.74,
+          "original_price": 49.2,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-11-01 16:15:14"
+        },
+        {
+          "price": 46.74,
+          "original_price": 49.2,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-11-01 17:15:08"
+        },
+        {
+          "price": 46.74,
+          "original_price": 49.2,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-11-02 14:30:13"
+        },
+        {
+          "price": 46.74,
+          "original_price": 49.2,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-11-02 19:30:14"
+        }
+      ],
+      "origin_type": "online",
+      "price": 32.38
+    },
+    {
       "id": 196,
       "name": "Linguiça Toscana para Churrasco Kg (Seara / Aurora / Perdigão) (Copercana)",
       "category": "acougue",
@@ -21121,6 +22165,104 @@
       "price": 38.9
     },
     {
+      "id": 28899,
+      "name": "Latitud Vinho 33 Malbec 750Ml (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Vinho-Latitud-33-Malbec-750ml/dp/B07XTQLQG6",
+      "min_price": 47.74,
+      "avg_price": 48.260000000000005,
+      "max_price": 51.9,
+      "total_checks": 8,
+      "current_price": 47.74,
+      "original_price": 59.98,
+      "discount_pct": 20.4,
+      "last_recorded_at": "2026-11-08 20:01:43",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 1.1,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 47.74,
+        "orig_unit_price": 59.98,
+        "price_per_liter": 63.65,
+        "unit_price_display": "R$ 47,74 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 47.74,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 47.74,
+          "original_price": 59.98,
+          "discount_pct": 20.4,
+          "recorded_at": "2026-11-05 18:27:58"
+        },
+        {
+          "price": 47.74,
+          "original_price": 59.98,
+          "discount_pct": 20.4,
+          "recorded_at": "2026-11-06 01:52:49"
+        },
+        {
+          "price": 47.74,
+          "original_price": 59.98,
+          "discount_pct": 20.4,
+          "recorded_at": "2026-11-06 17:47:34"
+        },
+        {
+          "price": 51.9,
+          "original_price": 69.2,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-07 19:43:20"
+        },
+        {
+          "price": 47.74,
+          "original_price": 59.98,
+          "discount_pct": 20.4,
+          "recorded_at": "2026-11-08 16:53:44"
+        },
+        {
+          "price": 47.74,
+          "original_price": 59.98,
+          "discount_pct": 20.4,
+          "recorded_at": "2026-11-08 16:53:44"
+        },
+        {
+          "price": 47.74,
+          "original_price": 59.98,
+          "discount_pct": 20.4,
+          "recorded_at": "2026-11-08 20:01:43"
+        },
+        {
+          "price": 47.74,
+          "original_price": 59.98,
+          "discount_pct": 20.4,
+          "recorded_at": "2026-11-08 20:01:43"
+        }
+      ],
+      "origin_type": "online",
+      "price": 47.74
+    },
+    {
       "id": 228,
       "name": "Maionese Tradicional Pote 500g (Hellmann's / Heinz) (Paulistão Atacadista)",
       "category": "mercearia",
@@ -21293,7 +22435,7 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Maionese+Hellmann's+500g",
       "min_price": 9.49,
-      "avg_price": 9.49,
+      "avg_price": 9.490000000000002,
       "max_price": 9.49,
       "total_checks": 96,
       "current_price": 9.49,
@@ -21459,7 +22601,7 @@
       "store": "Supermercados Copercana",
       "link": "https://www.supermercadoscopercana.com.br",
       "min_price": 9.49,
-      "avg_price": 9.49,
+      "avg_price": 9.490000000000002,
       "max_price": 9.49,
       "total_checks": 96,
       "current_price": 9.49,
@@ -22853,7 +23995,7 @@
       "store": "Mercado Livre Full",
       "link": "https://lista.mercadolivre.com.br/cerveja-duvel-330ml_OrderId_PRICE*ASC_Shipping_fulfillment",
       "min_price": 27.9,
-      "avg_price": 27.9,
+      "avg_price": 27.900000000000002,
       "max_price": 27.9,
       "total_checks": 347,
       "current_price": 27.9,
@@ -31127,7 +32269,7 @@
       "store": "Mercado Livre Full",
       "link": "https://lista.mercadolivre.com.br/cerveja-erdinger-pack_OrderId_PRICE*ASC_Shipping_fulfillment",
       "min_price": 114.9,
-      "avg_price": 114.9,
+      "avg_price": 114.89999999999999,
       "max_price": 114.9,
       "total_checks": 347,
       "current_price": 114.9,
@@ -31140,7 +32282,7 @@
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -33983,7 +35125,7 @@
       "store": "Mercado Livre Full",
       "link": "https://lista.mercadolivre.com.br/cerveja-guinness-lata-440ml_OrderId_PRICE*ASC_Shipping_fulfillment",
       "min_price": 24.9,
-      "avg_price": 24.9,
+      "avg_price": 24.900000000000002,
       "max_price": 24.9,
       "total_checks": 347,
       "current_price": 24.9,
@@ -35795,7 +36937,7 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Sal+Refinado+1kg",
       "min_price": 2.69,
-      "avg_price": 2.69,
+      "avg_price": 2.6899999999999995,
       "max_price": 2.69,
       "total_checks": 96,
       "current_price": 2.69,
@@ -35808,7 +36950,7 @@
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -36707,6 +37849,158 @@
       ],
       "origin_type": "local",
       "price": 33.9
+    },
+    {
+      "id": 28859,
+      "name": "PAPEL HIGIENICO CAIXA COM 8 ROLOS 300 M (Amazon Prime)",
+      "category": "limpeza",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/PAPEL-HIGIENICO-CAIXA-COM-ROLOS/dp/B09KQ7LDLJ",
+      "min_price": 113.73,
+      "avg_price": 117.752,
+      "max_price": 120.44,
+      "total_checks": 5,
+      "current_price": 113.73,
+      "original_price": 133.83,
+      "discount_pct": 15.0,
+      "last_recorded_at": "2026-11-08 20:01:43",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 3.4,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 8,
+        "unit_volume_ml": null,
+        "container_type": "Pacote c/ 8 rolos",
+        "unit_name": "rolo",
+        "pack_label": "Pacote c/ 8 rolos",
+        "unit_price": 14.22,
+        "orig_unit_price": 16.73,
+        "price_per_liter": null,
+        "unit_price_display": "R$ 14,22 / rolo"
+      },
+      "unit_price": 14.22,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
+      "history_points": [
+        {
+          "price": 120.43,
+          "original_price": 133.83,
+          "discount_pct": 10.0,
+          "recorded_at": "2026-11-05 18:27:58"
+        },
+        {
+          "price": 120.43,
+          "original_price": 133.83,
+          "discount_pct": 10.0,
+          "recorded_at": "2026-11-05 21:38:34"
+        },
+        {
+          "price": 120.44,
+          "original_price": 126.78,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-11-06 17:47:33"
+        },
+        {
+          "price": 113.73,
+          "original_price": 133.83,
+          "discount_pct": 15.0,
+          "recorded_at": "2026-11-08 16:53:44"
+        },
+        {
+          "price": 113.73,
+          "original_price": 133.83,
+          "discount_pct": 15.0,
+          "recorded_at": "2026-11-08 20:01:43"
+        }
+      ],
+      "origin_type": "online",
+      "price": 113.73
+    },
+    {
+      "id": 28860,
+      "name": "Papel Higiênico Extra Luxo Cai-Cai Caixa c/8000 Folhas Duplas Qualidade (Amazon Prime)",
+      "category": "limpeza",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Higi%C3%AAnico-Cai-Cai-Folhas-Duplas-Qualidade/dp/B0DK44YHCK",
+      "min_price": 110.58,
+      "avg_price": 115.732,
+      "max_price": 117.02,
+      "total_checks": 5,
+      "current_price": 117.02,
+      "original_price": 137.68,
+      "discount_pct": 15.0,
+      "last_recorded_at": "2026-11-08 20:01:43",
+      "intelligence": {
+        "verdict": "⚖️ Preço Normal / Habitual",
+        "tag": "Preço Médio",
+        "score": "fair",
+        "emoji": "🟡",
+        "color": "amber",
+        "savings_pct": -1.1,
+        "is_all_time_low": false,
+        "advice": "Dentro da média praticada no mercado. Compre apenas se estiver precisando."
+      },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 12,
+        "unit_volume_ml": null,
+        "container_type": "Pacote c/ 12 rolos",
+        "unit_name": "rolo",
+        "pack_label": "Pacote c/ 12 rolos",
+        "unit_price": 9.75,
+        "orig_unit_price": 11.47,
+        "price_per_liter": null,
+        "unit_price_display": "R$ 9,75 / rolo"
+      },
+      "unit_price": 9.75,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
+      "history_points": [
+        {
+          "price": 117.02,
+          "original_price": 137.68,
+          "discount_pct": 15.0,
+          "recorded_at": "2026-11-05 18:27:58"
+        },
+        {
+          "price": 117.02,
+          "original_price": 137.68,
+          "discount_pct": 15.0,
+          "recorded_at": "2026-11-05 21:38:34"
+        },
+        {
+          "price": 110.58,
+          "original_price": 130.11,
+          "discount_pct": 15.0,
+          "recorded_at": "2026-11-06 17:47:33"
+        },
+        {
+          "price": 117.02,
+          "original_price": 137.68,
+          "discount_pct": 15.0,
+          "recorded_at": "2026-11-08 16:53:44"
+        },
+        {
+          "price": 117.02,
+          "original_price": 137.68,
+          "discount_pct": 15.0,
+          "recorded_at": "2026-11-08 20:01:43"
+        }
+      ],
+      "origin_type": "online",
+      "price": 117.02
     },
     {
       "id": 16641,
@@ -37787,6 +39081,176 @@
       "price": 41.9
     },
     {
+      "id": 16866,
+      "name": "Kit Compre 5 e Leve 6 Cordero con Piel de Lobo Malbec (750 mL) (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Compre-Leve-Cordero-Piel-Malbec/dp/B0B4XVVNZ5",
+      "min_price": 252.6,
+      "avg_price": 261.88068965517243,
+      "max_price": 308.04,
+      "total_checks": 58,
+      "current_price": 308.04,
+      "original_price": 359.0,
+      "discount_pct": 14.2,
+      "last_recorded_at": "2026-11-08 20:01:43",
+      "intelligence": {
+        "verdict": "⏳ Preço Alto (Acima da Média)",
+        "tag": "Preço Alto",
+        "score": "high",
+        "emoji": "🔴",
+        "color": "rose",
+        "savings_pct": -17.6,
+        "is_all_time_low": false,
+        "advice": "Está mais caro que a média recente. Recomendamos aguardar nova promoção."
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 308.04,
+        "orig_unit_price": 359.0,
+        "price_per_liter": 410.72,
+        "unit_price_display": "R$ 308,04 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 308.04,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-27 13:00:22"
+        },
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-27 18:30:17"
+        },
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-27 19:30:23"
+        },
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-28 18:15:10"
+        },
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-28 19:30:25"
+        },
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-28 20:30:20"
+        },
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-28 21:15:09"
+        },
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-28 22:15:08"
+        },
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-29 09:15:14"
+        },
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-29 10:15:14"
+        },
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-29 10:30:26"
+        },
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-29 11:30:20"
+        },
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-29 12:30:23"
+        },
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-29 13:00:28"
+        },
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-29 13:30:22"
+        },
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-29 14:30:27"
+        },
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-29 18:15:07"
+        },
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-29 19:15:10"
+        },
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-29 19:30:19"
+        },
+        {
+          "price": 259.35,
+          "original_price": 359.0,
+          "discount_pct": 27.8,
+          "recorded_at": "2026-10-29 21:15:07"
+        }
+      ],
+      "origin_type": "online",
+      "price": 308.04
+    },
+    {
       "id": 225,
       "name": "Farinha de Trigo Tradicional Tipo 1 1kg (Dona Benta / Renata) (Paulistão Atacadista)",
       "category": "mercearia",
@@ -38193,6 +39657,110 @@
       ],
       "origin_type": "online",
       "price": 61.75
+    },
+    {
+      "id": 21734,
+      "name": "Vinho Tinto Argentino Cordero Con Piel de Lobo Cabernet Sauvignon 750ml (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Vinho-Argentino-Cordero-Cabernet-Sauvignon/dp/B092R993VQ",
+      "min_price": 44.93,
+      "avg_price": 47.81666666666667,
+      "max_price": 53.96,
+      "total_checks": 9,
+      "current_price": 53.96,
+      "original_price": 62.5,
+      "discount_pct": 13.7,
+      "last_recorded_at": "2026-11-08 20:01:43",
+      "intelligence": {
+        "verdict": "⏳ Preço Alto (Acima da Média)",
+        "tag": "Preço Alto",
+        "score": "high",
+        "emoji": "🔴",
+        "color": "rose",
+        "savings_pct": -12.8,
+        "is_all_time_low": false,
+        "advice": "Está mais caro que a média recente. Recomendamos aguardar nova promoção."
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 53.96,
+        "orig_unit_price": 62.5,
+        "price_per_liter": 71.95,
+        "unit_price_display": "R$ 53,96 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 53.96,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 44.93,
+          "original_price": 62.5,
+          "discount_pct": 28.1,
+          "recorded_at": "2026-10-31 11:30:12"
+        },
+        {
+          "price": 44.93,
+          "original_price": 62.5,
+          "discount_pct": 28.1,
+          "recorded_at": "2026-11-04 18:22:41"
+        },
+        {
+          "price": 44.93,
+          "original_price": 62.5,
+          "discount_pct": 28.1,
+          "recorded_at": "2026-11-05 21:38:34"
+        },
+        {
+          "price": 44.93,
+          "original_price": 62.5,
+          "discount_pct": 28.1,
+          "recorded_at": "2026-11-06 01:52:49"
+        },
+        {
+          "price": 47.31,
+          "original_price": 62.5,
+          "discount_pct": 24.3,
+          "recorded_at": "2026-11-06 17:47:34"
+        },
+        {
+          "price": 49.9,
+          "original_price": 66.53,
+          "discount_pct": 25.0,
+          "recorded_at": "2026-11-07 01:23:52"
+        },
+        {
+          "price": 52.15,
+          "original_price": 62.5,
+          "discount_pct": 16.6,
+          "recorded_at": "2026-11-08 00:57:28"
+        },
+        {
+          "price": 47.31,
+          "original_price": 62.5,
+          "discount_pct": 24.3,
+          "recorded_at": "2026-11-08 16:53:44"
+        },
+        {
+          "price": 53.96,
+          "original_price": 62.5,
+          "discount_pct": 13.7,
+          "recorded_at": "2026-11-08 20:01:43"
+        }
+      ],
+      "origin_type": "online",
+      "price": 53.96
     },
     {
       "id": 17787,
@@ -40747,7 +42315,7 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Feijão+Carioca+1kg",
       "min_price": 7.89,
-      "avg_price": 7.89,
+      "avg_price": 7.889999999999999,
       "max_price": 7.89,
       "total_checks": 96,
       "current_price": 7.89,
@@ -40760,7 +42328,7 @@
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -42545,7 +44113,7 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Leite+UHT+Integral+1L",
       "min_price": 4.89,
-      "avg_price": 4.89,
+      "avg_price": 4.889999999999999,
       "max_price": 4.89,
       "total_checks": 96,
       "current_price": 4.89,
@@ -42558,7 +44126,7 @@
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -42711,7 +44279,7 @@
       "store": "Paulistão Atacadista",
       "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
       "min_price": 7.39,
-      "avg_price": 7.39,
+      "avg_price": 7.389999999999999,
       "max_price": 7.39,
       "total_checks": 96,
       "current_price": 7.39,
@@ -42724,7 +44292,7 @@
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -42875,9 +44443,9 @@
       "price": 7.39
     },
     {
-      "id": 20546,
-      "name": "VINHO ARGENTINO CORDERO CON PIEL LOBO MALBEC 750ML (Amazon Prime)",
-      "category": "vinho",
+      "id": 30138,
+      "name": "Paulaner Cerveja Alemã Weissbier Lata 500ml (4 Unidades) (Amazon Prime)",
+      "category": "cerveja",
       "store": "Amazon Brasil",
       "link": "https://www.amazon.com.br/VINHO-ARGENTINO-CORDERO-MALBEC-750ML/dp/B08J9NLY94",
       "min_price": 44.55,
@@ -42894,47 +44462,47 @@
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": -0.0,
+        "savings_pct": 0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
       "unit_pricing": {
-        "is_pack": false,
-        "units_count": 1,
-        "unit_volume_ml": 750,
-        "container_type": "Garrafa 750ml",
-        "unit_name": "garrafa",
-        "pack_label": "1 Garrafa Avulsa",
-        "unit_price": 44.55,
-        "orig_unit_price": 49.9,
-        "price_per_liter": 59.4,
-        "unit_price_display": "R$ 44,55 / garrafa",
-        "is_imported": false,
-        "country": "Brasil",
-        "country_flag": "🇧🇷",
-        "beer_style": "Lager / Pilsen"
+        "is_pack": true,
+        "units_count": 4,
+        "unit_volume_ml": 500,
+        "container_type": "Lata 500ml",
+        "unit_name": "lata",
+        "pack_label": "Pack c/ 4 latas",
+        "unit_price": 15.63,
+        "orig_unit_price": 17.51,
+        "price_per_liter": 31.26,
+        "unit_price_display": "R$ 15,63 / lata",
+        "is_imported": true,
+        "country": "Alemanha",
+        "country_flag": "🇩🇪",
+        "beer_style": "Weissbier (Trigo)"
       },
-      "unit_price": 44.55,
-      "is_imported": false,
-      "country": "Brasil",
-      "country_flag": "🇧🇷",
-      "beer_style": "Lager / Pilsen",
+      "unit_price": 15.63,
+      "is_imported": true,
+      "country": "Alemanha",
+      "country_flag": "🇩🇪",
+      "beer_style": "Weissbier (Trigo)",
       "history_points": [
         {
-          "price": 44.55,
-          "original_price": 49.9,
+          "price": 62.52,
+          "original_price": 70.05,
           "discount_pct": 10.7,
-          "recorded_at": "2026-10-30 12:15:06"
+          "recorded_at": "2026-11-07 01:23:51"
         },
         {
-          "price": 44.55,
-          "original_price": 49.9,
+          "price": 62.52,
+          "original_price": 70.05,
           "discount_pct": 10.7,
-          "recorded_at": "2026-10-31 11:30:12"
+          "recorded_at": "2026-11-08 00:57:28"
         },
         {
-          "price": 44.55,
-          "original_price": 49.9,
+          "price": 62.52,
+          "original_price": 70.05,
           "discount_pct": 10.7,
           "recorded_at": "2026-11-01 09:15:14"
         },
@@ -42994,7 +44562,7 @@
         }
       ],
       "origin_type": "online",
-      "price": 44.55
+      "price": 62.52
     },
     {
       "id": 27664,
@@ -43727,7 +45295,7 @@
       "store": "Supermercados Copercana",
       "link": "https://www.supermercadoscopercana.com.br",
       "min_price": 7.89,
-      "avg_price": 7.89,
+      "avg_price": 7.889999999999999,
       "max_price": 7.89,
       "total_checks": 96,
       "current_price": 7.89,
@@ -43740,7 +45308,7 @@
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -45959,7 +47527,7 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Coca-Cola+2L",
       "min_price": 9.49,
-      "avg_price": 9.49,
+      "avg_price": 9.490000000000002,
       "max_price": 9.49,
       "total_checks": 96,
       "current_price": 9.49,
@@ -46611,7 +48179,7 @@
       "store": "Savegnago Supermercados",
       "link": "https://www.savegnago.com.br/busca?ft=Óleo+de+Soja+900ml",
       "min_price": 6.89,
-      "avg_price": 6.89,
+      "avg_price": 6.889999999999999,
       "max_price": 6.89,
       "total_checks": 96,
       "current_price": 6.89,
@@ -46624,7 +48192,7 @@
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -47799,7 +49367,7 @@
       "store": "Paulistão Atacadista",
       "link": "https://www.paulistaoatacadista.com.br/jornal-de-ofertas/sertaozinho",
       "min_price": 6.39,
-      "avg_price": 6.39,
+      "avg_price": 6.389999999999999,
       "max_price": 6.39,
       "total_checks": 96,
       "current_price": 6.39,
@@ -47812,7 +49380,7 @@
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": -0.0,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -48129,6 +49697,64 @@
       "price": 5.39
     },
     {
+      "id": 20865,
+      "name": "Coffee Mais │Café Super Especial ARARA em Grãos │100% Arábica │ Torra Média │250g (Amazon Prime)",
+      "category": "mercearia",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Coffee-Mais-%E2%94%82Edi%C3%A7%C3%A3o-Limitada-Microlote/dp/B09MWN12GJ",
+      "min_price": 26.59,
+      "avg_price": 27.744999999999997,
+      "max_price": 28.9,
+      "total_checks": 2,
+      "current_price": 26.59,
+      "original_price": 28.9,
+      "discount_pct": 8.0,
+      "last_recorded_at": "2026-11-06 17:47:33",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 4.2,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": null,
+        "container_type": "Pacote 250g",
+        "unit_name": "pct 250g",
+        "pack_label": "Pacote 250g",
+        "unit_price": 26.59,
+        "orig_unit_price": 28.9,
+        "price_per_liter": null,
+        "unit_price_display": "R$ 26,59 / 250g"
+      },
+      "unit_price": 26.59,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
+      "history_points": [
+        {
+          "price": 28.9,
+          "original_price": 0.12,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-30 13:30:12"
+        },
+        {
+          "price": 26.59,
+          "original_price": 28.9,
+          "discount_pct": 8.0,
+          "recorded_at": "2026-11-06 17:47:33"
+        }
+      ],
+      "origin_type": "online",
+      "price": 26.59
+    },
+    {
       "id": 16637,
       "name": "Kit Herdade do Esporão Vinagre de Vinho Tinto Reserva 500ml + Azeite Extra Virgem 250ml (Amazon Prime)",
       "category": "vinho",
@@ -48297,152 +49923,6 @@
       ],
       "origin_type": "online",
       "price": 73.52
-    },
-    {
-      "id": 17366,
-      "name": "Concha y Toro Trivento Reserve Malbec Tinto 750ml (Amazon Prime)",
-      "category": "vinho",
-      "store": "Amazon Brasil",
-      "link": "https://www.amazon.com.br/Vinho-Argentino-Trivento-Reserve-Malbec/dp/B017NHO8VE",
-      "min_price": 66.51,
-      "avg_price": 66.51,
-      "max_price": 66.51,
-      "total_checks": 16,
-      "current_price": 66.51,
-      "original_price": 72.01,
-      "discount_pct": 7.6,
-      "last_recorded_at": "2026-11-01 17:15:08",
-      "intelligence": {
-        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
-        "tag": "Excelente Preço",
-        "score": "great",
-        "emoji": "🟢",
-        "color": "emerald",
-        "savings_pct": 0.0,
-        "is_all_time_low": true,
-        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      },
-      "unit_pricing": {
-        "is_pack": false,
-        "units_count": 1,
-        "unit_volume_ml": 750,
-        "container_type": "Garrafa 750ml",
-        "unit_name": "garrafa",
-        "pack_label": "1 Garrafa Avulsa",
-        "unit_price": 66.51,
-        "orig_unit_price": 72.01,
-        "price_per_liter": 88.68,
-        "unit_price_display": "R$ 66,51 / garrafa",
-        "is_imported": false,
-        "country": "Brasil",
-        "country_flag": "🇧🇷",
-        "beer_style": "Lager / Pilsen"
-      },
-      "unit_price": 66.51,
-      "is_imported": false,
-      "country": "Brasil",
-      "country_flag": "🇧🇷",
-      "beer_style": "Lager / Pilsen",
-      "history_points": [
-        {
-          "price": 66.51,
-          "original_price": 72.01,
-          "discount_pct": 7.6,
-          "recorded_at": "2026-10-27 20:30:32"
-        },
-        {
-          "price": 66.51,
-          "original_price": 72.01,
-          "discount_pct": 7.6,
-          "recorded_at": "2026-10-28 16:15:09"
-        },
-        {
-          "price": 66.51,
-          "original_price": 72.01,
-          "discount_pct": 7.6,
-          "recorded_at": "2026-10-28 20:15:09"
-        },
-        {
-          "price": 66.51,
-          "original_price": 72.01,
-          "discount_pct": 7.6,
-          "recorded_at": "2026-10-28 22:15:08"
-        },
-        {
-          "price": 66.51,
-          "original_price": 72.01,
-          "discount_pct": 7.6,
-          "recorded_at": "2026-10-28 23:15:07"
-        },
-        {
-          "price": 66.51,
-          "original_price": 72.01,
-          "discount_pct": 7.6,
-          "recorded_at": "2026-10-29 12:15:10"
-        },
-        {
-          "price": 66.51,
-          "original_price": 72.01,
-          "discount_pct": 7.6,
-          "recorded_at": "2026-10-29 17:15:07"
-        },
-        {
-          "price": 66.51,
-          "original_price": 72.01,
-          "discount_pct": 7.6,
-          "recorded_at": "2026-10-29 18:30:21"
-        },
-        {
-          "price": 66.51,
-          "original_price": 72.01,
-          "discount_pct": 7.6,
-          "recorded_at": "2026-10-29 19:00:25"
-        },
-        {
-          "price": 66.51,
-          "original_price": 72.01,
-          "discount_pct": 7.6,
-          "recorded_at": "2026-10-29 21:15:07"
-        },
-        {
-          "price": 66.51,
-          "original_price": 72.01,
-          "discount_pct": 7.6,
-          "recorded_at": "2026-10-29 22:15:08"
-        },
-        {
-          "price": 66.51,
-          "original_price": 72.01,
-          "discount_pct": 7.6,
-          "recorded_at": "2026-10-31 14:15:13"
-        },
-        {
-          "price": 66.51,
-          "original_price": 72.01,
-          "discount_pct": 7.6,
-          "recorded_at": "2026-10-31 15:15:10"
-        },
-        {
-          "price": 66.51,
-          "original_price": 72.01,
-          "discount_pct": 7.6,
-          "recorded_at": "2026-11-01 15:30:20"
-        },
-        {
-          "price": 66.51,
-          "original_price": 72.01,
-          "discount_pct": 7.6,
-          "recorded_at": "2026-11-01 16:15:14"
-        },
-        {
-          "price": 66.51,
-          "original_price": 72.01,
-          "discount_pct": 7.6,
-          "recorded_at": "2026-11-01 17:15:08"
-        }
-      ],
-      "origin_type": "online",
-      "price": 66.51
     },
     {
       "id": 95,
@@ -48901,11 +50381,11 @@
       "min_price": 47.4,
       "avg_price": 47.4,
       "max_price": 47.4,
-      "total_checks": 3,
+      "total_checks": 5,
       "current_price": 47.4,
       "original_price": 49.9,
       "discount_pct": 5.0,
-      "last_recorded_at": "2026-11-01 22:30:29",
+      "last_recorded_at": "2026-11-05 21:38:34",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -48951,6 +50431,18 @@
           "original_price": 49.9,
           "discount_pct": 5.0,
           "recorded_at": "2026-11-01 22:30:29"
+        },
+        {
+          "price": 47.4,
+          "original_price": 49.9,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-11-05 18:27:58"
+        },
+        {
+          "price": 47.4,
+          "original_price": 49.9,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-11-05 21:38:34"
         }
       ],
       "origin_type": "online",
@@ -49169,11 +50661,11 @@
       "min_price": 52.71,
       "avg_price": 52.71,
       "max_price": 52.71,
-      "total_checks": 1,
+      "total_checks": 2,
       "current_price": 52.71,
       "original_price": 55.49,
       "discount_pct": 5.0,
-      "last_recorded_at": "2026-10-29 19:30:19",
+      "last_recorded_at": "2026-11-06 01:52:48",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -49203,26 +50695,152 @@
       "beer_style": "",
       "history_points": [
         {
-          "price": 55.49,
+          "price": 52.71,
           "original_price": 55.49,
-          "discount_pct": 0,
-          "recorded_at": "Semana Anterior"
-        },
-        {
-          "price": 54.1,
-          "original_price": 55.49,
-          "discount_pct": 2.5,
-          "recorded_at": "Última Varredura"
+          "discount_pct": 5.0,
+          "recorded_at": "2026-10-29 19:30:19"
         },
         {
           "price": 52.71,
           "original_price": 55.49,
           "discount_pct": 5.0,
-          "recorded_at": "Preço Atual"
+          "recorded_at": "2026-11-06 01:52:48"
         }
       ],
       "origin_type": "online",
       "price": 52.71
+    },
+    {
+      "id": 28896,
+      "name": "Vinho Argentino Cordero Con Piel de Lobo Bonarda 750 mL (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Vinho-Argentino-Cordero-Piel-Bonarda/dp/B0CW3MWQHS",
+      "min_price": 52.74,
+      "avg_price": 52.74,
+      "max_price": 52.74,
+      "total_checks": 1,
+      "current_price": 52.74,
+      "original_price": 55.52,
+      "discount_pct": 5.0,
+      "last_recorded_at": "2026-11-05 18:27:58",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 52.74,
+        "orig_unit_price": 55.52,
+        "price_per_liter": 70.32,
+        "unit_price_display": "R$ 52,74 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 52.74,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 55.52,
+          "original_price": 55.52,
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 54.13,
+          "original_price": 55.52,
+          "discount_pct": 2.5,
+          "recorded_at": "Última Varredura"
+        },
+        {
+          "price": 52.74,
+          "original_price": 55.52,
+          "discount_pct": 5.0,
+          "recorded_at": "Preço Atual"
+        }
+      ],
+      "origin_type": "online",
+      "price": 52.74
+    },
+    {
+      "id": 30133,
+      "name": "Personal VIP - Papel Higiênico Folha Dupla, Branco 24 unidades (Embalagem pode variar) (Amazon Prime)",
+      "category": "limpeza",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Papel-Higi%C3%AAnico-Personal-Branco-pacote/dp/B07D5LZZCC",
+      "min_price": 53.09,
+      "avg_price": 53.09,
+      "max_price": 53.09,
+      "total_checks": 1,
+      "current_price": 53.09,
+      "original_price": 55.89,
+      "discount_pct": 5.0,
+      "last_recorded_at": "2026-11-07 01:23:51",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 24,
+        "unit_volume_ml": null,
+        "container_type": "Pacote c/ 24 rolos",
+        "unit_name": "rolo",
+        "pack_label": "Pacote c/ 24 rolos",
+        "unit_price": 2.21,
+        "orig_unit_price": 2.33,
+        "price_per_liter": null,
+        "unit_price_display": "R$ 2,21 / rolo"
+      },
+      "unit_price": 2.21,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
+      "history_points": [
+        {
+          "price": 55.89,
+          "original_price": 55.89,
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 54.49,
+          "original_price": 55.89,
+          "discount_pct": 2.5,
+          "recorded_at": "Última Varredura"
+        },
+        {
+          "price": 53.09,
+          "original_price": 55.89,
+          "discount_pct": 5.0,
+          "recorded_at": "Preço Atual"
+        }
+      ],
+      "origin_type": "online",
+      "price": 53.09
     },
     {
       "id": 17786,
@@ -49383,11 +51001,11 @@
       "min_price": 56.9,
       "avg_price": 56.9,
       "max_price": 56.9,
-      "total_checks": 1,
+      "total_checks": 3,
       "current_price": 56.9,
       "original_price": 59.9,
       "discount_pct": 5.0,
-      "last_recorded_at": "2026-11-01 23:15:12",
+      "last_recorded_at": "2026-11-06 17:47:34",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -49421,22 +51039,22 @@
       "beer_style": "Lager / Pilsen",
       "history_points": [
         {
-          "price": 59.9,
+          "price": 56.9,
           "original_price": 59.9,
-          "discount_pct": 0,
-          "recorded_at": "Semana Anterior"
-        },
-        {
-          "price": 58.4,
-          "original_price": 59.9,
-          "discount_pct": 2.5,
-          "recorded_at": "Última Varredura"
+          "discount_pct": 5.0,
+          "recorded_at": "2026-11-01 23:15:12"
         },
         {
           "price": 56.9,
           "original_price": 59.9,
           "discount_pct": 5.0,
-          "recorded_at": "Preço Atual"
+          "recorded_at": "2026-11-06 01:52:49"
+        },
+        {
+          "price": 56.9,
+          "original_price": 59.9,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-11-06 17:47:34"
         }
       ],
       "origin_type": "online",
@@ -51079,15 +52697,15 @@
       "name": "Hidromel Philip Mead - 500ml (Oak Aged) (Amazon Prime)",
       "category": "cerveja",
       "store": "Amazon Brasil",
-      "link": "https://www.amazon.com.br/Hidromel-Philip-Mead-500ml-Aged/dp/B09BW38FW8",
-      "min_price": 84.17,
-      "avg_price": 84.17,
-      "max_price": 84.17,
-      "total_checks": 7,
-      "current_price": 84.17,
-      "original_price": 88.6,
+      "link": "https://www.amazon.com.br/Cuentos-del-Fuego-RESERVA-Cabernet/dp/B0FTP4DS9B",
+      "min_price": 80.37,
+      "avg_price": 80.37,
+      "max_price": 80.37,
+      "total_checks": 4,
+      "current_price": 80.37,
+      "original_price": 84.6,
       "discount_pct": 5.0,
-      "last_recorded_at": "2026-11-01 20:30:38",
+      "last_recorded_at": "2026-11-08 16:53:44",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -51101,70 +52719,52 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": 500,
-        "container_type": "Lata 500ml",
-        "unit_name": "lata",
-        "pack_label": "1 Lata Avulsa",
-        "unit_price": 84.17,
-        "orig_unit_price": 88.6,
-        "price_per_liter": 168.34,
-        "unit_price_display": "R$ 84,17 / lata",
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 80.37,
+        "orig_unit_price": 84.6,
+        "price_per_liter": 107.16,
+        "unit_price_display": "R$ 80,37 / garrafa",
         "is_imported": false,
         "country": "Brasil",
         "country_flag": "🇧🇷",
         "beer_style": "Lager / Pilsen"
       },
-      "unit_price": 84.17,
+      "unit_price": 80.37,
       "is_imported": false,
       "country": "Brasil",
       "country_flag": "🇧🇷",
       "beer_style": "Lager / Pilsen",
       "history_points": [
         {
-          "price": 84.17,
-          "original_price": 88.6,
+          "price": 80.37,
+          "original_price": 84.6,
           "discount_pct": 5.0,
-          "recorded_at": "2026-10-31 19:30:17"
+          "recorded_at": "2026-11-05 18:27:58"
         },
         {
-          "price": 84.17,
-          "original_price": 88.6,
+          "price": 80.37,
+          "original_price": 84.6,
           "discount_pct": 5.0,
-          "recorded_at": "2026-10-31 20:30:56"
+          "recorded_at": "2026-11-05 21:38:34"
         },
         {
-          "price": 84.17,
-          "original_price": 88.6,
+          "price": 80.37,
+          "original_price": 84.6,
           "discount_pct": 5.0,
-          "recorded_at": "2026-10-31 22:30:17"
+          "recorded_at": "2026-11-06 21:08:21"
         },
         {
-          "price": 84.17,
-          "original_price": 88.6,
+          "price": 80.37,
+          "original_price": 84.6,
           "discount_pct": 5.0,
-          "recorded_at": "2026-10-31 23:30:20"
-        },
-        {
-          "price": 84.17,
-          "original_price": 88.6,
-          "discount_pct": 5.0,
-          "recorded_at": "2026-11-01 17:30:20"
-        },
-        {
-          "price": 84.17,
-          "original_price": 88.6,
-          "discount_pct": 5.0,
-          "recorded_at": "2026-11-01 18:30:21"
-        },
-        {
-          "price": 84.17,
-          "original_price": 88.6,
-          "discount_pct": 5.0,
-          "recorded_at": "2026-11-01 20:30:38"
+          "recorded_at": "2026-11-08 16:53:44"
         }
       ],
       "origin_type": "online",
-      "price": 84.17
+      "price": 80.37
     },
     {
       "id": 2793,
@@ -51591,11 +53191,11 @@
       "min_price": 90.15,
       "avg_price": 90.15,
       "max_price": 90.15,
-      "total_checks": 59,
+      "total_checks": 67,
       "current_price": 90.15,
       "original_price": 94.9,
       "discount_pct": 5.0,
-      "last_recorded_at": "2026-11-01 22:30:29",
+      "last_recorded_at": "2026-11-08 20:01:43",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -52785,6 +54385,74 @@
           "original_price": 109.9,
           "discount_pct": 5.0,
           "recorded_at": "2026-11-01 18:30:21"
+        }
+      ],
+      "origin_type": "online",
+      "price": 104.4
+    },
+    {
+      "id": 29636,
+      "name": "Red Ale Sem Glúten Garrafa 500ml Pack Com 6 Unidades (Amazon Prime)",
+      "category": "cerveja",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Red-Ale-Sem-Gl%C3%BAten-Unidades/dp/B0DT1FCTVP",
+      "min_price": 104.4,
+      "avg_price": 104.4,
+      "max_price": 104.4,
+      "total_checks": 1,
+      "current_price": 104.4,
+      "original_price": 109.9,
+      "discount_pct": 5.0,
+      "last_recorded_at": "2026-11-06 17:47:34",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 6,
+        "unit_volume_ml": 500,
+        "container_type": "Garrafa 500ml",
+        "unit_name": "garrafa",
+        "pack_label": "Pack c/ 6 garrafas",
+        "unit_price": 17.4,
+        "orig_unit_price": 18.32,
+        "price_per_liter": 34.8,
+        "unit_price_display": "R$ 17,40 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 17.4,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 109.9,
+          "original_price": 109.9,
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 107.15,
+          "original_price": 109.9,
+          "discount_pct": 2.5,
+          "recorded_at": "Última Varredura"
+        },
+        {
+          "price": 104.4,
+          "original_price": 109.9,
+          "discount_pct": 5.0,
+          "recorded_at": "Preço Atual"
         }
       ],
       "origin_type": "online",
@@ -54519,11 +56187,11 @@
       "min_price": 170.05,
       "avg_price": 170.05,
       "max_price": 170.05,
-      "total_checks": 2,
+      "total_checks": 3,
       "current_price": 170.05,
       "original_price": 179.0,
       "discount_pct": 5.0,
-      "last_recorded_at": "2026-10-31 16:30:20",
+      "last_recorded_at": "2026-11-08 16:53:44",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -54567,6 +56235,80 @@
           "original_price": 179.0,
           "discount_pct": 5.0,
           "recorded_at": "2026-10-31 16:30:20"
+        },
+        {
+          "price": 170.05,
+          "original_price": 179.0,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-11-08 16:53:44"
+        }
+      ],
+      "origin_type": "online",
+      "price": 170.05
+    },
+    {
+      "id": 30641,
+      "name": "Vinho Argentino Huentala Sombrero Malbec Magnun 1,5 L (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Argentino-Huentala-Sombrero-Malbec-Magnun/dp/B0HF57RZ1X",
+      "min_price": 170.05,
+      "avg_price": 170.05,
+      "max_price": 170.05,
+      "total_checks": 1,
+      "current_price": 170.05,
+      "original_price": 179.0,
+      "discount_pct": 5.0,
+      "last_recorded_at": "2026-11-07 19:43:20",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 1500,
+        "container_type": "Pet 1.5L",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 170.05,
+        "orig_unit_price": 179.0,
+        "price_per_liter": 113.37,
+        "unit_price_display": "R$ 170,05 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 170.05,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 179.0,
+          "original_price": 179.0,
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 174.53,
+          "original_price": 179.0,
+          "discount_pct": 2.5,
+          "recorded_at": "Última Varredura"
+        },
+        {
+          "price": 170.05,
+          "original_price": 179.0,
+          "discount_pct": 5.0,
+          "recorded_at": "Preço Atual"
         }
       ],
       "origin_type": "online",
@@ -54649,11 +56391,11 @@
       "min_price": 170.9,
       "avg_price": 170.9,
       "max_price": 170.9,
-      "total_checks": 17,
+      "total_checks": 18,
       "current_price": 170.9,
       "original_price": 179.9,
       "discount_pct": 5.0,
-      "last_recorded_at": "2026-11-01 22:30:29",
+      "last_recorded_at": "2026-11-06 17:47:33",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -54783,6 +56525,12 @@
           "original_price": 179.9,
           "discount_pct": 5.0,
           "recorded_at": "2026-11-01 22:30:29"
+        },
+        {
+          "price": 170.9,
+          "original_price": 179.9,
+          "discount_pct": 5.0,
+          "recorded_at": "2026-11-06 17:47:33"
         }
       ],
       "origin_type": "online",
@@ -55969,8 +57717,8 @@
           "recorded_at": "2026-10-29 19:30:19"
         },
         {
-          "price": 339.04,
-          "original_price": 356.89,
+          "price": 336.3,
+          "original_price": 354.0,
           "discount_pct": 5.0,
           "recorded_at": "2026-11-11 08:29:02"
         }
@@ -56369,6 +58117,74 @@
       ],
       "origin_type": "online",
       "price": 416.95
+    },
+    {
+      "id": 29419,
+      "name": "Vinho Chileno Escudo Rojo Baronesa P. 750ML (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Vinho-Chileno-Escudo-Baronesa-750ML/dp/B0H8WSXDKD",
+      "min_price": 453.06,
+      "avg_price": 453.06,
+      "max_price": 453.06,
+      "total_checks": 1,
+      "current_price": 453.06,
+      "original_price": 476.91,
+      "discount_pct": 5.0,
+      "last_recorded_at": "2026-11-06 01:52:49",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 453.06,
+        "orig_unit_price": 476.91,
+        "price_per_liter": 604.08,
+        "unit_price_display": "R$ 453,06 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 453.06,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 476.91,
+          "original_price": 476.91,
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 464.99,
+          "original_price": 476.91,
+          "discount_pct": 2.5,
+          "recorded_at": "Última Varredura"
+        },
+        {
+          "price": 453.06,
+          "original_price": 476.91,
+          "discount_pct": 5.0,
+          "recorded_at": "Preço Atual"
+        }
+      ],
+      "origin_type": "online",
+      "price": 453.06
     },
     {
       "id": 16950,
@@ -57077,6 +58893,134 @@
       "price": 10.99
     },
     {
+      "id": 29367,
+      "name": "Amaciante de Roupa Concentrado Ypê, 1L (Amazon Prime)",
+      "category": "limpeza",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Yp%C3%AA-Amaciante-Concentrado-LOCCITANE-Br%C3%A9sil/dp/B0FB5BJSP9",
+      "min_price": 16.84,
+      "avg_price": 16.84,
+      "max_price": 16.84,
+      "total_checks": 1,
+      "current_price": 16.84,
+      "original_price": 16.84,
+      "discount_pct": 0.0,
+      "last_recorded_at": "2026-11-06 01:52:48",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 1000,
+        "container_type": "Frasco 1L",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 1L",
+        "unit_price": 16.84,
+        "orig_unit_price": null,
+        "price_per_liter": 16.84,
+        "unit_price_display": "R$ 16,84 / frasco"
+      },
+      "unit_price": 16.84,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
+      "history_points": [
+        {
+          "price": 16.84,
+          "original_price": 16.84,
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 16.84,
+          "original_price": 16.84,
+          "discount_pct": 0,
+          "recorded_at": "Última Varredura"
+        },
+        {
+          "price": 16.84,
+          "original_price": 16.84,
+          "discount_pct": 0.0,
+          "recorded_at": "Preço Atual"
+        }
+      ],
+      "origin_type": "online",
+      "price": 16.84
+    },
+    {
+      "id": 29370,
+      "name": "Personal Papel Higiênico Vip Folha Tripla Com 12 Rolos De 20M (Amazon Prime)",
+      "category": "limpeza",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Papel-Higi%C3%AAnico-Personal-Folha-Tripla/dp/B0C4CFDJVJ",
+      "min_price": 17.9,
+      "avg_price": 17.9,
+      "max_price": 17.9,
+      "total_checks": 1,
+      "current_price": 17.9,
+      "original_price": 1.49,
+      "discount_pct": 0.0,
+      "last_recorded_at": "2026-11-06 01:52:48",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 12,
+        "unit_volume_ml": null,
+        "container_type": "Pacote c/ 12 rolos",
+        "unit_name": "rolo",
+        "pack_label": "Pacote c/ 12 rolos",
+        "unit_price": 1.49,
+        "orig_unit_price": null,
+        "price_per_liter": null,
+        "unit_price_display": "R$ 1,49 / rolo"
+      },
+      "unit_price": 1.49,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
+      "history_points": [
+        {
+          "price": 1.49,
+          "original_price": 1.49,
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 9.69,
+          "original_price": 1.49,
+          "discount_pct": 0,
+          "recorded_at": "Última Varredura"
+        },
+        {
+          "price": 17.9,
+          "original_price": 1.49,
+          "discount_pct": 0.0,
+          "recorded_at": "Preço Atual"
+        }
+      ],
+      "origin_type": "online",
+      "price": 17.9
+    },
+    {
       "id": 18479,
       "name": "Papel Higiênico Deluxe, Folha Dupla, Branco, 12 Rolos (Amazon Prime)",
       "category": "limpeza",
@@ -57141,19 +59085,83 @@
       "price": 18.9
     },
     {
-      "id": 17017,
-      "name": "Lava-Roupas Líquido Omo Ciclo Rápido Ação Antiodor Frasco 1,4l (Amazon Prime)",
+      "id": 29878,
+      "name": "Personal Papel Higiênico Vip Folha Dupla, 16 Unidades Branco (Embalagem Pode Variar) (Amazon Prime)",
       "category": "limpeza",
       "store": "Amazon Brasil",
-      "link": "https://www.amazon.com.br/Lava-Roupas-L%C3%ADquido-R%C3%A1pido-Antiodor-Frasco/dp/B0FJ7SSWVZ",
-      "min_price": 19.9,
-      "avg_price": 19.9,
-      "max_price": 19.9,
-      "total_checks": 1,
-      "current_price": 19.9,
+      "link": "https://www.amazon.com.br/Papel-Higi%C3%AAnico-Personal-Branco-pacote/dp/B07D5LTDT4",
+      "min_price": 19.48,
+      "avg_price": 19.48,
+      "max_price": 19.48,
+      "total_checks": 3,
+      "current_price": 19.48,
+      "original_price": 1.22,
+      "discount_pct": 0.0,
+      "last_recorded_at": "2026-11-08 00:57:28",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 16,
+        "unit_volume_ml": null,
+        "container_type": "Pacote c/ 16 rolos",
+        "unit_name": "rolo",
+        "pack_label": "Pacote c/ 16 rolos",
+        "unit_price": 1.22,
+        "orig_unit_price": null,
+        "price_per_liter": null,
+        "unit_price_display": "R$ 1,22 / rolo"
+      },
+      "unit_price": 1.22,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
+      "history_points": [
+        {
+          "price": 19.48,
+          "original_price": 1.22,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-06 21:08:21"
+        },
+        {
+          "price": 19.48,
+          "original_price": 1.22,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-07 19:43:20"
+        },
+        {
+          "price": 19.48,
+          "original_price": 1.22,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-08 00:57:28"
+        }
+      ],
+      "origin_type": "online",
+      "price": 19.48
+    },
+    {
+      "id": 30596,
+      "name": "Lava-Roupas Líquido Omo Ciclo Rápido Ação Total Frasco 1,4l (Amazon Prime)",
+      "category": "limpeza",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Lava-Roupas-L%C3%ADquido-Ciclo-R%C3%A1pido-Frasco/dp/B0FJ7TJQJB",
+      "min_price": 19.79,
+      "avg_price": 19.79,
+      "max_price": 19.79,
+      "total_checks": 4,
+      "current_price": 19.79,
       "original_price": 0.01,
       "discount_pct": 0.0,
-      "last_recorded_at": "2026-10-27 16:30:18",
+      "last_recorded_at": "2026-11-09 21:15:13",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -57171,32 +59179,170 @@
         "container_type": "Frasco 1.4L",
         "unit_name": "litro",
         "pack_label": "Frasco 1.4L",
-        "unit_price": 14.21,
+        "unit_price": 14.14,
         "orig_unit_price": null,
-        "price_per_liter": 14.21,
-        "unit_price_display": "R$ 14,21 / L"
+        "price_per_liter": 14.14,
+        "unit_price_display": "R$ 14,14 / L"
       },
-      "unit_price": 14.21,
+      "unit_price": 14.14,
       "is_imported": false,
       "country": "",
       "country_flag": "",
       "beer_style": "",
       "history_points": [
         {
-          "price": 0.01,
+          "price": 19.79,
           "original_price": 0.01,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-07 19:43:20"
+        },
+        {
+          "price": 19.79,
+          "original_price": 0.01,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-08 00:57:28"
+        },
+        {
+          "price": 19.79,
+          "original_price": 0.01,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-08 20:01:43"
+        },
+        {
+          "price": 19.79,
+          "original_price": 0.01,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-09 21:15:13"
+        }
+      ],
+      "origin_type": "online",
+      "price": 19.79
+    },
+    {
+      "id": 29112,
+      "name": "Amaciante de Roupa Concentrado Comfort, Brisa Elegante, 1,5L (Amazon Prime)",
+      "category": "limpeza",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Amaciante-Concentrado-Protect-Comfort-Frasco/dp/B091WDM4FK",
+      "min_price": 19.9,
+      "avg_price": 19.9,
+      "max_price": 19.9,
+      "total_checks": 3,
+      "current_price": 19.9,
+      "original_price": 13.27,
+      "discount_pct": 0.0,
+      "last_recorded_at": "2026-11-06 21:08:21",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 1500,
+        "container_type": "Frasco 1.5L",
+        "unit_name": "frasco",
+        "pack_label": "Frasco 1.5L",
+        "unit_price": 19.9,
+        "orig_unit_price": null,
+        "price_per_liter": 13.27,
+        "unit_price_display": "R$ 19,90 / frasco"
+      },
+      "unit_price": 19.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
+      "history_points": [
+        {
+          "price": 19.9,
+          "original_price": 13.27,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-05 21:38:34"
+        },
+        {
+          "price": 19.9,
+          "original_price": 13.27,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-06 17:47:33"
+        },
+        {
+          "price": 19.9,
+          "original_price": 13.27,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-06 21:08:21"
+        }
+      ],
+      "origin_type": "online",
+      "price": 19.9
+    },
+    {
+      "id": 30615,
+      "name": "Cerveja Puro Malte Strong Golden Ale Envelhecida no estilo Woodaged em lascas de madeira embebidas em Whiskey trazendo o sabor do Whisky do Tennessee na fermentação teor 8% 600ml Opa Bier (Amazon Prime)",
+      "category": "cerveja",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Cerveja-Strong-Envelhecida-Opa-Bier/dp/B0FPTPR33G",
+      "min_price": 19.9,
+      "avg_price": 19.9,
+      "max_price": 19.9,
+      "total_checks": 1,
+      "current_price": 19.9,
+      "original_price": 19.9,
+      "discount_pct": 0.0,
+      "last_recorded_at": "2026-11-07 19:43:20",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 600,
+        "container_type": "Garrafa 600ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 19.9,
+        "orig_unit_price": null,
+        "price_per_liter": 33.17,
+        "unit_price_display": "R$ 19,90 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 19.9,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 19.9,
+          "original_price": 19.9,
           "discount_pct": 0,
           "recorded_at": "Semana Anterior"
         },
         {
-          "price": 9.96,
-          "original_price": 0.01,
+          "price": 19.9,
+          "original_price": 19.9,
           "discount_pct": 0,
           "recorded_at": "Última Varredura"
         },
         {
           "price": 19.9,
-          "original_price": 0.01,
+          "original_price": 19.9,
           "discount_pct": 0.0,
           "recorded_at": "Preço Atual"
         }
@@ -58269,19 +60415,19 @@
       "price": 28.49
     },
     {
-      "id": 20865,
-      "name": "Coffee Mais │Café Super Especial ARARA em Grãos │100% Arábica │ Torra Média │250g (Amazon Prime)",
-      "category": "mercearia",
+      "id": 17082,
+      "name": "Prófugo Frutos Rojos Vinho Tinto Seco Malbec 750ml Argentino (Amazon Prime)",
+      "category": "vinho",
       "store": "Amazon Brasil",
-      "link": "https://www.amazon.com.br/Coffee-Mais-%E2%94%82Edi%C3%A7%C3%A3o-Limitada-Microlote/dp/B09MWN12GJ",
-      "min_price": 28.9,
-      "avg_price": 28.9,
-      "max_price": 28.9,
-      "total_checks": 1,
-      "current_price": 28.9,
-      "original_price": 0.12,
+      "link": "https://www.amazon.com.br/Vinho-tinto-Malbec-Profugo-Frutos/dp/B0CRLXKJ33",
+      "min_price": 29.9,
+      "avg_price": 29.9,
+      "max_price": 29.9,
+      "total_checks": 7,
+      "current_price": 29.9,
+      "original_price": 0.04,
       "discount_pct": 0.0,
-      "last_recorded_at": "2026-10-30 13:30:12",
+      "last_recorded_at": "2026-11-06 21:08:21",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -58512,7 +60658,7 @@
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": 5.7,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
@@ -58594,13 +60740,13 @@
         "is_imported": false,
         "country": "Brasil",
         "country_flag": "🇧🇷",
-        "beer_style": "Lager / Pilsen"
+        "beer_style": "Artesanal Premium"
       },
       "unit_price": 31.46,
       "is_imported": false,
       "country": "Brasil",
       "country_flag": "🇧🇷",
-      "beer_style": "Lager / Pilsen",
+      "beer_style": "Artesanal Premium",
       "history_points": [
         {
           "price": 35.9,
@@ -58761,6 +60907,224 @@
       ],
       "origin_type": "online",
       "price": 32.94
+    },
+    {
+      "id": 25610,
+      "name": "Café Orfeu Bourbon Amarelo em Grãos, 250g (Amazon Prime)",
+      "category": "mercearia",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Caf%C3%A9-Orfeu-Bourbon-Amarelo-gr%C3%A3os/dp/B084WLM5TF",
+      "min_price": 32.8,
+      "avg_price": 33.43333333333333,
+      "max_price": 33.75,
+      "total_checks": 3,
+      "current_price": 32.8,
+      "original_price": 0.13,
+      "discount_pct": 0.0,
+      "last_recorded_at": "2026-11-08 16:53:44",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 1.9,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": null,
+        "container_type": "Pacote 250g",
+        "unit_name": "pct 250g",
+        "pack_label": "Pacote 250g",
+        "unit_price": 32.8,
+        "orig_unit_price": null,
+        "price_per_liter": null,
+        "unit_price_display": "R$ 32,80 / 250g"
+      },
+      "unit_price": 32.8,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
+      "history_points": [
+        {
+          "price": 33.75,
+          "original_price": 0.14,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-02 09:42:56"
+        },
+        {
+          "price": 33.75,
+          "original_price": 0.14,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-02 21:31:13"
+        },
+        {
+          "price": 32.8,
+          "original_price": 0.13,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-08 16:53:44"
+        }
+      ],
+      "origin_type": "online",
+      "price": 32.8
+    },
+    {
+      "id": 29634,
+      "name": "Cerveja Lager Therezopolis Gold, 355ml, Pack com 6 Unidades (Amazon Prime)",
+      "category": "cerveja",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Pack-Therezopolis-Lager-355ml-Unidades/dp/B0D3MZYMC6",
+      "min_price": 32.94,
+      "avg_price": 32.94,
+      "max_price": 32.94,
+      "total_checks": 1,
+      "current_price": 32.94,
+      "original_price": 5.49,
+      "discount_pct": 0.0,
+      "last_recorded_at": "2026-11-06 17:47:34",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 6,
+        "unit_volume_ml": 355,
+        "container_type": "Lata 355ml",
+        "unit_name": "lata",
+        "pack_label": "Pack c/ 6 latas",
+        "unit_price": 5.49,
+        "orig_unit_price": null,
+        "price_per_liter": 15.46,
+        "unit_price_display": "R$ 5,49 / lata",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 5.49,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 5.49,
+          "original_price": 5.49,
+          "discount_pct": 0,
+          "recorded_at": "Semana Anterior"
+        },
+        {
+          "price": 19.21,
+          "original_price": 5.49,
+          "discount_pct": 0,
+          "recorded_at": "Última Varredura"
+        },
+        {
+          "price": 32.94,
+          "original_price": 5.49,
+          "discount_pct": 0.0,
+          "recorded_at": "Preço Atual"
+        }
+      ],
+      "origin_type": "online",
+      "price": 32.94
+    },
+    {
+      "id": 18687,
+      "name": "Concha y Toro Reservado Malbec 750ml (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/TOWOOZ-Vinho-Chileno-Reservado-Malbec/dp/B09Q4GD377",
+      "min_price": 32.83,
+      "avg_price": 33.949999999999996,
+      "max_price": 35.9,
+      "total_checks": 6,
+      "current_price": 33.03,
+      "original_price": 0.04,
+      "discount_pct": 0.0,
+      "last_recorded_at": "2026-11-07 19:43:20",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 2.7,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 33.03,
+        "orig_unit_price": null,
+        "price_per_liter": 44.04,
+        "unit_price_display": "R$ 33,03 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 33.03,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 35.9,
+          "original_price": 39.9,
+          "discount_pct": 10.0,
+          "recorded_at": "2026-10-29 11:30:20"
+        },
+        {
+          "price": 32.83,
+          "original_price": 0.04,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-30 12:15:06"
+        },
+        {
+          "price": 35.9,
+          "original_price": 39.9,
+          "discount_pct": 10.0,
+          "recorded_at": "2026-11-01 09:15:14"
+        },
+        {
+          "price": 33.02,
+          "original_price": 0.04,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-06 17:47:34"
+        },
+        {
+          "price": 33.02,
+          "original_price": 0.04,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-07 01:23:52"
+        },
+        {
+          "price": 33.03,
+          "original_price": 0.04,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-07 19:43:20"
+        }
+      ],
+      "origin_type": "online",
+      "price": 33.03
     },
     {
       "id": 17403,
@@ -59715,11 +62079,11 @@
       "min_price": 39.9,
       "avg_price": 39.9,
       "max_price": 39.9,
-      "total_checks": 11,
+      "total_checks": 12,
       "current_price": 39.9,
       "original_price": 39.9,
       "discount_pct": 0.0,
-      "last_recorded_at": "2026-11-01 21:30:27",
+      "last_recorded_at": "2026-11-06 01:52:48",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -59813,6 +62177,12 @@
           "original_price": 39.9,
           "discount_pct": 0.0,
           "recorded_at": "2026-11-01 21:30:27"
+        },
+        {
+          "price": 39.9,
+          "original_price": 39.9,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-06 01:52:48"
         }
       ],
       "origin_type": "online",
@@ -60011,32 +62381,32 @@
       "beer_style": "",
       "history_points": [
         {
-          "price": 53.53,
-          "original_price": 17.84,
+          "price": 49.9,
+          "original_price": 1.56,
           "discount_pct": 0.0,
-          "recorded_at": "2026-10-28 12:30:20"
+          "recorded_at": "2026-11-06 01:52:48"
         },
         {
-          "price": 53.53,
-          "original_price": 17.84,
+          "price": 49.9,
+          "original_price": 1.56,
           "discount_pct": 0.0,
-          "recorded_at": "2026-10-28 13:00:23"
+          "recorded_at": "2026-11-06 21:08:21"
         },
         {
-          "price": 53.53,
-          "original_price": 17.84,
+          "price": 49.9,
+          "original_price": 1.56,
           "discount_pct": 0.0,
-          "recorded_at": "2026-10-28 15:30:18"
+          "recorded_at": "2026-11-07 01:23:51"
         },
         {
-          "price": 53.53,
-          "original_price": 17.84,
+          "price": 49.9,
+          "original_price": 1.56,
           "discount_pct": 0.0,
-          "recorded_at": "2026-10-28 16:30:12"
+          "recorded_at": "2026-11-07 19:43:20"
         },
         {
-          "price": 53.53,
-          "original_price": 17.84,
+          "price": 49.9,
+          "original_price": 1.56,
           "discount_pct": 0.0,
           "recorded_at": "2026-10-28 18:30:18"
         },
@@ -60267,6 +62637,118 @@
       ],
       "origin_type": "online",
       "price": 51.6
+    },
+    {
+      "id": 18474,
+      "name": "Omo Sabão Líquido Puro Cuidado 5L - Tampa pode Variar (Amazon Prime)",
+      "category": "limpeza",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Sab%C3%A3o-L%C3%ADquido-Omo-Puro-Cuidado/dp/B08XMB1XFJ",
+      "min_price": 54.48,
+      "avg_price": 54.75909090909091,
+      "max_price": 54.99,
+      "total_checks": 11,
+      "current_price": 54.48,
+      "original_price": 0.01,
+      "discount_pct": 0.0,
+      "last_recorded_at": "2026-11-09 21:15:13",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.5,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 5,
+        "unit_volume_ml": 5000,
+        "container_type": "Galão 5L",
+        "unit_name": "litro",
+        "pack_label": "Galão 5L",
+        "unit_price": 10.9,
+        "orig_unit_price": null,
+        "price_per_liter": 10.9,
+        "unit_price_display": "R$ 10,90 / L"
+      },
+      "unit_price": 10.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
+      "history_points": [
+        {
+          "price": 54.99,
+          "original_price": 0.01,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-29 08:30:34"
+        },
+        {
+          "price": 54.99,
+          "original_price": 0.01,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-01 22:30:29"
+        },
+        {
+          "price": 54.99,
+          "original_price": 0.01,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-05 21:38:34"
+        },
+        {
+          "price": 54.49,
+          "original_price": 0.01,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-06 17:47:33"
+        },
+        {
+          "price": 54.99,
+          "original_price": 0.01,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-06 21:08:21"
+        },
+        {
+          "price": 54.99,
+          "original_price": 0.01,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-07 01:23:51"
+        },
+        {
+          "price": 54.48,
+          "original_price": 0.01,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-07 19:43:20"
+        },
+        {
+          "price": 54.99,
+          "original_price": 0.01,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-08 00:57:28"
+        },
+        {
+          "price": 54.48,
+          "original_price": 0.01,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-08 16:53:44"
+        },
+        {
+          "price": 54.48,
+          "original_price": 0.01,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-08 20:01:43"
+        },
+        {
+          "price": 54.48,
+          "original_price": 0.01,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-09 21:15:13"
+        }
+      ],
+      "origin_type": "online",
+      "price": 54.48
     },
     {
       "id": 41,
@@ -60635,70 +63117,6 @@
       ],
       "origin_type": "online",
       "price": 62.0
-    },
-    {
-      "id": 23584,
-      "name": "Omo Sabão Líquido Lavagem Perfeita 5l - Tampa pode Variar (Amazon Prime)",
-      "category": "limpeza",
-      "store": "Amazon Brasil",
-      "link": "https://www.amazon.com.br/Omo-Sab%C3%A3o-L%C3%ADquido-OMO-Multia%C3%A7%C3%A3o/dp/B07DYHDXX8",
-      "min_price": 62.09,
-      "avg_price": 62.09,
-      "max_price": 62.09,
-      "total_checks": 3,
-      "current_price": 62.09,
-      "original_price": 62.09,
-      "discount_pct": 0.0,
-      "last_recorded_at": "2026-11-01 22:30:29",
-      "intelligence": {
-        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
-        "tag": "Excelente Preço",
-        "score": "great",
-        "emoji": "🟢",
-        "color": "emerald",
-        "savings_pct": 0.0,
-        "is_all_time_low": true,
-        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
-      },
-      "unit_pricing": {
-        "is_pack": true,
-        "units_count": 5,
-        "unit_volume_ml": 5000,
-        "container_type": "Galão 5L",
-        "unit_name": "litro",
-        "pack_label": "Galão 5L",
-        "unit_price": 12.42,
-        "orig_unit_price": null,
-        "price_per_liter": 12.42,
-        "unit_price_display": "R$ 12,42 / L"
-      },
-      "unit_price": 12.42,
-      "is_imported": false,
-      "country": "",
-      "country_flag": "",
-      "beer_style": "",
-      "history_points": [
-        {
-          "price": 62.09,
-          "original_price": 62.09,
-          "discount_pct": 0.0,
-          "recorded_at": "2026-11-01 09:30:19"
-        },
-        {
-          "price": 62.09,
-          "original_price": 62.09,
-          "discount_pct": 0.0,
-          "recorded_at": "2026-11-01 10:30:20"
-        },
-        {
-          "price": 62.09,
-          "original_price": 62.09,
-          "discount_pct": 0.0,
-          "recorded_at": "2026-11-01 22:30:29"
-        }
-      ],
-      "origin_type": "online",
-      "price": 62.09
     },
     {
       "id": 17402,
@@ -61427,6 +63845,356 @@
       "price": 73.93
     },
     {
+      "id": 17000,
+      "name": "Concha y Toro Diablo Deep Carmenere 750ml (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Concha-Toro-Diablo-Carmenere-750ml/dp/B0CXBQZRY7",
+      "min_price": 67.93,
+      "avg_price": 67.93,
+      "max_price": 67.93,
+      "total_checks": 2,
+      "current_price": 67.93,
+      "original_price": 0.09,
+      "discount_pct": 0.0,
+      "last_recorded_at": "2026-10-27 16:30:19",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 0.0,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 67.93,
+        "orig_unit_price": null,
+        "price_per_liter": 90.57,
+        "unit_price_display": "R$ 67,93 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 67.93,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 67.93,
+          "original_price": 0.09,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-27 16:15:06"
+        },
+        {
+          "price": 67.93,
+          "original_price": 0.09,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-27 16:30:19"
+        }
+      ],
+      "origin_type": "online",
+      "price": 67.93
+    },
+    {
+      "id": 36,
+      "name": "Contra Filé Minerva Pedaço 600g Bandeja",
+      "category": "acougue",
+      "store": "Savegnago Supermercados",
+      "link": "https://www.savegnago.com.br/contra-file-minerva-kg-pedaco-embalado/p",
+      "min_price": 51.9,
+      "avg_price": 61.37787610619469,
+      "max_price": 68.9,
+      "total_checks": 113,
+      "current_price": 68.9,
+      "original_price": null,
+      "discount_pct": 0.0,
+      "last_recorded_at": "2026-11-11 01:33:43",
+      "intelligence": {
+        "verdict": "⏳ Preço Alto (Acima da Média)",
+        "tag": "Preço Alto",
+        "score": "high",
+        "emoji": "🔴",
+        "color": "rose",
+        "savings_pct": -12.3,
+        "is_all_time_low": false,
+        "advice": "Está mais caro que a média recente. Recomendamos aguardar nova promoção."
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": null,
+        "container_type": "Quilo (Kg)",
+        "unit_name": "kg",
+        "pack_label": "Preço por Kg",
+        "unit_price": 68.9,
+        "orig_unit_price": null,
+        "price_per_liter": null,
+        "unit_price_display": "R$ 68,90 / kg"
+      },
+      "unit_price": 68.9,
+      "is_imported": false,
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
+      "history_points": [
+        {
+          "price": 64.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-02 12:08:00"
+        },
+        {
+          "price": 64.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-02 15:11:36"
+        },
+        {
+          "price": 64.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-02 16:03:28"
+        },
+        {
+          "price": 64.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-02 22:02:14"
+        },
+        {
+          "price": 51.9,
+          "original_price": 64.9,
+          "discount_pct": 20.0,
+          "recorded_at": "2026-10-03 12:01:01"
+        },
+        {
+          "price": 51.9,
+          "original_price": 64.9,
+          "discount_pct": 20.0,
+          "recorded_at": "2026-10-03 20:03:39"
+        },
+        {
+          "price": 51.9,
+          "original_price": 64.9,
+          "discount_pct": 20.0,
+          "recorded_at": "2026-10-04 02:50:21"
+        },
+        {
+          "price": 64.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-04 17:32:36"
+        },
+        {
+          "price": 64.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-04 20:48:47"
+        },
+        {
+          "price": 64.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-04 22:03:29"
+        },
+        {
+          "price": 64.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-05 11:08:41"
+        },
+        {
+          "price": 64.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-05 16:04:03"
+        },
+        {
+          "price": 64.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-05 22:03:49"
+        },
+        {
+          "price": 64.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-06 11:08:07"
+        },
+        {
+          "price": 64.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-06 16:05:09"
+        },
+        {
+          "price": 64.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-06 22:02:16"
+        },
+        {
+          "price": 64.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-07 11:08:43"
+        },
+        {
+          "price": 64.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-07 16:07:31"
+        },
+        {
+          "price": 64.9,
+          "original_price": null,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-07 22:03:25"
+        },
+        {
+          "price": 54.9,
+          "original_price": 64.9,
+          "discount_pct": 15.4,
+          "recorded_at": "2026-10-08 11:08:38"
+        }
+      ],
+      "origin_type": "local",
+      "price": 68.9
+    },
+    {
+      "id": 22223,
+      "name": "Pack Cerveja Lagunitas IPA Lata 350ML Com 12 Unidades (Amazon Prime)",
+      "category": "cerveja",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/Pack-Cerveja-Lagunitas-350ML-Unidades/dp/B0DWPSKYXS",
+      "min_price": 70.9,
+      "avg_price": 77.62333333333333,
+      "max_price": 91.07,
+      "total_checks": 12,
+      "current_price": 70.9,
+      "original_price": 5.91,
+      "discount_pct": 0.0,
+      "last_recorded_at": "2026-11-08 20:01:43",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 8.7,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": true,
+        "units_count": 12,
+        "unit_volume_ml": 350,
+        "container_type": "Lata 350ml",
+        "unit_name": "lata",
+        "pack_label": "Pack c/ 12 latas",
+        "unit_price": 5.91,
+        "orig_unit_price": null,
+        "price_per_liter": 16.89,
+        "unit_price_display": "R$ 5,91 / lata",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 5.91,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 91.07,
+          "original_price": 7.59,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-31 14:30:23"
+        },
+        {
+          "price": 91.07,
+          "original_price": 7.59,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-31 15:30:20"
+        },
+        {
+          "price": 91.07,
+          "original_price": 7.59,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-01 13:00:31"
+        },
+        {
+          "price": 91.07,
+          "original_price": 7.59,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-01 14:30:23"
+        },
+        {
+          "price": 70.9,
+          "original_price": 5.91,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-05 01:53:01"
+        },
+        {
+          "price": 70.9,
+          "original_price": 5.91,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-05 21:38:34"
+        },
+        {
+          "price": 70.9,
+          "original_price": 5.91,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-06 01:52:49"
+        },
+        {
+          "price": 70.9,
+          "original_price": 5.91,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-06 21:08:21"
+        },
+        {
+          "price": 70.9,
+          "original_price": 5.91,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-07 01:23:52"
+        },
+        {
+          "price": 70.9,
+          "original_price": 5.91,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-07 19:43:20"
+        },
+        {
+          "price": 70.9,
+          "original_price": 5.91,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-08 00:57:28"
+        },
+        {
+          "price": 70.9,
+          "original_price": 5.91,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-08 20:01:43"
+        }
+      ],
+      "origin_type": "online",
+      "price": 70.9
+    },
+    {
       "id": 17356,
       "name": "Café Torrado em Grãos América 1Kg, Vending Torra Média (Amazon Prime)",
       "category": "mercearia",
@@ -61491,93 +64259,93 @@
       "price": 85.76
     },
     {
-      "id": 22223,
-      "name": "Pack Cerveja Lagunitas IPA Lata 350ML Com 12 Unidades (Amazon Prime)",
-      "category": "cerveja",
+      "id": 22224,
+      "name": "Cerveja em Barril Heineken, 5L (Amazon Prime)",
+      "category": "vinho",
       "store": "Amazon Brasil",
-      "link": "https://www.amazon.com.br/Pack-Cerveja-Lagunitas-350ML-Unidades/dp/B0DWPSKYXS",
-      "min_price": 91.07,
-      "avg_price": 91.07,
-      "max_price": 91.07,
+      "link": "https://www.amazon.com.br/Heineken-Cerveja-Keg-5L/dp/B07BB8NL42",
+      "min_price": 92.9,
+      "avg_price": 94.1525,
+      "max_price": 97.91,
       "total_checks": 4,
-      "current_price": 91.07,
-      "original_price": 7.59,
+      "current_price": 92.9,
+      "original_price": 92.9,
       "discount_pct": 0.0,
-      "last_recorded_at": "2026-11-01 14:30:23",
+      "last_recorded_at": "2026-11-08 00:57:28",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
         "score": "great",
         "emoji": "🟢",
         "color": "emerald",
-        "savings_pct": 0.0,
+        "savings_pct": 1.3,
         "is_all_time_low": true,
         "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
       },
       "unit_pricing": {
-        "is_pack": true,
-        "units_count": 12,
-        "unit_volume_ml": 350,
-        "container_type": "Lata 350ml",
-        "unit_name": "lata",
-        "pack_label": "Pack c/ 12 latas",
-        "unit_price": 7.59,
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 5000,
+        "container_type": "Barril 5L",
+        "unit_name": "barril",
+        "pack_label": "1 Barril Avulsa",
+        "unit_price": 92.9,
         "orig_unit_price": null,
-        "price_per_liter": 21.69,
-        "unit_price_display": "R$ 7,59 / lata",
+        "price_per_liter": 18.58,
+        "unit_price_display": "R$ 92,90 / barril",
         "is_imported": false,
-        "country": "Brasil",
-        "country_flag": "🇧🇷",
-        "beer_style": "Lager / Pilsen"
+        "country": "Holanda",
+        "country_flag": "🇳🇱",
+        "beer_style": "European Premium Lager"
       },
-      "unit_price": 7.59,
+      "unit_price": 92.9,
       "is_imported": false,
-      "country": "Brasil",
-      "country_flag": "🇧🇷",
-      "beer_style": "Lager / Pilsen",
+      "country": "Holanda",
+      "country_flag": "🇳🇱",
+      "beer_style": "European Premium Lager",
       "history_points": [
         {
-          "price": 91.07,
-          "original_price": 7.59,
+          "price": 97.91,
+          "original_price": 97.91,
           "discount_pct": 0.0,
           "recorded_at": "2026-10-31 14:30:23"
         },
         {
-          "price": 91.07,
-          "original_price": 7.59,
+          "price": 92.9,
+          "original_price": 92.9,
           "discount_pct": 0.0,
-          "recorded_at": "2026-10-31 15:30:20"
+          "recorded_at": "2026-11-06 21:08:21"
         },
         {
-          "price": 91.07,
-          "original_price": 7.59,
+          "price": 92.9,
+          "original_price": 92.9,
           "discount_pct": 0.0,
-          "recorded_at": "2026-11-01 13:00:31"
+          "recorded_at": "2026-11-07 19:43:20"
         },
         {
-          "price": 91.07,
-          "original_price": 7.59,
+          "price": 92.9,
+          "original_price": 92.9,
           "discount_pct": 0.0,
-          "recorded_at": "2026-11-01 14:30:23"
+          "recorded_at": "2026-11-08 00:57:28"
         }
       ],
       "origin_type": "online",
-      "price": 91.07
+      "price": 92.9
     },
     {
-      "id": 22224,
-      "name": "Cerveja em Barril Heineken, 5L (Amazon Prime)",
-      "category": "vinho",
+      "id": 28863,
+      "name": "Café Orfeu Clássico em Grãos (Amazon Prime)",
+      "category": "mercearia",
       "store": "Amazon Brasil",
-      "link": "https://www.amazon.com.br/Heineken-Cerveja-Keg-5L/dp/B07BB8NL42",
-      "min_price": 97.91,
-      "avg_price": 97.91,
-      "max_price": 97.91,
-      "total_checks": 1,
-      "current_price": 97.91,
-      "original_price": 97.91,
+      "link": "https://www.amazon.com.br/Caf%C3%A9-Gr%C3%A3os-Cl%C3%A1ssico-Orfeu-1kg/dp/B07HDSL78H",
+      "min_price": 101.02,
+      "avg_price": 101.02,
+      "max_price": 101.02,
+      "total_checks": 2,
+      "current_price": 101.02,
+      "original_price": 101.02,
       "discount_pct": 0.0,
-      "last_recorded_at": "2026-10-31 14:30:23",
+      "last_recorded_at": "2026-11-05 21:38:34",
       "intelligence": {
         "verdict": "🔥 Oportunidade Real! (Muito Barato)",
         "tag": "Excelente Preço",
@@ -61591,46 +64359,188 @@
       "unit_pricing": {
         "is_pack": false,
         "units_count": 1,
-        "unit_volume_ml": 5000,
-        "container_type": "Barril 5L",
-        "unit_name": "barril",
-        "pack_label": "1 Barril Avulsa",
-        "unit_price": 97.91,
+        "unit_volume_ml": null,
+        "container_type": "Pacote 500g",
+        "unit_name": "pct 500g",
+        "pack_label": "Pacote 500g",
+        "unit_price": 101.02,
         "orig_unit_price": null,
-        "price_per_liter": 19.58,
-        "unit_price_display": "R$ 97,91 / barril",
-        "is_imported": false,
-        "country": "Holanda",
-        "country_flag": "🇳🇱",
-        "beer_style": "European Premium Lager"
+        "price_per_liter": null,
+        "unit_price_display": "R$ 101,02 / 500g"
       },
-      "unit_price": 97.91,
+      "unit_price": 101.02,
       "is_imported": false,
-      "country": "Holanda",
-      "country_flag": "🇳🇱",
-      "beer_style": "European Premium Lager",
+      "country": "",
+      "country_flag": "",
+      "beer_style": "",
       "history_points": [
         {
-          "price": 97.91,
-          "original_price": 97.91,
-          "discount_pct": 0,
-          "recorded_at": "Semana Anterior"
-        },
-        {
-          "price": 97.91,
-          "original_price": 97.91,
-          "discount_pct": 0,
-          "recorded_at": "Última Varredura"
-        },
-        {
-          "price": 97.91,
-          "original_price": 97.91,
+          "price": 101.02,
+          "original_price": 101.02,
           "discount_pct": 0.0,
-          "recorded_at": "Preço Atual"
+          "recorded_at": "2026-11-05 18:27:58"
+        },
+        {
+          "price": 101.02,
+          "original_price": 101.02,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-05 21:38:34"
         }
       ],
       "origin_type": "online",
-      "price": 97.91
+      "price": 101.02
+    },
+    {
+      "id": 16884,
+      "name": "V T CALEO PRIMITIVO DI MANDURIA 750 ML (Amazon Prime)",
+      "category": "vinho",
+      "store": "Amazon Brasil",
+      "link": "https://www.amazon.com.br/CALEO-PRIMITIVO-MANDURIA-750-ML/dp/B0C78G9YJR",
+      "min_price": 104.08,
+      "avg_price": 127.97352941176469,
+      "max_price": 132.55,
+      "total_checks": 17,
+      "current_price": 104.08,
+      "original_price": 104.08,
+      "discount_pct": 0.0,
+      "last_recorded_at": "2026-11-06 21:08:22",
+      "intelligence": {
+        "verdict": "🔥 Oportunidade Real! (Muito Barato)",
+        "tag": "Excelente Preço",
+        "score": "great",
+        "emoji": "🟢",
+        "color": "emerald",
+        "savings_pct": 18.7,
+        "is_all_time_low": true,
+        "advice": "Preço no menor nível registrado. Vale muito a pena comprar agora!"
+      },
+      "unit_pricing": {
+        "is_pack": false,
+        "units_count": 1,
+        "unit_volume_ml": 750,
+        "container_type": "Garrafa 750ml",
+        "unit_name": "garrafa",
+        "pack_label": "1 Garrafa Avulsa",
+        "unit_price": 104.08,
+        "orig_unit_price": null,
+        "price_per_liter": 138.77,
+        "unit_price_display": "R$ 104,08 / garrafa",
+        "is_imported": false,
+        "country": "Brasil",
+        "country_flag": "🇧🇷",
+        "beer_style": "Lager / Pilsen"
+      },
+      "unit_price": 104.08,
+      "is_imported": false,
+      "country": "Brasil",
+      "country_flag": "🇧🇷",
+      "beer_style": "Lager / Pilsen",
+      "history_points": [
+        {
+          "price": 130.43,
+          "original_price": 130.43,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-27 13:15:07"
+        },
+        {
+          "price": 130.43,
+          "original_price": 130.43,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-27 20:15:07"
+        },
+        {
+          "price": 131.16,
+          "original_price": 131.16,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-28 18:15:10"
+        },
+        {
+          "price": 131.16,
+          "original_price": 131.16,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-28 21:15:09"
+        },
+        {
+          "price": 131.17,
+          "original_price": 131.17,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-29 10:15:14"
+        },
+        {
+          "price": 131.17,
+          "original_price": 131.17,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-29 11:15:16"
+        },
+        {
+          "price": 131.17,
+          "original_price": 131.17,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-29 14:15:13"
+        },
+        {
+          "price": 131.17,
+          "original_price": 131.17,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-29 17:15:07"
+        },
+        {
+          "price": 131.17,
+          "original_price": 131.17,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-29 18:15:07"
+        },
+        {
+          "price": 131.17,
+          "original_price": 131.17,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-29 19:15:10"
+        },
+        {
+          "price": 131.17,
+          "original_price": 131.17,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-30 21:15:06"
+        },
+        {
+          "price": 131.17,
+          "original_price": 131.17,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-30 21:30:15"
+        },
+        {
+          "price": 131.15,
+          "original_price": 131.15,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-31 19:15:13"
+        },
+        {
+          "price": 131.15,
+          "original_price": 131.15,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-10-31 20:15:08"
+        },
+        {
+          "price": 132.55,
+          "original_price": 132.55,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-02 23:15:08"
+        },
+        {
+          "price": 104.08,
+          "original_price": 104.08,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-06 17:47:34"
+        },
+        {
+          "price": 104.08,
+          "original_price": 104.08,
+          "discount_pct": 0.0,
+          "recorded_at": "2026-11-06 21:08:22"
+        }
+      ],
+      "origin_type": "online",
+      "price": 104.08
     },
     {
       "id": 22431,
